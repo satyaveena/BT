@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="69b512af-d74b-41d6-b0e6-f7d98d93b5e2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://5.0.242.11:9090/LD2/IUserAlerts/UserAlerts.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UserAlerts.wsdl" MetadataType="Wsdl" ID="a00993cf-6d47-4721-8a93-ce9c1313a9da" SourceId="1" SourceUrl="http://5.0.242.11:9090/LD2/IUserAlerts/UserAlerts.svc?wsdl" />
+    <MetadataFile FileName="UserAlerts.xsd" MetadataType="Schema" ID="9a0f2879-44a1-4265-afc1-1510b2911e66" SourceId="1" SourceUrl="http://5.0.242.11:9090/LD2/IUserAlerts/UserAlerts.svc?xsd=xsd0" />
+    <MetadataFile FileName="UserAlerts.disco" MetadataType="Disco" ID="5d4c6ba2-f254-4e36-bb7f-2de2576e399b" SourceId="1" SourceUrl="http://5.0.242.11:9090/LD2/IUserAlerts/UserAlerts.svc?disco" />
+    <MetadataFile FileName="UserAlerts1.xsd" MetadataType="Schema" ID="e3986c0f-13a5-4ff8-aef7-7dd934130500" SourceId="1" SourceUrl="http://5.0.242.11:9090/LD2/IUserAlerts/UserAlerts.svc?xsd=xsd2" />
+    <MetadataFile FileName="UserAlerts2.xsd" MetadataType="Schema" ID="a890932b-0f37-4581-8a3b-b797270b8d9c" SourceId="1" SourceUrl="http://5.0.242.11:9090/LD2/IUserAlerts/UserAlerts.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

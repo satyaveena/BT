@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21107</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4290E071-944A-4D34-8B2A-AAC381676B9F}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>BTNextGen.Biztalk.ListTransferCarts</RootNamespace>
+    <AssemblyName>BTNextGen.Biztalk.ListTransferCarts</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BTNextGen.Biztalk.Common.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BTNextGen.BizTalk.SSO.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\BTNextGen.BizTalk.SSO.Utility\v4.0_1.0.0.0__be3013815deaefc7\BTNextGen.BizTalk.SSO.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="BTNextGen.ExceptionHandler.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\BTNextGen.ExceptionHandler.Utility\v4.0_1.0.0.0__be3013815deaefc7\BTNextGen.ExceptionHandler.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline.Components, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ESB.ExceptionHandling, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk ESB Toolkit 2.1\Bin\Microsoft.Practices.ESB.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk ESB Toolkit 2.1\Bin\Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.Pipeline, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk Server 2010\Microsoft.XLANGs.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="FlatFileSchemaListTransfer.xsd">
+      <TypeName>FlatFileSchemaListTransfer</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Pipeline Include="ReceivePipelineListTransfer.btp">
+      <TypeName>ReceivePipelineListTransfer</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Pipeline>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="ListTransferFromTS3.odx">
+      <TypeName>OrchestrationListTransfer</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="PropertySchema.xsd">
+      <TypeName>PropertySchema</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="ProcedureResultSet.dbo.procTS360APIValidateUser.xsd">
+      <TypeName>ProcedureResultSet_dbo_procTS360APIValidateUser</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="TypedProcedure.dbo.xsd">
+      <TypeName>TypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="ListCartSchemaIntermediate.xsd">
+      <TypeName>ListCartSchemaIntermediate</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="LT_SQLGETProcedureResultSet.dbo.procListTransferGetLineWarningsLog.xsd">
+      <TypeName>LT_SQLGETProcedureResultSet_dbo_procListTransferGetLineWarningsLog</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="LT_SQLGETTypedProcedure.dbo.xsd">
+      <TypeName>LT_SQLGETTypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="LT_SQLADD.TableType.dbo.xsd">
+      <TypeName>LT_SQLADD_TableType_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="LT_SQLADD.TypedProcedure.dbo.xsd">
+      <TypeName>LT_SQLADD_TypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="DataSetSchema1.xsd">
+      <TypeName>DataSetSchema1</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="Procedure.dbo1.xsd">
+      <TypeName>Procedure_dbo1</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="TableType.dbo1.xsd">
+      <TypeName>TableType_dbo1</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="DataSetSchema.xsd">
+      <TypeName>DataSetSchema</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="Procedure.dbo.xsd">
+      <TypeName>Procedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="TableType.dbo.xsd">
+      <TypeName>TableType_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="ListTransferCartsWarnings.xsd">
+      <TypeName>ListTransferCartsWarnings</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="ListTransferFFEmail.xsd">
+      <TypeName>ListTransferFFEmail</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="BasketCountResponse.xsd">
+      <TypeName>BasketCountResponse</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <None Include="BTNextGen.Biztalk.Common.snk" />
+    <Schema Include="ListCartSchemaEmail.xsd">
+      <TypeName>Copy_of_ListCartSchema</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="VerifyUserSQL.xsd">
+      <TypeName>VerifyUserSQL</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="ProfilesR2_schemas_datacontract_org_2004_07_IProfilesR2.xsd">
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+      <TypeName>ProfilesR2_schemas_datacontract_org_2004_07_IProfilesR2</TypeName>
+    </Schema>
+    <Schema Include="ProfilesR2_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+      <TypeName>ProfilesR2_schemas_microsoft_com_2003_10_Serialization</TypeName>
+    </Schema>
+    <Schema Include="ProfilesR2_tempuri_org.xsd">
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+      <TypeName>ProfilesR2_tempuri_org</TypeName>
+    </Schema>
+    <Schema Include="ListTransferFF.xsd">
+      <TypeName>ListTransferFF</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="ListCartSchema.xsd">
+      <TypeName>ListCartSchema</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+    <Schema Include="TrailerDummy.xsd">
+      <TypeName>TrailerDummy</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="ListTransferFromTS3xCont.odx">
+      <TypeName>ListTransferFromTS3_Cont</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="ListTransferFF_To_TS360XML.btm">
+      <TypeName>ListTransferFF_To_TS360XML</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Transform_SQLGET.btm">
+      <TypeName>Transform_SQLGET</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="Transform_WCF2WCFFF.btm">
+      <TypeName>Transform_WCF2WCFFF</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="Transform_EmailFF1.btm">
+      <TypeName>Transform_EmailFF1</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="Transform_AddInGuid.btm">
+      <TypeName>Transform_AddInGuid</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="Transform_1.btm">
+      <TypeName>Transform_1</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="Transform_IXML.btm">
+      <TypeName>Transform_IXML</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="Transform_UserEmailSqlReq.btm">
+      <TypeName>Transform_UserEmailSqlReq</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="Transform_VerifyUserEmail.btm">
+      <TypeName>Transform_VerifyUserEmail</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo3.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo4.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo5.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo8.xml" />
+    <Map Include="Transform_Email.btm">
+      <TypeName>Transform_Email</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="Transform_BasketCount.btm">
+      <TypeName>Transform_BasketCount</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="Transform_EmailFF.btm">
+      <TypeName>Transform_EmailFF</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="Transform_Warnings.btm">
+      <TypeName>Transform_Warnings</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="ListTransferXML_To_VerifyPwdRequest.btm">
+      <TypeName>ListTransferXML_To_VerifyPwdRequest</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="ListTransferFF_To_TS360XMLEMAIL.btm">
+      <TypeName>ListTransferFF_To_TS360XMLEMAIL</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Map Include="Transform_RequestSQL2.btm">
+      <TypeName>Transform_RequestSQL2</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo2.xml" />
+    <Map Include="VerifyUserSQLReq.btm">
+      <TypeName>VerifyUserSQLReq</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo.xml" />
+    <Pipeline Include="Snd_FlatFile.btp">
+      <TypeName>Snd_FlatFile</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Pipeline>
+    <Map Include="ListTransfer_To_VerifyPwdRequest.btm">
+      <TypeName>ListTransfer_To_VerifyPwdRequest</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </Map>
+    <Content Include="ProfilesR2.BindingInfo.xml" />
+    <XLang Include="ProfilesR2.odx">
+      <TypeName>ProfilesR2</TypeName>
+      <Namespace>BTNextGen.Biztalk.ListTransferCarts</Namespace>
+    </XLang>
+    <Content Include="ProfilesR2_Custom.BindingInfo.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQL\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

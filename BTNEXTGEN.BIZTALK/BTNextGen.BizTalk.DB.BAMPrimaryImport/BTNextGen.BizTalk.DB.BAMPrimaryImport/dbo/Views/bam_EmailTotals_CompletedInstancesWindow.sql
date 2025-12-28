@@ -1,0 +1,1 @@
+﻿CREATE VIEW dbo.[bam_EmailTotals_CompletedInstancesWindow] AS SELECT * FROM dbo.[bam_EmailTotals_ViewEmailFromFile_CompletedAliasView]  WHERE (RecordID IS NOT NULL) AND RecordID BETWEEN          1 AND         10

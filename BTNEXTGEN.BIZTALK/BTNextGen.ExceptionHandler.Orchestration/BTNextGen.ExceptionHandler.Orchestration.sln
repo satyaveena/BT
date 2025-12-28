@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.ExceptionHandler.Orchestration", "BTNextGen.ExceptionHandler.Orchestration\BTNextGen.ExceptionHandler.Orchestration.btproj", "{3268BFA7-786F-4414-B456-4E8E26842640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.ExceptionHandler.Utility", "BTNextGen.ExceptionHandler.Utility\BTNextGen.ExceptionHandler.Utility.csproj", "{C541EFB8-B57B-4089-AFF7-3774FD6485B5}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://btdevadtfs:8080/tfs/baker_and_taylor
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BTNextGen.ExceptionHandler.Orchestration\\BTNextGen.ExceptionHandler.Orchestration.btproj
+		SccProjectName1 = BTNextGen.ExceptionHandler.Orchestration
+		SccLocalPath1 = BTNextGen.ExceptionHandler.Orchestration
+		SccProjectUniqueName2 = BTNextGen.ExceptionHandler.Utility\\BTNextGen.ExceptionHandler.Utility.csproj
+		SccProjectName2 = BTNextGen.ExceptionHandler.Utility
+		SccLocalPath2 = BTNextGen.ExceptionHandler.Utility
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3268BFA7-786F-4414-B456-4E8E26842640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3268BFA7-786F-4414-B456-4E8E26842640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3268BFA7-786F-4414-B456-4E8E26842640}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3268BFA7-786F-4414-B456-4E8E26842640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3268BFA7-786F-4414-B456-4E8E26842640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3268BFA7-786F-4414-B456-4E8E26842640}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C541EFB8-B57B-4089-AFF7-3774FD6485B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C541EFB8-B57B-4089-AFF7-3774FD6485B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C541EFB8-B57B-4089-AFF7-3774FD6485B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C541EFB8-B57B-4089-AFF7-3774FD6485B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

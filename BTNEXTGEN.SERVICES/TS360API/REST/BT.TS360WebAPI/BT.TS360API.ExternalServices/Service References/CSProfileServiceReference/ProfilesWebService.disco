@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost:100/TS360_ProfilesWebService/ProfilesWebService.asmx?wsdl" docRef="http://localhost:100/TS360_ProfilesWebService/ProfilesWebService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost:100/TS360_ProfilesWebService/ProfilesWebService.asmx" xmlns:q1="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService" binding="q1:ProfilesWebServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost:100/TS360_ProfilesWebService/ProfilesWebService.asmx" xmlns:q2="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService" binding="q2:ProfilesWebServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

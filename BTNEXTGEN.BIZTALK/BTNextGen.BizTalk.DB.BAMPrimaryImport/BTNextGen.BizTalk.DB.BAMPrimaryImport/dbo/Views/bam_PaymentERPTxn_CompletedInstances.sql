@@ -1,0 +1,1 @@
+﻿CREATE VIEW dbo.[bam_PaymentERPTxn_CompletedInstances] AS  SELECT * FROM dbo.[bam_PaymentERPTxn_Completed] WITH (NOLOCK)

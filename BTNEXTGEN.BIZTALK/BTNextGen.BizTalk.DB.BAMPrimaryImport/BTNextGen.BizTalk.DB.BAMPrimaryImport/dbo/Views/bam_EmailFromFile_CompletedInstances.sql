@@ -1,0 +1,1 @@
+﻿CREATE VIEW dbo.[bam_EmailFromFile_CompletedInstances] AS  SELECT * FROM dbo.[bam_EmailFromFile_Completed] WITH (NOLOCK)

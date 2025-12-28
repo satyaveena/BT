@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FF2C7A7-1CA6-4025-8348-B356F9341E1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BT.TS360API.MongoDB</RootNamespace>
+    <AssemblyName>BT.TS360API.MongoDB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\..\..\..\..\BT.TS360\BT.TS360.NoSQL\packages\CSharpDriver-2.7.3\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\..\..\..\..\BT.TS360\BT.TS360.NoSQL\packages\CSharpDriver-2.7.3\net45\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core">
+      <HintPath>..\..\..\..\..\BT.TS360\BT.TS360.NoSQL\packages\CSharpDriver-2.7.3\net45\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Legacy">
+      <HintPath>..\..\..\..\..\BT.TS360\BT.TS360.NoSQL\packages\CSharpDriver-2.7.3\net45\MongoDB.Driver.Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AppSettings.cs" />
+    <Compile Include="Common\CommonHelper.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\MongoDBExtensions.cs" />
+    <Compile Include="Common\OrderHelper.cs" />
+    <Compile Include="Contracts\BackgroundQueue.cs" />
+    <Compile Include="DataAccess\BaseMongoDAO.cs" />
+    <Compile Include="DataAccess\CommonDAO.cs" />
+    <Compile Include="DataAccess\OrderLinesDAO.cs" />
+    <Compile Include="Contracts\OrderLine.cs" />
+    <Compile Include="DataAccess\ProductsDAO.cs" />
+    <Compile Include="DataAccess\ProductsDAOManager.cs" />
+    <Compile Include="MongoDBHelper.cs" />
+    <Compile Include="MongoOrdersDAOManager.cs" />
+    <Compile Include="DataAccess\OrdersDAO.cs" />
+    <Compile Include="OrderLinesDAOManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BT.TS360API.Logging\BT.TS360API.Logging.csproj">
+      <Project>{8bf3380b-9e55-4a3d-8be6-31b0b3e9638f}</Project>
+      <Name>BT.TS360API.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BT.TS360API.ServiceContracts\BT.TS360API.ServiceContracts.csproj">
+      <Project>{d8eb01ed-8c7f-4085-8ef1-bfabc9cf21b6}</Project>
+      <Name>BT.TS360API.ServiceContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS360Constants\BT.TS360Constants.csproj">
+      <Project>{f02c91f8-1c30-4116-8cf2-bb4286a554f8}</Project>
+      <Name>BT.TS360Constants</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

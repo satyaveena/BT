@@ -1,0 +1,1297 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="6c584954-6ea4-4363-b8fe-425963b84776" LowerBound="1.1" HigherBound="308.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="CSBasketMigration" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="74c8985c-2b54-487c-82b6-02f5bd90196e" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CallSQLForGUID_PortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f99a791b-6ad9-4f31-96b2-3161666e5a67" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="eb37dace-c11d-4758-9d10-31b4f1b9ded8" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.87">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.GetBasketIDTypedPolling_627.TypedPolling" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="ede136ad-827c-4b23-aed2-4f3b41e1396e" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Archive" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="d2d10c16-44d1-4e7f-8e59-747e56d25a67" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c1d8312b-08c5-4ab3-adc1-4519fbe91e5d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.87">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.GetBasketIDTypedPolling_627.TypedPolling" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="7a6ae5e8-ef2d-4fdf-88bd-0da14b195a54" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_ArchiveWCF" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="c35f6550-5a8b-46bf-8bd0-72623452a85c" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="9f3d24c1-da22-42c7-8687-1ebbb460c251" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.98">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="bbfb2df7-8eeb-4bce-aa44-0801e8fa998f" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_WCFResponse" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="e6b0b1c3-0fc3-427e-8888-c3f805e14ecc" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="20893c82-a195-4dee-895f-3ab0c64dbac2" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.99">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="fc784921-9d18-477a-9d91-10df09fb94df" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_ArchiveBasket" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="62452edc-3e08-4d8e-91a3-ea9cb3cbb61d" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="2d2a44b4-bd73-4497-983f-e28284c67a41" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.57">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.newdataset" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="25b1fa9f-dbf9-4ee5-9a04-5b7661d79ead" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_ArchiveSQLRequest" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="50e49e51-6bd1-4cdc-918f-a2be2bb344fb" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="1647fbb8-73ec-44cf-8c8f-580ded9e2dc5" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.77">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="b37547bd-f133-4794-992f-f032aca46bcf" ParentLink="Module_PortType" LowerBound="46.1" HigherBound="53.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_SQLResponseArchive" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="19e22820-a793-492a-8f09-37d08020c205" ParentLink="PortType_OperationDeclaration" LowerBound="48.1" HigherBound="52.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="065cf822-af72-4a53-a2b0-7276635af047" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="50.13" HigherBound="50.85">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.RequestResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="63a21a87-0155-418f-8831-affb44050142" ParentLink="Module_PortType" LowerBound="53.1" HigherBound="60.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_LOB" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="9d63e8c5-0698-487b-81e4-9e2ce81ad46a" ParentLink="PortType_OperationDeclaration" LowerBound="55.1" HigherBound="59.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="7559f196-bfbe-49c2-b235-fda6306bfaf2" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="57.13" HigherBound="57.77">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="fb6f46d1-b9de-4c44-bae7-c72c80a4363f" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="57.79" HigherBound="57.151">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.RequestResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="b2156154-fc73-45b5-8501-37433433f68b" ParentLink="Module_PortType" LowerBound="60.1" HigherBound="67.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_FaultBasket" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f57d3ece-2c9e-44fb-8647-4939ed87c04f" ParentLink="PortType_OperationDeclaration" LowerBound="62.1" HigherBound="66.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d6d12e39-afbe-4959-89c9-cf405e2557bd" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="64.13" HigherBound="64.98">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="854c6423-398d-4bb9-b8c8-b277bb9be330" ParentLink="Module_PortType" LowerBound="67.1" HigherBound="74.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_basketerror" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="24b7cb5f-06da-4dab-bd6c-94d37d8591c3" ParentLink="PortType_OperationDeclaration" LowerBound="69.1" HigherBound="73.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="db1ef0c1-1d23-4529-8afc-87bf8f15359f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="71.13" HigherBound="71.114">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.BasketMigrationErrorTypedProcedure_dbo.procSetBasketSummaryError_R1" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="6b9f5177-3d1a-4c37-b6ce-5750e5c1dd3b" ParentLink="Module_ServiceDeclaration" LowerBound="74.1" HigherBound="307.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Orchestration_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="75db3b69-5789-4f3e-9334-d5fa9e345efa" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="110.1" HigherBound="111.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="nRecordCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="165fd08a-8d65-4ab0-afc1-2d2ff23ec803" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="111.1" HigherBound="112.1">
+                <om:Property Name="InitialValue" Value="1" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="nLoopCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="23b932d1-a06f-49e4-8fb1-451c23ae9a80" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="112.1" HigherBound="113.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="sXpath" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3c305119-9f05-4b94-968f-8e170a8c4470" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="113.1" HigherBound="114.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive1SQLGuid" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5dad322d-099a-4023-8a65-571f5d9c76e6" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="114.1" HigherBound="115.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive2SQLWCF" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="4f3356fb-3178-4922-bb34-ea5d39cc584b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="115.1" HigherBound="116.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive3SQLWCFResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="c9ea8828-4f1d-4b88-ae06-6fdfdaf79fc0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="116.1" HigherBound="117.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive4NewDataset" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="82cb7fe9-ba84-4b2e-870e-2074df87f1fb" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="117.1" HigherBound="118.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive5CompositeRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="873083c2-0ea5-41a1-aaf6-7912c7a652a9" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="118.1" HigherBound="119.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive6CompositeResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e0a9984a-a65a-4890-82d5-7a155505050e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="96.1" HigherBound="97.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.GetBasketIDTypedPolling_627.TypedPolling" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_GUIDFromSQL" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e10aed78-aa07-48e7-a461-8b1c16f91813" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="97.1" HigherBound="98.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_CS_WCF_Request" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="ed5b2910-99c7-44eb-91dd-be80859ecc24" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="98.1" HigherBound="99.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_CS_WCF_Response" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="82d35260-6a34-46ab-9ca3-41eba8b91bf1" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="99.1" HigherBound="100.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.newdataset" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageBasket" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3a3a5e0c-d414-49d0-89d5-f5e43ce2a59e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="100.1" HigherBound="101.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.Request" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_CompositeRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="2768afd9-26d6-430d-91e4-46b8d3f0c036" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="101.1" HigherBound="102.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.RequestResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_CompositeResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="823a6fd2-6463-4173-ab4b-487c0fc32bf0" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="102.1" HigherBound="103.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.GetBasketIDTypedPolling_627.TypedPolling" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive1_SQLCallForGuid" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="13b62625-571b-4159-995e-c8f2b99d6651" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="103.1" HigherBound="104.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive2_SQLWCF" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="22b424ce-1921-45e1-be8e-80a130d7a3b8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="104.1" HigherBound="105.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive3_SQLWCFResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="94e86598-7419-476c-953d-9a96a8ef8fa1" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="105.1" HigherBound="106.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.newdataset" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive4_NewDataset" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e2c7af58-a587-453b-8247-832cb93fcfa8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="106.1" HigherBound="107.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.Request" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive5_CompositeRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="af63a6cf-bb81-4692-99f0-099e2ba767c5" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="107.1" HigherBound="108.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.RequestResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive6_CompositeResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9dd204d3-a58c-410a-90cf-cd95a6f13cc5" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="108.1" HigherBound="109.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FaultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b667598f-f7df-4380-9977-26ff3fd078c7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="109.1" HigherBound="110.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.BasketMigrationErrorTypedProcedure_dbo.procSetBasketSummaryError_R1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageBasketError" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="67ef1350-3462-423e-bc85-8adde6fb2b6c" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="1441f9ae-c69a-4051-bc76-27c20d04e805" ParentLink="ServiceBody_Statement" LowerBound="121.1" HigherBound="132.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="CallSQLForGUID_Port" />
+                    <om:Property Name="MessageName" Value="Message_GUIDFromSQL" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_SQL" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="973777ff-f9d9-468d-94ad-19d2657a9b21" ParentLink="ServiceBody_Statement" LowerBound="132.1" HigherBound="305.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_Main" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableAssignment" OID="f1190c04-4546-4a32-a8d9-c10c9dd0f9c1" ParentLink="ComplexStatement_Statement" LowerBound="137.1" HigherBound="150.1">
+                        <om:Property Name="Expression" Value="//varArchive1SQLGuid=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.BasketMigration&quot;,&quot;Archive1MessageGUIDFromSQL&quot;));&#xD;&#xA;//varArchive2SQLWCF=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.BasketMigration&quot;,&quot;Archive2MessageWCFSQL&quot;));&#xD;&#xA;//varArchive3SQLWCFResponse=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.BasketMigration&quot;,&quot;Archive3MessageWCFSQLResponse&quot;));&#xD;&#xA;//varArchive4NewDataset=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.BasketMigration&quot;,&quot;Archive4MessageNewDataset&quot;));&#xD;&#xA;//varArchive5CompositeRequest=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.BasketMigration&quot;,&quot;Archive5MessageCompositeRequest&quot;));&#xD;&#xA;//varArchive6CompositeResponse=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.BasketMigration&quot;,&quot;Archive6MessageCompositeResponse&quot;));&#xD;&#xA;varArchive1SQLGuid=true;&#xD;&#xA;varArchive2SQLWCF=true;&#xD;&#xA;varArchive3SQLWCFResponse=true;&#xD;&#xA;varArchive4NewDataset=true;&#xD;&#xA;varArchive5CompositeRequest=true;&#xD;&#xA;varArchive6CompositeResponse=true;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="getSSO" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="fd574cd5-f825-4579-a4e1-45b9f39e8d47" ParentLink="ComplexStatement_Statement" LowerBound="150.1" HigherBound="163.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_ArchiveMessageGUIDFromSQL" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="05b6b62b-80fa-45e2-8e75-3b5a1c549b35" ParentLink="ReallyComplexStatement_Branch" LowerBound="151.21" HigherBound="163.1">
+                            <om:Property Name="Expression" Value="varArchive1SQLGuid == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveMessageGUIDFromSQL" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="57ed38f9-308a-402a-a5cc-6f855fd512fd" ParentLink="ComplexStatement_Statement" LowerBound="153.1" HigherBound="160.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchiveWCFMessage" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="9998598e-6646-41bb-b822-8c464f54e0e0" ParentLink="Construct_MessageRef" LowerBound="154.35" HigherBound="154.66">
+                                    <om:Property Name="Ref" Value="Message_Archive1_SQLCallForGuid" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="8d9ef018-afd1-440c-ae70-3b5b3436500b" ParentLink="ComplexStatement_Statement" LowerBound="156.1" HigherBound="159.1">
+                                    <om:Property Name="Expression" Value="Message_Archive1_SQLCallForGuid = Message_GUIDFromSQL; &#xD;&#xA;Message_Archive1_SQLCallForGuid(FILE.ReceivedFileName)=&quot;Archive1_SQLCallForGUID&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="6a2e5bbe-cb2d-4057-85e3-97fd6519e064" ParentLink="ComplexStatement_Statement" LowerBound="160.1" HigherBound="162.1">
+                                <om:Property Name="PortName" Value="Port_Archive1" />
+                                <om:Property Name="MessageName" Value="Message_Archive1_SQLCallForGuid" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_Archive" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="7f9d88a2-51a9-43c5-9d7c-738b1539c590" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Construct" OID="dbbf247c-3c03-4fe5-b31e-fd206236cdc4" ParentLink="ComplexStatement_Statement" LowerBound="163.1" HigherBound="169.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_WCF" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="5ec58ffb-b19e-4816-9273-f55f6b2e0f23" ParentLink="ComplexStatement_Statement" LowerBound="166.1" HigherBound="168.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.Biztalk.BasketMigration.Transform_1" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_wcf_request" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="d44fe0d9-26d9-405d-8450-6686a2f23b96" ParentLink="Transform_InputMessagePartRef" LowerBound="167.120" HigherBound="167.139">
+                                <om:Property Name="MessageRef" Value="Message_GUIDFromSQL" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="e8f8fe5f-64cf-4f11-915f-a537662af381" ParentLink="Transform_OutputMessagePartRef" LowerBound="167.36" HigherBound="167.69">
+                                <om:Property Name="MessageRef" Value="Message_CS_WCF_Request" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="1440a8bc-0ec6-4bd6-8731-9b352b1d2d64" ParentLink="Construct_MessageRef" LowerBound="164.31" HigherBound="164.53">
+                            <om:Property Name="Ref" Value="Message_CS_WCF_Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="9b3fda69-4eae-4015-bd1a-bc9628177628" ParentLink="ComplexStatement_Statement" LowerBound="169.1" HigherBound="182.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_ArchiveMessageSQLWCF" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="8fb79722-218e-48e1-be39-5a4b19098309" ParentLink="ReallyComplexStatement_Branch" LowerBound="170.21" HigherBound="182.1">
+                            <om:Property Name="Expression" Value="varArchive2SQLWCF == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveMessageSQLWCF" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="a0a4d909-da25-4a16-982c-fd2aa63d9b86" ParentLink="ComplexStatement_Statement" LowerBound="172.1" HigherBound="179.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchiveWCFMessage" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="519a1685-d4c4-48c8-9861-548bc08c3b54" ParentLink="ComplexStatement_Statement" LowerBound="175.1" HigherBound="178.1">
+                                    <om:Property Name="Expression" Value="Message_Archive2_SQLWCF = Message_CS_WCF_Request; &#xD;&#xA;Message_Archive2_SQLWCF(FILE.ReceivedFileName)=&quot;Archive2_SQLWCF&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="1d866022-c8eb-4b16-871a-17a0f54638a4" ParentLink="Construct_MessageRef" LowerBound="173.35" HigherBound="173.58">
+                                    <om:Property Name="Ref" Value="Message_Archive2_SQLWCF" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="c5f02599-0fbf-4e25-ac78-8adac05891f2" ParentLink="ComplexStatement_Statement" LowerBound="179.1" HigherBound="181.1">
+                                <om:Property Name="PortName" Value="Port_ArchiveWCF" />
+                                <om:Property Name="MessageName" Value="Message_Archive2_SQLWCF" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_ArchiveWCF" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="f5df566d-117b-4cf0-8dc9-407b8004e7f5" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="80e36446-ecc9-4e61-b543-5e8005558632" ParentLink="ComplexStatement_Statement" LowerBound="182.1" HigherBound="184.1">
+                        <om:Property Name="PortName" Value="Port_WCFBasket" />
+                        <om:Property Name="MessageName" Value="Message_CS_WCF_Request" />
+                        <om:Property Name="OperationName" Value="GetBasketDatasetXML" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_WCF" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="8b8c0d88-916c-4b1b-931a-66bea08c56b1" ParentLink="ComplexStatement_Statement" LowerBound="184.1" HigherBound="186.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="Port_WCFBasket" />
+                        <om:Property Name="MessageName" Value="Message_CS_WCF_Response" />
+                        <om:Property Name="OperationName" Value="GetBasketDatasetXML" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive_WCF" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="f1fbb219-337a-4d18-b96e-9ca2dc139159" ParentLink="ComplexStatement_Statement" LowerBound="186.1" HigherBound="199.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_ArchiveMessageSQLWCFResponse" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="241106d2-46f5-4c23-a881-86b5a87e340d" ParentLink="ReallyComplexStatement_Branch" LowerBound="187.21" HigherBound="199.1">
+                            <om:Property Name="Expression" Value="varArchive3SQLWCFResponse == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveMessageSQLWCFResponse" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="5b9d2c72-5a53-446b-a356-a5f32ba7ca29" ParentLink="ComplexStatement_Statement" LowerBound="189.1" HigherBound="196.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchiveWCFMessage" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="e28e36ea-19c0-45c0-bfd5-be6c7ab24773" ParentLink="Construct_MessageRef" LowerBound="190.35" HigherBound="190.66">
+                                    <om:Property Name="Ref" Value="Message_Archive3_SQLWCFResponse" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="12415d83-d642-4a64-b3b4-3eef7b82741b" ParentLink="ComplexStatement_Statement" LowerBound="192.1" HigherBound="195.1">
+                                    <om:Property Name="Expression" Value="Message_Archive3_SQLWCFResponse = Message_CS_WCF_Response; &#xD;&#xA;Message_Archive3_SQLWCFResponse(FILE.ReceivedFileName)=&quot;Archive3_SQLWCFResponse&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="19823715-5ffc-49b5-b385-8b9aaeb22d78" ParentLink="ComplexStatement_Statement" LowerBound="196.1" HigherBound="198.1">
+                                <om:Property Name="PortName" Value="Port_ArchiveWCFResponse" />
+                                <om:Property Name="MessageName" Value="Message_Archive3_SQLWCFResponse" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_ArchiveWCFResponse" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="24eb8ca9-a65f-436b-8598-ac90e10e91e2" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="d56d3bb1-9971-4fe6-b703-1f8a5c78589d" ParentLink="ComplexStatement_Statement" LowerBound="199.1" HigherBound="207.1">
+                        <om:Property Name="Expression" Value="nRecordCount = System.Convert.ToInt32(xpath(Message_CS_WCF_Response.parameters, &quot;count(//NewDataSet)&quot;));&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;abc&quot;, System.String.Format(&quot;the value is {0}&quot;, nRecordCount));&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Expression_1" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="809732ef-7e4a-4329-a317-b9495e2fb1c2" ParentLink="ComplexStatement_Statement" LowerBound="207.1" HigherBound="214.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct_NewDataset" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageAssignment" OID="edc0ae6d-a727-4464-9c3c-ef6828a703c0" ParentLink="ComplexStatement_Statement" LowerBound="210.1" HigherBound="213.1">
+                            <om:Property Name="Expression" Value="sXpath = System.String.Format(&quot;//NewDataSet[{0}]&quot;,nLoopCount);&#xD;&#xA;MessageBasket = xpath(Message_CS_WCF_Response.parameters,sXpath);" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="ba2885be-ef1d-42ed-8950-721f2b210c53" ParentLink="Construct_MessageRef" LowerBound="208.31" HigherBound="208.44">
+                            <om:Property Name="Ref" Value="MessageBasket" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="1dcd074b-e039-43f9-89c4-4969b179978c" ParentLink="ComplexStatement_Statement" LowerBound="214.1" HigherBound="227.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_ArchiveMessageNewDataset" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="6d42c5ee-4cbb-4688-9f2b-4da822692527" ParentLink="ReallyComplexStatement_Branch" LowerBound="215.21" HigherBound="227.1">
+                            <om:Property Name="Expression" Value="varArchive4NewDataset == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveMessageSQLWCFResponse" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="45671bd8-d21c-4b71-8cbf-d49678265adc" ParentLink="ComplexStatement_Statement" LowerBound="217.1" HigherBound="224.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchiveNewDataset" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="f2916f8b-350f-418c-891a-084602f3b3ac" ParentLink="ComplexStatement_Statement" LowerBound="220.1" HigherBound="223.1">
+                                    <om:Property Name="Expression" Value="Message_Archive4_NewDataset = MessageBasket; &#xD;&#xA;Message_Archive4_NewDataset(FILE.ReceivedFileName)=&quot;Archive4_NewDataset&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="ec5ef037-6241-46a7-9228-4bdcff785404" ParentLink="Construct_MessageRef" LowerBound="218.35" HigherBound="218.62">
+                                    <om:Property Name="Ref" Value="Message_Archive4_NewDataset" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="e4319f9e-d6fe-412a-bba9-bb20e43f88fb" ParentLink="ComplexStatement_Statement" LowerBound="224.1" HigherBound="226.1">
+                                <om:Property Name="PortName" Value="Port_ArchiveBasket" />
+                                <om:Property Name="MessageName" Value="Message_Archive4_NewDataset" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_ArchiveNewDataset" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="c4cb5af0-0c55-48c2-b2bd-013118d5b230" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Construct" OID="95b7b3cd-8c81-4df8-8e0b-774cf6d54f43" ParentLink="ComplexStatement_Statement" LowerBound="227.1" HigherBound="233.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct_RequestForSql" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="484c2502-42e9-4793-bfaf-a0a4450e1a20" ParentLink="ComplexStatement_Statement" LowerBound="230.1" HigherBound="232.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.Biztalk.BasketMigration.Transform_RequestForSQL" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_RequestForSQL" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="31b0792e-2c01-4eed-b220-ed44e733bbb1" ParentLink="Transform_InputMessagePartRef" LowerBound="231.123" HigherBound="231.136">
+                                <om:Property Name="MessageRef" Value="MessageBasket" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="228cc2c6-fc94-4db1-812b-821f2f8ca265" ParentLink="Transform_OutputMessagePartRef" LowerBound="231.36" HigherBound="231.60">
+                                <om:Property Name="MessageRef" Value="Message_CompositeRequest" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="922acdf1-b8a6-4d31-93c0-e114a717dec2" ParentLink="Construct_MessageRef" LowerBound="228.31" HigherBound="228.55">
+                            <om:Property Name="Ref" Value="Message_CompositeRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="e8add42c-b89d-4728-978e-00882bdc1d16" ParentLink="ComplexStatement_Statement" LowerBound="233.1" HigherBound="246.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_ArchiveMessageCompositeRequest" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="a6cbbeba-f5e8-44b7-875a-f3293ede820a" ParentLink="ReallyComplexStatement_Branch" LowerBound="234.21" HigherBound="246.1">
+                            <om:Property Name="Expression" Value="varArchive5CompositeRequest == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveMessageCompositeRequest" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="7c1f1403-f426-4885-b88e-773ecf3a1477" ParentLink="ComplexStatement_Statement" LowerBound="236.1" HigherBound="243.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchiveNewDataset" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="3ef92e3a-b6b1-485a-8abd-913e2d4168a9" ParentLink="ComplexStatement_Statement" LowerBound="239.1" HigherBound="242.1">
+                                    <om:Property Name="Expression" Value="Message_Archive5_CompositeRequest = Message_CompositeRequest; &#xD;&#xA;Message_Archive5_CompositeRequest(FILE.ReceivedFileName)=&quot;Archive5_CompositeRequest&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="b580a952-3d15-47fa-b539-968c29f2e8f2" ParentLink="Construct_MessageRef" LowerBound="237.35" HigherBound="237.68">
+                                    <om:Property Name="Ref" Value="Message_Archive5_CompositeRequest" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="e9e43ec9-f17b-43a0-b458-be35666f8e52" ParentLink="ComplexStatement_Statement" LowerBound="243.1" HigherBound="245.1">
+                                <om:Property Name="PortName" Value="Port_ArchiveSQLRequest" />
+                                <om:Property Name="MessageName" Value="Message_Archive5_CompositeRequest" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_SQLRequest" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="7b125977-740a-4258-a4da-5866226b5c43" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Scope" OID="988d9ef5-c1e9-49ab-afd5-990826357cd6" ParentLink="ComplexStatement_Statement" LowerBound="246.1" HigherBound="280.1">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Scope_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Send" OID="fb2ade33-56aa-4d84-b90e-b4b86a130508" ParentLink="ComplexStatement_Statement" LowerBound="251.1" HigherBound="253.1">
+                            <om:Property Name="PortName" Value="Port_LOB" />
+                            <om:Property Name="MessageName" Value="Message_CompositeRequest" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_SQLRequest2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="190b6b0e-d0f1-4868-86e3-9b37c802e6cf" ParentLink="ComplexStatement_Statement" LowerBound="253.1" HigherBound="255.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Port_LOB" />
+                            <om:Property Name="MessageName" Value="Message_CompositeResponse" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_SQLRequest" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Decision" OID="3b91e4eb-8c43-42c9-b3e8-087445fd9b50" ParentLink="ComplexStatement_Statement" LowerBound="255.1" HigherBound="268.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Decide_ArchiveMessageCompositeResponse" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="e0f1b417-e098-4cca-bc82-f4c29d313e27" ParentLink="ReallyComplexStatement_Branch" LowerBound="256.29" HigherBound="268.1">
+                                <om:Property Name="Expression" Value="varArchive6CompositeResponse == true" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ArchiveMessageCompositeRequest" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Construct" OID="231d32e6-274d-4caa-820c-e7e6807cd7f1" ParentLink="ComplexStatement_Statement" LowerBound="258.1" HigherBound="265.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ConstructArchiveNewDataset" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageAssignment" OID="6fa6f954-7509-465d-81bb-d7885ad0cf00" ParentLink="ComplexStatement_Statement" LowerBound="261.1" HigherBound="264.1">
+                                        <om:Property Name="Expression" Value="Message_Archive6_CompositeResponse = Message_CompositeResponse; &#xD;&#xA;Message_Archive6_CompositeResponse(FILE.ReceivedFileName)=&quot;Archive6_CompositeResponse&quot;; " />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="MessageAssignment_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="7c07c5e1-0683-4fd1-9291-575ccebdd679" ParentLink="Construct_MessageRef" LowerBound="259.43" HigherBound="259.77">
+                                        <om:Property Name="Ref" Value="Message_Archive6_CompositeResponse" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Send" OID="b9c0835c-3fec-45df-96dc-36e9cd558340" ParentLink="ComplexStatement_Statement" LowerBound="265.1" HigherBound="267.1">
+                                    <om:Property Name="PortName" Value="Port_SendSQLResponseArchive" />
+                                    <om:Property Name="MessageName" Value="Message_Archive6_CompositeResponse" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Send_SQLResponseArchive" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="8c6a95df-9fd4-4b7c-9629-24e37b5b60a4" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Catch" OID="4b509a6c-b4be-43eb-b117-d5e7943de89c" ParentLink="Scope_Catch" LowerBound="271.1" HigherBound="278.1">
+                            <om:Property Name="ExceptionName" Value="SQLex" />
+                            <om:Property Name="ExceptionType" Value="System.SystemException" />
+                            <om:Property Name="IsFaultMessage" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="CatchException_SQL" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="fdc14048-7af5-455e-9fb9-6c7de1040086" ParentLink="Catch_Statement" LowerBound="274.1" HigherBound="277.1">
+                                <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;sql&quot;, System.String.Format(&quot;the value is {0}&quot;, SQLex.InnerException));&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;sql&quot;, System.String.Format(&quot;the value is {0}&quot;, SQLex.Message));&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Expression_2" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="6cb0d936-c0a6-45f5-827f-3947a98ba5ae" ParentLink="Scope_Catch" LowerBound="283.1" HigherBound="303.1">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_Main" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="429a6b65-24d4-4763-9b66-f20759485b4f" ParentLink="Catch_Statement" LowerBound="286.1" HigherBound="299.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_Fault" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="f0edb786-f5e0-4695-a21b-5a636b417d97" ParentLink="Construct_MessageRef" LowerBound="287.35" HigherBound="287.47">
+                                <om:Property Name="Ref" Value="FaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="0bcea3df-85c1-4fa8-9d95-ed98795bc81b" ParentLink="ComplexStatement_Statement" LowerBound="289.1" HigherBound="298.1">
+                                <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;FaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;FaultMessage.FailureCategory=&quot;BTNextGen.Biztalk.ExpiredCreditCard Exception&quot;;&#xD;&#xA;FaultMessage.FaultDescription=ex.Message;&#xD;&#xA;FaultMessage.FaultCode=&quot;3003&quot;;&#xD;&#xA;FaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_5" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="52d1c4bf-1191-45c2-8baf-e97d14c6d64d" ParentLink="Catch_Statement" LowerBound="299.1" HigherBound="302.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;abc&quot;, System.String.Format(&quot;the value is {0}&quot;, ex.InnerException));&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;abc&quot;, System.String.Format(&quot;the value is {0}&quot;, ex.Message));&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9455a391-ea30-4f69-b42c-a7db23d883b5" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="77.1" HigherBound="79.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CSBasketMigration.CallSQLForGUID_PortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CallSQLForGUID_Port" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="aba646bb-80e2-4526-a544-f484c6e07612" ParentLink="PortDeclaration_CLRAttribute" LowerBound="77.1" HigherBound="78.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="02777b6e-c81c-4168-8033-0bcc0d5004d1" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="79.1" HigherBound="81.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="19" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CSBasketMigration.PortType_Archive" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_Archive1" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="d59c734b-443a-4586-a049-301f6d223013" ParentLink="PortDeclaration_CLRAttribute" LowerBound="79.1" HigherBound="80.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="52da6dc2-8ee7-42e5-a53a-92d791202ed3" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="81.1" HigherBound="83.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="21" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CSBasketMigration.PortType_ArchiveWCF" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_ArchiveWCF" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="868113ff-3ec0-4f7f-8472-807d71e8f643" ParentLink="PortDeclaration_CLRAttribute" LowerBound="81.1" HigherBound="82.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="6fa9ac90-f12d-48de-9e54-226b0d945c0f" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="83.1" HigherBound="85.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="64" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CSBasketMigration.PortType_WCFResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_ArchiveWCFResponse" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="7e07e15e-32eb-48d5-b348-6e76f93c5634" ParentLink="PortDeclaration_CLRAttribute" LowerBound="83.1" HigherBound="84.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="c6fc0084-6574-47fe-b43a-6aaa24ea3a90" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="85.1" HigherBound="87.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="112" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CSBasketMigration.PortType_ArchiveBasket" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_ArchiveBasket" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="2d3d6031-d67f-41c3-87b7-d69a078bbe7b" ParentLink="PortDeclaration_CLRAttribute" LowerBound="85.1" HigherBound="86.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f36ca81d-98a6-4481-97a8-9d8940b39162" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="87.1" HigherBound="89.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="194" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CSBasketMigration.PortType_SQLResponseArchive" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_SendSQLResponseArchive" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="cdc53e73-6758-4ca5-98f9-f81c862af551" ParentLink="PortDeclaration_CLRAttribute" LowerBound="87.1" HigherBound="88.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9e1b921a-08bf-4d77-926d-24c65e4df843" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="89.1" HigherBound="92.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="168" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="Transmitted" />
+                <om:Property Name="Type" Value="CSBasketMigration.PortType_LOB" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_LOB" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="9e61f050-30ff-4d22-8b72-ad9b62018c45" ParentLink="PortDeclaration_CLRAttribute" LowerBound="89.1" HigherBound="90.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="c9036de2-2d1f-4cff-a266-219dda96b73b" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="92.1" HigherBound="94.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="161" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CSBasketMigration.PortType_ArchiveSQLRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_ArchiveSQLRequest" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="8c483c89-d437-4e13-aa48-51171c41f42d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="92.1" HigherBound="93.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="1eaf9d41-a1f2-4420-b1c8-966bdafdb1b6" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="94.1" HigherBound="96.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="56" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BasketMigration.IProfilesR2Service" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_WCFBasket" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="daa8cbc5-a891-4e94-b5d2-23eed08016a0" ParentLink="PortDeclaration_CLRAttribute" LowerBound="94.1" HigherBound="95.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module CSBasketMigration
+{
+    internal porttype CallSQLForGUID_PortType
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.BasketMigration.GetBasketIDTypedPolling_627.TypedPolling
+        };
+    };
+    internal porttype PortType_Archive
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.BasketMigration.GetBasketIDTypedPolling_627.TypedPolling
+        };
+    };
+    internal porttype PortType_ArchiveWCF
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_InputMessage
+        };
+    };
+    internal porttype PortType_WCFResponse
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_OutputMessage
+        };
+    };
+    internal porttype PortType_ArchiveBasket
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.BasketMigration.newdataset
+        };
+    };
+    internal porttype PortType_ArchiveSQLRequest
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.Request
+        };
+    };
+    internal porttype PortType_SQLResponseArchive
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.RequestResponse
+        };
+    };
+    internal porttype PortType_LOB
+    {
+        requestresponse Operation_1
+        {
+            BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.Request, BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.RequestResponse
+        };
+    };
+    internal porttype PortType_FaultBasket
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_InputMessage
+        };
+    };
+    internal porttype PortType_basketerror
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.BasketMigration.BasketMigrationErrorTypedProcedure_dbo.procSetBasketSummaryError_R1
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service Orchestration_1
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements CallSQLForGUID_PortType CallSQLForGUID_Port;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Archive Port_Archive1;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_ArchiveWCF Port_ArchiveWCF;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_WCFResponse Port_ArchiveWCFResponse;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_ArchiveBasket Port_ArchiveBasket;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_SQLResponseArchive Port_SendSQLResponseArchive;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        [Microsoft.XLANGs.BaseTypes.DeliveryNotification(Microsoft.XLANGs.BaseTypes.DeliveryNotification.NotificationLevel.Transmitted)]
+        port uses PortType_LOB Port_LOB;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_ArchiveSQLRequest Port_ArchiveSQLRequest;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses BTNextGen.Biztalk.BasketMigration.IProfilesR2Service Port_WCFBasket;
+        message BTNextGen.Biztalk.BasketMigration.GetBasketIDTypedPolling_627.TypedPolling Message_GUIDFromSQL;
+        message BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_InputMessage Message_CS_WCF_Request;
+        message BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_OutputMessage Message_CS_WCF_Response;
+        message BTNextGen.Biztalk.BasketMigration.newdataset MessageBasket;
+        message BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.Request Message_CompositeRequest;
+        message BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.RequestResponse Message_CompositeResponse;
+        message BTNextGen.Biztalk.BasketMigration.GetBasketIDTypedPolling_627.TypedPolling Message_Archive1_SQLCallForGuid;
+        message BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_InputMessage Message_Archive2_SQLWCF;
+        message BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_OutputMessage Message_Archive3_SQLWCFResponse;
+        message BTNextGen.Biztalk.BasketMigration.newdataset Message_Archive4_NewDataset;
+        message BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.Request Message_Archive5_CompositeRequest;
+        message BTNextGen.Biztalk.BasketMigration.CompositeWhteOpsMaster.RequestResponse Message_Archive6_CompositeResponse;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage FaultMessage;
+        message BTNextGen.Biztalk.BasketMigration.BasketMigrationErrorTypedProcedure_dbo.procSetBasketSummaryError_R1 MessageBasketError;
+        System.Int32 nRecordCount;
+        System.Int32 nLoopCount;
+        System.String sXpath;
+        System.Boolean varArchive1SQLGuid;
+        System.Boolean varArchive2SQLWCF;
+        System.Boolean varArchive3SQLWCFResponse;
+        System.Boolean varArchive4NewDataset;
+        System.Boolean varArchive5CompositeRequest;
+        System.Boolean varArchive6CompositeResponse;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1441f9ae-c69a-4051-bc76-27c20d04e805")]
+            activate receive (CallSQLForGUID_Port.Operation_1, Message_GUIDFromSQL);
+            nRecordCount = 0;
+            nLoopCount = 1;
+            sXpath = "";
+            varArchive1SQLGuid = true;
+            varArchive2SQLWCF = true;
+            varArchive3SQLWCFResponse = true;
+            varArchive4NewDataset = true;
+            varArchive5CompositeRequest = true;
+            varArchive6CompositeResponse = true;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("973777ff-f9d9-468d-94ad-19d2657a9b21")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f1190c04-4546-4a32-a8d9-c10c9dd0f9c1")]
+                    //varArchive1SQLGuid=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.BasketMigration","Archive1MessageGUIDFromSQL"));
+                    //varArchive2SQLWCF=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.BasketMigration","Archive2MessageWCFSQL"));
+                    //varArchive3SQLWCFResponse=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.BasketMigration","Archive3MessageWCFSQLResponse"));
+                    //varArchive4NewDataset=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.BasketMigration","Archive4MessageNewDataset"));
+                    //varArchive5CompositeRequest=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.BasketMigration","Archive5MessageCompositeRequest"));
+                    //varArchive6CompositeResponse=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.BasketMigration","Archive6MessageCompositeResponse"));
+                    varArchive1SQLGuid=true;
+                    varArchive2SQLWCF=true;
+                    varArchive3SQLWCFResponse=true;
+                    varArchive4NewDataset=true;
+                    varArchive5CompositeRequest=true;
+                    varArchive6CompositeResponse=true;
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("fd574cd5-f825-4579-a4e1-45b9f39e8d47")]
+                    if (varArchive1SQLGuid == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("57ed38f9-308a-402a-a5cc-6f855fd512fd")]
+                        construct Message_Archive1_SQLCallForGuid
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8d9ef018-afd1-440c-ae70-3b5b3436500b")]
+                            Message_Archive1_SQLCallForGuid = Message_GUIDFromSQL; 
+                            Message_Archive1_SQLCallForGuid(FILE.ReceivedFileName)="Archive1_SQLCallForGUID"; 
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6a2e5bbe-cb2d-4057-85e3-97fd6519e064")]
+                        send (Port_Archive1.Operation_1, Message_Archive1_SQLCallForGuid);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("dbbf247c-3c03-4fe5-b31e-fd206236cdc4")]
+                    construct Message_CS_WCF_Request
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("5ec58ffb-b19e-4816-9273-f55f6b2e0f23")]
+                        transform (Message_CS_WCF_Request.parameters) = BTNextGen.Biztalk.BasketMigration.Transform_1 (Message_GUIDFromSQL);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("9b3fda69-4eae-4015-bd1a-bc9628177628")]
+                    if (varArchive2SQLWCF == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("a0a4d909-da25-4a16-982c-fd2aa63d9b86")]
+                        construct Message_Archive2_SQLWCF
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("519a1685-d4c4-48c8-9861-548bc08c3b54")]
+                            Message_Archive2_SQLWCF = Message_CS_WCF_Request; 
+                            Message_Archive2_SQLWCF(FILE.ReceivedFileName)="Archive2_SQLWCF"; 
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c5f02599-0fbf-4e25-ac78-8adac05891f2")]
+                        send (Port_ArchiveWCF.Operation_1, Message_Archive2_SQLWCF);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("80e36446-ecc9-4e61-b543-5e8005558632")]
+                    send (Port_WCFBasket.GetBasketDatasetXML, Message_CS_WCF_Request);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8b8c0d88-916c-4b1b-931a-66bea08c56b1")]
+                    receive (Port_WCFBasket.GetBasketDatasetXML, Message_CS_WCF_Response);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f1fbb219-337a-4d18-b96e-9ca2dc139159")]
+                    if (varArchive3SQLWCFResponse == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("5b9d2c72-5a53-446b-a356-a5f32ba7ca29")]
+                        construct Message_Archive3_SQLWCFResponse
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("12415d83-d642-4a64-b3b4-3eef7b82741b")]
+                            Message_Archive3_SQLWCFResponse = Message_CS_WCF_Response; 
+                            Message_Archive3_SQLWCFResponse(FILE.ReceivedFileName)="Archive3_SQLWCFResponse"; 
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("19823715-5ffc-49b5-b385-8b9aaeb22d78")]
+                        send (Port_ArchiveWCFResponse.Operation_1, Message_Archive3_SQLWCFResponse);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d56d3bb1-9971-4fe6-b703-1f8a5c78589d")]
+                    nRecordCount = System.Convert.ToInt32(xpath(Message_CS_WCF_Response.parameters, "count(//NewDataSet)"));
+                    System.Diagnostics.EventLog.WriteEntry("abc", System.String.Format("the value is {0}", nRecordCount));
+                    
+                    
+                    
+                    
+                    
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("809732ef-7e4a-4329-a317-b9495e2fb1c2")]
+                    construct MessageBasket
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("edc0ae6d-a727-4464-9c3c-ef6828a703c0")]
+                        sXpath = System.String.Format("//NewDataSet[{0}]",nLoopCount);
+                        MessageBasket = xpath(Message_CS_WCF_Response.parameters,sXpath);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1dcd074b-e039-43f9-89c4-4969b179978c")]
+                    if (varArchive4NewDataset == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("45671bd8-d21c-4b71-8cbf-d49678265adc")]
+                        construct Message_Archive4_NewDataset
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f2916f8b-350f-418c-891a-084602f3b3ac")]
+                            Message_Archive4_NewDataset = MessageBasket; 
+                            Message_Archive4_NewDataset(FILE.ReceivedFileName)="Archive4_NewDataset"; 
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e4319f9e-d6fe-412a-bba9-bb20e43f88fb")]
+                        send (Port_ArchiveBasket.Operation_1, Message_Archive4_NewDataset);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("95b7b3cd-8c81-4df8-8e0b-774cf6d54f43")]
+                    construct Message_CompositeRequest
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("484c2502-42e9-4793-bfaf-a0a4450e1a20")]
+                        transform (Message_CompositeRequest) = BTNextGen.Biztalk.BasketMigration.Transform_RequestForSQL (MessageBasket);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e8add42c-b89d-4728-978e-00882bdc1d16")]
+                    if (varArchive5CompositeRequest == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7c1f1403-f426-4885-b88e-773ecf3a1477")]
+                        construct Message_Archive5_CompositeRequest
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3ef92e3a-b6b1-485a-8abd-913e2d4168a9")]
+                            Message_Archive5_CompositeRequest = Message_CompositeRequest; 
+                            Message_Archive5_CompositeRequest(FILE.ReceivedFileName)="Archive5_CompositeRequest"; 
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e9e43ec9-f17b-43a0-b458-be35666f8e52")]
+                        send (Port_ArchiveSQLRequest.Operation_1, Message_Archive5_CompositeRequest);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("988d9ef5-c1e9-49ab-afd5-990826357cd6")]
+                    scope
+                    {
+                        body
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("fb2ade33-56aa-4d84-b90e-b4b86a130508")]
+                            send (Port_LOB.Operation_1, Message_CompositeRequest);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("190b6b0e-d0f1-4868-86e3-9b37c802e6cf")]
+                            receive (Port_LOB.Operation_1, Message_CompositeResponse);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3b91e4eb-8c43-42c9-b3e8-087445fd9b50")]
+                            if (varArchive6CompositeResponse == true)
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("231d32e6-274d-4caa-820c-e7e6807cd7f1")]
+                                construct Message_Archive6_CompositeResponse
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("6fa6f954-7509-465d-81bb-d7885ad0cf00")]
+                                    Message_Archive6_CompositeResponse = Message_CompositeResponse; 
+                                    Message_Archive6_CompositeResponse(FILE.ReceivedFileName)="Archive6_CompositeResponse"; 
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("b9c0835c-3fec-45df-96dc-36e9cd558340")]
+                                send (Port_SendSQLResponseArchive.Operation_1, Message_Archive6_CompositeResponse);
+                            }
+                        }
+                        exceptions
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4b509a6c-b4be-43eb-b117-d5e7943de89c")]
+                            catch (System.SystemException SQLex)
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("fdc14048-7af5-455e-9fb9-6c7de1040086")]
+                                System.Diagnostics.EventLog.WriteEntry("sql", System.String.Format("the value is {0}", SQLex.InnerException));
+                                System.Diagnostics.EventLog.WriteEntry("sql", System.String.Format("the value is {0}", SQLex.Message));
+                            }
+                        }
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("6cb0d936-c0a6-45f5-827f-3947a98ba5ae")]
+                    catch (System.SystemException ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("429a6b65-24d4-4763-9b66-f20759485b4f")]
+                        construct FaultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0bcea3df-85c1-4fa8-9d95-ed98795bc81b")]
+                            // Create fault exception Message
+                            FaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            // Assign Properties
+                            FaultMessage.FailureCategory="BTNextGen.Biztalk.ExpiredCreditCard Exception";
+                            FaultMessage.FaultDescription=ex.Message;
+                            FaultMessage.FaultCode="3003";
+                            FaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("52d1c4bf-1191-45c2-8baf-e97d14c6d64d")]
+                        System.Diagnostics.EventLog.WriteEntry("abc", System.String.Format("the value is {0}", ex.InnerException));
+                        System.Diagnostics.EventLog.WriteEntry("abc", System.String.Format("the value is {0}", ex.Message));
+                    }
+                }
+            }
+        }
+    }
+}
+

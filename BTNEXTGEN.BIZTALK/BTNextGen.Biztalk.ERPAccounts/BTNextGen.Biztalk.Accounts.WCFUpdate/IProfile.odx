@@ -1,0 +1,109 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="610d59d5-401d-495c-a7e8-4a0b9b428274" LowerBound="1.1" HigherBound="27.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.Accounts.WCFUpdate" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="fbc292ed-3d3c-496f-99e8-8712c6e524dd" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IIProfile&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="ac3a6e03-4f6e-4eff-83b4-b969098d6917" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;UpdatePartialProfile&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="UpdatePartialProfile" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="12bb1ebe-6414-4036-bca5-0b3f842449f9" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.56">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Accounts.WCFUpdate.IIProfile_UpdatePartialProfile_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IIProfile_UpdatePartialProfile_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IIProfile/UpdatePartialProfile&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="fb71b2eb-6b6a-4bc9-ba03-9526f5c85b6a" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.58" HigherBound="16.102">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Accounts.WCFUpdate.IIProfile_UpdatePartialProfile_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IIProfile_UpdatePartialProfile_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IIProfile/UpdatePartialProfileResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="8dad9325-2c36-49d0-af8b-f4e2f50560eb" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IIProfile_UpdatePartialProfile_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile_UpdatePartialProfile_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="5afab348-33db-4add-a693-0c674fe67638" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.Accounts.WCFUpdate.IProfile_tempuri_org.UpdatePartialProfile" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="ecc77751-3992-4b83-88fd-fc3b379a0fb6" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IIProfile_UpdatePartialProfile_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile_UpdatePartialProfile_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="49eef8b3-d214-400d-9b1e-3aec9f36a60d" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.Accounts.WCFUpdate.IProfile_tempuri_org.UpdatePartialProfileResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="2c4f5fb0-98c0-4c96-86d8-855cb48815ea" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="26.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;IProfile&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IProfileClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="a40f9344-4ded-4d21-a7aa-7feb8065af61" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.Accounts.WCFUpdate
+{
+    public messagetype IIProfile_UpdatePartialProfile_InputMessage
+    {
+        body IProfile_tempuri_org.UpdatePartialProfile parameters;
+    };
+    public messagetype IIProfile_UpdatePartialProfile_OutputMessage
+    {
+        body IProfile_tempuri_org.UpdatePartialProfileResponse parameters;
+    };
+    public porttype IIProfile
+    {
+        requestresponse UpdatePartialProfile
+        {
+            IIProfile_UpdatePartialProfile_InputMessage, IIProfile_UpdatePartialProfile_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service IProfileClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

@@ -1,0 +1,1640 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="deb8e398-de6e-4965-a117-55d82afa6b6a" LowerBound="1.1" HigherBound="167.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.ReconCybersource2" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="20919c2a-7d5a-4096-b04a-83f8c88fe999" ParentLink="Module_PortType" LowerBound="20.1" HigherBound="27.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_FaultPort" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="8cf5c8f2-247e-40ec-8864-0c09d3d555e3" ParentLink="PortType_OperationDeclaration" LowerBound="22.1" HigherBound="26.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="3473138a-a8a4-47fa-9896-a01b1de76258" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="24.13" HigherBound="24.82">
+                    <om:Property Name="Ref" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="c22cca83-fbfe-4cc6-9a0d-f34ed2ed3b93" ParentLink="Module_PortType" LowerBound="27.1" HigherBound="34.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IOrdersService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IOrdersService" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="8b09aded-e8a8-487a-bbb0-4fb3afea6179" ParentLink="PortType_OperationDeclaration" LowerBound="29.1" HigherBound="33.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;GetCyberSourceReport&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="GetCyberSourceReport" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="681beb83-aa6b-4768-a57c-77e358f9cabf" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="31.13" HigherBound="31.61">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.IOrdersService_GetCyberSourceReport_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IOrdersService_GetCyberSourceReport_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IOrdersService/GetCyberSourceReport&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="47624ec2-5bf1-4f9d-82e2-8e547fe60a4f" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="31.63" HigherBound="31.112">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.IOrdersService_GetCyberSourceReport_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IOrdersService_GetCyberSourceReport_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IOrdersService/GetCyberSourceReportResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="0f8d1951-7a84-41cd-b795-b30ab351542d" ParentLink="OperationDeclaration_FaultMessageRef" LowerBound="31.114" HigherBound="31.143">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.MultipartType_Fault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Fault_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="868f9b0e-4c93-42e7-8fca-b95e5d88406a" ParentLink="Module_PortType" LowerBound="34.1" HigherBound="41.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Archive" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="70cf2c40-753c-4fc5-856b-e2af8fc99304" ParentLink="PortType_OperationDeclaration" LowerBound="36.1" HigherBound="40.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="fe4f9415-0d2f-4f40-b5d4-73369a0ddb16" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="38.13" HigherBound="38.61">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.IOrdersService_GetCyberSourceReport_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="deee4c65-21d0-412b-b235-d045a2255841" ParentLink="Module_PortType" LowerBound="41.1" HigherBound="48.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Dummyx" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="49f81aad-5629-4d3c-ab2c-fcda731583d1" ParentLink="PortType_OperationDeclaration" LowerBound="43.1" HigherBound="47.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e21d954d-285a-4d64-9cde-3e080fc14bd2" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="45.13" HigherBound="45.34">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.ReconCybersourceDummy" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="4a85ff20-c627-414e-8c58-9f54049a3943" ParentLink="Module_PortType" LowerBound="48.1" HigherBound="55.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_ERP" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="ccb456f9-8e02-4798-9ad9-2e326b06df8b" ParentLink="PortType_OperationDeclaration" LowerBound="50.1" HigherBound="54.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="46b0eeb7-ac79-438a-954a-5e329f10f9a5" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="52.13" HigherBound="52.38">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.CyberSourceResponseBackup" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f263046a-b6a0-4ac2-bde3-ae679b092cf9" ParentLink="Module_PortType" LowerBound="55.1" HigherBound="62.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_ArchiveOut" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="afeaaeda-4bf6-4f55-9a00-33e0a40d6163" ParentLink="PortType_OperationDeclaration" LowerBound="57.1" HigherBound="61.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="efd66783-6338-4b9c-8706-fb52271b6df8" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="59.13" HigherBound="59.62">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.IOrdersService_GetCyberSourceReport_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="5f1362d3-c1d4-44ba-92ef-6a6a931ab928" ParentLink="Module_PortType" LowerBound="62.1" HigherBound="69.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b872eec4-ee7c-4ac1-8ab3-3063c3a2938f" ParentLink="PortType_OperationDeclaration" LowerBound="64.1" HigherBound="68.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="7c695ad3-7e00-43a8-bd37-1bc2dbf4b108" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="66.13" HigherBound="66.42">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceBody" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="4d4ba224-1bc7-4035-bd0e-12f455f4feef" ParentLink="Module_PortType" LowerBound="69.1" HigherBound="76.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="62aed62b-5491-41d6-ae1f-b4ca10aef442" ParentLink="PortType_OperationDeclaration" LowerBound="71.1" HigherBound="75.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="1012bc50-4e0d-4216-8baf-a64533191b72" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="73.13" HigherBound="73.31">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.MultipartType_Flat" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="0367e0e4-065a-4065-8aef-11f4939f900b" ParentLink="Module_PortType" LowerBound="76.1" HigherBound="83.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_ArchiveRAW" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="92885704-92d0-4fd8-b3b0-f748aa6b5d96" ParentLink="PortType_OperationDeclaration" LowerBound="78.1" HigherBound="82.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="74fb6e7d-1e49-421e-956c-3ef8621d5315" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="80.13" HigherBound="80.31">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.MultipartType_Flat" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="30d12097-d5a9-46ea-9138-0d0eb75afe57" ParentLink="Module_PortType" LowerBound="83.1" HigherBound="90.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_EmailBadDataResponse" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="a9716e09-150f-422f-bc74-a2c2affb8f48" ParentLink="PortType_OperationDeclaration" LowerBound="85.1" HigherBound="89.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="060a03b7-77c7-4663-ac75-99d3bcca4176" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="87.13" HigherBound="87.31">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.MultipartType_Flat" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="3ad142a8-a1a3-4352-b439-fc6e9703279a" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="MultipartType_Fault" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="cc98058a-dcad-4b25-b582-6b8e2639f8dd" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="BTS.soap_envelope_1__1.Fault" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart_Fault" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="f379836b-5dc1-434a-a85f-e8966a0cee4b" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="MultipartType_Flat" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="c325a4cf-cf11-4d7a-8ed4-91f4bf26f131" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart_Body" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="2e321cc3-9dd5-44ce-ba6e-0a6d804a08a6" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IOrdersService_GetCyberSourceReport_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IOrdersService_GetCyberSourceReport_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="71112f2e-822a-4c2b-a117-28649ffab1b1" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ReconCybersource2.IOrder_tempuri_org.GetCyberSourceReport" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="b982d91e-b118-4b59-828b-b8e60c36cf1e" ParentLink="Module_MessageType" LowerBound="16.1" HigherBound="20.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IOrdersService_GetCyberSourceReport_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IOrdersService_GetCyberSourceReport_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="23fb4ee5-4948-4dc1-a99c-b96be0579719" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ReconCybersource2.IOrder_tempuri_org.GetCyberSourceReportResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="c4d1464f-2d4a-4f48-9bca-dcd985ed739c" ParentLink="Module_ServiceDeclaration" LowerBound="90.1" HigherBound="166.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;IOrder&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IOrderClient" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="d794bf19-a552-4a50-a0e0-13969b57eeed" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="118.1" HigherBound="119.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varMerchant2Active" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="6625332c-5e25-4769-8750-51d997bfba99" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="119.1" HigherBound="120.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varMerchant2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2b94cefd-8ec4-4328-a308-249c5640e1e9" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="120.1" HigherBound="121.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varPassword2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="01ba55e6-0a1d-4d46-8beb-615de25fe055" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="121.1" HigherBound="122.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varUser2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="6922ca86-7e7e-4d58-9b41-44e9b68c8217" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="122.1" HigherBound="123.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varServer2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8561a197-6778-4631-abf8-00c347061a9a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="123.1" HigherBound="124.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varErrorMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="26323858-339b-4ffa-91ca-2e2b877a2a90" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="124.1" HigherBound="125.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlDoc" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b83fe51a-c6ed-4796-af44-2ed60b136d47" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="125.1" HigherBound="126.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Text.StringBuilder" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgbody" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7aa03106-bcf0-4b45-a72e-d8654fadee2d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="126.1" HigherBound="127.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="sHold" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="621a3f67-cf1f-479f-bf66-ba468774e2a6" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="127.1" HigherBound="128.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlQRYRECONCYBERSOURCE" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ae085f97-c165-499c-970c-2102f1f15087" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="128.1" HigherBound="129.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varServer1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="e5d29257-765c-4dbb-a3bc-9cddbe55a2fe" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="129.1" HigherBound="130.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlFLATRECYBERSOURCE" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="1062efe0-109e-4b6f-81fb-fb0c77bdd680" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="130.1" HigherBound="131.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="sXpath" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="bdccd951-da47-48fb-a11e-9588dfcadb8d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="131.1" HigherBound="132.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varReportYear" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="af7bd79e-e375-4680-a1b9-a85bca351860" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="132.1" HigherBound="133.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varReportDay" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="f5d18744-7e87-4bb8-be63-e04b10ffaac1" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="133.1" HigherBound="134.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varReportMonth" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="1b5d7862-11ba-48aa-8f05-5fce377cc2c2" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="134.1" HigherBound="135.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varMerchant1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="cb87cf32-dacd-4baf-b889-9430fa49aad4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="135.1" HigherBound="136.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varUser1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b7aa17bf-ec9e-49f7-bf41-2da61495b614" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="136.1" HigherBound="137.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varPassword1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ebf837d1-9b24-4330-87f1-9afde747e922" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="137.1" HigherBound="138.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive1WCF" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="bad924b6-f0cc-4bab-9739-38b4d3867e93" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="138.1" HigherBound="139.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive2BackupResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="153f7314-d62b-4ea5-8085-01405065f6a0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="139.1" HigherBound="140.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive3RAW" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="e5f23467-936b-47bf-a08f-79064b571ba3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="140.1" HigherBound="141.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.DateTime" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varDateYesterday" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9da362bc-99e7-4556-9cdb-590b3ffe779b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="141.1" HigherBound="142.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.DateTime" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varDateYesterday2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="31f96887-f600-4c07-8f6c-c51d9e23ebd9" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="142.1" HigherBound="143.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varReportDate" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="c5eecd25-4817-464a-a75a-d009b6ca1846" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="143.1" HigherBound="144.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varDaysBack" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ef638117-7b77-4be1-a485-875df6c5ff9b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="144.1" HigherBound="145.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int16" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="intDaysBack" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="f970b451-a652-45f1-9011-7fb5483b27cc" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="145.1" HigherBound="146.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Exception" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varException" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ab0197fb-14bb-4243-82c6-bfcf797e7c1d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="146.1" HigherBound="147.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varBadDataResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="03230335-2234-4b17-b0c2-74b927d06a4d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="109.1" HigherBound="110.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageXMLDummy" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="98e8d0bf-ed1d-45b8-b022-dc5f9fcf7ca2" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="110.1" HigherBound="111.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FaultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="18ecbc62-723d-4500-8f7c-016ff6bc2512" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="111.1" HigherBound="112.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.IOrdersService_GetCyberSourceReport_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Request" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="0cc62721-2b0e-4a52-8b81-abf602c0ed48" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="112.1" HigherBound="113.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.IOrdersService_GetCyberSourceReport_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Response" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="41951b8f-90c8-4c00-b962-ed9b0ac895eb" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="113.1" HigherBound="114.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.ReconCybersourceDummy" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Dummy" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="49a65fac-2043-4da2-bea6-5a946863651c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="114.1" HigherBound="115.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.CyberSourceResponseBackup" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_ResponseBackup" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a2f383de-bc0d-41ac-8011-94ca1e8b785b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="115.1" HigherBound="116.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.IOrdersService_GetCyberSourceReport_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive1_WCF" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="dc68dc6e-49bd-4e28-8d80-4b98b88636af" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="116.1" HigherBound="117.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.CyberSourceResponseBackup" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive2_BackupResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="705d5a97-a5c8-43f7-8f2e-0c9e14fa82d9" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="117.1" HigherBound="118.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.MultipartType_Flat" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive3_RAWFile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="636b8133-f202-472c-9722-eb797ed38754" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="66daced9-8c83-4abe-bb10-1f2f55f7d6c1" ParentLink="ServiceBody_Statement">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_Dummy" />
+                    <om:Property Name="MessageName" Value="Message_Dummy" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_Dummy" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="43fff510-b9ba-4129-b9b0-6001cc8ea1f2" ParentLink="ServiceBody_Statement">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_Main" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableDeclaration" OID="b2931944-f941-4012-9c01-ab682778deb1" ParentLink="Scope_VariableDeclaration" LowerBound="161.1" HigherBound="162.1">
+                        <om:Property Name="UseDefaultConstructor" Value="True" />
+                        <om:Property Name="Type" Value="System.Text.StringBuilder" />
+                        <om:Property Name="ParamDirection" Value="In" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Variable_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="f1a083e6-4300-4a17-855a-dc1fd536ab04" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="Expression" Value="varArchive1WCF=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;Archive1WCF&quot;));&#xD;&#xA;varArchive2BackupResponse=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;Archive2ResponseBackup&quot;));&#xD;&#xA;varArchive3RAW=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;Archive3RAWFile&quot;));&#xD;&#xA;varMerchant1=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;Merchant1&quot;);                                                                                                               &#xD;&#xA;varServer1=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;Server1&quot;);  &#xD;&#xA;varUser1=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;User1&quot;);  &#xD;&#xA;varPassword1=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;Password1&quot;);  &#xD;&#xA;varDaysBack=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;DaysBack&quot;);  &#xD;&#xA;&#xD;&#xA;varMerchant2Active=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;Merchant2Active&quot;));&#xD;&#xA;varMerchant2=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;Merchant2&quot;);                                                                                                               &#xD;&#xA;varServer2=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;Server2&quot;);  &#xD;&#xA;varUser2=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;User2&quot;);  &#xD;&#xA;varPassword2=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;,&quot;Password2&quot;);  &#xD;&#xA;&#xD;&#xA;intDaysBack=System.Convert.ToInt16(varDaysBack);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;varDateYesterday = System.DateTime.Now.AddDays(-intDaysBack);&#xD;&#xA;&#xD;&#xA;varReportMonth = System.Convert.ToString(varDateYesterday.Month);&#xD;&#xA;varReportYear = System.Convert.ToString(varDateYesterday.Year);&#xD;&#xA;varReportDay = System.Convert.ToString(varDateYesterday.Day);&#xD;&#xA;&#xD;&#xA;varReportMonth = varReportMonth.PadLeft(2,'0');&#xD;&#xA;varReportDay = varReportDay.PadLeft(2,'0');&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.Biztalk.ReconCyberSource2&quot;, &quot;Cybersource &quot; + varReportMonth + &quot;/&quot; + varReportDay + &quot;/&quot; + varReportYear );&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="getSSO and Dates" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="b1d098f3-d0c6-4624-9165-ef97417f5a1a" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_WCF" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageRef" OID="420a55a7-0b90-428f-ac2d-7b3bfeb46f55" ParentLink="Construct_MessageRef">
+                            <om:Property Name="Ref" Value="Message_Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessageAssignment" OID="042004c1-a6e5-4a85-ab0a-cdc90d063269" ParentLink="ComplexStatement_Statement">
+                            <om:Property Name="Expression" Value="//For Testing... &#xD;&#xA;//varCurrentYear = &quot;2013&quot;; &#xD;&#xA;//sHold = &quot;&lt;CommerceServerProfilesQuery ProfileType=\&quot;CreditCard\&quot;&gt;&lt;CLAUSE OPER=\&quot;equal\&quot; xmlns=\&quot;http://schemas.microsoft.com/CommerceServer/2004/02/Expressions\&quot;&gt;&lt;PROPERTY ID=\&quot;expiration_year\&quot; MULTIVAL=\&quot;False\&quot; TYPE=\&quot;Number\&quot;/&gt;&lt;IMMED-VAL TYPE=\&quot;String\&quot;&gt;&lt;VALUE&gt;&quot; + varCurrentYear + &quot;&lt;/VALUE&gt;&lt;/IMMED-VAL&gt;&lt;/CLAUSE&gt;&lt;/CommerceServerProfilesQuery&gt;&quot;; &#xD;&#xA;//sHold = &quot;&lt;GetCyberSourceReport xmlns=\&quot;http://tempuri.org/\&quot;&gt;&lt;currentYear&gt;&quot; + varCurrentYear + &quot;&lt;/currentYear&gt;&lt;month&gt;&quot; + varCurrentMonth + &quot;&lt;/month&gt;&lt;isPrimaryCard&gt;true&lt;/isPrimaryCard&gt;&lt;/GetExpiredCards&gt;&quot;;&#xD;&#xA;//sHold = &quot;&lt;GetCyberSourceReport xmlns=\&quot;http://tempuri.org/\&quot;&gt;&lt;reportRequest&gt;&lt;CyberSourceMerchantId&gt;idehao&lt;/CyberSourceMerchantId&gt;&lt;CyberSourcePassword&gt;Password345&lt;/CyberSourcePassword&gt;&lt;CyberSourceServerName&gt;ebctest.cybersource.com/ebctest&lt;/CyberSourceServerName&gt;&lt;CyberSourceUserName&gt;Selfj&lt;/CyberSourceUserName&gt;&lt;Day&gt;01&lt;/Day&gt;&lt;Month&gt;10&lt;/Month&gt;&lt;ReportFormat&gt;csv&lt;/ReportFormat&gt;&lt;ReportName&gt;PaymentBatchDetailReport&lt;/ReportName&gt;&lt;Year&gt;2011&lt;/Year&gt;&lt;/reportRequest&gt;&lt;/GetCyberSourceReport&gt;&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//xmlQRYRECONCYBERSOURCE.LoadXml(@sHold); &#xD;&#xA;&#xD;&#xA;xmlQRYRECONCYBERSOURCE.LoadXml(&quot;&lt;GetCyberSourceReport xmlns=\&quot;http://tempuri.org/\&quot; xmlns:btn=\&quot;http://schemas.datacontract.org/2004/07/BTNextGen.Services.IOrders\&quot; &gt;&lt;reportRequest&gt;&lt;btn:CyberSourceMerchantId&gt;&quot; + varMerchant1 + &quot;&lt;/btn:CyberSourceMerchantId&gt;&lt;btn:CyberSourcePassword&gt;&quot; + varPassword1 + &quot;&lt;/btn:CyberSourcePassword&gt;&lt;btn:CyberSourceServerName&gt;&quot; + varServer1 + &quot;&lt;/btn:CyberSourceServerName&gt;&lt;btn:CyberSourceUserName&gt;&quot; + varUser1 + &quot;&lt;/btn:CyberSourceUserName&gt;&lt;btn:Day&gt;&quot; + varReportDay + &quot;&lt;/btn:Day&gt;&lt;btn:Month&gt;&quot; + varReportMonth + &quot;&lt;/btn:Month&gt;&lt;btn:ReportFormat&gt;csv&lt;/btn:ReportFormat&gt;&lt;btn:ReportName&gt;PaymentBatchDetailReport&lt;/btn:ReportName&gt;&lt;btn:Year&gt;&quot; + varReportYear + &quot;&lt;/btn:Year&gt;&lt;/reportRequest&gt;&lt;/GetCyberSourceReport&gt;&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Message_Request.parameters = xmlQRYRECONCYBERSOURCE;" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="MessageAssignment_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="3681b0ba-044f-419b-973c-22e98bcc48f2" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_ArchiveWCFMessage" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="ddc9391a-38dc-448f-a8c9-f5818282dffc" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="Expression" Value="varArchive1WCF == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveWCFMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="ccf5e75d-9d93-44b1-8a7b-a33fb963821f" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchiveWCFMessage" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="97c4a9a4-1cf0-4768-8280-7f94d9e1f32a" ParentLink="Construct_MessageRef">
+                                    <om:Property Name="Ref" Value="Message_Archive1_WCF" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="380c859f-ea3a-40e8-b8ae-85bdd703b132" ParentLink="ComplexStatement_Statement">
+                                    <om:Property Name="Expression" Value="Message_Archive1_WCF = Message_Request; &#xD;&#xA;Message_Archive1_WCF(FILE.ReceivedFileName)=&quot;Archive1_WCFRequest&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="4dccba6d-38db-4d3b-9b2f-3a496322fe81" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="PortName" Value="Port_ArchiveWCF" />
+                                <om:Property Name="MessageName" Value="Message_Archive1_WCF" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ArchiveWCF" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="acb44802-3534-48d1-978c-b931787307f1" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Construct" OID="f742a106-88a4-435a-aadc-801b9c792dfa" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructDummy_MessageReplyCybersource" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageRef" OID="5483f8b4-6d39-4add-9caa-ca818262a707" ParentLink="Construct_MessageRef">
+                            <om:Property Name="Ref" Value="MessageXMLDummy" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="68b11b91-9506-47bd-a2ea-24f17684f21c" ParentLink="Construct_MessageRef">
+                            <om:Property Name="Ref" Value="Message_Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessageAssignment" OID="54f81957-a646-4ec3-9fc4-429b47662a27" ParentLink="ComplexStatement_Statement">
+                            <om:Property Name="Expression" Value="MessageXMLDummy = new System.Xml.XmlDocument();&#xD;&#xA;MessageXMLDummy.LoadXml(@&quot;&lt;GetCyberSourceReponse xmlns:ns0=&quot;&quot;http://BTNextGen.Biztalk.ReconCybersource2.GetCyberSourceResponse&quot;&quot;&gt;&lt;GetCyberSourceResponseResult&gt;xxx&lt;/GetCyberSourceResponseResult&gt;&lt;/GetCyberSourceReponse&gt;&quot;);&#xD;&#xA;&#xD;&#xA;Message_Response.parameters = MessageXMLDummy;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="MessageAssignment_4" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Scope" OID="7548b6e4-45e1-4d12-96b6-e86312fa8889" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Scope_WCF" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Send" OID="efed3df0-71cf-4956-ac1d-a6002cc78a22" ParentLink="ComplexStatement_Statement">
+                            <om:Property Name="PortName" Value="Port_WCF" />
+                            <om:Property Name="MessageName" Value="Message_Request" />
+                            <om:Property Name="OperationName" Value="GetCyberSourceReport" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_wcf" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="7835b61b-aab8-4c37-aa1b-52a7e52a80fc" ParentLink="ComplexStatement_Statement">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Port_WCF" />
+                            <om:Property Name="MessageName" Value="Message_Response" />
+                            <om:Property Name="OperationName" Value="GetCyberSourceReport" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_wcf" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Catch" OID="64466e72-92ff-4653-b24b-1572fe971c62" ParentLink="Scope_Catch">
+                            <om:Property Name="ExceptionName" Value="ex2" />
+                            <om:Property Name="ExceptionType" Value="Port_WCF.GetCyberSourceReport.Fault_1" />
+                            <om:Property Name="IsFaultMessage" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="CatchException_wcf" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="60d664ec-a4ef-47ee-9146-e80bc03bdb80" ParentLink="Catch_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructMessage_Fault" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="d95a6699-187c-4563-a161-b320dd7a8779" ParentLink="Construct_MessageRef">
+                                    <om:Property Name="Ref" Value="FaultMessage" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="5e96991a-e793-4a8c-9c95-146b2965052e" ParentLink="ComplexStatement_Statement">
+                                    <om:Property Name="Expression" Value="// Create fault &#xD;&#xA;xmlDoc = ex2.MessagePart_Fault;&#xD;&#xA;varErrorMessage = xmlDoc.OuterXml;&#xD;&#xA;// Create fault exception Message&#xD;&#xA;FaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;FaultMessage.FailureCategory=&quot;BTNextGen.Biztalk.ReconCybersource Exception&quot;;&#xD;&#xA;FaultMessage.FaultDescription=varErrorMessage;&#xD;&#xA;FaultMessage.FaultCode=&quot;3004&quot;;&#xD;&#xA;FaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_5" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="23f6be69-e7e1-4200-b75f-de1f867e272d" ParentLink="Catch_Statement">
+                                <om:Property Name="PortName" Value="Port_FaultPort" />
+                                <om:Property Name="MessageName" Value="FaultMessage" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_Fault" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Construct" OID="6aaa1186-8e16-4613-a27e-95906fde3da6" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_Backup" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageRef" OID="4f48dc49-56fc-4f28-af21-c61062354157" ParentLink="Construct_MessageRef">
+                            <om:Property Name="Ref" Value="Message_ResponseBackup" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Transform" OID="d8c7f3ba-979b-49ea-8145-2359f77e31a3" ParentLink="ComplexStatement_Statement">
+                            <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ReconCybersource2.Transform2Backup" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_3" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="993c64c9-c258-413d-af81-074ec159012a" ParentLink="Transform_InputMessagePartRef">
+                                <om:Property Name="MessageRef" Value="Message_Response" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="3b86c6ae-f498-4404-800f-75259bc1348d" ParentLink="Transform_OutputMessagePartRef">
+                                <om:Property Name="MessageRef" Value="Message_ResponseBackup" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="9d333925-34ed-40b5-8d20-f97e324f4b30" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_ArchiveResponseBackup" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="7189a76a-712c-4e86-9c78-032adc4bc70f" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="Expression" Value="varArchive2BackupResponse == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveResponseBackup" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="8ad86844-37e7-40ba-a19e-05ec039483c4" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchiveResponseBackup" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="96c25db2-67b8-4ff1-8baf-56b68bdf2e80" ParentLink="Construct_MessageRef">
+                                    <om:Property Name="Ref" Value="Message_Archive2_BackupResponse" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="76bb1bda-79d3-408b-a8bb-b070bc919301" ParentLink="ComplexStatement_Statement">
+                                    <om:Property Name="Expression" Value="Message_Archive2_BackupResponse = Message_ResponseBackup; &#xD;&#xA;Message_Archive2_BackupResponse(FILE.ReceivedFileName)=&quot;Archive2_WCFResponseBackup&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="cf07c2ca-d32f-436b-a396-b5fbcb6aa2a2" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="PortName" Value="Port_ArchiveBackup" />
+                                <om:Property Name="MessageName" Value="Message_Archive2_BackupResponse" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Archive_backup" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="405e29f0-fd8b-4f2e-96c2-f21bf61126aa" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Construct" OID="7a8da2eb-c17a-4af5-ac82-af56d596369b" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_ERP" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageRef" OID="3f7b7b30-a168-4d5e-ba5b-2d921ba3ce13" ParentLink="Construct_MessageRef">
+                            <om:Property Name="Ref" Value="Message_1" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessageAssignment" OID="6e161fbf-be20-4bdd-a791-534044db3572" ParentLink="ComplexStatement_Statement">
+                            <om:Property Name="Expression" Value="sXpath = xpath(Message_ResponseBackup,&quot;string(//CyberSourceResponseResult)&quot;);&#xD;&#xA;//Message_FlatFile2 = xpath(Message_ResponseBackup,sXpath); &#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;Orchestration Debug&quot;, System.String.Format(&quot;The Value = {0}&quot;, sXpath));&#xD;&#xA;Variable_1 = new System.Text.StringBuilder();&#xD;&#xA;Variable_1.AppendLine(sXpath); &#xD;&#xA;Message_1.MessagePart_Body= new Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString(Variable_1.ToString());&#xD;&#xA;varBadDataResponse = sXpath.StartsWith(&quot;Payment Batch Detail Report&quot;);&#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;Orchestration Debug&quot;, System.String.Format(&quot;The Value = {0}&quot;, varBadDataResponse));&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="8b3bdbf6-8477-4f99-8831-11fb61039bf0" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_BadDataResponse" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="552ba998-f559-4ff8-84af-a3ab6496a386" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="Expression" Value="varBadDataResponse == false" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Rule_1" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Send" OID="2bbf1990-31eb-4fbc-8169-9ddd652a4db7" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="PortName" Value="Port_EmailBadDataResponse" />
+                                <om:Property Name="MessageName" Value="Message_1" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Construct" OID="abeb4222-7484-4e73-81a1-5abe8505e359" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructMessage_Fault" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="446c2331-0e57-4d4a-b197-60f4ca6abffe" ParentLink="Construct_MessageRef">
+                                    <om:Property Name="Ref" Value="FaultMessage" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="c0ea388a-aff5-430e-8fcc-9f0d40c74e49" ParentLink="ComplexStatement_Statement">
+                                    <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;FaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;FaultMessage.FailureCategory=&quot;BTNextGen.Biztalk.ReconCybersource Exception&quot;;&#xD;&#xA;FaultMessage.FaultDescription=&quot;Bad Data Response from Cybersource&quot;;&#xD;&#xA;FaultMessage.FaultCode=&quot;3004&quot;;&#xD;&#xA;FaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_5" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="0c164207-6beb-4171-aeae-69002cac5793" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="PortName" Value="Port_FaultPort" />
+                                <om:Property Name="MessageName" Value="FaultMessage" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_Fault" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="0cc2682c-71c4-416c-bd04-9617d72ae7c7" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="05937b8f-f711-42b9-b8b6-cce4be3ec2cc" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_ArchiveRAWFile" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="371881e6-70d5-4059-bd8c-78d65564ca47" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="Expression" Value="varArchive3RAW == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveRAWFile" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="4218e02f-c3fa-481a-9a47-af1438921ace" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchiveRAWFile" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="db799fd0-dc58-42bb-a2ba-e901ffe40e92" ParentLink="Construct_MessageRef">
+                                    <om:Property Name="Ref" Value="Message_Archive3_RAWFile" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="5b7aa784-2f9a-4c2f-928d-2306cd6e0e82" ParentLink="ComplexStatement_Statement">
+                                    <om:Property Name="Expression" Value="Message_Archive3_RAWFile = Message_1; &#xD;&#xA;Message_Archive3_RAWFile(FILE.ReceivedFileName)=&quot;Archive3_RAWOutput&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="b078481a-df0d-408c-b37f-c49be902c0e3" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="PortName" Value="Port_ArchiveRAW" />
+                                <om:Property Name="MessageName" Value="Message_Archive3_RAWFile" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Archive_raw" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="755aa47d-5386-4562-92cc-08d99981027d" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="5606077c-5217-4238-a3bb-cc32e4e2d5df" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="PortName" Value="Port_RawFile" />
+                        <om:Property Name="MessageName" Value="Message_1" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_RAWFile" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="8e7d4a76-8433-451e-ba57-536435401317" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_Merchant2_Processing" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="0b188af3-9a75-465e-bcca-dcaef444c4ae" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="Expression" Value="varMerchant2Active == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Rule_Mechant2_Check" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="84373a53-436e-4aa1-bc90-53fedbee31d1" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructMessage_WCF" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="ee736010-9001-4c1f-b138-6250c1624928" ParentLink="Construct_MessageRef">
+                                    <om:Property Name="Ref" Value="Message_Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="4091053f-313c-4c40-8b3d-f73b1da94dbb" ParentLink="ComplexStatement_Statement">
+                                    <om:Property Name="Expression" Value="//For Testing... &#xD;&#xA;//varCurrentYear = &quot;2013&quot;; &#xD;&#xA;//sHold = &quot;&lt;CommerceServerProfilesQuery ProfileType=\&quot;CreditCard\&quot;&gt;&lt;CLAUSE OPER=\&quot;equal\&quot; xmlns=\&quot;http://schemas.microsoft.com/CommerceServer/2004/02/Expressions\&quot;&gt;&lt;PROPERTY ID=\&quot;expiration_year\&quot; MULTIVAL=\&quot;False\&quot; TYPE=\&quot;Number\&quot;/&gt;&lt;IMMED-VAL TYPE=\&quot;String\&quot;&gt;&lt;VALUE&gt;&quot; + varCurrentYear + &quot;&lt;/VALUE&gt;&lt;/IMMED-VAL&gt;&lt;/CLAUSE&gt;&lt;/CommerceServerProfilesQuery&gt;&quot;; &#xD;&#xA;//sHold = &quot;&lt;GetCyberSourceReport xmlns=\&quot;http://tempuri.org/\&quot;&gt;&lt;currentYear&gt;&quot; + varCurrentYear + &quot;&lt;/currentYear&gt;&lt;month&gt;&quot; + varCurrentMonth + &quot;&lt;/month&gt;&lt;isPrimaryCard&gt;true&lt;/isPrimaryCard&gt;&lt;/GetExpiredCards&gt;&quot;;&#xD;&#xA;//sHold = &quot;&lt;GetCyberSourceReport xmlns=\&quot;http://tempuri.org/\&quot;&gt;&lt;reportRequest&gt;&lt;CyberSourceMerchantId&gt;idehao&lt;/CyberSourceMerchantId&gt;&lt;CyberSourcePassword&gt;Password345&lt;/CyberSourcePassword&gt;&lt;CyberSourceServerName&gt;ebctest.cybersource.com/ebctest&lt;/CyberSourceServerName&gt;&lt;CyberSourceUserName&gt;Selfj&lt;/CyberSourceUserName&gt;&lt;Day&gt;01&lt;/Day&gt;&lt;Month&gt;10&lt;/Month&gt;&lt;ReportFormat&gt;csv&lt;/ReportFormat&gt;&lt;ReportName&gt;PaymentBatchDetailReport&lt;/ReportName&gt;&lt;Year&gt;2011&lt;/Year&gt;&lt;/reportRequest&gt;&lt;/GetCyberSourceReport&gt;&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//xmlQRYRECONCYBERSOURCE.LoadXml(@sHold); &#xD;&#xA;&#xD;&#xA;xmlQRYRECONCYBERSOURCE.LoadXml(&quot;&lt;GetCyberSourceReport xmlns=\&quot;http://tempuri.org/\&quot; xmlns:btn=\&quot;http://schemas.datacontract.org/2004/07/BTNextGen.Services.IOrders\&quot; &gt;&lt;reportRequest&gt;&lt;btn:CyberSourceMerchantId&gt;&quot; + varMerchant2 + &quot;&lt;/btn:CyberSourceMerchantId&gt;&lt;btn:CyberSourcePassword&gt;&quot; + varPassword2 + &quot;&lt;/btn:CyberSourcePassword&gt;&lt;btn:CyberSourceServerName&gt;&quot; + varServer2 + &quot;&lt;/btn:CyberSourceServerName&gt;&lt;btn:CyberSourceUserName&gt;&quot; + varUser2 + &quot;&lt;/btn:CyberSourceUserName&gt;&lt;btn:Day&gt;&quot; + varReportDay + &quot;&lt;/btn:Day&gt;&lt;btn:Month&gt;&quot; + varReportMonth + &quot;&lt;/btn:Month&gt;&lt;btn:ReportFormat&gt;csv&lt;/btn:ReportFormat&gt;&lt;btn:ReportName&gt;PaymentBatchDetailReport&lt;/btn:ReportName&gt;&lt;btn:Year&gt;&quot; + varReportYear + &quot;&lt;/btn:Year&gt;&lt;/reportRequest&gt;&lt;/GetCyberSourceReport&gt;&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Message_Request.parameters = xmlQRYRECONCYBERSOURCE;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_2" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Decision" OID="f9afe54a-a068-4e93-ab25-2f8da9ad0861" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Decide_ArchiveWCFMessage" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="7a1ec319-7528-46d8-8da2-ed8de40dc663" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="Expression" Value="varArchive1WCF == true" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ArchiveWCFMessage" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Construct" OID="ff81a4f2-7a8e-4197-8192-9df4928de574" ParentLink="ComplexStatement_Statement">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructArchiveWCFMessage" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageRef" OID="3aaa6baf-37e5-402c-8b51-d2c8daede81d" ParentLink="Construct_MessageRef">
+                                            <om:Property Name="Ref" Value="Message_Archive1_WCF" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageAssignment" OID="0db3885d-a81c-4843-a7b2-70c3826f6865" ParentLink="ComplexStatement_Statement">
+                                            <om:Property Name="Expression" Value="Message_Archive1_WCF = Message_Request; &#xD;&#xA;Message_Archive1_WCF(FILE.ReceivedFileName)=&quot;Archive1_WCFRequest&quot;; " />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="9f749df3-1ed6-42b7-9dce-813c17123ffa" ParentLink="ComplexStatement_Statement">
+                                        <om:Property Name="PortName" Value="Port_ArchiveWCF" />
+                                        <om:Property Name="MessageName" Value="Message_Archive1_WCF" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ArchiveWCF" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="4c3af628-76ba-4ae7-973d-9daca5cc55fb" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="0ee74700-5b6e-4135-a8dd-8e2eb0837211" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructDummy_MessageReplyCybersource" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="b05a63ed-2b2a-4e7a-9213-8e30644db8df" ParentLink="Construct_MessageRef">
+                                    <om:Property Name="Ref" Value="MessageXMLDummy" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="29a03ec7-1229-420c-8656-17788fdb2e8c" ParentLink="Construct_MessageRef">
+                                    <om:Property Name="Ref" Value="Message_Response" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="22ecb790-8487-491e-bd9e-5a23cb09edae" ParentLink="ComplexStatement_Statement">
+                                    <om:Property Name="Expression" Value="MessageXMLDummy = new System.Xml.XmlDocument();&#xD;&#xA;MessageXMLDummy.LoadXml(@&quot;&lt;GetCyberSourceReponse xmlns:ns0=&quot;&quot;http://BTNextGen.Biztalk.ReconCybersource.GetCyberSourceResponse&quot;&quot;&gt;&lt;GetCyberSourceResponseResult&gt;xxx&lt;/GetCyberSourceResponseResult&gt;&lt;/GetCyberSourceReponse&gt;&quot;);&#xD;&#xA;&#xD;&#xA;Message_Response.parameters = MessageXMLDummy;&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_4" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Scope" OID="bc9e6b77-3481-4642-8148-2f9cee150c93" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="InitializedTransactionType" Value="True" />
+                                <om:Property Name="IsSynchronized" Value="False" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Scope_WCF" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Send" OID="411b278e-914c-43a7-8524-e71e56a44bfb" ParentLink="ComplexStatement_Statement">
+                                    <om:Property Name="PortName" Value="Port_WCF" />
+                                    <om:Property Name="MessageName" Value="Message_Request" />
+                                    <om:Property Name="OperationName" Value="GetCyberSourceReport" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Send_wcf" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Receive" OID="20bb0ae5-3307-4df0-8fbe-2ebfe29e473e" ParentLink="ComplexStatement_Statement">
+                                    <om:Property Name="Activate" Value="False" />
+                                    <om:Property Name="PortName" Value="Port_WCF" />
+                                    <om:Property Name="MessageName" Value="Message_Response" />
+                                    <om:Property Name="OperationName" Value="GetCyberSourceReport" />
+                                    <om:Property Name="OperationMessageName" Value="Response" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Receive_wcf" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Catch" OID="ba2e2713-2c7b-46f5-b7ea-adba71ca3179" ParentLink="Scope_Catch">
+                                    <om:Property Name="ExceptionName" Value="ex2" />
+                                    <om:Property Name="ExceptionType" Value="Port_WCF.GetCyberSourceReport.Fault_1" />
+                                    <om:Property Name="IsFaultMessage" Value="False" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="CatchException_wcf" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Construct" OID="67f4561d-1ab2-4a7a-83aa-c4226c361687" ParentLink="Catch_Statement">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructMessage_Fault" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageRef" OID="dd806b3c-2b44-4473-bafb-242c80ec7565" ParentLink="Construct_MessageRef">
+                                            <om:Property Name="Ref" Value="FaultMessage" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageAssignment" OID="e476db2c-4b36-4ffe-8697-fbdc19fa74f5" ParentLink="ComplexStatement_Statement">
+                                            <om:Property Name="Expression" Value="// Create fault &#xD;&#xA;xmlDoc = ex2.MessagePart_Fault;&#xD;&#xA;varErrorMessage = xmlDoc.OuterXml;&#xD;&#xA;// Create fault exception Message&#xD;&#xA;FaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;FaultMessage.FailureCategory=&quot;BTNextGen.Biztalk.ReconCybersource Exception&quot;;&#xD;&#xA;FaultMessage.FaultDescription=varErrorMessage;&#xD;&#xA;FaultMessage.FaultCode=&quot;3004&quot;;&#xD;&#xA;FaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_5" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="a961b75f-7dd5-4d30-b2df-302fbe90a34a" ParentLink="Catch_Statement">
+                                        <om:Property Name="PortName" Value="Port_FaultPort" />
+                                        <om:Property Name="MessageName" Value="FaultMessage" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_Fault" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="a1eaf7ae-739e-4bcb-920a-e20879b1d319" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructMessage_Backup" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="d6ccc487-ed05-4561-aa71-85e5106946df" ParentLink="Construct_MessageRef">
+                                    <om:Property Name="Ref" Value="Message_ResponseBackup" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Transform" OID="c8b88f64-1da6-45fb-8200-33b46d05b986" ParentLink="ComplexStatement_Statement">
+                                    <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ReconCybersource2.Transform2Backup" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transform_3" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="1751d8f1-f5fa-4057-bbbb-e3db0421ff61" ParentLink="Transform_InputMessagePartRef">
+                                        <om:Property Name="MessageRef" Value="Message_Response" />
+                                        <om:Property Name="PartRef" Value="parameters" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="fe6b007a-6160-4cbc-a809-a3a8fb043f39" ParentLink="Transform_OutputMessagePartRef">
+                                        <om:Property Name="MessageRef" Value="Message_ResponseBackup" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_2" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Decision" OID="9bb551bd-0c44-4cc6-94ca-0b9ce8b84c91" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Decide_ArchiveResponseBackup" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="496e024d-3ac9-4d66-8919-446862005aef" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="Expression" Value="varArchive2BackupResponse == true" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ArchiveResponseBackup" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Construct" OID="a148342f-622e-4b29-a25a-14706421aa5a" ParentLink="ComplexStatement_Statement">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructArchiveResponseBackup" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageAssignment" OID="327158a5-d283-4caf-b06c-b1ea504f0631" ParentLink="ComplexStatement_Statement">
+                                            <om:Property Name="Expression" Value="Message_Archive2_BackupResponse = Message_ResponseBackup; &#xD;&#xA;Message_Archive2_BackupResponse(FILE.ReceivedFileName)=&quot;Archive2_WCFResponseBackup&quot;; " />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="9d2bff19-5d20-4e73-a9f4-f19a92628bd0" ParentLink="Construct_MessageRef">
+                                            <om:Property Name="Ref" Value="Message_Archive2_BackupResponse" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="5112ff75-e6e7-4106-82e7-3f381353cf5f" ParentLink="ComplexStatement_Statement">
+                                        <om:Property Name="PortName" Value="Port_ArchiveBackup" />
+                                        <om:Property Name="MessageName" Value="Message_Archive2_BackupResponse" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Archive_backup" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="867f5314-3dc1-44c6-8543-3f8ec5281fe1" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="47e02e86-4343-45e6-abc3-021743a9a6dc" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructMessage_ERP" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="d9bc7a56-0746-4289-8c55-2cc47bb28810" ParentLink="Construct_MessageRef">
+                                    <om:Property Name="Ref" Value="Message_1" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="5ece285b-ba85-496e-940a-603d9452c17f" ParentLink="ComplexStatement_Statement">
+                                    <om:Property Name="Expression" Value="sXpath = xpath(Message_ResponseBackup,&quot;string(//CyberSourceResponseResult)&quot;);&#xD;&#xA;//Message_FlatFile2 = xpath(Message_ResponseBackup,sXpath); &#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;Orchestration Debug&quot;, System.String.Format(&quot;The Value = {0}&quot;, sXpath));&#xD;&#xA;Variable_1 = new System.Text.StringBuilder();&#xD;&#xA;Variable_1.AppendLine(sXpath); &#xD;&#xA;Message_1.MessagePart_Body= new Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString(Variable_1.ToString());&#xD;&#xA;varBadDataResponse = sXpath.StartsWith(&quot;Payment Batch Detail Report&quot;);&#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;Orchestration Debug&quot;, System.String.Format(&quot;The Value = {0}&quot;, varBadDataResponse));&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Decision" OID="37317f9b-cc80-4df2-b47c-7c9abe908c84" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Decide_BadDataResponse" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="7b348a41-daf9-4245-b259-f8d69af5ddae" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="Expression" Value="varBadDataResponse == false" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Rule_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Send" OID="b82c16b4-eb07-40de-b67a-b3d982af3fe6" ParentLink="ComplexStatement_Statement">
+                                        <om:Property Name="PortName" Value="Port_EmailBadDataResponse" />
+                                        <om:Property Name="MessageName" Value="Message_1" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="Construct" OID="5a25bbd5-51a1-4653-90f4-756995b32d1a" ParentLink="ComplexStatement_Statement">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructMessage_Fault" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageAssignment" OID="ad706bdc-05d9-4cd7-b82c-47d890574685" ParentLink="ComplexStatement_Statement">
+                                            <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;FaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;FaultMessage.FailureCategory=&quot;BTNextGen.Biztalk.ReconCybersource Exception&quot;;&#xD;&#xA;FaultMessage.FaultDescription=&quot;Bad Data Response from Cybersource&quot;;&#xD;&#xA;FaultMessage.FaultCode=&quot;3004&quot;;&#xD;&#xA;FaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_5" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="a59303a5-bbb5-4b9d-abf2-f626c27237ae" ParentLink="Construct_MessageRef">
+                                            <om:Property Name="Ref" Value="FaultMessage" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="0328fd52-a4c9-4242-9cee-3e0cf906f27c" ParentLink="ComplexStatement_Statement">
+                                        <om:Property Name="PortName" Value="Port_FaultPort" />
+                                        <om:Property Name="MessageName" Value="FaultMessage" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_Fault" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="cc64b629-ef98-45bb-ba8e-9d0e6c2bb791" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="a9000001-633c-408e-ad9c-94e22d8ce0cb" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="PortName" Value="Port_RawFile" />
+                                <om:Property Name="MessageName" Value="Message_1" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_RAWFile" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="ef4b987e-0e44-4e53-a9f0-088dd02360cd" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Decide_ArchiveRAWFile" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="de4be2c0-d224-4b8f-aedc-6667c554a9db" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="Expression" Value="varArchive3RAW == true" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ArchiveRAWFile" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Construct" OID="7a787bad-cd10-4f6a-983f-297a9ee87b94" ParentLink="ComplexStatement_Statement">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructArchiveRAWFile" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageAssignment" OID="bd5b54c8-8ffa-4016-9831-49d625dcf0bd" ParentLink="ComplexStatement_Statement">
+                                            <om:Property Name="Expression" Value="Message_Archive3_RAWFile = Message_1; &#xD;&#xA;Message_Archive3_RAWFile(FILE.ReceivedFileName)=&quot;Archive3_RAWOutput&quot;; " />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="f2c5b20b-daff-40dc-a46c-2b9d539922ed" ParentLink="Construct_MessageRef">
+                                            <om:Property Name="Ref" Value="Message_Archive3_RAWFile" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="f16b445f-bad6-4775-87ee-8940873e6822" ParentLink="ComplexStatement_Statement">
+                                        <om:Property Name="PortName" Value="Port_ArchiveRAW" />
+                                        <om:Property Name="MessageName" Value="Message_Archive3_RAWFile" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Archive_raw" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="3b296112-ea40-47b0-adde-2fab572ac59d" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="c4acb88b-abe0-4eb3-89f4-b7cee79d9df3" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Terminate" OID="04810da7-6b3f-4ad2-964d-5d0290fe659c" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ErrorMessage" Value="&quot;test&quot;;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Terminate_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="MessageDeclaration" OID="10b355ed-7a6d-4b08-b228-2ea3f2604dc0" ParentLink="Scope_MessageDeclaration" LowerBound="160.1" HigherBound="161.1">
+                        <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.MultipartType_Flat" />
+                        <om:Property Name="ParamDirection" Value="In" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Message_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="652d7b97-711e-4220-9793-c6724eb06904" ParentLink="Scope_Catch">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_Main" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="9f9c8e03-f03a-453a-92f3-3c983db154b5" ParentLink="Catch_Statement">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_Fault" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="c94b1016-c61a-4ef1-86cf-aab33ac2e843" ParentLink="Construct_MessageRef">
+                                <om:Property Name="Ref" Value="FaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="3eb4209c-23a1-4a1f-b98f-4a113e9c17c0" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;FaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;FaultMessage.FailureCategory=&quot;BTNextGen.Biztalk.ReconCybersource2 Exception&quot;;&#xD;&#xA;FaultMessage.FaultDescription=ex.Message;&#xD;&#xA;FaultMessage.FaultCode=&quot;3004&quot;;&#xD;&#xA;FaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_5" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="f44192ac-80a0-42b4-a091-25a013bf9a97" ParentLink="Catch_Statement">
+                            <om:Property Name="PortName" Value="Port_FaultPort" />
+                            <om:Property Name="MessageName" Value="FaultMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_Fault" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="db0333f6-eadd-4f45-af40-4305a95f3b64" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="93.1" HigherBound="95.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.IOrdersService" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_WCF" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="6efa7246-3257-460f-a776-d04a1659dceb" ParentLink="PortDeclaration_CLRAttribute" LowerBound="93.1" HigherBound="94.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="895ce8ef-441a-44d2-beb3-5c6f11a129e3" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="95.1" HigherBound="97.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.PortType_Archive" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_ArchiveWCF" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="a82586ea-f5de-4381-bbc7-0743054d9299" ParentLink="PortDeclaration_CLRAttribute" LowerBound="95.1" HigherBound="96.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4d31e022-34ca-47cb-847c-79a0e3ecc906" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="97.1" HigherBound="99.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.PortType_Dummyx" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_Dummy" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="8b65908e-e5bc-498a-a9e9-33b2688f6096" ParentLink="PortDeclaration_CLRAttribute" LowerBound="97.1" HigherBound="98.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="172a8aea-b377-417b-a4ea-cfcce09d50fa" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="99.1" HigherBound="101.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.PortType_ERP" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_ArchiveBackup" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="5a5c0d1e-ea48-4692-b487-56665c9ae366" ParentLink="PortDeclaration_CLRAttribute" LowerBound="99.1" HigherBound="100.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="777ca44e-e4cf-4aa8-8f90-fee8cf487540" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="101.1" HigherBound="103.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.PortType_2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_RawFile" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="197f9a86-472b-441a-a890-c8b6abb24482" ParentLink="PortDeclaration_CLRAttribute" LowerBound="101.1" HigherBound="102.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="5d6019dc-7135-473c-baa0-16e5d9ca5b79" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="103.1" HigherBound="105.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.PortType_ArchiveRAW" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_ArchiveRAW" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="7284ed50-94af-450c-a7e8-b515a72b9192" ParentLink="PortDeclaration_CLRAttribute" LowerBound="103.1" HigherBound="104.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="d0a425a5-ca42-40e8-abe3-2e3a2bd0dde2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="105.1" HigherBound="107.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.PortType_FaultPort" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_FaultPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="a5885f31-2526-47e2-8ce2-d5d2a2dd22c1" ParentLink="PortDeclaration_CLRAttribute" LowerBound="105.1" HigherBound="106.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="6d013108-1e34-452e-b127-bc6cde3a0c8a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="107.1" HigherBound="109.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.PortType_EmailBadDataResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_EmailBadDataResponse" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="2b95b8fb-d95e-4bd9-a9f7-390ba29a87bb" ParentLink="PortDeclaration_CLRAttribute" LowerBound="107.1" HigherBound="108.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.ReconCybersource2
+{
+    internal messagetype MultipartType_Fault
+    {
+        body BTS.soap_envelope_1__1.Fault MessagePart_Fault;
+    };
+    internal messagetype MultipartType_Flat
+    {
+        body Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString MessagePart_Body;
+    };
+    internal messagetype IOrdersService_GetCyberSourceReport_InputMessage
+    {
+        body IOrder_tempuri_org.GetCyberSourceReport parameters;
+    };
+    internal messagetype IOrdersService_GetCyberSourceReport_OutputMessage
+    {
+        body IOrder_tempuri_org.GetCyberSourceReportResponse parameters;
+    };
+    internal porttype PortType_FaultPort
+    {
+        oneway Operation_1
+        {
+            Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage
+        };
+    };
+    internal porttype IOrdersService
+    {
+        requestresponse GetCyberSourceReport
+        {
+            IOrdersService_GetCyberSourceReport_InputMessage, IOrdersService_GetCyberSourceReport_OutputMessage, Fault_1 = MultipartType_Fault
+        };
+    };
+    internal porttype PortType_Archive
+    {
+        oneway Operation_1
+        {
+            IOrdersService_GetCyberSourceReport_InputMessage
+        };
+    };
+    internal porttype PortType_Dummyx
+    {
+        oneway Operation_1
+        {
+            ReconCybersourceDummy
+        };
+    };
+    internal porttype PortType_ERP
+    {
+        oneway Operation_1
+        {
+            CyberSourceResponseBackup
+        };
+    };
+    internal porttype PortType_ArchiveOut
+    {
+        oneway Operation_1
+        {
+            IOrdersService_GetCyberSourceReport_OutputMessage
+        };
+    };
+    internal porttype PortType_1
+    {
+        oneway Operation_1
+        {
+            FlatFileSchemaCybersourceBody
+        };
+    };
+    internal porttype PortType_2
+    {
+        oneway Operation_1
+        {
+            MultipartType_Flat
+        };
+    };
+    internal porttype PortType_ArchiveRAW
+    {
+        oneway Operation_1
+        {
+            MultipartType_Flat
+        };
+    };
+    internal porttype PortType_EmailBadDataResponse
+    {
+        oneway Operation_1
+        {
+            MultipartType_Flat
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service IOrderClient
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses IOrdersService Port_WCF;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Archive Port_ArchiveWCF;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_Dummyx Port_Dummy;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_ERP Port_ArchiveBackup;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_2 Port_RawFile;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_ArchiveRAW Port_ArchiveRAW;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses PortType_FaultPort Port_FaultPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_EmailBadDataResponse Port_EmailBadDataResponse;
+        message System.Xml.XmlDocument MessageXMLDummy;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage FaultMessage;
+        message IOrdersService_GetCyberSourceReport_InputMessage Message_Request;
+        message IOrdersService_GetCyberSourceReport_OutputMessage Message_Response;
+        message ReconCybersourceDummy Message_Dummy;
+        message CyberSourceResponseBackup Message_ResponseBackup;
+        message IOrdersService_GetCyberSourceReport_InputMessage Message_Archive1_WCF;
+        message CyberSourceResponseBackup Message_Archive2_BackupResponse;
+        message MultipartType_Flat Message_Archive3_RAWFile;
+        System.Boolean varMerchant2Active;
+        System.String varMerchant2;
+        System.String varPassword2;
+        System.String varUser2;
+        System.String varServer2;
+        System.String varErrorMessage;
+        System.Xml.XmlDocument xmlDoc;
+        System.Text.StringBuilder msgbody;
+        System.String sHold;
+        System.Xml.XmlDocument xmlQRYRECONCYBERSOURCE;
+        System.String varServer1;
+        System.Xml.XmlDocument xmlFLATRECYBERSOURCE;
+        System.String sXpath;
+        System.String varReportYear;
+        System.String varReportDay;
+        System.String varReportMonth;
+        System.String varMerchant1;
+        System.String varUser1;
+        System.String varPassword1;
+        System.Boolean varArchive1WCF;
+        System.Boolean varArchive2BackupResponse;
+        System.Boolean varArchive3RAW;
+        System.DateTime varDateYesterday;
+        System.DateTime varDateYesterday2;
+        System.String varReportDate;
+        System.String varDaysBack;
+        System.Int16 intDaysBack;
+        System.Exception varException;
+        System.Boolean varBadDataResponse;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("66daced9-8c83-4abe-bb10-1f2f55f7d6c1")]
+            activate receive (Port_Dummy.Operation_1, Message_Dummy);
+            varMerchant2Active = true;
+            varMerchant2 = "";
+            varPassword2 = "";
+            varUser2 = "";
+            varServer2 = "";
+            varErrorMessage = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("43fff510-b9ba-4129-b9b0-6001cc8ea1f2")]
+            scope
+            {
+                message MultipartType_Flat Message_1;
+                System.Text.StringBuilder Variable_1;
+                body
+                {
+		}
+            }
+        }
+    }
+}
+

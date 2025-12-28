@@ -1,0 +1,14 @@
+
+Please add 
+<add key="Profiles_ConnectionString" value="Persist Security Info=True;Initial Catalog=NextGen_Profiles;Password=P@ssword123;User ID=tdo;Data Source=AZ1EBNTTSD2DB01,1435;Connect Timeout=3000" />
+in "\source-3.4.2b\BTNEXTGEN.SERVICES\BT.ETS\BT.ETS.WinService\App.config" file
+
+Add make sure all connection strings point SQL LD2 and Mongo DEV2 
+
+
+
+#39399: PROD - ESP Enterprise DupCheck - return empty result for over certain number of BTKeys
+- Add below config values in App.config file,
+	+ <add key="MaxDupeCheckBatchSize_CH" value="30" />
+    + <add key="MaxDupeCheckBatchSize_O" value="500" />
+    + <add key="MaxDupeCheckBatchSize_S" value="30" />

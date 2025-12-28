@@ -1,0 +1,1 @@
+﻿CREATE VIEW dbo.[bam_FirstDataRecon_CompletedInstances] AS  SELECT * FROM dbo.[bam_FirstDataRecon_Completed] WITH (NOLOCK)

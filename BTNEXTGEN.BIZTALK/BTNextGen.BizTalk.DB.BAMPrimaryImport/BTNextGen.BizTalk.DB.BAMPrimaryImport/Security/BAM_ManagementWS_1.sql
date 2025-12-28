@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [BAM_ManagementWS]
+    AUTHORIZATION [BAM_ManagementWS];
+

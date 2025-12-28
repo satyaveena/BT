@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3ab900bc-ab4d-4718-a5f2-f2c4e86de015" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://5.0.116.90/IUserAlerts/UserAlerts.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UserAlerts.xsd" MetadataType="Schema" ID="7b636d34-e1f0-442a-8607-9d02900a8782" SourceId="1" SourceUrl="http://5.0.116.90/IUserAlerts/UserAlerts.svc?xsd=xsd0" />
+    <MetadataFile FileName="UserAlerts1.xsd" MetadataType="Schema" ID="f7357a94-f53b-4617-b935-e745d6082bc3" SourceId="1" SourceUrl="http://5.0.116.90/IUserAlerts/UserAlerts.svc?xsd=xsd2" />
+    <MetadataFile FileName="UserAlerts.wsdl" MetadataType="Wsdl" ID="26a27e15-118f-4bd9-a023-1a70d698e657" SourceId="1" SourceUrl="http://5.0.116.90/IUserAlerts/UserAlerts.svc?wsdl" />
+    <MetadataFile FileName="UserAlerts2.xsd" MetadataType="Schema" ID="41e60d0e-d255-4945-a965-87a9ee3e2976" SourceId="1" SourceUrl="http://5.0.116.90/IUserAlerts/UserAlerts.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

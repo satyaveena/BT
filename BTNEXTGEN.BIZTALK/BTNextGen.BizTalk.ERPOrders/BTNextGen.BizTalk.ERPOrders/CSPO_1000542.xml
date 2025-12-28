@@ -1,0 +1,36 @@
+<OrderGroups xmlns="">
+	<PurchaseOrderEx Status="NewOrder" SoldToId="8594f9d8-5412-412d-834e-80343d2efe9b" TaxTotal="0.0000" LastModified="2011-08-31T15:08:51.303-04:00" Created="2011-08-31T15:08:51.303-04:00" StatusCode="PurchaseOrder" TrackingNumber="446014" SubTotal="119.9215" IsDirty="false" LineItemCount="2" HandlingTotal="0.0000" BasketId="004d5cea-9cb1-4940-a32d-cf1850e73955" ShippingTotal="0.0000" ModifiedBy="" SoldToName="" Total="0.0000" OrderGroupId="503882da-988b-4564-b98b-36bef2259d77" Name="CUSTNOTE_SOP" BillingCurrency="">
+		<OrderForms>
+			<OrderFormEx CostSummaryByIntAdmin="" BTNote="" CostSummaryByExtAdmin="" IsTolas="false" IsHomeDeliveryIndicator="false" LegacyBasketId="" Name="Default" HomeDeliveryAccountId="" LastModified="2011-08-31T15:08:51.273-04:00" ShippingTotal="0.0000" CheckReserveFlag="false" LegacySource="" BTGiftWrapCode="" SubTotal="119.9215" OrderGroupId="503882da-988b-4564-b98b-36bef2259d77" HandlingTotal="0.0000" FolderId="" EntertainmentAccountId="" BookAccountId="511845T5024015000000" IsPendingPurge="false" InventoryReserveNumber="" BillingAddressId="" OrderFormId="d18fd56e-a850-4327-906d-98cf19d40acf" PriorStatus="" IsBTCart="0" TransmissionNumber="1000542" BTStatus="" AccountType="Book" AccountInventoryType="A, A" StoreProccessingFee="false" OriginalBasketId="{f437956b-ca36-4f3d-8c47-c1c37c0de7f1}" BTGiftWrapMessage="" StoreOrderFee="false" Created="2011-08-31T15:08:49.803-04:00" IsBackOrder="false" PromoUserIdentity="grohc0@baker-taylor.com" StoreGiftWrapFee="false" PONumber="ORD_WNOTES" StoreShippingFee="false" ModifiedBy="" BTTargetERP="BTB" Status="ReadyForCheckout" TaxTotal="0.0000" WarehouseList="COM;MOM" Total="0.0000" IsArchived="0" IsPrimary="0" SpecialInstructions="DNE $150" ShippingMethodExId="UPS">
+				<PromoCodeRecords/>
+				<Shipments/>
+				<PromoCodes/>
+				<Payments/>
+				<LineItems>
+					<LineItemEx LineItemDiscountAmount="0.0000" ProductCatalog="Book Catalog 1" LineItemNumberId="eitxIH1kLb" BTCancelQuantity="0" LegacyBasketId="0" LineItemId="a404213d-1dbd-44ec-bb4d-44ea123006f1" BTGTIN="" LastModified="2011-08-31T15:08:51.227-04:00" LegacyBasketLineId="0" BackorderQuantity="0.0000" Status="" BTUsingPromotion="false" PreorderQuantity="0.0000" OrderGroupId="503882da-988b-4564-b98b-36bef2259d77" Description="" BTPublisher="" InventoryCondition="InStock" AllowBackordersAndPreorders="true" BTUPC="" OrderFormId="d18fd56e-a850-4327-906d-98cf19d40acf" BTVolumeSet="" ShippingMethodId="00000000-0000-0000-0000-000000000000" BTBackorderQuantity="0" BTTitleEditionVersion="" BTISBN="9780837133256" ExtendedPrice="110.0000" OrderLevelDiscountAmount="0.0000" ModifiedBy="" BTAuthorOrArtist="" ProductId="0000000471" ListPrice="11.0000" Created="2011-08-31T15:08:49.82-04:00" BTItemType="0" ShippingAddressId="" Quantity="10.0000" ShippingMethodName="" BTKey="0000000471" InStockQuantity="0.0000" PlacedPrice="11.0000" BTDiscountPercent="0.0000" BTSalePrice="71.5000" BTLineItemNote="" BTPriceKey="" ContractPrice="71.5000" DisplayName="A Bio-bibliography of Countee P. Cullen, 1903-1946," BTBibNumber="" BTCatalogCode="">
+						<ItemLevelDiscountsApplied/>
+						<OrderLevelDiscountsApplied/>
+						<WeaklyTypedProperties/>
+					</LineItemEx>
+					<LineItemEx LineItemDiscountAmount="0.0000" ProductCatalog="Book Catalog 4" LineItemNumberId="SRq6BkxnT6" BTCancelQuantity="0" LegacyBasketId="0" LineItemId="cdd2ac86-89a3-4df3-b215-36e613ac2632" BTGTIN="" LastModified="2011-08-31T15:08:51.257-04:00" LegacyBasketLineId="0" BackorderQuantity="0.0000" Status="" BTUsingPromotion="false" PreorderQuantity="0.0000" OrderGroupId="503882da-988b-4564-b98b-36bef2259d77" Description="" BTPublisher="" InventoryCondition="InStock" AllowBackordersAndPreorders="true" BTUPC="" OrderFormId="d18fd56e-a850-4327-906d-98cf19d40acf" BTVolumeSet="" ShippingMethodId="00000000-0000-0000-0000-000000000000" BTBackorderQuantity="0" BTTitleEditionVersion="" BTISBN="9781416967330" ExtendedPrice="84.9500" OrderLevelDiscountAmount="0.0000" ModifiedBy="" BTAuthorOrArtist="" ProductId="0012289280" ListPrice="16.9900" Created="2011-08-31T15:08:49.82-04:00" BTItemType="0" ShippingAddressId="" Quantity="5.0000" ShippingMethodName="" BTKey="0012289280" InStockQuantity="0.0000" PlacedPrice="16.9900" BTDiscountPercent="0.0000" BTSalePrice="48.4215" BTLineItemNote="" BTPriceKey="" ContractPrice="48.4215" DisplayName="Night Flight" BTBibNumber="" BTCatalogCode="">
+						<ItemLevelDiscountsApplied/>
+						<OrderLevelDiscountsApplied/>
+						<WeaklyTypedProperties/>
+					</LineItemEx>
+				</LineItems>
+				<WeaklyTypedProperties>
+					<WeaklyTypedProperty Name="BasketType" Value="1" Type="Int32"/>
+					<WeaklyTypedProperty Name="order_id" Value="HDJDM0GPP47S8GJPL7X0V6V4P7" Type="String"/>
+				</WeaklyTypedProperties>
+			</OrderFormEx>
+		</OrderForms>
+		<Addresses>
+			<OrderAddressEx RegionCode="FL" IsPOBox="false" Email="" CountryCode="USA" EveningPhoneNumber="" PostalCode="32114" Name="MANDALA BOOKS" State="" OrderGroupId="503882da-988b-4564-b98b-36bef2259d77" OrderAddressId="{85329255-184E-446E-A331-78752ADEE0A0}" City="DAYTONA BEACH" Line4="" Organization="" Line1="MANDALA BOOKS" Line2="204 VOLUSIS AVE" Line3="" FaxNumber="">
+				<WeaklyTypedProperties/>
+			</OrderAddressEx>
+		</Addresses>
+		<WeaklyTypedProperties>
+			<WeaklyTypedProperty Name="BasketType" Value="1" Type="Int32"/>
+		</WeaklyTypedProperties>
+	</PurchaseOrderEx>
+</OrderGroups>

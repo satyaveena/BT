@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.BizTalk.Schemas.Common", "BTNextGen.BizTalk.Schemas.Common\BTNextGen.BizTalk.Schemas.Common.btproj", "{409AE5E9-5345-43B9-9576-694D62ED5550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.BizTalk.CS.Orders.Schemas", "BTNextGen.BizTalk.CS.Orders.Schemas\BTNextGen.BizTalk.CS.Orders.Schemas.btproj", "{E7C34F25-F0F5-4400-AE21-D0B4BE11D62B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.BizTalk.CS.Profiles.Schemas", "BTNextGen.BizTalk.CS.Profiles.Schemas\BTNextGen.BizTalk.CS.Profiles.Schemas.btproj", "{573744E4-E3F0-436B-8818-35DCD40D48EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.BizTalk.CS.Inventory.Schemas", "BTNextGen.BizTalk.CS.Inventory.Schemas\BTNextGen.BizTalk.CS.Inventory.Schemas.btproj", "{6E63C1D8-2073-44B6-BF29-EA92C3A17DE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.BizTalk.Orders.Common", "BTNextGen.BizTalk.Orders.Common\BTNextGen.BizTalk.Orders.Common.btproj", "{0FC3C406-1E62-4661-965B-97866D899F32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.BizTalk.CS.Catalogue.Schemas", "BTNextGen.BizTalk.CS.Catalogue.Schemas\BTNextGen.BizTalk.CS.Catalogue.Schemas.btproj", "{B1978486-8C2A-4B08-98BD-5D9EF910C72B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://btdevtfs/portal/nextgencollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BTNextGen.BizTalk.CS.Catalogue.Schemas\\BTNextGen.BizTalk.CS.Catalogue.Schemas.btproj
+		SccProjectName1 = BTNextGen.BizTalk.CS.Catalogue.Schemas
+		SccLocalPath1 = BTNextGen.BizTalk.CS.Catalogue.Schemas
+		SccProjectUniqueName2 = BTNextGen.BizTalk.CS.Inventory.Schemas\\BTNextGen.BizTalk.CS.Inventory.Schemas.btproj
+		SccProjectName2 = BTNextGen.BizTalk.CS.Inventory.Schemas
+		SccLocalPath2 = BTNextGen.BizTalk.CS.Inventory.Schemas
+		SccProjectUniqueName3 = BTNextGen.BizTalk.CS.Orders.Schemas\\BTNextGen.BizTalk.CS.Orders.Schemas.btproj
+		SccProjectName3 = BTNextGen.BizTalk.CS.Orders.Schemas
+		SccLocalPath3 = BTNextGen.BizTalk.CS.Orders.Schemas
+		SccProjectUniqueName4 = BTNextGen.BizTalk.CS.Profiles.Schemas\\BTNextGen.BizTalk.CS.Profiles.Schemas.btproj
+		SccProjectName4 = BTNextGen.BizTalk.CS.Profiles.Schemas
+		SccLocalPath4 = BTNextGen.BizTalk.CS.Profiles.Schemas
+		SccProjectUniqueName5 = BTNextGen.BizTalk.Orders.Common\\BTNextGen.BizTalk.Orders.Common.btproj
+		SccProjectName5 = BTNextGen.BizTalk.Orders.Common
+		SccLocalPath5 = BTNextGen.BizTalk.Orders.Common
+		SccProjectUniqueName6 = BTNextGen.BizTalk.Schemas.Common\\BTNextGen.BizTalk.Schemas.Common.btproj
+		SccProjectName6 = BTNextGen.BizTalk.Schemas.Common
+		SccLocalPath6 = BTNextGen.BizTalk.Schemas.Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{409AE5E9-5345-43B9-9576-694D62ED5550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409AE5E9-5345-43B9-9576-694D62ED5550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409AE5E9-5345-43B9-9576-694D62ED5550}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{409AE5E9-5345-43B9-9576-694D62ED5550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409AE5E9-5345-43B9-9576-694D62ED5550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{409AE5E9-5345-43B9-9576-694D62ED5550}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E7C34F25-F0F5-4400-AE21-D0B4BE11D62B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C34F25-F0F5-4400-AE21-D0B4BE11D62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C34F25-F0F5-4400-AE21-D0B4BE11D62B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E7C34F25-F0F5-4400-AE21-D0B4BE11D62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C34F25-F0F5-4400-AE21-D0B4BE11D62B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C34F25-F0F5-4400-AE21-D0B4BE11D62B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{573744E4-E3F0-436B-8818-35DCD40D48EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{573744E4-E3F0-436B-8818-35DCD40D48EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{573744E4-E3F0-436B-8818-35DCD40D48EE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{573744E4-E3F0-436B-8818-35DCD40D48EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{573744E4-E3F0-436B-8818-35DCD40D48EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{573744E4-E3F0-436B-8818-35DCD40D48EE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6E63C1D8-2073-44B6-BF29-EA92C3A17DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E63C1D8-2073-44B6-BF29-EA92C3A17DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E63C1D8-2073-44B6-BF29-EA92C3A17DE8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6E63C1D8-2073-44B6-BF29-EA92C3A17DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E63C1D8-2073-44B6-BF29-EA92C3A17DE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E63C1D8-2073-44B6-BF29-EA92C3A17DE8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0FC3C406-1E62-4661-965B-97866D899F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC3C406-1E62-4661-965B-97866D899F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC3C406-1E62-4661-965B-97866D899F32}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0FC3C406-1E62-4661-965B-97866D899F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC3C406-1E62-4661-965B-97866D899F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FC3C406-1E62-4661-965B-97866D899F32}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B1978486-8C2A-4B08-98BD-5D9EF910C72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1978486-8C2A-4B08-98BD-5D9EF910C72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1978486-8C2A-4B08-98BD-5D9EF910C72B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B1978486-8C2A-4B08-98BD-5D9EF910C72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1978486-8C2A-4B08-98BD-5D9EF910C72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1978486-8C2A-4B08-98BD-5D9EF910C72B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

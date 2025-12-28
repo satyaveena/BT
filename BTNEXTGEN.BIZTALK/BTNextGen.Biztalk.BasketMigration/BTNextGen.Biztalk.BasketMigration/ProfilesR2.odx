@@ -1,0 +1,109 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="e3fa8b18-f8bc-42d0-9a16-f47bd7f2c646" LowerBound="1.1" HigherBound="27.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.BasketMigration" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="4ca9a782-e61e-4e4b-b243-76cee19e3881" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IProfilesR2Service&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IProfilesR2Service" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="d5c5737f-7e9c-48f7-8497-b178a5d7670a" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;GetBasketDatasetXML&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="GetBasketDatasetXML" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="285c8d26-c6d5-48d4-a3a5-57b8d5c1ac8f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.64">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IProfilesR2Service_GetBasketDatasetXML_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IProfilesR2Service/GetBasketDatasetXML&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="38a5768e-4516-4e88-a179-e65ee87500cc" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.66" HigherBound="16.118">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BasketMigration.IProfilesR2Service_GetBasketDatasetXML_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IProfilesR2Service_GetBasketDatasetXML_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IProfilesR2Service/GetBasketDatasetXMLResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="6de3a593-52fa-423e-94b8-1af2e2cae152" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IProfilesR2Service_GetBasketDatasetXML_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IProfilesR2Service_GetBasketDatasetXML_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="bf6b47cc-57a5-4f67-94c6-a2b5d50b9df9" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.BasketMigration.ProfilesR2_tempuri_org.GetBasketDatasetXML" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="fdb389d1-989d-41c2-a079-d3c9d94f0d1b" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IProfilesR2Service_GetBasketDatasetXML_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IProfilesR2Service_GetBasketDatasetXML_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="edd808c8-9551-4054-a030-920407426512" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.BasketMigration.ProfilesR2_tempuri_org.GetBasketDatasetXMLResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="9f2d8a04-7423-4cab-83ce-0de292cf5bac" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="26.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;ProfilesR2&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ProfilesR2Client" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="8f5d24f7-48db-4a91-be31-bba4db21ed0a" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.BasketMigration
+{
+    internal messagetype IProfilesR2Service_GetBasketDatasetXML_InputMessage
+    {
+        body ProfilesR2_tempuri_org.GetBasketDatasetXML parameters;
+    };
+    internal messagetype IProfilesR2Service_GetBasketDatasetXML_OutputMessage
+    {
+        body ProfilesR2_tempuri_org.GetBasketDatasetXMLResponse parameters;
+    };
+    internal porttype IProfilesR2Service
+    {
+        requestresponse GetBasketDatasetXML
+        {
+            IProfilesR2Service_GetBasketDatasetXML_InputMessage, IProfilesR2Service_GetBasketDatasetXML_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ProfilesR2Client
+    {
+        body ()
+        {
+        }
+    }
+}
+

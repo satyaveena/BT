@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="01e56777-3d33-4846-b190-6b6271142f2f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ts360dev3.baker-taylor.com/_layouts/PunchOutService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PunchOutService.wsdl" MetadataType="Wsdl" ID="4df4aa37-c717-4ba8-906c-d6957efe9c6b" SourceId="1" SourceUrl="http://ts360dev3.baker-taylor.com/_layouts/PunchOutService.svc?wsdl" />
+    <MetadataFile FileName="PunchOutService.disco" MetadataType="Disco" ID="e32116c3-0fe1-47c3-83ca-4bd0c7d97478" SourceId="1" SourceUrl="http://ts360dev3.baker-taylor.com/_layouts/PunchOutService.svc?disco" />
+    <MetadataFile FileName="PunchOutService.xsd" MetadataType="Schema" ID="c9b4ff13-e460-407c-a03e-7d0d671964aa" SourceId="1" SourceUrl="http://ts360dev3.baker-taylor.com/_layouts/PunchOutService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PunchOutService1.xsd" MetadataType="Schema" ID="a18e3c33-72a1-4943-95c2-69cee65a7b18" SourceId="1" SourceUrl="http://ts360dev3.baker-taylor.com/_layouts/PunchOutService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PunchOutService2.xsd" MetadataType="Schema" ID="179eb9dd-ccf8-4771-8d75-fbf645ec0c23" SourceId="1" SourceUrl="http://ts360dev3.baker-taylor.com/_layouts/PunchOutService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PunchOutService1.wsdl" MetadataType="Wsdl" ID="f41380c3-be68-41ef-b4e0-7cfd73317c0d" SourceId="1" SourceUrl="http://ts360dev3.baker-taylor.com/_layouts/PunchOutService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

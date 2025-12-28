@@ -1,0 +1,12 @@
+﻿CREATE VIEW [dbo].[bam_EmailFromFile_ActiveInstances] AS SELECT NULL [RecordID]
+, [ActivityID]
+, [FileReceived]
+, [FileContent3885]
+, [EmailConstructed]
+, [EmailServer]
+, [EmailRecipient]
+, [EmailSender]
+, [EmaiRecipientAdded]
+, [EmailSent]
+, [LastModified]
+ FROM [dbo].[bam_EmailFromFile_Active] WITH (NOLOCK) WHERE IsVisible = 1

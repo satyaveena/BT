@@ -1,0 +1,31 @@
+<OrderGroups xmlns="">
+	<PurchaseOrderEx Status="NewOrder" SoldToId="683cd506-3686-430c-a574-5ece0445a1f6" TaxTotal="0.0000" LastModified="2011-08-24T18:26:06.587-04:00" Created="2011-08-24T18:26:06.587-04:00" StatusCode="PurchaseOrder" TrackingNumber="401017" SubTotal="19.9443" IsDirty="false" LineItemCount="1" HandlingTotal="0.0000" BasketId="50d6935b-ec23-4853-87b3-b9f5d057618d" ShippingTotal="0.0000" ModifiedBy="" SoldToName="" Total="0.0000" OrderGroupId="dc0ed09e-5f8c-44d9-9fe4-3b891c1f4590" Name="BOY_BABY_TOLAS" BillingCurrency="">
+		<OrderForms>
+			<OrderFormEx CostSummaryByIntAdmin="{b6ce1eb4-b0f6-4cfd-af36-d9e1b1057e66};1.75#{afbcf0f9-ac69-4d3e-8805-c7229e8bfa5f};1.00#" BTNote="" CostSummaryByExtAdmin="" IsTolas="true" IsHomeDeliveryIndicator="true" LegacyBasketId="" Name="Default" HomeDeliveryAccountId="BTHD5838" LastModified="2011-08-24T18:26:06.553-04:00" ShippingTotal="0.0000" CheckReserveFlag="true" LegacySource="" BTGiftWrapCode="All_Occasion" SubTotal="19.9443" OrderGroupId="dc0ed09e-5f8c-44d9-9fe4-3b891c1f4590" HandlingTotal="0.0000" FolderId="" EntertainmentAccountId="BTHD5838" BookAccountId="BTHD5838" IsPendingPurge="false" InventoryReserveNumber="true" BillingAddressId="" OrderFormId="eeb59f2c-18a1-4fd8-ab7c-c7ec81d2c0c2" PriorStatus="" IsBTCart="0" TransmissionNumber="1000442" BTStatus="" AccountType="Entertainment" AccountInventoryType="" StoreProccessingFee="false" OriginalBasketId="{a06b27ee-0ba8-4dc7-a35c-a62e5da2c0ed}" BTGiftWrapMessage="DO YOU HEAR ME NOWI BOUGHT THIS JUST FOR YOUYOU CAN THANK ME IN CASH LATER!" StoreOrderFee="false" Created="2011-08-24T18:26:06.007-04:00" IsBackOrder="false" PromoUserIdentity="qauser0051@btol.com" StoreGiftWrapFee="false" HomeDeliveryAddressType="Standard" PONumber="MINNIE_TOM_JONES" StoreShippingFee="false" ModifiedBy="" BTTargetERP="BTE" Status="ReadyForCheckout" TaxTotal="0.0000" WarehouseList="MOM;" Total="0.0000" IsArchived="0" IsPrimary="0" SpecialInstructions="Do Something Special For Me!" ShippingMethodExId="UPS Ground">
+				<PromoCodeRecords/>
+				<Shipments/>
+				<PromoCodes/>
+				<Payments/>
+				<LineItems>
+					<LineItemEx LineItemDiscountAmount="0.0000" ProductCatalog="Book Catalog 4" LineItemNumberId="iXwvAwi8pw" BTCancelQuantity="0" LegacyBasketId="0" LineItemId="65e14cd6-3bab-4d97-bc14-54f5b8abd292" BTGTIN="" LastModified="2011-08-24T18:26:06.54-04:00" LegacyBasketLineId="0" BackorderQuantity="0.0000" Status="" BTUsingPromotion="false" PreorderQuantity="0.0000" OrderGroupId="dc0ed09e-5f8c-44d9-9fe4-3b891c1f4590" Description="" BTPublisher="" InventoryCondition="InStock" AllowBackordersAndPreorders="true" BTUPC="" OrderFormId="eeb59f2c-18a1-4fd8-ab7c-c7ec81d2c0c2" BTVolumeSet="" ShippingMethodId="00000000-0000-0000-0000-000000000000" BTBackorderQuantity="0" BTTitleEditionVersion="" BTISBN="9780545010221" ExtendedPrice="34.9900" OrderLevelDiscountAmount="0.0000" ModifiedBy="" BTAuthorOrArtist="" ProductId="0012037714" ListPrice="34.9900" Created="2011-08-24T18:26:06.023-04:00" BTItemType="0" ShippingAddressId="" Quantity="1.0000" ShippingMethodName="" BTKey="0012037714" InStockQuantity="0.0000" PlacedPrice="34.9900" BTDiscountPercent="0.0000" BTSalePrice="19.9443" BTLineItemNote="" BTPriceKey="" ContractPrice="19.9443" DisplayName="Harry Potter and the Deathly Hallows" BTBibNumber="" BTCatalogCode="">
+						<ItemLevelDiscountsApplied/>
+						<OrderLevelDiscountsApplied/>
+						<WeaklyTypedProperties/>
+					</LineItemEx>
+				</LineItems>
+				<WeaklyTypedProperties>
+					<WeaklyTypedProperty Name="BasketType" Value="1" Type="Int32"/>
+					<WeaklyTypedProperty Name="order_id" Value="QCB617U3RL5E8KA5HKXH24AG95" Type="String"/>
+				</WeaklyTypedProperties>
+			</OrderFormEx>
+		</OrderForms>
+		<Addresses>
+			<OrderAddressEx RegionCode="NJ" IsPOBox="false" Email="" CountryCode="" EveningPhoneNumber="" PostalCode="08833" Name="MINNIE ME" RegionName="New Jersey" State="" LastName="" OrderGroupId="dc0ed09e-5f8c-44d9-9fe4-3b891c1f4590" DaytimePhoneNumber="1234567890" CountryName="" OrderAddressId="{21159d16-ee67-42f9-a98b-6cce7176abaa}" City="LEBANON" FirstName="" Line4="" Organization="" Line1="RIGHT FORK IN RD" Line2="2ND HOUSE ON LEFT" Line3="" FaxNumber="">
+				<WeaklyTypedProperties/>
+			</OrderAddressEx>
+		</Addresses>
+		<WeaklyTypedProperties>
+			<WeaklyTypedProperty Name="BasketType" Value="1" Type="Int32"/>
+		</WeaklyTypedProperties>
+	</PurchaseOrderEx>
+</OrderGroups>

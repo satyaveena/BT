@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21107</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C134E472-FECF-4A7C-B6A5-43DF5E267788}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>CartMigration</RootNamespace>
+    <AssemblyName>BTNextGen.Biztalk.CartMigration</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+    <SccProjectName>%24/NextGen/Main/Src/BTNextGen.BizTalk/BTNextGen.Biztalk.CartMigration/CartMigration</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://btdevadtfs:8080/tfs/baker_and_taylor</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BTNextGen.Biztalk.Common.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BTNextGen.BizTalk.SSO.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Users\Administrator\Documents\Visual Studio 2010\Projects\NextGen\Main\Src\BTNextGen.BizTalk\BTNextGen.BizTalk.SSO.Utility\BTNextGen.BizTalk.SSO.Utility\obj\Debug\BTNextGen.BizTalk.SSO.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ESB.ExceptionHandling, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk ESB Toolkit 2.1\Bin\Microsoft.Practices.ESB.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk ESB Toolkit 2.1\Bin\Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="CartMigrationRequestBackup.xsd">
+      <TypeName>CartMigrationRequestBackup</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Schema>
+    <Schema Include="IOrder.xsd">
+      <Namespace>CartMigration</Namespace>
+      <TypeName>IOrder</TypeName>
+    </Schema>
+    <Schema Include="IOrder_schemas_datacontract_org_2004_07_BTNextGen_Services_IOrders.xsd">
+      <Namespace>CartMigration</Namespace>
+      <TypeName>IOrder_schemas_datacontract_org_2004_07_BTNextGen_Services_IOrders</TypeName>
+    </Schema>
+    <Schema Include="IOrder_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <Namespace>CartMigration</Namespace>
+      <TypeName>IOrder_schemas_microsoft_com_2003_10_Serialization</TypeName>
+    </Schema>
+    <Schema Include="IOrder_tempuri_org.xsd">
+      <Namespace>CartMigration</Namespace>
+      <TypeName>IOrder_tempuri_org</TypeName>
+    </Schema>
+    <Schema Include="xml_cartmigration_sp.xsd">
+      <TypeName>xml_cartmigration_sp</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Schema>
+    <Schema Include="TypedPolling.999.xsd">
+      <TypeName>TypedPolling_999</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Schema>
+    <None Include="BTNextGen.Biztalk.Common.snk" />
+    <Schema Include="CartMigrationErrorDataSetSchema.xsd">
+      <TypeName>CartMigrationErrorDataSetSchema</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Schema>
+    <Schema Include="CartMigrationErrorProcedure.dbo.xsd">
+      <TypeName>CartMigrationErrorProcedure_dbo</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Schema>
+    <Schema Include="CartMigrationErrorBackupSchema.xsd">
+      <TypeName>CartMigrationErrorBackupSchema</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Schema>
+    <Schema Include="MessageCartsFromSQLSchema.xsd">
+      <TypeName>MessageCartsFromSQLType</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="TransformCSRequestToSQL_TS3.btm">
+      <TypeName>TransformCSRequestToTS3SQL</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+    <Map Include="TransformCSRequestToSQL_BTLOL-2.btm">
+      <TypeName>Copy_of_TransformCSRequestToSQL_BTLOL</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+    <Map Include="TransformCSRequestToSQL_TS3-2.btm">
+      <TypeName>Copy_of_TransformCSRequestToSQL_TS3</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+    <Content Include="IOrder.BindingInfo.xml" />
+    <Content Include="IOrder_Custom.BindingInfo.xml" />
+    <Content Include="OrdersService.BindingInfo.xml" />
+    <Map Include="TransformCommerceReplyToSQL.btm">
+      <TypeName>TransformCommerceReplyToSQL</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+    <Map Include="TransformCommerceReplyToBackup.btm">
+      <TypeName>TransformCommerceReplyToBackup</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+    <Map Include="Transform_CartErrorListing2CartProcedureRequest.btm">
+      <TypeName>Transform_2</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+    <Map Include="Transform_EmailFailuresToCS.btm">
+      <TypeName>Transform_EmailFailuresToCS</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+    <Map Include="TransformCSRequestToSQL_BTLOL.btm">
+      <TypeName>TransformCSRequestToBTLOLSQL</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+    <Map Include="TransformCommerceRequestToBackup.btm">
+      <TypeName>TransformCommerceRequestToBackup</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+    <Map Include="Transform_4.btm">
+      <TypeName>Transform_4</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+    <Map Include="Transform_5.btm">
+      <TypeName>Transform_5</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo.xml" />
+    <XLang Include="OrdersService.odx">
+      <TypeName>OrdersService</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </XLang>
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Map Include="Transform_sql_to_commerce.btm">
+      <TypeName>Transform_sql_to_commerce</TypeName>
+      <Namespace>CartMigration</Namespace>
+    </Map>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

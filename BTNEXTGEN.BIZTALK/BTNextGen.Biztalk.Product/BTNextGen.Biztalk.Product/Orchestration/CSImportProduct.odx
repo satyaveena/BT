@@ -1,0 +1,1969 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="ad6ad62c-f49b-49c7-8361-bbb50ddb1fcb" LowerBound="1.1" HigherBound="541.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.Product" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="79e0ffa6-726c-40cd-baf7-cc07170d8698" ParentLink="Module_ServiceDeclaration" LowerBound="130.1" HigherBound="540.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CSImportProduct" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="eb90f4c9-d861-4025-b5c6-557775e332f2" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="167.1" HigherBound="168.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlDocDBQuery" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="f17c6b0c-22b6-4abf-ad0a-44a1bd85192d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="168.1" HigherBound="169.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strCounter" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7b6a4517-b226-426b-9790-c4a08c6e017f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="169.1" HigherBound="170.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="cntCatalog" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="193dba7f-d291-449e-a3ab-abadfaf8d229" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="170.1" HigherBound="171.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="counter" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="45c049ca-0d2f-44f9-a635-94fb63e75439" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="171.1" HigherBound="172.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="faultSeverity" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d4d58b1d-eba5-4ef6-bf2d-c6a3a35368e4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="172.1" HigherBound="173.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="intCSError" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="703bb9b5-203a-40ac-8a01-bc635e236168" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="173.1" HigherBound="174.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="intMaxProduct" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="afab03fa-6661-479f-a0a4-15a9991b9095" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="174.1" HigherBound="175.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="bolArchieve" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="43b75eca-23de-4003-a9b2-5cde2a6a140f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="175.1" HigherBound="176.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CatalogName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="925d015b-6e47-47e0-8218-6720420f741a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="176.1" HigherBound="177.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.DateTime" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RetryStartTime" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7cab9e52-a3a5-40b0-8921-53f0ed7d2078" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="177.1" HigherBound="178.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.DateTime" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RetryEndTime" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="09bec2e4-0474-4149-bbce-ca6d2f8b4592" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="178.1" HigherBound="179.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.DateTime" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CurrentTime" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="e9bf4982-99dc-48a5-9f01-163b5c4584e3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="179.1" HigherBound="180.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RecordStatus" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d0d4b020-1066-42ad-8472-fb144607cbc5" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="180.1" HigherBound="181.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="delaySecs" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="11721575-48f7-4920-b05a-28bc227b6ead" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="181.1" HigherBound="182.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="intProductCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d6d85d16-1900-492c-bb8c-9c8b81aa2993" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="182.1" HigherBound="183.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int64" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="intBatchID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d1e0b47c-fbfc-4083-9a73-1be2dbdddabe" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="183.1" HigherBound="184.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlDocBatchSuccess" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="72ede527-700b-47c7-9b7b-92251f73528a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="184.1" HigherBound="185.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="bolLogEve" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5e63bd5e-98b4-4796-9ec4-3fa2fdbbd809" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="185.1" HigherBound="186.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strProductEveLog" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2e780e3f-6ea9-4cef-b78c-10ec81130f8a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="186.1" HigherBound="187.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="currentminutestolog" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d4ce38ae-ad89-4d66-b469-5dc0716ff40a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="187.1" HigherBound="188.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="intprodcutcataloglogsbeforeminute" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="LongRunningTransaction" OID="8d440570-e435-476e-836d-2ebbd4cfe0c0" ParentLink="ServiceDeclaration_Transaction" LowerBound="131.21" HigherBound="131.61">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="466a65e3-83b5-425a-93bb-b1b9a592533f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="157.1" HigherBound="158.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgCSCatalog" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="7ecc7e3e-9142-4b45-9313-8da332acb15d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="158.1" HigherBound="159.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgCSResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="303c7cf1-ff90-407e-af58-a9a93776c795" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="159.1" HigherBound="160.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.Schema.BTInitiator" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgInitImport" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="03be888d-018a-4e5e-9f82-e3811255b2a8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="160.1" HigherBound="161.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProducts" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgDBProductQuery" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8c6a34ba-818a-4f7c-81cc-39652b699295" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="161.1" HigherBound="162.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProductsResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgDBProductResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3e15b1f8-aa39-4651-b305-ec891150b70b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="162.1" HigherBound="163.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailure" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgDBErrorAckQuery" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c088f0aa-1d72-42f5-8144-fc7311f1cc90" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="163.1" HigherBound="164.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailureResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgDBErrorAckResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="de400580-d256-4b59-8dd0-d31f23fb82d7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="164.1" HigherBound="165.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgFault" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="30208c41-f2e6-4e18-93ca-d10ee30e19c9" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="165.1" HigherBound="166.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.RepositoryProductBatchSuccessTypedProcedure_dbo.procCommerceServerSetNextGenProductsBatchSuccess" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgBatchSuccess" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="102fadd7-6a22-4467-8879-7236a13482b4" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="166.1" HigherBound="167.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.RepositoryProductBatchSuccessTypedProcedure_dbo.procCommerceServerSetNextGenProductsBatchSuccessResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgBatchSuccessResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="628d58be-29d4-4d7d-9935-cd3d2c3c319e" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="600c6bd9-71f1-4a28-9707-36ede383d32a" ParentLink="ServiceBody_Statement" LowerBound="190.1" HigherBound="204.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="PortImportInitiation" />
+                    <om:Property Name="MessageName" Value="msgInitImport" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="RecieveInitiation" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="2d5e829d-1629-4b8a-b924-e999060c7d8f" ParentLink="ServiceBody_Statement" LowerBound="204.1" HigherBound="251.1">
+                    <om:Property Name="Expression" Value="currentminutestolog = System.DateTime.Now.Minute;&#xD;&#xA;&#xD;&#xA;if ( bolLogEve== true)&#xD;&#xA;{&#xD;&#xA;strProductEveLog =  &quot;CSImportProduct Orchestration Beginning.&quot;;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,strProductEveLog);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//Retrieve Values from SSO&#xD;&#xA;intMaxProduct = System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.Product&quot;,&quot;MaxProductRecord&quot;));&#xD;&#xA;bolArchieve = System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.Product&quot;,&quot;flgArchive&quot;));&#xD;&#xA;faultSeverity = System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.Product&quot;,&quot;faultSeverity&quot;));&#xD;&#xA;delaySecs = System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.Product&quot;,&quot;delay&quot;));&#xD;&#xA;bolLogEve = System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.Product&quot;,&quot;debugEventLogging&quot;));&#xD;&#xA;intprodcutcataloglogsbeforeminute = System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.Product&quot;,&quot;prodcutcataloglogsbeforeminute&quot;));&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;CurrentTime = System.DateTime.Now;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;RetryStartTime = System.DateTime.Parse(CurrentTime.ToShortDateString()+&quot; &quot;+SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.Product&quot;,&quot;RetryStart&quot;));&#xD;&#xA;&#xD;&#xA;RetryEndTime =  RetryStartTime.AddHours(System.Convert.ToDouble(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.Product&quot;,&quot;RetryDurationHours&quot;)));&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if((CurrentTime.CompareTo(RetryStartTime)&gt;=0) &amp; (CurrentTime.CompareTo(RetryEndTime)&lt;=0))&#xD;&#xA;{&#xD;&#xA;    RecordStatus = &quot;Failed&quot;;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;     RecordStatus = &quot;New&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if ( bolLogEve== true)&#xD;&#xA;{&#xD;&#xA;strProductEveLog =  &quot;Product Read SSO Value Shape Complete&quot;;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,strProductEveLog);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Read SSO Values" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="ed0000f1-146b-41df-9dbb-54207573c66e" ParentLink="ServiceBody_Statement" LowerBound="251.1" HigherBound="276.1">
+                    <om:Property Name="Expression" Value="&#xD;&#xA;&#xD;&#xA;if ( bolLogEve== true)&#xD;&#xA;{&#xD;&#xA;strProductEveLog =  &quot;Product Set Counters Shape Begin&quot;;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,strProductEveLog);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//cntCatalog= System.Convert.ToInt32(xpath(msgInitImport,&quot;count(/*[local-name()='InitialiseRelationship' and namespace-uri()='http://BTNextGen.Biztalk.Product.RelationshipInitiator']/*[local-name()='CatalogName' and namespace-uri()=''])&quot; ));&#xD;&#xA;cntCatalog= System.Convert.ToInt32(xpath(msgInitImport,&quot;count(/*[local-name()='Action' and namespace-uri()='http://BTNextGen.BizTalk.Product.Schemas.BTInitiator']/*[local-name()='CatalogName' and namespace-uri()=''])&quot; ));&#xD;&#xA;                                                           &#xD;&#xA;counter=1;&#xD;&#xA;strCounter=&quot;1&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if ( bolLogEve== true)&#xD;&#xA;{&#xD;&#xA;strProductEveLog =  &quot;Product Set Counters Shape Complete&quot; + cntCatalog.ToString();&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,strProductEveLog);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="SET Counters" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="While" OID="55d0d798-1287-4af6-9592-2a6f28c6bddf" ParentLink="ServiceBody_Statement" LowerBound="276.1" HigherBound="534.1">
+                    <om:Property Name="Expression" Value="counter &lt;= cntCatalog" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Loop each catalog" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableAssignment" OID="81efd56f-a01a-4fbe-a840-6f36176483a6" ParentLink="ComplexStatement_Statement" LowerBound="279.1" HigherBound="290.1">
+                        <om:Property Name="Expression" Value="CatalogName= xpath(msgInitImport,&quot;string(/*[local-name()='Action' and namespace-uri()='http://BTNextGen.BizTalk.Product.Schemas.BTInitiator']/*[local-name()='CatalogName' and namespace-uri()=''][&quot;+strCounter+&quot;])&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if ( bolLogEve== true)&#xD;&#xA;{&#xD;&#xA;strProductEveLog =  &quot;Extract Catalog Shape Complete&quot;;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,strProductEveLog);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Extract Catalog Name" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Scope" OID="99337bd0-124b-4473-9820-7e030d102ab6" ParentLink="ComplexStatement_Statement" LowerBound="290.1" HigherBound="528.1">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CS Import Product" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="f30d15b0-48b4-43f0-8dae-e4af68a466f2" ParentLink="ComplexStatement_Statement" LowerBound="295.1" HigherBound="316.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_DBQuery" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="c3f8d34c-9c42-46aa-8c84-10537af3874d" ParentLink="Construct_MessageRef" LowerBound="296.35" HigherBound="296.52">
+                                <om:Property Name="Ref" Value="msgDBProductQuery" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="e763efd7-afc9-4bc0-aded-587f094ee55c" ParentLink="ComplexStatement_Statement" LowerBound="298.1" HigherBound="315.1">
+                                <om:Property Name="Expression" Value="xmlDocDBQuery.LoadXml(&quot;&lt;ns0:procCommerceServerGetNextGenProducts xmlns:ns3=\&quot;http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetNextGenProducts\&quot; xmlns:ns0=\&quot;http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\&quot;&gt;&lt;ns0:CatalogName&gt;CatalogName_0&lt;/ns0:CatalogName&gt;&lt;ns0:RowCount&gt;10&lt;/ns0:RowCount&gt;&lt;ns0:BatchID&gt;&lt;/ns0:BatchID&gt;&lt;/ns0:procCommerceServerGetNextGenProducts&gt;&quot;);&#xD;&#xA;msgDBProductQuery= xmlDocDBQuery;&#xD;&#xA;msgDBProductQuery.CatalogName= CatalogName;&#xD;&#xA;msgDBProductQuery.RowCount= intMaxProduct;&#xD;&#xA;//msgDBProductQuery.BatchID = intBatchID;&#xD;&#xA;//msgDBProductQuery.BatchID = RecordStatus; record status should be integer&#xD;&#xA;&#xD;&#xA;//xmlDocBatchSuccess.LoadXml(&quot;&lt;ns0:procCommerceServerSetNextGenProductsBatchSuccess xmlns:ns0=\&quot;http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\&quot;&gt;&lt;ns0:BatchID&gt;0&lt;/ns0:BatchID&gt;&lt;/ns0:procCommerceServerSetNextGenProductsBatchSuccess&gt;&quot;);&#xD;&#xA;&#xD;&#xA;//msgBatchSuccess =xmlDocBatchSuccess;&#xD;&#xA;//msgBatchSuccess.BatchID =intProductCount&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="assign dbquery" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="1a021e8b-fd21-4ab0-99aa-28ddc8176256" ParentLink="ComplexStatement_Statement" LowerBound="316.1" HigherBound="323.1">
+                            <om:Property Name="Expression" Value="if ( bolLogEve== true)&#xD;&#xA;{&#xD;&#xA;strProductEveLog =  &quot;Product Construct_DB Query assign dbquery Shape Complete &quot; ;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,strProductEveLog);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_3" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="50947600-b851-4702-9a67-79e10bd434f1" ParentLink="ComplexStatement_Statement" LowerBound="323.1" HigherBound="325.1">
+                            <om:Property Name="PortName" Value="portprocCommerceServerGetNextGenProducts" />
+                            <om:Property Name="MessageName" Value="msgDBProductQuery" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="DB Product Query" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="d947c78f-b548-4df5-814f-8929810be5f2" ParentLink="ComplexStatement_Statement" LowerBound="325.1" HigherBound="327.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="portprocCommerceServerGetNextGenProducts" />
+                            <om:Property Name="MessageName" Value="msgDBProductResponse" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="DB Product Response" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="36aa3c44-ca01-45ce-8960-68d563af3fe7" ParentLink="ComplexStatement_Statement" LowerBound="327.1" HigherBound="346.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;//intProductCount= System.Convert.ToInt32(xpath(msgMultiDBProductResponse.Parameters,&quot;count(/*[local-name()='procCommerceServerGetNextGenProductsResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'])&quot; ));&#xD;&#xA; //intProductCount= System.Convert.ToInt32(xpath(msgDBProductResponse,&quot;count(/*[local-name()='procCommerceServerGetNextGenProductsResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'])&quot; ));&#xD;&#xA;//intProductCount=System.Convert.ToInt32(msgDBProductResponse.StoredProcedureResultSet1.ProductCount);&#xD;&#xA;intProductCount= System.Convert.ToInt32(xpath(msgDBProductResponse,&quot;count(/*[local-name()='procCommerceServerGetNextGenProductsResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetNextGenProducts']/*[local-name()='BTKEY' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetNextGenProducts'])&quot; ));&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;///*[local-name()='procCommerceServerGetNextGenProductsResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetNextGenProducts']/*[local-name()='BTKEY' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetNextGenProducts']&#xD;&#xA;//intProductCount = msgDBProductResponse.StoredProcedureResultSet1.ProductCount;&#xD;&#xA;                                                                                        &#xD;&#xA;if ( bolLogEve== true)&#xD;&#xA;{&#xD;&#xA;&#xD;&#xA;strProductEveLog = &quot;Product Expression Shape 1 Complete Product Count&quot; + intProductCount.ToString() ;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,strProductEveLog);&#xD;&#xA;&#xD;&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Decision" OID="052bac3b-7e06-47e2-b92c-85a24a124446" ParentLink="ComplexStatement_Statement" LowerBound="346.1" HigherBound="354.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="DecideArchive" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="3023390f-daca-42c1-9712-371a51a68891" ParentLink="ReallyComplexStatement_Branch" LowerBound="347.25" HigherBound="354.1">
+                                <om:Property Name="Expression" Value="bolArchieve == true" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Need to Archive?" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Send" OID="ae78fc2c-0659-469f-bec3-b4c7b7d5526d" ParentLink="ComplexStatement_Statement" LowerBound="349.1" HigherBound="351.1">
+                                    <om:Property Name="PortName" Value="SendTempDBQ" />
+                                    <om:Property Name="MessageName" Value="msgDBProductQuery" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="SendTempDBQuery" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Send" OID="bf3f3c47-e8e0-4c67-9464-d11166f3fffb" ParentLink="ComplexStatement_Statement" LowerBound="351.1" HigherBound="353.1">
+                                    <om:Property Name="PortName" Value="ArchiveDBResponse" />
+                                    <om:Property Name="MessageName" Value="msgDBProductResponse" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ArchiveDBResponse" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="e27247c5-9761-481c-8e8c-f19d79a1ddbb" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="8a5293b4-7293-4c9c-80b6-99efff3ba1fd" ParentLink="ComplexStatement_Statement" LowerBound="354.1" HigherBound="491.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Check if Any records" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="27984e84-cf0f-45cb-9641-b08f7e50392d" ParentLink="ReallyComplexStatement_Branch" LowerBound="355.25" HigherBound="481.1">
+                                <om:Property Name="Expression" Value="intProductCount&gt;0" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="More than one Record" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Construct" OID="c439c8a7-91fd-448b-88bb-a4859e8bbb56" ParentLink="ComplexStatement_Statement" LowerBound="357.1" HigherBound="363.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct Catalog" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="4f920bd1-4e28-4c16-a1b1-8b7f1c348d7c" ParentLink="Construct_MessageRef" LowerBound="358.39" HigherBound="358.51">
+                                        <om:Property Name="Ref" Value="msgCSCatalog" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Transform" OID="25b603a1-ca81-414d-bf6c-ab47b9efa7df" ParentLink="ComplexStatement_Statement" LowerBound="360.1" HigherBound="362.1">
+                                        <om:Property Name="ClassName" Value="BTNextGen.Biztalk.Product.Map.CSImportProduct" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="DBProductToCSCatalog" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="MessagePartRef" OID="a361158b-d3e9-4047-b6e0-7ba98db913ea" ParentLink="Transform_InputMessagePartRef" LowerBound="361.107" HigherBound="361.127">
+                                            <om:Property Name="MessageRef" Value="msgDBProductResponse" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_3" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="76a47464-e090-4d4a-9448-031a4b89c653" ParentLink="Transform_OutputMessagePartRef" LowerBound="361.44" HigherBound="361.56">
+                                            <om:Property Name="MessageRef" Value="msgCSCatalog" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_4" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Send" OID="4bcb15d5-4cf9-4153-b5c0-43195fde1617" ParentLink="ComplexStatement_Statement" LowerBound="363.1" HigherBound="365.1">
+                                    <om:Property Name="PortName" Value="portCSCatalog1" />
+                                    <om:Property Name="MessageName" Value="msgCSCatalog" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="SubmitCSCatalog" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Decision" OID="06ac2a2a-9e11-4206-a69f-639451442e86" ParentLink="ComplexStatement_Statement" LowerBound="365.1" HigherBound="371.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="need to Achive?" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="DecisionBranch" OID="3c814586-3678-4ac0-80d0-deb6aae23e47" ParentLink="ReallyComplexStatement_Branch" LowerBound="366.29" HigherBound="371.1">
+                                        <om:Property Name="Expression" Value="bolArchieve == true" />
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="YES" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="Send" OID="50612845-e2f7-4b7d-b0b1-d017d16d0cfa" ParentLink="ComplexStatement_Statement" LowerBound="368.1" HigherBound="370.1">
+                                            <om:Property Name="PortName" Value="ArchiveCSCatalog" />
+                                            <om:Property Name="MessageName" Value="msgCSCatalog" />
+                                            <om:Property Name="OperationName" Value="Operation_1" />
+                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="ArchiveCSCatalog" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="DecisionBranch" OID="17474e1d-02dd-43d4-9906-c6bdd83a9863" ParentLink="ReallyComplexStatement_Branch">
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Else" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Receive" OID="c27d6811-2d7e-4290-bb43-d427bcfed2a3" ParentLink="ComplexStatement_Statement" LowerBound="371.1" HigherBound="373.1">
+                                    <om:Property Name="Activate" Value="False" />
+                                    <om:Property Name="PortName" Value="portCSCatalog1" />
+                                    <om:Property Name="MessageName" Value="msgCSResponse" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Response" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="RecieveCSResponse" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Decision" OID="b32cb184-7d0d-4215-baee-2fc78fa2e617" ParentLink="ComplexStatement_Statement" LowerBound="373.1" HigherBound="379.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="archive ?" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="DecisionBranch" OID="fd60ebe8-b171-4021-b98b-bd3ba71e96c5" ParentLink="ReallyComplexStatement_Branch" LowerBound="374.29" HigherBound="379.1">
+                                        <om:Property Name="Expression" Value="bolArchieve == true" />
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="yes" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="Send" OID="51d8eebd-6974-42ca-a5e4-216911df6d29" ParentLink="ComplexStatement_Statement" LowerBound="376.1" HigherBound="378.1">
+                                            <om:Property Name="PortName" Value="ArchiveCSResponse" />
+                                            <om:Property Name="MessageName" Value="msgCSResponse" />
+                                            <om:Property Name="OperationName" Value="Operation_1" />
+                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="ArchiveCSResponse" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="DecisionBranch" OID="bdb10a96-2fa5-44a0-b2bc-b9ccbaa7668e" ParentLink="ReallyComplexStatement_Branch">
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Else" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="dee7c60d-f174-484e-8a44-7ac1c7f7b476" ParentLink="ComplexStatement_Statement" LowerBound="379.1" HigherBound="389.1">
+                                    <om:Property Name="Expression" Value="//Retrive Error Count&#xD;&#xA;intCSError =System.Convert.ToInt32(xpath(msgCSResponse,&quot;count(/*[local-name()='CommerceServerCatalogImportResponse' and namespace-uri()='']/*[local-name()='CatalogImportError' and namespace-uri()=''])&quot;));&#xD;&#xA;&#xD;&#xA;if ( bolLogEve== true)&#xD;&#xA;{&#xD;&#xA;strProductEveLog =  &quot;Product Get CS Response Shape Complete&quot;;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,strProductEveLog);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Get CS Response Error Count" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Scope" OID="9d2fbe08-7fc5-436c-a10f-005b4ac4a72b" ParentLink="ComplexStatement_Statement" LowerBound="389.1" HigherBound="480.1">
+                                    <om:Property Name="InitializedTransactionType" Value="True" />
+                                    <om:Property Name="IsSynchronized" Value="False" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="CSError Acknowledgement" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Decision" OID="dceebeba-8ce4-4328-a15d-0c41d801faf7" ParentLink="ComplexStatement_Statement" LowerBound="394.1" HigherBound="434.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Decide_CSErrorAck" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="DecisionBranch" OID="3461d144-3d9b-4a75-aff5-acaab6130b2b" ParentLink="ReallyComplexStatement_Branch" LowerBound="395.37" HigherBound="418.1">
+                                            <om:Property Name="Expression" Value="intCSError &gt; 0" />
+                                            <om:Property Name="IsGhostBranch" Value="True" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="If any CS Error" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="Construct" OID="6674932f-40ef-47fb-95ec-d92dc42968ad" ParentLink="ComplexStatement_Statement" LowerBound="397.1" HigherBound="403.1">
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="ErrorAckToDb" />
+                                                <om:Property Name="Signal" Value="True" />
+                                                <om:Element Type="Transform" OID="468b2ece-f5b8-467b-900d-8512eb4a9518" ParentLink="ComplexStatement_Statement" LowerBound="400.1" HigherBound="402.1">
+                                                    <om:Property Name="ClassName" Value="BTNextGen.Biztalk.Product.Map.CSErrorToDBAck" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="CSResponseToDB" />
+                                                    <om:Property Name="Signal" Value="True" />
+                                                    <om:Element Type="MessagePartRef" OID="852de6b6-11d8-4608-b633-73fef25c1cd3" ParentLink="Transform_InputMessagePartRef" LowerBound="401.124" HigherBound="401.144">
+                                                        <om:Property Name="MessageRef" Value="msgDBProductResponse" />
+                                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                                        <om:Property Name="Name" Value="MessagePartReference_5" />
+                                                        <om:Property Name="Signal" Value="False" />
+                                                    </om:Element>
+                                                    <om:Element Type="MessagePartRef" OID="5d4468ca-57e0-4541-a3d9-3a315f5da8c2" ParentLink="Transform_InputMessagePartRef" LowerBound="401.146" HigherBound="401.159">
+                                                        <om:Property Name="MessageRef" Value="msgCSResponse" />
+                                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                                        <om:Property Name="Name" Value="MessagePartReference_7" />
+                                                        <om:Property Name="Signal" Value="False" />
+                                                    </om:Element>
+                                                    <om:Element Type="MessagePartRef" OID="6eff5d1b-955c-40d1-b3c6-37264b7a24f5" ParentLink="Transform_OutputMessagePartRef" LowerBound="401.56" HigherBound="401.74">
+                                                        <om:Property Name="MessageRef" Value="msgDBErrorAckQuery" />
+                                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                                        <om:Property Name="Name" Value="MessagePartReference_6" />
+                                                        <om:Property Name="Signal" Value="False" />
+                                                    </om:Element>
+                                                </om:Element>
+                                                <om:Element Type="MessageRef" OID="e58115ab-1552-45e8-b4d7-fc44207ba9eb" ParentLink="Construct_MessageRef" LowerBound="398.51" HigherBound="398.69">
+                                                    <om:Property Name="Ref" Value="msgDBErrorAckQuery" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                            </om:Element>
+                                            <om:Element Type="Send" OID="28da0fa6-137e-4a4a-a65d-a67af1e08cd9" ParentLink="ComplexStatement_Statement" LowerBound="403.1" HigherBound="405.1">
+                                                <om:Property Name="PortName" Value="sndRecDBErrorAck" />
+                                                <om:Property Name="MessageName" Value="msgDBErrorAckQuery" />
+                                                <om:Property Name="OperationName" Value="Operation_1" />
+                                                <om:Property Name="OperationMessageName" Value="Request" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Send DB Error Ack " />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                            <om:Element Type="Receive" OID="979b1afb-d2ea-461d-85d7-d8610cc0e61d" ParentLink="ComplexStatement_Statement" LowerBound="405.1" HigherBound="407.1">
+                                                <om:Property Name="Activate" Value="False" />
+                                                <om:Property Name="PortName" Value="sndRecDBErrorAck" />
+                                                <om:Property Name="MessageName" Value="msgDBErrorAckResponse" />
+                                                <om:Property Name="OperationName" Value="Operation_1" />
+                                                <om:Property Name="OperationMessageName" Value="Response" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Recieve DB Ack Response" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                            <om:Element Type="Send" OID="4b9f534f-43ae-47c8-883a-8c013adb06b7" ParentLink="ComplexStatement_Statement" LowerBound="407.1" HigherBound="409.1">
+                                                <om:Property Name="PortName" Value="ArchiveCSResponse" />
+                                                <om:Property Name="MessageName" Value="msgCSResponse" />
+                                                <om:Property Name="OperationName" Value="Operation_1" />
+                                                <om:Property Name="OperationMessageName" Value="Request" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="ArchiveCSResponse" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                            <om:Element Type="Decision" OID="51fc1da6-0753-406b-9967-610496d17080" ParentLink="ComplexStatement_Statement" LowerBound="409.1" HigherBound="417.1">
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="ISArchive?" />
+                                                <om:Property Name="Signal" Value="True" />
+                                                <om:Element Type="DecisionBranch" OID="54564065-b8db-4842-a982-7480bdefdb81" ParentLink="ReallyComplexStatement_Branch" LowerBound="410.41" HigherBound="417.1">
+                                                    <om:Property Name="Expression" Value="bolArchieve == true" />
+                                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="Check Archive Flag" />
+                                                    <om:Property Name="Signal" Value="True" />
+                                                    <om:Element Type="Send" OID="96d1e9de-f8d2-47e4-a550-df07a45d14a8" ParentLink="ComplexStatement_Statement" LowerBound="412.1" HigherBound="414.1">
+                                                        <om:Property Name="PortName" Value="ArchiveCSErrorRequest" />
+                                                        <om:Property Name="MessageName" Value="msgDBErrorAckQuery" />
+                                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                                        <om:Property Name="Name" Value="ArchiveDBError" />
+                                                        <om:Property Name="Signal" Value="True" />
+                                                    </om:Element>
+                                                    <om:Element Type="Send" OID="ee392e24-2f0e-4799-84ed-a7c72c24ad32" ParentLink="ComplexStatement_Statement" LowerBound="414.1" HigherBound="416.1">
+                                                        <om:Property Name="PortName" Value="ArchiveCSErrorResponse" />
+                                                        <om:Property Name="MessageName" Value="msgDBErrorAckResponse" />
+                                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                                        <om:Property Name="Name" Value="ArchiveDBErrorAck" />
+                                                        <om:Property Name="Signal" Value="True" />
+                                                    </om:Element>
+                                                </om:Element>
+                                                <om:Element Type="DecisionBranch" OID="ffba53e0-1ca7-4f7a-920e-8f6425032488" ParentLink="ReallyComplexStatement_Branch">
+                                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="Else" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="DecisionBranch" OID="a3c99588-9f33-45ae-835a-479303db355e" ParentLink="ReallyComplexStatement_Branch">
+                                            <om:Property Name="IsGhostBranch" Value="True" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Else" />
+                                            <om:Property Name="Signal" Value="False" />
+                                            <om:Element Type="Construct" OID="360faf3b-2fa9-48eb-b8c5-dd630d62cabd" ParentLink="ComplexStatement_Statement" LowerBound="420.1" HigherBound="426.1">
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="ConstructMessage_2" />
+                                                <om:Property Name="Signal" Value="True" />
+                                                <om:Element Type="Transform" OID="0654e5cd-06df-4b4f-9164-3cc6bef1b241" ParentLink="ComplexStatement_Statement" LowerBound="423.1" HigherBound="425.1">
+                                                    <om:Property Name="ClassName" Value="BTNextGen.Biztalk.Product.Map.BuildAcksuccess" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="SuccessResponseToDB" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                    <om:Element Type="MessagePartRef" OID="321a4627-7ac7-49d7-8ea1-07902495913b" ParentLink="Transform_InputMessagePartRef" LowerBound="424.122" HigherBound="424.142">
+                                                        <om:Property Name="MessageRef" Value="msgDBProductResponse" />
+                                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                                        <om:Property Name="Name" Value="MessagePartReference_9" />
+                                                        <om:Property Name="Signal" Value="False" />
+                                                    </om:Element>
+                                                    <om:Element Type="MessagePartRef" OID="ca933fab-88f4-4b5e-8b5d-356c34308ae3" ParentLink="Transform_OutputMessagePartRef" LowerBound="424.56" HigherBound="424.71">
+                                                        <om:Property Name="MessageRef" Value="msgBatchSuccess" />
+                                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                                        <om:Property Name="Name" Value="MessagePartReference_10" />
+                                                        <om:Property Name="Signal" Value="False" />
+                                                    </om:Element>
+                                                </om:Element>
+                                                <om:Element Type="MessageRef" OID="36dd80c2-1020-484f-9b33-07d3a49a46f2" ParentLink="Construct_MessageRef" LowerBound="421.51" HigherBound="421.66">
+                                                    <om:Property Name="Ref" Value="msgBatchSuccess" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                            </om:Element>
+                                            <om:Element Type="Send" OID="0a100b04-ab43-4457-a451-76729473d6ea" ParentLink="ComplexStatement_Statement" LowerBound="426.1" HigherBound="428.1">
+                                                <om:Property Name="PortName" Value="portRepositoryProductBatchSuccess" />
+                                                <om:Property Name="MessageName" Value="msgBatchSuccess" />
+                                                <om:Property Name="OperationName" Value="Operation_1" />
+                                                <om:Property Name="OperationMessageName" Value="Request" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Send_1" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                            <om:Element Type="Receive" OID="b2340ac7-2444-4fc7-bbc0-a4696256165f" ParentLink="ComplexStatement_Statement" LowerBound="428.1" HigherBound="430.1">
+                                                <om:Property Name="Activate" Value="False" />
+                                                <om:Property Name="PortName" Value="portRepositoryProductBatchSuccess" />
+                                                <om:Property Name="MessageName" Value="msgBatchSuccessResponse" />
+                                                <om:Property Name="OperationName" Value="Operation_1" />
+                                                <om:Property Name="OperationMessageName" Value="Response" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Receive_1" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                            <om:Element Type="VariableAssignment" OID="9638b8bf-6564-41c3-a571-2540ba7d8771" ParentLink="ComplexStatement_Statement" LowerBound="430.1" HigherBound="433.1">
+                                                <om:Property Name="Expression" Value="CatalogName = &quot;Batch Processed &quot; + intBatchID.ToString();&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,CatalogName);" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Expression_2" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Catch" OID="c89b9cd5-380b-4c2d-92ad-61cccd047a5d" ParentLink="Scope_Catch" LowerBound="437.1" HigherBound="478.1">
+                                        <om:Property Name="ExceptionName" Value="CSAckException" />
+                                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                                        <om:Property Name="IsFaultMessage" Value="False" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="CS Response Exception" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="VariableAssignment" OID="6c19e493-dbf2-4a12-8ab5-3da819b9a4d1" ParentLink="Catch_Statement" LowerBound="440.1" HigherBound="443.1">
+                                            <om:Property Name="Expression" Value="counter= counter+1;&#xD;&#xA;strCounter= System.Convert.ToString(counter);" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Increment Counters" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="Construct" OID="1e03a409-9f73-4af8-8a80-9741c5981abf" ParentLink="Catch_Statement" LowerBound="443.1" HigherBound="449.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MarkDBwithErrorMsg" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessageRef" OID="d293b4da-8b2a-44be-ba76-e09884777fb5" ParentLink="Construct_MessageRef" LowerBound="444.51" HigherBound="444.69">
+                                                <om:Property Name="Ref" Value="msgDBErrorAckQuery" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="Transform" OID="9239e082-6919-4847-b8b9-82dc71686521" ParentLink="ComplexStatement_Statement" LowerBound="446.1" HigherBound="448.1">
+                                                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.Product.Map.CSErrorToDBAck" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="CSAckError" />
+                                                <om:Property Name="Signal" Value="False" />
+                                                <om:Element Type="MessagePartRef" OID="0040b29d-d1a5-470e-abe9-4007b2fdaa02" ParentLink="Transform_InputMessagePartRef" LowerBound="447.124" HigherBound="447.144">
+                                                    <om:Property Name="MessageRef" Value="msgDBProductResponse" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="MessagePartReference_1" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                                <om:Element Type="MessagePartRef" OID="54922504-b150-410b-a630-c6683695dc3c" ParentLink="Transform_InputMessagePartRef" LowerBound="447.146" HigherBound="447.159">
+                                                    <om:Property Name="MessageRef" Value="msgCSResponse" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="MessagePartReference_2" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                                <om:Element Type="MessagePartRef" OID="cb704520-9e84-4da1-8ddc-ebe97677bce3" ParentLink="Transform_OutputMessagePartRef" LowerBound="447.56" HigherBound="447.74">
+                                                    <om:Property Name="MessageRef" Value="msgDBErrorAckQuery" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="MessagePartReference_8" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="Send" OID="3c05c0b9-b743-44e3-9245-b39cd7d04b6d" ParentLink="Catch_Statement" LowerBound="449.1" HigherBound="451.1">
+                                            <om:Property Name="PortName" Value="sndRecDBErrorAck" />
+                                            <om:Property Name="MessageName" Value="msgDBErrorAckQuery" />
+                                            <om:Property Name="OperationName" Value="Operation_1" />
+                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="SubmitDBError" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="Receive" OID="602a5bc2-7511-4949-b800-fd02127f601a" ParentLink="Catch_Statement" LowerBound="451.1" HigherBound="453.1">
+                                            <om:Property Name="Activate" Value="False" />
+                                            <om:Property Name="PortName" Value="sndRecDBErrorAck" />
+                                            <om:Property Name="MessageName" Value="msgDBErrorAckResponse" />
+                                            <om:Property Name="OperationName" Value="Operation_1" />
+                                            <om:Property Name="OperationMessageName" Value="Response" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="GetDBAck" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="Construct" OID="d5f86a96-8850-438b-832f-87c9c9f8ed93" ParentLink="Catch_Statement" LowerBound="453.1" HigherBound="475.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Construct Fault Message" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessageRef" OID="010ee95b-33de-4bbe-a9d5-bb29bc132d89" ParentLink="Construct_MessageRef" LowerBound="454.51" HigherBound="454.59">
+                                                <om:Property Name="Ref" Value="msgFault" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="MessageAssignment" OID="b520062b-2420-4217-adb7-f9254b95546b" ParentLink="ComplexStatement_Statement" LowerBound="456.1" HigherBound="474.1">
+                                                <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,&quot;Failed in CSAckException Exception&quot;);&#xD;&#xA;//initialise ESB Fault Message&#xD;&#xA;msgFault  = Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;//Update ESB Fault Message&#xD;&#xA;&#xD;&#xA;msgFault.FailureCategory = &quot;Commerce Server Exception&quot;;&#xD;&#xA;msgFault.FaultCode = &quot;4002&quot;;&#xD;&#xA;msgFault.FaultDescription = CSAckException.Message;&#xD;&#xA;msgFault.FaultSeverity = faultSeverity;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgInitImport);&#xD;&#xA;Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgCSCatalog);&#xD;&#xA;Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgCSResponse);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                                <om:Property Name="Name" Value="MessageAssignment_3" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="Send" OID="49ff5cb2-1ff3-40cf-8c2f-304c4b0d625a" ParentLink="Catch_Statement" LowerBound="475.1" HigherBound="477.1">
+                                            <om:Property Name="PortName" Value="LogESBError" />
+                                            <om:Property Name="MessageName" Value="msgFault" />
+                                            <om:Property Name="OperationName" Value="ESPPost" />
+                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Direct Post" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="cfc195a7-c279-43ad-8d38-94252a9fe34a" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="9d06aa41-1a3f-4ac9-97d2-e8ffa1e0d7e9" ParentLink="ComplexStatement_Statement" LowerBound="483.1" HigherBound="490.1">
+                                    <om:Property Name="Expression" Value="&#xD;&#xA;CatalogName = CatalogName + &quot; : No Products from DB&quot;;&#xD;&#xA;if (currentminutestolog &lt; intprodcutcataloglogsbeforeminute)&#xD;&#xA;{&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,CatalogName);&#xD;&#xA;}&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="EventLog Entry to mention No Record" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Catch" OID="6a1ba0f4-77fb-4d7c-a7ea-3bc1e333b3f8" ParentLink="Scope_Catch" LowerBound="494.1" HigherBound="526.1">
+                            <om:Property Name="ExceptionName" Value="CSException" />
+                            <om:Property Name="ExceptionType" Value="System.SystemException" />
+                            <om:Property Name="IsFaultMessage" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Catch CS Exception" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="00a91dc1-e869-4ea9-bda9-21bad3d14de2" ParentLink="Catch_Statement" LowerBound="497.1" HigherBound="500.1">
+                                <om:Property Name="Expression" Value="counter= counter+1;&#xD;&#xA;strCounter= System.Convert.ToString(counter);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Increment Counters" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="1b7f61ff-45e5-411e-bdf4-a2d4f3471f3a" ParentLink="Catch_Statement" LowerBound="500.1" HigherBound="505.1">
+                                <om:Property Name="Expression" Value="if (CSException.Message.Contains(&quot;This operation cannot be performed because an import operation is currently in progress&quot;))&#xD;&#xA;{&#xD;&#xA;faultSeverity=0;&#xD;&#xA;}&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="change fault severity " />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Construct" OID="5fa8fb31-418c-4dd6-a59e-54091849ee85" ParentLink="Catch_Statement" LowerBound="505.1" HigherBound="523.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstrctCSFaultMessage" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="0c317ab0-b3fd-4a8c-8ae7-547f30c52b25" ParentLink="Construct_MessageRef" LowerBound="506.39" HigherBound="506.47">
+                                    <om:Property Name="Ref" Value="msgFault" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="1f6447cb-8ba4-4c93-a0f2-eca5690dcfbd" ParentLink="ComplexStatement_Statement" LowerBound="508.1" HigherBound="522.1">
+                                    <om:Property Name="Expression" Value="//initialise ESB Fault Message&#xD;&#xA;msgFault  = Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;//Update ESB Fault Message&#xD;&#xA;&#xD;&#xA;msgFault.FailureCategory = &quot;Database Exception&quot;;&#xD;&#xA;msgFault.FaultCode = &quot;4004&quot;;&#xD;&#xA;msgFault.FaultDescription = CSException.Message;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgInitImport);&#xD;&#xA;//Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgCSCatalog);&#xD;&#xA;//Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgCSResponse);" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="1e5a35b4-ac0d-4190-aa16-2beaab95fe94" ParentLink="Catch_Statement" LowerBound="523.1" HigherBound="525.1">
+                                <om:Property Name="PortName" Value="LogESBError" />
+                                <om:Property Name="MessageName" Value="msgFault" />
+                                <om:Property Name="OperationName" Value="ESPPost" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="Direct Post" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Delay" OID="551e9d88-e576-4f9b-a524-5b63b3894b36" ParentLink="ComplexStatement_Statement" LowerBound="528.1" HigherBound="530.1">
+                        <om:Property Name="Timeout" Value="new System.TimeSpan(0,0,delaySecs);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Delay between next call" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="7acf0d6c-bdcc-49ad-b5da-6ad5eedf21a3" ParentLink="ComplexStatement_Statement" LowerBound="530.1" HigherBound="533.1">
+                        <om:Property Name="Expression" Value="counter= counter+1;&#xD;&#xA;strCounter= System.Convert.ToString(counter);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Increment Counters" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="7a2472f2-7f1a-489c-aa02-94148b3c2e98" ParentLink="ServiceBody_Statement" LowerBound="534.1" HigherBound="538.1">
+                    <om:Property Name="Expression" Value="&#xD;&#xA;strProductEveLog =  &quot;CSImportProduct Orchestration Complete.&quot;;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Product&quot;,strProductEveLog);&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="EventLogComplete" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4def3275-0096-4e58-903c-0a200f4d76d2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="133.1" HigherBound="135.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.ImportInit" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortImportInitiation" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="29933605-30b9-49aa-b6f1-7557a1ad1874" ParentLink="PortDeclaration_CLRAttribute" LowerBound="133.1" HigherBound="134.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="fa399d81-986d-43bb-904b-fb12c7717a75" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="135.1" HigherBound="137.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="57" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.DBResponseArchive" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveDBResponse" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="2793b935-6933-496c-9e21-5dbec449851f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="135.1" HigherBound="136.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4ff6413d-59a2-49f3-a294-538df0798cc9" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="137.1" HigherBound="139.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="56" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.SendFileArchive" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendTempDBQ" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="7b80d732-e732-4ac8-ae22-ac6db814eb9f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="137.1" HigherBound="138.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0fd6d0e3-fbab-4006-868a-0def908deaa6" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="139.1" HigherBound="141.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="77" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.LogESBFault" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LogESBError" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="c82d74d9-57e8-4797-9693-b221b1eb63b8" ParentLink="PortDeclaration_CLRAttribute" LowerBound="139.1" HigherBound="140.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="3f79f826-f31e-4e87-ae3f-0bc79a31d9e6" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="141.1" HigherBound="143.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="66" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.ArchCSCatalog" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveCSCatalog" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="4f46739d-6d66-4ded-af4c-46b4f2f0dd58" ParentLink="PortDeclaration_CLRAttribute" LowerBound="141.1" HigherBound="142.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="5365adb6-4d8e-458e-ae5e-66343bcf2527" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="143.1" HigherBound="145.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="69" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.ArchCSResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveCSResponse" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="3f18750a-5918-4d19-bf00-d7552d9548a8" ParentLink="PortDeclaration_CLRAttribute" LowerBound="143.1" HigherBound="144.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="122790e6-60b2-478c-8ec5-83463c5eece6" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="145.1" HigherBound="147.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="51" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.SQLDBProduct" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="portprocCommerceServerGetNextGenProducts" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="fbaf1153-b94d-462d-85ec-960f5a433fe3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="145.1" HigherBound="146.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="535e2bc1-04c1-480b-984e-ea26ec39ad58" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="147.1" HigherBound="149.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="184" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.SQLCSErrAck" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="sndRecDBErrorAck" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="77dd7d35-ee70-400f-af02-e049fa36c8a3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="147.1" HigherBound="148.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="64be7ab2-e4ed-4b5b-ac61-c553bb8228e7" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="149.1" HigherBound="151.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="53" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.CSCatalogImport" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="portCSCatalog1" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="836b4d05-8df8-4702-8791-14aafb2ba6a4" ParentLink="PortDeclaration_CLRAttribute" LowerBound="149.1" HigherBound="150.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="01148836-ae86-4593-9b67-53c31d2a7231" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="151.1" HigherBound="153.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="119" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.portRepositoryProductBatchSuccessTyp" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="portRepositoryProductBatchSuccess" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="720fe8b0-530e-4709-a8bd-2c8e7003efbd" ParentLink="PortDeclaration_CLRAttribute" LowerBound="151.1" HigherBound="152.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="52e333ad-e0b2-41c8-94f7-27726892a698" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="153.1" HigherBound="155.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="138" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.ArchCSErrorResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveCSErrorResponse" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="0e7e404b-eec4-409e-bfed-b99424fea8cf" ParentLink="PortDeclaration_CLRAttribute" LowerBound="153.1" HigherBound="154.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4fd8a8a4-3c76-45b0-91a5-324d4dad4023" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="155.1" HigherBound="157.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="133" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.Product.ArchCSErrorRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveCSErrorRequest" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="f99c717a-cd95-4d77-ae45-94dcd8f7c714" ParentLink="PortDeclaration_CLRAttribute" LowerBound="155.1" HigherBound="156.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="303ce386-921d-4f7b-8ecc-2dc13819e8d1" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CatlogArchieve" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="2e85903b-e87f-4eb9-b26d-3ad550a11bf7" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="6bdbde34-61b4-4c41-a4a9-1f1d2e337b2c" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.61">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="4cb188f8-e137-41dc-afc2-4b42b4ef46dc" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CSResponseArch" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="1c472b9b-b445-4636-a281-19b79eadcc03" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="38693114-126f-46a7-a7a6-d0c2c6f5bc50" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.74">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="4e9f828b-24fd-4402-be33-f8de8760d0b3" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DBAckArch" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="3012c8a3-b52b-4737-be48-100e192a969b" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="77871ce2-9615-4593-a4ba-9b917f1f5605" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.105">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailure" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="9de0da2c-41a9-47eb-a80c-15f903fbfd45" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CSAckRespArch" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="cf8552b6-51f3-41cb-a147-81520011e37d" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="61c19f6e-499b-4bba-9fa8-530dd03d36e1" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.113">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailureResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="b4c06cbe-56c0-4cd3-b3fe-fe551f97e78b" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ImportInit" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="63f59ee7-ae05-403a-9ca9-2fb2428a1e98" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="7fbcc8e2-a2f1-4c6a-9ebc-8b226b5e062b" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.31">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.Schema.BTInitiator" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="cdb0ad34-96b0-4ba4-902c-6f53332d9f86" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SQLDBProduct" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="fbddea97-2758-42c3-baaf-2fdd11e608b8" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="2c4516e1-ffe2-4479-94bb-be6ab7373e02" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.85">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProducts" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="ca88fef6-2b08-4895-838f-5e4924bd47be" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="43.87" HigherBound="43.167">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProductsResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="ad560df9-8227-4b6b-bc22-745cff5fc359" ParentLink="Module_PortType" LowerBound="46.1" HigherBound="53.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CSCatalogImport" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f895f722-6b65-42d0-b987-cd89151e1b9c" ParentLink="PortType_OperationDeclaration" LowerBound="48.1" HigherBound="52.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="17999466-dc4e-4045-b6b7-b41f939b6cd2" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="50.13" HigherBound="50.61">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="c675174d-6824-4f00-9810-1a39d256074a" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="50.63" HigherBound="50.124">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="8e0ae69d-0777-43c6-9da5-c3c004960d91" ParentLink="Module_PortType" LowerBound="53.1" HigherBound="60.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SQLCSErrAck" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="9cb36b77-a86f-436f-aab3-fabe224a45ac" ParentLink="PortType_OperationDeclaration" LowerBound="55.1" HigherBound="59.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="66fcbbe4-c48e-49cd-b811-fe278db7706f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="57.13" HigherBound="57.105">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailure" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="aac78f38-929a-48ba-8a8a-11b7d0547055" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="57.107" HigherBound="57.207">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailureResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="634ded8b-ed7c-46cd-997e-23d46cc73662" ParentLink="Module_PortType" LowerBound="60.1" HigherBound="67.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="LogESBFault" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="17c8d2ce-4f51-49ef-9cee-67c052bd9ffd" ParentLink="PortType_OperationDeclaration" LowerBound="62.1" HigherBound="66.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ESPPost" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="533b28cc-cd36-4b8e-82aa-2919636a21d6" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="64.13" HigherBound="64.82">
+                    <om:Property Name="Ref" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="ecff217e-ecb7-4f8a-b26d-3e377c522053" ParentLink="Module_PortType" LowerBound="67.1" HigherBound="74.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendFileArchive" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="6c0ce046-331a-49e1-9f39-2c3e76ccbbf2" ParentLink="PortType_OperationDeclaration" LowerBound="69.1" HigherBound="73.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="4404869b-c028-4e6f-b28a-2c319b243fe5" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="71.13" HigherBound="71.85">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProducts" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="0db5af6b-de5a-45b0-9bea-e4408fb76ebc" ParentLink="Module_PortType" LowerBound="74.1" HigherBound="81.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DBResponseArchive" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="0aaeb609-b350-4937-8d3f-e8d16e3d20f3" ParentLink="PortType_OperationDeclaration" LowerBound="76.1" HigherBound="80.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="34c1aeb8-e0fe-4de8-82d5-6d4bc0316932" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="78.13" HigherBound="78.93">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProductsResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="a22af424-b2d9-4c8d-8d19-f049f39094ff" ParentLink="Module_PortType" LowerBound="81.1" HigherBound="88.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ArchCSCatalog" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="2543c417-221d-4ef0-ae97-e6104b6a5ec4" ParentLink="PortType_OperationDeclaration" LowerBound="83.1" HigherBound="87.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="4fc01835-ade7-4d66-992d-b6e92a114a88" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="85.13" HigherBound="85.61">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="d88b1fb0-dbd1-4b47-9ecb-a847b2e4a388" ParentLink="Module_PortType" LowerBound="88.1" HigherBound="95.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ArchCSResponse" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="a43c49e2-aac2-40da-a405-62dd1b791edc" ParentLink="PortType_OperationDeclaration" LowerBound="90.1" HigherBound="94.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="68a530fd-9741-483f-bc28-9b98346f081c" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="92.13" HigherBound="92.74">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="5aa20e9d-2813-40dd-b3a0-1d76c4b79090" ParentLink="Module_PortType" LowerBound="95.1" HigherBound="102.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ArchCSErrorRequest" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="26838d31-7759-44b0-b858-b8c6b200a682" ParentLink="PortType_OperationDeclaration" LowerBound="97.1" HigherBound="101.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="3f03df89-215c-47b9-8268-8670b79bacdf" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="99.13" HigherBound="99.105">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailure" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="b9e92864-3400-4430-af1f-e2fcf1b9e177" ParentLink="Module_PortType" LowerBound="102.1" HigherBound="109.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ArchCSErrorResponse" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="fe8c2011-5806-430e-a0c0-64be10f89dfe" ParentLink="PortType_OperationDeclaration" LowerBound="104.1" HigherBound="108.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="27f1e0cf-b2c0-42d1-b1d6-79ab0f6e924d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="106.13" HigherBound="106.113">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailureResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="96d26fca-d2f7-47cd-b5d7-fbdfaeef706e" ParentLink="Module_PortType" LowerBound="109.1" HigherBound="116.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_CSCatalog2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="a1955b9e-cde2-43fa-bc8c-71c4f2ed3eb9" ParentLink="PortType_OperationDeclaration" LowerBound="111.1" HigherBound="115.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="a73c018c-2889-431a-a9b8-67c627ee159f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="113.13" HigherBound="113.61">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="85649452-7124-44ad-aa83-9993225da901" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="113.63" HigherBound="113.124">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="36fb914c-bbf8-40d9-ba36-edfb90b857f4" ParentLink="Module_PortType" LowerBound="116.1" HigherBound="123.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_CSCatalog3" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="537e011d-a7f8-4d79-afba-deb01c64ada0" ParentLink="PortType_OperationDeclaration" LowerBound="118.1" HigherBound="122.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="a971449d-08da-4ad8-aa14-8daa369eea35" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="120.13" HigherBound="120.61">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="1eedddfd-ee3b-4e05-b161-b79e2a82896c" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="120.63" HigherBound="120.124">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="5d1c7fd0-86a1-403f-8258-c3a3d4b1fa83" ParentLink="Module_PortType" LowerBound="123.1" HigherBound="130.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="portRepositoryProductBatchSuccessTyp" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="7069c1bd-7a3b-4b82-83c5-03b30f5443cf" ParentLink="PortType_OperationDeclaration" LowerBound="125.1" HigherBound="129.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="851cc1a3-c7c6-412a-abbd-cca6596be64b" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="127.13" HigherBound="127.109">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepositoryProductBatchSuccessTypedProcedure_dbo.procCommerceServerSetNextGenProductsBatchSuccess" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="18104737-1384-4f98-bf7d-c0948c0d6abb" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="127.111" HigherBound="127.215">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.Product.RepositoryProductBatchSuccessTypedProcedure_dbo.procCommerceServerSetNextGenProductsBatchSuccessResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.Product
+{
+    internal porttype CatlogArchieve
+    {
+        oneway Operation_1
+        {
+            BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog
+        };
+    };
+    internal porttype CSResponseArch
+    {
+        oneway Operation_1
+        {
+            BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage
+        };
+    };
+    internal porttype DBAckArch
+    {
+        oneway Operation_1
+        {
+            RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailure
+        };
+    };
+    internal porttype CSAckRespArch
+    {
+        oneway Operation_1
+        {
+            RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailureResponse
+        };
+    };
+    internal porttype ImportInit
+    {
+        oneway Operation_1
+        {
+            Schema.BTInitiator
+        };
+    };
+    internal porttype SQLDBProduct
+    {
+        requestresponse Operation_1
+        {
+            RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProducts, RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProductsResponse
+        };
+    };
+    internal porttype CSCatalogImport
+    {
+        requestresponse Operation_1
+        {
+            BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog, BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage
+        };
+    };
+    internal porttype SQLCSErrAck
+    {
+        requestresponse Operation_1
+        {
+            RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailure, RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailureResponse
+        };
+    };
+    internal porttype LogESBFault
+    {
+        oneway ESPPost
+        {
+            Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage
+        };
+    };
+    internal porttype SendFileArchive
+    {
+        oneway Operation_1
+        {
+            RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProducts
+        };
+    };
+    internal porttype DBResponseArchive
+    {
+        oneway Operation_1
+        {
+            RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProductsResponse
+        };
+    };
+    internal porttype ArchCSCatalog
+    {
+        oneway Operation_1
+        {
+            BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog
+        };
+    };
+    internal porttype ArchCSResponse
+    {
+        oneway Operation_1
+        {
+            BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage
+        };
+    };
+    internal porttype ArchCSErrorRequest
+    {
+        oneway Operation_1
+        {
+            RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailure
+        };
+    };
+    internal porttype ArchCSErrorResponse
+    {
+        oneway Operation_1
+        {
+            RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailureResponse
+        };
+    };
+    internal porttype PortType_CSCatalog2
+    {
+        requestresponse Operation_1
+        {
+            BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog, BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage
+        };
+    };
+    internal porttype PortType_CSCatalog3
+    {
+        requestresponse Operation_1
+        {
+            BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog, BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage
+        };
+    };
+    internal porttype portRepositoryProductBatchSuccessTyp
+    {
+        requestresponse Operation_1
+        {
+            RepositoryProductBatchSuccessTypedProcedure_dbo.procCommerceServerSetNextGenProductsBatchSuccess, RepositoryProductBatchSuccessTypedProcedure_dbo.procCommerceServerSetNextGenProductsBatchSuccessResponse
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction CSImportProduct
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ImportInit PortImportInitiation;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses DBResponseArchive ArchiveDBResponse;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendFileArchive SendTempDBQ;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses LogESBFault LogESBError;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ArchCSCatalog ArchiveCSCatalog;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ArchCSResponse ArchiveCSResponse;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SQLDBProduct portprocCommerceServerGetNextGenProducts;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SQLCSErrAck sndRecDBErrorAck;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses CSCatalogImport portCSCatalog1;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses portRepositoryProductBatchSuccessTyp portRepositoryProductBatchSuccess;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ArchCSErrorResponse ArchiveCSErrorResponse;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ArchCSErrorRequest ArchiveCSErrorRequest;
+        message BTNextGen.BizTalk.CS.Catalogue.Schemas.BTCatalog msgCSCatalog;
+        message BTNextGen.BizTalk.CS.Catalogue.Schemas.CatalogResponseMessage msgCSResponse;
+        message Schema.BTInitiator msgInitImport;
+        message RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProducts msgDBProductQuery;
+        message RepoCSGetProductsTypedProcedure_dbo.procCommerceServerGetNextGenProductsResponse msgDBProductResponse;
+        message RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailure msgDBErrorAckQuery;
+        message RepoCSGetProductsRowFailureTypedProcedure_dbo.procCommerceServerSetNextGenProductsRowFailureResponse msgDBErrorAckResponse;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage msgFault;
+        message RepositoryProductBatchSuccessTypedProcedure_dbo.procCommerceServerSetNextGenProductsBatchSuccess msgBatchSuccess;
+        message RepositoryProductBatchSuccessTypedProcedure_dbo.procCommerceServerSetNextGenProductsBatchSuccessResponse msgBatchSuccessResponse;
+        System.Xml.XmlDocument xmlDocDBQuery;
+        System.String strCounter;
+        System.Int32 cntCatalog;
+        System.Int32 counter;
+        System.Int32 faultSeverity;
+        System.Int32 intCSError;
+        System.Int32 intMaxProduct;
+        System.Boolean bolArchieve;
+        System.String CatalogName;
+        System.DateTime RetryStartTime;
+        System.DateTime RetryEndTime;
+        System.DateTime CurrentTime;
+        System.String RecordStatus;
+        System.Int32 delaySecs;
+        System.Int32 intProductCount;
+        System.Int64 intBatchID;
+        System.Xml.XmlDocument xmlDocBatchSuccess;
+        System.Boolean bolLogEve;
+        System.String strProductEveLog;
+        System.Int32 currentminutestolog;
+        System.Int32 intprodcutcataloglogsbeforeminute;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("600c6bd9-71f1-4a28-9707-36ede383d32a")]
+            activate receive (PortImportInitiation.Operation_1, msgInitImport);
+            xmlDocDBQuery = new System.Xml.XmlDocument();
+            strCounter = "";
+            faultSeverity = 0;
+            intCSError = 0;
+            bolArchieve = true;
+            CatalogName = "";
+            RecordStatus = "";
+            intProductCount = 0;
+            intBatchID = 0;
+            xmlDocBatchSuccess = new System.Xml.XmlDocument();
+            bolLogEve = true;
+            strProductEveLog = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2d5e829d-1629-4b8a-b924-e999060c7d8f")]
+            currentminutestolog = System.DateTime.Now.Minute;
+            
+            if ( bolLogEve== true)
+            {
+            strProductEveLog =  "CSImportProduct Orchestration Beginning.";
+            System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product",strProductEveLog);
+            
+            }
+            
+            
+            
+            //Retrieve Values from SSO
+            intMaxProduct = System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.Product","MaxProductRecord"));
+            bolArchieve = System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.Product","flgArchive"));
+            faultSeverity = System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.Product","faultSeverity"));
+            delaySecs = System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.Product","delay"));
+            bolLogEve = System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.Product","debugEventLogging"));
+            intprodcutcataloglogsbeforeminute = System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.Product","prodcutcataloglogsbeforeminute"));
+            
+            
+            
+            CurrentTime = System.DateTime.Now;
+            
+            
+            
+            RetryStartTime = System.DateTime.Parse(CurrentTime.ToShortDateString()+" "+SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.Product","RetryStart"));
+            
+            RetryEndTime =  RetryStartTime.AddHours(System.Convert.ToDouble(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.Product","RetryDurationHours")));
+            
+            
+            if((CurrentTime.CompareTo(RetryStartTime)>=0) & (CurrentTime.CompareTo(RetryEndTime)<=0))
+            {
+                RecordStatus = "Failed";
+            }
+            else
+            {
+                 RecordStatus = "New";
+            }
+            
+            if ( bolLogEve== true)
+            {
+            strProductEveLog =  "Product Read SSO Value Shape Complete";
+            System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product",strProductEveLog);
+            
+            }
+            
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ed0000f1-146b-41df-9dbb-54207573c66e")]
+            
+            
+            if ( bolLogEve== true)
+            {
+            strProductEveLog =  "Product Set Counters Shape Begin";
+            System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product",strProductEveLog);
+            
+            }
+            
+            
+            
+            //cntCatalog= System.Convert.ToInt32(xpath(msgInitImport,"count(/*[local-name()='InitialiseRelationship' and namespace-uri()='http://BTNextGen.Biztalk.Product.RelationshipInitiator']/*[local-name()='CatalogName' and namespace-uri()=''])" ));
+            cntCatalog= System.Convert.ToInt32(xpath(msgInitImport,"count(/*[local-name()='Action' and namespace-uri()='http://BTNextGen.BizTalk.Product.Schemas.BTInitiator']/*[local-name()='CatalogName' and namespace-uri()=''])" ));
+                                                                       
+            counter=1;
+            strCounter="1";
+            
+            
+            if ( bolLogEve== true)
+            {
+            strProductEveLog =  "Product Set Counters Shape Complete" + cntCatalog.ToString();
+            System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product",strProductEveLog);
+            
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("55d0d798-1287-4af6-9592-2a6f28c6bddf")]
+            while (counter <= cntCatalog)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("81efd56f-a01a-4fbe-a840-6f36176483a6")]
+                CatalogName= xpath(msgInitImport,"string(/*[local-name()='Action' and namespace-uri()='http://BTNextGen.BizTalk.Product.Schemas.BTInitiator']/*[local-name()='CatalogName' and namespace-uri()='']["+strCounter+"])");
+                
+                
+                if ( bolLogEve== true)
+                {
+                strProductEveLog =  "Extract Catalog Shape Complete";
+                System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product",strProductEveLog);
+                
+                }
+                
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("99337bd0-124b-4473-9820-7e030d102ab6")]
+                scope
+                {
+                    body
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f30d15b0-48b4-43f0-8dae-e4af68a466f2")]
+                        construct msgDBProductQuery
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e763efd7-afc9-4bc0-aded-587f094ee55c")]
+                            xmlDocDBQuery.LoadXml("<ns0:procCommerceServerGetNextGenProducts xmlns:ns3=\"http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetNextGenProducts\" xmlns:ns0=\"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\"><ns0:CatalogName>CatalogName_0</ns0:CatalogName><ns0:RowCount>10</ns0:RowCount><ns0:BatchID></ns0:BatchID></ns0:procCommerceServerGetNextGenProducts>");
+                            msgDBProductQuery= xmlDocDBQuery;
+                            msgDBProductQuery.CatalogName= CatalogName;
+                            msgDBProductQuery.RowCount= intMaxProduct;
+                            //msgDBProductQuery.BatchID = intBatchID;
+                            //msgDBProductQuery.BatchID = RecordStatus; record status should be integer
+                            
+                            //xmlDocBatchSuccess.LoadXml("<ns0:procCommerceServerSetNextGenProductsBatchSuccess xmlns:ns0=\"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\"><ns0:BatchID>0</ns0:BatchID></ns0:procCommerceServerSetNextGenProductsBatchSuccess>");
+                            
+                            //msgBatchSuccess =xmlDocBatchSuccess;
+                            //msgBatchSuccess.BatchID =intProductCount
+                            
+                            
+                            
+                            
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("1a021e8b-fd21-4ab0-99aa-28ddc8176256")]
+                        if ( bolLogEve== true)
+                        {
+                        strProductEveLog =  "Product Construct_DB Query assign dbquery Shape Complete " ;
+                        System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product",strProductEveLog);
+                        
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("50947600-b851-4702-9a67-79e10bd434f1")]
+                        send (portprocCommerceServerGetNextGenProducts.Operation_1, msgDBProductQuery);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d947c78f-b548-4df5-814f-8929810be5f2")]
+                        receive (portprocCommerceServerGetNextGenProducts.Operation_1, msgDBProductResponse);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("36aa3c44-ca01-45ce-8960-68d563af3fe7")]
+                        
+                        //intProductCount= System.Convert.ToInt32(xpath(msgMultiDBProductResponse.Parameters,"count(/*[local-name()='procCommerceServerGetNextGenProductsResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'])" ));
+                         //intProductCount= System.Convert.ToInt32(xpath(msgDBProductResponse,"count(/*[local-name()='procCommerceServerGetNextGenProductsResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'])" ));
+                        //intProductCount=System.Convert.ToInt32(msgDBProductResponse.StoredProcedureResultSet1.ProductCount);
+                        intProductCount= System.Convert.ToInt32(xpath(msgDBProductResponse,"count(/*[local-name()='procCommerceServerGetNextGenProductsResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetNextGenProducts']/*[local-name()='BTKEY' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetNextGenProducts'])" ));
+                        
+                        
+                        
+                        ///*[local-name()='procCommerceServerGetNextGenProductsResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetNextGenProducts']/*[local-name()='BTKEY' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetNextGenProducts']
+                        //intProductCount = msgDBProductResponse.StoredProcedureResultSet1.ProductCount;
+                                                                                                                
+                        if ( bolLogEve== true)
+                        {
+                        
+                        strProductEveLog = "Product Expression Shape 1 Complete Product Count" + intProductCount.ToString() ;
+                        System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product",strProductEveLog);
+                        
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("052bac3b-7e06-47e2-b92c-85a24a124446")]
+                        if (bolArchieve == true)
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ae78fc2c-0659-469f-bec3-b4c7b7d5526d")]
+                            send (SendTempDBQ.Operation_1, msgDBProductQuery);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("bf3f3c47-e8e0-4c67-9464-d11166f3fffb")]
+                            send (ArchiveDBResponse.Operation_1, msgDBProductResponse);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("8a5293b4-7293-4c9c-80b6-99efff3ba1fd")]
+                        if (intProductCount>0)
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c439c8a7-91fd-448b-88bb-a4859e8bbb56")]
+                            construct msgCSCatalog
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("25b603a1-ca81-414d-bf6c-ab47b9efa7df")]
+                                transform (msgCSCatalog) = BTNextGen.Biztalk.Product.Map.CSImportProduct (msgDBProductResponse);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4bcb15d5-4cf9-4153-b5c0-43195fde1617")]
+                            send (portCSCatalog1.Operation_1, msgCSCatalog);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("06ac2a2a-9e11-4206-a69f-639451442e86")]
+                            if (bolArchieve == true)
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("50612845-e2f7-4b7d-b0b1-d017d16d0cfa")]
+                                send (ArchiveCSCatalog.Operation_1, msgCSCatalog);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c27d6811-2d7e-4290-bb43-d427bcfed2a3")]
+                            receive (portCSCatalog1.Operation_1, msgCSResponse);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b32cb184-7d0d-4215-baee-2fc78fa2e617")]
+                            if (bolArchieve == true)
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("51d8eebd-6974-42ca-a5e4-216911df6d29")]
+                                send (ArchiveCSResponse.Operation_1, msgCSResponse);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dee7c60d-f174-484e-8a44-7ac1c7f7b476")]
+                            //Retrive Error Count
+                            intCSError =System.Convert.ToInt32(xpath(msgCSResponse,"count(/*[local-name()='CommerceServerCatalogImportResponse' and namespace-uri()='']/*[local-name()='CatalogImportError' and namespace-uri()=''])"));
+                            
+                            if ( bolLogEve== true)
+                            {
+                            strProductEveLog =  "Product Get CS Response Shape Complete";
+                            System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product",strProductEveLog);
+                            
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9d2fbe08-7fc5-436c-a10f-005b4ac4a72b")]
+                            scope
+                            {
+                                body
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("dceebeba-8ce4-4328-a15d-0c41d801faf7")]
+                                    if (intCSError > 0)
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6674932f-40ef-47fb-95ec-d92dc42968ad")]
+                                        construct msgDBErrorAckQuery
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("468b2ece-f5b8-467b-900d-8512eb4a9518")]
+                                            transform (msgDBErrorAckQuery) = BTNextGen.Biztalk.Product.Map.CSErrorToDBAck (msgDBProductResponse, msgCSResponse);
+                                        }
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("28da0fa6-137e-4a4a-a65d-a67af1e08cd9")]
+                                        send (sndRecDBErrorAck.Operation_1, msgDBErrorAckQuery);
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("979b1afb-d2ea-461d-85d7-d8610cc0e61d")]
+                                        receive (sndRecDBErrorAck.Operation_1, msgDBErrorAckResponse);
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4b9f534f-43ae-47c8-883a-8c013adb06b7")]
+                                        send (ArchiveCSResponse.Operation_1, msgCSResponse);
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("51fc1da6-0753-406b-9967-610496d17080")]
+                                        if (bolArchieve == true)
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("96d1e9de-f8d2-47e4-a550-df07a45d14a8")]
+                                            send (ArchiveCSErrorRequest.Operation_1, msgDBErrorAckQuery);
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ee392e24-2f0e-4799-84ed-a7c72c24ad32")]
+                                            send (ArchiveCSErrorResponse.Operation_1, msgDBErrorAckResponse);
+                                        }
+                                    }
+                                    else 
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("360faf3b-2fa9-48eb-b8c5-dd630d62cabd")]
+                                        construct msgBatchSuccess
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0654e5cd-06df-4b4f-9164-3cc6bef1b241")]
+                                            transform (msgBatchSuccess) = BTNextGen.Biztalk.Product.Map.BuildAcksuccess (msgDBProductResponse);
+                                        }
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("0a100b04-ab43-4457-a451-76729473d6ea")]
+                                        send (portRepositoryProductBatchSuccess.Operation_1, msgBatchSuccess);
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b2340ac7-2444-4fc7-bbc0-a4696256165f")]
+                                        receive (portRepositoryProductBatchSuccess.Operation_1, msgBatchSuccessResponse);
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9638b8bf-6564-41c3-a571-2540ba7d8771")]
+                                        CatalogName = "Batch Processed " + intBatchID.ToString();
+                                        System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product",CatalogName);
+                                    }
+                                }
+                                exceptions
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c89b9cd5-380b-4c2d-92ad-61cccd047a5d")]
+                                    catch (System.SystemException CSAckException)
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6c19e493-dbf2-4a12-8ab5-3da819b9a4d1")]
+                                        counter= counter+1;
+                                        strCounter= System.Convert.ToString(counter);
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("1e03a409-9f73-4af8-8a80-9741c5981abf")]
+                                        construct msgDBErrorAckQuery
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9239e082-6919-4847-b8b9-82dc71686521")]
+                                            transform (msgDBErrorAckQuery) = BTNextGen.Biztalk.Product.Map.CSErrorToDBAck (msgDBProductResponse, msgCSResponse);
+                                        }
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("3c05c0b9-b743-44e3-9245-b39cd7d04b6d")]
+                                        send (sndRecDBErrorAck.Operation_1, msgDBErrorAckQuery);
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("602a5bc2-7511-4949-b800-fd02127f601a")]
+                                        receive (sndRecDBErrorAck.Operation_1, msgDBErrorAckResponse);
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d5f86a96-8850-438b-832f-87c9c9f8ed93")]
+                                        construct msgFault
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b520062b-2420-4217-adb7-f9254b95546b")]
+                                            System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product","Failed in CSAckException Exception");
+                                            //initialise ESB Fault Message
+                                            msgFault  = Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                                            
+                                            //Update ESB Fault Message
+                                            
+                                            msgFault.FailureCategory = "Commerce Server Exception";
+                                            msgFault.FaultCode = "4002";
+                                            msgFault.FaultDescription = CSAckException.Message;
+                                            msgFault.FaultSeverity = faultSeverity;
+                                            
+                                            
+                                            Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgInitImport);
+                                            Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgCSCatalog);
+                                            Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgCSResponse);
+                                            
+                                            
+                                        }
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("49ff5cb2-1ff3-40cf-8c2f-304c4b0d625a")]
+                                        send (LogESBError.ESPPost, msgFault);
+                                    }
+                                }
+                            }
+                        }
+                        else 
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9d06aa41-1a3f-4ac9-97d2-e8ffa1e0d7e9")]
+                            
+                            CatalogName = CatalogName + " : No Products from DB";
+                            if (currentminutestolog < intprodcutcataloglogsbeforeminute)
+                            {
+                            System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product",CatalogName);
+                            }
+                        }
+                    }
+                    exceptions
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6a1ba0f4-77fb-4d7c-a7ea-3bc1e333b3f8")]
+                        catch (System.SystemException CSException)
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("00a91dc1-e869-4ea9-bda9-21bad3d14de2")]
+                            counter= counter+1;
+                            strCounter= System.Convert.ToString(counter);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1b7f61ff-45e5-411e-bdf4-a2d4f3471f3a")]
+                            if (CSException.Message.Contains("This operation cannot be performed because an import operation is currently in progress"))
+                            {
+                            faultSeverity=0;
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("5fa8fb31-418c-4dd6-a59e-54091849ee85")]
+                            construct msgFault
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("1f6447cb-8ba4-4c93-a0f2-eca5690dcfbd")]
+                                //initialise ESB Fault Message
+                                msgFault  = Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                                
+                                //Update ESB Fault Message
+                                
+                                msgFault.FailureCategory = "Database Exception";
+                                msgFault.FaultCode = "4004";
+                                msgFault.FaultDescription = CSException.Message;
+                                
+                                
+                                Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgInitImport);
+                                //Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgCSCatalog);
+                                //Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(msgFault,msgCSResponse);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1e5a35b4-ac0d-4190-aa16-2beaab95fe94")]
+                            send (LogESBError.ESPPost, msgFault);
+                        }
+                    }
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("551e9d88-e576-4f9b-a524-5b63b3894b36")]
+                delay new System.TimeSpan(0,0,delaySecs);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("7acf0d6c-bdcc-49ad-b5da-6ad5eedf21a3")]
+                counter= counter+1;
+                strCounter= System.Convert.ToString(counter);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7a2472f2-7f1a-489c-aa02-94148b3c2e98")]
+            
+            strProductEveLog =  "CSImportProduct Orchestration Complete.";
+            System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Product",strProductEveLog);
+        }
+    }
+}
+

@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BT.TS360API.Common</RootNamespace>
+    <AssemblyName>BT.TS360API.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXssLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\AntiXssLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="BT.FSIS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=aae20afbbe14a27c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\BT.FSIS.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth2.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth2.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2.Client, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth2.Client.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth2.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2.ClientAuthorization, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth2.ClientAuthorization.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth2.ClientAuthorization.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\AccountDAOManager.cs" />
+    <Compile Include="Business\BTAlertDAOManager.cs" />
+    <Compile Include="Business\CartGridDAOManager.cs" />
+    <Compile Include="Business\CdmsDAOManager.cs" />
+    <Compile Include="Business\DashboardDAOManager.cs" />
+    <Compile Include="Business\ILSLogManager.cs" />
+    <Compile Include="Business\Interface\IPricingCalculator.cs" />
+    <Compile Include="Business\MARCProfilerManager.cs" />
+    <Compile Include="Business\OrdersDAOManager.cs" />
+    <Compile Include="Business\PricingCalculator.cs" />
+    <Compile Include="Business\PricingDAOManager.cs" />
+    <Compile Include="Business\ProductCatalogDAOManager.cs" />
+    <Compile Include="Business\ProductDAOManager.cs" />
+    <Compile Include="Business\ProfileDAOManager.cs" />
+    <Compile Include="Business\QuickSearchDAOManager.cs" />
+    <Compile Include="Business\GridDAOManager.cs" />
+    <Compile Include="Business\UserDAOManager.cs" />
+    <Compile Include="CartFramework\CartCacheManager.cs" />
+    <Compile Include="CartFramework\CartFrameworkHelper.cs" />
+    <Compile Include="CartFramework\CartManager.cs" />
+    <Compile Include="Configrations\AppSettings.cs" />
+    <Compile Include="Configrations\DemandBucketSettings.cs" />
+    <Compile Include="Controller\ProfileController.cs" />
+    <Compile Include="DataAccess\AccountDAO.cs" />
+    <Compile Include="DataAccess\BTAlertDAO.cs" />
+    <Compile Include="DataAccess\CdmsDAO.cs" />
+    <Compile Include="DataAccess\DashboardDAO.cs" />
+    <Compile Include="DataAccess\MARCProfilerDAO.cs" />
+    <Compile Include="DataAccess\OrganizationDAO.cs" />
+    <Compile Include="DataAccess\PricingCalculatorDAO.cs" />
+    <Compile Include="DataAccess\PricingControllerDAO.cs" />
+    <Compile Include="DataAccess\ProductCatalogDAO.cs" />
+    <Compile Include="DataAccess\QuickSearchDAO.cs" />
+    <Compile Include="DataAccess\InventoryDAO.cs" />
+    <Compile Include="DataAccess\ProductDAO.cs" />
+    <Compile Include="DataAccess\ProfileDAO.cs" />
+    <Compile Include="DataAccess\CartDAO.cs" />
+    <Compile Include="DataAccess\GridDAO.cs" />
+    <Compile Include="DataAccess\OrdersDAO.cs" />
+    <Compile Include="DataAccess\SavedSearchDAO.cs" />
+    <Compile Include="Exceptions\DAOException.cs" />
+    <Compile Include="Exceptions\CartGridDatabaseException.cs" />
+    <Compile Include="Exceptions\CartGridException.cs" />
+    <Compile Include="Exceptions\CartGridLoadFailedException.cs" />
+    <Compile Include="Exceptions\CartGridSaveFailedException.cs" />
+    <Compile Include="Exceptions\CartManagerException.cs" />
+    <Compile Include="DataAccess\BaseDAO.cs" />
+    <Compile Include="Business\CartDAOManager.cs" />
+    <Compile Include="Grid\Cart\CartGridDataAccessManager.cs" />
+    <Compile Include="Grid\Cart\CartGridManager.cs" />
+    <Compile Include="Grid\GridDataAccessManager.cs" />
+    <Compile Include="Grid\UserGridFieldsCodesManager.cs" />
+    <Compile Include="Helpers\Axis360InventoryHelper.cs" />
+    <Compile Include="Helpers\CartFarmCacheHelper.cs" />
+    <Compile Include="Helpers\CartFolderHelper.cs" />
+    <Compile Include="Helpers\CommonHelper.cs" />
+    <Compile Include="Helpers\ContentCafeConfiguration.cs" />
+    <Compile Include="Helpers\ContentCafeHelper.cs" />
+    <Compile Include="Helpers\DataConverter.cs" />
+    <Compile Include="Helpers\DataAccessHelper.cs" />
+    <Compile Include="Helpers\DistributedCacheHelper.cs" />
+    <Compile Include="Helpers\EmailHelper.cs" />
+    <Compile Include="Helpers\EncryptionHelper.cs" />
+    <Compile Include="Helpers\GlobalConfigurationHelper.cs" />
+    <Compile Include="Helpers\GridHelper.cs" />
+    <Compile Include="Helpers\InventoryHelper.cs" />
+    <Compile Include="Helpers\GridDataHelper.cs" />
+    <Compile Include="Helpers\ProxySessionHelper.cs" />
+    <Compile Include="Helpers\QueryStringHelper.cs" />
+    <Compile Include="Helpers\SiteTermHelper.cs" />
+    <Compile Include="Inventory\DemandInventory.cs" />
+    <Compile Include="Inventory\DetermineInventory.cs" />
+    <Compile Include="Inventory\InventoryHelper4MongoDb.cs" />
+    <Compile Include="Models\BaseGridUIEntity.cs" />
+    <Compile Include="Models\Basket.cs" />
+    <Compile Include="Models\CommonGridTemplateLine.cs" />
+    <Compile Include="Models\FlagObject.cs" />
+    <Compile Include="Models\LineItem.cs" />
+    <Compile Include="Models\LineItemAcknowledgement.cs" />
+    <Compile Include="Models\ProductLineItem.cs" />
+    <Compile Include="Models\Result.cs" />
+    <Compile Include="Models\SearchCartLinesCriteria.cs" />
+    <Compile Include="Models\SimpleLineItem.cs" />
+    <Compile Include="Models\UserGridFieldsCodes.cs" />
+    <Compile Include="Models\UserPreference.cs" />
+    <Compile Include="Pricing\CalculatePricePresenter.cs" />
+    <Compile Include="Pricing\Interface\IPricingController.cs" />
+    <Compile Include="Pricing\PricingConfiguration.cs" />
+    <Compile Include="Pricing\PricingController.cs" />
+    <Compile Include="Pricing\RealTimePricingHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CartResource.Designer.cs" />
+    <Compile Include="Search\AdvancedSearchObject.cs" />
+    <Compile Include="Search\Helpers\SearchHelper.cs" />
+    <Compile Include="Search\ProductSearchController.cs" />
+    <Compile Include="Service References\contentcafe2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequestContext.cs" />
+    <Compile Include="Services\RepositoryService.cs" />
+    <Compile Include="Web References\BTPricingService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Marketing\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BT.TS360API.Cache\BT.TS360API.Cache.csproj">
+      <Project>{3ad85a78-1152-4de6-874c-c1d798ec1b42}</Project>
+      <Name>BT.TS360API.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BT.TS360API.ExternalServices\BT.TS360API.ExternalServices.csproj">
+      <Project>{2b52e44c-d562-4087-8a48-3a00818dd6bb}</Project>
+      <Name>BT.TS360API.ExternalServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BT.TS360API.Logging\BT.TS360API.Logging.csproj">
+      <Project>{8bf3380b-9e55-4a3d-8be6-31b0b3e9638f}</Project>
+      <Name>BT.TS360API.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BT.TS360API.Marketing\BT.TS360API.Marketing.csproj">
+      <Project>{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}</Project>
+      <Name>BT.TS360API.Marketing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BT.TS360API.MongoDB\BT.TS360API.MongoDB.csproj">
+      <Project>{6ff2c7a7-1ca6-4025-8348-b356f9341e1b}</Project>
+      <Name>BT.TS360API.MongoDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BT.TS360API.ServiceContracts\BT.TS360API.ServiceContracts.csproj">
+      <Project>{d8eb01ed-8c7f-4085-8ef1-bfabc9cf21b6}</Project>
+      <Name>BT.TS360API.ServiceContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS360Constants\BT.TS360Constants.csproj">
+      <Project>{f02c91f8-1c30-4116-8cf2-bb4286a554f8}</Project>
+      <Name>BT.TS360Constants</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\contentcafe2\BT.TS360API.Common.contentcafe2.ContentCafeXML.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\contentcafe2\BT.TS360API.Common.contentcafe2.SingleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\contentcafe2\BT.TS360API.Common.contentcafe2.XmlClassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\contentcafe2\BT.TS360API.Common.contentcafe2.XmlPostResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\contentcafe2\BT.TS360API.Common.contentcafe2.XmlStringResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\contentcafe2\ContentCafe.wsdl" />
+    <None Include="Web References\BTPricingService\BTPricingServices.wsdl" />
+    <None Include="Web References\BTPricingService\PricingResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\BTPricingService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\contentcafe2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\contentcafe2\ContentCafe.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\contentcafe2\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\contentcafe2\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\contentcafe2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EmailTemplate\DataFixTemplate.xml" />
+    <Content Include="Lib\HtmlSanitizationLibrary.dll" />
+    <None Include="Web References\BTPricingService\BTPricingServices.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://edidev.btol.com/BTPricingServices/BTPricingServices.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BTPricingService\</RelPath>
+      <UpdateFromURL>http://edidev.btol.com/BTPricingServices/BTPricingServices.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BT_TS360API_Common_BTPricingService_BTPricingService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CartResource.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

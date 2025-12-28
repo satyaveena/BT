@@ -1,0 +1,3 @@
+App.config: please fill approriate values depend on environment.
+
+ <add key="MaxPricingBatchSize" value="30" />

@@ -1,0 +1,15 @@
+﻿CREATE  PROCEDURE [dbo].[edi_IsB2BAdm]
+AS
+SELECT 0
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[edi_IsB2BAdm] TO [BTS_ADMIN_USERS]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[edi_IsB2BAdm] TO [BTS_B2B_OPERATORS]
+    AS [dbo];
+

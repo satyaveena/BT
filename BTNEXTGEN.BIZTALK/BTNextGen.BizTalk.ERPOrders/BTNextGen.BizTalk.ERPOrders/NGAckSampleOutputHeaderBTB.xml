@@ -1,0 +1,1 @@
+﻿<ns0:procOrderAcknowledgementSetBasketHeaders xmlns:ns0="http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo"><ns0:TransmissionNumber>1235029</ns0:TransmissionNumber><ns0:OrderNumber>020198</ns0:OrderNumber><ns0:ConfirmationMessage>  ORDER PROCESSED</ns0:ConfirmationMessage></ns0:procOrderAcknowledgementSetBasketHeaders>

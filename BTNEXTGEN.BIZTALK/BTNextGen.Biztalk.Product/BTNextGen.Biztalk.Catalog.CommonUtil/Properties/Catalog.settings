@@ -1,0 +1,56 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BTNextGen.Biztalk.Catalog.CommonUtil.Properties" GeneratedClassName="Catalog">
+  <Profiles />
+  <Settings>
+    <Setting Name="CatalogName" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Entertainment Catalog 1&lt;/string&gt;
+  &lt;string&gt;Book Catalog 1&lt;/string&gt;
+  &lt;string&gt;Book Catalog 2&lt;/string&gt;
+  &lt;string&gt;Book Catalog 3&lt;/string&gt;
+  &lt;string&gt;Book Catalog 4&lt;/string&gt;
+  &lt;string&gt;Book Catalog 5&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MinValues" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;6000000000&lt;/string&gt;
+  &lt;string&gt;0000000000&lt;/string&gt;
+  &lt;string&gt;0003000001&lt;/string&gt;
+  &lt;string&gt;0007000001&lt;/string&gt;
+  &lt;string&gt;0010000001&lt;/string&gt;
+  &lt;string&gt;7000000001&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MaxValues" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;7000000000&lt;/string&gt;
+  &lt;string&gt;0003000000&lt;/string&gt;
+  &lt;string&gt;0007000000&lt;/string&gt;
+  &lt;string&gt;0010000000&lt;/string&gt;
+  &lt;string&gt;5999999999&lt;/string&gt;
+  &lt;string&gt;9999999999&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="InventoryCat" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Catalog_1_Inventory&lt;/string&gt;
+  &lt;string&gt;Catalog_2_Inventory&lt;/string&gt;
+  &lt;string&gt;Catalog_3_Inventory&lt;/string&gt;
+  &lt;string&gt;Catalog_4_Inventory&lt;/string&gt;
+  &lt;string&gt;Catalog_5_Inventory&lt;/string&gt;
+  &lt;string&gt;Catalog_5_Inventory&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ArchiveFlag" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MaxProductRecord" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

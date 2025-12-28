@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B52E44C-D562-4087-8A48-3A00818DD6BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BT.TS360API.ExternalServices</RootNamespace>
+    <AssemblyName>BT.TS360API.ExternalServices</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonUPSHelper.cs" />
+    <Compile Include="Controller\CSProfileController.cs" />
+    <Compile Include="DataAccess\BaseDAO.cs" />
+    <Compile Include="DataAccess\CSProfileDAO.cs" />
+    <Compile Include="MarketingService.cs" />
+    <Compile Include="NoSqlAPI\NoSqlProductsService.cs" />
+    <Compile Include="ProfileService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\BTStockCheckServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CSProfileServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MARCProfilerService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UPSTrackingReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Xml.XmlElement.datasource" />
+    <None Include="Service References\BTStockCheckServices\BT.TS360API.ExternalServices.BTStockCheckServices.CartStockCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BTStockCheckServices\BT.TS360API.ExternalServices.BTStockCheckServices.StockCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BTStockCheckServices\BTStockCheckServices.wsdl" />
+    <None Include="Service References\CSProfileServiceReference\BT.TS360API.ExternalServices.CSProfileServiceReference.CreateProfileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSProfileServiceReference\BT.TS360API.ExternalServices.CSProfileServiceReference.DeleteProfileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSProfileServiceReference\BT.TS360API.ExternalServices.CSProfileServiceReference.GetServiceVersionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSProfileServiceReference\BT.TS360API.ExternalServices.CSProfileServiceReference.ProfileOperationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSProfileServiceReference\BT.TS360API.ExternalServices.CSProfileServiceReference.UpdateProfileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSProfileServiceReference\BT.TS360API.ExternalServices.CSProfileServiceReference.WebServiceVersion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSProfileServiceReference\ProfilesWebService.wsdl" />
+    <None Include="Service References\MARCProfilerService\MARCProfiler.wsdl" />
+    <None Include="Service References\MARCProfilerService\MARCProfiler.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MARCProfilerService\MARCProfiler1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UPSTrackingReference\BT.TS360API.ExternalServices.UPSTrackingReference.TrackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UPSTrackingReference\BT.TS360API.ExternalServices.UPSTrackingReference.TrackResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UPSTrackingReference\common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UPSTrackingReference\Error1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UPSTrackingReference\Track.wsdl" />
+    <None Include="Service References\UPSTrackingReference\TrackWebServiceSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UPSTrackingReference\UPSSecurity.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BTStockCheckServices\" />
+    <WCFMetadataStorage Include="Service References\CSProfileServiceReference\" />
+    <WCFMetadataStorage Include="Service References\MARCProfilerService\" />
+    <WCFMetadataStorage Include="Service References\UPSTrackingReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CSProfileServiceReference\ProfilesWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CSProfileServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CSProfileServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CSProfileServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BT.TS360API.Cache\BT.TS360API.Cache.csproj">
+      <Project>{3ad85a78-1152-4de6-874c-c1d798ec1b42}</Project>
+      <Name>BT.TS360API.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BT.TS360API.Logging\BT.TS360API.Logging.csproj">
+      <Project>{8bf3380b-9e55-4a3d-8be6-31b0b3e9638f}</Project>
+      <Name>BT.TS360API.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BT.TS360API.ServiceContracts\BT.TS360API.ServiceContracts.csproj">
+      <Project>{d8eb01ed-8c7f-4085-8ef1-bfabc9cf21b6}</Project>
+      <Name>BT.TS360API.ServiceContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS360Constants\BT.TS360Constants.csproj">
+      <Project>{f02c91f8-1c30-4116-8cf2-bb4286a554f8}</Project>
+      <Name>BT.TS360Constants</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BTStockCheckServices\BTStockCheckServices.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BTStockCheckServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BTStockCheckServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BTStockCheckServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MARCProfilerService\MARCProfiler.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MARCProfilerService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MARCProfilerService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MARCProfilerService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UPSTrackingReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UPSTrackingReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UPSTrackingReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

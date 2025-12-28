@@ -1,0 +1,178 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="3227083c-9307-49fa-8fbb-086f778d85d2" LowerBound="1.1" HigherBound="39.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.ListTransferCarts" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="8578f1b2-1bd7-4bfc-8a76-9b2e3131c493" ParentLink="Module_PortType" LowerBound="20.1" HigherBound="31.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IProfilesR2&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IProfilesR2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="2cac3bd3-0bd5-487f-880d-61413d91daef" ParentLink="PortType_OperationDeclaration" LowerBound="22.1" HigherBound="26.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;VerifyUser&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="VerifyUser" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="1c70bbea-d66e-4697-bf42-28e495fa1b4f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="24.13" HigherBound="24.48">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferCarts.IProfilesR2_VerifyUser_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IProfilesR2_VerifyUser_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IProfilesR2/VerifyUser&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="640ac8ba-fa7b-48bd-8515-32773e7d5668" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="24.50" HigherBound="24.86">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferCarts.IProfilesR2_VerifyUser_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IProfilesR2_VerifyUser_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IProfilesR2/VerifyUserResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="ad4a7ec2-0b93-494e-9f24-0498306dc416" ParentLink="PortType_OperationDeclaration" LowerBound="26.1" HigherBound="30.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;VerifyUserPassword&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="VerifyUserPassword" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="ab3c3bcb-5c1c-4382-a58a-0ca3485ea968" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="28.13" HigherBound="28.56">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferCarts.IProfilesR2_VerifyUserPassword_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IProfilesR2_VerifyUserPassword_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IProfilesR2/VerifyUserPassword&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="bb3ac6f9-cefc-44d6-b315-af5f45045aca" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="28.58" HigherBound="28.102">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferCarts.IProfilesR2_VerifyUserPassword_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IProfilesR2_VerifyUserPassword_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IProfilesR2/VerifyUserPasswordResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="105dddc3-583c-4acf-ba2d-4de49c9dc874" ParentLink="OperationDeclaration_FaultMessageRef" LowerBound="28.104" HigherBound="28.133">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferCarts.MultipartType_Fault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Fault_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="fc045d0d-5c19-4cc5-ac3e-f5759f26dce2" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IProfilesR2_VerifyUser_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IProfilesR2_VerifyUser_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="4eb59c37-17fa-4f69-8f10-a5f9e4d036ee" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ListTransferCarts.ProfilesR2_tempuri_org.VerifyUser" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="8b85fc77-e4c3-4cfa-99f5-f8edfe7da6ef" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IProfilesR2_VerifyUser_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IProfilesR2_VerifyUser_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="f6f13607-1f85-4037-a03a-b1890b6fa8c0" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ListTransferCarts.ProfilesR2_tempuri_org.VerifyUserResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="c24a188c-ace6-4bf8-831b-8d9564cf644b" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IProfilesR2_VerifyUserPassword_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IProfilesR2_VerifyUserPassword_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="76c43dc3-55c3-44ee-bbfb-5ec1ffff8e38" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ListTransferCarts.ProfilesR2_tempuri_org.VerifyUserPassword" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="081a774f-fbbd-420b-be1e-26b23c51738f" ParentLink="Module_MessageType" LowerBound="16.1" HigherBound="20.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IProfilesR2_VerifyUserPassword_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IProfilesR2_VerifyUserPassword_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="03554b8d-8f4a-4133-96c4-3f6c9e0d1b15" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ListTransferCarts.ProfilesR2_tempuri_org.VerifyUserPasswordResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="30e0d0a4-5af8-441e-9ff3-3655bd1882d0" ParentLink="Module_ServiceDeclaration" LowerBound="31.1" HigherBound="38.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;ProfilesR2&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ProfilesR2Client" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="a6d8534e-0fa9-4478-91a8-282479612cb3" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.ListTransferCarts
+{
+    internal messagetype IProfilesR2_VerifyUser_InputMessage
+    {
+        body ProfilesR2_tempuri_org.VerifyUser parameters;
+    };
+    internal messagetype IProfilesR2_VerifyUser_OutputMessage
+    {
+        body ProfilesR2_tempuri_org.VerifyUserResponse parameters;
+    };
+    internal messagetype IProfilesR2_VerifyUserPassword_InputMessage
+    {
+        body ProfilesR2_tempuri_org.VerifyUserPassword parameters;
+    };
+    internal messagetype IProfilesR2_VerifyUserPassword_OutputMessage
+    {
+        body ProfilesR2_tempuri_org.VerifyUserPasswordResponse parameters;
+    };
+    internal porttype IProfilesR2
+    {
+        requestresponse VerifyUser
+        {
+            IProfilesR2_VerifyUser_InputMessage, IProfilesR2_VerifyUser_OutputMessage
+        };
+        requestresponse VerifyUserPassword
+        {
+            IProfilesR2_VerifyUserPassword_InputMessage, IProfilesR2_VerifyUserPassword_OutputMessage, Fault_1 = MultipartType_Fault
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ProfilesR2Client
+    {
+        body ()
+        {
+        }
+    }
+}
+

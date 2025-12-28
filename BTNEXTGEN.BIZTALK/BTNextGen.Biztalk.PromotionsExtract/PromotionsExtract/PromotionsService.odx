@@ -1,0 +1,747 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="c5e334d6-620d-4288-8159-3c1bd3e19167" LowerBound="1.1" HigherBound="171.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="PromotionsExtract" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="d603a58b-c299-4be8-aa7d-6369c859b855" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IPromotionsService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPromotionsService" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="ba3dbd81-f225-436c-b90d-46fe74cbfb70" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;GetPromotions&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="GetPromotions" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="71d32f2a-9966-4aee-865c-6061d9e96439" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.58">
+                    <om:Property Name="Ref" Value="PromotionsExtract.IPromotionsService_GetPromotions_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IPromotionsService_GetPromotions_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IPromotionsService/GetPromotions&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="e2a48faa-0f4f-45ff-aa84-fb6c484a4797" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.60" HigherBound="16.106">
+                    <om:Property Name="Ref" Value="PromotionsExtract.IPromotionsService_GetPromotions_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IPromotionsService_GetPromotions_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IPromotionsService/GetPromotionsResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="bd908e98-6850-4ccc-b3aa-a6320cdb2c06" ParentLink="Module_PortType" LowerBound="19.1" HigherBound="26.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="dd568a5d-e0f7-4e9c-80fd-7aefca6842bf" ParentLink="PortType_OperationDeclaration" LowerBound="21.1" HigherBound="25.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="75c1654d-af15-4244-81c3-acf7a75015bf" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="23.13" HigherBound="23.26">
+                    <om:Property Name="Ref" Value="PromotionsExtract.GetPromotions" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="8234f74b-940b-4eca-ba7f-12a6e8f08352" ParentLink="Module_PortType" LowerBound="26.1" HigherBound="33.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="62da0d84-005a-484b-a07d-cbf78e2ab6cd" ParentLink="PortType_OperationDeclaration" LowerBound="28.1" HigherBound="32.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c0d46998-0ad3-48e7-9695-88b2d4b5b083" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="30.13" HigherBound="30.38">
+                    <om:Property Name="Ref" Value="PromotionsExtract.PromotionsExtractFFSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="1421414d-525e-400c-904c-10ba30fd2a80" ParentLink="Module_PortType" LowerBound="33.1" HigherBound="40.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendFaultMessagePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="88867e53-30a8-45a3-b6d5-cf1adfda47e8" ParentLink="PortType_OperationDeclaration" LowerBound="35.1" HigherBound="39.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="18b13c0b-857f-40eb-ba74-bf5872a3990b" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="37.13" HigherBound="37.82">
+                    <om:Property Name="Ref" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="3d1a7ca9-83ec-4a82-9109-f46e23bd09b1" ParentLink="Module_PortType" LowerBound="40.1" HigherBound="47.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendEmailPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="c5950870-321f-40f7-93bc-e5fc5b7cfe16" ParentLink="PortType_OperationDeclaration" LowerBound="42.1" HigherBound="46.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d45022dd-6c71-4d30-adcd-8eabf730f8b5" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="44.13" HigherBound="44.82">
+                    <om:Property Name="Ref" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="14c0a12a-e2cd-44af-8188-02d0298c804c" ParentLink="Module_PortType" LowerBound="47.1" HigherBound="54.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendToERPArchivePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="e42c12be-aa99-4fab-8a6e-db30886daa68" ParentLink="PortType_OperationDeclaration" LowerBound="49.1" HigherBound="53.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="57687af6-14a6-4028-9e9e-a53fbfe50f94" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="51.13" HigherBound="51.38">
+                    <om:Property Name="Ref" Value="PromotionsExtract.PromotionsExtractFFSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="ecd33edf-57af-475c-ab10-f7ec5dfab96a" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IPromotionsService_GetPromotions_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPromotionsService_GetPromotions_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="a9555541-78f6-484d-b873-663ec520ffdb" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.PromotionsExtract.IPromotion_tempuri_org.GetPromotions" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="2edcf3e4-1c4c-41fc-93aa-50d58815d9d1" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IPromotionsService_GetPromotions_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPromotionsService_GetPromotions_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="41d6a3fd-526f-4caf-9dbf-8deb7b8a3ff4" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.PromotionsExtract.IPromotion_tempuri_org.GetPromotionsResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="865968fc-6fdc-42b5-841a-bab024b176c9" ParentLink="Module_ServiceDeclaration" LowerBound="54.1" HigherBound="170.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;PromotionsService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="PromotionsServiceClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="868181a2-f756-4098-a430-250927fbc939" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="75.1" HigherBound="76.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varDummyXML" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="151d20ee-e09d-470b-9fb2-e8f0f3dc25db" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="76.1" HigherBound="77.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="bcc732f0-7254-4718-ba4c-21b419907c1c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="77.1" HigherBound="78.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varTestEmail" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c8523221-ae2a-41d3-983f-7f6e41f827cf" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="69.1" HigherBound="70.1">
+                <om:Property Name="Type" Value="PromotionsExtract.IPromotionsService_GetPromotions_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageServiceRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="294a994f-7230-429c-a662-2ca7eb295ed3" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="70.1" HigherBound="71.1">
+                <om:Property Name="Type" Value="PromotionsExtract.IPromotionsService_GetPromotions_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageServiceResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3578c72b-2aea-4d62-8f52-c30591abc933" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="71.1" HigherBound="72.1">
+                <om:Property Name="Type" Value="PromotionsExtract.PromotionsExtractFFSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageForERP" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="827c8a30-e0c1-45f9-9cde-a3c07d60fce9" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="72.1" HigherBound="73.1">
+                <om:Property Name="Type" Value="PromotionsExtract.GetPromotions" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageDummyFromScheduler" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="371ae9d9-3003-4cc7-b181-09e65a0ecef1" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="73.1" HigherBound="74.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FaultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="89eec4ab-3d80-47b9-b8e7-136aee1db3a1" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="74.1" HigherBound="75.1">
+                <om:Property Name="Type" Value="PromotionsExtract.PromotionsExtractFFSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageForERPArchive" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="03caf573-eea9-459f-95c3-a448f0d154d5" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="5acab81d-b1d7-453f-ac67-c7998dd7bd2c" ParentLink="ServiceBody_Statement">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="ReceiveDataFromSchedulerPort" />
+                    <om:Property Name="MessageName" Value="MessageDummyFromScheduler" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ReceiveDataFromScheduler" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="6443692d-c231-489a-a72c-473158d6bfb6" ParentLink="ServiceBody_Statement" LowerBound="82.1" HigherBound="93.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructDummy_MessageForERP" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageRef" OID="c1fad89a-df61-4339-ab52-7a480f689146" ParentLink="Construct_MessageRef" LowerBound="83.23" HigherBound="83.36">
+                        <om:Property Name="Ref" Value="MessageForERP" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageAssignment" OID="92b1aab0-00a1-4306-84dd-c90ae62732f5" ParentLink="ComplexStatement_Statement" LowerBound="85.1" HigherBound="92.1">
+                        <om:Property Name="Expression" Value="varDummyXML = new System.Xml.XmlDocument(); &#xD;&#xA;varDummyXML.LoadXml(@&quot;&lt;ns0:PromotionsExtractRecord xmlns:ns0=&quot;&quot;http://PromotionsExtract.PromotionsExtractFFSchema&quot;&quot;&gt;&lt;PromotionsExtractRecord_Child1&gt;&lt;Startdate&gt;No data yet&lt;/Startdate&gt;&lt;Enddate&gt;No data yet&lt;/Enddate&gt;&lt;Promocode&gt;Initial Message No Data&lt;/Promocode&gt;&lt;Promotype&gt;No&lt;/Promotype&gt;&lt;Promodescription&gt;No Data yet&lt;/Promodescription&gt;&lt;/PromotionsExtractRecord_Child1&gt;&lt;/ns0:PromotionsExtractRecord&gt;&quot;);&#xD;&#xA;MessageForERP = varDummyXML; &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="MessageAssignment_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Scope" OID="15f811a1-e998-4e21-9044-ca31cfa440db" ParentLink="ServiceBody_Statement" LowerBound="93.1" HigherBound="168.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_Inner" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="21dd5cc1-35ff-43d3-ae38-c7c62d63f18b" ParentLink="ComplexStatement_Statement" LowerBound="98.1" HigherBound="104.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessageForRequest" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="72e797b4-03b0-454e-a5a4-a8a504cdc75b" ParentLink="ComplexStatement_Statement" LowerBound="101.1" HigherBound="103.1">
+                            <om:Property Name="ClassName" Value="PromotionsExtract.InstantiateMessagRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_InstantiateMessageRequest" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="0cd3a1eb-529a-4fde-b012-c37defc52a48" ParentLink="Transform_InputMessagePartRef" LowerBound="102.116" HigherBound="102.141">
+                                <om:Property Name="MessageRef" Value="MessageDummyFromScheduler" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="d60d1168-ba7d-4b06-888f-ad528c84dcf5" ParentLink="Transform_OutputMessagePartRef" LowerBound="102.36" HigherBound="102.68">
+                                <om:Property Name="MessageRef" Value="MessageServiceRequest" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="4ab75d67-505b-44f3-a308-65857ed3f22d" ParentLink="Construct_MessageRef" LowerBound="99.31" HigherBound="99.52">
+                            <om:Property Name="Ref" Value="MessageServiceRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="57a8474a-251b-4399-b4e8-ec8c0d1d11e0" ParentLink="ComplexStatement_Statement" LowerBound="104.1" HigherBound="106.1">
+                        <om:Property Name="PortName" Value="CallToService" />
+                        <om:Property Name="MessageName" Value="MessageServiceRequest" />
+                        <om:Property Name="OperationName" Value="GetPromotions" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="SendRequest" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="7c42e017-7a2f-433f-ba34-56674c44b11c" ParentLink="ComplexStatement_Statement" LowerBound="106.1" HigherBound="108.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="CallToService" />
+                        <om:Property Name="MessageName" Value="MessageServiceResponse" />
+                        <om:Property Name="OperationName" Value="GetPromotions" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ReceiveResponse" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="74d97747-1b07-442b-8aa5-c9e04b75c6a5" ParentLink="ComplexStatement_Statement" LowerBound="108.1" HigherBound="114.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessageForERP" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="1a241361-5503-4472-94e8-c81e0eeddffb" ParentLink="ComplexStatement_Statement" LowerBound="111.1" HigherBound="113.1">
+                            <om:Property Name="ClassName" Value="PromotionsExtract.TransformSvcResponsetoERP" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_XML_2_Flat" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="c0f6121f-80b5-44c7-a8d1-86ea1a21d4e4" ParentLink="Transform_InputMessagePartRef" LowerBound="112.98" HigherBound="112.131">
+                                <om:Property Name="MessageRef" Value="MessageServiceResponse" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="8311f984-6f55-41a8-bdfd-95ebb6dd508c" ParentLink="Transform_OutputMessagePartRef" LowerBound="112.36" HigherBound="112.49">
+                                <om:Property Name="MessageRef" Value="MessageForERP" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="4d9fc1d0-d4ec-4534-9811-bee205e53283" ParentLink="Construct_MessageRef" LowerBound="109.31" HigherBound="109.44">
+                            <om:Property Name="Ref" Value="MessageForERP" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="96c29a10-0e5c-4f50-9c1d-63774dd40808" ParentLink="ComplexStatement_Statement" LowerBound="114.1" HigherBound="116.1">
+                        <om:Property Name="PortName" Value="SendToERP" />
+                        <om:Property Name="MessageName" Value="MessageForERP" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="SendERP" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="5937278c-5376-42d9-98fd-4d94828d27d1" ParentLink="ComplexStatement_Statement" LowerBound="116.1" HigherBound="119.1">
+                        <om:Property Name="Expression" Value="//varTestEmail=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.PromotionsExtract&quot;,&quot;EmailForTesting&quot;));&#xD;&#xA;varArchive=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.PromotionsExtract&quot;,&quot;ERPArchiveFile&quot;)); &#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="getsso" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="38d7bad7-8e51-4a36-9530-b68056876db9" ParentLink="ComplexStatement_Statement" LowerBound="119.1" HigherBound="133.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_If_Archiving" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="b85ff673-ad8f-4a1d-842c-e26c0193bcfc" ParentLink="ReallyComplexStatement_Branch" LowerBound="120.21" HigherBound="133.1">
+                            <om:Property Name="Expression" Value=" varArchive == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveRule" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="973a34af-cecc-4ae7-b8c3-44d8ab37a852" ParentLink="ComplexStatement_Statement" LowerBound="122.1" HigherBound="130.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructMessageForERPArchive" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="eaaab2f8-1be5-4be1-b2e8-81ee2c29a3ac" ParentLink="ComplexStatement_Statement" LowerBound="125.1" HigherBound="129.1">
+                                    <om:Property Name="Expression" Value="&#xD;&#xA;MessageForERPArchive = MessageForERP; &#xD;&#xA;MessageForERPArchive(FILE.ReceivedFileName)=&quot;PromoExtract&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignmentERPArchive" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="57149a67-a6cb-4898-a4b7-46d23c72b86e" ParentLink="Construct_MessageRef" LowerBound="123.35" HigherBound="123.55">
+                                    <om:Property Name="Ref" Value="MessageForERPArchive" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="5075320d-fed1-4dc2-b809-7f574d3ea252" ParentLink="ComplexStatement_Statement" LowerBound="130.1" HigherBound="132.1">
+                                <om:Property Name="PortName" Value="SendToERPArchive" />
+                                <om:Property Name="MessageName" Value="MessageForERPArchive" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="SendERPArchive" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="2b0a9ab8-36d3-4019-b454-579d953d9e7e" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="36cdaef9-b81c-49aa-9f57-f1d80e85c2bd" ParentLink="Scope_Catch" LowerBound="136.1" HigherBound="166.1">
+                        <om:Property Name="ExceptionName" Value="exSystemException" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchExceptions" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="2e65bea9-63c6-4664-881a-f693ccaaab1a" ParentLink="Catch_Statement" LowerBound="139.1" HigherBound="142.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;Promotions Extract - Error Occurred&quot;, exSystemException.Message.ToString());&#xD;&#xA; &#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="WriteToEventLog" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="f6aac3b5-6004-404d-9caf-faf7dd5d1ac4" ParentLink="Catch_Statement" LowerBound="142.1" HigherBound="157.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructFaultMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="627b59c8-39fd-4c27-aaef-7c53b19bf99d" ParentLink="ComplexStatement_Statement" LowerBound="145.1" HigherBound="156.1">
+                                <om:Property Name="Expression" Value="varTestEmail=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.PromotionsExtract&quot;,&quot;EmailForTesting&quot;));&#xD;&#xA;&#xD;&#xA;// Create fault exception Message&#xD;&#xA;FaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;FaultMessage.FailureCategory=&quot;Promotions Extract Exception&quot;;&#xD;&#xA;FaultMessage.FaultDescription=exSystemException.Message;&#xD;&#xA;FaultMessage.FaultCode=&quot;3002&quot;;&#xD;&#xA;FaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="f898f13a-6500-48c2-a186-86e505d9fdb2" ParentLink="Construct_MessageRef" LowerBound="143.35" HigherBound="143.47">
+                                <om:Property Name="Ref" Value="FaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="353b5d44-24d2-4ce0-95d0-b412dba001ea" ParentLink="Catch_Statement" LowerBound="157.1" HigherBound="159.1">
+                            <om:Property Name="PortName" Value="SendFaultMessage" />
+                            <om:Property Name="MessageName" Value="FaultMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SendFaultMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Decision" OID="4c5cc8ef-46a3-41e6-a99c-88cea45925ba" ParentLink="Catch_Statement" LowerBound="159.1" HigherBound="165.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Decide_If_TestEmail" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="4b778b66-18a9-4d63-bd19-d44d3aaefba9" ParentLink="ReallyComplexStatement_Branch" LowerBound="160.25" HigherBound="165.1">
+                                <om:Property Name="Expression" Value="varTestEmail == true" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="TestEmailRule" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Send" OID="1e183301-0478-4b6b-a33f-cdf28f512338" ParentLink="ComplexStatement_Statement" LowerBound="162.1" HigherBound="164.1">
+                                    <om:Property Name="PortName" Value="SendEmailPort" />
+                                    <om:Property Name="MessageName" Value="FaultMessage" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="SendEmail" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="7175f77a-e34d-4ff7-928f-fb1edb645804" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f52f6deb-7439-45b5-8b44-4178f5c67bec" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="57.1" HigherBound="59.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="PromotionsExtract.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveDataFromSchedulerPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="d21f2fdf-74ca-402e-a0de-7147be3b1ce3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="57.1" HigherBound="58.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9926b4ef-4b07-4676-ae18-145cf175093e" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="59.1" HigherBound="61.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="21" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="PromotionsExtract.IPromotionsService" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CallToService" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="92c502c0-61c6-4442-859f-acb3a97ea893" ParentLink="PortDeclaration_CLRAttribute" LowerBound="59.1" HigherBound="60.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="e6f0282e-6a8f-4f38-9bf5-8fa291a486c2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="61.1" HigherBound="63.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="PromotionsExtract.PortType_2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendToERP" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="e8aa2637-4016-4345-809b-65510b4173bd" ParentLink="PortDeclaration_CLRAttribute" LowerBound="61.1" HigherBound="62.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="67e28b89-f8d2-48f5-a810-c413ecc3bc74" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="63.1" HigherBound="65.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="68" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="PromotionsExtract.SendFaultMessagePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendFaultMessage" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="95c6361f-c565-45a5-a1d8-2be4f51f0af2" ParentLink="PortDeclaration_CLRAttribute" LowerBound="63.1" HigherBound="64.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="b4167f53-1dd8-4517-9d2b-f11e7dd4e4c0" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="65.1" HigherBound="67.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="PromotionsExtract.SendEmailPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendEmailPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="994b3b76-277f-420d-bbee-fa24cd0f0d95" ParentLink="PortDeclaration_CLRAttribute" LowerBound="65.1" HigherBound="66.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="75faa011-0290-4990-b007-c2453e2113b2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="67.1" HigherBound="69.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="54" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="PromotionsExtract.SendToERPArchivePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendToERPArchive" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="a8f9104d-c786-47af-82c7-267e2b56b950" ParentLink="PortDeclaration_CLRAttribute" LowerBound="67.1" HigherBound="68.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module PromotionsExtract
+{
+    internal messagetype IPromotionsService_GetPromotions_InputMessage
+    {
+        body BTNextGen.Biztalk.PromotionsExtract.IPromotion_tempuri_org.GetPromotions parameters;
+    };
+    internal messagetype IPromotionsService_GetPromotions_OutputMessage
+    {
+        body BTNextGen.Biztalk.PromotionsExtract.IPromotion_tempuri_org.GetPromotionsResponse parameters;
+    };
+    internal porttype IPromotionsService
+    {
+        requestresponse GetPromotions
+        {
+            IPromotionsService_GetPromotions_InputMessage, IPromotionsService_GetPromotions_OutputMessage
+        };
+    };
+    internal porttype PortType_1
+    {
+        oneway Operation_1
+        {
+            GetPromotions
+        };
+    };
+    internal porttype PortType_2
+    {
+        oneway Operation_1
+        {
+            PromotionsExtractFFSchema
+        };
+    };
+    internal porttype SendFaultMessagePortType
+    {
+        oneway Operation_1
+        {
+            Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage
+        };
+    };
+    internal porttype SendEmailPortType
+    {
+        oneway Operation_1
+        {
+            Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage
+        };
+    };
+    internal porttype SendToERPArchivePortType
+    {
+        oneway Operation_1
+        {
+            PromotionsExtractFFSchema
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service PromotionsServiceClient
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_1 ReceiveDataFromSchedulerPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses IPromotionsService CallToService;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_2 SendToERP;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses SendFaultMessagePortType SendFaultMessage;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendEmailPortType SendEmailPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendToERPArchivePortType SendToERPArchive;
+        message IPromotionsService_GetPromotions_InputMessage MessageServiceRequest;
+        message IPromotionsService_GetPromotions_OutputMessage MessageServiceResponse;
+        message PromotionsExtractFFSchema MessageForERP;
+        message GetPromotions MessageDummyFromScheduler;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage FaultMessage;
+        message PromotionsExtractFFSchema MessageForERPArchive;
+        System.Xml.XmlDocument varDummyXML;
+        System.Boolean varArchive;
+        System.Boolean varTestEmail;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("5acab81d-b1d7-453f-ac67-c7998dd7bd2c")]
+            activate receive (ReceiveDataFromSchedulerPort.Operation_1, MessageDummyFromScheduler);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6443692d-c231-489a-a72c-473158d6bfb6")]
+            construct MessageForERP
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("92b1aab0-00a1-4306-84dd-c90ae62732f5")]
+                varDummyXML = new System.Xml.XmlDocument(); 
+                varDummyXML.LoadXml(@"<ns0:PromotionsExtractRecord xmlns:ns0=""http://PromotionsExtract.PromotionsExtractFFSchema""><PromotionsExtractRecord_Child1><Startdate>No data yet</Startdate><Enddate>No data yet</Enddate><Promocode>Initial Message No Data</Promocode><Promotype>No</Promotype><Promodescription>No Data yet</Promodescription></PromotionsExtractRecord_Child1></ns0:PromotionsExtractRecord>");
+                MessageForERP = varDummyXML; 
+                
+                
+                
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("15f811a1-e998-4e21-9044-ca31cfa440db")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("21dd5cc1-35ff-43d3-ae38-c7c62d63f18b")]
+                    construct MessageServiceRequest
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("72e797b4-03b0-454e-a5a4-a8a504cdc75b")]
+                        transform (MessageServiceRequest.parameters) = PromotionsExtract.InstantiateMessagRequest (MessageDummyFromScheduler);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("57a8474a-251b-4399-b4e8-ec8c0d1d11e0")]
+                    send (CallToService.GetPromotions, MessageServiceRequest);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("7c42e017-7a2f-433f-ba34-56674c44b11c")]
+                    receive (CallToService.GetPromotions, MessageServiceResponse);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("74d97747-1b07-442b-8aa5-c9e04b75c6a5")]
+                    construct MessageForERP
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("1a241361-5503-4472-94e8-c81e0eeddffb")]
+                        transform (MessageForERP) = PromotionsExtract.TransformSvcResponsetoERP (MessageServiceResponse.parameters);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("96c29a10-0e5c-4f50-9c1d-63774dd40808")]
+                    send (SendToERP.Operation_1, MessageForERP);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("5937278c-5376-42d9-98fd-4d94828d27d1")]
+                    //varTestEmail=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.PromotionsExtract","EmailForTesting"));
+                    varArchive=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.PromotionsExtract","ERPArchiveFile")); 
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("38d7bad7-8e51-4a36-9530-b68056876db9")]
+                    if ( varArchive == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("973a34af-cecc-4ae7-b8c3-44d8ab37a852")]
+                        construct MessageForERPArchive
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("eaaab2f8-1be5-4be1-b2e8-81ee2c29a3ac")]
+                            
+                            MessageForERPArchive = MessageForERP; 
+                            MessageForERPArchive(FILE.ReceivedFileName)="PromoExtract";
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("5075320d-fed1-4dc2-b809-7f574d3ea252")]
+                        send (SendToERPArchive.Operation_1, MessageForERPArchive);
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("36cdaef9-b81c-49aa-9f57-f1d80e85c2bd")]
+                    catch (System.Exception exSystemException)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2e65bea9-63c6-4664-881a-f693ccaaab1a")]
+                        System.Diagnostics.EventLog.WriteEntry("Promotions Extract - Error Occurred", exSystemException.Message.ToString());
+                         
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f6aac3b5-6004-404d-9caf-faf7dd5d1ac4")]
+                        construct FaultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("627b59c8-39fd-4c27-aaef-7c53b19bf99d")]
+                            varTestEmail=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.PromotionsExtract","EmailForTesting"));
+                            
+                            // Create fault exception Message
+                            FaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            // Assign Properties
+                            FaultMessage.FailureCategory="Promotions Extract Exception";
+                            FaultMessage.FaultDescription=exSystemException.Message;
+                            FaultMessage.FaultCode="3002";
+                            FaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("353b5d44-24d2-4ce0-95d0-b412dba001ea")]
+                        send (SendFaultMessage.Operation_1, FaultMessage);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4c5cc8ef-46a3-41e6-a99c-88cea45925ba")]
+                        if (varTestEmail == true)
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1e183301-0478-4b6b-a33f-cdf28f512338")]
+                            send (SendEmailPort.Operation_1, FaultMessage);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

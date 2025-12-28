@@ -1,0 +1,1377 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="19288ccc-a79e-495c-83b6-535f10940ba9" LowerBound="1.1" HigherBound="398.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.BAMAlerts" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="6ec12780-91e2-461f-bc6d-b742fdcd7ee4" ParentLink="Module_PortType" LowerBound="9.1" HigherBound="16.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BamAlertInitFilePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="65baf046-b69f-4190-8ad9-879848cdd82a" ParentLink="PortType_OperationDeclaration" LowerBound="11.1" HigherBound="15.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="0506c0ad-199c-4d82-b23d-c6de8d002f8f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="13.13" HigherBound="13.28">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BAMAlerts.BamAlertTrigger" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="ef78b7f9-58c7-44d5-bc8b-5f7527f1aace" ParentLink="Module_PortType" LowerBound="16.1" HigherBound="23.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="GetBAMRecordsPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="eb24b915-704b-46d5-834e-b6af78b45a9c" ParentLink="PortType_OperationDeclaration" LowerBound="18.1" HigherBound="22.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c2c8ce19-0caa-451e-a467-cd97dda029c4" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="20.13" HigherBound="20.56">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BAMAlerts.TypedProcedure_dbo.procGetNoAckERPOrdersBAM" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="dfa2a492-b5b6-43f9-ac66-556dd4d7ddb9" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="20.58" HigherBound="20.109">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BAMAlerts.TypedProcedure_dbo.procGetNoAckERPOrdersBAMResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="27d44f75-58cc-4d81-b918-8dd2d7311a0e" ParentLink="Module_PortType" LowerBound="23.1" HigherBound="30.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BAMExpireAlertPortTye" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="b5406902-0aa4-42c0-bd65-fc73e471d687" ParentLink="PortType_OperationDeclaration" LowerBound="25.1" HigherBound="29.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="6dcc41e5-4df0-4c21-a85c-c0dcb67503fd" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="27.13" HigherBound="27.57">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BAMAlerts.TableOperation_dbo_BT_BAMAlertHistory.Insert" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="bf4bc080-e700-47cd-a252-581fa461278d" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="27.59" HigherBound="27.111">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BAMAlerts.TableOperation_dbo_BT_BAMAlertHistory.InsertResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f0d2dc74-2606-4d66-9248-9dee88b1063d" ParentLink="Module_PortType" LowerBound="30.1" HigherBound="37.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="EmailPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="e54ab861-1be7-4dd6-925e-fb8ff7f202c9" ParentLink="PortType_OperationDeclaration" LowerBound="32.1" HigherBound="36.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="a1dc933b-9a2d-46eb-bf18-18ba8682ce02" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="34.13" HigherBound="34.28">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BAMAlerts.MultipartType_1" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="2093c429-cc3c-45d9-ae06-6b9bb2daac57" ParentLink="Module_PortType" LowerBound="37.1" HigherBound="44.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="GetLatestOrderPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="681ae89b-6ab5-4d05-9d29-14375ee61ba6" ParentLink="PortType_OperationDeclaration" LowerBound="39.1" HigherBound="43.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="dca53d48-ba5b-4d26-9fa5-d99f09f5d551" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="41.13" HigherBound="41.70">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BAMAlerts.GetLatestOrderTypedProcedure_dbo.procGetLatestOrderAgeBAM" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="a66b6842-1d10-46a1-b5ca-0dd6463060eb" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="41.72" HigherBound="41.137">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.BAMAlerts.GetLatestOrderTypedProcedure_dbo.procGetLatestOrderAgeBAMResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="9d779d48-3d58-476c-ae79-449a80ec5319" ParentLink="Module_ServiceDeclaration" LowerBound="44.1" HigherBound="397.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BAMAlert_ERPOrders" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="d4306b99-26ba-4059-a117-62fd780d0a62" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="67.1" HigherBound="68.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Text.StringBuilder" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgbody" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="1e15ae6d-041e-4bf4-8631-d920b9dc942d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="68.1" HigherBound="69.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="fromAddress" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d39f1f5b-ce22-497e-acd1-00b93fb77559" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="69.1" HigherBound="70.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="env" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a9a5d881-0884-42ac-92df-4f49cb7da202" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="70.1" HigherBound="71.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="toAddress" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7bec7c17-2a9c-4ac4-add0-fa71cfedd3e7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="71.1" HigherBound="72.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="subject" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="08d5719b-435d-494a-872a-e39402f37966" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="72.1" HigherBound="73.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="mailServer" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="540117eb-a142-4e33-b9db-49e72a0cfc71" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="73.1" HigherBound="74.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="duration" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2e663855-443f-4f65-8c7f-6c6046eb4c2a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="74.1" HigherBound="75.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlDoc" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="de0acc11-b779-4812-8909-063c4d4617e7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="75.1" HigherBound="76.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="iCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="eb5e8946-a10b-4367-8569-c1fe9ae67f91" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="76.1" HigherBound="77.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="Microsoft.XLANGs.Pipeline.SendPipelineInputMessages" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="sndPipelineInMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="1848ca69-9635-4845-9288-86fe6021c709" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="77.1" HigherBound="78.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="interface" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d9a7e2cc-6fdd-4afc-8352-df9b5e8e7ca6" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="78.1" HigherBound="79.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="threshold" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8015654b-5dde-4900-8edc-b142fa693cfa" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="79.1" HigherBound="80.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="expireAlerts" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="db4125df-3ec8-4ab4-a8ee-e4b6b7ba6eb8" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="80.1" HigherBound="81.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="debugLogging" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="7f4e0d86-15a6-4c78-a269-deed53be831e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="57.1" HigherBound="58.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.Schema.MissingACKAlert" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="flatFilePipelineOut" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="dfa4464d-541e-4afb-9180-0065880c665e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="58.1" HigherBound="59.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.BamAlertTrigger" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgInit" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b9c435b4-e17a-4ccb-a6a0-dddade076efa" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="59.1" HigherBound="60.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.TypedProcedure_dbo.procGetNoAckERPOrdersBAM" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="81bb489a-f557-47ad-b461-a3244d362dca" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="60.1" HigherBound="61.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.TypedProcedure_dbo.procGetNoAckERPOrdersBAMResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="bacbf9e5-0f01-432a-b241-7a0bfeb3ea0e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="61.1" HigherBound="62.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.TableOperation_dbo_BT_BAMAlertHistory.Insert" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgInsert" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="fcc346fd-f778-4485-941d-b1c7079ff166" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="62.1" HigherBound="63.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.TableOperation_dbo_BT_BAMAlertHistory.InsertResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgInsertResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9d3622a7-70bc-48b7-a217-36b5b3f0877c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="63.1" HigherBound="64.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.Schema.MissingACKAlert" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="emailAlertFF" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a5dfa360-390d-448a-8468-d6fc1fab6c40" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="64.1" HigherBound="65.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.MultipartType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="multiMsgEmail" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f011c288-d9d3-413f-84e7-84dccd228cfb" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="65.1" HigherBound="66.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.GetLatestOrderTypedProcedure_dbo.procGetLatestOrderAgeBAM" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgLatestOrdReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f691b959-db1e-4a5a-b253-c8ecc21b43a9" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="66.1" HigherBound="67.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.GetLatestOrderTypedProcedure_dbo.procGetLatestOrderAgeBAMResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgLatestOrdResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="303e72ba-82e9-4182-a826-561382888c4b" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="e566d6fc-fab0-492e-ac40-be5e62093cad" ParentLink="ServiceBody_Statement" LowerBound="83.1" HigherBound="98.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="BamAlertInitFilePort" />
+                    <om:Property Name="MessageName" Value="msgInit" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="rcv_InitFile" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="b8ad23be-3f01-42c2-b246-e9ea3b0c1b59" ParentLink="ServiceBody_Statement" LowerBound="98.1" HigherBound="111.1">
+                    <om:Property Name="Expression" Value="&#xD;&#xA;//interface Name identifies which functionality the scheduler is intending to execute&#xD;&#xA;//  &quot;OrdAckBacklog&quot; = X number of orders have been unconfirmed for Y minutes (Y is 5-10 minutes and X is a threshold for alerts)&#xD;&#xA;//  &quot;AckAWOL&quot; = These orders are NEVER coming back, so send out an Alert and don't alert on it any more X is at least an hour or more.&#xD;&#xA;//  &quot;OrdersAWOL&quot; = We haven't had a new order in over X minutes which is probably a problem indicator.&#xD;&#xA;&#xD;&#xA;//Intervals and thresholds will depend on traffic and whether or not planned outages are brought into consideration.&#xD;&#xA;&#xD;&#xA;interface= msgInit.InterfaceName;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;debugLogging= System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;debugEventLogging&quot;));&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="get interface &amp; top SSO" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="f69ff884-cbac-4cc1-b9f4-c0cd8f2dca21" ParentLink="ServiceBody_Statement" LowerBound="111.1" HigherBound="395.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="DetermineInterface" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="7277c9e5-ee7d-4d1b-893c-6098a19576e6" ParentLink="ReallyComplexStatement_Branch" LowerBound="112.13" HigherBound="212.1">
+                        <om:Property Name="Expression" Value="interface == &quot;AckAWOL&quot;" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="IsAckAWOL" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="3e81af76-6746-4324-ae70-5064a1f085d7" ParentLink="ComplexStatement_Statement" LowerBound="114.1" HigherBound="127.1">
+                            <om:Property Name="Expression" Value="mailServer= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;emailServer&quot;);&#xD;&#xA;subject= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;Subject&quot;);&#xD;&#xA;toAddress= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;ToAddress&quot;);&#xD;&#xA;env= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;Environment&quot;);&#xD;&#xA;fromAddress=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;fromAddress&quot;);&#xD;&#xA;duration=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;duration&quot;);&#xD;&#xA;expireAlerts= System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;ExpireAlerts&quot;));&#xD;&#xA;&#xD;&#xA;if(debugLogging == true)&#xD;&#xA;{&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.BAMAlerts&quot;, &quot;Entered AckAWOL check For Orders whose age in minutes is over &quot; + duration );&#xD;&#xA;}&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="get SSO values" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="97e1b154-3553-40d8-9f1e-cb86942e8f0c" ParentLink="ComplexStatement_Statement" LowerBound="127.1" HigherBound="134.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_msgSelect" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="a3dff2fe-022e-4722-a028-ba826300ad90" ParentLink="Construct_MessageRef" LowerBound="128.27" HigherBound="128.33">
+                                <om:Property Name="Ref" Value="msgReq" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="19be8d3f-ccd3-4494-b103-0dff698ebe27" ParentLink="ComplexStatement_Statement" LowerBound="130.1" HigherBound="133.1">
+                                <om:Property Name="Expression" Value="xmlDoc.LoadXml(&quot;&lt;ns0:procGetNoAckERPOrdersBAM xmlns:ns0=\&quot;http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\&quot;&gt;&lt;ns0:DURATION&gt;&quot;+duration+&quot;&lt;/ns0:DURATION&gt; &lt;/ns0:procGetNoAckERPOrdersBAM&gt;&quot;);&#xD;&#xA;msgReq= xmlDoc;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="2d0b9395-615c-42ab-a199-3d5149787133" ParentLink="ComplexStatement_Statement" LowerBound="134.1" HigherBound="136.1">
+                            <om:Property Name="PortName" Value="GetBAMRecordsPort" />
+                            <om:Property Name="MessageName" Value="msgReq" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_Req" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="9adc2f51-1849-4c3d-9ee5-918e23ab300a" ParentLink="ComplexStatement_Statement" LowerBound="136.1" HigherBound="138.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="GetBAMRecordsPort" />
+                            <om:Property Name="MessageName" Value="msgResponse" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Rcv_Response" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="91a92cf4-f827-48cb-82e1-a5fa6c6b28d7" ParentLink="ComplexStatement_Statement" LowerBound="138.1" HigherBound="140.1">
+                            <om:Property Name="Expression" Value="iCount= System.Convert.ToInt32(xpath(msgResponse,&quot;count(/*[local-name()='procGetNoAckERPOrdersBAMResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procGetNoAckERPOrdersBAM'])&quot;));" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="get icount" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Decision" OID="2b5f15f9-9111-4416-8c1d-fc8cfc84bc2b" ParentLink="ComplexStatement_Statement" LowerBound="140.1" HigherBound="211.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="check AWOL count" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="a9aaf3b0-62d9-4a58-901a-a545780c42cf" ParentLink="ReallyComplexStatement_Branch" LowerBound="141.17" HigherBound="203.1">
+                                <om:Property Name="Expression" Value="iCount &gt; 0" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="IsGTZero" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="VariableAssignment" OID="aa9ab167-e473-4f04-99d0-7eedbe027daf" ParentLink="ComplexStatement_Statement" LowerBound="143.1" HigherBound="145.1">
+                                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.BAMAlerts&quot;, System.Convert.ToString(iCount) + &quot; ACK(s) Missing For Orders whose age in minutes is over &quot; + duration );&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="EventLog01" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Construct" OID="1920b175-f70f-4957-babd-840191c7b69b" ParentLink="ComplexStatement_Statement" LowerBound="145.1" HigherBound="151.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ConstructEmail" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="6faeb61c-0b16-43e6-a126-ef8b2b452b42" ParentLink="Construct_MessageRef" LowerBound="146.31" HigherBound="146.43">
+                                        <om:Property Name="Ref" Value="emailAlertFF" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Transform" OID="2229fad8-aeb9-4096-8961-6eb51038cde2" ParentLink="ComplexStatement_Statement" LowerBound="148.1" HigherBound="150.1">
+                                        <om:Property Name="ClassName" Value="BTNextGen.Biztalk.BAMAlerts.EmailMessage" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="EmailAttachment" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessagePartRef" OID="e3786570-2ed2-4f0c-959c-252ad5530e9f" ParentLink="Transform_InputMessagePartRef" LowerBound="149.94" HigherBound="149.105">
+                                            <om:Property Name="MessageRef" Value="msgResponse" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_3" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="778fe705-3c02-42c4-a43c-98622d46ab8b" ParentLink="Transform_OutputMessagePartRef" LowerBound="149.36" HigherBound="149.48">
+                                            <om:Property Name="MessageRef" Value="emailAlertFF" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_4" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Construct" OID="967d411a-1e3f-4ed8-8adb-4613137e05d2" ParentLink="ComplexStatement_Statement" LowerBound="151.1" HigherBound="159.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_flatFilePipelineOut" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="081a5474-ebb6-4752-b9c0-25c001ed9cb2" ParentLink="Construct_MessageRef" LowerBound="152.31" HigherBound="152.50">
+                                        <om:Property Name="Ref" Value="flatFilePipelineOut" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="4b94593e-fd70-40a8-a8b3-e873a8aa61b1" ParentLink="ComplexStatement_Statement" LowerBound="154.1" HigherBound="158.1">
+                                        <om:Property Name="Expression" Value="sndPipelineInMsg.Add(emailAlertFF);&#xD;&#xA;flatFilePipelineOut= null;&#xD;&#xA;Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(BTNextGen.Biztalk.BAMAlerts.Pipeline.SendFlatFile), sndPipelineInMsg , flatFilePipelineOut );" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="execute flat file assembler pipeline" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Construct" OID="5ef604ea-b1c2-46a3-91a6-72b6931c8499" ParentLink="ComplexStatement_Statement" LowerBound="159.1" HigherBound="186.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_email" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="cfd6b902-37cf-4173-bc19-56536df2f73c" ParentLink="Construct_MessageRef" LowerBound="160.31" HigherBound="160.44">
+                                        <om:Property Name="Ref" Value="multiMsgEmail" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="84a873dc-7c49-4050-8847-4e3fe46f63de" ParentLink="ComplexStatement_Statement" LowerBound="162.1" HigherBound="185.1">
+                                        <om:Property Name="Expression" Value="msgbody = new System.Text.StringBuilder();&#xD;&#xA;msgbody.AppendLine(&quot;&lt;html&gt;&lt;body&gt;&quot;);&#xD;&#xA;msgbody.AppendLine(&quot;&lt;p&gt;The attached list PO(s) did not receive an ACK from ERP in over &quot; + duration+ &quot; minutes.&lt;/p&gt;&quot;);&#xD;&#xA;msgbody.AppendLine(&quot;&lt;p&gt;&lt;b&gt;PLEASE NOTE that this will be the final Alert for the PO(s)&lt;/b&gt;&lt;/p&gt;&quot;);&#xD;&#xA;msgbody.AppendLine(&quot;&lt;/body&gt;&lt;/html&gt;&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;multiMsgEmail.emailbody= new Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString(msgbody.ToString());&#xD;&#xA;multiMsgEmail.emailbody(Microsoft.XLANGs.BaseTypes.ContentType)=&quot;text/html&quot;;&#xD;&#xA;&#xD;&#xA;multiMsgEmail.emailAttachment= flatFilePipelineOut;&#xD;&#xA;multiMsgEmail(SMTP.MessagePartsAttachments)=2;&#xD;&#xA;multiMsgEmail.emailAttachment(MIME.FileName)= &quot;Missing ACK_&quot;+System.DateTime.Now.ToString()+&quot;.txt&quot;;&#xD;&#xA;&#xD;&#xA;multiMsgEmail(SMTP.SMTPHost)=mailServer;&#xD;&#xA;multiMsgEmail(SMTP.From)= fromAddress;&#xD;&#xA;multiMsgEmail(SMTP.Subject)=subject + &quot; : &quot; + env + &quot; - Acks &quot; + duration + &quot; Minutes Late.&quot;;&#xD;&#xA;multiMsgEmail(SMTP.EmailBodyTextCharset)=&quot;UTF-8&quot;;&#xD;&#xA;multiMsgEmail(SMTP.MessagePartsAttachments)=2;&#xD;&#xA;&#xD;&#xA;EmailPort(Microsoft.XLANGs.BaseTypes.Address)=toAddress;&#xD;&#xA;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="assigne_email_properties" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Send" OID="f9c87aa9-1c52-428c-9a90-cc13156dbf53" ParentLink="ComplexStatement_Statement" LowerBound="186.1" HigherBound="188.1">
+                                    <om:Property Name="PortName" Value="EmailPort" />
+                                    <om:Property Name="MessageName" Value="multiMsgEmail" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Send_Email" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Decision" OID="bb8e1552-4410-4e8a-a571-39127b195836" ParentLink="ComplexStatement_Statement" LowerBound="188.1" HigherBound="202.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ExpireAlerts?" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="DecisionBranch" OID="cb0f0109-f81f-4f8b-b48f-a642aa6d2934" ParentLink="ReallyComplexStatement_Branch" LowerBound="189.21" HigherBound="202.1">
+                                        <om:Property Name="Expression" Value="expireAlerts == true&#xD;&#xA;" />
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ExpireAlertsIsTrue" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="Construct" OID="3fc84c6d-e67f-4bc6-a6f0-14248bcfc354" ParentLink="ComplexStatement_Statement" LowerBound="191.1" HigherBound="197.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="ConstructInsertMessage" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessageRef" OID="27a786fd-b478-4724-b45c-cd4e3fc5432b" ParentLink="Construct_MessageRef" LowerBound="192.35" HigherBound="192.44">
+                                                <om:Property Name="Ref" Value="msgInsert" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="Transform" OID="018b5970-3169-46a8-b27a-add9ff3ce1d7" ParentLink="ComplexStatement_Statement" LowerBound="194.1" HigherBound="196.1">
+                                                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.BAMAlerts.InsertAlertHistoryInsert" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Insert Map" />
+                                                <om:Property Name="Signal" Value="True" />
+                                                <om:Element Type="MessagePartRef" OID="3b75c79e-776f-4ae0-b41e-9d375410b6bb" ParentLink="Transform_InputMessagePartRef" LowerBound="195.107" HigherBound="195.118">
+                                                    <om:Property Name="MessageRef" Value="msgResponse" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="MessagePartReference_1" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                                <om:Element Type="MessagePartRef" OID="98149c50-1036-45ec-8445-1730c1f67695" ParentLink="Transform_OutputMessagePartRef" LowerBound="195.40" HigherBound="195.49">
+                                                    <om:Property Name="MessageRef" Value="msgInsert" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="MessagePartReference_2" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="Send" OID="b27a25e6-72a7-46db-9387-217c00a9321a" ParentLink="ComplexStatement_Statement" LowerBound="197.1" HigherBound="199.1">
+                                            <om:Property Name="PortName" Value="BAMExpireAlertPort" />
+                                            <om:Property Name="MessageName" Value="msgInsert" />
+                                            <om:Property Name="OperationName" Value="Operation_1" />
+                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Insert Alert History" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="Receive" OID="d64daae9-ec88-41ff-9e35-ea073e9e307b" ParentLink="ComplexStatement_Statement" LowerBound="199.1" HigherBound="201.1">
+                                            <om:Property Name="Activate" Value="False" />
+                                            <om:Property Name="PortName" Value="BAMExpireAlertPort" />
+                                            <om:Property Name="MessageName" Value="msgInsertResponse" />
+                                            <om:Property Name="OperationName" Value="Operation_1" />
+                                            <om:Property Name="OperationMessageName" Value="Response" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Receive_1" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="DecisionBranch" OID="c8c7e716-4047-452f-a3c3-613f4b24134e" ParentLink="ReallyComplexStatement_Branch">
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Else" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="aa51a306-640b-4d80-9ee1-fceb2d2f614e" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="5ce8acfa-77eb-4b7a-b950-0692ec505704" ParentLink="ComplexStatement_Statement" LowerBound="205.1" HigherBound="210.1">
+                                    <om:Property Name="Expression" Value="if(debugLogging == true)&#xD;&#xA;{&#xD;&#xA;    System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.BAMAlerts&quot;, &quot;No ACK Missing For Orders whose age in minutes is over &quot; + duration );&#xD;&#xA;}" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="EventLog01" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="00b533ec-0e02-477a-8a5c-3e1204755eb6" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Decision" OID="8b40f30a-7f2d-4852-b54b-2dd35714a387" ParentLink="ComplexStatement_Statement" LowerBound="214.1" HigherBound="394.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="CheckInterfaceName" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="6b414eda-b398-4b87-bc71-01e18cea1d1c" ParentLink="ReallyComplexStatement_Branch" LowerBound="215.17" HigherBound="301.1">
+                                <om:Property Name="Expression" Value="interface == &quot;OrdAckBacklog&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="IsOrdAckBacklog" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="VariableAssignment" OID="be00d1b8-418a-4fd2-b134-652999c925db" ParentLink="ComplexStatement_Statement" LowerBound="217.1" HigherBound="231.1">
+                                    <om:Property Name="Expression" Value="mailServer= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;emailServer&quot;);&#xD;&#xA;subject= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;SubjectOrdAckBacklog&quot;);&#xD;&#xA;toAddress= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;ToAddressOrdAckBacklog&quot;);&#xD;&#xA;env= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;Environment&quot;);&#xD;&#xA;fromAddress=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;fromAddress&quot;);&#xD;&#xA;duration=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;durationOrdAckBacklog&quot;);&#xD;&#xA;threshold=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;thresholdOrdAckBacklog&quot;);&#xD;&#xA;expireAlerts= System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;ExpireAlerts&quot;));&#xD;&#xA;&#xD;&#xA;if(debugLogging == true)&#xD;&#xA;{&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.BAMAlerts&quot;, &quot;Entered &quot; + interface + &quot; check For &quot; + threshold + &quot; or more Orders whose age in minutes is over &quot; + duration );&#xD;&#xA;}" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="get SSO values" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Construct" OID="e65d36f4-f3e0-4d77-a464-a84d76710c3c" ParentLink="ComplexStatement_Statement" LowerBound="231.1" HigherBound="238.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_msgSelect" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="ddc405b1-7eab-43d3-a8e7-368dc66d4617" ParentLink="Construct_MessageRef" LowerBound="232.31" HigherBound="232.37">
+                                        <om:Property Name="Ref" Value="msgReq" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="1fda84a0-e45b-43e8-8696-84a5f3f04829" ParentLink="ComplexStatement_Statement" LowerBound="234.1" HigherBound="237.1">
+                                        <om:Property Name="Expression" Value="xmlDoc.LoadXml(&quot;&lt;ns0:procGetNoAckERPOrdersBAM xmlns:ns0=\&quot;http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\&quot;&gt;&lt;ns0:DURATION&gt;&quot;+duration+&quot;&lt;/ns0:DURATION&gt; &lt;/ns0:procGetNoAckERPOrdersBAM&gt;&quot;);&#xD;&#xA;msgReq= xmlDoc;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="MessageAssignment_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Send" OID="92aed944-9d70-4e40-86ce-6edfe00a3cfd" ParentLink="ComplexStatement_Statement" LowerBound="238.1" HigherBound="240.1">
+                                    <om:Property Name="PortName" Value="GetBAMRecordsPort" />
+                                    <om:Property Name="MessageName" Value="msgReq" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Send_Req" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Receive" OID="a677e0c9-7800-4f44-959a-86fa2c2cb8f6" ParentLink="ComplexStatement_Statement" LowerBound="240.1" HigherBound="242.1">
+                                    <om:Property Name="Activate" Value="False" />
+                                    <om:Property Name="PortName" Value="GetBAMRecordsPort" />
+                                    <om:Property Name="MessageName" Value="msgResponse" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Response" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Rcv_Response" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="50799496-845f-4898-a8ec-2ab7e1460709" ParentLink="ComplexStatement_Statement" LowerBound="242.1" HigherBound="244.1">
+                                    <om:Property Name="Expression" Value="iCount= System.Convert.ToInt32(xpath(msgResponse,&quot;count(/*[local-name()='procGetNoAckERPOrdersBAMResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procGetNoAckERPOrdersBAM'])&quot;));" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="get icount" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Decision" OID="fefa84c4-abcf-4cc4-b248-81920d74098e" ParentLink="ComplexStatement_Statement" LowerBound="244.1" HigherBound="300.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="checkBacklogCount" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="DecisionBranch" OID="49d85c45-a8f4-4e96-afab-0acb0d16027a" ParentLink="ReallyComplexStatement_Branch" LowerBound="245.21" HigherBound="292.1">
+                                        <om:Property Name="Expression" Value="iCount &gt;= System.Convert.ToInt32(threshold)" />
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="IsGTEthreshold" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="VariableAssignment" OID="2ab9f198-5556-4e43-b0b5-968048c2cc4e" ParentLink="ComplexStatement_Statement" LowerBound="247.1" HigherBound="249.1">
+                                            <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.BAMAlerts&quot;, System.Convert.ToString(iCount) + &quot; backlog of Orders with Acks that haven't returned in over &quot; + duration + &quot; minutes, which is at or above Threshold of &quot; +threshold+ &quot;.&quot;);&#xD;&#xA;" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="EventLog01" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="Construct" OID="51a5b57c-81c7-45b5-8124-9e70d5a5e439" ParentLink="ComplexStatement_Statement" LowerBound="249.1" HigherBound="255.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="ConstructEmail" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessageRef" OID="05f05161-9ae7-49ea-bd9b-1cc2998ed3c4" ParentLink="Construct_MessageRef" LowerBound="250.35" HigherBound="250.47">
+                                                <om:Property Name="Ref" Value="emailAlertFF" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="Transform" OID="2b72bd7e-0336-49c9-a948-351ed46e36cc" ParentLink="ComplexStatement_Statement" LowerBound="252.1" HigherBound="254.1">
+                                                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.BAMAlerts.EmailMessage" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="EmailAttachment" />
+                                                <om:Property Name="Signal" Value="True" />
+                                                <om:Element Type="MessagePartRef" OID="0bf4ed67-4949-41ea-bda3-a2c6f74b03cf" ParentLink="Transform_InputMessagePartRef" LowerBound="253.98" HigherBound="253.109">
+                                                    <om:Property Name="MessageRef" Value="msgResponse" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="MessagePartReference_3" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                                <om:Element Type="MessagePartRef" OID="96ada49c-0bdb-4e98-bce6-804af780c1fc" ParentLink="Transform_OutputMessagePartRef" LowerBound="253.40" HigherBound="253.52">
+                                                    <om:Property Name="MessageRef" Value="emailAlertFF" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="MessagePartReference_4" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="Construct" OID="e63fbcdb-c3f6-414c-bce0-ad254cd279fc" ParentLink="ComplexStatement_Statement" LowerBound="255.1" HigherBound="263.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Construct_flatFilePipelineOut" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessageAssignment" OID="82cc09b9-3aa2-40d0-96c7-b2693df7b283" ParentLink="ComplexStatement_Statement" LowerBound="258.1" HigherBound="262.1">
+                                                <om:Property Name="Expression" Value="sndPipelineInMsg.Add(emailAlertFF);&#xD;&#xA;flatFilePipelineOut= null;&#xD;&#xA;Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(BTNextGen.Biztalk.BAMAlerts.Pipeline.SendFlatFile), sndPipelineInMsg , flatFilePipelineOut );" />
+                                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                                <om:Property Name="Name" Value="execute flat file assembler pipeline" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="MessageRef" OID="bbc928c5-403f-4b1c-9edf-b1244da9ae9f" ParentLink="Construct_MessageRef" LowerBound="256.35" HigherBound="256.54">
+                                                <om:Property Name="Ref" Value="flatFilePipelineOut" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="Construct" OID="9c0e2330-7225-48a0-92df-8bc24db4db7a" ParentLink="ComplexStatement_Statement" LowerBound="263.1" HigherBound="289.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Construct_email" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessageRef" OID="893ca96f-12d4-4c48-ba02-3697a0ca5a99" ParentLink="Construct_MessageRef" LowerBound="264.35" HigherBound="264.48">
+                                                <om:Property Name="Ref" Value="multiMsgEmail" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="MessageAssignment" OID="90a4cc87-2fcb-493b-b592-58222ca06699" ParentLink="ComplexStatement_Statement" LowerBound="266.1" HigherBound="288.1">
+                                                <om:Property Name="Expression" Value="msgbody = new System.Text.StringBuilder();&#xD;&#xA;msgbody.AppendLine(&quot;&lt;html&gt;&lt;body&gt;&quot;);&#xD;&#xA;msgbody.AppendLine(&quot;&lt;p&gt;&lt;b&gt;The attached PO's did not receive an ACK from ERP in &quot; + duration+ &quot; minutes or more.&lt;/b&gt;&lt;/p&gt;&quot;);&#xD;&#xA;msgbody.AppendLine(&quot;&lt;p&gt;&lt;b&gt;These Alerts will continue until backlog subsides below threshold count of &quot; + threshold + &quot;&lt;/b&gt;&lt;/p&gt;&quot;);&#xD;&#xA;msgbody.AppendLine(&quot;&lt;/body&gt;&lt;/html&gt;&quot;);&#xD;&#xA;&#xD;&#xA;multiMsgEmail.emailbody= new Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString(msgbody.ToString());&#xD;&#xA;multiMsgEmail.emailbody(Microsoft.XLANGs.BaseTypes.ContentType)=&quot;text/html&quot;;&#xD;&#xA;&#xD;&#xA;multiMsgEmail.emailAttachment= flatFilePipelineOut;&#xD;&#xA;multiMsgEmail(SMTP.MessagePartsAttachments)=2;&#xD;&#xA;multiMsgEmail.emailAttachment(MIME.FileName)= &quot;Missing ACK_&quot;+System.DateTime.Now.ToString()+&quot;.txt&quot;;&#xD;&#xA;&#xD;&#xA;multiMsgEmail(SMTP.SMTPHost)=mailServer;&#xD;&#xA;multiMsgEmail(SMTP.From)= fromAddress;&#xD;&#xA;multiMsgEmail(SMTP.Subject)=subject + &quot; : &quot; + env + &quot; - Acks &quot; + duration + &quot; Minutes Late.&quot;;&#xD;&#xA;multiMsgEmail(SMTP.EmailBodyTextCharset)=&quot;UTF-8&quot;;&#xD;&#xA;multiMsgEmail(SMTP.MessagePartsAttachments)=2;&#xD;&#xA;&#xD;&#xA;EmailPort(Microsoft.XLANGs.BaseTypes.Address)=toAddress;&#xD;&#xA;&#xD;&#xA;" />
+                                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                                <om:Property Name="Name" Value="assigne_email_properties" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="Send" OID="1f3dd418-daa5-44b4-88d1-e674a631e676" ParentLink="ComplexStatement_Statement" LowerBound="289.1" HigherBound="291.1">
+                                            <om:Property Name="PortName" Value="EmailPort" />
+                                            <om:Property Name="MessageName" Value="multiMsgEmail" />
+                                            <om:Property Name="OperationName" Value="Operation_1" />
+                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Send_Email" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="DecisionBranch" OID="bbf3c616-2b96-4468-bbee-1346d962bbf1" ParentLink="ReallyComplexStatement_Branch">
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Else" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="VariableAssignment" OID="9a261fe7-4d78-4fa2-aa16-949c26ae874e" ParentLink="ComplexStatement_Statement" LowerBound="294.1" HigherBound="299.1">
+                                            <om:Property Name="Expression" Value="if(debugLogging == true)&#xD;&#xA;{&#xD;&#xA;    System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.BAMAlerts&quot;, System.Convert.ToString(iCount) + &quot; is below threshold of &quot; +threshold+ &quot; Backlog of Orders Missing Acks whose age in minutes is over &quot; + duration );&#xD;&#xA;}" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="EventLog01" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="7fe4a58c-44bd-48a8-8e37-978efaaa9b78" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="7a8d725b-7cd3-4d96-aa4c-e847973c4c92" ParentLink="ComplexStatement_Statement" LowerBound="303.1" HigherBound="317.1">
+                                    <om:Property Name="Expression" Value="mailServer= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;emailServer&quot;);&#xD;&#xA;subject= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;SubjectOrdersAWOL&quot;);&#xD;&#xA;toAddress= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;ToAddressOrdersAWOL&quot;);&#xD;&#xA;env= SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;Environment&quot;);&#xD;&#xA;fromAddress=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;fromAddress&quot;);&#xD;&#xA;duration=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;durationOrdersAWOL&quot;);&#xD;&#xA;//threshold=SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;thresholdOrdAckBacklog&quot;);&#xD;&#xA;//expireAlerts= System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.BAMAlerts&quot;,&quot;ExpireAlerts&quot;));&#xD;&#xA;&#xD;&#xA;if(debugLogging == true)&#xD;&#xA;{&#xD;&#xA;    System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.BAMAlerts&quot;, &quot;Entered &quot; + interface + &quot; check to see if the most recently processed Order has aged, in minutes, over &quot; + duration );&#xD;&#xA;}&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="get SSO values" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Construct" OID="43af7c60-5886-4a9b-9109-f62bd231458d" ParentLink="ComplexStatement_Statement" LowerBound="317.1" HigherBound="328.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_msgSelect" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="b508344b-bb56-43de-8d33-f473ae79980d" ParentLink="Construct_MessageRef" LowerBound="318.31" HigherBound="318.46">
+                                        <om:Property Name="Ref" Value="msgLatestOrdReq" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="0d23adba-24bc-462a-873e-d7161accabc7" ParentLink="ComplexStatement_Statement" LowerBound="320.1" HigherBound="327.1">
+                                        <om:Property Name="Expression" Value="&#xD;&#xA;//Generating an instance from the schema produces the below string, but you need to 'escape' the double quotes within with a backslash&#xD;&#xA;//Then, if parameters are present/required, they must be specified as needed.&#xD;&#xA;&#xD;&#xA;xmlDoc.LoadXml(&quot;&lt;ns0:procGetLatestOrderAgeBAM xmlns:ns0=\&quot;http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\&quot; /&gt;&quot;);&#xD;&#xA;msgLatestOrdReq= xmlDoc;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="MessageAssignment_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Send" OID="f9614814-f3ab-43cb-9d53-4a9bcd2c0a33" ParentLink="ComplexStatement_Statement" LowerBound="328.1" HigherBound="330.1">
+                                    <om:Property Name="PortName" Value="GetLastestOrderPort" />
+                                    <om:Property Name="MessageName" Value="msgLatestOrdReq" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="snd_GetLatest" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Receive" OID="6b108663-c786-47cb-8283-571ccf8a892f" ParentLink="ComplexStatement_Statement" LowerBound="330.1" HigherBound="332.1">
+                                    <om:Property Name="Activate" Value="False" />
+                                    <om:Property Name="PortName" Value="GetLastestOrderPort" />
+                                    <om:Property Name="MessageName" Value="msgLatestOrdResponse" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Response" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="rcv_GetLatest" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="cd11e2df-f079-4205-9647-6be1f95dda1a" ParentLink="ComplexStatement_Statement" LowerBound="332.1" HigherBound="336.1">
+                                    <om:Property Name="Expression" Value="&#xD;&#xA;//Note that we just use iCount here.  No need for another variable.&#xD;&#xA;iCount = System.Convert.ToInt32(xpath(msgLatestOrdResponse, &quot;sum(/*[local-name()='procGetLatestOrderAgeBAMResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procGetLatestOrderAgeBAM']/*[local-name()='AgeInMinutes' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procGetLatestOrderAgeBAM'])&quot;));" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="getOrderAge" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Decision" OID="a35c706f-179c-456a-8eb3-501ef7ff5c97" ParentLink="ComplexStatement_Statement" LowerBound="336.1" HigherBound="393.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="CheckOrderAge" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="DecisionBranch" OID="233b6779-9f89-41e8-8fe1-de96540decf0" ParentLink="ReallyComplexStatement_Branch" LowerBound="337.21" HigherBound="385.1">
+                                        <om:Property Name="Expression" Value="iCount &gt;= System.Convert.ToInt32(duration)&#xD;&#xA;&#xD;&#xA;" />
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="IsGTEduration" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="VariableAssignment" OID="db864df0-9c90-4a7e-9536-94ae0126d095" ParentLink="ComplexStatement_Statement" LowerBound="340.1" HigherBound="342.1">
+                                            <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.BAMAlerts&quot;, &quot;Most recent order is &quot; + System.Convert.ToString(iCount) + &quot; minutes old and is at or above age duration threshold of &quot; +duration+ &quot; minutes.&quot; );&#xD;&#xA;" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="EventLog01" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="Construct" OID="99e7a427-9137-4350-bcfe-a4eaf89e9bc5" ParentLink="ComplexStatement_Statement" LowerBound="342.1" HigherBound="348.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="ConstructEmail" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessageRef" OID="d113b6a9-b4e9-475f-8ea0-2e2141f21784" ParentLink="Construct_MessageRef" LowerBound="343.35" HigherBound="343.47">
+                                                <om:Property Name="Ref" Value="emailAlertFF" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="Transform" OID="f6660455-2518-4f0a-9172-4b93d83232f7" ParentLink="ComplexStatement_Statement" LowerBound="345.1" HigherBound="347.1">
+                                                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.BAMAlerts.Maps.EmailOrdAWOL" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="EmailAttachment" />
+                                                <om:Property Name="Signal" Value="True" />
+                                                <om:Element Type="MessagePartRef" OID="fb26756f-932e-4205-8991-31d457bf5159" ParentLink="Transform_InputMessagePartRef" LowerBound="346.103" HigherBound="346.123">
+                                                    <om:Property Name="MessageRef" Value="msgLatestOrdResponse" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="MessagePartReference_5" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                                <om:Element Type="MessagePartRef" OID="1b54c4ab-4714-4cea-ad4f-615d7db27ae0" ParentLink="Transform_OutputMessagePartRef" LowerBound="346.40" HigherBound="346.52">
+                                                    <om:Property Name="MessageRef" Value="emailAlertFF" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="MessagePartReference_6" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="Construct" OID="eda5d3f2-5110-4f09-a886-bc2953516ab5" ParentLink="ComplexStatement_Statement" LowerBound="348.1" HigherBound="356.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Construct_flatFilePipelineOut" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessageRef" OID="ad4d9096-03d8-4501-9216-48395b4f5422" ParentLink="Construct_MessageRef" LowerBound="349.35" HigherBound="349.54">
+                                                <om:Property Name="Ref" Value="flatFilePipelineOut" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="MessageAssignment" OID="6466cb6a-76ca-46b0-9dde-e9b3f185f86d" ParentLink="ComplexStatement_Statement" LowerBound="351.1" HigherBound="355.1">
+                                                <om:Property Name="Expression" Value="sndPipelineInMsg.Add(emailAlertFF);&#xD;&#xA;flatFilePipelineOut= null;&#xD;&#xA;Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(BTNextGen.Biztalk.BAMAlerts.Pipeline.SendFlatFile), sndPipelineInMsg , flatFilePipelineOut );" />
+                                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                                <om:Property Name="Name" Value="execute flat file assembler pipeline" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="Construct" OID="e52cdf4f-0dc2-47f1-bea1-a151df68c9e5" ParentLink="ComplexStatement_Statement" LowerBound="356.1" HigherBound="382.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Construct_email" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessageAssignment" OID="274ba42b-b025-4df9-891b-46888f1209c2" ParentLink="ComplexStatement_Statement" LowerBound="359.1" HigherBound="381.1">
+                                                <om:Property Name="Expression" Value="msgbody = new System.Text.StringBuilder();&#xD;&#xA;msgbody.AppendLine(&quot;&lt;html&gt;&lt;body&gt;&quot;);&#xD;&#xA;msgbody.AppendLine(&quot;&lt;p&gt;&lt;b&gt;Attached is the PO latest processed by BizTalk and is &quot; + System.Convert.ToString(iCount) + &quot; minutes old or more.&lt;/b&gt;&lt;/p&gt;&quot;);&#xD;&#xA;msgbody.AppendLine(&quot;&lt;p&gt;&lt;b&gt;These Alerts will continue until the most recent order is less than &quot; + duration + &quot; minutes old.&lt;/b&gt;&lt;/p&gt;&quot;);&#xD;&#xA;msgbody.AppendLine(&quot;&lt;/body&gt;&lt;/html&gt;&quot;);&#xD;&#xA;&#xD;&#xA;multiMsgEmail.emailbody= new Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString(msgbody.ToString());&#xD;&#xA;multiMsgEmail.emailbody(Microsoft.XLANGs.BaseTypes.ContentType)=&quot;text/html&quot;;&#xD;&#xA;&#xD;&#xA;multiMsgEmail.emailAttachment= flatFilePipelineOut;&#xD;&#xA;multiMsgEmail(SMTP.MessagePartsAttachments)=2;&#xD;&#xA;multiMsgEmail.emailAttachment(MIME.FileName)= &quot;OrdersAWOL_&quot;+System.DateTime.Now.ToString()+&quot;.txt&quot;;&#xD;&#xA;&#xD;&#xA;multiMsgEmail(SMTP.SMTPHost)=mailServer;&#xD;&#xA;multiMsgEmail(SMTP.From)= fromAddress;&#xD;&#xA;multiMsgEmail(SMTP.Subject)=subject + &quot; : &quot; + env + &quot; - Latest Order &quot; + System.Convert.ToString(iCount) + &quot; Minutes Old.&quot;;&#xD;&#xA;multiMsgEmail(SMTP.EmailBodyTextCharset)=&quot;UTF-8&quot;;&#xD;&#xA;multiMsgEmail(SMTP.MessagePartsAttachments)=2;&#xD;&#xA;&#xD;&#xA;EmailPort(Microsoft.XLANGs.BaseTypes.Address)=toAddress;&#xD;&#xA;&#xD;&#xA;" />
+                                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                                <om:Property Name="Name" Value="assigne_email_properties" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                            <om:Element Type="MessageRef" OID="78793977-cdbc-4769-b399-50254183793f" ParentLink="Construct_MessageRef" LowerBound="357.35" HigherBound="357.48">
+                                                <om:Property Name="Ref" Value="multiMsgEmail" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="Send" OID="8add1029-e21e-45a9-ab70-0d7e52368df0" ParentLink="ComplexStatement_Statement" LowerBound="382.1" HigherBound="384.1">
+                                            <om:Property Name="PortName" Value="EmailPort" />
+                                            <om:Property Name="MessageName" Value="multiMsgEmail" />
+                                            <om:Property Name="OperationName" Value="Operation_1" />
+                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Send_Email" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="DecisionBranch" OID="bf2b06b4-6d36-47e7-a272-485bb32c23aa" ParentLink="ReallyComplexStatement_Branch">
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Else" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="VariableAssignment" OID="23517c16-c236-4a22-8e0f-4f604db259e5" ParentLink="ComplexStatement_Statement" LowerBound="387.1" HigherBound="392.1">
+                                            <om:Property Name="Expression" Value="if(debugLogging == true)&#xD;&#xA;{&#xD;&#xA;    System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.BAMAlerts&quot;, &quot;The Most Recent Order Procesed is &quot; + System.Convert.ToString(iCount) + &quot; minutes old and below the age duration threshold of &quot; +duration+ &quot; minutes.&quot;);&#xD;&#xA;}" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="EventLog01" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9891d9ed-5628-4736-bfd1-cfa03b330af8" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="47.1" HigherBound="49.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="3" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.BamAlertInitFilePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="BamAlertInitFilePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="1bac9644-18de-4943-8adc-74cb39bd6e84" ParentLink="PortDeclaration_CLRAttribute" LowerBound="47.1" HigherBound="48.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="b8033618-5053-4c6a-be98-17c296b85003" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="49.1" HigherBound="51.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="16" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.GetBAMRecordsPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetBAMRecordsPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="738d8ca8-7824-4ab0-af1d-376bf80535f8" ParentLink="PortDeclaration_CLRAttribute" LowerBound="49.1" HigherBound="50.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4ce952f4-ae83-4a94-b8ff-a040a5783e02" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="51.1" HigherBound="53.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="69" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.BAMExpireAlertPortTye" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="BAMExpireAlertPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="324752d9-c15e-41a1-a031-1b11e4cd42cb" ParentLink="PortDeclaration_CLRAttribute" LowerBound="51.1" HigherBound="52.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="077da99c-e9b4-445b-a3f5-ab73c911cf0f" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="53.1" HigherBound="55.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="62" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.EmailPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="EmailPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="PhysicalBindingAttribute" OID="5eed42f8-6481-479a-9d06-db853d3f0a5b" ParentLink="PortDeclaration_CLRAttribute" LowerBound="53.1" HigherBound="54.1">
+                    <om:Property Name="InPipeline" Value="Microsoft.BizTalk.DefaultPipelines.XMLReceive" />
+                    <om:Property Name="OutPipeline" Value="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" />
+                    <om:Property Name="TransportType" Value="HTTP" />
+                    <om:Property Name="URI" Value="http://tempURI" />
+                    <om:Property Name="IsDynamic" Value="True" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="e2d734ee-fa30-48f4-a19f-1357895735c6" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="55.1" HigherBound="57.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="36" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.BAMAlerts.GetLatestOrderPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetLastestOrderPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="2cf2f283-b749-49e5-8676-629424901e64" ParentLink="PortDeclaration_CLRAttribute" LowerBound="55.1" HigherBound="56.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="a285310a-6245-4ce6-bada-320f8701f5ab" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="9.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="MultipartType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="6be8c1eb-708e-4721-8ce1-fa60cdc08e3e" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="emailbody" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="PartDeclaration" OID="914b96f5-7240-4a6b-8637-00f812a09cf0" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="7.1" HigherBound="8.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.BAMAlerts.Schema.MissingACKAlert" />
+                <om:Property Name="IsBodyPart" Value="False" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="emailAttachment" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.BAMAlerts
+{
+    internal messagetype MultipartType_1
+    {
+        body Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString emailbody;
+        Schema.MissingACKAlert emailAttachment;
+    };
+    internal porttype BamAlertInitFilePortType
+    {
+        oneway Operation_1
+        {
+            BamAlertTrigger
+        };
+    };
+    internal porttype GetBAMRecordsPortType
+    {
+        requestresponse Operation_1
+        {
+            TypedProcedure_dbo.procGetNoAckERPOrdersBAM, TypedProcedure_dbo.procGetNoAckERPOrdersBAMResponse
+        };
+    };
+    internal porttype BAMExpireAlertPortTye
+    {
+        requestresponse Operation_1
+        {
+            TableOperation_dbo_BT_BAMAlertHistory.Insert, TableOperation_dbo_BT_BAMAlertHistory.InsertResponse
+        };
+    };
+    internal porttype EmailPortType
+    {
+        oneway Operation_1
+        {
+            MultipartType_1
+        };
+    };
+    internal porttype GetLatestOrderPortType
+    {
+        requestresponse Operation_1
+        {
+            GetLatestOrderTypedProcedure_dbo.procGetLatestOrderAgeBAM, GetLatestOrderTypedProcedure_dbo.procGetLatestOrderAgeBAMResponse
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service BAMAlert_ERPOrders
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements BamAlertInitFilePortType BamAlertInitFilePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses GetBAMRecordsPortType GetBAMRecordsPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses BAMExpireAlertPortTye BAMExpireAlertPort;
+        [Microsoft.XLANGs.BaseTypes.PhysicalBinding(typeof(Microsoft.BizTalk.DefaultPipelines.PassThruTransmit))]
+        port uses dynamic EmailPortType EmailPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses GetLatestOrderPortType GetLastestOrderPort;
+        message Schema.MissingACKAlert flatFilePipelineOut;
+        message BamAlertTrigger msgInit;
+        message TypedProcedure_dbo.procGetNoAckERPOrdersBAM msgReq;
+        message TypedProcedure_dbo.procGetNoAckERPOrdersBAMResponse msgResponse;
+        message TableOperation_dbo_BT_BAMAlertHistory.Insert msgInsert;
+        message TableOperation_dbo_BT_BAMAlertHistory.InsertResponse msgInsertResponse;
+        message Schema.MissingACKAlert emailAlertFF;
+        message MultipartType_1 multiMsgEmail;
+        message GetLatestOrderTypedProcedure_dbo.procGetLatestOrderAgeBAM msgLatestOrdReq;
+        message GetLatestOrderTypedProcedure_dbo.procGetLatestOrderAgeBAMResponse msgLatestOrdResponse;
+        System.Text.StringBuilder msgbody;
+        System.String fromAddress;
+        System.String env;
+        System.String toAddress;
+        System.String subject;
+        System.String mailServer;
+        System.String duration;
+        System.Xml.XmlDocument xmlDoc;
+        System.Int32 iCount;
+        Microsoft.XLANGs.Pipeline.SendPipelineInputMessages sndPipelineInMsg;
+        System.String interface;
+        System.String threshold;
+        System.Boolean expireAlerts;
+        System.Boolean debugLogging;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e566d6fc-fab0-492e-ac40-be5e62093cad")]
+            activate receive (BamAlertInitFilePort.Operation_1, msgInit);
+            msgbody = new System.Text.StringBuilder();
+            fromAddress = "";
+            env = "";
+            toAddress = "";
+            subject = "";
+            mailServer = "";
+            duration = "";
+            xmlDoc = new System.Xml.XmlDocument();
+            sndPipelineInMsg = new Microsoft.XLANGs.Pipeline.SendPipelineInputMessages();
+            interface = "";
+            threshold = "";
+            expireAlerts = true;
+            debugLogging = true;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b8ad23be-3f01-42c2-b246-e9ea3b0c1b59")]
+            
+            //interface Name identifies which functionality the scheduler is intending to execute
+            //  "OrdAckBacklog" = X number of orders have been unconfirmed for Y minutes (Y is 5-10 minutes and X is a threshold for alerts)
+            //  "AckAWOL" = These orders are NEVER coming back, so send out an Alert and don't alert on it any more X is at least an hour or more.
+            //  "OrdersAWOL" = We haven't had a new order in over X minutes which is probably a problem indicator.
+            
+            //Intervals and thresholds will depend on traffic and whether or not planned outages are brought into consideration.
+            
+            interface= msgInit.InterfaceName;
+            
+            
+            debugLogging= System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","debugEventLogging"));
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f69ff884-cbac-4cc1-b9f4-c0cd8f2dca21")]
+            if (interface == "AckAWOL")
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("3e81af76-6746-4324-ae70-5064a1f085d7")]
+                mailServer= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","emailServer");
+                subject= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","Subject");
+                toAddress= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","ToAddress");
+                env= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","Environment");
+                fromAddress=SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","fromAddress");
+                duration=SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","duration");
+                expireAlerts= System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","ExpireAlerts"));
+                
+                if(debugLogging == true)
+                {
+                System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.BAMAlerts", "Entered AckAWOL check For Orders whose age in minutes is over " + duration );
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("97e1b154-3553-40d8-9f1e-cb86942e8f0c")]
+                construct msgReq
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("19be8d3f-ccd3-4494-b103-0dff698ebe27")]
+                    xmlDoc.LoadXml("<ns0:procGetNoAckERPOrdersBAM xmlns:ns0=\"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\"><ns0:DURATION>"+duration+"</ns0:DURATION> </ns0:procGetNoAckERPOrdersBAM>");
+                    msgReq= xmlDoc;
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2d0b9395-615c-42ab-a199-3d5149787133")]
+                send (GetBAMRecordsPort.Operation_1, msgReq);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9adc2f51-1849-4c3d-9ee5-918e23ab300a")]
+                receive (GetBAMRecordsPort.Operation_1, msgResponse);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("91a92cf4-f827-48cb-82e1-a5fa6c6b28d7")]
+                iCount= System.Convert.ToInt32(xpath(msgResponse,"count(/*[local-name()='procGetNoAckERPOrdersBAMResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procGetNoAckERPOrdersBAM'])"));
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2b5f15f9-9111-4416-8c1d-fc8cfc84bc2b")]
+                if (iCount > 0)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("aa9ab167-e473-4f04-99d0-7eedbe027daf")]
+                    System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.BAMAlerts", System.Convert.ToString(iCount) + " ACK(s) Missing For Orders whose age in minutes is over " + duration );
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1920b175-f70f-4957-babd-840191c7b69b")]
+                    construct emailAlertFF
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2229fad8-aeb9-4096-8961-6eb51038cde2")]
+                        transform (emailAlertFF) = BTNextGen.Biztalk.BAMAlerts.EmailMessage (msgResponse);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("967d411a-1e3f-4ed8-8adb-4613137e05d2")]
+                    construct flatFilePipelineOut
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4b94593e-fd70-40a8-a8b3-e873a8aa61b1")]
+                        sndPipelineInMsg.Add(emailAlertFF);
+                        flatFilePipelineOut= null;
+                        Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(BTNextGen.Biztalk.BAMAlerts.Pipeline.SendFlatFile), sndPipelineInMsg , flatFilePipelineOut );
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("5ef604ea-b1c2-46a3-91a6-72b6931c8499")]
+                    construct multiMsgEmail
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("84a873dc-7c49-4050-8847-4e3fe46f63de")]
+                        msgbody = new System.Text.StringBuilder();
+                        msgbody.AppendLine("<html><body>");
+                        msgbody.AppendLine("<p>The attached list PO(s) did not receive an ACK from ERP in over " + duration+ " minutes.</p>");
+                        msgbody.AppendLine("<p><b>PLEASE NOTE that this will be the final Alert for the PO(s)</b></p>");
+                        msgbody.AppendLine("</body></html>");
+                        
+                        
+                        multiMsgEmail.emailbody= new Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString(msgbody.ToString());
+                        multiMsgEmail.emailbody(Microsoft.XLANGs.BaseTypes.ContentType)="text/html";
+                        
+                        multiMsgEmail.emailAttachment= flatFilePipelineOut;
+                        multiMsgEmail(SMTP.MessagePartsAttachments)=2;
+                        multiMsgEmail.emailAttachment(MIME.FileName)= "Missing ACK_"+System.DateTime.Now.ToString()+".txt";
+                        
+                        multiMsgEmail(SMTP.SMTPHost)=mailServer;
+                        multiMsgEmail(SMTP.From)= fromAddress;
+                        multiMsgEmail(SMTP.Subject)=subject + " : " + env + " - Acks " + duration + " Minutes Late.";
+                        multiMsgEmail(SMTP.EmailBodyTextCharset)="UTF-8";
+                        multiMsgEmail(SMTP.MessagePartsAttachments)=2;
+                        
+                        EmailPort(Microsoft.XLANGs.BaseTypes.Address)=toAddress;
+                        
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f9c87aa9-1c52-428c-9a90-cc13156dbf53")]
+                    send (EmailPort.Operation_1, multiMsgEmail);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("bb8e1552-4410-4e8a-a571-39127b195836")]
+                    if (expireAlerts == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("3fc84c6d-e67f-4bc6-a6f0-14248bcfc354")]
+                        construct msgInsert
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("018b5970-3169-46a8-b27a-add9ff3ce1d7")]
+                            transform (msgInsert) = BTNextGen.Biztalk.BAMAlerts.InsertAlertHistoryInsert (msgResponse);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b27a25e6-72a7-46db-9387-217c00a9321a")]
+                        send (BAMExpireAlertPort.Operation_1, msgInsert);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d64daae9-ec88-41ff-9e35-ea073e9e307b")]
+                        receive (BAMExpireAlertPort.Operation_1, msgInsertResponse);
+                    }
+                }
+                else 
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("5ce8acfa-77eb-4b7a-b950-0692ec505704")]
+                    if(debugLogging == true)
+                    {
+                        System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.BAMAlerts", "No ACK Missing For Orders whose age in minutes is over " + duration );
+                    }
+                }
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("8b40f30a-7f2d-4852-b54b-2dd35714a387")]
+                if (interface == "OrdAckBacklog")
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("be00d1b8-418a-4fd2-b134-652999c925db")]
+                    mailServer= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","emailServer");
+                    subject= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","SubjectOrdAckBacklog");
+                    toAddress= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","ToAddressOrdAckBacklog");
+                    env= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","Environment");
+                    fromAddress=SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","fromAddress");
+                    duration=SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","durationOrdAckBacklog");
+                    threshold=SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","thresholdOrdAckBacklog");
+                    expireAlerts= System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","ExpireAlerts"));
+                    
+                    if(debugLogging == true)
+                    {
+                    System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.BAMAlerts", "Entered " + interface + " check For " + threshold + " or more Orders whose age in minutes is over " + duration );
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e65d36f4-f3e0-4d77-a464-a84d76710c3c")]
+                    construct msgReq
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("1fda84a0-e45b-43e8-8696-84a5f3f04829")]
+                        xmlDoc.LoadXml("<ns0:procGetNoAckERPOrdersBAM xmlns:ns0=\"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\"><ns0:DURATION>"+duration+"</ns0:DURATION> </ns0:procGetNoAckERPOrdersBAM>");
+                        msgReq= xmlDoc;
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("92aed944-9d70-4e40-86ce-6edfe00a3cfd")]
+                    send (GetBAMRecordsPort.Operation_1, msgReq);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a677e0c9-7800-4f44-959a-86fa2c2cb8f6")]
+                    receive (GetBAMRecordsPort.Operation_1, msgResponse);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("50799496-845f-4898-a8ec-2ab7e1460709")]
+                    iCount= System.Convert.ToInt32(xpath(msgResponse,"count(/*[local-name()='procGetNoAckERPOrdersBAMResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procGetNoAckERPOrdersBAM'])"));
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("fefa84c4-abcf-4cc4-b248-81920d74098e")]
+                    if (iCount >= System.Convert.ToInt32(threshold))
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2ab9f198-5556-4e43-b0b5-968048c2cc4e")]
+                        System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.BAMAlerts", System.Convert.ToString(iCount) + " backlog of Orders with Acks that haven't returned in over " + duration + " minutes, which is at or above Threshold of " +threshold+ ".");
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("51a5b57c-81c7-45b5-8124-9e70d5a5e439")]
+                        construct emailAlertFF
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2b72bd7e-0336-49c9-a948-351ed46e36cc")]
+                            transform (emailAlertFF) = BTNextGen.Biztalk.BAMAlerts.EmailMessage (msgResponse);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e63fbcdb-c3f6-414c-bce0-ad254cd279fc")]
+                        construct flatFilePipelineOut
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("82cc09b9-3aa2-40d0-96c7-b2693df7b283")]
+                            sndPipelineInMsg.Add(emailAlertFF);
+                            flatFilePipelineOut= null;
+                            Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(BTNextGen.Biztalk.BAMAlerts.Pipeline.SendFlatFile), sndPipelineInMsg , flatFilePipelineOut );
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9c0e2330-7225-48a0-92df-8bc24db4db7a")]
+                        construct multiMsgEmail
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("90a4cc87-2fcb-493b-b592-58222ca06699")]
+                            msgbody = new System.Text.StringBuilder();
+                            msgbody.AppendLine("<html><body>");
+                            msgbody.AppendLine("<p><b>The attached PO's did not receive an ACK from ERP in " + duration+ " minutes or more.</b></p>");
+                            msgbody.AppendLine("<p><b>These Alerts will continue until backlog subsides below threshold count of " + threshold + "</b></p>");
+                            msgbody.AppendLine("</body></html>");
+                            
+                            multiMsgEmail.emailbody= new Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString(msgbody.ToString());
+                            multiMsgEmail.emailbody(Microsoft.XLANGs.BaseTypes.ContentType)="text/html";
+                            
+                            multiMsgEmail.emailAttachment= flatFilePipelineOut;
+                            multiMsgEmail(SMTP.MessagePartsAttachments)=2;
+                            multiMsgEmail.emailAttachment(MIME.FileName)= "Missing ACK_"+System.DateTime.Now.ToString()+".txt";
+                            
+                            multiMsgEmail(SMTP.SMTPHost)=mailServer;
+                            multiMsgEmail(SMTP.From)= fromAddress;
+                            multiMsgEmail(SMTP.Subject)=subject + " : " + env + " - Acks " + duration + " Minutes Late.";
+                            multiMsgEmail(SMTP.EmailBodyTextCharset)="UTF-8";
+                            multiMsgEmail(SMTP.MessagePartsAttachments)=2;
+                            
+                            EmailPort(Microsoft.XLANGs.BaseTypes.Address)=toAddress;
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("1f3dd418-daa5-44b4-88d1-e674a631e676")]
+                        send (EmailPort.Operation_1, multiMsgEmail);
+                    }
+                    else 
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9a261fe7-4d78-4fa2-aa16-949c26ae874e")]
+                        if(debugLogging == true)
+                        {
+                            System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.BAMAlerts", System.Convert.ToString(iCount) + " is below threshold of " +threshold+ " Backlog of Orders Missing Acks whose age in minutes is over " + duration );
+                        }
+                    }
+                }
+                else 
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("7a8d725b-7cd3-4d96-aa4c-e847973c4c92")]
+                    mailServer= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","emailServer");
+                    subject= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","SubjectOrdersAWOL");
+                    toAddress= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","ToAddressOrdersAWOL");
+                    env= SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","Environment");
+                    fromAddress=SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","fromAddress");
+                    duration=SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","durationOrdersAWOL");
+                    //threshold=SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","thresholdOrdAckBacklog");
+                    //expireAlerts= System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.BAMAlerts","ExpireAlerts"));
+                    
+                    if(debugLogging == true)
+                    {
+                        System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.BAMAlerts", "Entered " + interface + " check to see if the most recently processed Order has aged, in minutes, over " + duration );
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("43af7c60-5886-4a9b-9109-f62bd231458d")]
+                    construct msgLatestOrdReq
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("0d23adba-24bc-462a-873e-d7161accabc7")]
+                        
+                        //Generating an instance from the schema produces the below string, but you need to 'escape' the double quotes within with a backslash
+                        //Then, if parameters are present/required, they must be specified as needed.
+                        
+                        xmlDoc.LoadXml("<ns0:procGetLatestOrderAgeBAM xmlns:ns0=\"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\" />");
+                        msgLatestOrdReq= xmlDoc;
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f9614814-f3ab-43cb-9d53-4a9bcd2c0a33")]
+                    send (GetLastestOrderPort.Operation_1, msgLatestOrdReq);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("6b108663-c786-47cb-8283-571ccf8a892f")]
+                    receive (GetLastestOrderPort.Operation_1, msgLatestOrdResponse);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("cd11e2df-f079-4205-9647-6be1f95dda1a")]
+                    
+                    //Note that we just use iCount here.  No need for another variable.
+                    iCount = System.Convert.ToInt32(xpath(msgLatestOrdResponse, "sum(/*[local-name()='procGetLatestOrderAgeBAMResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procGetLatestOrderAgeBAM']/*[local-name()='AgeInMinutes' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procGetLatestOrderAgeBAM'])"));
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a35c706f-179c-456a-8eb3-501ef7ff5c97")]
+                    if (iCount >= System.Convert.ToInt32(duration)
+                        )
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("db864df0-9c90-4a7e-9536-94ae0126d095")]
+                        System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.BAMAlerts", "Most recent order is " + System.Convert.ToString(iCount) + " minutes old and is at or above age duration threshold of " +duration+ " minutes." );
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("99e7a427-9137-4350-bcfe-a4eaf89e9bc5")]
+                        construct emailAlertFF
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f6660455-2518-4f0a-9172-4b93d83232f7")]
+                            transform (emailAlertFF) = BTNextGen.Biztalk.BAMAlerts.Maps.EmailOrdAWOL (msgLatestOrdResponse);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("eda5d3f2-5110-4f09-a886-bc2953516ab5")]
+                        construct flatFilePipelineOut
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6466cb6a-76ca-46b0-9dde-e9b3f185f86d")]
+                            sndPipelineInMsg.Add(emailAlertFF);
+                            flatFilePipelineOut= null;
+                            Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(BTNextGen.Biztalk.BAMAlerts.Pipeline.SendFlatFile), sndPipelineInMsg , flatFilePipelineOut );
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e52cdf4f-0dc2-47f1-bea1-a151df68c9e5")]
+                        construct multiMsgEmail
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("274ba42b-b025-4df9-891b-46888f1209c2")]
+                            msgbody = new System.Text.StringBuilder();
+                            msgbody.AppendLine("<html><body>");
+                            msgbody.AppendLine("<p><b>Attached is the PO latest processed by BizTalk and is " + System.Convert.ToString(iCount) + " minutes old or more.</b></p>");
+                            msgbody.AppendLine("<p><b>These Alerts will continue until the most recent order is less than " + duration + " minutes old.</b></p>");
+                            msgbody.AppendLine("</body></html>");
+                            
+                            multiMsgEmail.emailbody= new Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString(msgbody.ToString());
+                            multiMsgEmail.emailbody(Microsoft.XLANGs.BaseTypes.ContentType)="text/html";
+                            
+                            multiMsgEmail.emailAttachment= flatFilePipelineOut;
+                            multiMsgEmail(SMTP.MessagePartsAttachments)=2;
+                            multiMsgEmail.emailAttachment(MIME.FileName)= "OrdersAWOL_"+System.DateTime.Now.ToString()+".txt";
+                            
+                            multiMsgEmail(SMTP.SMTPHost)=mailServer;
+                            multiMsgEmail(SMTP.From)= fromAddress;
+                            multiMsgEmail(SMTP.Subject)=subject + " : " + env + " - Latest Order " + System.Convert.ToString(iCount) + " Minutes Old.";
+                            multiMsgEmail(SMTP.EmailBodyTextCharset)="UTF-8";
+                            multiMsgEmail(SMTP.MessagePartsAttachments)=2;
+                            
+                            EmailPort(Microsoft.XLANGs.BaseTypes.Address)=toAddress;
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("8add1029-e21e-45a9-ab70-0d7e52368df0")]
+                        send (EmailPort.Operation_1, multiMsgEmail);
+                    }
+                    else 
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("23517c16-c236-4a22-8e0f-4f604db259e5")]
+                        if(debugLogging == true)
+                        {
+                            System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.BAMAlerts", "The Most Recent Order Procesed is " + System.Convert.ToString(iCount) + " minutes old and below the age duration threshold of " +duration+ " minutes.");
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/BTNextGen.Biztalk.ListTransferCartsAPI" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BizTalkServiceInstance" targetNamespace="http://tempuri.org/BTNextGen.Biztalk.ListTransferCartsAPI" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+    <CreationInfo Created="2014-04-10 15:57:29Z" />
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/BTNextGen.Biztalk.ListTransferCartsAPI/Imports">
+      <xsd:import schemaLocation="http://btdevbiz.btdev.com:9090/ListTransferAPIService/ListTransferAPI.svc?xsd=xsd2" namespace="http://BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ListTransferAPI_SendTS3_InputMessage">
+    <wsdl:part xmlns:q1="http://BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters" name="part" element="q1:ListTransferParameters" />
+  </wsdl:message>
+  <wsdl:message name="ListTransferAPI_SendTS3_OutputMessage" />
+  <wsdl:portType name="ListTransferAPI">
+    <wsdl:documentation />
+    <wsdl:operation name="SendTS3">
+      <wsdl:documentation />
+      <wsdl:input message="tns:ListTransferAPI_SendTS3_InputMessage" />
+      <wsdl:output message="tns:ListTransferAPI_SendTS3_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITwoWayAsyncVoid" type="tns:ListTransferAPI">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendTS3">
+      <wsdl:documentation />
+      <soap:operation soapAction="SendTS3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BizTalkServiceInstance">
+    <wsdl:port name="BasicHttpBinding_ITwoWayAsyncVoid" binding="tns:BasicHttpBinding_ITwoWayAsyncVoid">
+      <soap:address location="http://btdevbiz.btdev.com:9090/ListTransferAPIService/ListTransferAPI.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

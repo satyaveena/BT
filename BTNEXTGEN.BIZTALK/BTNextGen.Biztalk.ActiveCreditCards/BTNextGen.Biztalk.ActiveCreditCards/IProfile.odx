@@ -1,0 +1,172 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="1c6e9cd3-8e8c-4be8-90bd-878a30dbf1fb" LowerBound="1.1" HigherBound="39.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.ActiveCreditCards" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="896680b6-a63d-4efb-bf18-7d0c1fb39ea4" ParentLink="Module_PortType" LowerBound="20.1" HigherBound="31.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IIProfile&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f8282477-a868-46d8-8b1d-7a560b3ee396" ParentLink="PortType_OperationDeclaration" LowerBound="22.1" HigherBound="26.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;UpdatePartialProfile&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="UpdatePartialProfile" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="3f402fff-b0c0-4bfb-8a64-677560f91c40" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="24.13" HigherBound="24.56">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ActiveCreditCards.IIProfile_UpdatePartialProfile_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IIProfile_UpdatePartialProfile_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IIProfile/UpdatePartialProfile&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="846d2890-b074-4e74-89fc-f607df388821" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="24.58" HigherBound="24.102">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ActiveCreditCards.IIProfile_UpdatePartialProfile_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IIProfile_UpdatePartialProfile_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IIProfile/UpdatePartialProfileResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="40aef7a9-f617-433c-a3c2-56be06fc317b" ParentLink="PortType_OperationDeclaration" LowerBound="26.1" HigherBound="30.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;GetCreditCardDetails&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="GetCreditCardDetails" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="eaee4349-7be5-4d26-87e6-0b6eec54f545" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="28.13" HigherBound="28.56">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ActiveCreditCards.IIProfile_GetCreditCardDetails_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IIProfile_GetCreditCardDetails_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IIProfile/GetCreditCardDetails&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="25bd6f3b-704b-49a4-8d18-3d7c4cb7d2fb" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="28.58" HigherBound="28.102">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ActiveCreditCards.IIProfile_GetCreditCardDetails_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IIProfile_GetCreditCardDetails_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IIProfile/GetCreditCardDetailsResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="09f0a268-9f96-48cf-999c-83e374ef0fd6" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IIProfile_UpdatePartialProfile_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile_UpdatePartialProfile_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="8574c682-a816-4a7b-8874-3e3f11068bd3" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.IProfile_tempuri_org.UpdatePartialProfile" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="8b6c6661-fdbd-4c03-92fa-bee033718aca" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IIProfile_UpdatePartialProfile_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile_UpdatePartialProfile_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="154d00a5-906f-433e-a028-70003fa79f0a" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.IProfile_tempuri_org.UpdatePartialProfileResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="9002694d-de13-4812-8f41-1ff3d8f79f34" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IIProfile_GetCreditCardDetails_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile_GetCreditCardDetails_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="9ec7d6e8-4b4b-4fd7-b276-e90127fc2a37" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ActiveCreditCards.Schemas.IProfile_tempuri_org_ActiveCreditCards.GetCreditCardDetails" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="c0414510-18c6-44e0-8da6-516331f1426f" ParentLink="Module_MessageType" LowerBound="16.1" HigherBound="20.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IIProfile_GetCreditCardDetails_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile_GetCreditCardDetails_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="6558865c-f295-4c98-9f0b-6169bd9e6368" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ActiveCreditCards.Schemas.IProfile_tempuri_org_ActiveCreditCards.GetCreditCardDetailsResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="0b55b510-6afb-4191-87c8-0bf5355bf39f" ParentLink="Module_ServiceDeclaration" LowerBound="31.1" HigherBound="38.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;IProfile&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IProfileClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="cea4a3b2-6906-4e7d-b986-090e0ce8f696" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.ActiveCreditCards
+{
+    internal messagetype IIProfile_UpdatePartialProfile_InputMessage
+    {
+        body BTNextGen.BizTalk.CS.Profiles.Schemas.IProfile_tempuri_org.UpdatePartialProfile parameters;
+    };
+    internal messagetype IIProfile_UpdatePartialProfile_OutputMessage
+    {
+        body BTNextGen.BizTalk.CS.Profiles.Schemas.IProfile_tempuri_org.UpdatePartialProfileResponse parameters;
+    };
+    internal messagetype IIProfile_GetCreditCardDetails_InputMessage
+    {
+        body Schemas.IProfile_tempuri_org_ActiveCreditCards.GetCreditCardDetails parameters;
+    };
+    internal messagetype IIProfile_GetCreditCardDetails_OutputMessage
+    {
+        body Schemas.IProfile_tempuri_org_ActiveCreditCards.GetCreditCardDetailsResponse parameters;
+    };
+    internal porttype IIProfile
+    {
+        requestresponse UpdatePartialProfile
+        {
+            IIProfile_UpdatePartialProfile_InputMessage, IIProfile_UpdatePartialProfile_OutputMessage
+        };
+        requestresponse GetCreditCardDetails
+        {
+            IIProfile_GetCreditCardDetails_InputMessage, IIProfile_GetCreditCardDetails_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service IProfileClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

@@ -1,0 +1,613 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="0245df33-2778-4d68-a903-c9eaf63635d9" LowerBound="1.1" HigherBound="151.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.BizTalk.OrganizationProfiles.Orchestration" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="af835483-6156-4237-9cfe-8d99b47f527a" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveSQLNotificationPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="12ebe665-c82c-4e3c-b1d7-8239aefc5c84" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="be2a815a-6a82-4cd0-aec4-5f65a5ecc786" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.58">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.Schemas.Common.Notification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="162c4344-fd1d-4921-a215-1e699df73620" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="GetOrgDetailsPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="9f810c51-ed9e-436a-bd80-31b4d999d9c4" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="a3060103-64ba-4e35-bae2-db44dfaadab5" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.91">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.Profiles.Schemas.GetOrgDetailsFromLegacy.procGetOrganization" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="608558fb-7daf-47c9-9cef-89df655a9533" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="15.93" HigherBound="15.179">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.Profiles.Schemas.GetOrgDetailsFromLegacy.procGetOrganizationResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="fea0b030-47fc-4f81-be04-c5b8a3cbfce1" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendOrgImportPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="d3e62e36-dfe4-4d73-99f6-5b25942d0648" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="InvokeImport" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="a7911c76-a118-4b4d-9da7-94955fc6381d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.116">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.Profiles.Schemas.ProcedureResultSet_dbo_procGetOrganization.StoredProcedureResultSet0" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="d20d0d2b-b738-423f-99b5-37ce28d2875f" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="8289a209-98db-4b14-a44e-42971cb5f919" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="4c7f287c-58d1-40dc-b798-a091c515fdd9" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.101">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.Schemas.Common.UpdateBizTalkNotification.procBiztalkUpdateNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="7e7dd93d-08c3-4f39-a465-e92c6998e702" ParentLink="Module_ServiceDeclaration" LowerBound="32.1" HigherBound="150.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveOrgProfileSqlNotification" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="32919a3b-d2fc-4c7a-a3fd-bd69178fa3ff" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="49.1" HigherBound="50.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlDocOrg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="dc6d09d9-85d8-4e06-84a6-9240a340ad5c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="50.1" HigherBound="51.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="iCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5ba9766d-39f6-4311-a433-d0fd9984c16d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="51.1" HigherBound="52.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlDoc" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2b9c19fb-3734-47c2-8cfa-e0c67de3aa71" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="52.1" HigherBound="53.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="orgRowCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5825d749-d665-4ef7-98b7-5715569b9165" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="53.1" HigherBound="54.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="delayOrgSeconds" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="LongRunningTransaction" OID="9e9f8c96-90cb-4166-9c92-d21e0104f53c" ParentLink="ServiceDeclaration_Transaction" LowerBound="33.21" HigherBound="33.78">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="50977ebf-6f7d-43b5-ba33-815422f7c044" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="43.1" HigherBound="44.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.Schemas.Common.UpdateBizTalkNotification.procBiztalkUpdateNotification" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="updateBiztalkNotification" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="7c241cc3-0baa-4aac-9ea2-3e1205ecd886" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="44.1" HigherBound="45.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="faultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="ec7f5348-8aa3-4b58-8b56-489f547fc4c5" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="45.1" HigherBound="46.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.Schemas.Common.Notification" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="sqlNotification" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f50b0198-e66a-44ff-8797-0af5190c3207" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="46.1" HigherBound="47.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.Profiles.Schemas.GetOrgDetailsFromLegacy.procGetOrganization" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="orgDetailsRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3bebe2ad-478f-45f7-9e2a-77dd247b34a9" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="47.1" HigherBound="48.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.Profiles.Schemas.GetOrgDetailsFromLegacy.procGetOrganizationResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="orgDetailsResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="17677d46-2d6b-4e6c-a3a2-4e6837f88c00" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="48.1" HigherBound="49.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.Profiles.Schemas.ProcedureResultSet_dbo_procGetOrganization.StoredProcedureResultSet0" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SingleOrg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="1e9fc284-78b5-43eb-bcec-17b13ce88e61" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="04601a03-09c3-48da-8b99-2ce60e9dd91b" ParentLink="ServiceBody_Statement" LowerBound="56.1" HigherBound="60.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="ReceiveSQLNotificationPort" />
+                    <om:Property Name="MessageName" Value="sqlNotification" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Rcv_sqlNotification" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="86882e20-892d-46e5-bf6f-2ce478969f33" ParentLink="ServiceBody_Statement" LowerBound="60.1" HigherBound="148.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_Overall" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="LongRunningTransaction" OID="2a8ffdb6-9a88-48ec-95af-fdc58d395660" ParentLink="Scope_Transaction" LowerBound="61.18" HigherBound="61.56">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transaction_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="181a1eaf-27b9-4dc3-abb1-3db75e88e537" ParentLink="ComplexStatement_Statement" LowerBound="65.1" HigherBound="68.1">
+                        <om:Property Name="Expression" Value="orgRowCount=System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.Profiles&quot;,&quot;orgRowCount&quot;));&#xD;&#xA;delayOrgSeconds=System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.Profiles&quot;,&quot;delayOrgSeconds&quot;));&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Get SSO value" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="d1ea19f3-1415-46f9-99dc-58c2371cfb74" ParentLink="ComplexStatement_Statement" LowerBound="68.1" HigherBound="77.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct_orgDetailsRequest" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageAssignment" OID="21f65a50-6d64-48b2-842b-ac3809aaae93" ParentLink="ComplexStatement_Statement" LowerBound="71.1" HigherBound="76.1">
+                            <om:Property Name="Expression" Value="xmlDoc.LoadXml(&quot;&lt;ns0:procGetOrganization xmlns:ns0=\&quot;http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\&quot;&gt;&lt;ns0:pintRowCount&gt;10&lt;/ns0:pintRowCount&gt;&lt;/ns0:procGetOrganization&gt;&quot;);&#xD;&#xA;&#xD;&#xA;orgDetailsRequest=xmlDoc;&#xD;&#xA;orgDetailsRequest.pintRowCount=orgRowCount;" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="e037819d-89c9-4f6d-b4a7-9df298f2e274" ParentLink="Construct_MessageRef" LowerBound="69.31" HigherBound="69.48">
+                            <om:Property Name="Ref" Value="orgDetailsRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="0fc9983f-bacc-49b4-9d3a-12503501ddc2" ParentLink="ComplexStatement_Statement" LowerBound="77.1" HigherBound="79.1">
+                        <om:Property Name="PortName" Value="GetOrgDetailsPort" />
+                        <om:Property Name="MessageName" Value="orgDetailsRequest" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Snd_orgDetailsReq" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="dd10c7f7-622c-42ec-86bc-60f6fe2bb208" ParentLink="ComplexStatement_Statement" LowerBound="79.1" HigherBound="81.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="GetOrgDetailsPort" />
+                        <om:Property Name="MessageName" Value="orgDetailsResponse" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="RcvOrg" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="48999fc1-4066-45d1-8a1a-87abde337780" ParentLink="ComplexStatement_Statement" LowerBound="81.1" HigherBound="84.1">
+                        <om:Property Name="Expression" Value="iCount= System.Convert.ToInt32(xpath(orgDetailsResponse,&quot;count(/*[local-name()='procGetOrganizationResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procGetOrganization'])&quot;));&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.Profiles&quot;,&quot;The Org Count is&quot; +  iCount.ToString());" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Get Count" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="5a6f1f37-1fd9-48c0-a7d3-142eba6af97b" ParentLink="ComplexStatement_Statement" LowerBound="84.1" HigherBound="125.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Check records" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="d29df3c0-eb1c-47ed-b3a2-b8bb184e2469" ParentLink="ReallyComplexStatement_Branch" LowerBound="85.21" HigherBound="125.1">
+                            <om:Property Name="Expression" Value="iCount &gt; 0" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Records present" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Scope" OID="72d85719-bee0-4a1a-a71d-666cca71744c" ParentLink="ComplexStatement_Statement" LowerBound="87.1" HigherBound="111.1">
+                                <om:Property Name="InitializedTransactionType" Value="True" />
+                                <om:Property Name="IsSynchronized" Value="False" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Scope_Atomic" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableDeclaration" OID="fc815487-4e40-4fd8-a277-f98063830f6c" ParentLink="Scope_VariableDeclaration" LowerBound="91.1" HigherBound="92.1">
+                                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                                    <om:Property Name="Type" Value="Microsoft.XLANGs.Pipeline.ReceivePipelineOutputMessages" />
+                                    <om:Property Name="ParamDirection" Value="In" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="inMsgs" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="AtomicTransaction" OID="ecd3f7e0-f2d3-49be-9814-d2f50cc5869b" ParentLink="Scope_Transaction" LowerBound="89.30" HigherBound="89.63">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transaction_3" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="c9be8de2-a8c4-47e3-b3ee-0b7b3313b137" ParentLink="ComplexStatement_Statement" LowerBound="94.1" HigherBound="96.1">
+                                    <om:Property Name="Expression" Value="inMsgs= Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteReceivePipeline(typeof(Microsoft.BizTalk.DefaultPipelines.XMLReceive), orgDetailsResponse);&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Execute Pipeline" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="While" OID="c6cfe3cb-9bbf-4ee1-b01d-c0cf71731894" ParentLink="ComplexStatement_Statement" LowerBound="96.1" HigherBound="109.1">
+                                    <om:Property Name="Expression" Value="inMsgs.MoveNext()" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Loop All messages" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Construct" OID="87b65baa-fa2e-4a2e-8295-eccc453aab59" ParentLink="ComplexStatement_Statement" LowerBound="99.1" HigherBound="106.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Construct_Address" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageAssignment" OID="c0d77761-8147-4126-8ea2-e06021c35cd2" ParentLink="ComplexStatement_Statement" LowerBound="102.1" HigherBound="105.1">
+                                            <om:Property Name="Expression" Value="SingleOrg = new System.Xml.XmlDocument();&#xD;&#xA;inMsgs.GetCurrent(SingleOrg);" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="7ecb3dd4-bbe4-40c7-8892-a49f2ad2a470" ParentLink="Construct_MessageRef" LowerBound="100.47" HigherBound="100.56">
+                                            <om:Property Name="Ref" Value="SingleOrg" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="b2506ebf-9cfa-424c-8ef9-5579156c32ae" ParentLink="ComplexStatement_Statement" LowerBound="106.1" HigherBound="108.1">
+                                        <om:Property Name="PortName" Value="SendOrgImportPort" />
+                                        <om:Property Name="MessageName" Value="SingleOrg" />
+                                        <om:Property Name="OperationName" Value="InvokeImport" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_SingleOrg" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="TransactionAttribute" OID="47240422-e541-4aa0-9d37-7bfbe0daa827" ParentLink="Statement_CLRAttribute" LowerBound="88.1" HigherBound="89.1">
+                                    <om:Property Name="Batch" Value="True" />
+                                    <om:Property Name="Retry" Value="True" />
+                                    <om:Property Name="Timeout" Value="60" />
+                                    <om:Property Name="Isolation" Value="Serializable" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="671cfb4a-1000-4ae1-a444-f97ec53ae646" ParentLink="ComplexStatement_Statement" LowerBound="111.1" HigherBound="120.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_NotificationRequest" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="4c243206-170a-4b8e-b746-d3eb4ff9eb26" ParentLink="ComplexStatement_Statement" LowerBound="114.1" HigherBound="119.1">
+                                    <om:Property Name="Expression" Value="xmlDocOrg.LoadXml(&quot;&lt;ns0:procBiztalkUpdateNotification xmlns:ns0=\&quot;http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\&quot;&gt;&lt;ns0:InterfaceName&gt;&lt;/ns0:InterfaceName&gt;&lt;ns0:UpdatedBy&gt;&lt;/ns0:UpdatedBy&gt;&lt;ns0:ReturnLiteral&gt;&lt;/ns0:ReturnLiteral&gt;&lt;/ns0:procBiztalkUpdateNotification&gt;&quot;);&#xD;&#xA;updateBiztalkNotification=xmlDocOrg;&#xD;&#xA;updateBiztalkNotification.InterfaceName=&quot;Legacy Organization&quot;;&#xD;&#xA;updateBiztalkNotification.UpdatedBy=&quot;BIZTALK&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="13424ff3-3b26-4d73-be4a-c9d1a9e42560" ParentLink="Construct_MessageRef" LowerBound="112.35" HigherBound="112.60">
+                                    <om:Property Name="Ref" Value="updateBiztalkNotification" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Delay" OID="b5a7dc99-035b-4d41-9ae9-3e4df93cc8bd" ParentLink="ComplexStatement_Statement" LowerBound="120.1" HigherBound="122.1">
+                                <om:Property Name="Timeout" Value="new System.TimeSpan(0,0,delayOrgSeconds);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Delay_beforeNotification" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Send" OID="a93d7294-b382-4587-b7d4-8eb3fa52429d" ParentLink="ComplexStatement_Statement" LowerBound="122.1" HigherBound="124.1">
+                                <om:Property Name="PortName" Value="SendNotificationPort" />
+                                <om:Property Name="MessageName" Value="updateBiztalkNotification" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_Notification" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="473c002c-9b39-48df-815b-70b2f97af09b" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="0677d003-a1a3-4a38-8939-0b2870c49b5c" ParentLink="Scope_Catch" LowerBound="128.1" HigherBound="146.1">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="76dea643-82c6-4c0e-bc53-79fb77d6252d" ParentLink="Catch_Statement" LowerBound="131.1" HigherBound="145.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_faultMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="2941cfd0-c24c-4f4e-9691-3ef9ec9edecb" ParentLink="Construct_MessageRef" LowerBound="132.35" HigherBound="132.47">
+                                <om:Property Name="Ref" Value="faultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="024da57b-5499-498e-b0bc-320aeca86a63" ParentLink="ComplexStatement_Statement" LowerBound="134.1" HigherBound="144.1">
+                                <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;faultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;faultMessage.FailureCategory=&quot;Commerce Server Exception&quot;;&#xD;&#xA;faultMessage.FaultDescription=ex.Message;&#xD;&#xA;faultMessage.FaultCode=&quot;1001&quot;;&#xD;&#xA;faultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4eae171f-7c0b-45b0-bbfb-b7d5a2e4fe88" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="35.1" HigherBound="37.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.OrganizationProfiles.Orchestration.ReceiveSQLNotificationPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveSQLNotificationPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="356c708f-8cbf-4d48-af7e-2f1ed1c4c886" ParentLink="PortDeclaration_CLRAttribute" LowerBound="35.1" HigherBound="36.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="3e64392c-9c16-46cd-adf5-c107633b4b97" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="37.1" HigherBound="39.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="19" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.OrganizationProfiles.Orchestration.GetOrgDetailsPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetOrgDetailsPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="c64b7350-8659-4134-a1ff-6226879ce76f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="37.1" HigherBound="38.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="56bee55b-f2c9-441c-b750-5893cf5e7106" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="39.1" HigherBound="41.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="60" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.OrganizationProfiles.Orchestration.SendOrgImportPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendOrgImportPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="81b99e81-3d03-46c7-a3fe-4fae53621c6b" ParentLink="PortDeclaration_CLRAttribute" LowerBound="39.1" HigherBound="40.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="77688354-a165-4018-993e-4dad9472382e" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="41.1" HigherBound="43.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="72" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.OrganizationProfiles.Orchestration.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendNotificationPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="86a2cabd-4555-459e-9111-cc3e6c0e1e20" ParentLink="PortDeclaration_CLRAttribute" LowerBound="41.1" HigherBound="42.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.BizTalk.OrganizationProfiles.Orchestration
+{
+    internal porttype ReceiveSQLNotificationPortType
+    {
+        oneway Operation_1
+        {
+            BTNextGen.BizTalk.Schemas.Common.Notification
+        };
+    };
+    internal porttype GetOrgDetailsPortType
+    {
+        requestresponse Operation_1
+        {
+            BTNextGen.BizTalk.Profiles.Schemas.GetOrgDetailsFromLegacy.procGetOrganization, BTNextGen.BizTalk.Profiles.Schemas.GetOrgDetailsFromLegacy.procGetOrganizationResponse
+        };
+    };
+    internal porttype SendOrgImportPortType
+    {
+        oneway InvokeImport
+        {
+            BTNextGen.BizTalk.Profiles.Schemas.ProcedureResultSet_dbo_procGetOrganization.StoredProcedureResultSet0
+        };
+    };
+    internal porttype PortType_1
+    {
+        oneway Operation_1
+        {
+            BTNextGen.BizTalk.Schemas.Common.UpdateBizTalkNotification.procBiztalkUpdateNotification
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction ReceiveOrgProfileSqlNotification
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ReceiveSQLNotificationPortType ReceiveSQLNotificationPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses GetOrgDetailsPortType GetOrgDetailsPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses SendOrgImportPortType SendOrgImportPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_1 SendNotificationPort;
+        message BTNextGen.BizTalk.Schemas.Common.UpdateBizTalkNotification.procBiztalkUpdateNotification updateBiztalkNotification;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage faultMessage;
+        message BTNextGen.BizTalk.Schemas.Common.Notification sqlNotification;
+        message BTNextGen.BizTalk.Profiles.Schemas.GetOrgDetailsFromLegacy.procGetOrganization orgDetailsRequest;
+        message BTNextGen.BizTalk.Profiles.Schemas.GetOrgDetailsFromLegacy.procGetOrganizationResponse orgDetailsResponse;
+        message BTNextGen.BizTalk.Profiles.Schemas.ProcedureResultSet_dbo_procGetOrganization.StoredProcedureResultSet0 SingleOrg;
+        System.Xml.XmlDocument xmlDocOrg;
+        System.Int32 iCount;
+        System.Xml.XmlDocument xmlDoc;
+        System.Int32 orgRowCount;
+        System.Int32 delayOrgSeconds;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("04601a03-09c3-48da-8b99-2ce60e9dd91b")]
+            activate receive (ReceiveSQLNotificationPort.Operation_1, sqlNotification);
+            xmlDocOrg = new System.Xml.XmlDocument();
+            xmlDoc = new System.Xml.XmlDocument();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("86882e20-892d-46e5-bf6f-2ce478969f33")]
+            scope longrunning transaction Transaction_2
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("181a1eaf-27b9-4dc3-abb1-3db75e88e537")]
+                    orgRowCount=System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.Profiles","orgRowCount"));
+                    delayOrgSeconds=System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.Profiles","delayOrgSeconds"));
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d1ea19f3-1415-46f9-99dc-58c2371cfb74")]
+                    construct orgDetailsRequest
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("21f65a50-6d64-48b2-842b-ac3809aaae93")]
+                        xmlDoc.LoadXml("<ns0:procGetOrganization xmlns:ns0=\"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\"><ns0:pintRowCount>10</ns0:pintRowCount></ns0:procGetOrganization>");
+                        
+                        orgDetailsRequest=xmlDoc;
+                        orgDetailsRequest.pintRowCount=orgRowCount;
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("0fc9983f-bacc-49b4-9d3a-12503501ddc2")]
+                    send (GetOrgDetailsPort.Operation_1, orgDetailsRequest);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("dd10c7f7-622c-42ec-86bc-60f6fe2bb208")]
+                    receive (GetOrgDetailsPort.Operation_1, orgDetailsResponse);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("48999fc1-4066-45d1-8a1a-87abde337780")]
+                    iCount= System.Convert.ToInt32(xpath(orgDetailsResponse,"count(/*[local-name()='procGetOrganizationResponse' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='StoredProcedureResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procGetOrganization'])"));
+                    System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.Profiles","The Org Count is" +  iCount.ToString());
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("5a6f1f37-1fd9-48c0-a7d3-142eba6af97b")]
+                    if (iCount > 0)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("72d85719-bee0-4a1a-a71d-666cca71744c")]
+                        [Microsoft.XLANGs.BaseTypes.Transaction(Retry=true,Batch=true,Timeout=60,TranIsolationLevel=System.Data.IsolationLevel.Serializable)]
+                        scope atomic transaction Transaction_3
+                        {
+                            Microsoft.XLANGs.Pipeline.ReceivePipelineOutputMessages inMsgs;
+                            body
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c9be8de2-a8c4-47e3-b3ee-0b7b3313b137")]
+                                inMsgs= Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteReceivePipeline(typeof(Microsoft.BizTalk.DefaultPipelines.XMLReceive), orgDetailsResponse);
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c6cfe3cb-9bbf-4ee1-b01d-c0cf71731894")]
+                                while (inMsgs.MoveNext())
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("87b65baa-fa2e-4a2e-8295-eccc453aab59")]
+                                    construct SingleOrg
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c0d77761-8147-4126-8ea2-e06021c35cd2")]
+                                        SingleOrg = new System.Xml.XmlDocument();
+                                        inMsgs.GetCurrent(SingleOrg);
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b2506ebf-9cfa-424c-8ef9-5579156c32ae")]
+                                    send (SendOrgImportPort.InvokeImport, SingleOrg);
+                                }
+                            }
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("671cfb4a-1000-4ae1-a444-f97ec53ae646")]
+                        construct updateBiztalkNotification
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4c243206-170a-4b8e-b746-d3eb4ff9eb26")]
+                            xmlDocOrg.LoadXml("<ns0:procBiztalkUpdateNotification xmlns:ns0=\"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\"><ns0:InterfaceName></ns0:InterfaceName><ns0:UpdatedBy></ns0:UpdatedBy><ns0:ReturnLiteral></ns0:ReturnLiteral></ns0:procBiztalkUpdateNotification>");
+                            updateBiztalkNotification=xmlDocOrg;
+                            updateBiztalkNotification.InterfaceName="Legacy Organization";
+                            updateBiztalkNotification.UpdatedBy="BIZTALK";
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b5a7dc99-035b-4d41-9ae9-3e4df93cc8bd")]
+                        delay new System.TimeSpan(0,0,delayOrgSeconds);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("a93d7294-b382-4587-b7d4-8eb3fa52429d")]
+                        send (SendNotificationPort.Operation_1, updateBiztalkNotification);
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("0677d003-a1a3-4a38-8939-0b2870c49b5c")]
+                    catch (System.Exception ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("76dea643-82c6-4c0e-bc53-79fb77d6252d")]
+                        construct faultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("024da57b-5499-498e-b0bc-320aeca86a63")]
+                            // Create fault exception Message
+                            faultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            // Assign Properties
+                            
+                            faultMessage.FailureCategory="Commerce Server Exception";
+                            faultMessage.FaultDescription=ex.Message;
+                            faultMessage.FaultCode="1001";
+                            faultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

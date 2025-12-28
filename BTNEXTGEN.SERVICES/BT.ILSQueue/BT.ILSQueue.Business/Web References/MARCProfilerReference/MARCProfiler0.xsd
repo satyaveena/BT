@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetMARCFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sortColumn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="basketSummaryID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sortDirection" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ProfileID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FullIndicator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isOrdered" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isCancelled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isOCLCEnabled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isBTEmployee" type="xs:boolean" />
+        <xs:element minOccurs="0" name="hasInventoryRules" type="xs:boolean" />
+        <xs:element minOccurs="0" name="marketType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMARCFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMARCFileResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendMARCFileFTP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sortColumn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="basketSummaryID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sortDirection" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ProfileID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FullIndicator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isOrdered" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isCancelled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isOCLCEnabled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isBTEmployee" type="xs:boolean" />
+        <xs:element minOccurs="0" name="hasInventoryRules" type="xs:boolean" />
+        <xs:element minOccurs="0" name="marketType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FTPServer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FTPUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FTPPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FTPFolder" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FTPFilePrefix" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TS360UserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TS360CartName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendMARCFileFTPResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendMARCFileFTPTest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FTPServer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FTPUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FTPPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FTPFolder" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TS360UserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MarcProfilerID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendMARCFileFTPTestResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendMARCFileSP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sortColumn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="basketSummaryID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sortDirection" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ProfileID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FullIndicator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isOrdered" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isCancelled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isOCLCEnabled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isBTEmployee" type="xs:boolean" />
+        <xs:element minOccurs="0" name="hasInventoryRules" type="xs:boolean" />
+        <xs:element minOccurs="0" name="marketType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TS360UserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TS360CartName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ProfileName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

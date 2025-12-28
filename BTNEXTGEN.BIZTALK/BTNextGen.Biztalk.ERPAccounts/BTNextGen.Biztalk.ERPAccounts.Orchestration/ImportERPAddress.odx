@@ -1,0 +1,1512 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="a601f242-de9c-4509-85ef-a14c33fe9d6a" LowerBound="1.1" HigherBound="346.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="daf5794c-1e1d-4b65-896e-7c9430475bf9" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveAddressPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="4b0b6c78-2416-4bb6-8af2-45816f24e01e" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e60dc9e7-7164-43a8-b757-c232988ba04d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.130">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ERPAccounts.Schemas.ProcedureResultSet_dbo_procCommerceServerGetAddresses.StoredProcedureResultSet0" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="17cb710b-dd34-407c-88e0-b37361749d6d" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="faultMessagePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="c8b8dd11-fbca-48f5-b977-0d02a8885441" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Msgox" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="1ab9b2a7-285a-46da-a85b-0b5c520c9f52" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.82">
+                    <om:Property Name="Ref" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="c6f49636-f859-43c5-833a-92f395284358" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SetErrorPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="25c95228-758f-44aa-8a13-abf85f4e1499" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="setErrorSql" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="03a70ab7-5c1f-44a3-81d1-2fb8df9be042" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.101">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ERPAccounts.Schemas.SetErrorAddress.procCommerceServerSetAddressErrors" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="e099de50-da0e-4f9b-a698-c824d0b3556f" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="archiveInPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="5058b0df-35d3-44cb-aad1-ad67edbce57d" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="5bb9b848-e978-48b9-bf25-40f6dd768776" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.130">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ERPAccounts.Schemas.ProcedureResultSet_dbo_procCommerceServerGetAddresses.StoredProcedureResultSet0" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="4698c2a4-2169-48d1-addd-d3db089e2238" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="archiveOutPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="97e9e029-0a3a-4a38-b952-23f0f1f84ee8" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="09aaf8a0-7a11-4080-8f83-ff9ad2533f9a" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.60">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.BTProfile" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="e80e38e0-124f-4e9b-bbc7-9ac9f0a5b9fb" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="archiveInsertRespPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="dd9105cf-581c-4d19-abba-db8e61ba70ed" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="6dd15e73-7a15-4ab7-8d02-391c718e9694" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.73">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesImportResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="1acf71b5-b6c7-4f25-b099-03f41f876f79" ParentLink="Module_PortType" LowerBound="46.1" HigherBound="53.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="archiveUpdateRespPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="5fc1c011-5b85-429a-8d1f-db33a11f940f" ParentLink="PortType_OperationDeclaration" LowerBound="48.1" HigherBound="52.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="62d6d43d-eedf-4cd8-97d6-a9c39fcd629d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="50.13" HigherBound="50.73">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesUpdateResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="973dc8d3-8308-4a09-875c-00b703602aee" ParentLink="Module_PortType" LowerBound="53.1" HigherBound="60.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendNotificationPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="d2d8d60d-3ad6-44bc-8227-50896b34cf25" ParentLink="PortType_OperationDeclaration" LowerBound="55.1" HigherBound="59.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="0377564a-14ef-48c9-bf90-d160229e2f18" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="57.13" HigherBound="57.101">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.Schemas.Common.UpdateBizTalkNotification.procBiztalkUpdateNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="3b1f8a41-c071-48f0-b3c8-7ce7bc132390" ParentLink="Module_PortType" LowerBound="60.1" HigherBound="67.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="archiveAddressUpdatePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="ca125416-9bb6-4153-8625-5072a560968e" ParentLink="PortType_OperationDeclaration" LowerBound="62.1" HigherBound="66.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d6dbe0fd-74a2-446a-b3ea-7ecafe2eab94" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="64.13" HigherBound="64.56">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.IIProfile_UpdatePartialProfile_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="63a51041-9f91-4a1e-9bb2-b0461713a375" ParentLink="Module_PortType" LowerBound="67.1" HigherBound="74.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="archiveWCFResponsePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="edc6c86a-a092-40cd-8eb4-d3aa0c3806f1" ParentLink="PortType_OperationDeclaration" LowerBound="69.1" HigherBound="73.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="8c4b86e8-eb95-49bf-af41-3d783e4b8d83" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="71.13" HigherBound="71.57">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.IIProfile_UpdatePartialProfile_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="CorrelationType" OID="31769a2a-ad6f-4b9a-bc1f-6b570eb67969" ParentLink="Module_CorrelationType" LowerBound="74.1" HigherBound="78.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CorrelationType_InterchangeID" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PropertyRef" OID="a7652818-481a-4a1a-8c74-7494bbe74750" ParentLink="CorrelationType_PropertyRef" LowerBound="76.9" HigherBound="76.26">
+                <om:Property Name="Ref" Value="BTS.InterchangeID" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PropertyRef_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="a49e7ae4-f062-434f-9aef-22050e051a03" ParentLink="Module_ServiceDeclaration" LowerBound="78.1" HigherBound="345.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ImportERPAddress" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="1557431f-cb32-4679-bf3f-2ea2352b5fdf" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="121.1" HigherBound="122.1">
+                <om:Property Name="InitialValue" Value="1" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="severity" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="6d6e9e5a-8167-4ec7-9316-c3c124aceeda" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="122.1" HigherBound="123.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlDoc" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b9e7499f-97e9-432c-a3b8-0c3fd16be3b7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="123.1" HigherBound="124.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="allAddressProcessed" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b00bdd19-a7f8-4566-a032-a74f4b04dbc7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="124.1" HigherBound="125.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlDocAccounts" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="51d626f6-dd51-4238-a692-3dd07323c687" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="125.1" HigherBound="126.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="companyCode" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="69f4e1e9-f428-4d27-82bd-1c021ec980ec" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="126.1" HigherBound="127.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="addressID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="bb3f8fc2-657a-4be7-8134-e90b49fdf90c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="127.1" HigherBound="128.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="loadStatus" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2a6f0258-7299-4d76-8f8a-d79ffbcd785e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="128.1" HigherBound="129.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strResponseText" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="71709349-5cf5-4c2f-a372-c75621bd2df9" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="129.1" HigherBound="130.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="intInvalidResponseCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7c24d0d1-f455-4389-9f75-f3d2e4ebae09" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="130.1" HigherBound="131.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="isArchive" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="LongRunningTransaction" OID="585ca588-571e-4904-8025-75587e0a4774" ParentLink="ServiceDeclaration_Transaction" LowerBound="79.21" HigherBound="79.62">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="297ed552-5f3c-4274-8e23-be955e1124ad" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="104.1" HigherBound="105.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.IIProfile_UpdatePartialProfile_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="addressUpdateRespArchive" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8185dc3b-1daa-46b7-8d68-7530e747077c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="105.1" HigherBound="106.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.IIProfile_UpdatePartialProfile_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="addresssUpdate_Resp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="eeac8060-ccd6-48f5-892f-de0e48e23941" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="106.1" HigherBound="107.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.IIProfile_UpdatePartialProfile_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="addressUpdateArchive" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="dce2e1d0-9ab5-4f9d-935b-169165e6576f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="107.1" HigherBound="108.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.IIProfile_UpdatePartialProfile_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="addressUpdate_Req" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f261b7b5-4562-4972-b4e4-eb3516bd4959" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="108.1" HigherBound="109.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesUpdateResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveUpdateResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b13d738f-3bc6-419d-a030-b473ae07894c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="109.1" HigherBound="110.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesImportResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveImportResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e89d509d-2a7e-4a1d-8757-90d0bd35f341" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="110.1" HigherBound="111.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.BTProfile" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveOut" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="ea3d4c46-7128-4966-a745-c11b334fc709" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="111.1" HigherBound="112.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Schemas.ProcedureResultSet_dbo_procCommerceServerGetAddresses.StoredProcedureResultSet0" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveIn" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="250915ab-e1f2-4b92-8000-cbd422f2e0e8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="112.1" HigherBound="113.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="faultMessageOuter" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b6a18529-322f-4d09-859e-f71178cf7a4b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="113.1" HigherBound="114.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="faultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d003630f-7534-4e1d-a663-81e04d2cf269" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="114.1" HigherBound="115.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesUpdateResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CSAddressUpdateResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="36ab683c-2223-420c-bf6a-7efe0e869300" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="115.1" HigherBound="116.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesImportResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CSAddressImportResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="307bdfd2-2a9d-4aae-8bfc-858ade41438c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="116.1" HigherBound="117.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Schemas.ProcedureResultSet_dbo_procCommerceServerGetAddresses.StoredProcedureResultSet0" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="addressDetailsNGR" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="069aa063-a2d7-49e5-9dfd-07d486b51fc3" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="117.1" HigherBound="118.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.BTProfile" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="addressDetailsCS" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="7af10504-91f0-49e6-bbb0-84a8b0c7dd4d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="118.1" HigherBound="119.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Schemas.GetAccounts.procCommerceServerGetAccounts" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="accountsReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="fc166c4e-ec1e-4e85-9610-9186763d4ec4" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="119.1" HigherBound="120.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Schemas.SetErrorAddress.procCommerceServerSetAddressErrors" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="addressSetError" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="34f9e0a1-8bf7-401e-8dab-bcc0907f4cd6" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="120.1" HigherBound="121.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.Schemas.Common.UpdateBizTalkNotification.procBiztalkUpdateNotification" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="updateBiztalkNotification" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="5261397b-0564-425a-bd0e-0ff2d05ce8ac" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="3835afbc-c90e-45b4-9be4-0a3b8ba70678" ParentLink="ServiceBody_Statement" LowerBound="133.1" HigherBound="144.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="ReceiveAddressPort" />
+                    <om:Property Name="MessageName" Value="addressDetailsNGR" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_addressDetailsNGR" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DNFPredicate" OID="5e84bfe5-a1d1-4260-90f7-4ba45d33e069" ParentLink="Receive_DNFPredicate">
+                        <om:Property Name="LHS" Value="BTS.MessageType" />
+                        <om:Property Name="RHS" Value="&quot;http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetAddresses#StoredProcedureResultSet0&quot;" />
+                        <om:Property Name="Grouping" Value="AND" />
+                        <om:Property Name="Operator" Value="Equals" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="DNFPredicate" OID="39bd94d8-6674-49e2-959e-6144e9a9041c" ParentLink="Receive_DNFPredicate">
+                        <om:Property Name="LHS" Value="BTS.Operation" />
+                        <om:Property Name="RHS" Value="&quot;InvokeImport&quot;" />
+                        <om:Property Name="Grouping" Value="AND" />
+                        <om:Property Name="Operator" Value="Equals" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Scope" OID="8b70b649-5349-4c49-9ec0-24935bf2065f" ParentLink="ServiceBody_Statement" LowerBound="144.1" HigherBound="343.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_Overall" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="LongRunningTransaction" OID="f923123a-5fee-42fa-89f6-494e39aea453" ParentLink="Scope_Transaction" LowerBound="145.18" HigherBound="145.56">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transaction_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="fd1d3db5-83f8-4099-a3a0-2e3d6461efed" ParentLink="ComplexStatement_Statement" LowerBound="149.1" HigherBound="158.1">
+                        <om:Property Name="Expression" Value="companyCode=addressDetailsNGR.CompanyCode;&#xD;&#xA;loadStatus= addressDetailsNGR.LoadStatus;&#xD;&#xA;addressID= addressDetailsNGR.u_address_id;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// RESET VARIABLE&#xD;&#xA;intInvalidResponseCount= 0;&#xD;&#xA;strResponseText= System.String.Empty;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="get erp account details" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="6e11cdae-dbea-4117-b2ee-d49a76311192" ParentLink="ComplexStatement_Statement" LowerBound="158.1" HigherBound="161.1">
+                        <om:Property Name="Expression" Value="isArchive=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.ERPAccounts&quot;,&quot;addressArchive&quot;));&#xD;&#xA;severity=System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.ERPAccounts&quot;,&quot;severity&quot;));&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Get SSO value" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="e904a2ca-315e-4474-ae97-1d392b992db9" ParentLink="ComplexStatement_Statement" LowerBound="161.1" HigherBound="174.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Archive" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="646b1069-9e67-4b6c-96aa-88a4a4489aca" ParentLink="ReallyComplexStatement_Branch" LowerBound="162.21" HigherBound="174.1">
+                            <om:Property Name="Expression" Value="isArchive" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="YES" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="632a8099-eec1-4b7c-be05-2e096ecfc453" ParentLink="ComplexStatement_Statement" LowerBound="164.1" HigherBound="171.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_archiveIn" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="84f2b9c4-e499-416d-8006-26b0de637317" ParentLink="Construct_MessageRef" LowerBound="165.35" HigherBound="165.44">
+                                    <om:Property Name="Ref" Value="archiveIn" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="016146c8-48c9-4188-88c4-7dbef99d5da5" ParentLink="ComplexStatement_Statement" LowerBound="167.1" HigherBound="170.1">
+                                    <om:Property Name="Expression" Value="archiveIn=addressDetailsNGR;&#xD;&#xA;archiveIn(FILE.ReceivedFileName)=&quot;addressdetailsERP_&quot;+addressID;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="f6509112-a861-4fec-bb69-496f281ded06" ParentLink="ComplexStatement_Statement" LowerBound="171.1" HigherBound="173.1">
+                                <om:Property Name="PortName" Value="archiveInPort" />
+                                <om:Property Name="MessageName" Value="archiveIn" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_archiveIn" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="d4c92f9e-c549-42e7-bdf0-dcac8eb10fd3" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Construct" OID="3ed9eba4-5b3d-4243-95dd-6e28c2165c57" ParentLink="ComplexStatement_Statement" LowerBound="174.1" HigherBound="180.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct_AccountProfile" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageRef" OID="1ed91343-29fe-42ad-b6c7-19db50c02a49" ParentLink="Construct_MessageRef" LowerBound="175.31" HigherBound="175.47">
+                            <om:Property Name="Ref" Value="addressDetailsCS" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Transform" OID="01e656c5-d4df-4d80-ac41-f0ad970510cc" ParentLink="ComplexStatement_Statement" LowerBound="177.1" HigherBound="179.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ERPAccounts.Maps.ERPAddress_CSAddress" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_CSAddress" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="c79356c6-3801-488a-ac5b-f02544a86ed0" ParentLink="Transform_OutputMessagePartRef" LowerBound="178.36" HigherBound="178.52">
+                                <om:Property Name="MessageRef" Value="addressDetailsCS" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="ee3431b6-cf73-404e-8557-ea5d3fa05f65" ParentLink="Transform_InputMessagePartRef" LowerBound="178.113" HigherBound="178.130">
+                                <om:Property Name="MessageRef" Value="addressDetailsNGR" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="345e58f4-dfcb-4e46-97d1-86812ba6baf4" ParentLink="ComplexStatement_Statement" LowerBound="180.1" HigherBound="193.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="archive" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="e79a1440-4b2c-47aa-bc45-c1007c4f767d" ParentLink="ReallyComplexStatement_Branch" LowerBound="181.21" HigherBound="193.1">
+                            <om:Property Name="Expression" Value="isArchive" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="YES" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="453b2dbc-df53-4139-b575-b09b4b69cd43" ParentLink="ComplexStatement_Statement" LowerBound="183.1" HigherBound="190.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_archiveOut" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="1779ccee-a808-4295-9416-d51b1a4bcd77" ParentLink="Construct_MessageRef" LowerBound="184.35" HigherBound="184.45">
+                                    <om:Property Name="Ref" Value="archiveOut" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="21742c77-f1ee-4f46-87f2-df4a63bbfd92" ParentLink="ComplexStatement_Statement" LowerBound="186.1" HigherBound="189.1">
+                                    <om:Property Name="Expression" Value="archiveOut=addressDetailsCS;&#xD;&#xA;archiveOut(FILE.ReceivedFileName)=&quot;addressDetailsCS_&quot;+addressID;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="03189892-c7a8-4b7f-b3a0-87964807e92f" ParentLink="ComplexStatement_Statement" LowerBound="190.1" HigherBound="192.1">
+                                <om:Property Name="PortName" Value="archiveOutPort" />
+                                <om:Property Name="MessageName" Value="archiveOut" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="8933cac7-9bba-4221-994f-6733d9ee8677" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="13e06e6c-67d8-457f-aa55-007ec8dc4ad2" ParentLink="ComplexStatement_Statement" LowerBound="193.1" HigherBound="304.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_ImportType" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="8a781730-7242-41a5-acc6-7f54b54d198b" ParentLink="ReallyComplexStatement_Branch" LowerBound="194.21" HigherBound="239.1">
+                            <om:Property Name="Expression" Value="addressDetailsNGR.LoadStatus==&quot;Inserted&quot;" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Inserted" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Send" OID="7d444ab8-4f7c-43a5-9b76-593a3af1c3a7" ParentLink="ComplexStatement_Statement" LowerBound="196.1" HigherBound="198.1">
+                                <om:Property Name="PortName" Value="SendAddressInsertPort" />
+                                <om:Property Name="MessageName" Value="addressDetailsCS" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_ImportAddress" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Receive" OID="a7ae7a4e-ebbf-4d6a-ac8d-3d06f792e444" ParentLink="ComplexStatement_Statement" LowerBound="198.1" HigherBound="200.1">
+                                <om:Property Name="Activate" Value="False" />
+                                <om:Property Name="PortName" Value="SendAddressInsertPort" />
+                                <om:Property Name="MessageName" Value="CSAddressImportResponse" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Receive_ImportResponse" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="fdb4042f-dbdf-470c-a972-d3f594533272" ParentLink="ComplexStatement_Statement" LowerBound="200.1" HigherBound="213.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="archive" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="6fdf9d18-87d0-4921-9e31-faf4adaaddd5" ParentLink="ReallyComplexStatement_Branch" LowerBound="201.25" HigherBound="213.1">
+                                    <om:Property Name="Expression" Value="isArchive" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="YES" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Construct" OID="e866092b-5852-4166-b194-36623d404374" ParentLink="ComplexStatement_Statement" LowerBound="203.1" HigherBound="210.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Construct_archiveImportResp" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageRef" OID="40eded32-edcc-4256-8514-698e1846ca8a" ParentLink="Construct_MessageRef" LowerBound="204.39" HigherBound="204.56">
+                                            <om:Property Name="Ref" Value="archiveImportResp" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageAssignment" OID="690bbcb0-0105-4fab-9ae5-598e57e7f7f6" ParentLink="ComplexStatement_Statement" LowerBound="206.1" HigherBound="209.1">
+                                            <om:Property Name="Expression" Value="archiveImportResp=CSAddressImportResponse;&#xD;&#xA;archiveImportResp(FILE.ReceivedFileName)=&quot;archiveImportResp_&quot;+addressID;" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="a3e39df1-3d4e-4cee-8619-5f0733663461" ParentLink="ComplexStatement_Statement" LowerBound="210.1" HigherBound="212.1">
+                                        <om:Property Name="PortName" Value="archiveInsertRespPort" />
+                                        <om:Property Name="MessageName" Value="archiveImportResp" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_Resp" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="abb4b7bf-c498-42fe-88b0-bf8e032ad50e" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="d509dec6-0248-4d4c-b3c0-ee45c12a137f" ParentLink="ComplexStatement_Statement" LowerBound="213.1" HigherBound="217.1">
+                                <om:Property Name="Expression" Value="intInvalidResponseCount=System.Convert.ToInt32(xpath(CSAddressImportResponse,&quot;count(/*[local-name()='CommerceServerProfilesImportResponse' and namespace-uri()='']/*[local-name()='InvalidProfileImportMessage' and namespace-uri()=''])&quot;));&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Get error response" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="06f4ce4f-e95d-45e7-9d5d-ee38c05f7b68" ParentLink="ComplexStatement_Statement" LowerBound="217.1" HigherBound="238.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Decide_RespType" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="8d725a5d-7788-412f-b1c1-d2435cfe671d" ParentLink="ReallyComplexStatement_Branch" LowerBound="218.25" HigherBound="238.1">
+                                    <om:Property Name="Expression" Value="intInvalidResponseCount &gt; 0" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ERROR " />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="VariableAssignment" OID="df7f5ca1-89f3-4b4a-9e69-e29240198594" ParentLink="ComplexStatement_Statement" LowerBound="220.1" HigherBound="224.1">
+                                        <om:Property Name="Expression" Value="strResponseText=xpath(CSAddressImportResponse ,&quot;string(/*[local-name()='CommerceServerProfilesImportResponse' and namespace-uri()='']/*[local-name()='InvalidProfileImportMessage' and namespace-uri()=''])&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Get error response" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Construct" OID="f5343d01-f88b-4c00-8edc-39815d6469e6" ParentLink="ComplexStatement_Statement" LowerBound="224.1" HigherBound="235.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Construct_addressError" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageRef" OID="b6f3d414-9805-4037-a528-3da82e74231d" ParentLink="Construct_MessageRef" LowerBound="225.39" HigherBound="225.54">
+                                            <om:Property Name="Ref" Value="addressSetError" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageAssignment" OID="e01001ed-1a29-45da-8b03-55acf3ac9cf0" ParentLink="ComplexStatement_Statement" LowerBound="227.1" HigherBound="234.1">
+                                            <om:Property Name="Expression" Value="xmlDoc.LoadXml(&quot;&lt;ns0:procCommerceServerSetAddressErrors xmlns:ns0=\&quot;http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\&quot;&gt;&lt;ns0:CSGUID&gt;&lt;/ns0:CSGUID&gt;&lt;ns0:CompanyCode&gt;&lt;/ns0:CompanyCode&gt;&lt;ns0:LoadStatus&gt;&lt;/ns0:LoadStatus&gt;&lt;ns0:LoadError&gt;&lt;/ns0:LoadError&gt;&lt;ns0:ReturnLiteral&gt;&lt;/ns0:ReturnLiteral&gt;&lt;/ns0:procCommerceServerSetAddressErrors&gt;&quot;);&#xD;&#xA;addressSetError=xmlDoc;&#xD;&#xA;addressSetError.LoadError=strResponseText;&#xD;&#xA;addressSetError.LoadStatus= loadStatus + &quot; Failed&quot;;&#xD;&#xA;addressSetError.CompanyCode= companyCode;&#xD;&#xA;addressSetError.CSGUID= addressID;&#xD;&#xA;" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_2" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="f8d4fda8-8b31-4765-b483-c919949582f5" ParentLink="ComplexStatement_Statement" LowerBound="235.1" HigherBound="237.1">
+                                        <om:Property Name="PortName" Value="SetErrorPort" />
+                                        <om:Property Name="MessageName" Value="addressSetError" />
+                                        <om:Property Name="OperationName" Value="setErrorSql" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_errorResponse" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="a3f3d27a-844b-4514-9b6c-26b328705206" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="a1f79494-2482-4a89-adf0-0c5806a0f179" ParentLink="ReallyComplexStatement_Branch" LowerBound="239.26" HigherBound="304.1">
+                            <om:Property Name="Expression" Value="addressDetailsNGR.LoadStatus==&quot;Updated&quot;" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Updated" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="1e783548-a716-4f17-8868-f77ef49ed9b3" ParentLink="ComplexStatement_Statement" LowerBound="241.1" HigherBound="250.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_AddressUpdate" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="201a3cb2-094a-45b9-83ad-55461701a8cf" ParentLink="Construct_MessageRef" LowerBound="242.35" HigherBound="242.52">
+                                    <om:Property Name="Ref" Value="addressUpdate_Req" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Transform" OID="0a1771d0-3c9d-41c2-9ff2-1e85daadb30f" ParentLink="ComplexStatement_Statement" LowerBound="244.1" HigherBound="246.1">
+                                    <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ERPAccounts.Maps.Accounts_To_AccountsUpdate" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Accounts_To_AccountsUpdate" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="MessagePartRef" OID="3423eb3f-980d-4413-b9f8-b0bf60505f04" ParentLink="Transform_OutputMessagePartRef" LowerBound="245.40" HigherBound="245.68">
+                                        <om:Property Name="MessageRef" Value="addressUpdate_Req" />
+                                        <om:Property Name="PartRef" Value="parameters" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_4" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="688e6575-1842-4278-949d-af636ba31d01" ParentLink="Transform_InputMessagePartRef" LowerBound="245.135" HigherBound="245.151">
+                                        <om:Property Name="MessageRef" Value="addressDetailsCS" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_3" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="38f2af5b-92f3-43e9-a149-d90ef532a11d" ParentLink="ComplexStatement_Statement" LowerBound="246.1" HigherBound="249.1">
+                                    <om:Property Name="Expression" Value="addressUpdate_Req.parameters.profileKey= addressID;&#xD;&#xA;addressUpdate_Req.parameters.profileObjectName=&quot;Address&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="Assign Properties" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Decision" OID="35dcfcea-5488-4722-94a8-543b8210a0a5" ParentLink="ComplexStatement_Statement" LowerBound="250.1" HigherBound="263.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Archive_Out" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="ffcc29cc-0ffb-4bfa-833a-bb495b6342f9" ParentLink="ReallyComplexStatement_Branch" LowerBound="251.25" HigherBound="263.1">
+                                    <om:Property Name="Expression" Value="isArchive" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="YES" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Construct" OID="3ab5699f-06ec-4413-b624-10cf0080d464" ParentLink="ComplexStatement_Statement" LowerBound="253.1" HigherBound="260.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Construct_archiveOut" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageRef" OID="62ec625c-98da-4898-8f85-4170dc5daba1" ParentLink="Construct_MessageRef" LowerBound="254.39" HigherBound="254.59">
+                                            <om:Property Name="Ref" Value="addressUpdateArchive" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageAssignment" OID="83a3e880-850c-4ebf-acaf-99eec55bb9f3" ParentLink="ComplexStatement_Statement" LowerBound="256.1" HigherBound="259.1">
+                                            <om:Property Name="Expression" Value="addressUpdateArchive=addressUpdate_Req;&#xD;&#xA;addressUpdateArchive(FILE.ReceivedFileName)=&quot;AddressWCF_Request_&quot;+addressID.ToString();" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="cf4538c3-c804-4a1f-ae6f-b4937b0be2c3" ParentLink="ComplexStatement_Statement" LowerBound="260.1" HigherBound="262.1">
+                                        <om:Property Name="PortName" Value="archiveAddressUpdatePort" />
+                                        <om:Property Name="MessageName" Value="addressUpdateArchive" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_Archive" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="bad047fd-bf02-4b64-9d8b-8dc1d8cfd5d7" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="b0c2c52a-9de2-4fd3-ba79-9f7a43bffa2f" ParentLink="ComplexStatement_Statement" LowerBound="263.1" HigherBound="265.1">
+                                <om:Property Name="PortName" Value="SendAddressUpdatePort" />
+                                <om:Property Name="MessageName" Value="addressUpdate_Req" />
+                                <om:Property Name="OperationName" Value="UpdatePartialProfile" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_addressUpdate" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Receive" OID="4b398473-73e7-4e3b-9dea-0dcac8d07be3" ParentLink="ComplexStatement_Statement" LowerBound="265.1" HigherBound="267.1">
+                                <om:Property Name="Activate" Value="False" />
+                                <om:Property Name="PortName" Value="SendAddressUpdatePort" />
+                                <om:Property Name="MessageName" Value="addresssUpdate_Resp" />
+                                <om:Property Name="OperationName" Value="UpdatePartialProfile" />
+                                <om:Property Name="OperationMessageName" Value="Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Rcv_Send_addressUpdate" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="43d81897-e097-425f-b6ba-13f6d19fc669" ParentLink="ComplexStatement_Statement" LowerBound="267.1" HigherBound="280.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Archive_Response" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="21155734-f812-4283-a998-1f0c4ab53635" ParentLink="ReallyComplexStatement_Branch" LowerBound="268.25" HigherBound="280.1">
+                                    <om:Property Name="Expression" Value="isArchive" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="YES" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Construct" OID="765a464d-17a4-4010-8bbd-2ed9fc343c75" ParentLink="ComplexStatement_Statement" LowerBound="270.1" HigherBound="277.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Construct_WCFResponse" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageRef" OID="a5580142-dd3a-4231-9c01-4e45ddd879d7" ParentLink="Construct_MessageRef" LowerBound="271.39" HigherBound="271.63">
+                                            <om:Property Name="Ref" Value="addressUpdateRespArchive" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageAssignment" OID="aa3e831b-eeff-44c9-8245-fbf4b16b5180" ParentLink="ComplexStatement_Statement" LowerBound="273.1" HigherBound="276.1">
+                                            <om:Property Name="Expression" Value="addressUpdateRespArchive=addresssUpdate_Resp;&#xD;&#xA;addressUpdateRespArchive(FILE.ReceivedFileName)=&quot;AddressWCF_Response_&quot;+addressID.ToString();" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="Assign_FileName" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="ed02867c-6551-4d7e-a03f-f89dd6899925" ParentLink="ComplexStatement_Statement" LowerBound="277.1" HigherBound="279.1">
+                                        <om:Property Name="PortName" Value="archiveWCFResponsePort" />
+                                        <om:Property Name="MessageName" Value="addressUpdateRespArchive" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_archiveResponse" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="8729f297-6f73-4f48-8223-b61a278e8457" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="6a76089e-43cb-4c35-88af-d022f6e34aa4" ParentLink="ComplexStatement_Statement" LowerBound="280.1" HigherBound="282.1">
+                                <om:Property Name="Expression" Value="strResponseText=(xpath(addresssUpdate_Resp.parameters,&quot;string(/*[local-name()='UpdatePartialProfileResponse' and namespace-uri()='http://tempuri.org/']/*[local-name()='UpdatePartialProfileResult' and namespace-uri()='http://tempuri.org/'])&quot;));" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Get InvalidResponse Count " />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="d5a22fe4-a5ed-47a8-a49a-3b24daaad215" ParentLink="ComplexStatement_Statement" LowerBound="282.1" HigherBound="303.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Decide_RespType" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="706aec95-c5b9-4c18-adf3-371383a96b20" ParentLink="ReallyComplexStatement_Branch" LowerBound="283.25" HigherBound="303.1">
+                                    <om:Property Name="Expression" Value="strResponseText.Contains(&quot;Failed&quot;)" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ERROR " />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="VariableAssignment" OID="bb5b2028-4550-40a1-85e7-f7bed09d133d" ParentLink="ComplexStatement_Statement" LowerBound="285.1" HigherBound="289.1">
+                                        <om:Property Name="Expression" Value="strResponseText=(xpath(addresssUpdate_Resp.parameters,&quot;string(/*[local-name()='UpdatePartialProfileResponse' and namespace-uri()='http://tempuri.org/']/*[local-name()='UpdatePartialProfileResult' and namespace-uri()='http://tempuri.org/'])&quot;));&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Get error response" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="Construct" OID="1c4d3162-73da-4885-9249-f192f773f252" ParentLink="ComplexStatement_Statement" LowerBound="289.1" HigherBound="300.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Construct_addressError" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageRef" OID="e8b8c9ac-6f52-46d1-8655-ae3ae3581ec7" ParentLink="Construct_MessageRef" LowerBound="290.39" HigherBound="290.54">
+                                            <om:Property Name="Ref" Value="addressSetError" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageAssignment" OID="80bba7e1-094c-41db-8878-34ec70620df1" ParentLink="ComplexStatement_Statement" LowerBound="292.1" HigherBound="299.1">
+                                            <om:Property Name="Expression" Value="xmlDoc.LoadXml(&quot;&lt;ns0:procCommerceServerSetAddressErrors xmlns:ns0=\&quot;http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\&quot;&gt;&lt;ns0:CSGUID&gt;&lt;/ns0:CSGUID&gt;&lt;ns0:CompanyCode&gt;&lt;/ns0:CompanyCode&gt;&lt;ns0:LoadStatus&gt;&lt;/ns0:LoadStatus&gt;&lt;ns0:LoadError&gt;&lt;/ns0:LoadError&gt;&lt;ns0:ReturnLiteral&gt;&lt;/ns0:ReturnLiteral&gt;&lt;/ns0:procCommerceServerSetAddressErrors&gt;&quot;);&#xD;&#xA;addressSetError=xmlDoc;&#xD;&#xA;addressSetError.LoadError=strResponseText;&#xD;&#xA;addressSetError.LoadStatus= loadStatus + &quot; Failed&quot;;&#xD;&#xA;addressSetError.CompanyCode= companyCode;&#xD;&#xA;addressSetError.CSGUID= addressID;&#xD;&#xA;" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_2" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="ef4e4a9f-3fd1-4d13-99d6-9e884b0f9886" ParentLink="ComplexStatement_Statement" LowerBound="300.1" HigherBound="302.1">
+                                        <om:Property Name="PortName" Value="SetErrorPort" />
+                                        <om:Property Name="MessageName" Value="addressSetError" />
+                                        <om:Property Name="OperationName" Value="setErrorSql" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_ErrorResponse" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="3df7bc6f-07ff-4be1-a7d8-23e06f652e94" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="195d7fed-8a3f-46f8-b079-8e71202a9972" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="f2566a2f-99ab-4010-9945-678e100161e7" ParentLink="Scope_Catch" LowerBound="307.1" HigherBound="341.1">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Catch overall exception" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="483e4656-51db-4c17-a60b-c156498a40a3" ParentLink="Catch_Statement" LowerBound="310.1" HigherBound="321.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_addressError" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="08d0fc4f-3337-47fa-854a-1db622cc05cf" ParentLink="Construct_MessageRef" LowerBound="311.35" HigherBound="311.50">
+                                <om:Property Name="Ref" Value="addressSetError" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="9ee01919-9ded-4ce3-91ec-0bf779867710" ParentLink="ComplexStatement_Statement" LowerBound="313.1" HigherBound="320.1">
+                                <om:Property Name="Expression" Value="xmlDoc.LoadXml(&quot;&lt;ns0:procCommerceServerSetAddressErrors xmlns:ns0=\&quot;http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\&quot;&gt;&lt;ns0:CSGUID&gt;&lt;/ns0:CSGUID&gt;&lt;ns0:CompanyCode&gt;&lt;/ns0:CompanyCode&gt;&lt;ns0:LoadStatus&gt;&lt;/ns0:LoadStatus&gt;&lt;ns0:LoadError&gt;&lt;/ns0:LoadError&gt;&lt;ns0:ReturnLiteral&gt;&lt;/ns0:ReturnLiteral&gt;&lt;/ns0:procCommerceServerSetAddressErrors&gt;&quot;);&#xD;&#xA;addressSetError=xmlDoc;&#xD;&#xA;addressSetError.LoadError=ex.Message.ToString();&#xD;&#xA;addressSetError.LoadStatus= loadStatus + &quot; Failed&quot;;&#xD;&#xA;addressSetError.CompanyCode= companyCode;&#xD;&#xA;addressSetError.CSGUID= addressID;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_2" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="82661b74-ac40-46e8-ba6d-fec3d2113ae0" ParentLink="Catch_Statement" LowerBound="321.1" HigherBound="323.1">
+                            <om:Property Name="PortName" Value="SetErrorPort" />
+                            <om:Property Name="MessageName" Value="addressSetError" />
+                            <om:Property Name="OperationName" Value="setErrorSql" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_SetError" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="6086ea4c-8ed9-4740-b579-659acffb953a" ParentLink="Catch_Statement" LowerBound="323.1" HigherBound="338.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_faultMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="1476ff98-9aeb-400c-a39b-ea88dcc1e83d" ParentLink="Construct_MessageRef" LowerBound="324.35" HigherBound="324.52">
+                                <om:Property Name="Ref" Value="faultMessageOuter" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="d3acaedb-9f53-409c-a5d7-1f1ac2b6a7d0" ParentLink="ComplexStatement_Statement" LowerBound="326.1" HigherBound="337.1">
+                                <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;faultMessageOuter= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;faultMessageOuter.FailureCategory=&quot;Commerce Server Exception&quot;;&#xD;&#xA;faultMessageOuter.FaultDescription=ex.Message;&#xD;&#xA;faultMessageOuter.FaultCode=&quot;5002&quot;;&#xD;&#xA;faultMessageOuter.FaultSeverity= severity;&#xD;&#xA;Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(faultMessageOuter,addressDetailsNGR);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_3" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="f20cfbd3-f8a1-4da2-8c47-a568df583119" ParentLink="Catch_Statement" LowerBound="338.1" HigherBound="340.1">
+                            <om:Property Name="PortName" Value="faultMessagePort" />
+                            <om:Property Name="MessageName" Value="faultMessageOuter" />
+                            <om:Property Name="OperationName" Value="Msgox" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_fault" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="2be75ae5-6d76-478f-afa6-53b534334133" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="81.1" HigherBound="84.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="True" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.ReceiveAddressPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveAddressPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="d3fd96ce-3b2e-4e72-abfd-7e5b30c0b548" ParentLink="PortDeclaration_CLRAttribute" LowerBound="81.1" HigherBound="82.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="91c9ce6d-032f-412c-84cf-b74330770313" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="84.1" HigherBound="86.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="30" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.SendAddressInsertPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendAddressInsertPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="38cf9011-5234-4f74-af02-3255c62e2979" ParentLink="PortDeclaration_CLRAttribute" LowerBound="84.1" HigherBound="85.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="a1bb3a82-bdca-4a09-8b13-5b33012e81fd" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="86.1" HigherBound="88.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="57" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.archiveInPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveInPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="b6208d12-6cdd-4d83-8d00-fd13c3856d01" ParentLink="PortDeclaration_CLRAttribute" LowerBound="86.1" HigherBound="87.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f9d11ed1-8d61-44a2-b601-0523a5100a76" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="88.1" HigherBound="90.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="90" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.archiveInsertRespPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveInsertRespPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="14036f45-805e-4c1d-9a35-2c77e69c5ad3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="88.1" HigherBound="89.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="59e58ffa-0bc8-49bb-b8d9-bd45a9fda367" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="90.1" HigherBound="92.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="92" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.archiveUpdateRespPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveUpdateRespPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="01a420b2-b9cd-4b7b-9429-ea74c967ccf2" ParentLink="PortDeclaration_CLRAttribute" LowerBound="90.1" HigherBound="91.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0b125c4b-ce42-4a53-98f0-b4a6505b522f" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="92.1" HigherBound="94.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="77" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.SetErrorPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SetErrorPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="c3c7f1d4-7a09-4704-af9d-a87ec3486563" ParentLink="PortDeclaration_CLRAttribute" LowerBound="92.1" HigherBound="93.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="3c5c91fc-32ae-4b90-8f5a-a16526553240" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="94.1" HigherBound="96.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="64" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.archiveOutPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveOutPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="a6be5304-9258-4fc5-8f7b-473898fc4653" ParentLink="PortDeclaration_CLRAttribute" LowerBound="94.1" HigherBound="95.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="da0772eb-f4a3-4026-a144-9da6cf6cc13d" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="96.1" HigherBound="98.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="104" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.faultMessagePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="faultMessagePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="289acb2c-1d42-4aed-8684-ac8f6827d7d4" ParentLink="PortDeclaration_CLRAttribute" LowerBound="96.1" HigherBound="97.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="1e08eb8f-c7f1-4443-920d-622171b9e712" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="98.1" HigherBound="100.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="40" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.archiveAddressUpdatePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveAddressUpdatePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="c627be3b-5bd8-433f-8013-d96f2f17f754" ParentLink="PortDeclaration_CLRAttribute" LowerBound="98.1" HigherBound="99.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="8ef77532-659f-40c3-87e5-039e6c18ae2a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="100.1" HigherBound="102.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="46" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.IIProfile" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendAddressUpdatePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="05a63e69-cee6-459d-9a4b-5162bc85983b" ParentLink="PortDeclaration_CLRAttribute" LowerBound="100.1" HigherBound="101.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="3e466f35-543e-4b64-874d-42ce2944396d" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="102.1" HigherBound="104.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="61" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.archiveWCFResponsePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveWCFResponsePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="93304f0c-c0aa-43e6-9112-e0bd20c75276" ParentLink="PortDeclaration_CLRAttribute" LowerBound="102.1" HigherBound="103.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.ERPAccounts.Orchestration
+{
+    internal porttype ReceiveAddressPortType
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.ERPAccounts.Schemas.ProcedureResultSet_dbo_procCommerceServerGetAddresses.StoredProcedureResultSet0
+        };
+    };
+    internal porttype faultMessagePortType
+    {
+        oneway Msgox
+        {
+            Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage
+        };
+    };
+    internal porttype SetErrorPortType
+    {
+        oneway setErrorSql
+        {
+            BTNextGen.Biztalk.ERPAccounts.Schemas.SetErrorAddress.procCommerceServerSetAddressErrors
+        };
+    };
+    internal porttype archiveInPortType
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.ERPAccounts.Schemas.ProcedureResultSet_dbo_procCommerceServerGetAddresses.StoredProcedureResultSet0
+        };
+    };
+    internal porttype archiveOutPortType
+    {
+        oneway Operation_1
+        {
+            BTNextGen.BizTalk.CS.Profiles.Schemas.BTProfile
+        };
+    };
+    internal porttype archiveInsertRespPortType
+    {
+        oneway Operation_1
+        {
+            BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesImportResponse
+        };
+    };
+    internal porttype archiveUpdateRespPortType
+    {
+        oneway Operation_1
+        {
+            BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesUpdateResponse
+        };
+    };
+    internal porttype SendNotificationPortType
+    {
+        oneway Operation_1
+        {
+            BTNextGen.BizTalk.Schemas.Common.UpdateBizTalkNotification.procBiztalkUpdateNotification
+        };
+    };
+    internal porttype archiveAddressUpdatePortType
+    {
+        oneway Operation_1
+        {
+            IIProfile_UpdatePartialProfile_InputMessage
+        };
+    };
+    internal porttype archiveWCFResponsePortType
+    {
+        oneway Operation_1
+        {
+            IIProfile_UpdatePartialProfile_OutputMessage
+        };
+    };
+    internal correlationtype CorrelationType_InterchangeID
+    {
+        BTS.InterchangeID
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction ImportERPAddress
+    {
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        [Microsoft.XLANGs.BaseTypes.OrderedDelivery()]
+        port implements ReceiveAddressPortType ReceiveAddressPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendAddressInsertPortType SendAddressInsertPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses archiveInPortType archiveInPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses archiveInsertRespPortType archiveInsertRespPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses archiveUpdateRespPortType archiveUpdateRespPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SetErrorPortType SetErrorPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses archiveOutPortType archiveOutPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses faultMessagePortType faultMessagePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses archiveAddressUpdatePortType archiveAddressUpdatePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses IIProfile SendAddressUpdatePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses archiveWCFResponsePortType archiveWCFResponsePort;
+        message IIProfile_UpdatePartialProfile_OutputMessage addressUpdateRespArchive;
+        message IIProfile_UpdatePartialProfile_OutputMessage addresssUpdate_Resp;
+        message IIProfile_UpdatePartialProfile_InputMessage addressUpdateArchive;
+        message IIProfile_UpdatePartialProfile_InputMessage addressUpdate_Req;
+        message BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesUpdateResponse archiveUpdateResp;
+        message BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesImportResponse archiveImportResp;
+        message BTNextGen.BizTalk.CS.Profiles.Schemas.BTProfile archiveOut;
+        message BTNextGen.Biztalk.ERPAccounts.Schemas.ProcedureResultSet_dbo_procCommerceServerGetAddresses.StoredProcedureResultSet0 archiveIn;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage faultMessageOuter;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage faultMessage;
+        message BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesUpdateResponse CSAddressUpdateResponse;
+        message BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesImportResponse CSAddressImportResponse;
+        message BTNextGen.Biztalk.ERPAccounts.Schemas.ProcedureResultSet_dbo_procCommerceServerGetAddresses.StoredProcedureResultSet0 addressDetailsNGR;
+        message BTNextGen.BizTalk.CS.Profiles.Schemas.BTProfile addressDetailsCS;
+        message BTNextGen.Biztalk.ERPAccounts.Schemas.GetAccounts.procCommerceServerGetAccounts accountsReq;
+        message BTNextGen.Biztalk.ERPAccounts.Schemas.SetErrorAddress.procCommerceServerSetAddressErrors addressSetError;
+        message BTNextGen.BizTalk.Schemas.Common.UpdateBizTalkNotification.procBiztalkUpdateNotification updateBiztalkNotification;
+        System.Int32 severity;
+        System.Xml.XmlDocument xmlDoc;
+        System.Boolean allAddressProcessed;
+        System.Xml.XmlDocument xmlDocAccounts;
+        System.String companyCode;
+        System.String addressID;
+        System.String loadStatus;
+        System.String strResponseText;
+        System.Int32 intInvalidResponseCount;
+        System.Boolean isArchive;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3835afbc-c90e-45b4-9be4-0a3b8ba70678")]
+            activate ((BTS.MessageType == "http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/procCommerceServerGetAddresses#StoredProcedureResultSet0") && (BTS.Operation == "InvokeImport"))receive (ReceiveAddressPort.Operation_1, addressDetailsNGR);
+            severity = 1;
+            xmlDoc = new System.Xml.XmlDocument();
+            allAddressProcessed = true;
+            xmlDocAccounts = new System.Xml.XmlDocument();
+            companyCode = "";
+            addressID = "";
+            loadStatus = "";
+            strResponseText = "";
+            isArchive = true;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8b70b649-5349-4c49-9ec0-24935bf2065f")]
+            scope longrunning transaction Transaction_2
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("fd1d3db5-83f8-4099-a3a0-2e3d6461efed")]
+                    companyCode=addressDetailsNGR.CompanyCode;
+                    loadStatus= addressDetailsNGR.LoadStatus;
+                    addressID= addressDetailsNGR.u_address_id;
+                    
+                    
+                    // RESET VARIABLE
+                    intInvalidResponseCount= 0;
+                    strResponseText= System.String.Empty;
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("6e11cdae-dbea-4117-b2ee-d49a76311192")]
+                    isArchive=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.ERPAccounts","addressArchive"));
+                    severity=System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.ERPAccounts","severity"));
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e904a2ca-315e-4474-ae97-1d392b992db9")]
+                    if (isArchive)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("632a8099-eec1-4b7c-be05-2e096ecfc453")]
+                        construct archiveIn
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("016146c8-48c9-4188-88c4-7dbef99d5da5")]
+                            archiveIn=addressDetailsNGR;
+                            archiveIn(FILE.ReceivedFileName)="addressdetailsERP_"+addressID;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f6509112-a861-4fec-bb69-496f281ded06")]
+                        send (archiveInPort.Operation_1, archiveIn);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3ed9eba4-5b3d-4243-95dd-6e28c2165c57")]
+                    construct addressDetailsCS
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("01e656c5-d4df-4d80-ac41-f0ad970510cc")]
+                        transform (addressDetailsCS) = BTNextGen.Biztalk.ERPAccounts.Maps.ERPAddress_CSAddress (addressDetailsNGR);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("345e58f4-dfcb-4e46-97d1-86812ba6baf4")]
+                    if (isArchive)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("453b2dbc-df53-4139-b575-b09b4b69cd43")]
+                        construct archiveOut
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("21742c77-f1ee-4f46-87f2-df4a63bbfd92")]
+                            archiveOut=addressDetailsCS;
+                            archiveOut(FILE.ReceivedFileName)="addressDetailsCS_"+addressID;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("03189892-c7a8-4b7f-b3a0-87964807e92f")]
+                        send (archiveOutPort.Operation_1, archiveOut);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("13e06e6c-67d8-457f-aa55-007ec8dc4ad2")]
+                    if (addressDetailsNGR.LoadStatus=="Inserted")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7d444ab8-4f7c-43a5-9b76-593a3af1c3a7")]
+                        send (SendAddressInsertPort.Operation_1, addressDetailsCS);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("a7ae7a4e-ebbf-4d6a-ac8d-3d06f792e444")]
+                        receive (SendAddressInsertPort.Operation_1, CSAddressImportResponse);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("fdb4042f-dbdf-470c-a972-d3f594533272")]
+                        if (isArchive)
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e866092b-5852-4166-b194-36623d404374")]
+                            construct archiveImportResp
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("690bbcb0-0105-4fab-9ae5-598e57e7f7f6")]
+                                archiveImportResp=CSAddressImportResponse;
+                                archiveImportResp(FILE.ReceivedFileName)="archiveImportResp_"+addressID;
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a3e39df1-3d4e-4cee-8619-5f0733663461")]
+                            send (archiveInsertRespPort.Operation_1, archiveImportResp);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d509dec6-0248-4d4c-b3c0-ee45c12a137f")]
+                        intInvalidResponseCount=System.Convert.ToInt32(xpath(CSAddressImportResponse,"count(/*[local-name()='CommerceServerProfilesImportResponse' and namespace-uri()='']/*[local-name()='InvalidProfileImportMessage' and namespace-uri()=''])"));
+                        
+                        
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("06f4ce4f-e95d-45e7-9d5d-ee38c05f7b68")]
+                        if (intInvalidResponseCount > 0)
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("df7f5ca1-89f3-4b4a-9e69-e29240198594")]
+                            strResponseText=xpath(CSAddressImportResponse ,"string(/*[local-name()='CommerceServerProfilesImportResponse' and namespace-uri()='']/*[local-name()='InvalidProfileImportMessage' and namespace-uri()=''])");
+                            
+                            
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f5343d01-f88b-4c00-8edc-39815d6469e6")]
+                            construct addressSetError
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e01001ed-1a29-45da-8b03-55acf3ac9cf0")]
+                                xmlDoc.LoadXml("<ns0:procCommerceServerSetAddressErrors xmlns:ns0=\"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\"><ns0:CSGUID></ns0:CSGUID><ns0:CompanyCode></ns0:CompanyCode><ns0:LoadStatus></ns0:LoadStatus><ns0:LoadError></ns0:LoadError><ns0:ReturnLiteral></ns0:ReturnLiteral></ns0:procCommerceServerSetAddressErrors>");
+                                addressSetError=xmlDoc;
+                                addressSetError.LoadError=strResponseText;
+                                addressSetError.LoadStatus= loadStatus + " Failed";
+                                addressSetError.CompanyCode= companyCode;
+                                addressSetError.CSGUID= addressID;
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f8d4fda8-8b31-4765-b483-c919949582f5")]
+                            send (SetErrorPort.setErrorSql, addressSetError);
+                        }
+                    }
+                    else if (addressDetailsNGR.LoadStatus=="Updated")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("1e783548-a716-4f17-8868-f77ef49ed9b3")]
+                        construct addressUpdate_Req
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0a1771d0-3c9d-41c2-9ff2-1e85daadb30f")]
+                            transform (addressUpdate_Req.parameters) = BTNextGen.Biztalk.ERPAccounts.Maps.Accounts_To_AccountsUpdate (addressDetailsCS);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("38f2af5b-92f3-43e9-a149-d90ef532a11d")]
+                            addressUpdate_Req.parameters.profileKey= addressID;
+                            addressUpdate_Req.parameters.profileObjectName="Address";
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("35dcfcea-5488-4722-94a8-543b8210a0a5")]
+                        if (isArchive)
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3ab5699f-06ec-4413-b624-10cf0080d464")]
+                            construct addressUpdateArchive
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("83a3e880-850c-4ebf-acaf-99eec55bb9f3")]
+                                addressUpdateArchive=addressUpdate_Req;
+                                addressUpdateArchive(FILE.ReceivedFileName)="AddressWCF_Request_"+addressID.ToString();
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("cf4538c3-c804-4a1f-ae6f-b4937b0be2c3")]
+                            send (archiveAddressUpdatePort.Operation_1, addressUpdateArchive);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b0c2c52a-9de2-4fd3-ba79-9f7a43bffa2f")]
+                        send (SendAddressUpdatePort.UpdatePartialProfile, addressUpdate_Req);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4b398473-73e7-4e3b-9dea-0dcac8d07be3")]
+                        receive (SendAddressUpdatePort.UpdatePartialProfile, addresssUpdate_Resp);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("43d81897-e097-425f-b6ba-13f6d19fc669")]
+                        if (isArchive)
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("765a464d-17a4-4010-8bbd-2ed9fc343c75")]
+                            construct addressUpdateRespArchive
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("aa3e831b-eeff-44c9-8245-fbf4b16b5180")]
+                                addressUpdateRespArchive=addresssUpdate_Resp;
+                                addressUpdateRespArchive(FILE.ReceivedFileName)="AddressWCF_Response_"+addressID.ToString();
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ed02867c-6551-4d7e-a03f-f89dd6899925")]
+                            send (archiveWCFResponsePort.Operation_1, addressUpdateRespArchive);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6a76089e-43cb-4c35-88af-d022f6e34aa4")]
+                        strResponseText=(xpath(addresssUpdate_Resp.parameters,"string(/*[local-name()='UpdatePartialProfileResponse' and namespace-uri()='http://tempuri.org/']/*[local-name()='UpdatePartialProfileResult' and namespace-uri()='http://tempuri.org/'])"));
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d5a22fe4-a5ed-47a8-a49a-3b24daaad215")]
+                        if (strResponseText.Contains("Failed"))
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("bb5b2028-4550-40a1-85e7-f7bed09d133d")]
+                            strResponseText=(xpath(addresssUpdate_Resp.parameters,"string(/*[local-name()='UpdatePartialProfileResponse' and namespace-uri()='http://tempuri.org/']/*[local-name()='UpdatePartialProfileResult' and namespace-uri()='http://tempuri.org/'])"));
+                            
+                            
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1c4d3162-73da-4885-9249-f192f773f252")]
+                            construct addressSetError
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("80bba7e1-094c-41db-8878-34ec70620df1")]
+                                xmlDoc.LoadXml("<ns0:procCommerceServerSetAddressErrors xmlns:ns0=\"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\"><ns0:CSGUID></ns0:CSGUID><ns0:CompanyCode></ns0:CompanyCode><ns0:LoadStatus></ns0:LoadStatus><ns0:LoadError></ns0:LoadError><ns0:ReturnLiteral></ns0:ReturnLiteral></ns0:procCommerceServerSetAddressErrors>");
+                                addressSetError=xmlDoc;
+                                addressSetError.LoadError=strResponseText;
+                                addressSetError.LoadStatus= loadStatus + " Failed";
+                                addressSetError.CompanyCode= companyCode;
+                                addressSetError.CSGUID= addressID;
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ef4e4a9f-3fd1-4d13-99d6-9e884b0f9886")]
+                            send (SetErrorPort.setErrorSql, addressSetError);
+                        }
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f2566a2f-99ab-4010-9945-678e100161e7")]
+                    catch (System.Exception ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("483e4656-51db-4c17-a60b-c156498a40a3")]
+                        construct addressSetError
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9ee01919-9ded-4ce3-91ec-0bf779867710")]
+                            xmlDoc.LoadXml("<ns0:procCommerceServerSetAddressErrors xmlns:ns0=\"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo\"><ns0:CSGUID></ns0:CSGUID><ns0:CompanyCode></ns0:CompanyCode><ns0:LoadStatus></ns0:LoadStatus><ns0:LoadError></ns0:LoadError><ns0:ReturnLiteral></ns0:ReturnLiteral></ns0:procCommerceServerSetAddressErrors>");
+                            addressSetError=xmlDoc;
+                            addressSetError.LoadError=ex.Message.ToString();
+                            addressSetError.LoadStatus= loadStatus + " Failed";
+                            addressSetError.CompanyCode= companyCode;
+                            addressSetError.CSGUID= addressID;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("82661b74-ac40-46e8-ba6d-fec3d2113ae0")]
+                        send (SetErrorPort.setErrorSql, addressSetError);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6086ea4c-8ed9-4740-b579-659acffb953a")]
+                        construct faultMessageOuter
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d3acaedb-9f53-409c-a5d7-1f1ac2b6a7d0")]
+                            // Create fault exception Message
+                            faultMessageOuter= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            // Assign Properties
+                            
+                            faultMessageOuter.FailureCategory="Commerce Server Exception";
+                            faultMessageOuter.FaultDescription=ex.Message;
+                            faultMessageOuter.FaultCode="5002";
+                            faultMessageOuter.FaultSeverity= severity;
+                            Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(faultMessageOuter,addressDetailsNGR);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f20cfbd3-f8a1-4da2-8c47-a568df583119")]
+                        send (faultMessagePort.Msgox, faultMessageOuter);
+                    }
+                }
+            }
+        }
+    }
+}
+

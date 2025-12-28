@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\OrdersService_schemas_datacontract_org_2004_07_BTNextGen_Services_Orders.xsd" namespace="http://schemas.datacontract.org/2004/07/BTNextGen.Services.Orders" />
+  <xs:element name="CreateLegacyBasket">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BTNextGen.Services.Orders" minOccurs="0" name="basketList" nillable="true" type="q1:BasketDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateLegacyBasketResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BTNextGen.Services.Orders" minOccurs="0" name="CreateLegacyBasketResult" nillable="true" type="q2:BasketDetailsResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateLegacyBaskets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BTNextGen.Services.Orders" minOccurs="0" name="basketList" nillable="true" type="q3:BasketDetailsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateLegacyBasketsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BTNextGen.Services.Orders" minOccurs="0" name="CreateLegacyBasketsResult" nillable="true" type="q4:BasketDetailsResponseCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

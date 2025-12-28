@@ -1,0 +1,1 @@
+﻿CREATE VIEW dbo.[bam_ExpiredCreditCards_CompletedInstances] AS  SELECT * FROM dbo.[bam_ExpiredCreditCards_Completed] WITH (NOLOCK)

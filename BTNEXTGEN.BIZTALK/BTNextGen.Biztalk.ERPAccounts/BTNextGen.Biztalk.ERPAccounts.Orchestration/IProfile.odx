@@ -1,0 +1,178 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="7e906e30-ad71-4636-8717-04d654c86a0d" LowerBound="1.1" HigherBound="39.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="8f95d2b8-e2c7-4a86-a3f9-b5fb8542303e" ParentLink="Module_PortType" LowerBound="20.1" HigherBound="31.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IIProfile&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="23623367-2898-4e11-85c7-101b0af786a2" ParentLink="PortType_OperationDeclaration" LowerBound="22.1" HigherBound="26.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;UpdatePartialProfile&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="UpdatePartialProfile" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="f8948c36-3558-4577-a842-786ddb749a33" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="24.13" HigherBound="24.56">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.IIProfile_UpdatePartialProfile_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IIProfile_UpdatePartialProfile_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IIProfile/UpdatePartialProfile&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="ffa35a84-e588-4212-8d7a-c85a42ac92ed" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="24.58" HigherBound="24.102">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.IIProfile_UpdatePartialProfile_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IIProfile_UpdatePartialProfile_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IIProfile/UpdatePartialProfileResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="a38616cd-313e-4cfa-9285-930aa3d331cd" ParentLink="PortType_OperationDeclaration" LowerBound="26.1" HigherBound="30.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;GetOrgIDFromBillTo&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="GetOrgIDFromBillTo" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="bb6fe256-3288-46cd-aca4-008292bbc1c6" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="28.13" HigherBound="28.54">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.IIProfile_GetOrgIDFromBillTo_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IIProfile_GetOrgIDFromBillTo_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IIProfile/GetOrgIDFromBillTo&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="c5dd6053-a897-4cd6-b564-a0787e6961b7" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="28.56" HigherBound="28.98">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.IIProfile_GetOrgIDFromBillTo_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IIProfile_GetOrgIDFromBillTo_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IIProfile/GetOrgIDFromBillToResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="681011e4-d6ec-4670-8256-7bd4174527eb" ParentLink="OperationDeclaration_FaultMessageRef" LowerBound="28.100" HigherBound="28.126">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ERPAccounts.Orchestration.wcfFaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="FaultMsg" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="22d98ce3-d8d8-412c-b747-0932d8782220" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IIProfile_UpdatePartialProfile_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile_UpdatePartialProfile_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="4ef7570c-22d9-4b95-8e87-4aa909e4c893" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.IProfile_tempuri_org.UpdatePartialProfile" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="083d5158-ca96-4de1-aa7f-96a8e7580e00" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IIProfile_UpdatePartialProfile_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile_UpdatePartialProfile_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="d3554497-00f5-4ac7-93e0-f3d8f850a0e5" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.IProfile_tempuri_org.UpdatePartialProfileResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="4bf1524b-d4f6-47e7-ac83-0d1a96499496" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IIProfile_GetOrgIDFromBillTo_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile_GetOrgIDFromBillTo_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="aac34c31-0e79-467c-96f9-3fad8d63c466" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ERPAccounts.Schemas.IProfile_getOrgId.GetOrgIDFromBillTo" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="4c7d3fac-dc43-4dc7-9a42-189931a9dbae" ParentLink="Module_MessageType" LowerBound="16.1" HigherBound="20.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IIProfile_GetOrgIDFromBillTo_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IIProfile_GetOrgIDFromBillTo_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="3af37e90-20bb-40c1-acfb-3c14b5e64cd7" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ERPAccounts.Schemas.IProfile_getOrgId.GetOrgIDFromBillToResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="b18cdb2e-f68f-4686-ab6a-f2a5c4e653c5" ParentLink="Module_ServiceDeclaration" LowerBound="31.1" HigherBound="38.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;IProfile&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IProfileClient" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="ServiceBody" OID="4df10999-8618-4a2f-90f4-61e551abefc8" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.ERPAccounts.Orchestration
+{
+    internal messagetype IIProfile_UpdatePartialProfile_InputMessage
+    {
+        body BTNextGen.BizTalk.CS.Profiles.Schemas.IProfile_tempuri_org.UpdatePartialProfile parameters;
+    };
+    internal messagetype IIProfile_UpdatePartialProfile_OutputMessage
+    {
+        body BTNextGen.BizTalk.CS.Profiles.Schemas.IProfile_tempuri_org.UpdatePartialProfileResponse parameters;
+    };
+    internal messagetype IIProfile_GetOrgIDFromBillTo_InputMessage
+    {
+        body BTNextGen.Biztalk.ERPAccounts.Schemas.IProfile_getOrgId.GetOrgIDFromBillTo parameters;
+    };
+    internal messagetype IIProfile_GetOrgIDFromBillTo_OutputMessage
+    {
+        body BTNextGen.Biztalk.ERPAccounts.Schemas.IProfile_getOrgId.GetOrgIDFromBillToResponse parameters;
+    };
+    internal porttype IIProfile
+    {
+        requestresponse UpdatePartialProfile
+        {
+            IIProfile_UpdatePartialProfile_InputMessage, IIProfile_UpdatePartialProfile_OutputMessage
+        };
+        requestresponse GetOrgIDFromBillTo
+        {
+            IIProfile_GetOrgIDFromBillTo_InputMessage, IIProfile_GetOrgIDFromBillTo_OutputMessage, FaultMsg = wcfFaultMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service IProfileClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

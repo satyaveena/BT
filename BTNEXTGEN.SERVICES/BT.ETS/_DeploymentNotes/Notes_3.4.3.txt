@@ -1,0 +1,18 @@
+Web.config: please fill approriate values depend on environment.
+
+    <add key="ProductCatalog_ConnectionString" value="Persist Security Info=True;Initial Catalog=ProductCatalog;Password=P@ssword123;User ID=tdo;Data Source=BTDevSQL05\RepositoryLD1;Connect Timeout=3000" />
+    <add key="Orders_ConnectionString" value="Persist Security Info=True;Initial Catalog=Orders;Password=P@ssword123;User ID=tdo;Data Source=BTDevSQL05\RepositoryLD1;Connect Timeout=3000" />
+    <add key="Logs_ConnectionString" value="Persist Security Info=True;Initial Catalog=ExceptionLogging;Password=P@ssword123;User ID=tdo;Data Source=BTDevSQL05\RepositoryLD1" />
+    <add key="Profiles_ConnectionString" value="Persist Security Info=True;Initial Catalog=NextGen_Profiles;Password=P@ssword123;User ID=tdo;Data Source=BTDevSQL05\RepositoryLD1;Connect Timeout=3000" />
+    <add key="SqlCommandTimeOut" value="30" />
+    <add key="AppSearchServiceURL" value="http://localhost:7500/appservice/searchservice" />
+    <add key="NoSqlApiUrl" value="http://localhost:45149" />
+    <add key="WebRequestTimeOutInSec" value="120" />
+
+	<machineKey validationKey="0BB205DE75241B7FA4EB916FF76C03E6EAC9E36442F1DF18" decryptionKey="6AAF8E2560F686D427486611378E83B44681BB0A27B070C3" validation="SHA1" /> 
+
+	<connectionStrings>
+		<!-- Change this connection string to appropriate value when deployment -->
+		<add name="ElmahErrorLog" connectionString="Persist Security Info=True;Initial Catalog=ExceptionLogging;Password=P@ssword123;User ID=tdo;Data Source=BTDevSQL05\RepositoryLD1;Connect Timeout=300" providerName="System.Data.SqlClient" />
+	</connectionStrings>
+	<errorLog type="Elmah.SqlErrorLog, Elmah" connectionStringName="ElmahErrorLog" applicationName="Local-ETS-API" />

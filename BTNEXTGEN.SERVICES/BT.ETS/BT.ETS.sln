@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.ETS.API", "BT.ETS.API\BT.ETS.API.csproj", "{010C2610-1E62-4E22-8A5C-868A50A542D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{17045B61-B3B9-4B47-816A-F1CD14363F62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.ETS.Business", "BT.ETS.Business\BT.ETS.Business.csproj", "{35048C24-5E6A-434F-BEE0-742D8A9B077E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.ETS.WinService", "BT.ETS.WinService\BT.ETS.WinService.csproj", "{DA7ABAFA-D80B-4107-9D59-8CAD40E7F3BD}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/baker-taylorts360
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BT.ETS.API\\BT.ETS.API.csproj
+		SccProjectTopLevelParentUniqueName1 = BT.ETS.sln
+		SccProjectName1 = BT.ETS.API
+		SccLocalPath1 = BT.ETS.API
+		SccProjectUniqueName2 = BT.ETS.Business\\BT.ETS.Business.csproj
+		SccProjectTopLevelParentUniqueName2 = BT.ETS.sln
+		SccProjectName2 = BT.ETS.Business
+		SccLocalPath2 = BT.ETS.Business
+		SccProjectUniqueName3 = BT.ETS.WinService\\BT.ETS.WinService.csproj
+		SccProjectTopLevelParentUniqueName3 = BT.ETS.sln
+		SccProjectName3 = BT.ETS.WinService
+		SccLocalPath3 = BT.ETS.WinService
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{010C2610-1E62-4E22-8A5C-868A50A542D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010C2610-1E62-4E22-8A5C-868A50A542D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{010C2610-1E62-4E22-8A5C-868A50A542D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010C2610-1E62-4E22-8A5C-868A50A542D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35048C24-5E6A-434F-BEE0-742D8A9B077E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35048C24-5E6A-434F-BEE0-742D8A9B077E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35048C24-5E6A-434F-BEE0-742D8A9B077E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35048C24-5E6A-434F-BEE0-742D8A9B077E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA7ABAFA-D80B-4107-9D59-8CAD40E7F3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7ABAFA-D80B-4107-9D59-8CAD40E7F3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7ABAFA-D80B-4107-9D59-8CAD40E7F3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7ABAFA-D80B-4107-9D59-8CAD40E7F3BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{010C2610-1E62-4E22-8A5C-868A50A542D3} = {17045B61-B3B9-4B47-816A-F1CD14363F62}
+		{35048C24-5E6A-434F-BEE0-742D8A9B077E} = {17045B61-B3B9-4B47-816A-F1CD14363F62}
+		{DA7ABAFA-D80B-4107-9D59-8CAD40E7F3BD} = {17045B61-B3B9-4B47-816A-F1CD14363F62}
+	EndGlobalSection
+EndGlobal

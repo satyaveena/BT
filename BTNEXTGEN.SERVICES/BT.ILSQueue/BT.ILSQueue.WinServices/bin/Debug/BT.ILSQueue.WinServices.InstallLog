@@ -1,0 +1,97 @@
+﻿Installing assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+Rolling back assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+An exception occurred during the Rollback phase of the System.ServiceProcess.ServiceProcessInstaller installer.
+System.NullReferenceException: Object reference not set to an instance of an object.
+An exception occurred during the Rollback phase of the installation. This exception will be ignored and the rollback will continue. However, the machine might not fully revert to its initial state after the rollback is complete.
+Installing assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+Installing service Service1...
+Service Service1 has been successfully installed.
+Creating EventLog source Service1 in log Application...
+Installing service TS360 ILS Queue Service...
+Service TS360 ILS Queue Service has been successfully installed.
+Creating EventLog source TS360 ILS Queue Service in log Application...
+Committing assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+Uninstalling assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+An exception occurred during the uninstallation of the BT.ILSQueue.WinServices.ILSQueueServiceInstaller installer.
+System.ArgumentException: The savedState dictionary contains inconsistent data and might have been corrupted.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Uninstalling assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+An exception occurred during the uninstallation of the BT.ILSQueue.WinServices.ILSQueueServiceInstaller installer.
+System.ArgumentException: The savedState dictionary contains inconsistent data and might have been corrupted.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+Installing service TS360 ILS Queue Service...
+Creating EventLog source TS360 ILS Queue Service in log Application...
+Rolling back assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+Restoring event log to previous state for source TS360 ILS Queue Service.
+Installing assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+Installing service TS360 ILS Queue Service...
+Creating EventLog source TS360 ILS Queue Service in log Application...
+Rolling back assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+Restoring event log to previous state for source TS360 ILS Queue Service.
+Installing assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+Installing service TS360 ILS Queue Service...
+Creating EventLog source TS360 ILS Queue Service in log Application...
+Rolling back assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+Restoring event log to previous state for source TS360 ILS Queue Service.
+Installing assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog
+Installing service TS360 ILS Queue Service...
+Service TS360 ILS Queue Service has been successfully installed.
+Creating EventLog source TS360 ILS Queue Service in log Application...
+Committing assembly 'C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.exe
+   logfile = C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.WinServices\bin\Debug\BT.ILSQueue.WinServices.InstallLog

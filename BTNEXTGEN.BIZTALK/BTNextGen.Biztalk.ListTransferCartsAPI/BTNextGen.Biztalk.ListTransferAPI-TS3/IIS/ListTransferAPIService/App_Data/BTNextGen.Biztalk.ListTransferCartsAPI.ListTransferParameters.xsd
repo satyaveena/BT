@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xs:schema xmlns="http://BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ListTransferParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="UserPassword" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="UserEmail" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="UserEmailCC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="CartName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="CartGroup" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="CartNote" nillable="true" type="xs:string" />
+        <xs:element maxOccurs="unbounded" name="Items">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemID" type="xs:string" />
+              <xs:element name="Quantity" type="xs:string" />
+              <xs:element name="PurchaseOrderLineText" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

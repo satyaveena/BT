@@ -1,0 +1,17 @@
+ccAuthService=True
+ccCaptureService=True
+ccAuthReversalService=True
+ccCreditService=True
+merchantID=BakerandTaylor
+merchantReferenceCode=ETPHONEHOMETODAYK?
+subscriptionID={c74d9f41-8925-4a95-a7e3-91ffbf42f083}
+requestID=0305782650000167905080
+requestToken=AA4JUrWguaLLQxMUGwxSWVdPS1BIRk5IMUwA2yCv
+item_0_unitprice=714.95
+item_0_quantity=1
+item_0_taxamount=2.00
+purchaseTotals_currency=USD
+invoiceHeader_userPO=MYUSERPONUMBER
+invoiceHeader_amexDataTAA1=BT_L0507000047
+invoiceHeader_merchantDescriptor=BT*INVOICE=L0507000047
+invoiceHeader_merchantDescriptorContact=704.998.3399

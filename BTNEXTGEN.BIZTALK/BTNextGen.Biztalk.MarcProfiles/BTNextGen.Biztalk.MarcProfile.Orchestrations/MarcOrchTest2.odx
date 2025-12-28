@@ -1,0 +1,254 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="2fed8d05-0fc4-4c93-88ea-56b28fdb0a8b" LowerBound="1.1" HigherBound="67.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="6ea31732-5fcd-4f64-addb-7d824b777f54" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RcPrtMsgInMarcResponseTyp" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="60fae1d7-5b35-4aea-9640-83f2e04f5e48" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="05b48295-74c4-4da1-ab93-de046756a97f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.96">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTPResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="31ccf9ba-b58d-4e79-ae74-4a1207a48dd6" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SndPrtMsgOutMarcDataTyp" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="8dad60a5-ad6c-4270-889f-9fec04283943" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="a5465f30-a269-4fa5-900d-4b4db35350bd" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.62">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.FFMarcData" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="88dbf261-7111-467c-ad29-b5a2ffc72ff9" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="66.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="MarcOrchTest2" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="727e9242-0b08-4f4d-9cde-3ea82a0ba56e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ttScope1VarMarcSrg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0b1394c6-5b4d-4429-9fc9-30de5a3b94af" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlDoc" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="LongRunningTransaction" OID="ab783f89-caf6-41db-956e-fea4a3a3617a" ParentLink="ServiceDeclaration_Transaction" LowerBound="19.21" HigherBound="19.59">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="5c666f62-1768-414e-bc01-4d90102a2966" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTPResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgInMarcResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3f1aa65c-a282-4f75-bee1-490bd4ea1dc7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ttMessageMarcRespXML" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="afa73e3a-cdab-45fc-accd-b5782bbdb434" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.FFMarcData" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgOutMarcData" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="6403b590-a7b2-41d3-9cff-0872f76737fd" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Scope" OID="b05955e8-e9b8-4968-af31-d8e347ebf978" ParentLink="ServiceBody_Statement" LowerBound="32.1" HigherBound="64.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="LongRunningTransaction" OID="0a6e353c-b12f-426d-9ffe-b8ea66b689b5" ParentLink="Scope_Transaction" LowerBound="33.18" HigherBound="33.56">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transaction_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="aa5cb7ae-fa3e-45b7-a23c-8d9614532a89" ParentLink="ComplexStatement_Statement" LowerBound="37.1" HigherBound="41.1">
+                        <om:Property Name="Activate" Value="True" />
+                        <om:Property Name="PortName" Value="RcPrtMsgInMarcResponse" />
+                        <om:Property Name="MessageName" Value="MsgInMarcResponse" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="7616c4b8-d550-4bac-ae2f-67635545e34e" ParentLink="ComplexStatement_Statement" LowerBound="41.1" HigherBound="53.1">
+                        <om:Property Name="Expression" Value="ttMessageMarcRespXML = MsgInMarcResponse;&#xD;&#xA;xmlDoc.LoadXml(&quot;&lt;ns0:Marc xmlns:ns0='http://BTNextGen.Biztalk.MarcProfiles.Schemas.FFMarcData'&gt;&lt;MarcData&gt;MarcData_0&lt;/MarcData&gt;&lt;/ns0:Marc&gt;&quot;);&#xD;&#xA;&#xD;&#xA;//xmlDoc.LoadXml(&quot;&lt;ns0:MarcData xmlns:ns0='http://BTNextGen.Biztalk.MarcProfiles.Schemas.MarcFileSchema'&gt;&lt;/ns0:MarcData&gt;&quot;);&#xD;&#xA;//ttScope1VarMarcSrg = &quot;&lt;![CDATA[&quot;+ ttMessageMarcRespXML.FirstChild.InnerText.ToString()+&quot;]]&gt;&quot;;&#xD;&#xA;//ttScope1VarMarcSrg =  System.Net.WebUtility.HtmlDecode(ttScope1VarMarcSrg.ToString());&#xD;&#xA;&#xD;&#xA;//ttScope1VarMarcSrg= ttMessageMarcRespXML.FirstChild.InnerText.ToString(); &#xD;&#xA;//ttScope1VarMarcSrg = ttScope1VarMarcSrg.Replace(&quot;&amp;#x1E;&quot;,&quot;@@@@@@&quot;);&#xD;&#xA;//ttScope1VarMarcSrg = ttScope1VarMarcSrg.Replace(&quot;&amp;#x1F;&quot;,&quot;######&quot;);&#xD;&#xA;//ttScope1VarMarcSrg = ttScope1VarMarcSrg.Replace(&quot;&amp;#x1D;&quot;,&quot;$$$$$$&quot;);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Expression_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="88620dce-89c1-41be-8507-cea3b9ccd73e" ParentLink="ComplexStatement_Statement" LowerBound="53.1" HigherBound="60.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageAssignment" OID="324e743e-3632-4f3e-a3bb-6afaeb72fc1b" ParentLink="ComplexStatement_Statement" LowerBound="56.1" HigherBound="59.1">
+                            <om:Property Name="Expression" Value="MsgOutMarcData =xmlDoc;&#xD;&#xA;xpath(MsgOutMarcData, &quot;/*/MarcData&quot;) = ttScope1VarMarcSrg.ToString();" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="3136a6be-9b75-41e5-8ba1-00f21d3a7bfc" ParentLink="Construct_MessageRef" LowerBound="54.31" HigherBound="54.45">
+                            <om:Property Name="Ref" Value="MsgOutMarcData" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="96f3d543-97ca-4ff1-80c9-7e2a3700cf3c" ParentLink="ComplexStatement_Statement" LowerBound="60.1" HigherBound="62.1">
+                        <om:Property Name="PortName" Value="SndPrtMsgOutMarcData" />
+                        <om:Property Name="MessageName" Value="MsgOutMarcData" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="dc9ca621-f3f0-44f2-83f8-4f630743659d" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations.RcPrtMsgInMarcResponseTyp" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RcPrtMsgInMarcResponse" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="7436ef0e-9155-4a7f-a57d-919b6c19ebc6" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0ef00e88-0198-437f-bc29-9b7738647a37" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="13" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations.SndPrtMsgOutMarcDataTyp" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SndPrtMsgOutMarcData" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="29c47394-8606-4190-bf69-f43e330948df" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.MarcProfiles.Orchestrations
+{
+    internal porttype RcPrtMsgInMarcResponseTyp
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTPResponse
+        };
+    };
+    internal porttype SndPrtMsgOutMarcDataTyp
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.MarcProfiles.Schemas.FFMarcData
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction MarcOrchTest2
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements RcPrtMsgInMarcResponseTyp RcPrtMsgInMarcResponse;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SndPrtMsgOutMarcDataTyp SndPrtMsgOutMarcData;
+        message BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTPResponse MsgInMarcResponse;
+        message System.Xml.XmlDocument ttMessageMarcRespXML;
+        message BTNextGen.Biztalk.MarcProfiles.Schemas.FFMarcData MsgOutMarcData;
+        System.String ttScope1VarMarcSrg;
+        System.Xml.XmlDocument xmlDoc;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b05955e8-e9b8-4968-af31-d8e347ebf978")]
+            scope longrunning transaction Transaction_2
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("aa5cb7ae-fa3e-45b7-a23c-8d9614532a89")]
+                    activate receive (RcPrtMsgInMarcResponse.Operation_1, MsgInMarcResponse);
+                    ttScope1VarMarcSrg = "";
+                    xmlDoc = new System.Xml.XmlDocument();
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("7616c4b8-d550-4bac-ae2f-67635545e34e")]
+                    ttMessageMarcRespXML = MsgInMarcResponse;
+                    xmlDoc.LoadXml("<ns0:Marc xmlns:ns0='http://BTNextGen.Biztalk.MarcProfiles.Schemas.FFMarcData'><MarcData>MarcData_0</MarcData></ns0:Marc>");
+                    
+                    //xmlDoc.LoadXml("<ns0:MarcData xmlns:ns0='http://BTNextGen.Biztalk.MarcProfiles.Schemas.MarcFileSchema'></ns0:MarcData>");
+                    //ttScope1VarMarcSrg = "<![CDATA["+ ttMessageMarcRespXML.FirstChild.InnerText.ToString()+"]]>";
+                    //ttScope1VarMarcSrg =  System.Net.WebUtility.HtmlDecode(ttScope1VarMarcSrg.ToString());
+                    
+                    //ttScope1VarMarcSrg= ttMessageMarcRespXML.FirstChild.InnerText.ToString(); 
+                    //ttScope1VarMarcSrg = ttScope1VarMarcSrg.Replace("&#x1E;","@@@@@@");
+                    //ttScope1VarMarcSrg = ttScope1VarMarcSrg.Replace("&#x1F;","######");
+                    //ttScope1VarMarcSrg = ttScope1VarMarcSrg.Replace("&#x1D;","$$$$$$");
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("88620dce-89c1-41be-8507-cea3b9ccd73e")]
+                    construct MsgOutMarcData
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("324e743e-3632-4f3e-a3bb-6afaeb72fc1b")]
+                        MsgOutMarcData =xmlDoc;
+                        xpath(MsgOutMarcData, "/*/MarcData") = ttScope1VarMarcSrg.ToString();
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("96f3d543-97ca-4ff1-80c9-7e2a3700cf3c")]
+                    send (SndPrtMsgOutMarcData.Operation_1, MsgOutMarcData);
+                }
+            }
+        }
+    }
+}
+

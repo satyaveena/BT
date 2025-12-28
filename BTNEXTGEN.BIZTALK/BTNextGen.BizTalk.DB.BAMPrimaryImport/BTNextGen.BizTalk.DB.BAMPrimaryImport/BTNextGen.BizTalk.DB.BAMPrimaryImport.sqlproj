@@ -1,0 +1,776 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>BTNextGen.BizTalk.DB.BAMPrimaryImport</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{129b34d7-2e98-462c-9bef-905e42a53523}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>BTNextGen.BizTalk.DB.BAMPrimaryImport</RootNamespace>
+    <AssemblyName>BTNextGen.BizTalk.DB.BAMPrimaryImport</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>100</CompatibilityMode>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>LOCAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- Default to the v10.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\bam_Metadata_EventSource.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_InterceptorConfiguration.sql" />
+    <Build Include="dbo\Tables\bam_BusinessMessageJournal_Active.sql" />
+    <Build Include="dbo\Tables\bam_FunctionalGroupInfo_Completed.sql" />
+    <Build Include="dbo\Tables\bam_ERPOrders_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_FunctionalGroupInfo_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_ERPOrders_Completed.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_DatabaseVersion.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_Configuration.sql" />
+    <Build Include="dbo\Tables\bam_BusinessMessageJournal_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_FunctionalGroupInfo_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_Properties.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_ReferencedDatabases.sql" />
+    <Build Include="dbo\Tables\bam_ERPOrders_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_Operations.sql" />
+    <Build Include="dbo\Tables\bam_BusinessMessageJournal_Completed.sql" />
+    <Build Include="dbo\Tables\bam_ERPOrders_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_OperationEvents.sql" />
+    <Build Include="dbo\Tables\bam_BusinessMessageJournal_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_InterchangeAckActivity_Active.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_Activities.sql" />
+    <Build Include="dbo\Tables\bam_BusinessMessageJournal_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_ExpiredCreditCards_Active.sql" />
+    <Build Include="dbo\Tables\bam_InterchangeAckActivity_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_RTAMutex.sql" />
+    <Build Include="dbo\Tables\BT_BAMAlertHistory.sql" />
+    <Build Include="dbo\Tables\bam_InterchangeAckActivity_Completed.sql" />
+    <Build Include="dbo\Tables\bam_ExpiredCreditCards_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_CustomIndexes.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_Partitions.sql" />
+    <Build Include="dbo\Tables\BizTalkDBVersion.sql" />
+    <Build Include="dbo\Tables\bam_InterchangeAckActivity_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_ExpiredCreditCards_Completed.sql" />
+    <Build Include="dbo\Tables\bam_InterchangeAckActivity_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_Views.sql" />
+    <Build Include="dbo\Tables\bam_ExpiredCreditCards_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\MarkLog.sql" />
+    <Build Include="dbo\Tables\bam_ExpiredCreditCards_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_ActivityViews.sql" />
+    <Build Include="dbo\Tables\bam_FunctionalAckActivity_Active.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_Cubes.sql" />
+    <Build Include="dbo\Tables\bam_EmailTotals_ActiveInstancesSnapshot.sql" />
+    <Build Include="dbo\Tables\bam_ResendJournalActivity_Active.sql" />
+    <Build Include="dbo\Tables\bam_FirstDataRecon_Active.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_AnalysisTasks.sql" />
+    <Build Include="dbo\Tables\bam_FunctionalAckActivity_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_APIDemo_Active.sql" />
+    <Build Include="dbo\Tables\bam_ResendJournalActivity_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_RealTimeAggregations.sql" />
+    <Build Include="dbo\Tables\bam_FunctionalAckActivity_Completed.sql" />
+    <Build Include="dbo\Tables\bam_FirstDataRecon_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_PivotTables.sql" />
+    <Build Include="dbo\Tables\bam_ResendJournalActivity_Completed.sql" />
+    <Build Include="dbo\Tables\bam_FunctionalAckActivity_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_FirstDataRecon_Completed.sql" />
+    <Build Include="dbo\Tables\bam_APIDemo_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_FunctionalAckActivity_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_TrackingProfiles.sql" />
+    <Build Include="dbo\Tables\bam_ResendJournalActivity_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_Metadata_Annotations.sql" />
+    <Build Include="dbo\Tables\bam_AS2InterchangeActivity_Active.sql" />
+    <Build Include="dbo\Tables\bam_FirstDataRecon_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_APIDemo_Completed.sql" />
+    <Build Include="dbo\Tables\bam_ResendJournalActivity_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_FirstDataRecon_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_EmailProcess_EmailProcess_RTATable.sql" />
+    <Build Include="dbo\Tables\bam_APIDemo_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_AS2InterchangeActivity_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_BatchingActivity_Active.sql" />
+    <Build Include="dbo\Tables\bam_APIDemo_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_ResendTrackingActivity_Active.sql" />
+    <Build Include="dbo\Tables\bam_AS2InterchangeActivity_Completed.sql" />
+    <Build Include="dbo\Tables\bam_PaymentERPTxn_Active.sql" />
+    <Build Include="dbo\Tables\bam_BatchingActivity_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_AS2InterchangeActivity_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_ResendTrackingActivity_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_AS2InterchangeActivity_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_BatchingActivity_Completed.sql" />
+    <Build Include="dbo\Tables\bam_PaymentERPTxn_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_ResendTrackingActivity_Completed.sql" />
+    <Build Include="dbo\Tables\bam_BatchingActivity_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_PaymentERPTxn_Completed.sql" />
+    <Build Include="dbo\Tables\bam_BatchingActivity_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_ResendTrackingActivity_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_AS2MessageActivity_Active.sql" />
+    <Build Include="dbo\Tables\bam_PaymentERPTxn_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_active_credit_cards_Active.sql" />
+    <Build Include="dbo\Tables\bam_ResendTrackingActivity_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_PaymentERPTxn_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_AS2MessageActivity_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_BatchInterchangeActivity_Active.sql" />
+    <Build Include="dbo\Tables\bam_active_credit_cards_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_AS2MessageActivity_Completed.sql" />
+    <Build Include="dbo\Tables\bam_active_credit_cards_Completed.sql" />
+    <Build Include="dbo\Tables\bam_BatchInterchangeActivity_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_AS2MessageActivity_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_active_credit_cards_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_AS2MessageActivity_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_BatchInterchangeActivity_Completed.sql" />
+    <Build Include="dbo\Tables\bam_active_credit_cards_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_BatchInterchangeActivity_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_InterchangeStatusActivity_Active.sql" />
+    <Build Include="dbo\Tables\bam_EmailFromFile_Active.sql" />
+    <Build Include="dbo\Tables\bam_BatchInterchangeActivity_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_AS2MdnActivity_Active.sql" />
+    <Build Include="dbo\Tables\bam_Cybersource Settlement Feed_Active.sql" />
+    <Build Include="dbo\Tables\bam_InterchangeStatusActivity_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_EmailFromFile_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_AS2MdnActivity_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_TransactionSetActivity_Active.sql" />
+    <Build Include="dbo\Tables\bam_InterchangeStatusActivity_Completed.sql" />
+    <Build Include="dbo\Tables\bam_Cybersource Settlement Feed_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_EmailFromFile_Completed.sql" />
+    <Build Include="dbo\Tables\bam_AS2MdnActivity_Completed.sql" />
+    <Build Include="dbo\Tables\bam_InterchangeStatusActivity_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_Cybersource Settlement Feed_Completed.sql" />
+    <Build Include="dbo\Tables\bam_EmailFromFile_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_TransactionSetActivity_Continuations.sql" />
+    <Build Include="dbo\Tables\bam_InterchangeStatusActivity_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_AS2MdnActivity_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_EmailFromFile_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_Cybersource Settlement Feed_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_AS2MdnActivity_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_TransactionSetActivity_Completed.sql" />
+    <Build Include="dbo\Tables\bam_Cybersource Settlement Feed_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\bam_TransactionSetActivity_ActiveRelationships.sql" />
+    <Build Include="dbo\Tables\bam_FunctionalGroupInfo_Active.sql" />
+    <Build Include="dbo\Tables\bam_TransactionSetActivity_CompletedRelationships.sql" />
+    <Build Include="dbo\Tables\TDDS_FailedTrackingData.sql" />
+    <Build Include="dbo\Tables\bam_ERPOrders_Active.sql" />
+    <Build Include="dbo\Tables\TDDS_StreamStatus.sql" />
+    <Build Include="dbo\Tables\bam_FunctionalGroupInfo_Continuations.sql" />
+    <Build Include="dbo\Views\bam_TransactionSetActivity_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_ExpiredCreditCards_ViewExpiredCreditCards_CompletedAliasView.sql" />
+    <Build Include="dbo\Views\bam_TransactionSetActivity_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_ExpiredCreditCards_ViewExpiredCreditCards_CompletedView.sql" />
+    <Build Include="dbo\Views\bam_TransactionSetActivity_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_ExpiredCreditCards_ViewExpiredCreditCards_View.sql" />
+    <Build Include="dbo\Views\bam_FirstDataReconView_ViewFirstDataRecon_ActiveAliasView.sql" />
+    <Build Include="dbo\Views\bam_FirstDataReconView_ViewFirstDataRecon_ActiveView.sql" />
+    <Build Include="dbo\Views\bam_FirstDataReconView_ViewFirstDataRecon_CompletedAliasView.sql" />
+    <Build Include="dbo\Views\bam_FirstDataReconView_ViewFirstDataRecon_CompletedView.sql" />
+    <Build Include="dbo\Views\bam_FirstDataReconView_ViewFirstDataRecon_View.sql" />
+    <Build Include="dbo\Views\bam_PaymentERPTxn_ViewPaymentERPTxn_ActiveAliasView.sql" />
+    <Build Include="dbo\Views\bam_PaymentERPTxn_ViewPaymentERPTxn_ActiveView.sql" />
+    <Build Include="dbo\Views\bam_PaymentERPTxn_ViewPaymentERPTxn_CompletedAliasView.sql" />
+    <Build Include="dbo\Views\bam_FunctionalGroupInfo_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_PaymentERPTxn_ViewPaymentERPTxn_CompletedView.sql" />
+    <Build Include="dbo\Views\bam_FunctionalGroupInfo_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_PaymentERPTxn_ViewPaymentERPTxn_View.sql" />
+    <Build Include="dbo\Views\bam_FunctionalGroupInfo_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_FunctionalGroupInfo_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_FunctionalGroupInfo_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_ERPOrders_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_FunctionalGroupInfo_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_ERPOrders_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_ERPOrders_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_ERPOrders_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_ERPOrders_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_ERPOrders_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_BusinessMessageJournal_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_BusinessMessageJournal_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_BusinessMessageJournal_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_BusinessMessageJournal_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_BusinessMessageJournal_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_BusinessMessageJournal_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_EmailTotals_ViewEmailFromFile_ActiveAliasView.sql" />
+    <Build Include="dbo\Views\bam_EmailTotals_ViewEmailFromFile_ActiveView.sql" />
+    <Build Include="dbo\Views\bam_EmailTotals_ViewEmailFromFile_CompletedAliasView.sql" />
+    <Build Include="dbo\Views\bam_EmailTotals_ViewEmailFromFile_CompletedView.sql" />
+    <Build Include="dbo\Views\bam_EmailTotals_ViewEmailFromFile_View.sql" />
+    <Build Include="dbo\Views\bam_InterchangeAckActivity_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_InterchangeAckActivity_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_InterchangeAckActivity_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_EmailTracking_ViewEmailFromFile_ActiveAliasView.sql" />
+    <Build Include="dbo\Views\bam_InterchangeAckActivity_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_EmailTracking_ViewEmailFromFile_ActiveView.sql" />
+    <Build Include="dbo\Views\bam_InterchangeAckActivity_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_ExpiredCreditCards_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_EmailTracking_ViewEmailFromFile_CompletedAliasView.sql" />
+    <Build Include="dbo\Views\bam_InterchangeAckActivity_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_ExpiredCreditCards_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_EmailTracking_ViewEmailFromFile_CompletedView.sql" />
+    <Build Include="dbo\Views\bam_ExpiredCreditCards_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_EmailTracking_ViewEmailFromFile_View.sql" />
+    <Build Include="dbo\Views\bam_ExpiredCreditCards_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_ExpiredCreditCards_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_EmailTotals_CompletedInstancesWindow.sql" />
+    <Build Include="dbo\Views\bam_ExpiredCreditCards_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_EmailTotals_CubingSnapshot.sql" />
+    <Build Include="dbo\Views\bam_EmailProcess_ViewEmailFromFile_ActiveAliasView.sql" />
+    <Build Include="dbo\Views\bam_EmailProcess_ViewEmailFromFile_ActiveView.sql" />
+    <Build Include="dbo\Views\bam_EmailProcess_ViewEmailFromFile_CompletedAliasView.sql" />
+    <Build Include="dbo\Views\bam_FunctionalAckActivity_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_EmailProcess_ViewEmailFromFile_CompletedView.sql" />
+    <Build Include="dbo\Views\bam_FunctionalAckActivity_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_EmailProcess_ViewEmailFromFile_View.sql" />
+    <Build Include="dbo\Views\bam_FunctionalAckActivity_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_FunctionalAckActivity_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_ResendJournalActivity_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_EmailProcess_EmailProcess_RTAView.sql" />
+    <Build Include="dbo\Views\bam_FunctionalAckActivity_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_ResendJournalActivity_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_FirstDataRecon_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_EmailProcess_EmailProcess_RTAWindowView.sql" />
+    <Build Include="dbo\Views\bam_FunctionalAckActivity_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_ResendJournalActivity_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_FirstDataRecon_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_ResendJournalActivity_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_FirstDataRecon_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_ResendJournalActivity_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_FirstDataRecon_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_ResendJournalActivity_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_FirstDataRecon_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_APIDemo_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_FirstDataRecon_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_APIDemo_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_APIDemo_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_APIDemo_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_APIDemo_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_APIDemo_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_AS2InterchangeActivity_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_APIDemo_ViewAPIDemo_ActiveAliasView.sql" />
+    <Build Include="dbo\Views\bam_AS2InterchangeActivity_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_APIDemo_ViewAPIDemo_ActiveView.sql" />
+    <Build Include="dbo\Views\bam_AS2InterchangeActivity_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_APIDemo_ViewAPIDemo_CompletedAliasView.sql" />
+    <Build Include="dbo\Views\bam_AS2InterchangeActivity_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_APIDemo_ViewAPIDemo_CompletedView.sql" />
+    <Build Include="dbo\Views\bam_AS2InterchangeActivity_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_APIDemo_ViewAPIDemo_View.sql" />
+    <Build Include="dbo\Views\bam_AS2InterchangeActivity_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_BatchingActivity_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_BatchingActivity_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_BatchingActivity_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_BatchingActivity_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_ResendTrackingActivity_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_BatchingActivity_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_ResendTrackingActivity_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_PaymentERPTxn_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_BatchingActivity_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_ResendTrackingActivity_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_PaymentERPTxn_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_ResendTrackingActivity_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_PaymentERPTxn_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_ResendTrackingActivity_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_PaymentERPTxn_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_ResendTrackingActivity_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_PaymentERPTxn_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_PaymentERPTxn_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_AS2MessageActivity_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_active_credit_cards_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_AS2MessageActivity_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_active_credit_cards_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_AS2MessageActivity_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_active_credit_cards_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_AS2MessageActivity_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_active_credit_cards_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_AS2MessageActivity_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_active_credit_cards_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_AS2MessageActivity_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_active_credit_cards_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_BatchInterchangeActivity_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_BatchInterchangeActivity_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_BatchInterchangeActivity_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_BatchInterchangeActivity_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_BatchInterchangeActivity_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_BatchInterchangeActivity_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_active_CCards_view_Viewactive_credit_cards_ActiveAliasView.sql" />
+    <Build Include="dbo\Views\bam_active_CCards_view_Viewactive_credit_cards_ActiveView.sql" />
+    <Build Include="dbo\Views\bam_active_CCards_view_Viewactive_credit_cards_CompletedAliasView.sql" />
+    <Build Include="dbo\Views\bam_active_CCards_view_Viewactive_credit_cards_CompletedView.sql" />
+    <Build Include="dbo\Views\bam_InterchangeStatusActivity_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_active_CCards_view_Viewactive_credit_cards_View.sql" />
+    <Build Include="dbo\Views\bam_InterchangeStatusActivity_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_CyberSourceFeedV_ViewCybersource Settlement Feed_ActiveAliasView.sql" />
+    <Build Include="dbo\Views\bam_EmailFromFile_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_InterchangeStatusActivity_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_CyberSourceFeedV_ViewCybersource Settlement Feed_ActiveView.sql" />
+    <Build Include="dbo\Views\bam_EmailFromFile_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_InterchangeStatusActivity_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_CyberSourceFeedV_ViewCybersource Settlement Feed_CompletedAliasView.sql" />
+    <Build Include="dbo\Views\bam_AS2MdnActivity_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_EmailFromFile_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_InterchangeStatusActivity_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_CyberSourceFeedV_ViewCybersource Settlement Feed_CompletedView.sql" />
+    <Build Include="dbo\Views\bam_Cybersource Settlement Feed_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_AS2MdnActivity_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_EmailFromFile_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_InterchangeStatusActivity_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_CyberSourceFeedV_ViewCybersource Settlement Feed_View.sql" />
+    <Build Include="dbo\Views\bam_Cybersource Settlement Feed_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_AS2MdnActivity_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_EmailFromFile_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_ERPOrders_ViewERPOrders_ActiveAliasView.sql" />
+    <Build Include="dbo\Views\bam_Cybersource Settlement Feed_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_AS2MdnActivity_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_EmailFromFile_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_ERPOrders_ViewERPOrders_ActiveView.sql" />
+    <Build Include="dbo\Views\bam_Cybersource Settlement Feed_AllRelationships.sql" />
+    <Build Include="dbo\Views\bam_AS2MdnActivity_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_ERPOrders_ViewERPOrders_CompletedAliasView.sql" />
+    <Build Include="dbo\Views\bam_Cybersource Settlement Feed_InstancesForArchive.sql" />
+    <Build Include="dbo\Views\bam_AS2MdnActivity_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_ERPOrders_ViewERPOrders_CompletedView.sql" />
+    <Build Include="dbo\Views\bam_Cybersource Settlement Feed_RelationshipsForArchive.sql" />
+    <Build Include="dbo\Views\bam_TransactionSetActivity_ActiveInstances.sql" />
+    <Build Include="dbo\Views\bam_ERPOrders_ViewERPOrders_View.sql" />
+    <Build Include="dbo\Views\bam_TransactionSetActivity_CompletedInstances.sql" />
+    <Build Include="dbo\Views\bam_ExpiredCreditCards_ViewExpiredCreditCards_ActiveAliasView.sql" />
+    <Build Include="dbo\Views\bam_TransactionSetActivity_AllInstances.sql" />
+    <Build Include="dbo\Views\bam_ExpiredCreditCards_ViewExpiredCreditCards_ActiveView.sql" />
+    <Build Include="Security\BTS_BACKUP_USERS.sql" />
+    <Build Include="Security\BAM_ManagementWS.sql" />
+    <Build Include="Security\BAM_ManagementNSReader.sql" />
+    <Build Include="Security\BAM_EVENT_WRITER.sql" />
+    <Build Include="Security\BTS_ADMIN_USERS.sql" />
+    <Build Include="Security\BTS_HOST_USERS.sql" />
+    <Build Include="Security\BTS_OPERATORS.sql" />
+    <Build Include="Security\BTS_B2B_OPERATORS.sql" />
+    <Build Include="Security\bam_ResendJournalActivity_EventWriter.sql" />
+    <Build Include="Security\bam_ResendTrackingActivity_EventWriter.sql" />
+    <Build Include="Security\bam_InterchangeStatusActivity_EventWriter.sql" />
+    <Build Include="Security\bam_FunctionalGroupInfo_EventWriter.sql" />
+    <Build Include="Security\bam_InterchangeAckActivity_EventWriter.sql" />
+    <Build Include="Security\bam_FunctionalAckActivity_EventWriter.sql" />
+    <Build Include="Security\bam_BatchingActivity_EventWriter.sql" />
+    <Build Include="Security\bam_BatchInterchangeActivity_EventWriter.sql" />
+    <Build Include="Security\bam_TransactionSetActivity_EventWriter.sql" />
+    <Build Include="Security\bam_BusinessMessageJournal_EventWriter.sql" />
+    <Build Include="Security\bam_AS2InterchangeActivity_EventWriter.sql" />
+    <Build Include="Security\bam_AS2MessageActivity_EventWriter.sql" />
+    <Build Include="Security\bam_AS2MdnActivity_EventWriter.sql" />
+    <Build Include="Security\bam_EmailFromFile_EventWriter.sql" />
+    <Build Include="Security\bam_EmailTotals.sql" />
+    <Build Include="Security\bam_EmailProcess.sql" />
+    <Build Include="Security\bam_EmailTracking.sql" />
+    <Build Include="Security\bam_APIDemo_EventWriter.sql" />
+    <Build Include="Security\bam_APIDemo.sql" />
+    <Build Include="Security\bam_active_credit_cards_EventWriter.sql" />
+    <Build Include="Security\bam_Cybersource Settlement Feed_EventWriter.sql" />
+    <Build Include="Security\bam_ERPOrders_EventWriter.sql" />
+    <Build Include="Security\bam_ExpiredCreditCards_EventWriter.sql" />
+    <Build Include="Security\bam_FirstDataRecon_EventWriter.sql" />
+    <Build Include="Security\bam_PaymentERPTxn_EventWriter.sql" />
+    <Build Include="Security\bam_active_CCards_view.sql" />
+    <Build Include="Security\bam_CyberSourceFeedV.sql" />
+    <Build Include="Security\bam_ERPOrders.sql" />
+    <Build Include="Security\bam_ExpiredCreditCards.sql" />
+    <Build Include="Security\bam_FirstDataReconView.sql" />
+    <Build Include="Security\bam_PaymentERPTxn.sql" />
+    <Build Include="Security\BWT-Perkins_BizTalk.sql" />
+    <Build Include="Security\BWT-Perkins_BizTalk_1.sql" />
+    <Build Include="Security\BWT-PERKINS_BizTalk Server Administrators.sql" />
+    <Build Include="Security\BWT-PERKINS_BizTalk Server Administrators_1.sql" />
+    <Build Include="Security\BWT-PERKINS_BizTalk Application Users.sql" />
+    <Build Include="Security\BWT-PERKINS_BizTalk Application Users_1.sql" />
+    <Build Include="Security\BWT-PERKINS_BizTalk Isolated Host Users.sql" />
+    <Build Include="Security\BWT-PERKINS_BizTalk Isolated Host Users_1.sql" />
+    <Build Include="Security\BWT-Perkins_BizTalk Server Operators.sql" />
+    <Build Include="Security\BWT-PERKINS_BizTalk Server Operators_1.sql" />
+    <Build Include="Security\BWT-Perkins_BizTalk Server B2B Operators.sql" />
+    <Build Include="Security\BWT-PERKINS_BizTalk Server B2B Operators_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Functions\adm_FormatNTGroupName.sql" />
+    <Build Include="dbo\Functions\adm_HasPermissionToPerform.sql" />
+    <Build Include="dbo\Functions\bts_AllDuplicateInterchangeAckRecordIDs.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\bts_AllDuplicateX12InterchangeStatusRecordIDs.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\bts_AllDuplicateEdifactInterchangeStatusRecordIDs.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\bts_GeneratedFunctionalAcksOfInterchange.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\bts_SentFunctionalAcksOfInterchange.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\bts_AllDuplicateAS2Messages.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\bts_AllDuplicateAS2IsaMessages.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\bts_AllDuplicateMdnMessages.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetAllViews.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2InterchangeActivity_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetPivotTableXml.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2MessageActivity_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetAllPivotTables.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2MessageActivity_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_UpdatePivotTable.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2MessageActivity_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetPivotTablesForView.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2MessageActivity_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_ValidateViewExistence.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2MdnActivity_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RemoveTrackingProfile.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2MdnActivity_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_ApplyTrackingProfile.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2MdnActivity_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RetrieveTrackingProfile.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2MdnActivity_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RetrieveTrackingProfiles.sql" />
+    <Build Include="dbo\Stored Procedures\bts_MarkAndGetDuplicateInterchangeStatusRecords.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_InsertAnnotation.sql" />
+    <Build Include="dbo\Stored Procedures\bts_MarkAndGetDuplicateInterchangeAckRecords.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RemoveAnnotation.sql" />
+    <Build Include="dbo\Stored Procedures\bts_MarkAndGetDuplicateFunctionalAckRecords.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetAnnotation.sql" />
+    <Build Include="dbo\Stored Procedures\bts_MarkAndGetOrphanInterchangeStatusRecords.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetCubeForViewActivity.sql" />
+    <Build Include="dbo\Stored Procedures\bts_MarkAndGetOrphanInterchangeAckRecords.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ID5F0A2B2D5C544E18867C2C5BBC6D1CE9_ID3FAEF5BD19F94279B6F3FA8BE1E65F5C_TemporalEval.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetRTAWindowForCubeRta.sql" />
+    <Build Include="dbo\Stored Procedures\bts_MarkAndGetOrphanFunctionalAckRecords.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ID5F0A2B2D5C544E18867C2C5BBC6D1CE9_ID3FAEF5BD19F94279B6F3FA8BE1E65F5C_GetUpdated.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_DropClusteredIndex.sql" />
+    <Build Include="dbo\Stored Procedures\bts_GetAgeOfCompletedInterchangeActivities.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ID119D6D03461B4A3E905B8E25617F6AF6_IDE92B96A652974BDBAC8A03526D384D59_TemporalEval.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetInterceptorConfigurationMetadata.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ID119D6D03461B4A3E905B8E25617F6AF6_IDE92B96A652974BDBAC8A03526D384D59_GetUpdated.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetFullInterceptorConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ID42F0B2F7E9544D5F948849590FD0AE68_IDBBDB39A174094DCD80B0998BB187B13D_TemporalEval.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetLatestInterceptorConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ID42F0B2F7E9544D5F948849590FD0AE68_IDBBDB39A174094DCD80B0998BB187B13D_GetUpdated.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetSpecificInterceptorConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\bam_IDFF7A9ECAA8DA4A3DAB488167E63C1A5D_IDC6971316312D4CE896AC17C7459695AE_TemporalEval.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_TryGetUpdatedInterceptorConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\bam_IDFF7A9ECAA8DA4A3DAB488167E63C1A5D_IDC6971316312D4CE896AC17C7459695AE_GetUpdated.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetEventSource.sql" />
+    <Build Include="dbo\Stored Procedures\bam_IDA974DA43F29D4F57A2B9301C90EC744C_ID0AE84BE659874309B9447EAC16A67FFE_TemporalEval.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_AddEventSource.sql" />
+    <Build Include="dbo\Stored Procedures\bam_IDA974DA43F29D4F57A2B9301C90EC744C_ID0AE84BE659874309B9447EAC16A67FFE_GetUpdated.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_AddInterceptorConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ID27C4966996AB4066829671CA825CC2C9_ID84E534ED179E44C3A750BA078576D11D_TemporalEval.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RemoveInterceptorConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\bts_GetFunctionalAcksOfAnInterchange.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\bam_ID27C4966996AB4066829671CA825CC2C9_ID84E534ED179E44C3A750BA078576D11D_GetUpdated.sql" />
+    <Build Include="dbo\Stored Procedures\bts_GetInterchangeStatusRecords.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\adm_IsMemberOfRole.sql" />
+    <Build Include="dbo\Stored Procedures\bts_GetInterchangeAckOfAnX12Interchange.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\procGetNoAckERPOrdersBAM.sql" />
+    <Build Include="dbo\Stored Procedures\adm_RemoveRole.sql" />
+    <Build Include="dbo\Stored Procedures\bts_GetInterchangeAckOfAnEdifactInterchange.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\bam_InterchangeStatusActivity_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bts_GetBatchStatusRecords.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\bam_InterchangeStatusActivity_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bts_GetAS2StatusRecords.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\bam_InterchangeStatusActivity_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\adm_ChangeRolePrivForUser.sql" />
+    <Build Include="dbo\Stored Procedures\bts_GetTransactionSetStatusRecords.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\bam_InterchangeStatusActivity_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\adm_AddDbUserToRole.sql" />
+    <Build Include="dbo\Stored Procedures\bts_GetInterchangeAggregateDetails.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\bam_FunctionalGroupInfo_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\adm_DropDbUserFromRole.sql" />
+    <Build Include="dbo\Stored Procedures\bts_GetTransactionSetAggregateDetails.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\bam_FunctionalGroupInfo_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\adm_AddLoginUser.sql" />
+    <Build Include="dbo\Stored Procedures\bam_FunctionalGroupInfo_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\adm_RemoveLoginUser.sql" />
+    <Build Include="dbo\Stored Procedures\bam_FunctionalGroupInfo_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\adm_CreateBTSAdminLogin.sql" />
+    <Build Include="dbo\Stored Procedures\bam_InterchangeAckActivity_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\adm_CreateBTSHostLogin.sql" />
+    <Build Include="dbo\Stored Procedures\bam_InterchangeAckActivity_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\adm_RemoveBTSHostLogin.sql" />
+    <Build Include="dbo\Stored Procedures\bam_InterchangeAckActivity_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\adm_CreateBTSOperatorLogin.sql" />
+    <Build Include="dbo\Stored Procedures\bam_InterchangeAckActivity_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\adm_CreateBTSB2BOperatorLogin.sql" />
+    <Build Include="dbo\Stored Procedures\bam_FunctionalAckActivity_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\adm_Register_BizTalkDB.sql" />
+    <Build Include="dbo\Stored Procedures\bam_FunctionalAckActivity_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\adm_Query_BizTalkDBVersion.sql" />
+    <Build Include="dbo\Stored Procedures\bam_FunctionalAckActivity_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\adm_ChangeHostTrackingPrivilege.sql" />
+    <Build Include="dbo\Stored Procedures\bam_FunctionalAckActivity_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\sp_SetMark.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BatchingActivity_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\sp_SetMarkRemote.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BatchingActivity_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetServerVersion.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BatchingActivity_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\sp_BackupBizTalk.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BatchingActivity_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\sp_BackupBizTalkLog.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BatchInterchangeActivity_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\sp_BackupBizTalkFull.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BatchInterchangeActivity_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetServerName.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BatchInterchangeActivity_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BatchInterchangeActivity_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_IDED0D700226E0436F995FE92997B50704_ID3FE48D4E978E446E95279075A7305F90_TemporalEval.sql" />
+    <Build Include="dbo\Stored Procedures\bam_TransactionSetActivity_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_IDED0D700226E0436F995FE92997B50704_ID3FE48D4E978E446E95279075A7305F90_GetUpdated.sql" />
+    <Build Include="dbo\Stored Procedures\bam_TransactionSetActivity_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_TransactionSetActivity_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_TransactionSetActivity_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_IDA3DE468142464EC8AAA6C2FCF5CDFD31_IDB876E293FF58400CB0C8D27714DA7828_TemporalEval.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BusinessMessageJournal_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_IDA3DE468142464EC8AAA6C2FCF5CDFD31_IDB876E293FF58400CB0C8D27714DA7828_GetUpdated.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BusinessMessageJournal_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BusinessMessageJournal_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_BusinessMessageJournal_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetAnalysisConnectionString.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ID479A949D030742C988E0992371EBC6FD_ID9F4DF99B98C64B5D9E604D221A620FDD_TemporalEval.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ID479A949D030742C988E0992371EBC6FD_ID9F4DF99B98C64B5D9E604D221A620FDD_GetUpdated.sql" />
+    <Build Include="dbo\Stored Procedures\TDDS_InsertFailedTrackingData.sql" />
+    <Build Include="dbo\Stored Procedures\TDDS_GetTDDS_StreamStatus.sql" />
+    <Build Include="dbo\Stored Procedures\TDDS_UpsertTDDS_StreamStatus.sql" />
+    <Build Include="dbo\Stored Procedures\TDDS_GetSPNames.sql" />
+    <Build Include="dbo\Stored Procedures\TDDS_GetColumnInfo.sql" />
+    <Build Include="dbo\Stored Procedures\bam_APIDemo_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\TDDS_Lock.sql" />
+    <Build Include="dbo\Stored Procedures\bam_APIDemo_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\TDDS_BlockTDDS.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetRTAConnectionString.sql" />
+    <Build Include="dbo\Stored Procedures\bam_APIDemo_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_SetDatabaseVersion.sql" />
+    <Build Include="dbo\Stored Procedures\bam_APIDemo_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetDatabaseVersion.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_UpsertProperty.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetProperty.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RemoveProperty.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_InsertReferencedDatabase.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetReferencedDatabase.sql" />
+    <Build Include="dbo\Stored Procedures\bam_IDD58DD27443234912904ACB1D85D9E239_IDA3A26BAFD8FB4C47AB85D8F8B825F43C_GetUpdated.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RemoveReferencedDatabase.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_ManageSecurity.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetAuthorizedAccountsForView.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetViewPermissionInfo.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_CheckReferenceInView.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_CheckPivotTableInView.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_CheckActivityInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetRTAMutex.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetRTAWindow.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_SetRTAWindow.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ResendJournalActivity_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_SetRTAWindowTimeslice.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ResendJournalActivity_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_active_credit_cards_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetRtaNames.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ResendJournalActivity_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_active_credit_cards_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_BeginAnalysis.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ResendJournalActivity_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_active_credit_cards_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_EndAnalysis.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ResendTrackingActivity_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_active_credit_cards_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_CreatePartitionIndexes.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ResendTrackingActivity_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Cybersource Settlement Feed_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RegenerateViews.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ResendTrackingActivity_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Cybersource Settlement Feed_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RecreateRtaTriggerOnCompletedTable.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ResendTrackingActivity_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Cybersource Settlement Feed_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_SpawnPartition.sql" />
+    <Build Include="dbo\Stored Procedures\bts_GetAS2JournalRecords.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\bam_Cybersource Settlement Feed_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_BeginArchiving.sql" />
+    <Build Include="dbo\Stored Procedures\edi_FindTrackingActivityIdByCorrelationId.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ERPOrders_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_EndArchiving.sql" />
+    <Build Include="dbo\Stored Procedures\edi_GetResendControlMessage.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ERPOrders_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_BeginOperation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ERPOrders_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_EndOperation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ERPOrders_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_BeginOperationEvent.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ExpiredCreditCards_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_EndOperationEvent.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ExpiredCreditCards_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetOperationEvents.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ExpiredCreditCards_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetOperationHistory.sql" />
+    <Build Include="dbo\Stored Procedures\bam_ExpiredCreditCards_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetConfigurationXml.sql" />
+    <Build Include="dbo\Stored Procedures\bam_FirstDataRecon_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_SetConfigurationXml.sql" />
+    <Build Include="dbo\Stored Procedures\bam_FirstDataRecon_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetActivityXml.sql" />
+    <Build Include="dbo\Stored Procedures\bam_FirstDataRecon_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetActivityNamesForView.sql" />
+    <Build Include="dbo\Stored Procedures\bam_FirstDataRecon_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetAllActivities.sql" />
+    <Build Include="dbo\Stored Procedures\bam_PaymentERPTxn_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetIndexesForActivity.sql" />
+    <Build Include="dbo\Stored Procedures\bam_PaymentERPTxn_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetArchiveSettingForActivity.sql" />
+    <Build Include="dbo\Stored Procedures\bam_PaymentERPTxn_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_SetArchiveSettingForActivity.sql" />
+    <Build Include="dbo\Stored Procedures\bam_PaymentERPTxn_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_CreateIndex.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_CreateCustomIndexOnly.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RemoveIndex.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RemoveIndexOnly.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetActivityWindow.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_SetActivityWindow.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetRelatedActivityInstances.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetActivityInstancesForRelatedActivity.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetReferences.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_InsertActivity.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_RemoveActivity.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_UpdateActivity.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetViewXml.sql" />
+    <Build Include="dbo\Stored Procedures\bam_EmailFromFile_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetViewXmlByViewID.sql" />
+    <Build Include="dbo\Stored Procedures\bam_EmailFromFile_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetAllCubes.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2InterchangeActivity_UpsertInstance.sql" />
+    <Build Include="dbo\Stored Procedures\bam_EmailFromFile_EnableContinuation.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetCubes.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2InterchangeActivity_PrimaryImport.sql" />
+    <Build Include="dbo\Stored Procedures\bam_EmailFromFile_AddRelationship.sql" />
+    <Build Include="dbo\Stored Procedures\bam_Metadata_GetViews.sql" />
+    <Build Include="dbo\Stored Procedures\bam_AS2InterchangeActivity_EnableContinuation.sql" />
+    <Build Include="Security\BAM_EVENT_WRITER_1.sql" />
+    <Build Include="Security\BAM_ManagementNSReader_1.sql" />
+    <Build Include="Security\BAM_ManagementWS_1.sql" />
+    <Build Include="Security\BTS_ADMIN_USERS_1.sql" />
+    <Build Include="Security\BTS_B2B_OPERATORS_1.sql" />
+    <Build Include="Security\BTS_BACKUP_USERS_1.sql" />
+    <Build Include="Security\BTS_HOST_USERS_1.sql" />
+    <Build Include="Security\BTS_OPERATORS_1.sql" />
+    <Build Include="Security\BWT-Perkins_BizTalk_2.sql" />
+    <Build Include="Security\BWT-PERKINS_BizTalk Application Users_2.sql" />
+    <Build Include="Security\BWT-PERKINS_BizTalk Isolated Host Users_2.sql" />
+    <Build Include="Security\BWT-PERKINS_BizTalk Server Administrators_2.sql" />
+    <Build Include="Security\BWT-Perkins_BizTalk Server B2B Operators_2.sql" />
+    <Build Include="Security\BWT-Perkins_BizTalk Server Operators_2.sql" />
+    <Build Include="Security\Permissions.sql" />
+    <Build Include="dbo\Stored Procedures\procGetLatestOrderAgeBAM.sql" />
+  </ItemGroup>
+</Project>

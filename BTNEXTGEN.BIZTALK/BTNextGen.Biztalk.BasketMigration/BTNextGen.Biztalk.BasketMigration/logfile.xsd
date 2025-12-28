@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Basket">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="SoldToId" type="xs:string" minOccurs="0" />
+              <xs:element name="TaxTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="LastModified" type="xs:string" minOccurs="0" />
+              <xs:element name="Created" type="xs:string" minOccurs="0" />
+              <xs:element name="StatusCode" type="xs:string" minOccurs="0" />
+              <xs:element name="SubTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="IsDirty" type="xs:string" minOccurs="0" />
+              <xs:element name="LineItemCount" type="xs:string" minOccurs="0" />
+              <xs:element name="HandlingTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="BasketID" type="xs:string" minOccurs="0" />
+              <xs:element name="ShippingTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="ModifiedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="SoldToName" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderGroupId" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="BillingCurrency" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OrderForms">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderGroupId" type="xs:string" minOccurs="0" />
+              <xs:element name="TaxTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="LastModified" type="xs:string" minOccurs="0" />
+              <xs:element name="Created" type="xs:string" minOccurs="0" />
+              <xs:element name="PromoUserIdentity" type="xs:string" minOccurs="0" />
+              <xs:element name="SubTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="HandlingTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="ShippingTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="ModifiedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="BillingAddressId" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderFormId" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LineItems">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShippingMethodName" type="xs:string" minOccurs="0" />
+              <xs:element name="Created" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductId" type="xs:string" minOccurs="0" />
+              <xs:element name="PlacedPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="InventoryCondition" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderFormId" type="xs:string" minOccurs="0" />
+              <xs:element name="ShippingAddressId" type="xs:string" minOccurs="0" />
+              <xs:element name="AllowBackordersAndPreorders" type="xs:string" minOccurs="0" />
+              <xs:element name="LastModified" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderGroupId" type="xs:string" minOccurs="0" />
+              <xs:element name="ListPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="DisplayName" type="xs:string" minOccurs="0" />
+              <xs:element name="ModifiedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductCatalog" type="xs:string" minOccurs="0" />
+              <xs:element name="ShippingMethodId" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderLevelDiscountAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="PreorderQuantity" type="xs:string" minOccurs="0" />
+              <xs:element name="ExtendedPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="BackorderQuantity" type="xs:string" minOccurs="0" />
+              <xs:element name="LineItemDiscountAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="InStockQuantity" type="xs:string" minOccurs="0" />
+              <xs:element name="LineItemId" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

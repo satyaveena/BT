@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0" BindingStatus="FullyBound" BoundEndpoints="5" TotalEndpoints="5">
+  <Timestamp>2011-05-19T15:35:46.446358-04:00</Timestamp>
+  <ModuleRefCollection>
+    <ModuleRef Name="[Application:BTNextGen.Biztalk.PromotionsExtract]" Version="" Culture="" PublicKeyToken="" FullName="[Application:BTNextGen.Biztalk.PromotionsExtract], Version=, Culture=, PublicKeyToken=">
+      <Services />
+      <TrackedSchemas>
+        <Schema FullName="PromotionsExtract.PropertySchema.PropertySchema" AssemblyQualifiedName="PromotionsExtract.PropertySchema.PropertySchema,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_datacontract_org_2004_07_System_Data" RootName="DataTable" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_datacontract_org_2004_07_System_Data,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsExtractFFSchema" RootName="PromotionsExtractRecord" AssemblyQualifiedName="PromotionsExtract.PromotionsExtractFFSchema,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.GetPromotions" RootName="GetPromotions" AssemblyQualifiedName="PromotionsExtract.GetPromotions,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_tempuri_org" RootName="GetPromotions" AssemblyQualifiedName="PromotionsExtract.PromotionsService_tempuri_org,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_tempuri_org" RootName="GetPromotionsResponse" AssemblyQualifiedName="PromotionsExtract.PromotionsService_tempuri_org,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="anyType" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="anyURI" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="base64Binary" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="boolean" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="byte" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="char" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="dateTime" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="decimal" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="double" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="duration" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="float" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="guid" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="int" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="long" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="QName" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="short" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="string" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="unsignedByte" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="unsignedInt" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="unsignedLong" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization" RootName="unsignedShort" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_microsoft_com_2003_10_Serialization,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_datacontract_org_2004_07_BT_NextGen_Promotions" RootName="ArrayOfPromotion" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_datacontract_org_2004_07_BT_NextGen_Promotions,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="PromotionsExtract.PromotionsService_schemas_datacontract_org_2004_07_BT_NextGen_Promotions" RootName="Promotion" AssemblyQualifiedName="PromotionsExtract.PromotionsService_schemas_datacontract_org_2004_07_BT_NextGen_Promotions,PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+      </TrackedSchemas>
+    </ModuleRef>
+    <ModuleRef Name="PromotionsExtract" Version="1.0.0.0" Culture="neutral" PublicKeyToken="be3013815deaefc7" FullName="PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7">
+      <Services>
+        <Service Name="PromotionsExtract.PromotionsServiceClient" State="Enlisted" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports>
+            <Port Name="ReceiveDataFromSchedulerPort" Modifier="2" BindingOption="1">
+              <SendPortRef xsi:nil="true" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef Name="PE_ReceivePort" />
+            </Port>
+            <Port Name="CallToService" Modifier="1" BindingOption="1">
+              <SendPortRef Name="WcfSendPort_PromotionsService_BasicHttpBinding_IPromotionsService" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+            <Port Name="SendToERP" Modifier="1" BindingOption="1">
+              <SendPortRef Name="PE_SendPortERP" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+            <Port Name="SendToERPArchive" Modifier="1" BindingOption="1">
+              <SendPortRef Name="PE_SendPortERPArchive" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+            <Port Name="SendEmailPort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="PE_SendPortEmail" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+          </Ports>
+          <Roles />
+          <Host Name="BizTalkServerApplication" NTGroupName="BTDEV\BizTalk Application Users" Type="1" Trusted="false" />
+        </Service>
+      </Services>
+      <TrackedSchemas />
+    </ModuleRef>
+  </ModuleRefCollection>
+  <SendPortCollection>
+    <SendPort Name="WcfSendPort_PromotionsService_BasicHttpBinding_IPromotionsService" IsStatic="true" IsTwoWay="true" BindingOption="1">
+      <Description>service "PromotionsService" port "BasicHttpBinding_IPromotionsService"</Description>
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <PrimaryTransport>
+        <Address>http://btdevnextgapp:9090/PromotionsService.svc</Address>
+        <TransportType Name="WCF-BasicHttp" Capabilities="899" ConfigurationClsid="467c1a52-373f-4f09-9008-27af6b985f14" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;MessageEncoding vt="8"&gt;Text&lt;/MessageEncoding&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;StaticAction vt="8"&gt;&amp;lt;BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+  &amp;lt;Operation Name="GetPromotionsTable" Action="http://tempuri.org/IPromotionsService/GetPromotionsTable" /&amp;gt;
+  &amp;lt;Operation Name="GetPromotions" Action="http://tempuri.org/IPromotionsService/GetPromotions" /&amp;gt;
+&amp;lt;/BtsActionMapping&amp;gt;&lt;/StaticAction&gt;&lt;ProxyAddress vt="8" /&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;ClientCertificate vt="8" /&gt;&lt;AlgorithmSuite vt="8"&gt;Basic256&lt;/AlgorithmSuite&gt;&lt;ProxyUserName vt="8" /&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;TextEncoding vt="8"&gt;utf-8&lt;/TextEncoding&gt;&lt;PropagateFaultMessage vt="11"&gt;-1&lt;/PropagateFaultMessage&gt;&lt;SecurityMode vt="8"&gt;None&lt;/SecurityMode&gt;&lt;ProxyToUse vt="8"&gt;Default&lt;/ProxyToUse&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;MessageClientCredentialType vt="8"&gt;UserName&lt;/MessageClientCredentialType&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="WCF-BasicHttp" Capabilities="899" ConfigurationClsid="467c1a52-373f-4f09-9008-27af6b985f14" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>BTNextGen.Biztalk.PromotionsExtract</ApplicationName>
+    </SendPort>
+    <SendPort Name="PE_SendPortERP" IsStatic="true" IsTwoWay="false" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="PromotionsExtract.PromotionsExtractFFPipeline" FullyQualifiedName="PromotionsExtract.PromotionsExtractFFPipeline, PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <PrimaryTransport>
+        <Address>ftp://5.0.108.31:21/BiztalkNGPromoFeed/PromoFeed%MessageID%.TXT</Address>
+        <TransportType Name="FTP" Capabilities="80907" ConfigurationClsid="3979ffed-0067-4cc6-9f5a-859a5db6e9bb" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;uri&amp;gt;ftp://5.0.108.31:21/BiztalkNGPromoFeed/PromoFeed%MessageID%.TXT&amp;lt;/uri&amp;gt;&amp;lt;serverAddress&amp;gt;5.0.108.31&amp;lt;/serverAddress&amp;gt;&amp;lt;serverPort&amp;gt;21&amp;lt;/serverPort&amp;gt;&amp;lt;userName&amp;gt;BTBINVTEST&amp;lt;/userName&amp;gt;&amp;lt;password&amp;gt;******&amp;lt;/password&amp;gt;&amp;lt;targetFolder&amp;gt;BiztalkNGPromoFeed&amp;lt;/targetFolder&amp;gt;&amp;lt;targetFileName&amp;gt;PromoFeed%MessageID%.TXT&amp;lt;/targetFileName&amp;gt;&amp;lt;representationType&amp;gt;ASCII&amp;lt;/representationType&amp;gt;&amp;lt;allocateStorage&amp;gt;False&amp;lt;/allocateStorage&amp;gt;&amp;lt;connectionLimit&amp;gt;0&amp;lt;/connectionLimit&amp;gt;&amp;lt;passiveMode&amp;gt;False&amp;lt;/passiveMode&amp;gt;&amp;lt;firewallType&amp;gt;NoFirewall&amp;lt;/firewallType&amp;gt;&amp;lt;firewallPort&amp;gt;21&amp;lt;/firewallPort&amp;gt;&amp;lt;useSsl&amp;gt;False&amp;lt;/useSsl&amp;gt;&amp;lt;useDataProtection&amp;gt;True&amp;lt;/useDataProtection&amp;gt;&amp;lt;ftpsConnMode&amp;gt;Explicit&amp;lt;/ftpsConnMode&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="FTP" Capabilities="80907" ConfigurationClsid="3979ffed-0067-4cc6-9f5a-859a5db6e9bb" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>BTNextGen.Biztalk.PromotionsExtract</ApplicationName>
+    </SendPort>
+    <SendPort Name="PE_SendPortERPArchive" IsStatic="true" IsTwoWay="false" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="PromotionsExtract.PromotionsExtractFFPipeline" FullyQualifiedName="PromotionsExtract.PromotionsExtractFFPipeline, PromotionsExtract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <PrimaryTransport>
+        <Address>C:\Users\selfj\Documents\PromotionsServiceDropoff\%SourceFileName%_%MessageID%.txt</Address>
+        <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;UseTempFileOnWrite vt="11"&gt;0&lt;/UseTempFileOnWrite&gt;&lt;AllowCacheOnWrite vt="11"&gt;0&lt;/AllowCacheOnWrite&gt;&lt;CopyMode vt="19"&gt;1&lt;/CopyMode&gt;&lt;FileName vt="8"&gt;%SourceFileName%_%MessageID%.txt&lt;/FileName&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>BTNextGen.Biztalk.PromotionsExtract</ApplicationName>
+    </SendPort>
+    <SendPort Name="PE_SendPortEmail" IsStatic="true" IsTwoWay="false" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <PrimaryTransport>
+        <Address>selfj@btol.com</Address>
+        <TransportType Name="SMTP" Capabilities="2" ConfigurationClsid="8f36b311-b670-4cf6-aaec-04ebb80ed48d" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;ReadReceipt vt="11"&gt;0&lt;/ReadReceipt&gt;&lt;Subject vt="8"&gt;promotionsextract&lt;/Subject&gt;&lt;DeliveryReceipt vt="11"&gt;0&lt;/DeliveryReceipt&gt;&lt;EmailBodyFileCharset vt="8"&gt;utf-8&lt;/EmailBodyFileCharset&gt;&lt;MessagePartsAttachments vt="19"&gt;0&lt;/MessagePartsAttachments&gt;&lt;To vt="8"&gt;selfj@btol.com&lt;/To&gt;&lt;EmailBodyTextCharset vt="8"&gt;utf-8&lt;/EmailBodyTextCharset&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="SMTP" Capabilities="2" ConfigurationClsid="8f36b311-b670-4cf6-aaec-04ebb80ed48d" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>BTNextGen.Biztalk.PromotionsExtract</ApplicationName>
+    </SendPort>
+  </SendPortCollection>
+  <DistributionListCollection />
+  <ReceivePortCollection>
+    <ReceivePort Name="PE_ReceivePort" IsTwoWay="false" BindingOption="1">
+      <Description xsi:nil="true" />
+      <ReceiveLocations>
+        <ReceiveLocation Name="PE_ReceiveLocationFromScheduler">
+          <Description xsi:nil="true" />
+          <Address>schedule://TimeSpan/PE Receive Properties</Address>
+          <PublicAddress />
+          <Primary>true</Primary>
+          <ReceiveLocationServiceWindowEnabled>false</ReceiveLocationServiceWindowEnabled>
+          <ReceiveLocationFromTime>2000-01-01T04:00:00</ReceiveLocationFromTime>
+          <ReceiveLocationToTime>2000-01-01T03:59:59</ReceiveLocationToTime>
+          <ReceiveLocationStartDateEnabled>false</ReceiveLocationStartDateEnabled>
+          <ReceiveLocationStartDate>2011-05-01T00:00:00</ReceiveLocationStartDate>
+          <ReceiveLocationEndDateEnabled>false</ReceiveLocationEndDateEnabled>
+          <ReceiveLocationEndDate>2011-05-02T23:59:59</ReceiveLocationEndDate>
+          <ReceiveLocationTransportType Name="BTSchedule" Capabilities="9" ConfigurationClsid="2ba4927d-9fe6-400e-8240-8045854f9e97" />
+          <ReceiveLocationTransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;config&amp;gt;&amp;lt;uri&amp;gt;schedule://TimeSpan/PE Receive Properties&amp;lt;/uri&amp;gt;&amp;lt;name&amp;gt;PE Receive Properties&amp;lt;/name&amp;gt;&amp;lt;suspend&amp;gt;true&amp;lt;/suspend&amp;gt;&amp;lt;Schedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="TimeSpanSchedule"&amp;gt;&amp;lt;LastActivated&amp;gt;1900-01-01T00:00:00&amp;lt;/LastActivated&amp;gt;&amp;lt;NextActivated xsi:nil="true" /&amp;gt;&amp;lt;StartTime&amp;gt;1900-01-01T00:00:00&amp;lt;/StartTime&amp;gt;&amp;lt;StartDate&amp;gt;2011-05-01T00:00:00&amp;lt;/StartDate&amp;gt;&amp;lt;Interval&amp;gt;60&amp;lt;/Interval&amp;gt;&amp;lt;/Schedule&amp;gt;&amp;lt;task&amp;gt;&amp;lt;qualifiedname&amp;gt;ScheduledTaskAdapter.TaskComponents.XmlStringStreamProvider, ScheduledTaskAdapter.TaskComponents, Version=3.0.0.0, Culture=neutral, PublicKeyToken=aa9f2dd0f13442dc&amp;lt;/qualifiedname&amp;gt;&amp;lt;XmlStringArguments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;XmlString&amp;gt;&amp;amp;lt;?xml version="1.0" encoding="utf-8"?&amp;amp;gt;&amp;amp;lt;ns0:GetPromotions xmlns:ns0="http://PromotionsExtract.GetPromotions"&amp;amp;gt;&amp;amp;lt;GetPromotionsField&amp;amp;gt;&amp;amp;lt;/GetPromotionsField&amp;amp;gt;&amp;amp;lt;/ns0:GetPromotions&amp;amp;gt;&amp;lt;/XmlString&amp;gt;&amp;lt;/XmlStringArguments&amp;gt;&amp;lt;/task&amp;gt;&amp;lt;/config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</ReceiveLocationTransportTypeData>
+          <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+          <ReceivePipelineData xsi:nil="true" />
+          <SendPipeline xsi:nil="true" />
+          <SendPipelineData xsi:nil="true" />
+          <Enable>false</Enable>
+          <ReceiveHandler Name="BizTalkServerApplication" HostTrusted="false">
+            <TransportType Name="BTSchedule" Capabilities="9" ConfigurationClsid="2ba4927d-9fe6-400e-8240-8045854f9e97" />
+          </ReceiveHandler>
+        </ReceiveLocation>
+      </ReceiveLocations>
+      <SendPipelineData xsi:nil="true" />
+      <Authentication>0</Authentication>
+      <Tracking>0</Tracking>
+      <Transforms />
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>BTNextGen.Biztalk.PromotionsExtract</ApplicationName>
+    </ReceivePort>
+  </ReceivePortCollection>
+  <PartyCollection xsi:nil="true" />
+</BindingInfo>

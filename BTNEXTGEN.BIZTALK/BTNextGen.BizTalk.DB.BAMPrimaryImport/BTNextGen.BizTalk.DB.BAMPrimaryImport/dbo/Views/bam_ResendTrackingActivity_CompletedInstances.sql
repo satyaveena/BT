@@ -1,0 +1,1 @@
+﻿CREATE VIEW dbo.[bam_ResendTrackingActivity_CompletedInstances] AS  SELECT * FROM dbo.[bam_ResendTrackingActivity_Completed] WITH (NOLOCK)

@@ -1,0 +1,444 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="52a2ce50-c349-4ec0-9a84-e7443a9b6365" LowerBound="1.1" HigherBound="108.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.ReconCybersource" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="023095c4-690e-4ded-aa54-f2f8f4851834" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_4_RC2" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="440bb452-c522-4ce3-aa76-52aab2094e39" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d6b610f2-f9b9-46dc-abed-17b4d26d2326" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.78">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceBody" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="35e11adb-e1d3-47b9-bd6d-4640868f446b" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_5_RC2" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="9f3de2ad-169c-4aed-b33c-2ac8c257d99d" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="eafc0df6-81bb-4e52-ae15-9081578e1f4d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.77">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceERP" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="704c5c80-9637-44a3-b0bd-72bbb0abebf4" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_ArchiveERPFF_RC2" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="f94b18fe-a622-4233-a3a0-5ac948e44533" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="150b8f19-9618-4bbe-b24b-f1bc48f60fd2" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.77">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceERP" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="ca8d6a7f-bbd4-42f1-b0eb-5a303c50e979" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_3_RC2" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="b8be716b-50ed-4d53-8735-e80161669c00" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c89c39df-847d-4c98-8e2e-29c5f43ca320" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.82">
+                    <om:Property Name="Ref" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="45b5c8c6-19b0-4612-85e6-0598b5afa103" ParentLink="Module_ServiceDeclaration" LowerBound="32.1" HigherBound="107.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="IOrder_Cont" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="63877c7d-0354-42b8-8303-6e5e36631fad" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="47.1" HigherBound="48.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive4ERPFlatFile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="acfc759d-60b9-4532-a13d-a5366024aff2" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="43.1" HigherBound="44.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceBody" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_RAWFile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c347cd43-881f-424e-9bd6-8ac04394fb59" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="44.1" HigherBound="45.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceERP" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_ERPFlatFile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="13385e07-2299-497d-bda2-58ab9b528a28" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="45.1" HigherBound="46.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceERP" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive4ERPFlatFile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d374cd62-6f17-40b0-8370-d07c741b306a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="46.1" HigherBound="47.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Fault" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="f5be6d48-38ec-4a5b-b11f-270c339c9d4d" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="3691212a-6725-4329-92fd-1df6565b33a4" ParentLink="ServiceBody_Statement" LowerBound="50.1" HigherBound="53.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_ReceiveRAW" />
+                    <om:Property Name="MessageName" Value="Message_RAWFile" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_RAW" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="d789446d-7189-4251-8ea5-6032dcb7cbda" ParentLink="ServiceBody_Statement" LowerBound="53.1" HigherBound="105.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableAssignment" OID="51795d49-f1af-43f7-921e-42c0cba50dc2" ParentLink="ComplexStatement_Statement" LowerBound="58.1" HigherBound="60.1">
+                        <om:Property Name="Expression" Value="varArchive4ERPFlatFile=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ReconCyberSource&quot;,&quot;Archive4ERPFlatFile&quot;));&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="getSSO" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="008df76b-4708-4cc4-93a8-1e94961f8f21" ParentLink="ComplexStatement_Statement" LowerBound="60.1" HigherBound="66.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_ERP" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="0a0fbf08-687c-43e5-8eed-2af35df42a85" ParentLink="ComplexStatement_Statement" LowerBound="63.1" HigherBound="65.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ReconCybersource2.Transform_4" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_ERPFlatfile" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="f8acc3d2-9cbf-4a12-ae7d-97f175a93a8e" ParentLink="Transform_InputMessagePartRef" LowerBound="64.108" HigherBound="64.123">
+                                <om:Property Name="MessageRef" Value="Message_RAWFile" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="ad379698-54b7-4781-a93a-34f3fcd44941" ParentLink="Transform_OutputMessagePartRef" LowerBound="64.36" HigherBound="64.55">
+                                <om:Property Name="MessageRef" Value="Message_ERPFlatFile" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="177a7b9b-8d7a-458b-8001-a9848ec8b7f2" ParentLink="Construct_MessageRef" LowerBound="61.31" HigherBound="61.50">
+                            <om:Property Name="Ref" Value="Message_ERPFlatFile" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="4c019f92-fe4a-419d-8ad3-1add7673cebd" ParentLink="ComplexStatement_Statement" LowerBound="66.1" HigherBound="79.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_ArchiveERPFlatFile" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="fe29dac4-a01c-4c4a-a6ce-47080b44ca6c" ParentLink="ReallyComplexStatement_Branch" LowerBound="67.21" HigherBound="79.1">
+                            <om:Property Name="Expression" Value="varArchive4ERPFlatFile == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveRAWFile" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="f2391ee4-8532-449c-8b2c-59409e7620fe" ParentLink="ComplexStatement_Statement" LowerBound="69.1" HigherBound="76.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchiveRAWFile" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="aed75533-8fcd-4571-b1c9-bb1087556b89" ParentLink="Construct_MessageRef" LowerBound="70.35" HigherBound="70.62">
+                                    <om:Property Name="Ref" Value="Message_Archive4ERPFlatFile" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="eb8ef1fd-cf69-4a55-9f6f-b84ab5b5f5a6" ParentLink="ComplexStatement_Statement" LowerBound="72.1" HigherBound="75.1">
+                                    <om:Property Name="Expression" Value="Message_Archive4ERPFlatFile = Message_ERPFlatFile; &#xD;&#xA;Message_Archive4ERPFlatFile(FILE.ReceivedFileName)=&quot;Archive4_ERPFlatFile&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="a42f49c0-72e1-4e9f-a27f-48f6a5faf3c7" ParentLink="ComplexStatement_Statement" LowerBound="76.1" HigherBound="78.1">
+                                <om:Property Name="PortName" Value="Port_ArchiveERPFF" />
+                                <om:Property Name="MessageName" Value="Message_Archive4ERPFlatFile" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ArchiveERPFlatFile" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="678b2adc-c1ae-462f-8fb4-8c5d3d73b69d" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="45590000-dbe6-4368-93d5-b330964c1a1e" ParentLink="ComplexStatement_Statement" LowerBound="79.1" HigherBound="81.1">
+                        <om:Property Name="PortName" Value="Port_ERP" />
+                        <om:Property Name="MessageName" Value="Message_ERPFlatFile" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_ERP" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="adeba652-1805-40ad-b2b0-be81f10a7261" ParentLink="Scope_Catch" LowerBound="84.1" HigherBound="103.1">
+                        <om:Property Name="ExceptionName" Value="ex2" />
+                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="f733bf8a-6485-47d2-a8e1-b001c709084b" ParentLink="Catch_Statement" LowerBound="87.1" HigherBound="100.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_Fault" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="b8edc841-aff0-4db3-93aa-01edf689fd06" ParentLink="Construct_MessageRef" LowerBound="88.35" HigherBound="88.48">
+                                <om:Property Name="Ref" Value="Message_Fault" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="a3606d9a-06ba-4400-b245-e0c063076398" ParentLink="ComplexStatement_Statement" LowerBound="90.1" HigherBound="99.1">
+                                <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;Message_Fault= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;Message_Fault.FailureCategory=&quot;BTNextGen.Biztalk.ReconCybersource Exception&quot;;&#xD;&#xA;Message_Fault.FaultDescription=ex2.Message;&#xD;&#xA;Message_Fault.FaultCode=&quot;3004&quot;;&#xD;&#xA;Message_Fault.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_5" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="79cd5541-f01a-41e0-9089-eb070a8fe1cb" ParentLink="Catch_Statement" LowerBound="100.1" HigherBound="102.1">
+                            <om:Property Name="PortName" Value="Port_FaultPort" />
+                            <om:Property Name="MessageName" Value="Message_Fault" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_Fault" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="5a7ac091-fd50-42d6-9c2f-71605fb296e0" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="35.1" HigherBound="37.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource.PortType_4_RC2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_ReceiveRAW" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="5a7a797e-d12a-4801-9660-b8eb30c1f87a" ParentLink="PortDeclaration_CLRAttribute" LowerBound="35.1" HigherBound="36.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="856786ad-5fc8-4caf-b0ce-94a2449f0ee5" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="37.1" HigherBound="39.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource.PortType_5_RC2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_ERP" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="0b0ed88a-fd66-468f-916e-9afb8890416e" ParentLink="PortDeclaration_CLRAttribute" LowerBound="37.1" HigherBound="38.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="5becf952-4da7-4333-acb4-a16f5038a364" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="39.1" HigherBound="41.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource.PortType_ArchiveERPFF_RC2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_ArchiveERPFF" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="1fa18ee3-80c8-462e-9fa6-9f40c1c12f2f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="39.1" HigherBound="40.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="64a18710-b044-463c-a9cd-a2bf6a4726df" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="41.1" HigherBound="43.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ReconCybersource.PortType_3_RC2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_FaultPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="d9c22492-9b6a-44b8-bb6f-cb37f6c7bb51" ParentLink="PortDeclaration_CLRAttribute" LowerBound="41.1" HigherBound="42.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.ReconCybersource
+{
+    internal porttype PortType_4_RC2
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceBody
+        };
+    };
+    internal porttype PortType_5_RC2
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceERP
+        };
+    };
+    internal porttype PortType_ArchiveERPFF_RC2
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceERP
+        };
+    };
+    internal porttype PortType_3_RC2
+    {
+        oneway Operation_1
+        {
+            Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service IOrder_Cont
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_4_RC2 Port_ReceiveRAW;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_5_RC2 Port_ERP;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_ArchiveERPFF_RC2 Port_ArchiveERPFF;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses PortType_3_RC2 Port_FaultPort;
+        message BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceBody Message_RAWFile;
+        message BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceERP Message_ERPFlatFile;
+        message BTNextGen.Biztalk.ReconCybersource2.FlatFileSchemaCybersourceERP Message_Archive4ERPFlatFile;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage Message_Fault;
+        System.Boolean varArchive4ERPFlatFile;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3691212a-6725-4329-92fd-1df6565b33a4")]
+            activate receive (Port_ReceiveRAW.Operation_1, Message_RAWFile);
+            varArchive4ERPFlatFile = true;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d789446d-7189-4251-8ea5-6032dcb7cbda")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("51795d49-f1af-43f7-921e-42c0cba50dc2")]
+                    varArchive4ERPFlatFile=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.ReconCyberSource","Archive4ERPFlatFile"));
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("008df76b-4708-4cc4-93a8-1e94961f8f21")]
+                    construct Message_ERPFlatFile
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("0a0fbf08-687c-43e5-8eed-2af35df42a85")]
+                        transform (Message_ERPFlatFile) = BTNextGen.Biztalk.ReconCybersource2.Transform_4 (Message_RAWFile);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("4c019f92-fe4a-419d-8ad3-1add7673cebd")]
+                    if (varArchive4ERPFlatFile == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f2391ee4-8532-449c-8b2c-59409e7620fe")]
+                        construct Message_Archive4ERPFlatFile
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("eb8ef1fd-cf69-4a55-9f6f-b84ab5b5f5a6")]
+                            Message_Archive4ERPFlatFile = Message_ERPFlatFile; 
+                            Message_Archive4ERPFlatFile(FILE.ReceivedFileName)="Archive4_ERPFlatFile"; 
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("a42f49c0-72e1-4e9f-a27f-48f6a5faf3c7")]
+                        send (Port_ArchiveERPFF.Operation_1, Message_Archive4ERPFlatFile);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("45590000-dbe6-4368-93d5-b330964c1a1e")]
+                    send (Port_ERP.Operation_1, Message_ERPFlatFile);
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("adeba652-1805-40ad-b2b0-be81f10a7261")]
+                    catch (System.SystemException ex2)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f733bf8a-6485-47d2-a8e1-b001c709084b")]
+                        construct Message_Fault
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a3606d9a-06ba-4400-b245-e0c063076398")]
+                            // Create fault exception Message
+                            Message_Fault= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            // Assign Properties
+                            Message_Fault.FailureCategory="BTNextGen.Biztalk.ReconCybersource Exception";
+                            Message_Fault.FaultDescription=ex2.Message;
+                            Message_Fault.FaultCode="3004";
+                            Message_Fault.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("79cd5541-f01a-41e0-9089-eb070a8fe1cb")]
+                        send (Port_FaultPort.Operation_1, Message_Fault);
+                    }
+                }
+            }
+        }
+    }
+}
+

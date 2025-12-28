@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21107</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{809C40C7-B024-40E7-A0BD-305E6188E32C}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>BTNextGen.BizTalk.Profiles.Schemas</RootNamespace>
+    <AssemblyName>BTNextGen.BizTalk.Profiles.Schemas</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BTNextGen.Biztalk.Common.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="GetAccountProfileDetailsFromLegacy.xsd">
+      <TypeName>GetAccountProfileDetailsFromLegacy</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+    <Schema Include="GetReviewTypeFromLegacy.xsd">
+      <TypeName>GetReviewTypeFromLegacy</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+    <Schema Include="GetUserProfilesFromLegacy.xsd">
+      <TypeName>GetUserProfilesFromLegacy</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+    <Schema Include="ProcedureResultSet.dbo.procGetBTAccount.xsd">
+      <TypeName>ProcedureResultSet_dbo_procGetBTAccount</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+    <Schema Include="ProcedureResultSet.dbo.procGetBTUserReviewType.xsd">
+      <TypeName>ProcedureResultSet_dbo_procGetBTUserReviewType</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+    <Schema Include="ProcedureResultSet.dbo.procGetUser.xsd">
+      <TypeName>ProcedureResultSet_dbo_procGetUser</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+    <Schema Include="SetAccountProfileStatus.xsd">
+      <TypeName>SetAccountProfileStatus</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+    <Schema Include="SetOrgResponseSqlProcedure.xsd">
+      <TypeName>SetOrgResponseSqlProcedure</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+    <Schema Include="SetReviewTypesStatus.xsd">
+      <TypeName>SetReviewTypesStatus</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+    <Schema Include="SetUserProfileStatusSqlProcedure.xsd">
+      <TypeName>SetUserProfileStatusSqlProcedure</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BTNextGen.Biztalk.Common.snk" />
+    <Schema Include="ProcedureResultSet.dbo.procGetOrganization.xsd">
+      <TypeName>ProcedureResultSet_dbo_procGetOrganization</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+    <Schema Include="GetOrgDetailsFromLegacy.xsd">
+      <TypeName>GetOrgDetailsFromLegacy</TypeName>
+      <Namespace>BTNextGen.BizTalk.Profiles.Schemas</Namespace>
+    </Schema>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

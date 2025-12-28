@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21107</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E46F2A94-9BB9-43B6-A842-439D628A9C8B}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>BTNextGen.Biztalk.ExpiredCreditCards</RootNamespace>
+    <AssemblyName>BTNextGen.Biztalk.ExpiredCreditCards</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BTNextGen.Biztalk.Common.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BTNextGen.BizTalk.CS.Profiles.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BTNextGen.BizTalk.Schemas.Common\BTNextGen.BizTalk.CS.Profiles.Schemas\bin\Debug\BTNextGen.BizTalk.CS.Profiles.Schemas.dll</HintPath>
+    </Reference>
+    <Reference Include="BTNextGen.BizTalk.SSO.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\BTNextGen.BizTalk.SSO.Utility\v4.0_1.0.0.0__be3013815deaefc7\BTNextGen.BizTalk.SSO.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="BTNextGen.ExceptionHandler.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BTNextGen.ExceptionHandler.Orchestration\BTNextGen.ExceptionHandler.Utility\bin\Debug\BTNextGen.ExceptionHandler.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Bam.EventObservation, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk Server 2010\Tracking\Microsoft.BizTalk.Bam.EventObservation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Bam.XLANGs, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk Server 2010\Tracking\Microsoft.BizTalk.Bam.XLANGs.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ESB.ExceptionHandling, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk ESB Toolkit 2.1\Bin\Microsoft.Practices.ESB.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk ESB Toolkit 2.1\Bin\Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="SendExpiredCreditCardNotice.odx">
+      <TypeName>SendExpiredCreditCardNotice</TypeName>
+      <Namespace>BTNextGen.Biztalk.ExpiredCreditCards</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BTNextGen.Biztalk.Common.snk" />
+    <Schema Include="ExpiredCreditCardSchemaX.xsd">
+      <TypeName>ExpiredCreditCardSchemaX</TypeName>
+      <Namespace>BTNextGen.Biztalk.ExpiredCreditCards</Namespace>
+    </Schema>
+    <Schema Include="IProfile_schemas_datacontract_org_2004_07_IProfiles.xsd">
+      <TypeName>IProfile_schemas_datacontract_org_2004_07_IProfiles</TypeName>
+      <Namespace>BTNextGen.Biztalk.ExpiredCreditCards</Namespace>
+    </Schema>
+    <Schema Include="IProfile_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <TypeName>IProfile_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <Namespace>BTNextGen.Biztalk.ExpiredCreditCards</Namespace>
+    </Schema>
+    <Schema Include="IProfile_tempuri_org.xsd">
+      <TypeName>IProfile_tempuri_org</TypeName>
+      <Namespace>BTNextGen.Biztalk.ExpiredCreditCards</Namespace>
+    </Schema>
+    <Schema Include="ExpiredCreditCardSchembSingle.xsd">
+      <TypeName>ExpiredCreditCardSchembSingle</TypeName>
+      <Namespace>BTNextGen.Biztalk.ExpiredCreditCards</Namespace>
+    </Schema>
+    <Schema Include="ExpiredCreditCardSchema.xsd">
+      <TypeName>ExpiredCreditCardSchema</TypeName>
+      <Namespace>BTNextGen.Biztalk.ExpiredCreditCards</Namespace>
+    </Schema>
+    <Schema Include="DummyQueryCreditCard.xsd">
+      <TypeName>DummyQueryCreditCard</TypeName>
+      <Namespace>BTNextGen.Biztalk.ExpiredCreditCards</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="customxslt.xsl" />
+    <Content Include="IProfile.BindingInfo.xml" />
+    <Map Include="Transform_Adjust.btm">
+      <TypeName>Transform_Adjust</TypeName>
+      <Namespace>BTNextGen.Biztalk.ExpiredCreditCards</Namespace>
+    </Map>
+    <Map Include="TransformXML_2_UpdateProfiles.btm">
+      <TypeName>TransformXML_2_UpdateProfiles</TypeName>
+      <Namespace>BTNextGen.Biztalk.ExpiredCreditCards</Namespace>
+    </Map>
+    <XLang Include="IProfile.odx">
+      <TypeName>IProfile</TypeName>
+      <Namespace>BTNextGen.Biztalk.ExpiredCreditCards</Namespace>
+    </XLang>
+    <Content Include="IProfile_Custom.BindingInfo.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

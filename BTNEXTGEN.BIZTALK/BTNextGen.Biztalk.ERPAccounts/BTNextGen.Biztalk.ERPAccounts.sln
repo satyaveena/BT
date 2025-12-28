@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.Biztalk.ERPAccounts.Orchestration", "BTNextGen.Biztalk.ERPAccounts.Orchestration\BTNextGen.Biztalk.ERPAccounts.Orchestration.btproj", "{7E6BE787-ED6A-4850-B7C2-F5731B061CAA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A5211624-C2FB-464E-97A4-4B53ECE2E5EB} = {A5211624-C2FB-464E-97A4-4B53ECE2E5EB}
+		{6797333A-F6B6-4EC0-8E8A-023FBDB16500} = {6797333A-F6B6-4EC0-8E8A-023FBDB16500}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.Biztalk.ERPAccounts.Schemas", "BTNextGen.Biztalk.ERPAccounts.Schemas\BTNextGen.Biztalk.ERPAccounts.Schemas.btproj", "{6797333A-F6B6-4EC0-8E8A-023FBDB16500}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.Biztalk.ERPAccounts.Maps", "BTNextGen.Biztalk.ERPAccounts.Maps\BTNextGen.Biztalk.ERPAccounts.Maps.btproj", "{A5211624-C2FB-464E-97A4-4B53ECE2E5EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.Biztalk.ERPAccounts.Pipeline", "BTNextGen.Biztalk.ERPAccounts.Pipeline\BTNextGen.Biztalk.ERPAccounts.Pipeline.btproj", "{6D5A53BC-2DEC-455A-BE65-7EC7AECCD522}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://btdevtfs/portal/nextgencollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BTNextGen.Biztalk.ERPAccounts.Orchestration\\BTNextGen.Biztalk.ERPAccounts.Orchestration.btproj
+		SccProjectName1 = BTNextGen.Biztalk.ERPAccounts.Orchestration
+		SccLocalPath1 = BTNextGen.Biztalk.ERPAccounts.Orchestration
+		SccProjectUniqueName2 = BTNextGen.Biztalk.ERPAccounts.Schemas\\BTNextGen.Biztalk.ERPAccounts.Schemas.btproj
+		SccProjectName2 = BTNextGen.Biztalk.ERPAccounts.Schemas
+		SccLocalPath2 = BTNextGen.Biztalk.ERPAccounts.Schemas
+		SccProjectUniqueName3 = BTNextGen.Biztalk.ERPAccounts.Maps\\BTNextGen.Biztalk.ERPAccounts.Maps.btproj
+		SccProjectName3 = BTNextGen.Biztalk.ERPAccounts.Maps
+		SccLocalPath3 = BTNextGen.Biztalk.ERPAccounts.Maps
+		SccProjectUniqueName4 = BTNextGen.Biztalk.ERPAccounts.Pipeline\\BTNextGen.Biztalk.ERPAccounts.Pipeline.btproj
+		SccProjectName4 = BTNextGen.Biztalk.ERPAccounts.Pipeline
+		SccLocalPath4 = BTNextGen.Biztalk.ERPAccounts.Pipeline
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Description = july 2015
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E6BE787-ED6A-4850-B7C2-F5731B061CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6BE787-ED6A-4850-B7C2-F5731B061CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6BE787-ED6A-4850-B7C2-F5731B061CAA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7E6BE787-ED6A-4850-B7C2-F5731B061CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6BE787-ED6A-4850-B7C2-F5731B061CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E6BE787-ED6A-4850-B7C2-F5731B061CAA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6797333A-F6B6-4EC0-8E8A-023FBDB16500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6797333A-F6B6-4EC0-8E8A-023FBDB16500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6797333A-F6B6-4EC0-8E8A-023FBDB16500}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6797333A-F6B6-4EC0-8E8A-023FBDB16500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6797333A-F6B6-4EC0-8E8A-023FBDB16500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6797333A-F6B6-4EC0-8E8A-023FBDB16500}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A5211624-C2FB-464E-97A4-4B53ECE2E5EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5211624-C2FB-464E-97A4-4B53ECE2E5EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5211624-C2FB-464E-97A4-4B53ECE2E5EB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A5211624-C2FB-464E-97A4-4B53ECE2E5EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5211624-C2FB-464E-97A4-4B53ECE2E5EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5211624-C2FB-464E-97A4-4B53ECE2E5EB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6D5A53BC-2DEC-455A-BE65-7EC7AECCD522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5A53BC-2DEC-455A-BE65-7EC7AECCD522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5A53BC-2DEC-455A-BE65-7EC7AECCD522}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6D5A53BC-2DEC-455A-BE65-7EC7AECCD522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5A53BC-2DEC-455A-BE65-7EC7AECCD522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5A53BC-2DEC-455A-BE65-7EC7AECCD522}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

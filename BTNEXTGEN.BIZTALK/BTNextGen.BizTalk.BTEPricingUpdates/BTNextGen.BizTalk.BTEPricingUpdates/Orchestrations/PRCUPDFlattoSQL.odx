@@ -1,0 +1,1025 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="dd4e6ecb-f327-4d02-98bd-26aa27df5eef" LowerBound="1.1" HigherBound="272.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.BizTalk.BTEPricingUpdates" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="56afb89f-7408-4295-b9c5-71f1c33f3acc" ParentLink="Module_PortType" LowerBound="8.1" HigherBound="15.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="rcvPRCUPDFlatPort" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="c82d80ef-e8ba-4f4d-827d-f507cda30ad6" ParentLink="PortType_OperationDeclaration" LowerBound="10.1" HigherBound="14.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d28e0e0f-c176-4db1-8bb1-f07ebcfb99e6" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="12.13" HigherBound="12.27">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.BTEPricingUpdates.Schemas.PRCUPD" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="7b40a0b9-a96c-46d6-9a96-79a3edb5b4f2" ParentLink="Module_PortType" LowerBound="15.1" HigherBound="22.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ArchivePRCUPDFlatPort" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="4a700237-2bb7-419d-9a5b-2d9ed2e769a4" ParentLink="PortType_OperationDeclaration" LowerBound="17.1" HigherBound="21.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="05f48212-99dd-46be-a48b-54df510e0e31" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="19.13" HigherBound="19.27">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.BTEPricingUpdates.Schemas.PRCUPD" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="8d92f3a7-79ec-4533-b90f-e1fa6fcb7174" ParentLink="Module_PortType" LowerBound="22.1" HigherBound="29.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="archivePRCUPDXMLPort" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="3d732929-212e-48ce-8466-93e7a6d0197d" ParentLink="PortType_OperationDeclaration" LowerBound="24.1" HigherBound="28.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="07981865-dc44-4728-a19c-da44ea873951" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="26.13" HigherBound="26.42">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.BTEPricingUpdates.Schemas.IntermediateXMLPRCUPD" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="c32cf8dc-f099-458f-a1b0-46bc8b210348" ParentLink="Module_PortType" LowerBound="29.1" HigherBound="36.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="snd_archivePRCUPDSQLPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="862da75b-46b7-4af8-9867-ccd5f84e39bb" ParentLink="PortType_OperationDeclaration" LowerBound="31.1" HigherBound="35.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e5e3a167-e71a-49e8-947c-113afdf9ba76" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="33.13" HigherBound="33.68">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.BTEPricingUpdates.BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdates" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="e01938d4-029c-4f1d-b5c4-8cc1ff7bac15" ParentLink="Module_PortType" LowerBound="36.1" HigherBound="43.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="snd_PRCUPDSQLPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="38ae7b92-1292-4ab4-8a3d-6e9062e344df" ParentLink="PortType_OperationDeclaration" LowerBound="38.1" HigherBound="42.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="f0b932a9-2959-47e9-a6f3-5b20e05dd826" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="40.13" HigherBound="40.68">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.BTEPricingUpdates.BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdates" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="40319e4d-b099-4f23-b39a-90de73c0ec87" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="40.70" HigherBound="40.133">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.BTEPricingUpdates.BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdatesResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="22ef7420-a082-46c2-997a-6c334f1b8865" ParentLink="Module_PortType" LowerBound="43.1" HigherBound="50.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="snd_archivePRCUPDSQLResponsePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="018a6547-3644-44c5-a5a2-3bc6669781d8" ParentLink="PortType_OperationDeclaration" LowerBound="45.1" HigherBound="49.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="14527729-1b63-49c8-b077-0c7a19420ea5" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="47.13" HigherBound="47.76">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.BTEPricingUpdates.BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdatesResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="223c33e2-a104-4dce-9c48-6fbb93561420" ParentLink="Module_PortType" LowerBound="50.1" HigherBound="57.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ESBFaultMessagePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="66bf0bbe-5dd4-4326-9ec5-d174158d4905" ParentLink="PortType_OperationDeclaration" LowerBound="52.1" HigherBound="56.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="34037877-351f-48d8-ba0d-d14181ed6b98" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="54.13" HigherBound="54.82">
+                    <om:Property Name="Ref" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="ff4c7063-ead0-4725-bf4c-4af6d0b5be61" ParentLink="Module_PortType" LowerBound="57.1" HigherBound="64.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="sndEmailAlertPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="c3bb9611-ba6e-4aba-b363-af57a9374c4f" ParentLink="PortType_OperationDeclaration" LowerBound="59.1" HigherBound="63.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="221026c4-20fd-4ba5-a3de-fec361bb501b" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="61.13" HigherBound="61.32">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.BTEPricingUpdates.MultipartType_Email" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="51efc7f4-4cfd-4f18-9cd5-f5457196dc2e" ParentLink="Module_ServiceDeclaration" LowerBound="64.1" HigherBound="271.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PRCUPDFlattoSQL" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="dcff08e0-bdf7-4906-8eb3-80136b91af8e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="93.1" HigherBound="94.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SQLReturnValue" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="1829336a-f686-4789-8079-07feafd9b832" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="94.1" HigherBound="95.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SQLReturnMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8dfbc2f0-b303-4c55-bbbd-e4995cb9ba94" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="95.1" HigherBound="96.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Text.StringBuilder" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgbody" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f34e0dc6-9dcb-47df-a4ff-e04442da0d7a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="83.1" HigherBound="84.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdatesResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archivePRCUPDSQLResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="568b9dee-ae2f-40b0-8fd7-0f01122b6725" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="84.1" HigherBound="85.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdates" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archivePRCUPDSQL" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="89f1af01-b22d-4979-b1d8-fdaf8c6bdbcc" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="85.1" HigherBound="86.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.Schemas.PRCUPD" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PRCUPDFlat" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="7870f407-b1f6-4049-821a-fcc726b43519" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="86.1" HigherBound="87.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.Schemas.PRCUPD" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archivePRCUPDFlat" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9bb55f11-4052-465d-8e2a-19083de796f8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="87.1" HigherBound="88.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.Schemas.IntermediateXMLPRCUPD" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archivePRCUPDXml" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="235ff026-7380-486b-a7e2-dc3fe87a3bf8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="88.1" HigherBound="89.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.Schemas.IntermediateXMLPRCUPD" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PRCUPDIXml" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="040f3c78-c8f4-4ffe-b0f1-ef1b0403496b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="89.1" HigherBound="90.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdates" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PRCUPDSQL" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="5d155069-667d-44ad-ac29-66ed28e2839f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="90.1" HigherBound="91.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdatesResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PRCUPDSQLResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f7a01bb1-45d4-4cfa-981e-2127b5f64b66" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="91.1" HigherBound="92.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ESBFaultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="0e05dc89-f7fc-4d9b-8652-05338f67309d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="92.1" HigherBound="93.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.MultipartType_Email" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="EmailAlert" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="8489ed14-bc93-43e5-9cc2-baec7ddd4fea" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="c48cc322-60f4-4438-a2fa-8af174244e3b" ParentLink="ServiceBody_Statement" LowerBound="98.1" HigherBound="102.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="rcvPRCUPDFlat" />
+                    <om:Property Name="MessageName" Value="PRCUPDFlat" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="rcvPRCUPDFlat" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="489b774f-2036-44c5-95b9-7fdf099add9a" ParentLink="ServiceBody_Statement" LowerBound="102.1" HigherBound="109.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructPRCUPDArchive" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="1aab2b10-5445-4d51-81ef-ba9357913bfd" ParentLink="ComplexStatement_Statement" LowerBound="105.1" HigherBound="108.1">
+                        <om:Property Name="Expression" Value="archivePRCUPDFlat = PRCUPDFlat;&#xD;&#xA;archivePRCUPDFlat(FILE.ReceivedFileName) = &quot;PRCUPDFlat_&quot;;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="Assign_archivePRCUPDFlat" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="b8bcb70b-af33-424d-bafc-6133a6296815" ParentLink="Construct_MessageRef" LowerBound="103.23" HigherBound="103.40">
+                        <om:Property Name="Ref" Value="archivePRCUPDFlat" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="7e6d5ae0-eb3d-40f5-96c9-befada893823" ParentLink="ServiceBody_Statement" LowerBound="109.1" HigherBound="111.1">
+                    <om:Property Name="PortName" Value="ArchivePRCUPDFlat" />
+                    <om:Property Name="MessageName" Value="archivePRCUPDFlat" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="snd_archivePRCUPDFlat" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="36e81d1d-02ba-40f0-a03d-218970105c0c" ParentLink="ServiceBody_Statement" LowerBound="111.1" HigherBound="152.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstPRUCPDXml_Scope" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="b323e494-4bfa-4916-8902-9b7b518fecd3" ParentLink="ComplexStatement_Statement" LowerBound="116.1" HigherBound="122.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructPRCUPDXml" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="6aba470e-b405-4b3e-9c69-75f664f49660" ParentLink="ComplexStatement_Statement" LowerBound="119.1" HigherBound="121.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.BizTalk.BTEPricingUpdates.Maps.PRCUPDtoIntermediateXMLPRCUPD" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="mapPRCUPDtoIXMLPRCUPD" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="6444da2d-78c8-4d56-b6ef-adea76a89ebd" ParentLink="Transform_InputMessagePartRef" LowerBound="120.122" HigherBound="120.132">
+                                <om:Property Name="MessageRef" Value="PRCUPDFlat" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="cd3fddf0-2782-4fac-b721-edc8e2d37f72" ParentLink="Transform_OutputMessagePartRef" LowerBound="120.36" HigherBound="120.46">
+                                <om:Property Name="MessageRef" Value="PRCUPDIXml" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="91edd2af-ef10-4b41-9cbb-2a6a3dbd00bb" ParentLink="Construct_MessageRef" LowerBound="117.31" HigherBound="117.41">
+                            <om:Property Name="Ref" Value="PRCUPDIXml" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="25bb2212-0224-403a-98b4-0e39f85ec12a" ParentLink="Scope_Catch" LowerBound="125.1" HigherBound="150.1">
+                        <om:Property Name="ExceptionName" Value="PRC2XMLException" />
+                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchSysExMapping" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="5f37766e-7234-4121-bb35-c94a5353aa38" ParentLink="Catch_Statement" LowerBound="128.1" HigherBound="145.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructESBFault" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="3eeba83b-6029-4a2f-9742-2cad9496e577" ParentLink="Construct_MessageRef" LowerBound="129.35" HigherBound="129.50">
+                                <om:Property Name="Ref" Value="ESBFaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="86470815-aed1-42e1-8263-44916ea67f77" ParentLink="ComplexStatement_Statement" LowerBound="131.1" HigherBound="144.1">
+                                <om:Property Name="Expression" Value="&#xD;&#xA;// Create fault exception Message&#xD;&#xA;ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;ESBFaultMessage.FailureCategory=&quot;PRC2XML Exception&quot;;&#xD;&#xA;ESBFaultMessage.FaultDescription=PRC2XMLException.Message;&#xD;&#xA;ESBFaultMessage.FaultCode=&quot;2001&quot;;&#xD;&#xA;ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,PRCUPDFlat);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="PopulateESBFault" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="7a6aa82e-3317-4ae2-81e4-7cd71add2a8c" ParentLink="Catch_Statement" LowerBound="145.1" HigherBound="147.1">
+                            <om:Property Name="PortName" Value="ESBFaultMessagePort" />
+                            <om:Property Name="MessageName" Value="ESBFaultMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_ESBSysExSQL" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Terminate" OID="54dca8d4-ab28-4709-ad5f-abb258713ea6" ParentLink="Catch_Statement" LowerBound="147.1" HigherBound="149.1">
+                            <om:Property Name="ErrorMessage" Value="&quot;Process terminated due to Exception during SQL snd/rcv.&quot;;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="TerminateDueToSysEx" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Construct" OID="d861c7c9-55b0-4dae-9145-22e57b86613f" ParentLink="ServiceBody_Statement" LowerBound="152.1" HigherBound="159.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct_archivePRCUPDIXml" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="dfd03790-b02d-40fc-ad1e-81356c5f3ac4" ParentLink="ComplexStatement_Statement" LowerBound="155.1" HigherBound="158.1">
+                        <om:Property Name="Expression" Value="archivePRCUPDXml=PRCUPDIXml;&#xD;&#xA;archivePRCUPDXml(FILE.ReceivedFileName) = &quot;PRCUPDIXml_&quot;;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="Assign_archivePRCUPDIXml" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="5a121d37-bb58-4a71-8f2f-244f59223022" ParentLink="Construct_MessageRef" LowerBound="153.23" HigherBound="153.39">
+                        <om:Property Name="Ref" Value="archivePRCUPDXml" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="c776009a-aeff-4eb6-84ad-c2e109265387" ParentLink="ServiceBody_Statement" LowerBound="159.1" HigherBound="161.1">
+                    <om:Property Name="PortName" Value="archivePRCUPDXML" />
+                    <om:Property Name="MessageName" Value="archivePRCUPDXml" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="snd_archivePRCUPDIXml" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="767cb827-4a32-4b9f-94ab-82b0c01d4726" ParentLink="ServiceBody_Statement" LowerBound="161.1" HigherBound="167.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructPRCUPDSQL" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Transform" OID="9783261b-21a5-4216-ad45-47701e2acd7e" ParentLink="ComplexStatement_Statement" LowerBound="164.1" HigherBound="166.1">
+                        <om:Property Name="ClassName" Value="BTNextGen.BizTalk.BTEPricingUpdates.Maps.IXmlPRCUPDtoSQLPRCUPD" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="PRCUPDIXml2PRCUPDSQL" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="MessagePartRef" OID="ab447485-80b1-4de0-a751-09aac6cbe9d7" ParentLink="Transform_InputMessagePartRef" LowerBound="165.105" HigherBound="165.115">
+                            <om:Property Name="MessageRef" Value="PRCUPDIXml" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_3" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="8351cc26-9f13-4af6-957f-c1ab2b9e0246" ParentLink="Transform_OutputMessagePartRef" LowerBound="165.28" HigherBound="165.37">
+                            <om:Property Name="MessageRef" Value="PRCUPDSQL" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_4" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="a34354b5-5205-481c-adf2-28f8626eb7c5" ParentLink="Construct_MessageRef" LowerBound="162.23" HigherBound="162.32">
+                        <om:Property Name="Ref" Value="PRCUPDSQL" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Construct" OID="22997142-f092-4220-86e6-226860a22309" ParentLink="ServiceBody_Statement" LowerBound="167.1" HigherBound="175.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct_archivePRCUPDSQL" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="9f47f3d8-3537-4133-a844-f824b0f020ef" ParentLink="ComplexStatement_Statement" LowerBound="170.1" HigherBound="174.1">
+                        <om:Property Name="Expression" Value="archivePRCUPDSQL = PRCUPDSQL;&#xD;&#xA;archivePRCUPDSQL(FILE.ReceivedFileName) = &quot;PRCUPDSQL_&quot;;&#xD;&#xA;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="MessageAssignment_1" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="b1fc60c5-6900-4402-a053-d7e9a515ad1b" ParentLink="Construct_MessageRef" LowerBound="168.23" HigherBound="168.39">
+                        <om:Property Name="Ref" Value="archivePRCUPDSQL" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="8e7f75b5-bb02-48ea-846f-20370e6c6f6a" ParentLink="ServiceBody_Statement" LowerBound="175.1" HigherBound="177.1">
+                    <om:Property Name="PortName" Value="snd_archivePRCUPDSQLPort" />
+                    <om:Property Name="MessageName" Value="archivePRCUPDSQL" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="snd_archivePRCUPDSQL" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="3a64bad7-589c-483d-82a9-1e61bf038d63" ParentLink="ServiceBody_Statement" LowerBound="177.1" HigherBound="227.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="PRCUPDSQL_Scope" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Send" OID="4728026d-0248-482a-9f33-4afdd25b4e76" ParentLink="ComplexStatement_Statement" LowerBound="182.1" HigherBound="184.1">
+                        <om:Property Name="PortName" Value="snd_PRCUPDSQLPort" />
+                        <om:Property Name="MessageName" Value="PRCUPDSQL" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="snd_PRCUPDSQL" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="2dc1686d-294e-47a9-8d86-e7ad809894c4" ParentLink="ComplexStatement_Statement" LowerBound="184.1" HigherBound="186.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="snd_PRCUPDSQLPort" />
+                        <om:Property Name="MessageName" Value="PRCUPDSQLResponse" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="rcv_PRCUPDSQLResponse" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="b0f97e02-8e1e-40d0-a012-13f39dba5650" ParentLink="ComplexStatement_Statement" LowerBound="186.1" HigherBound="197.1">
+                        <om:Property Name="Expression" Value="SQLReturnValue = PRCUPDSQLResponse.ReturnValue;&#xD;&#xA;//SQLReturnMessage = &quot;No Error Message Rec'd.&quot;;&#xD;&#xA;if(PRCUPDSQLResponse.ErrorMessage != null)&#xD;&#xA; {&#xD;&#xA;   SQLReturnMessage = PRCUPDSQLResponse.ErrorMessage;&#xD;&#xA; }&#xD;&#xA;else&#xD;&#xA; {&#xD;&#xA;   SQLReturnMessage = &quot;No Error Message was returned.&quot;;&#xD;&#xA; }" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="PopulateReturnVariables" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="c9cd0085-288a-4322-b52e-2458881c9e00" ParentLink="Scope_Catch" LowerBound="200.1" HigherBound="225.1">
+                        <om:Property Name="ExceptionName" Value="PRCUPDSQLException" />
+                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchSysExSQL" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="8829e0b9-d5fd-44bd-a9d7-8dc3562e4e1e" ParentLink="Catch_Statement" LowerBound="203.1" HigherBound="220.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructESBFault" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="ac85da89-f850-4395-ad48-671fd4860cf3" ParentLink="Construct_MessageRef" LowerBound="204.35" HigherBound="204.50">
+                                <om:Property Name="Ref" Value="ESBFaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="d0dcc750-fd1b-43a0-98ed-c7804bf9fe9f" ParentLink="ComplexStatement_Statement" LowerBound="206.1" HigherBound="219.1">
+                                <om:Property Name="Expression" Value="&#xD;&#xA;// Create fault exception Message&#xD;&#xA;ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;ESBFaultMessage.FailureCategory=&quot;PRCUPDSQL Exception&quot;;&#xD;&#xA;ESBFaultMessage.FaultDescription=PRCUPDSQLException.Message;&#xD;&#xA;ESBFaultMessage.FaultCode=&quot;2001&quot;;&#xD;&#xA;ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,PRCUPDSQL);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="PopulateESBFault" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="afe02b51-c1f4-436a-acce-6e6068fbd94a" ParentLink="Catch_Statement" LowerBound="220.1" HigherBound="222.1">
+                            <om:Property Name="PortName" Value="ESBFaultMessagePort" />
+                            <om:Property Name="MessageName" Value="ESBFaultMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_ESBSysExSQL" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Terminate" OID="db3feca8-02d0-428e-87b5-86fa588916a0" ParentLink="Catch_Statement" LowerBound="222.1" HigherBound="224.1">
+                            <om:Property Name="ErrorMessage" Value="&quot;Process terminated due to Exception during SQL snd/rcv.&quot;;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="TerminateDueToSysEx" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Construct" OID="a0387d03-1ca4-4130-8aca-5594bc49fa00" ParentLink="ServiceBody_Statement" LowerBound="227.1" HigherBound="235.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct_archivePRCUPDSQLResponse" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="be9550d8-41ee-4196-812a-4cc41db5ee83" ParentLink="ComplexStatement_Statement" LowerBound="230.1" HigherBound="234.1">
+                        <om:Property Name="Expression" Value="archivePRCUPDSQLResponse = PRCUPDSQLResponse;&#xD;&#xA;archivePRCUPDSQLResponse(FILE.ReceivedFileName) = &quot;PRCUPDSQLResp_&quot;;&#xD;&#xA;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="MessageAssignment_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="08f4274d-4bfe-44c8-907f-f3a2c6220611" ParentLink="Construct_MessageRef" LowerBound="228.23" HigherBound="228.47">
+                        <om:Property Name="Ref" Value="archivePRCUPDSQLResponse" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="e4f31452-094b-4adb-9523-0033b5e14008" ParentLink="ServiceBody_Statement" LowerBound="235.1" HigherBound="237.1">
+                    <om:Property Name="PortName" Value="snd_archivePRCUPDSQLResponsePort" />
+                    <om:Property Name="MessageName" Value="archivePRCUPDSQLResponse" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="snd_archivePRCUPDSQLResponse" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="39d41571-9a6e-486b-b848-d4939969a2a6" ParentLink="ServiceBody_Statement" LowerBound="237.1" HigherBound="269.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="CheckSQLResponse" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="d736b025-0635-4d1a-8a56-02b113b7d5d3" ParentLink="ReallyComplexStatement_Branch" LowerBound="238.13" HigherBound="269.1">
+                        <om:Property Name="Expression" Value="PRCUPDSQLResponse.ReturnValue != 0" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ReturnValueNot0" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="587c3f2e-44db-4d60-893b-630868a126af" ParentLink="ComplexStatement_Statement" LowerBound="240.1" HigherBound="248.1">
+                            <om:Property Name="Expression" Value="if(SQLReturnMessage == null)&#xD;&#xA;   {&#xD;&#xA;    //This should always be populated up above, but just in case we sort of trap for a null here&#xD;&#xA;    SQLReturnMessage = &quot;SQLReturnMessage=null&quot;;&#xD;&#xA;   }&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTEPricingUpdates&quot;,&quot;I am taking the 'Error' path, because ReturnValue=&quot; + SQLReturnValue.ToString() + &quot;, with a message of: &quot; + SQLReturnMessage,System.Diagnostics.EventLogEntryType.Error);&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="LogToEventLog" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="ab2441dd-593b-442e-8134-05e09804824d" ParentLink="ComplexStatement_Statement" LowerBound="248.1" HigherBound="266.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructEmailAlert" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="b3115e5b-6fc4-4f4d-b355-247ec17624fb" ParentLink="Construct_MessageRef" LowerBound="249.27" HigherBound="249.37">
+                                <om:Property Name="Ref" Value="EmailAlert" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="ce020ed5-8799-4852-b627-4963a5352b58" ParentLink="ComplexStatement_Statement" LowerBound="251.1" HigherBound="265.1">
+                                <om:Property Name="Expression" Value="msgbody = new System.Text.StringBuilder();&#xD;&#xA;msgbody.AppendLine(&quot;I am taking the 'Error' path, because ReturnValue=&quot; + SQLReturnValue.ToString() + &quot;, with a message of: &quot; + SQLReturnMessage);&#xD;&#xA;&#xD;&#xA;EmailAlert.MessagePart_Body= new Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString(msgbody.ToString());&#xD;&#xA;EmailAlert.MessagePart_Body(Microsoft.XLANGs.BaseTypes.ContentType)=&quot;text/html&quot;;&#xD;&#xA;&#xD;&#xA;EmailAlert(SMTP.Subject)=&quot;BTEPricingUpdate Alert&quot;;&#xD;&#xA;EmailAlert(SMTP.From)=&quot;MailMan@njperkins.com&quot;;&#xD;&#xA;EmailAlert(SMTP.SMTPHost)=&quot;5.0.110.24&quot;;&#xD;&#xA;EmailAlert(SMTP.SMTPAuthenticate)=0;&#xD;&#xA;EmailAlert(SMTP.EmailBodyTextCharset)=&quot;UTF-8&quot;;&#xD;&#xA;&#xD;&#xA;sndEmailAlertPort(Microsoft.XLANGs.BaseTypes.Address)=&quot;mailto:perkinm@btol.com&quot;;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="AssignMultiParts" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="a2ceb11d-4575-4e1c-a5f7-cfc706e9be02" ParentLink="ComplexStatement_Statement" LowerBound="266.1" HigherBound="268.1">
+                            <om:Property Name="PortName" Value="sndEmailAlertPort" />
+                            <om:Property Name="MessageName" Value="EmailAlert" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="sndEmailAlert" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="9ebfb2fe-c74d-4853-a860-0dff6f8b8cfd" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="8699fa9a-67ae-4de8-b363-8fbdc5f84a7d" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="67.1" HigherBound="69.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="4" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.rcvPRCUPDFlatPort" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="rcvPRCUPDFlat" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="5c61f749-91e5-4a8c-8b84-258aa06d94a5" ParentLink="PortDeclaration_CLRAttribute" LowerBound="67.1" HigherBound="68.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="e9069150-aec3-4d5c-9ebc-6166bd4f1286" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="69.1" HigherBound="71.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="5" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.ArchivePRCUPDFlatPort" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchivePRCUPDFlat" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="09ae6838-e685-42aa-9e49-883b49254eb3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="69.1" HigherBound="70.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="683df94d-5e4c-4ea9-9e26-82c8d1834fb7" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="71.1" HigherBound="73.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="10" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.archivePRCUPDXMLPort" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archivePRCUPDXML" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="6039d23c-c0e4-4d3b-96c9-8f2c534d37a3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="71.1" HigherBound="72.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="46544d73-ee4f-4e01-a8ef-756103e95558" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="73.1" HigherBound="75.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="24" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.snd_archivePRCUPDSQLPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="snd_archivePRCUPDSQLPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="683e5430-7998-48a5-aeb0-0e5cc7b81b63" ParentLink="PortDeclaration_CLRAttribute" LowerBound="73.1" HigherBound="74.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="219eb530-8f03-4409-8368-6effe78a8797" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="75.1" HigherBound="77.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="38" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.snd_PRCUPDSQLPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="snd_PRCUPDSQLPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="aac3b5ed-75e1-481e-994d-35e61c3155b9" ParentLink="PortDeclaration_CLRAttribute" LowerBound="75.1" HigherBound="76.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="89521dd3-211d-4c3c-ac88-477805dbe789" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="77.1" HigherBound="79.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="49" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.snd_archivePRCUPDSQLResponsePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="snd_archivePRCUPDSQLResponsePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="42bfba3c-1d1d-47de-b29b-0d7b9505db54" ParentLink="PortDeclaration_CLRAttribute" LowerBound="77.1" HigherBound="78.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="adbeaa04-28f5-4257-b62f-9d79618eff20" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="79.1" HigherBound="81.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="81" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.ESBFaultMessagePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ESBFaultMessagePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="7853f15c-d612-4ec9-8c2d-e5a4b1b054df" ParentLink="PortDeclaration_CLRAttribute" LowerBound="79.1" HigherBound="80.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="b51c17d6-e6bf-4169-bc7f-8d91aca4e88f" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="81.1" HigherBound="83.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="138" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.BTEPricingUpdates.sndEmailAlertPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="sndEmailAlertPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="PhysicalBindingAttribute" OID="c02fe9ff-7191-40dc-8344-a4e2069680c7" ParentLink="PortDeclaration_CLRAttribute" LowerBound="81.1" HigherBound="82.1">
+                    <om:Property Name="InPipeline" Value="Microsoft.BizTalk.DefaultPipelines.XMLReceive" />
+                    <om:Property Name="OutPipeline" Value="BTNextGen.BizTalk.BTEPricingUpdates.Pipelines.sndEmailSMTP" />
+                    <om:Property Name="TransportType" Value="HTTP" />
+                    <om:Property Name="URI" Value="http://tempURI" />
+                    <om:Property Name="IsDynamic" Value="True" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="e6f0c2e5-d47e-49b4-a533-202ff26ef3f9" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="MultipartType_Email" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="92cc2ca5-e004-491f-933c-e927c4ce9269" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart_Body" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.BizTalk.BTEPricingUpdates
+{
+    internal messagetype MultipartType_Email
+    {
+        body Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString MessagePart_Body;
+    };
+    internal porttype rcvPRCUPDFlatPort
+    {
+        oneway Operation_1
+        {
+            Schemas.PRCUPD
+        };
+    };
+    internal porttype ArchivePRCUPDFlatPort
+    {
+        oneway Operation_1
+        {
+            Schemas.PRCUPD
+        };
+    };
+    internal porttype archivePRCUPDXMLPort
+    {
+        oneway Operation_1
+        {
+            Schemas.IntermediateXMLPRCUPD
+        };
+    };
+    internal porttype snd_archivePRCUPDSQLPortType
+    {
+        oneway Operation_1
+        {
+            BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdates
+        };
+    };
+    internal porttype snd_PRCUPDSQLPortType
+    {
+        requestresponse Operation_1
+        {
+            BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdates, BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdatesResponse
+        };
+    };
+    internal porttype snd_archivePRCUPDSQLResponsePortType
+    {
+        oneway Operation_1
+        {
+            BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdatesResponse
+        };
+    };
+    internal porttype ESBFaultMessagePortType
+    {
+        oneway Operation_1
+        {
+            Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage
+        };
+    };
+    internal porttype sndEmailAlertPortType
+    {
+        oneway Operation_1
+        {
+            MultipartType_Email
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service PRCUPDFlattoSQL
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements rcvPRCUPDFlatPort rcvPRCUPDFlat;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ArchivePRCUPDFlatPort ArchivePRCUPDFlat;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses archivePRCUPDXMLPort archivePRCUPDXML;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses snd_archivePRCUPDSQLPortType snd_archivePRCUPDSQLPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses snd_PRCUPDSQLPortType snd_PRCUPDSQLPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses snd_archivePRCUPDSQLResponsePortType snd_archivePRCUPDSQLResponsePort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses ESBFaultMessagePortType ESBFaultMessagePort;
+        [Microsoft.XLANGs.BaseTypes.PhysicalBinding(typeof(BTNextGen.BizTalk.BTEPricingUpdates.Pipelines.sndEmailSMTP))]
+        port uses dynamic sndEmailAlertPortType sndEmailAlertPort;
+        message BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdatesResponse archivePRCUPDSQLResponse;
+        message BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdates archivePRCUPDSQL;
+        message Schemas.PRCUPD PRCUPDFlat;
+        message Schemas.PRCUPD archivePRCUPDFlat;
+        message Schemas.IntermediateXMLPRCUPD archivePRCUPDXml;
+        message Schemas.IntermediateXMLPRCUPD PRCUPDIXml;
+        message BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdates PRCUPDSQL;
+        message BTEPRCUPDProcedure_dbo.BasketPricingTOLASPricingUpdatesResponse PRCUPDSQLResponse;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage ESBFaultMessage;
+        message MultipartType_Email EmailAlert;
+        System.Int32 SQLReturnValue;
+        System.String SQLReturnMessage;
+        System.Text.StringBuilder msgbody;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c48cc322-60f4-4438-a2fa-8af174244e3b")]
+            activate receive (rcvPRCUPDFlat.Operation_1, PRCUPDFlat);
+            SQLReturnMessage = "";
+            msgbody = new System.Text.StringBuilder();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("489b774f-2036-44c5-95b9-7fdf099add9a")]
+            construct archivePRCUPDFlat
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("1aab2b10-5445-4d51-81ef-ba9357913bfd")]
+                archivePRCUPDFlat = PRCUPDFlat;
+                archivePRCUPDFlat(FILE.ReceivedFileName) = "PRCUPDFlat_";
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7e6d5ae0-eb3d-40f5-96c9-befada893823")]
+            send (ArchivePRCUPDFlat.Operation_1, archivePRCUPDFlat);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("36e81d1d-02ba-40f0-a03d-218970105c0c")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b323e494-4bfa-4916-8902-9b7b518fecd3")]
+                    construct PRCUPDIXml
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6aba470e-b405-4b3e-9c69-75f664f49660")]
+                        transform (PRCUPDIXml) = BTNextGen.BizTalk.BTEPricingUpdates.Maps.PRCUPDtoIntermediateXMLPRCUPD (PRCUPDFlat);
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("25bb2212-0224-403a-98b4-0e39f85ec12a")]
+                    catch (System.SystemException PRC2XMLException)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("5f37766e-7234-4121-bb35-c94a5353aa38")]
+                        construct ESBFaultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("86470815-aed1-42e1-8263-44916ea67f77")]
+                            
+                            // Create fault exception Message
+                            ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            
+                            // Assign Properties
+                            
+                            ESBFaultMessage.FailureCategory="PRC2XML Exception";
+                            ESBFaultMessage.FaultDescription=PRC2XMLException.Message;
+                            ESBFaultMessage.FaultCode="2001";
+                            ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                            Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,PRCUPDFlat);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7a6aa82e-3317-4ae2-81e4-7cd71add2a8c")]
+                        send (ESBFaultMessagePort.Operation_1, ESBFaultMessage);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("54dca8d4-ab28-4709-ad5f-abb258713ea6")]
+                        terminate "Process terminated due to Exception during SQL snd/rcv.";;
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d861c7c9-55b0-4dae-9145-22e57b86613f")]
+            construct archivePRCUPDXml
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("dfd03790-b02d-40fc-ad1e-81356c5f3ac4")]
+                archivePRCUPDXml=PRCUPDIXml;
+                archivePRCUPDXml(FILE.ReceivedFileName) = "PRCUPDIXml_";
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c776009a-aeff-4eb6-84ad-c2e109265387")]
+            send (archivePRCUPDXML.Operation_1, archivePRCUPDXml);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("767cb827-4a32-4b9f-94ab-82b0c01d4726")]
+            construct PRCUPDSQL
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9783261b-21a5-4216-ad45-47701e2acd7e")]
+                transform (PRCUPDSQL) = BTNextGen.BizTalk.BTEPricingUpdates.Maps.IXmlPRCUPDtoSQLPRCUPD (PRCUPDIXml);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("22997142-f092-4220-86e6-226860a22309")]
+            construct archivePRCUPDSQL
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9f47f3d8-3537-4133-a844-f824b0f020ef")]
+                archivePRCUPDSQL = PRCUPDSQL;
+                archivePRCUPDSQL(FILE.ReceivedFileName) = "PRCUPDSQL_";
+                
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8e7f75b5-bb02-48ea-846f-20370e6c6f6a")]
+            send (snd_archivePRCUPDSQLPort.Operation_1, archivePRCUPDSQL);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3a64bad7-589c-483d-82a9-1e61bf038d63")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("4728026d-0248-482a-9f33-4afdd25b4e76")]
+                    send (snd_PRCUPDSQLPort.Operation_1, PRCUPDSQL);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("2dc1686d-294e-47a9-8d86-e7ad809894c4")]
+                    receive (snd_PRCUPDSQLPort.Operation_1, PRCUPDSQLResponse);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b0f97e02-8e1e-40d0-a012-13f39dba5650")]
+                    SQLReturnValue = PRCUPDSQLResponse.ReturnValue;
+                    //SQLReturnMessage = "No Error Message Rec'd.";
+                    if(PRCUPDSQLResponse.ErrorMessage != null)
+                     {
+                       SQLReturnMessage = PRCUPDSQLResponse.ErrorMessage;
+                     }
+                    else
+                     {
+                       SQLReturnMessage = "No Error Message was returned.";
+                     }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c9cd0085-288a-4322-b52e-2458881c9e00")]
+                    catch (System.SystemException PRCUPDSQLException)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("8829e0b9-d5fd-44bd-a9d7-8dc3562e4e1e")]
+                        construct ESBFaultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d0dcc750-fd1b-43a0-98ed-c7804bf9fe9f")]
+                            
+                            // Create fault exception Message
+                            ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            
+                            // Assign Properties
+                            
+                            ESBFaultMessage.FailureCategory="PRCUPDSQL Exception";
+                            ESBFaultMessage.FaultDescription=PRCUPDSQLException.Message;
+                            ESBFaultMessage.FaultCode="2001";
+                            ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                            Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,PRCUPDSQL);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("afe02b51-c1f4-436a-acce-6e6068fbd94a")]
+                        send (ESBFaultMessagePort.Operation_1, ESBFaultMessage);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("db3feca8-02d0-428e-87b5-86fa588916a0")]
+                        terminate "Process terminated due to Exception during SQL snd/rcv.";;
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a0387d03-1ca4-4130-8aca-5594bc49fa00")]
+            construct archivePRCUPDSQLResponse
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("be9550d8-41ee-4196-812a-4cc41db5ee83")]
+                archivePRCUPDSQLResponse = PRCUPDSQLResponse;
+                archivePRCUPDSQLResponse(FILE.ReceivedFileName) = "PRCUPDSQLResp_";
+                
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e4f31452-094b-4adb-9523-0033b5e14008")]
+            send (snd_archivePRCUPDSQLResponsePort.Operation_1, archivePRCUPDSQLResponse);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("39d41571-9a6e-486b-b848-d4939969a2a6")]
+            if (PRCUPDSQLResponse.ReturnValue != 0)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("587c3f2e-44db-4d60-893b-630868a126af")]
+                if(SQLReturnMessage == null)
+                   {
+                    //This should always be populated up above, but just in case we sort of trap for a null here
+                    SQLReturnMessage = "SQLReturnMessage=null";
+                   }
+                
+                System.Diagnostics.EventLog.WriteEntry("BTEPricingUpdates","I am taking the 'Error' path, because ReturnValue=" + SQLReturnValue.ToString() + ", with a message of: " + SQLReturnMessage,System.Diagnostics.EventLogEntryType.Error);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("ab2441dd-593b-442e-8134-05e09804824d")]
+                construct EmailAlert
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("ce020ed5-8799-4852-b627-4963a5352b58")]
+                    msgbody = new System.Text.StringBuilder();
+                    msgbody.AppendLine("I am taking the 'Error' path, because ReturnValue=" + SQLReturnValue.ToString() + ", with a message of: " + SQLReturnMessage);
+                    
+                    EmailAlert.MessagePart_Body= new Microsoft.Samples.BizTalk.XlangCustomFormatters.RawString(msgbody.ToString());
+                    EmailAlert.MessagePart_Body(Microsoft.XLANGs.BaseTypes.ContentType)="text/html";
+                    
+                    EmailAlert(SMTP.Subject)="BTEPricingUpdate Alert";
+                    EmailAlert(SMTP.From)="MailMan@njperkins.com";
+                    EmailAlert(SMTP.SMTPHost)="5.0.110.24";
+                    EmailAlert(SMTP.SMTPAuthenticate)=0;
+                    EmailAlert(SMTP.EmailBodyTextCharset)="UTF-8";
+                    
+                    sndEmailAlertPort(Microsoft.XLANGs.BaseTypes.Address)="mailto:perkinm@btol.com";
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a2ceb11d-4575-4e1c-a5f7-cfc706e9be02")]
+                send (sndEmailAlertPort.Operation_1, EmailAlert);
+            }
+        }
+    }
+}
+

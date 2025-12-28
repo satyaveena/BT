@@ -1,0 +1,1823 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="a2caf177-1245-4049-af56-20bc6d264154" LowerBound="1.1" HigherBound="494.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.BizTalk.PaymentProcessing" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="df25ca7a-6011-497f-8d2f-dfc425fa73f0" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ERPccRequestReceivePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="7fa011f7-2b89-4db3-83f8-363122ad3010" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Rcv_ERPRequest" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="a2aace2b-9709-4ea7-95d9-f8867a9a9fb7" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.33">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="25dcd51c-1acc-48eb-8e63-84fc3be76f36" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ArchiveERPRequestPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="5dbd4835-ff31-4b62-9e8e-994da81185ba" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Snd_ERPRequestArchive" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="46a66e9f-1582-4383-bd19-cbd6ebb86178" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.33">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="6e49f22a-6815-413a-9cb4-5032ec4b56b5" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ArchiveERPResponsePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="a626cb31-ef96-4572-9f3e-a34b00809bb4" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="f3bec39b-da09-421d-9de0-8fcd00bfc748" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.34">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="9963f054-9940-4a1f-a961-7d5804f18c8a" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendERPccResponsePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="431de97f-8657-4426-aec7-22853f52b248" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="65d6134e-c374-48bd-9b58-637b694d072f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.34">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="cb7b422d-70fb-4884-b579-2e8cdadd93be" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendBTEERPccResponsePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="2f667ac1-a202-4dbf-a26d-ee3bd9d313cf" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="330ce30c-7fef-4b1c-8b3f-6528740d1aa3" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.34">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="82dec51d-7036-499c-89a1-36f096d11026" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ArchiveCCUpdateResponsePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f69ae3ff-3a56-487a-9036-4a6ee870ccdd" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="dd8eca1c-49ac-48b5-9be7-4f54c1725494" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.57">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.PaymentProcessing.IIProfile_UpdatePartialProfile_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="d3212841-b353-421b-b404-997fd925ce39" ParentLink="Module_PortType" LowerBound="46.1" HigherBound="53.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="sndERPccRequestRetryPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="62314a63-19e4-44d9-8978-f1627edccea4" ParentLink="PortType_OperationDeclaration" LowerBound="48.1" HigherBound="52.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="de429b07-fb32-4e9d-ad8f-9fd64d1ce6ef" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="50.13" HigherBound="50.33">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="3ba0a7fc-39b0-4d78-bb54-fd23fe925976" ParentLink="Module_PortType" LowerBound="53.1" HigherBound="60.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ESBExceptionPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b73742e0-72ee-458b-8921-ae1ec337fa09" ParentLink="PortType_OperationDeclaration" LowerBound="55.1" HigherBound="59.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="4a029705-9164-4c96-abc4-08735c0fbdb8" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="57.13" HigherBound="57.82">
+                    <om:Property Name="Ref" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="73e2e907-046a-46ca-b590-d5890182bb76" ParentLink="Module_ServiceDeclaration" LowerBound="60.1" HigherBound="493.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ProcessERPTXN" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="498f8e9c-01a2-43c8-8092-b13400e3748b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="100.1" HigherBound="101.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xDocFault" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9af97bb4-5375-482b-9c70-e66b4fab3df3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="101.1" HigherBound="102.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Guid" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="guid" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="e01c0345-a498-4f53-8462-ad91dc013049" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="102.1" HigherBound="103.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="activityName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7cbf332c-89b0-41b4-9a5e-dfe66e3e69ad" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="103.1" HigherBound="104.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="activityID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a1540dae-981a-49e8-bc9f-769fbec44731" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="104.1" HigherBound="105.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="enableBam" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="761167e8-6b7d-4fb4-9fab-af750c294887" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="105.1" HigherBound="106.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReplyType" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="062c4536-f5e9-4819-95f8-2ba563ab499a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="106.1" HigherBound="107.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MerchRefCode" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8bafea76-7e12-4b12-8283-45d944c881f7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="107.1" HigherBound="108.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TargetERP" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3ace66ed-7d12-4d5b-84db-bb919dcc3810" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="108.1" HigherBound="109.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmldocUpdateProfile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="02cd0186-8b7a-4772-bec5-6a6103b6a69b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="109.1" HigherBound="110.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MerchID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b77b8d87-5a8c-4e81-82fa-0418051f5371" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="110.1" HigherBound="111.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RetryStr" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2c01fb09-d8c9-41d3-9944-c555fe304265" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="111.1" HigherBound="112.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="EqualIndex" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="bc8797d3-acf5-4182-a112-c5769d3fdc6a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="112.1" HigherBound="113.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SpaceIndex" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="e699b1e6-94ba-417c-9fba-d251be65915d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="113.1" HigherBound="114.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MerchIDFull" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="749934a3-812a-466d-88dd-1d161426dff7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="114.1" HigherBound="115.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RetryNameTag" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2b04f6bb-03f7-4a62-8930-dd115f8aa95c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="115.1" HigherBound="116.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RetryCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="efa11548-9a2b-4fda-8be0-f28a6c4dd16f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="116.1" HigherBound="117.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strError" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="LongRunningTransaction" OID="fe5d9254-bec5-407b-8567-b9c6db58ad6d" ParentLink="ServiceDeclaration_Transaction" LowerBound="61.21" HigherBound="61.59">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="11d3f0d3-bf7a-48cb-817a-841f2fb02366" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="83.1" HigherBound="84.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ERPccRequestMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="fe806c4a-44c5-4e6f-aa60-92126a671694" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="84.1" HigherBound="85.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveERPRequestMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="5c66fffd-1003-4914-90ec-70008d8e5977" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="85.1" HigherBound="86.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.CallCyberSourceSoapIn" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ERPppSoapRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="0a5a54ba-491c-4fa6-8132-14de318182fa" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="86.1" HigherBound="87.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.CallCyberSourceSoapOut" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ERPppSoapResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c56e505d-bb7e-4114-8733-b596d062d99b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="87.1" HigherBound="88.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ERPccResponseMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c82f74f1-a34b-4259-bf8c-3ff1f319d3e2" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="88.1" HigherBound="89.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveERPResponseMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="ba01d9d9-f890-494a-93fe-7945d861b566" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="89.1" HigherBound="90.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ERPccRequestWEmail" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3910d3c5-9f95-4bbc-9595-bc13781ad7d6" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="90.1" HigherBound="91.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.IIProfile_GetCreditCardToken_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetCCTokenRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="5155599d-073d-4bb7-929d-4559cdd22758" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="91.1" HigherBound="92.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.IIProfile_GetCreditCardToken_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetCCTokenResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3519659e-4b57-4081-a37f-c06e4b1503dd" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="92.1" HigherBound="93.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.IIProfile_UpdatePartialProfile_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="UpdateCCProfileRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b4055e25-e3d0-4f11-b12d-39e807734f11" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="93.1" HigherBound="94.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.IIProfile_UpdatePartialProfile_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="UpdateCCProfileResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="5f0a9ee0-1df8-43c3-8f5e-36f0376bcb0b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="94.1" HigherBound="95.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.BTProfile" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ProfileMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9967185a-079f-4559-b559-bdffd9ca51b7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="95.1" HigherBound="96.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.IIProfile_UpdatePartialProfile_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveCCProfileResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e168cea0-c5c9-43a8-8d3d-a33acebaba15" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="96.1" HigherBound="97.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ERPccRequestRetryMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1d2054ef-983e-47a5-9abd-40377464635a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="97.1" HigherBound="98.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ERPccResponseFaultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8c76a277-ef6b-4905-b9a8-cf1140651219" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="98.1" HigherBound="99.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.Schemas.ERPccResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveERPResponseFaultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="44a4af23-790a-4bbe-bab1-97160af3d648" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="99.1" HigherBound="100.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ESBFaultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="8cd6fa45-a7be-44c7-bd27-8ab0c4cf1eba" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="55579659-fbc4-43fe-98b3-e474e3f67f93" ParentLink="ServiceBody_Statement" LowerBound="119.1" HigherBound="135.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="ERPccRequestReceivePort" />
+                    <om:Property Name="MessageName" Value="ERPccRequestMessage" />
+                    <om:Property Name="OperationName" Value="Rcv_ERPRequest" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Rcv_ERPccRequest" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="1c45a436-b0c3-4976-8342-8e9102090a39" ParentLink="ServiceBody_Statement" LowerBound="135.1" HigherBound="159.1">
+                    <om:Property Name="Expression" Value="MerchRefCode=ERPccRequestMessage.merchantReferenceCode.merchantReferenceCode_Value;&#xD;&#xA;TargetERP=MerchRefCode.Substring(0,1);&#xD;&#xA;enableBam=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.PaymentProcessing&quot;,&quot;bamEnabled&quot;));&#xD;&#xA;MerchIDFull=ERPccRequestMessage.merchantID.merchantID_Value;&#xD;&#xA;if(MerchIDFull.Contains(&quot; Retries=&quot;))&#xD;&#xA;{&#xD;&#xA;    EqualIndex=MerchIDFull.IndexOf(&quot;=&quot;);&#xD;&#xA;    SpaceIndex=MerchIDFull.IndexOf(&quot; &quot;);&#xD;&#xA;    //Recover the initial MerchantID if Retries=x has been appended.&#xD;&#xA;    MerchID=MerchIDFull.Remove(SpaceIndex);&#xD;&#xA;    //Temp use of RetryStr to get string of RetryCount&#xD;&#xA;    RetryStr=MerchIDFull.Substring(EqualIndex + 1,1);&#xD;&#xA;    RetryNameTag=RetryStr;&#xD;&#xA;    RetryCount=System.Convert.ToInt32(RetryStr);&#xD;&#xA;    //Prepend Retries= with a leading space.&#xD;&#xA;    RetryStr=&quot; Retries=&quot; + RetryStr;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    MerchID=MerchIDFull;&#xD;&#xA;    RetryStr=&quot; Retries=0&quot;;&#xD;&#xA;    RetryNameTag=&quot;&quot;;&#xD;&#xA;}&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="GetRefCodeAndERP" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="ee8ed7a2-4c98-4d40-adc2-087d355dd94a" ParentLink="ServiceBody_Statement" LowerBound="159.1" HigherBound="173.1">
+                    <om:Property Name="Expression" Value="&#xD;&#xA;if (enableBam)&#xD;&#xA;{&#xD;&#xA;activityName= &quot;PaymentERPTxn&quot;;&#xD;&#xA;guid= System.Guid.NewGuid();&#xD;&#xA;activityID= guid.ToString()+ &quot;_&quot;+ System.DateTime.Now.ToString();&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.BeginActivity(activityName,activityID);&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&quot;rcvERPReq&quot;,System.DateTime.UtcNow,&#xD;&#xA;&quot;TargetERP&quot;,TargetERP,&#xD;&#xA;&quot;MerchantRef&quot;,MerchRefCode,&#xD;&#xA;&quot;cardID&quot;,ERPccRequestMessage.subscriptionID.subscriptionID_Value);&#xD;&#xA;&#xD;&#xA;}" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Initialize BAM " />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="f41e8945-c899-4a7a-afe7-483bd33d6750" ParentLink="ServiceBody_Statement" LowerBound="173.1" HigherBound="181.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructArchiveRequest" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageRef" OID="b6a7749b-fa68-4d66-a14c-b6656aa23909" ParentLink="Construct_MessageRef" LowerBound="174.23" HigherBound="174.47">
+                        <om:Property Name="Ref" Value="ArchiveERPRequestMessage" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageAssignment" OID="d20d5d76-00e4-47d2-b12e-c119b5180080" ParentLink="ComplexStatement_Statement" LowerBound="176.1" HigherBound="180.1">
+                        <om:Property Name="Expression" Value="ArchiveERPRequestMessage = ERPccRequestMessage;&#xD;&#xA;ArchiveERPRequestMessage(FILE.ReceivedFileName) = &quot;PPRequest&quot; + RetryNameTag + &quot;_&quot; + MerchRefCode;&#xD;&#xA;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="MessageAssignment_1" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="7890ff0b-51dc-45d1-b63a-b2d639c45df2" ParentLink="ServiceBody_Statement" LowerBound="181.1" HigherBound="183.1">
+                    <om:Property Name="PortName" Value="ArchiveERPRequestPort" />
+                    <om:Property Name="MessageName" Value="ArchiveERPRequestMessage" />
+                    <om:Property Name="OperationName" Value="Snd_ERPRequestArchive" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Snd_ERPccRequestArchive" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="d4dd6fc7-0817-4ccc-831f-de0da02f01c9" ParentLink="ServiceBody_Statement" LowerBound="183.1" HigherBound="230.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="chkSubscriptionID1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="fcf30c18-2b20-4f96-bbc1-5ee4f7e8cc83" ParentLink="ReallyComplexStatement_Branch" LowerBound="184.13" HigherBound="193.1">
+                        <om:Property Name="Expression" Value="ERPccRequestMessage.subscriptionID.subscriptionID_Value == null&#xD;&#xA;" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="IsSubscriptionIDnull" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="6904aa76-342d-4220-8df6-3371cd9f2a30" ParentLink="ComplexStatement_Statement" LowerBound="186.1" HigherBound="192.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructRequestWEmailNoSub" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="dff23bd9-68eb-4196-bc30-357feb1a34c0" ParentLink="Construct_MessageRef" LowerBound="187.27" HigherBound="187.45">
+                                <om:Property Name="Ref" Value="ERPccRequestWEmail" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Transform" OID="02f3500f-33b3-4183-a38f-c135c22f060c" ParentLink="ComplexStatement_Statement" LowerBound="189.1" HigherBound="191.1">
+                                <om:Property Name="ClassName" Value="BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccRequest2ERPccRequestWEmail" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="TransformRequestWEmail" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="MessagePartRef" OID="f8d28ce1-5067-4c73-93eb-e59a01e42c2b" ParentLink="Transform_OutputMessagePartRef" LowerBound="190.32" HigherBound="190.50">
+                                    <om:Property Name="MessageRef" Value="ERPccRequestWEmail" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_6" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="48d34827-1de9-45b2-a3d5-88f46f07efa3" ParentLink="Transform_InputMessagePartRef" LowerBound="190.128" HigherBound="190.147">
+                                    <om:Property Name="MessageRef" Value="ERPccRequestMessage" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_5" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="6768a94d-4c58-4b94-8c31-0fdd055be7c5" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Construct" OID="9d38123d-6b5a-4ddd-a0dd-39e36e046200" ParentLink="ComplexStatement_Statement" LowerBound="195.1" HigherBound="201.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructGetCCTokenRequest" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="ca86bfb1-dde1-42fa-9bcf-b873473c44ef" ParentLink="ComplexStatement_Statement" LowerBound="198.1" HigherBound="200.1">
+                                <om:Property Name="ClassName" Value="BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccRequest2GetCCTokenRequest" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ERPccRequest2GetCCTokenRequest" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessagePartRef" OID="02c446bb-e37f-45df-8681-cb2cfa070a48" ParentLink="Transform_InputMessagePartRef" LowerBound="199.137" HigherBound="199.156">
+                                    <om:Property Name="MessageRef" Value="ERPccRequestMessage" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_7" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="cf0130d8-dc02-474e-92b8-071b342e3257" ParentLink="Transform_OutputMessagePartRef" LowerBound="199.32" HigherBound="199.60">
+                                    <om:Property Name="MessageRef" Value="GetCCTokenRequest" />
+                                    <om:Property Name="PartRef" Value="parameters" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_8" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="08996a35-4559-4ce4-b9e7-033722975d9b" ParentLink="Construct_MessageRef" LowerBound="196.27" HigherBound="196.44">
+                                <om:Property Name="Ref" Value="GetCCTokenRequest" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="2dff0963-272c-4e73-8af6-862712cc024d" ParentLink="ComplexStatement_Statement" LowerBound="201.1" HigherBound="208.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;if (enableBam)&#xD;&#xA;{&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&quot;SndTokenReq&quot;,System.DateTime.UtcNow);&#xD;&#xA;&#xD;&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="BAM SndTokenReq" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="c77535ba-b7d5-432a-8633-53c07dc1cbd5" ParentLink="ComplexStatement_Statement" LowerBound="208.1" HigherBound="210.1">
+                            <om:Property Name="PortName" Value="GetCCTokenPort" />
+                            <om:Property Name="MessageName" Value="GetCCTokenRequest" />
+                            <om:Property Name="OperationName" Value="GetCreditCardToken" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_GetCCToken" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="c6c0431e-104e-4e97-9e11-9b6094f56d9b" ParentLink="ComplexStatement_Statement" LowerBound="210.1" HigherBound="212.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="GetCCTokenPort" />
+                            <om:Property Name="MessageName" Value="GetCCTokenResponse" />
+                            <om:Property Name="OperationName" Value="GetCreditCardToken" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Rcv_GetCCToken" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="b22c0acf-4716-44c2-b620-04fb911a8635" ParentLink="ComplexStatement_Statement" LowerBound="212.1" HigherBound="220.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;if (enableBam)&#xD;&#xA;{&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&quot;GetTokenReq&quot;,System.DateTime.UtcNow,&#xD;&#xA;&quot;email&quot;, GetCCTokenResponse.parameters.GetCreditCardTokenResult.email_address);&#xD;&#xA;&#xD;&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="BAM GetTokenReq" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="b29ec455-0e35-4f72-8e5e-7bccd3d25483" ParentLink="ComplexStatement_Statement" LowerBound="220.1" HigherBound="229.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructRequestWEmail" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="cf87810b-2bc1-4ad5-b821-ddf69ef33545" ParentLink="Construct_MessageRef" LowerBound="221.27" HigherBound="221.45">
+                                <om:Property Name="Ref" Value="ERPccRequestWEmail" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Transform" OID="197b0e76-8d65-450a-bf47-8319fd087316" ParentLink="ComplexStatement_Statement" LowerBound="223.1" HigherBound="225.1">
+                                <om:Property Name="ClassName" Value="BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccRequest2ERPccRequestWEmail" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="TransformRequestWEmail" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="MessagePartRef" OID="f49c28dc-bdd9-4a5d-921a-bbfbffbe626f" ParentLink="Transform_InputMessagePartRef" LowerBound="224.128" HigherBound="224.147">
+                                    <om:Property Name="MessageRef" Value="ERPccRequestMessage" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_5" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="ba3f738e-148f-401a-8abd-77e7fc26c40e" ParentLink="Transform_OutputMessagePartRef" LowerBound="224.32" HigherBound="224.50">
+                                    <om:Property Name="MessageRef" Value="ERPccRequestWEmail" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_6" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="6ba090f2-2461-4089-b019-1f0ef75d4e37" ParentLink="ComplexStatement_Statement" LowerBound="225.1" HigherBound="228.1">
+                                <om:Property Name="Expression" Value="ERPccRequestWEmail.notificationEmail.notificationEmail_Value=GetCCTokenResponse.parameters.GetCreditCardTokenResult.email_address;&#xD;&#xA;ERPccRequestWEmail.subscriptionID.subscriptionID_Value=GetCCTokenResponse.parameters.GetCreditCardTokenResult.cardToken;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_3" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Construct" OID="05b602f3-25a3-4a5c-8f68-03dc80240d97" ParentLink="ServiceBody_Statement" LowerBound="230.1" HigherBound="236.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructSoapRequest" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageRef" OID="8b50cad5-7a64-4e5b-9c8f-056e2553bad0" ParentLink="Construct_MessageRef" LowerBound="231.23" HigherBound="231.39">
+                        <om:Property Name="Ref" Value="ERPppSoapRequest" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Transform" OID="9605afd2-a6c6-4bb9-a6ae-996f6c4cc581" ParentLink="ComplexStatement_Statement" LowerBound="233.1" HigherBound="235.1">
+                        <om:Property Name="ClassName" Value="BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccRequest2ERPppSoapRequest" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="TransformERPcc2ERPpp" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="MessagePartRef" OID="0a5f9d1a-9a4f-43f1-94ff-ada4f5b51f4d" ParentLink="Transform_InputMessagePartRef" LowerBound="234.131" HigherBound="234.149">
+                            <om:Property Name="MessageRef" Value="ERPccRequestWEmail" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="ef2b9a0b-4ee3-4bf8-b575-a83a8594e2d9" ParentLink="Transform_OutputMessagePartRef" LowerBound="234.28" HigherBound="234.55">
+                            <om:Property Name="MessageRef" Value="ERPppSoapRequest" />
+                            <om:Property Name="PartRef" Value="parameters" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Scope" OID="7819a2a9-5a81-4984-a86b-c2d4a2c7650a" ParentLink="ServiceBody_Statement" LowerBound="236.1" HigherBound="345.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ScopeOuterCatch" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="LongRunningTransaction" OID="44b8be74-90c3-4e14-8c2f-edceb98b3534" ParentLink="Scope_Transaction" LowerBound="237.18" HigherBound="237.56">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transaction_3" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Scope" OID="a5a771c4-0f57-4080-b1eb-125fe0d04692" ParentLink="ComplexStatement_Statement" LowerBound="241.1" HigherBound="273.1">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ScopePaymentProcessingWS" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="LongRunningTransaction" OID="0069827e-a22e-403e-858a-ddcf2606da6b" ParentLink="Scope_Transaction" LowerBound="242.39" HigherBound="242.77">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transaction_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="472aebda-a224-4074-b27f-3e4c73211ca4" ParentLink="ComplexStatement_Statement" LowerBound="246.1" HigherBound="248.1">
+                            <om:Property Name="PortName" Value="CallPaymentProcessingWSPort" />
+                            <om:Property Name="MessageName" Value="ERPppSoapRequest" />
+                            <om:Property Name="OperationName" Value="CallCyberSource" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Snd_ERPppSoapRequest" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="f6a86a92-ac2f-4fe2-b2de-11fd6c129b67" ParentLink="ComplexStatement_Statement" LowerBound="248.1" HigherBound="256.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;if (enableBam)&#xD;&#xA;{&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&#xD;&#xA;&quot;SendCyber&quot;,System.DateTime.UtcNow);&#xD;&#xA;&#xD;&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="BAM SendCyber" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="01ddccb4-b2ed-45af-bc53-54b3c2111cb9" ParentLink="ComplexStatement_Statement" LowerBound="256.1" HigherBound="258.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="CallPaymentProcessingWSPort" />
+                            <om:Property Name="MessageName" Value="ERPppSoapResponse" />
+                            <om:Property Name="OperationName" Value="CallCyberSource" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Rcv_ERPppSoapResponse" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Catch" OID="f4b071d9-637e-430f-9cf0-3130db1591d8" ParentLink="Scope_Catch" LowerBound="261.1" HigherBound="271.1">
+                            <om:Property Name="ExceptionName" Value="CyberWebSrvcException" />
+                            <om:Property Name="ExceptionType" Value="CallPaymentProcessingWSPort.CallCyberSource.CyberWebSrvcException" />
+                            <om:Property Name="IsFaultMessage" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="CatchExceptionPPWebSrvc" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="6a9b589d-9fb7-49b5-a6d5-89e82115ae25" ParentLink="Catch_Statement" LowerBound="264.1" HigherBound="270.1">
+                                <om:Property Name="Expression" Value="xDocFault = CyberWebSrvcException.FaultBody;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;PaymentProcessing WS Fault&quot;,xDocFault.OuterXml.ToString());&#xD;&#xA;strError = xpath(CyberWebSrvcException.FaultBody,&quot;string(/*[local-name()='Fault' and namespace-uri()='http://schemas.xmlsoap.org/soap/envelope/']/*[local-name()='faultstring' and namespace-uri()=''])&quot;);&#xD;&#xA;throw new System.Exception(strError);&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ExtractSoapExceptionMessage" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="3733f7ed-af9f-49a6-8c48-e45fdae34da6" ParentLink="Scope_Catch" LowerBound="276.1" HigherBound="343.1">
+                        <om:Property Name="ExceptionName" Value="CatchSystemException" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchGeneralException" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="189f731d-d75e-44d4-97d8-607dff612b97" ParentLink="Catch_Statement" LowerBound="279.1" HigherBound="287.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructERPFaultReply" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="cad604dd-034b-42c1-a091-a867b9c73ead" ParentLink="Construct_MessageRef" LowerBound="280.35" HigherBound="280.60">
+                                <om:Property Name="Ref" Value="ERPccResponseFaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Transform" OID="66d22593-e926-491a-aae8-e0423e660b2f" ParentLink="ComplexStatement_Statement" LowerBound="282.1" HigherBound="284.1">
+                                <om:Property Name="ClassName" Value="BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccRequest2ERPccResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Request2ReplyFault" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessagePartRef" OID="1de14ebd-54f3-485a-97ee-94597483ed9f" ParentLink="Transform_InputMessagePartRef" LowerBound="283.138" HigherBound="283.157">
+                                    <om:Property Name="MessageRef" Value="ERPccRequestMessage" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_11" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="a75f4460-0a32-4cb1-a06a-8e6baadb44b2" ParentLink="Transform_OutputMessagePartRef" LowerBound="283.40" HigherBound="283.65">
+                                    <om:Property Name="MessageRef" Value="ERPccResponseFaultMessage" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_12" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="226cd37a-ef1c-4a56-a9b1-3311dd9be4ea" ParentLink="ComplexStatement_Statement" LowerBound="284.1" HigherBound="286.1">
+                                <om:Property Name="Expression" Value="ERPccResponseFaultMessage.Reply_statusMessage.Reply_StatusMessage_Value = ERPccResponseFaultMessage.Reply_statusMessage.Reply_StatusMessage_Value + &quot; (Logged on BizTalk Server)&quot;;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_4" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="6dc5b182-0378-411a-b52c-4371aa2abb6c" ParentLink="Catch_Statement" LowerBound="287.1" HigherBound="298.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="chkBTEorBTB" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="5b14aef1-4f9a-4189-8bd9-e3c01715dad1" ParentLink="ReallyComplexStatement_Branch" LowerBound="288.25" HigherBound="293.1">
+                                <om:Property Name="Expression" Value="TargetERP==&quot;B&quot; " />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="IsBTB" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Send" OID="d7c39f15-5eb4-4645-ae69-e4849edc818f" ParentLink="ComplexStatement_Statement" LowerBound="290.1" HigherBound="292.1">
+                                    <om:Property Name="PortName" Value="SendERPccResponsePort" />
+                                    <om:Property Name="MessageName" Value="ERPccResponseFaultMessage" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="sndBTBERPFaultReply" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="aa774e61-9ec7-421e-98d9-04a234c8224b" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Send" OID="d2cf59ce-2048-4635-b338-51a82f287b49" ParentLink="ComplexStatement_Statement" LowerBound="295.1" HigherBound="297.1">
+                                    <om:Property Name="PortName" Value="SendBTEERPccResponsePort" />
+                                    <om:Property Name="MessageName" Value="ERPccResponseFaultMessage" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="sndBTEERPFaultReply" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="e642d9fa-8616-4323-b5a3-8ef4fb2e7f41" ParentLink="Catch_Statement" LowerBound="298.1" HigherBound="306.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;if (enableBam)&#xD;&#xA;{&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&#xD;&#xA;&quot;ERPSent&quot;,System.DateTime.UtcNow);&#xD;&#xA;&#xD;&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="BAM ERPSent" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="75eaf1ba-e480-4de8-9292-f12efb3e668b" ParentLink="Catch_Statement" LowerBound="306.1" HigherBound="315.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructArchiveERPResponseFault" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="ebac488d-768d-4d17-be10-787dbe0bab83" ParentLink="Construct_MessageRef" LowerBound="307.35" HigherBound="307.65">
+                                <om:Property Name="Ref" Value="ArchiveERPResponseFaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="3d24538f-a664-403b-9a55-d5a2d47f7aab" ParentLink="ComplexStatement_Statement" LowerBound="309.1" HigherBound="314.1">
+                                <om:Property Name="Expression" Value="ArchiveERPResponseFaultMessage = ERPccResponseFaultMessage;&#xD;&#xA;ArchiveERPResponseFaultMessage.Reply_statusMessage.Reply_StatusMessage_Value = &quot;Exception when calling PaymentProcessing Web Service: &quot; + CatchSystemException.Message;&#xD;&#xA;ArchiveERPResponseFaultMessage(FILE.ReceivedFileName) = &quot;PPReplyFault&quot; + ReplyType + &quot;_&quot; + MerchRefCode;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_5" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="f7c4057b-f545-46c7-b905-e53249b9ce37" ParentLink="Catch_Statement" LowerBound="315.1" HigherBound="317.1">
+                            <om:Property Name="PortName" Value="ArchiveERPResponsePort" />
+                            <om:Property Name="MessageName" Value="ArchiveERPResponseFaultMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="sndArchiveERPReplyFault" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="c95cfca1-f998-47fe-8f98-2b0752785395" ParentLink="Catch_Statement" LowerBound="317.1" HigherBound="338.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructESBFaultFromWS" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="d5842470-d4f9-4543-8fd6-8c7a0a691b6e" ParentLink="Construct_MessageRef" LowerBound="318.35" HigherBound="318.50">
+                                <om:Property Name="Ref" Value="ESBFaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="12546fba-c6c2-4c31-aff7-86f36a9ad31f" ParentLink="ComplexStatement_Statement" LowerBound="320.1" HigherBound="337.1">
+                                <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;PaymentProcessing strError&quot;,strError);&#xD;&#xA;&#xD;&#xA;// Create fault exception Message&#xD;&#xA;ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;ESBFaultMessage.FailureCategory=&quot;EDI.BTOL.COM PaymentProcessing Exception:&quot;;&#xD;&#xA;ESBFaultMessage.FaultDescription=CatchSystemException.Message;&#xD;&#xA;ESBFaultMessage.FaultCode=&quot;2002&quot;;&#xD;&#xA;ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,ERPccResponseFaultMessage);&#xD;&#xA;&#xD;&#xA;// Write to Event Log&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;PaymentProcessing SystemException&quot;,CatchSystemException.Message);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="PopulateESBFault" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="d6967bcc-659d-4453-b223-91d16dddfedd" ParentLink="Catch_Statement" LowerBound="338.1" HigherBound="340.1">
+                            <om:Property Name="PortName" Value="ESBExceptionPort" />
+                            <om:Property Name="MessageName" Value="ESBFaultMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="sndESBFaultMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Terminate" OID="7923bfef-5cd0-4c29-9b13-7acc5d929935" ParentLink="Catch_Statement" LowerBound="340.1" HigherBound="342.1">
+                            <om:Property Name="ErrorMessage" Value="&quot;Terminated After Handling PPWebSrvc Exception&quot;;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="TerminateAfterExceptionHandling" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Construct" OID="8245eb79-a257-4178-8ed7-38b4b93a78b6" ParentLink="ServiceBody_Statement" LowerBound="345.1" HigherBound="351.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructERPccResponse" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageRef" OID="e77737cd-e199-4c61-8394-1192f1e54b92" ParentLink="Construct_MessageRef" LowerBound="346.23" HigherBound="346.43">
+                        <om:Property Name="Ref" Value="ERPccResponseMessage" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Transform" OID="da7edfad-d0fd-447d-b728-27ab19b14e41" ParentLink="ComplexStatement_Statement" LowerBound="348.1" HigherBound="350.1">
+                        <om:Property Name="ClassName" Value="BTNextGen.BizTalk.PaymentProcessing.Maps.ERPppSoapResponse2ERPccResponse" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="TransformERPpp2ERPcc" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="MessagePartRef" OID="4dfd2ca8-25ca-4ff3-8ba6-99d8267abacd" ParentLink="Transform_InputMessagePartRef" LowerBound="349.126" HigherBound="349.154">
+                            <om:Property Name="MessageRef" Value="ERPppSoapResponse" />
+                            <om:Property Name="PartRef" Value="parameters" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_3" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="c46ddb72-096d-4c69-adca-b8d5f5104529" ParentLink="Transform_OutputMessagePartRef" LowerBound="349.28" HigherBound="349.48">
+                            <om:Property Name="MessageRef" Value="ERPccResponseMessage" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_4" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="1f0e9c79-4b6d-4573-b147-32cfbd7ca61c" ParentLink="ServiceBody_Statement" LowerBound="351.1" HigherBound="353.1">
+                    <om:Property Name="Expression" Value="ReplyType=ERPccResponseMessage.ReplyType.ReplyType_Value;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="GetReplyType" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="071d1f35-6f0c-4856-aba5-e94033824bac" ParentLink="ServiceBody_Statement" LowerBound="353.1" HigherBound="362.1">
+                    <om:Property Name="Expression" Value="&#xD;&#xA;if (enableBam)&#xD;&#xA;{&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&#xD;&#xA;&quot;Reason&quot;, ERPccResponseMessage.reasonCode.reasonCode_Value,&#xD;&#xA;&quot;rcvCyber&quot;,System.DateTime.UtcNow);&#xD;&#xA;&#xD;&#xA;}" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="BAM RcvCyber" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="Construct" OID="c615f091-aa4d-47a3-9029-28f2b05e1142" ParentLink="ServiceBody_Statement" LowerBound="362.1" HigherBound="370.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructArchiveERPResponse" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="da902473-0287-4baf-8c02-f0a24f845ce1" ParentLink="ComplexStatement_Statement" LowerBound="365.1" HigherBound="369.1">
+                        <om:Property Name="Expression" Value="ArchiveERPResponseMessage = ERPccResponseMessage;&#xD;&#xA;ArchiveERPResponseMessage(FILE.ReceivedFileName) = &quot;PPReply_&quot; + ReplyType + MerchRefCode;&#xD;&#xA;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="MessageAssignment_2" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="7d58f758-c530-4378-a19d-a9ff0a7b91c0" ParentLink="Construct_MessageRef" LowerBound="363.23" HigherBound="363.48">
+                        <om:Property Name="Ref" Value="ArchiveERPResponseMessage" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="8b9ee7dc-0e1b-49f9-ad3a-05f6f758ec38" ParentLink="ServiceBody_Statement" LowerBound="370.1" HigherBound="372.1">
+                    <om:Property Name="PortName" Value="ArchiveERPResponsePort" />
+                    <om:Property Name="MessageName" Value="ArchiveERPResponseMessage" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Snd_ArchiveERPccResponse" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="857570d3-c2ec-4918-b999-913c3ceecef9" ParentLink="ServiceBody_Statement" LowerBound="372.1" HigherBound="484.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="chkRetryReasonCode" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="be2553bc-c761-40c3-b4e4-970d430800f2" ParentLink="ReallyComplexStatement_Branch" LowerBound="373.13" HigherBound="459.1">
+                        <om:Property Name="Expression" Value="(RetryCount &gt; 8) | (ERPccResponseMessage.reasonCode.reasonCode_Value != &quot;150&quot; &amp; ERPccResponseMessage.reasonCode.reasonCode_Value != &quot;207&quot; &amp; ERPccResponseMessage.reasonCode.reasonCode_Value != &quot;236&quot;)" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="NoRetries" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Decision" OID="e61868c9-84eb-4c0c-889e-8bf83a3516c6" ParentLink="ComplexStatement_Statement" LowerBound="375.1" HigherBound="386.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ChkBTBorBTE" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="c16a7c7f-2b8a-4b0f-a0a5-520fe81c61ca" ParentLink="ReallyComplexStatement_Branch" LowerBound="376.17" HigherBound="381.1">
+                                <om:Property Name="Expression" Value="TargetERP==&quot;B&quot;&#xD;&#xA;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="IsBTB" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Send" OID="8730e914-a6cc-4e78-9fae-ac1adb348a5d" ParentLink="ComplexStatement_Statement" LowerBound="378.1" HigherBound="380.1">
+                                    <om:Property Name="PortName" Value="SendERPccResponsePort" />
+                                    <om:Property Name="MessageName" Value="ERPccResponseMessage" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Snd_ERPccResponseMessage" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="905ff9d6-ac8b-4626-aa0d-354fed5cd546" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Send" OID="cb5234c9-05b4-4843-a339-3678b5b66529" ParentLink="ComplexStatement_Statement" LowerBound="383.1" HigherBound="385.1">
+                                    <om:Property Name="PortName" Value="SendBTEERPccResponsePort" />
+                                    <om:Property Name="MessageName" Value="ERPccResponseMessage" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Snd_BTEERPccResponse" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="98d02504-9152-48b3-b71f-37e28a392701" ParentLink="ComplexStatement_Statement" LowerBound="386.1" HigherBound="394.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;if (enableBam)&#xD;&#xA;{&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&#xD;&#xA;&quot;ERPSent&quot;,System.DateTime.UtcNow);&#xD;&#xA;&#xD;&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="BAM ERPSent" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="ca87d44d-20a6-4c8e-8d49-a8d051054f8b" ParentLink="ComplexStatement_Statement" LowerBound="394.1" HigherBound="405.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructProfileMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="ae5c604a-e72c-4e0f-8ab8-c0900002aada" ParentLink="Construct_MessageRef" LowerBound="395.27" HigherBound="395.41">
+                                <om:Property Name="Ref" Value="ProfileMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="1a81a997-9741-489c-85ac-b102e1eeb137" ParentLink="ComplexStatement_Statement" LowerBound="397.1" HigherBound="404.1">
+                                <om:Property Name="Expression" Value="xmldocUpdateProfile.LoadXml(&quot;&lt;ProfileDocument&gt;&lt;CreditCard&gt;&lt;BTNextGen&gt;&lt;payment_status&gt;&lt;/payment_status&gt;&lt;/BTNextGen&gt;&lt;GeneralInfo&gt;&lt;id&gt;&lt;/id&gt;&lt;/GeneralInfo&gt;&lt;/CreditCard&gt;&lt;/ProfileDocument&gt;&quot;);&#xD;&#xA;&#xD;&#xA;ProfileMessage=xmldocUpdateProfile;&#xD;&#xA;&#xD;&#xA;xpath(ProfileMessage,&quot;/*[local-name()='ProfileDocument' and namespace-uri()='']/*[local-name()='CreditCard' and namespace-uri()='']/*[local-name()='GeneralInfo' and namespace-uri()='']/*[local-name()='id' and namespace-uri()='']&quot;)= ERPccRequestMessage.subscriptionID.subscriptionID_Value;&#xD;&#xA;xpath(ProfileMessage,&quot;/*[local-name()='ProfileDocument' and namespace-uri()='']/*[local-name()='CreditCard' and namespace-uri()='']/*[local-name()='BTNextGen' and namespace-uri()='']/*[local-name()='payment_status' and namespace-uri()='']&quot;)= ERPccResponseMessage.reasonCode.reasonCode_Value;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="AssignKeyAndReason" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Construct" OID="3a42ba30-98cf-4fc6-97dd-486a90c77c40" ParentLink="ComplexStatement_Statement" LowerBound="405.1" HigherBound="415.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructWCFUpdateRequest" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="63c987d1-63d3-4ce1-8620-62426961dc2a" ParentLink="ComplexStatement_Statement" LowerBound="408.1" HigherBound="410.1">
+                                <om:Property Name="ClassName" Value="BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccResponse2CCProfileUpdate" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ProfileMess2WCFRequest" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessagePartRef" OID="e060587a-8c8b-4618-bcbb-c18ff98d75dc" ParentLink="Transform_InputMessagePartRef" LowerBound="409.141" HigherBound="409.155">
+                                    <om:Property Name="MessageRef" Value="ProfileMessage" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_9" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="ba0167c7-cfce-4712-9734-149dd96e7f34" ParentLink="Transform_OutputMessagePartRef" LowerBound="409.32" HigherBound="409.65">
+                                    <om:Property Name="MessageRef" Value="UpdateCCProfileRequest" />
+                                    <om:Property Name="PartRef" Value="parameters" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_10" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="b2709490-ba0f-4a3e-bc1b-1255afa025b3" ParentLink="ComplexStatement_Statement" LowerBound="410.1" HigherBound="414.1">
+                                <om:Property Name="Expression" Value="UpdateCCProfileRequest.parameters.profileKey=ERPccRequestMessage.subscriptionID.subscriptionID_Value;&#xD;&#xA;UpdateCCProfileRequest.parameters.profileObjectName=&quot;CreditCard&quot;;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="PopulateWCFObjNames" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="73cbfb49-5884-4fdf-a789-f802521cb5a4" ParentLink="Construct_MessageRef" LowerBound="406.27" HigherBound="406.49">
+                                <om:Property Name="Ref" Value="UpdateCCProfileRequest" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="da5d2db2-ef87-4a77-a334-e5143b4eac21" ParentLink="ComplexStatement_Statement" LowerBound="415.1" HigherBound="458.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="chkReasonCode" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="58ad7289-8032-4969-beaa-d81e5a639e61" ParentLink="ReallyComplexStatement_Branch" LowerBound="416.17" HigherBound="419.1">
+                                <om:Property Name="Expression" Value="ERPccResponseMessage.reasonCode.reasonCode_Value == &quot;100&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="IsReasonCode100" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="62b66efb-9222-4acb-9ffa-9fa188a98da1" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Decision" OID="beb59982-72a7-4558-9e92-bee61230004d" ParentLink="ComplexStatement_Statement" LowerBound="421.1" HigherBound="457.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="chkSubscriptionID2" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="DecisionBranch" OID="e022cc44-8593-41ba-86bc-d0644f8f3c12" ParentLink="ReallyComplexStatement_Branch" LowerBound="422.21" HigherBound="425.1">
+                                        <om:Property Name="Expression" Value="ERPccRequestMessage.subscriptionID.subscriptionID_Value == null&#xD;&#xA;" />
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="IsSubscriptionIDnull" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="DecisionBranch" OID="070ba078-492e-4aa3-bf5a-7d79a739e7be" ParentLink="ReallyComplexStatement_Branch">
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Else" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="VariableAssignment" OID="1287be69-76b5-41b1-a638-c42125fb26fd" ParentLink="ComplexStatement_Statement" LowerBound="427.1" HigherBound="435.1">
+                                            <om:Property Name="Expression" Value="&#xD;&#xA;if (enableBam)&#xD;&#xA;{&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&#xD;&#xA;&quot;ProfileReq&quot;,System.DateTime.UtcNow);&#xD;&#xA;&#xD;&#xA;}" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="BAM ProfileReq" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="Send" OID="a22c0b08-e1de-4c24-8f69-be91bfa6cdc8" ParentLink="ComplexStatement_Statement" LowerBound="435.1" HigherBound="437.1">
+                                            <om:Property Name="PortName" Value="GetCCTokenPort" />
+                                            <om:Property Name="MessageName" Value="UpdateCCProfileRequest" />
+                                            <om:Property Name="OperationName" Value="UpdatePartialProfile" />
+                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Snd_WCFProfileRequest" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="Receive" OID="81cf0fc3-8897-43b7-9b3a-26b676a39c61" ParentLink="ComplexStatement_Statement" LowerBound="437.1" HigherBound="439.1">
+                                            <om:Property Name="Activate" Value="False" />
+                                            <om:Property Name="PortName" Value="GetCCTokenPort" />
+                                            <om:Property Name="MessageName" Value="UpdateCCProfileResponse" />
+                                            <om:Property Name="OperationName" Value="UpdatePartialProfile" />
+                                            <om:Property Name="OperationMessageName" Value="Response" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Rcv_WCFProfileResponse" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="VariableAssignment" OID="b19e65a2-3c7a-4ed6-921a-78232bba5a9e" ParentLink="ComplexStatement_Statement" LowerBound="439.1" HigherBound="447.1">
+                                            <om:Property Name="Expression" Value="&#xD;&#xA;if (enableBam)&#xD;&#xA;{&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&#xD;&#xA;&quot;ProfileResp&quot;,System.DateTime.UtcNow);&#xD;&#xA;&#xD;&#xA;}" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="BAM ProfileResp" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="Construct" OID="4af1aab8-2117-4a49-a53b-6b021115df1a" ParentLink="ComplexStatement_Statement" LowerBound="447.1" HigherBound="454.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="ConstructArchiveCCProfileResponse" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessageRef" OID="59095cc5-279f-40a5-a8e6-3df374aec519" ParentLink="Construct_MessageRef" LowerBound="448.35" HigherBound="448.59">
+                                                <om:Property Name="Ref" Value="ArchiveCCProfileResponse" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="MessageAssignment" OID="17109e3a-7e19-4a3b-b8c8-e5d22b66fd54" ParentLink="ComplexStatement_Statement" LowerBound="450.1" HigherBound="453.1">
+                                                <om:Property Name="Expression" Value="ArchiveCCProfileResponse=UpdateCCProfileResponse;&#xD;&#xA;ArchiveCCProfileResponse(FILE.ReceivedFileName) = &quot;CCUpdateResp_&quot; + ReplyType + MerchRefCode;&#xD;&#xA;" />
+                                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                                <om:Property Name="Name" Value="AssignArchiveCCProfileResponse" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="Send" OID="9591f080-543b-4f23-8229-4410a456f6d1" ParentLink="ComplexStatement_Statement" LowerBound="454.1" HigherBound="456.1">
+                                            <om:Property Name="PortName" Value="ArchiveCCUpdateResponsePort" />
+                                            <om:Property Name="MessageName" Value="ArchiveCCProfileResponse" />
+                                            <om:Property Name="OperationName" Value="Operation_1" />
+                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Snd_ArchiveCCProfileUpdateResponse" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="b501f1fd-2fe4-4701-8a89-e2fe3c27ff86" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="c37b8eca-7490-4d03-af50-2b06de5ad38b" ParentLink="ComplexStatement_Statement" LowerBound="461.1" HigherBound="467.1">
+                            <om:Property Name="Expression" Value="RetryCount = RetryCount + 1;&#xD;&#xA;RetryStr=RetryCount.ToString();&#xD;&#xA;RetryStr=RetryStr.Trim();&#xD;&#xA;RetryStr=&quot; Retries=&quot; + RetryStr;&#xD;&#xA;MerchID=MerchID + RetryStr;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="IncrementRetrySetMerchID" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="e44ea36c-90ca-4438-b1d5-acff153c357c" ParentLink="ComplexStatement_Statement" LowerBound="467.1" HigherBound="479.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructRequestRetry" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="f2d4f69a-3868-4a44-89d8-a3d4b9196df2" ParentLink="ComplexStatement_Statement" LowerBound="470.1" HigherBound="478.1">
+                                <om:Property Name="Expression" Value="ERPccRequestRetryMessage = ERPccRequestMessage;&#xD;&#xA;ERPccRequestRetryMessage(FILE.ReceivedFileName) = &quot;PPRequestRetry_&quot; + MerchRefCode;&#xD;&#xA;ERPccRequestRetryMessage.merchantID.merchantID_Value=MerchID;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="b27aa199-fec1-43fc-aab9-8deebedc9e97" ParentLink="Construct_MessageRef" LowerBound="468.27" HigherBound="468.51">
+                                <om:Property Name="Ref" Value="ERPccRequestRetryMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Delay" OID="2cbfcaa3-3096-4ed9-86bc-41f5e63fb02b" ParentLink="ComplexStatement_Statement" LowerBound="479.1" HigherBound="481.1">
+                            <om:Property Name="Timeout" Value="new System.TimeSpan(0,0,5,0);&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="AnalystComments" Value="Since the Receive Location files are processed immediately, we need to delay writing them out." />
+                            <om:Property Name="Name" Value="Delay_Retry" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="5a331147-53b1-4171-b8fd-ce2702a1fc69" ParentLink="ComplexStatement_Statement" LowerBound="481.1" HigherBound="483.1">
+                            <om:Property Name="PortName" Value="sndERPccRequestRetryPort" />
+                            <om:Property Name="MessageName" Value="ERPccRequestRetryMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="sndERPccRequestRetry" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="33369ebf-bdb6-4ae2-aab8-fa561240c444" ParentLink="ServiceBody_Statement" LowerBound="484.1" HigherBound="491.1">
+                    <om:Property Name="Expression" Value="&#xD;&#xA;if( enableBam)&#xD;&#xA;{&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.EndActivity(activityName,activityID);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="BAM END" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="d148f316-b915-42a3-a76b-249c568d2c89" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="63.1" HigherBound="65.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="5" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.ERPccRequestReceivePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ERPccRequestReceivePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="1788a144-cd2e-4388-9d2b-fb775d10f9df" ParentLink="PortDeclaration_CLRAttribute" LowerBound="63.1" HigherBound="64.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="868c9bb1-252c-4650-a515-626611388e76" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="65.1" HigherBound="67.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="9" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.ArchiveERPRequestPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveERPRequestPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="6860f5c0-7976-4d51-8905-a5d34d7748d9" ParentLink="PortDeclaration_CLRAttribute" LowerBound="65.1" HigherBound="66.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="bc8fa748-c865-438a-84d7-eac15f0e3710" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="67.1" HigherBound="69.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="17" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.PaymentProcessingSoap" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CallPaymentProcessingWSPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="53733bf8-f3da-4a3b-b8c9-997f62d93ecf" ParentLink="PortDeclaration_CLRAttribute" LowerBound="67.1" HigherBound="68.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="540e5b97-9053-41d3-ac41-1ce5a25f1aef" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="69.1" HigherBound="71.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="34" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.ArchiveERPResponsePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveERPResponsePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="bb66c844-84a5-452c-a43e-eebd600bc453" ParentLink="PortDeclaration_CLRAttribute" LowerBound="69.1" HigherBound="70.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="cacc9f9f-b8ce-472d-b2d3-c8b1f51e2668" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="71.1" HigherBound="73.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="52" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.SendERPccResponsePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendERPccResponsePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="b21aa3c1-7a42-4026-bdd3-d7e7f7e2e49b" ParentLink="PortDeclaration_CLRAttribute" LowerBound="71.1" HigherBound="72.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4d694afb-9b53-49cd-8cc3-6a43b2046b87" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="73.1" HigherBound="75.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="59" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.SendBTEERPccResponsePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendBTEERPccResponsePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="cc5ca217-645b-4805-930f-508819c40eee" ParentLink="PortDeclaration_CLRAttribute" LowerBound="73.1" HigherBound="74.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="ea1bc2d9-4321-4989-b55f-34cf662e640c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="75.1" HigherBound="77.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="14" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.IIProfile" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetCCTokenPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="2520644d-4948-466d-a377-31d23a23aa9d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="75.1" HigherBound="76.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="b9f5117d-db5d-4f33-84da-f8b65bc34a25" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="77.1" HigherBound="79.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="155" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.ArchiveCCUpdateResponsePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveCCUpdateResponsePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="7e0837e6-8624-48a7-8f91-ab1de0f2bb26" ParentLink="PortDeclaration_CLRAttribute" LowerBound="77.1" HigherBound="78.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="843084a8-ce1b-4e7b-9a61-f0637b5267d5" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="79.1" HigherBound="81.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="142" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.sndERPccRequestRetryPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="sndERPccRequestRetryPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="53980654-9ee3-4e77-b4ed-e89c71045f04" ParentLink="PortDeclaration_CLRAttribute" LowerBound="79.1" HigherBound="80.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="27700af8-be42-443f-84a8-ef40d234be39" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="81.1" HigherBound="83.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="130" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.PaymentProcessing.ESBExceptionPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ESBExceptionPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="41d988c1-f091-4281-95ba-b7ee7632dcd3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="81.1" HigherBound="82.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.BizTalk.PaymentProcessing
+{
+    internal porttype ERPccRequestReceivePortType
+    {
+        oneway Rcv_ERPRequest
+        {
+            Schemas.ERPccRequest
+        };
+    };
+    internal porttype ArchiveERPRequestPortType
+    {
+        oneway Snd_ERPRequestArchive
+        {
+            Schemas.ERPccRequest
+        };
+    };
+    internal porttype ArchiveERPResponsePortType
+    {
+        oneway Operation_1
+        {
+            Schemas.ERPccResponse
+        };
+    };
+    internal porttype SendERPccResponsePortType
+    {
+        oneway Operation_1
+        {
+            Schemas.ERPccResponse
+        };
+    };
+    internal porttype SendBTEERPccResponsePortType
+    {
+        oneway Operation_1
+        {
+            Schemas.ERPccResponse
+        };
+    };
+    internal porttype ArchiveCCUpdateResponsePortType
+    {
+        oneway Operation_1
+        {
+            IIProfile_UpdatePartialProfile_OutputMessage
+        };
+    };
+    internal porttype sndERPccRequestRetryPortType
+    {
+        oneway Operation_1
+        {
+            Schemas.ERPccRequest
+        };
+    };
+    internal porttype ESBExceptionPortType
+    {
+        oneway Operation_1
+        {
+            Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction ProcessERPTXN
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ERPccRequestReceivePortType ERPccRequestReceivePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ArchiveERPRequestPortType ArchiveERPRequestPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PaymentProcessingSoap CallPaymentProcessingWSPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ArchiveERPResponsePortType ArchiveERPResponsePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendERPccResponsePortType SendERPccResponsePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendBTEERPccResponsePortType SendBTEERPccResponsePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses IIProfile GetCCTokenPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ArchiveCCUpdateResponsePortType ArchiveCCUpdateResponsePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses sndERPccRequestRetryPortType sndERPccRequestRetryPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses ESBExceptionPortType ESBExceptionPort;
+        message Schemas.ERPccRequest ERPccRequestMessage;
+        message Schemas.ERPccRequest ArchiveERPRequestMessage;
+        message CallCyberSourceSoapIn ERPppSoapRequest;
+        message CallCyberSourceSoapOut ERPppSoapResponse;
+        message Schemas.ERPccResponse ERPccResponseMessage;
+        message Schemas.ERPccResponse ArchiveERPResponseMessage;
+        message Schemas.ERPccRequest ERPccRequestWEmail;
+        message IIProfile_GetCreditCardToken_InputMessage GetCCTokenRequest;
+        message IIProfile_GetCreditCardToken_OutputMessage GetCCTokenResponse;
+        message IIProfile_UpdatePartialProfile_InputMessage UpdateCCProfileRequest;
+        message IIProfile_UpdatePartialProfile_OutputMessage UpdateCCProfileResponse;
+        message BTNextGen.BizTalk.CS.Profiles.Schemas.BTProfile ProfileMessage;
+        message IIProfile_UpdatePartialProfile_OutputMessage ArchiveCCProfileResponse;
+        message Schemas.ERPccRequest ERPccRequestRetryMessage;
+        message Schemas.ERPccResponse ERPccResponseFaultMessage;
+        message Schemas.ERPccResponse ArchiveERPResponseFaultMessage;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage ESBFaultMessage;
+        System.Xml.XmlDocument xDocFault;
+        System.Guid guid;
+        System.String activityName;
+        System.String activityID;
+        System.Boolean enableBam;
+        System.String ReplyType;
+        System.String MerchRefCode;
+        System.String TargetERP;
+        System.Xml.XmlDocument xmldocUpdateProfile;
+        System.String MerchID;
+        System.String RetryStr;
+        System.Int32 EqualIndex;
+        System.Int32 SpaceIndex;
+        System.String MerchIDFull;
+        System.String RetryNameTag;
+        System.Int32 RetryCount;
+        System.String strError;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("55579659-fbc4-43fe-98b3-e474e3f67f93")]
+            activate receive (ERPccRequestReceivePort.Rcv_ERPRequest, ERPccRequestMessage);
+            xDocFault = new System.Xml.XmlDocument();
+            activityName = "";
+            activityID = "";
+            enableBam = true;
+            ReplyType = "";
+            MerchRefCode = "";
+            TargetERP = "";
+            xmldocUpdateProfile = new System.Xml.XmlDocument();
+            MerchID = "";
+            RetryStr = "";
+            MerchIDFull = "";
+            RetryNameTag = "";
+            RetryCount = 0;
+            strError = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1c45a436-b0c3-4976-8342-8e9102090a39")]
+            MerchRefCode=ERPccRequestMessage.merchantReferenceCode.merchantReferenceCode_Value;
+            TargetERP=MerchRefCode.Substring(0,1);
+            enableBam=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.PaymentProcessing","bamEnabled"));
+            MerchIDFull=ERPccRequestMessage.merchantID.merchantID_Value;
+            if(MerchIDFull.Contains(" Retries="))
+            {
+                EqualIndex=MerchIDFull.IndexOf("=");
+                SpaceIndex=MerchIDFull.IndexOf(" ");
+                //Recover the initial MerchantID if Retries=x has been appended.
+                MerchID=MerchIDFull.Remove(SpaceIndex);
+                //Temp use of RetryStr to get string of RetryCount
+                RetryStr=MerchIDFull.Substring(EqualIndex + 1,1);
+                RetryNameTag=RetryStr;
+                RetryCount=System.Convert.ToInt32(RetryStr);
+                //Prepend Retries= with a leading space.
+                RetryStr=" Retries=" + RetryStr;
+            }
+            else
+            {
+                MerchID=MerchIDFull;
+                RetryStr=" Retries=0";
+                RetryNameTag="";
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ee8ed7a2-4c98-4d40-adc2-087d355dd94a")]
+            
+            if (enableBam)
+            {
+            activityName= "PaymentERPTxn";
+            guid= System.Guid.NewGuid();
+            activityID= guid.ToString()+ "_"+ System.DateTime.Now.ToString();
+            Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.BeginActivity(activityName,activityID);
+            Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,"rcvERPReq",System.DateTime.UtcNow,
+            "TargetERP",TargetERP,
+            "MerchantRef",MerchRefCode,
+            "cardID",ERPccRequestMessage.subscriptionID.subscriptionID_Value);
+            
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f41e8945-c899-4a7a-afe7-483bd33d6750")]
+            construct ArchiveERPRequestMessage
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("d20d5d76-00e4-47d2-b12e-c119b5180080")]
+                ArchiveERPRequestMessage = ERPccRequestMessage;
+                ArchiveERPRequestMessage(FILE.ReceivedFileName) = "PPRequest" + RetryNameTag + "_" + MerchRefCode;
+                
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7890ff0b-51dc-45d1-b63a-b2d639c45df2")]
+            send (ArchiveERPRequestPort.Snd_ERPRequestArchive, ArchiveERPRequestMessage);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d4dd6fc7-0817-4ccc-831f-de0da02f01c9")]
+            if (ERPccRequestMessage.subscriptionID.subscriptionID_Value == null)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6904aa76-342d-4220-8df6-3371cd9f2a30")]
+                construct ERPccRequestWEmail
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("02f3500f-33b3-4183-a38f-c135c22f060c")]
+                    transform (ERPccRequestWEmail) = BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccRequest2ERPccRequestWEmail (ERPccRequestMessage);
+                }
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9d38123d-6b5a-4ddd-a0dd-39e36e046200")]
+                construct GetCCTokenRequest
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("ca86bfb1-dde1-42fa-9bcf-b873473c44ef")]
+                    transform (GetCCTokenRequest.parameters) = BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccRequest2GetCCTokenRequest (ERPccRequestMessage);
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2dff0963-272c-4e73-8af6-862712cc024d")]
+                
+                if (enableBam)
+                {
+                Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,"SndTokenReq",System.DateTime.UtcNow);
+                
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c77535ba-b7d5-432a-8633-53c07dc1cbd5")]
+                send (GetCCTokenPort.GetCreditCardToken, GetCCTokenRequest);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c6c0431e-104e-4e97-9e11-9b6094f56d9b")]
+                receive (GetCCTokenPort.GetCreditCardToken, GetCCTokenResponse);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("b22c0acf-4716-44c2-b620-04fb911a8635")]
+                
+                if (enableBam)
+                {
+                Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,"GetTokenReq",System.DateTime.UtcNow,
+                "email", GetCCTokenResponse.parameters.GetCreditCardTokenResult.email_address);
+                
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("b29ec455-0e35-4f72-8e5e-7bccd3d25483")]
+                construct ERPccRequestWEmail
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("197b0e76-8d65-450a-bf47-8319fd087316")]
+                    transform (ERPccRequestWEmail) = BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccRequest2ERPccRequestWEmail (ERPccRequestMessage);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("6ba090f2-2461-4089-b019-1f0ef75d4e37")]
+                    ERPccRequestWEmail.notificationEmail.notificationEmail_Value=GetCCTokenResponse.parameters.GetCreditCardTokenResult.email_address;
+                    ERPccRequestWEmail.subscriptionID.subscriptionID_Value=GetCCTokenResponse.parameters.GetCreditCardTokenResult.cardToken;
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("05b602f3-25a3-4a5c-8f68-03dc80240d97")]
+            construct ERPppSoapRequest
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9605afd2-a6c6-4bb9-a6ae-996f6c4cc581")]
+                transform (ERPppSoapRequest.parameters) = BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccRequest2ERPppSoapRequest (ERPccRequestWEmail);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7819a2a9-5a81-4984-a86b-c2d4a2c7650a")]
+            scope longrunning transaction Transaction_3
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a5a771c4-0f57-4080-b1eb-125fe0d04692")]
+                    scope synchronized longrunning transaction Transaction_2
+                    {
+                        body
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("472aebda-a224-4074-b27f-3e4c73211ca4")]
+                            send (CallPaymentProcessingWSPort.CallCyberSource, ERPppSoapRequest);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f6a86a92-ac2f-4fe2-b2de-11fd6c129b67")]
+                            
+                            if (enableBam)
+                            {
+                            Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,
+                            "SendCyber",System.DateTime.UtcNow);
+                            
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("01ddccb4-b2ed-45af-bc53-54b3c2111cb9")]
+                            receive (CallPaymentProcessingWSPort.CallCyberSource, ERPppSoapResponse);
+                        }
+                        exceptions
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f4b071d9-637e-430f-9cf0-3130db1591d8")]
+                            catch (CallPaymentProcessingWSPort.CallCyberSource.CyberWebSrvcException CyberWebSrvcException)
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6a9b589d-9fb7-49b5-a6d5-89e82115ae25")]
+                                xDocFault = CyberWebSrvcException.FaultBody;
+                                System.Diagnostics.EventLog.WriteEntry("PaymentProcessing WS Fault",xDocFault.OuterXml.ToString());
+                                strError = xpath(CyberWebSrvcException.FaultBody,"string(/*[local-name()='Fault' and namespace-uri()='http://schemas.xmlsoap.org/soap/envelope/']/*[local-name()='faultstring' and namespace-uri()=''])");
+                                throw new System.Exception(strError);
+                                
+                            }
+                        }
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3733f7ed-af9f-49a6-8c48-e45fdae34da6")]
+                    catch (System.Exception CatchSystemException)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("189f731d-d75e-44d4-97d8-607dff612b97")]
+                        construct ERPccResponseFaultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("66d22593-e926-491a-aae8-e0423e660b2f")]
+                            transform (ERPccResponseFaultMessage) = BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccRequest2ERPccResponse (ERPccRequestMessage);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("226cd37a-ef1c-4a56-a9b1-3311dd9be4ea")]
+                            ERPccResponseFaultMessage.Reply_statusMessage.Reply_StatusMessage_Value = ERPccResponseFaultMessage.Reply_statusMessage.Reply_StatusMessage_Value + " (Logged on BizTalk Server)";
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6dc5b182-0378-411a-b52c-4371aa2abb6c")]
+                        if (TargetERP=="B" )
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d7c39f15-5eb4-4645-ae69-e4849edc818f")]
+                            send (SendERPccResponsePort.Operation_1, ERPccResponseFaultMessage);
+                        }
+                        else 
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d2cf59ce-2048-4635-b338-51a82f287b49")]
+                            send (SendBTEERPccResponsePort.Operation_1, ERPccResponseFaultMessage);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e642d9fa-8616-4323-b5a3-8ef4fb2e7f41")]
+                        
+                        if (enableBam)
+                        {
+                        Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,
+                        "ERPSent",System.DateTime.UtcNow);
+                        
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("75eaf1ba-e480-4de8-9292-f12efb3e668b")]
+                        construct ArchiveERPResponseFaultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3d24538f-a664-403b-9a55-d5a2d47f7aab")]
+                            ArchiveERPResponseFaultMessage = ERPccResponseFaultMessage;
+                            ArchiveERPResponseFaultMessage.Reply_statusMessage.Reply_StatusMessage_Value = "Exception when calling PaymentProcessing Web Service: " + CatchSystemException.Message;
+                            ArchiveERPResponseFaultMessage(FILE.ReceivedFileName) = "PPReplyFault" + ReplyType + "_" + MerchRefCode;
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f7c4057b-f545-46c7-b905-e53249b9ce37")]
+                        send (ArchiveERPResponsePort.Operation_1, ArchiveERPResponseFaultMessage);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c95cfca1-f998-47fe-8f98-2b0752785395")]
+                        construct ESBFaultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("12546fba-c6c2-4c31-aff7-86f36a9ad31f")]
+                            System.Diagnostics.EventLog.WriteEntry("PaymentProcessing strError",strError);
+                            
+                            // Create fault exception Message
+                            ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            
+                            // Assign Properties
+                            
+                            ESBFaultMessage.FailureCategory="EDI.BTOL.COM PaymentProcessing Exception:";
+                            ESBFaultMessage.FaultDescription=CatchSystemException.Message;
+                            ESBFaultMessage.FaultCode="2002";
+                            ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                            Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,ERPccResponseFaultMessage);
+                            
+                            // Write to Event Log
+                            System.Diagnostics.EventLog.WriteEntry("PaymentProcessing SystemException",CatchSystemException.Message);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d6967bcc-659d-4453-b223-91d16dddfedd")]
+                        send (ESBExceptionPort.Operation_1, ESBFaultMessage);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7923bfef-5cd0-4c29-9b13-7acc5d929935")]
+                        terminate "Terminated After Handling PPWebSrvc Exception";;
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8245eb79-a257-4178-8ed7-38b4b93a78b6")]
+            construct ERPccResponseMessage
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("da7edfad-d0fd-447d-b728-27ab19b14e41")]
+                transform (ERPccResponseMessage) = BTNextGen.BizTalk.PaymentProcessing.Maps.ERPppSoapResponse2ERPccResponse (ERPppSoapResponse.parameters);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1f0e9c79-4b6d-4573-b147-32cfbd7ca61c")]
+            ReplyType=ERPccResponseMessage.ReplyType.ReplyType_Value;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("071d1f35-6f0c-4856-aba5-e94033824bac")]
+            
+            if (enableBam)
+            {
+            Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,
+            "Reason", ERPccResponseMessage.reasonCode.reasonCode_Value,
+            "rcvCyber",System.DateTime.UtcNow);
+            
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c615f091-aa4d-47a3-9029-28f2b05e1142")]
+            construct ArchiveERPResponseMessage
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("da902473-0287-4baf-8c02-f0a24f845ce1")]
+                ArchiveERPResponseMessage = ERPccResponseMessage;
+                ArchiveERPResponseMessage(FILE.ReceivedFileName) = "PPReply_" + ReplyType + MerchRefCode;
+                
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8b9ee7dc-0e1b-49f9-ad3a-05f6f758ec38")]
+            send (ArchiveERPResponsePort.Operation_1, ArchiveERPResponseMessage);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("857570d3-c2ec-4918-b999-913c3ceecef9")]
+            if ((RetryCount > 8) | (ERPccResponseMessage.reasonCode.reasonCode_Value != "150" & ERPccResponseMessage.reasonCode.reasonCode_Value != "207" & ERPccResponseMessage.reasonCode.reasonCode_Value != "236"))
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e61868c9-84eb-4c0c-889e-8bf83a3516c6")]
+                if (TargetERP=="B")
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8730e914-a6cc-4e78-9fae-ac1adb348a5d")]
+                    send (SendERPccResponsePort.Operation_1, ERPccResponseMessage);
+                }
+                else 
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("cb5234c9-05b4-4843-a339-3678b5b66529")]
+                    send (SendBTEERPccResponsePort.Operation_1, ERPccResponseMessage);
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("98d02504-9152-48b3-b71f-37e28a392701")]
+                
+                if (enableBam)
+                {
+                Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,
+                "ERPSent",System.DateTime.UtcNow);
+                
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("ca87d44d-20a6-4c8e-8d49-a8d051054f8b")]
+                construct ProfileMessage
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1a81a997-9741-489c-85ac-b102e1eeb137")]
+                    xmldocUpdateProfile.LoadXml("<ProfileDocument><CreditCard><BTNextGen><payment_status></payment_status></BTNextGen><GeneralInfo><id></id></GeneralInfo></CreditCard></ProfileDocument>");
+                    
+                    ProfileMessage=xmldocUpdateProfile;
+                    
+                    xpath(ProfileMessage,"/*[local-name()='ProfileDocument' and namespace-uri()='']/*[local-name()='CreditCard' and namespace-uri()='']/*[local-name()='GeneralInfo' and namespace-uri()='']/*[local-name()='id' and namespace-uri()='']")= ERPccRequestMessage.subscriptionID.subscriptionID_Value;
+                    xpath(ProfileMessage,"/*[local-name()='ProfileDocument' and namespace-uri()='']/*[local-name()='CreditCard' and namespace-uri()='']/*[local-name()='BTNextGen' and namespace-uri()='']/*[local-name()='payment_status' and namespace-uri()='']")= ERPccResponseMessage.reasonCode.reasonCode_Value;
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("3a42ba30-98cf-4fc6-97dd-486a90c77c40")]
+                construct UpdateCCProfileRequest
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("63c987d1-63d3-4ce1-8620-62426961dc2a")]
+                    transform (UpdateCCProfileRequest.parameters) = BTNextGen.BizTalk.PaymentProcessing.Maps.ERPccResponse2CCProfileUpdate (ProfileMessage);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b2709490-ba0f-4a3e-bc1b-1255afa025b3")]
+                    UpdateCCProfileRequest.parameters.profileKey=ERPccRequestMessage.subscriptionID.subscriptionID_Value;
+                    UpdateCCProfileRequest.parameters.profileObjectName="CreditCard";
+                    
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("da5d2db2-ef87-4a77-a334-e5143b4eac21")]
+                if (ERPccResponseMessage.reasonCode.reasonCode_Value == "100")
+                {
+                }
+                else 
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("beb59982-72a7-4558-9e92-bee61230004d")]
+                    if (ERPccRequestMessage.subscriptionID.subscriptionID_Value == null)
+                    {
+                    }
+                    else 
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("1287be69-76b5-41b1-a638-c42125fb26fd")]
+                        
+                        if (enableBam)
+                        {
+                        Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,
+                        "ProfileReq",System.DateTime.UtcNow);
+                        
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("a22c0b08-e1de-4c24-8f69-be91bfa6cdc8")]
+                        send (GetCCTokenPort.UpdatePartialProfile, UpdateCCProfileRequest);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("81cf0fc3-8897-43b7-9b3a-26b676a39c61")]
+                        receive (GetCCTokenPort.UpdatePartialProfile, UpdateCCProfileResponse);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b19e65a2-3c7a-4ed6-921a-78232bba5a9e")]
+                        
+                        if (enableBam)
+                        {
+                        Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,
+                        "ProfileResp",System.DateTime.UtcNow);
+                        
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4af1aab8-2117-4a49-a53b-6b021115df1a")]
+                        construct ArchiveCCProfileResponse
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("17109e3a-7e19-4a3b-b8c8-e5d22b66fd54")]
+                            ArchiveCCProfileResponse=UpdateCCProfileResponse;
+                            ArchiveCCProfileResponse(FILE.ReceivedFileName) = "CCUpdateResp_" + ReplyType + MerchRefCode;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9591f080-543b-4f23-8229-4410a456f6d1")]
+                        send (ArchiveCCUpdateResponsePort.Operation_1, ArchiveCCProfileResponse);
+                    }
+                }
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c37b8eca-7490-4d03-af50-2b06de5ad38b")]
+                RetryCount = RetryCount + 1;
+                RetryStr=RetryCount.ToString();
+                RetryStr=RetryStr.Trim();
+                RetryStr=" Retries=" + RetryStr;
+                MerchID=MerchID + RetryStr;
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e44ea36c-90ca-4438-b1d5-acff153c357c")]
+                construct ERPccRequestRetryMessage
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f2d4f69a-3868-4a44-89d8-a3d4b9196df2")]
+                    ERPccRequestRetryMessage = ERPccRequestMessage;
+                    ERPccRequestRetryMessage(FILE.ReceivedFileName) = "PPRequestRetry_" + MerchRefCode;
+                    ERPccRequestRetryMessage.merchantID.merchantID_Value=MerchID;
+                    
+                    
+                    
+                    
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2cbfcaa3-3096-4ed9-86bc-41f5e63fb02b")]
+                delay new System.TimeSpan(0,0,5,0);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("5a331147-53b1-4171-b8fd-ce2702a1fc69")]
+                send (sndERPccRequestRetryPort.Operation_1, ERPccRequestRetryMessage);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("33369ebf-bdb6-4ae2-aab8-fa561240c444")]
+            
+            if( enableBam)
+            {
+            Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.EndActivity(activityName,activityID);
+            }
+            
+        }
+    }
+}
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ns4="http://schemas.microsoft.com/Sql/2008/05/Types/TableFunctionReturnTables/dbo" xmlns:ns3="http://schemas.microsoft.com/Sql/2008/05/Types/TableTypes/dbo" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/Sql/2008/05/TableValuedFunctions/dbo" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\LTAPI.TableType.dbo.xsd" namespace="http://schemas.microsoft.com/Sql/2008/05/Types/TableTypes/dbo" />
+  <xs:import schemaLocation=".\LTAPI.TableFunctionReturnTable.dbo.xsd" namespace="http://schemas.microsoft.com/Sql/2008/05/Types/TableFunctionReturnTables/dbo" />
+  <xs:annotation>
+    <xs:appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">TableValuedFunction.dbo</fileNameHint>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="udfCSBTKEYtoISBNListTransferAPI">
+    <xs:annotation>
+      <xs:documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">TableFunction/dbo/udfCSBTKEYtoISBNListTransferAPI</doc:action>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="BTkeyList" nillable="true" type="ns3:ArrayOfudtBTKeysListTransferAPI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="udfCSBTKEYtoISBNListTransferAPIResponse">
+    <xs:annotation>
+      <xs:documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">TableFunction/dbo/udfCSBTKEYtoISBNListTransferAPI/response</doc:action>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="udfCSBTKEYtoISBNListTransferAPIResult" nillable="true" type="ns4:ArrayOfudfCSBTKEYtoISBNListTransferAPI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

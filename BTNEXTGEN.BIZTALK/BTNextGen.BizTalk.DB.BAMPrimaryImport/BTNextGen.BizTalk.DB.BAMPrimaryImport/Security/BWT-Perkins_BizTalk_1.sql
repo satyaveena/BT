@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [BWT-Perkins\BizTalk]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

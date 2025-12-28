@@ -1,0 +1,73 @@
+﻿<header>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title">
+                <a href="~/">ASP.NET Web API</a>
+            </p>
+             <p class="site-title">
+                  <a href="~/">TS360 - ESP integration</a>
+             </p>
+        </div>
+    </div>
+</header>
+
+<div id="body">
+    <ul id="contacts"></ul>
+</div>
+
+<form id="saveContactForm" method="post">
+<h3>Create a rank update</h3>
+<p>
+    <label for="contactId">Library ID:</label>
+    <input type="text" name="ESPLibraryId" />
+</p>
+<p>
+    <label for="contactName">Cart ID:</label>
+    <input type="text" name="cartId" />
+</p>
+<input type="button" id="saveContact" value="Save" />
+</form>
+
+@section scripts{
+<script type="text/javascript">
+$(function()
+{
+        $.getJSON('/cart/ranked', function(contactsJsonPayload)
+        {
+            $(contactsJsonPayload).each(function(i, item)
+            {
+                $('#contacts').append('<li>' + item.cartId + '</li>');
+            });
+        });
+});
+
+$('#saveContact').click(function () {
+    
+    /*$.post("/cart/ranked",
+          $("#saveContactForm").serialize(),
+          function (value) {
+              $('#contacts').append('<li>' + value.cartId + '</li>');
+          },
+          "json"
+    );*/
+
+    $.ajax({
+        type:"POST",
+        beforeSend: function (request)
+        {
+            request.setRequestHeader("X-ApiKey", "A8ANVOPM9NPYC54OHCCX7OWYD55GHH01");
+        },
+        url: "/cart/ranked",
+        data:  $("#saveContactForm").serialize(),
+        processData: false,
+        success: function (value) {
+            $('#contacts').append('<li>' + value.cartId + '</li>');
+        }
+    });
+
+    
+});
+
+</script>
+
+}

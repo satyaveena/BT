@@ -1,0 +1,14 @@
+#37697:: Expected Delivery Date - UPS Only
+	+ Add UPS related config values in BT.TS360API.Services > web.config 
+		<add key="UPSAPIUserName" value="BTUPSTrack"/>
+		<add key="UPSAPIPassword" value="BTP41z4ap!"/>
+		<add key="UPSAPIAccessLicenseKey" value="5D7D1E6FC4FBA5D1"/>
+		<add key="UPSAPIURL" value="https://wwwcie.ups.com/webservices/Track"/>
+	+ Add endpoint bidning with UPS Dev URL in BT.TS360API.Services > web.config 
+		<endpoint address="https://wwwcie.ups.com/webservices/Track"
+        binding="basicHttpBinding" bindingConfiguration="TrackBinding"
+        contract="UPSTrackingReference.TrackPortType" name="TrackPort" />		
+	+ Add TrackBinding in basicHttpBinding in BT.TS360API.Services > web.config
+		<binding name="TrackBinding">
+			<security mode="Transport" />
+		</binding>

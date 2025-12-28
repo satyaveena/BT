@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BT.TS360API.Common.Exceptions
+{
+    public class CartGridSaveFailedException : CartGridException
+    {
+        public CartGridSaveFailedException()
+        {
+
+        }
+
+        public CartGridSaveFailedException(string message)
+            : base(message)
+        {
+
+        }
+    }
+}

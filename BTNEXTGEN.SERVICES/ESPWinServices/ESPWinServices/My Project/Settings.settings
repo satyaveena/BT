@@ -1,0 +1,99 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="LogDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\BizTalkServer\ProcessedFiles\ESPWinServices</Value>
+    </Setting>
+    <Setting Name="LibraryPollingIntervalSeconds" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="LibraryEnablePolling" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ESPBaseURI" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://esp.test.collectionhq.co.uk/esp/</Value>
+    </Setting>
+    <Setting Name="DebugLogging" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="OrdersConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=BTDEVSQL01\RepositoryLD2;Initial Catalog=Orders;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=BTDEVSQL01\RepositoryLD2;Initial Catalog=Orders;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="NextGen_ProfilesConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=BTDEVSQL01\RepositoryLD2;Initial Catalog=NextGen_Profiles;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=BTDEVSQL01\RepositoryLD2;Initial Catalog=NextGen_Profiles;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="SMTPServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">5.0.110.24</Value>
+    </Setting>
+    <Setting Name="SMTPAuth" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SMTPUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Unused</Value>
+    </Setting>
+    <Setting Name="SMTPPass" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Unused</Value>
+    </Setting>
+    <Setting Name="Environment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">LocalDev</Value>
+    </Setting>
+    <Setting Name="GetLibrariesRetryCount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="CartJobsIntervalSeconds" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">240</Value>
+    </Setting>
+    <Setting Name="ESPCartsEnabled" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CartJobsRetryCount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="CartJobsRetryIntervalSecs" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="ExceptionLoggingConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=BTDEVSQL01\RepositoryLD2;Initial Catalog=ExceptionLogging;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=BTDEVSQL01\RepositoryLD2;Initial Catalog=ExceptionLogging;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="VendorKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">VFMzNjA6Z2g4NGhqZWRmODNramRm</Value>
+    </Setting>
+    <Setting Name="WorkingDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\BizTalkServer\ProcessedFiles\ESPWinServices\Working</Value>
+    </Setting>
+    <Setting Name="ReprocessRankDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\BizTalkServer\Reprocess\ESPCartRank</Value>
+    </Setting>
+    <Setting Name="ReprocessDistDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\BizTalkServer\Reprocess\ESPCartDist</Value>
+    </Setting>
+    <Setting Name="ReprocessFundDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\BizTalkServer\Reprocess\ESPCartFund</Value>
+    </Setting>
+    <Setting Name="APIVersion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3.4</Value>
+    </Setting>
+    <Setting Name="GetLibrariesMinuteRange" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">05,15</Value>
+    </Setting>
+    <Setting Name="CartDistTimeoutInMinute" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

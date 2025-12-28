@@ -1,0 +1,14 @@
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\bin\Debug\BT.TS360API.Client.exe.config
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\bin\Debug\BT.TS360API.Client.exe
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\bin\Debug\BT.TS360API.Client.pdb
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\bin\Debug\System.Net.Http.Formatting.dll
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\bin\Debug\System.Net.Http.Formatting.xml
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\obj\Debug\BT.TS360API.Client.exe
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\obj\Debug\BT.TS360API.Client.pdb
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\bin\Debug\System.Web.Http.dll
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\bin\Debug\System.Web.Http.WebHost.dll
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\bin\Debug\System.Web.Http.xml
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\bin\Debug\System.Web.Http.WebHost.xml
+D:\Projects\NextGen\TS360\WebAPI\v2.0\BT.TS360WebAPI\BT.TS360API.Client\obj\Debug\BT.TS360API.Client.csprojResolveAssemblyReference.cache

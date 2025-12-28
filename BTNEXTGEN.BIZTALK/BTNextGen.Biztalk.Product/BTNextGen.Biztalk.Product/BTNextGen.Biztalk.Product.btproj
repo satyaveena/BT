@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21107</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AFD800DC-3B17-4AD4-9ABB-89B3AD4A893F}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>BTNextGen.Biztalk.Product</RootNamespace>
+    <AssemblyName>BTNextGen.Biztalk.Product</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Key\BTNextGen.Biztalk.Common.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BTNextGen.BizTalk.CS.Catalogue.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BTNextGen.BizTalk.Schemas.Common\BTNextGen.BizTalk.CS.Catalogue.Schemas\bin\Debug\BTNextGen.BizTalk.CS.Catalogue.Schemas.dll</HintPath>
+    </Reference>
+    <Reference Include="BTNextGen.BizTalk.SSO.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Mahesh\BTNextGen.BizTalk.SSO.Utility\BTNextGen.BizTalk.SSO.Utility\bin\Release\BTNextGen.BizTalk.SSO.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ESB.ExceptionHandling, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk ESB Toolkit 2.1\Bin\Microsoft.Practices.ESB.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk ESB Toolkit 2.1\Bin\Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.dll</HintPath>
+    </Reference>
+    <Reference Include="ScheduledTaskAdapter.TaskComponents, Version=3.0.0.0, Culture=neutral, PublicKeyToken=aa9f2dd0f13442dc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Biztalk ScheduledTask Adapter\ScheduledTaskAdapter.TaskComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schema\BTArchieveMsg.xsd.cs">
+      <DependentUpon>BTArchieveMsg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\BTInitiator.xsd.cs">
+      <DependentUpon>BTInitiator.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\procCSAckProductsTableType.dbo.xsd.cs">
+      <DependentUpon>procCSAckProductsTableType.dbo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\procCSAckProductsTypedProcedure.dbo.xsd.cs">
+      <DependentUpon>procCSAckProductsTypedProcedure.dbo.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Schema\BTArchieveMsg.xsd">
+      <TypeName>BTArchieveMsg</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product.Schema</Namespace>
+    </Schema>
+    <Schema Include="Schema\BTInitiator.xsd">
+      <TypeName>BTInitiator</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product.Schema</Namespace>
+    </Schema>
+    <Schema Include="Schema\procCSAckProductsTableType.dbo.xsd">
+      <TypeName>procCSAckProductsTableType_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product.Schema</Namespace>
+    </Schema>
+    <Schema Include="Schema\procCSAckProductsTypedProcedure.dbo.xsd">
+      <TypeName>procCSAckProductsTypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product.Schema</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Map\BuildCSQuery.btm">
+      <TypeName>BuildCSQuery</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product.Map</Namespace>
+      <SubType>Designer</SubType>
+    </Map>
+    <Map Include="Map\CSErrorToDBAck.btm">
+      <TypeName>CSErrorToDBAck</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product.Map</Namespace>
+      <SubType>Designer</SubType>
+    </Map>
+    <Map Include="Map\CSImportProduct.btm">
+      <TypeName>CSImportProduct</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product.Map</Namespace>
+      <SubType>Designer</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Key\BTNextGen.Biztalk.Common.snk" />
+    <Schema Include="Schema\procCSGetProductsTypedProcedure.dbo.xsd">
+      <TypeName>procCSGetProductsTypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product.Schema</Namespace>
+    </Schema>
+    <Schema Include="RepoCSGetProductsRowFailureTableType.dbo.xsd">
+      <TypeName>RepoCSGetProductsRowFailureTableType_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Schema>
+    <Schema Include="RepoCSGetProductsRowFailureTypedProcedure.dbo.xsd">
+      <TypeName>RepoCSGetProductsRowFailureTypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Schema>
+    <Schema Include="RepoCSGetProductsProcedureResultSet.dbo.procCommerceServerGetNextGenProducts.xsd">
+      <TypeName>RepoCSGetProductsProcedureResultSet_dbo_procCommerceServerGetNextGenProducts</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Schema>
+    <Schema Include="RepoCSGetProductsTypedProcedure.dbo.xsd">
+      <TypeName>RepoCSGetProductsTypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Schema>
+    <Schema Include="RepositoryProductBatchSuccessTypedProcedure.dbo.xsd">
+      <TypeName>RepositoryProductBatchSuccessTypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Schema>
+    <Schema Include="TableType.dbo.xsd">
+      <TypeName>TableType_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Schema>
+    <Schema Include="TypedProcedure.dbo.xsd">
+      <TypeName>TypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Schema>
+    <Schema Include="Schema\ProcedureResultSet.dbo.procCSGetProductRelationships.xsd">
+      <TypeName>ProcedureResultSet_dbo_procCSGetProductRelationships</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Schema>
+    <Schema Include="Schema\procGetRelationsTypedProcedure.dbo.xsd">
+      <TypeName>procGetRelationsTypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Schema>
+    <Schema Include="Schema\RelationshipInitiator.xsd">
+      <TypeName>RelationshipInitiator</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Schema>
+    <Schema Include="Schema\procCSGetProductsProcedureResultSet.dbo.procCSGetProducts.xsd">
+      <TypeName>procCSGetProductsProcedureResultSet_dbo_procCSGetProducts</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Map\UpdateDBwithError.btm">
+      <TypeName>UpdateDBwithError</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+      <SubType>Designer</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Map\BuildDBAckError.btm">
+      <TypeName>BuildDBAckError</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+      <SubType>Designer</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Orchestration\CSImportProduct.odx">
+      <TypeName>CSImportProduct</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product.Orchestration</Namespace>
+      <SubType>Designer</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="ErrorToAckRelations.btm">
+      <TypeName>ErrorToAckRelations</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product</Namespace>
+    </Map>
+    <Map Include="Map\DBResponse_To_CSRelationships.btm">
+      <TypeName>DBResponse_To_CSRelationships</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product.Map</Namespace>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Map\BuildAcksuccess.btm">
+      <TypeName>BuildAcksuccess</TypeName>
+      <Namespace>BTNextGen.Biztalk.Product.Map</Namespace>
+    </Map>
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo2.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://5.0.116.90/IUserAlerts/UserAlerts.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/IUserAlerts" />
+  <xs:element name="CreateUserAlertMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlertMessage" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/IUserAlerts" minOccurs="0" name="AlertMessageTemplateID" type="q1:AlertMessageTemplateIDEnum" />
+        <xs:element minOccurs="0" name="SourceSystem" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateUserAlertMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/IUserAlerts" minOccurs="0" name="CreateUserAlertMessageResult" nillable="true" type="q2:CreateUserAlertMessageResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAlertMessageTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/IUserAlerts" minOccurs="0" name="AlertMessageTemplateID" type="q3:AlertMessageTemplateIDEnum" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAlertMessageTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/IUserAlerts" minOccurs="0" name="GetUserAlertMessageTemplateResult" nillable="true" type="q4:GetUserAlertMessageTemplateResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BUILD_MARC_1001" xml:space="preserve">
+    <value>An error occurred while building your MARC file. 001 tag is a required MARC tag and cannot be deleted.</value>
+  </data>
+  <data name="BUILD_MARC_FILE" xml:space="preserve">
+    <value>An error occurred while building your MARC file. Please try again.  If the problem occurs again, please contact Technical Support.</value>
+  </data>
+  <data name="CartDetail_NoActiveGridField_ErrorMessage" xml:space="preserve">
+    <value>Cannot save grid line(s) without active Grid Fields.</value>
+  </data>
+  <data name="CartFolder_CreateCartWithNotUniqueName" xml:space="preserve">
+    <value>The cart name must be unique.</value>
+  </data>
+  <data name="Cart_General_SQL_Exception_Error_Message" xml:space="preserve">
+    <value>Please try again later. If problem persists please click on Live Chat to report the issue</value>
+  </data>
+  <data name="ManageCart_ErrorCreateNewCart" xml:space="preserve">
+    <value>Error when create new cart</value>
+  </data>
+  <data name="ManageCart_ErrorEmptyCartname" xml:space="preserve">
+    <value>Can not leave the cart name empty</value>
+  </data>
+  <data name="MARC_DB_CONNECT" xml:space="preserve">
+    <value>An error occurred while accessing our MARC database.  Please try again.  If the problem occurs again, please contact Technical Support.</value>
+  </data>
+  <data name="MARC_EMAIL_SEND" xml:space="preserve">
+    <value>An error occurred while sending email.  Please try again.  If the problem occurs again, please contact Technical Support.</value>
+  </data>
+  <data name="UnexpectedError" xml:space="preserve">
+    <value>Unexpected error! Please contact administrator.</value>
+  </data>
+  <data name="BUILD_DIRECTORY" xml:space="preserve">
+    <value>An error occurred while accessing the folder containing your MARC file.  Please try again.  If the problem occurs again, please contact Technical Support.</value>
+  </data>
+  <data name="BUILD_EMAIL_HTML" xml:space="preserve">
+    <value>An error occurred while building your HTML file. Please try again.  If the problem occurs again, please contact Technical Support.</value>
+  </data>
+  <data name="BUILD_LEADER" xml:space="preserve">
+    <value>An error occurred while building a Leader for the MARC file.  Please try again.  If the problem occurs again, please contact Technical Support.</value>
+  </data>
+  <data name="MARC_DB_NODATA" xml:space="preserve">
+    <value>There is no MARC data generated while accessing our MARC database.  Please try again.  If the problem occurs again, please contact Technical Support.</value>
+  </data>
+  <data name="MARC_DB_READ" xml:space="preserve">
+    <value>An error occurred while reading from our MARC database.  Please try again.  If the problem occurs again, please contact Technical Support.</value>
+  </data>
+  <data name="ErrorCartInOrderedSubmitted" xml:space="preserve">
+    <value>Cart must be not in Ordered or Submitted state.</value>
+  </data>
+  <data name="CartAction_ApplyDefault_Successfully" xml:space="preserve">
+    <value>Apply default grid to cart successfully.</value>
+  </data>
+  <data name="CartAction_DeleteZeroQuantity_Successfully" xml:space="preserve">
+    <value>Delete zero quantity titles/gridlines successfully.</value>
+  </data>
+  <data name="CartAction_ApplyTemplate_Successfully" xml:space="preserve">
+    <value>Apply grid template to cart(s) successfully.</value>
+  </data>
+  <data name="CARTFOLDERNOTMATCH" xml:space="preserve">
+    <value>Cart folder does not match!</value>
+  </data>
+  <data name="CreateCartFolderNotFound" xml:space="preserve">
+    <value>Unable to create cart, could not find cart folder</value>
+  </data>
+  <data name="CreateCartReceivedFolder" xml:space="preserve">
+    <value>Can not create a new cart in Received Folder</value>
+  </data>
+  <data name="CreateCartSharedFolder" xml:space="preserve">
+    <value>Can not create a new cart in Shared Folder</value>
+  </data>
+  <data name="CartAction_BeforeSharingCart_Successfully" xml:space="preserve">
+    <value>The data has been save successfully !</value>
+  </data>
+  <data name="BasketStateIsOrderedOrSubmitted" xml:space="preserve">
+    <value>Basket state is Ordered or Submitted.</value>
+  </data>
+  <data name="ApplyDuplicates" xml:space="preserve">
+    <value>Apply Duplicates</value>
+  </data>
+  <data name="CartActionConvertPBookToEBook" xml:space="preserve">
+    <value>Physical to Digital Conversion</value>
+  </data>
+  <data name="CartActionCreateCopyOfCart" xml:space="preserve">
+    <value>Copy of Cart(s)</value>
+  </data>
+  <data name="CartActionDeleteCart" xml:space="preserve">
+    <value>Delete Cart</value>
+  </data>
+  <data name="CartActionDownloadExportCart" xml:space="preserve">
+    <value>Download/Export Cart</value>
+  </data>
+  <data name="CartActionEmailCart" xml:space="preserve">
+    <value>Email Cart</value>
+  </data>
+  <data name="CartActionESPSubmission" xml:space="preserve">
+    <value>ESP Submission</value>
+  </data>
+  <data name="CartActionOneClickMarcDownload" xml:space="preserve">
+    <value>One-Click MARC</value>
+  </data>
+  <data name="CartActionRenameCart" xml:space="preserve">
+    <value>Rename Cart</value>
+  </data>
+  <data name="CartActionReports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="CartActionTransferCart" xml:space="preserve">
+    <value>Transfer Cart</value>
+  </data>
+  <data name="CartAction_DeleteZeroQuantity" xml:space="preserve">
+    <value>Delete Zero Quantity Titles/Grid Lines</value>
+  </data>
+  <data name="CartLineAction_makeCartPrimary" xml:space="preserve">
+    <value>Make Primary</value>
+  </data>
+  <data name="ManageCart_CopyItemsToOtherCart" xml:space="preserve">
+    <value>Copy Items to Another Cart</value>
+  </data>
+  <data name="QuoteCartText" xml:space="preserve">
+    <value>Quote Cart</value>
+  </data>
+  <data name="SetQuantities" xml:space="preserve">
+    <value>Set Quantities</value>
+  </data>
+  <data name="SplitCartByAccountType" xml:space="preserve">
+    <value>Split Cart By Account Type</value>
+  </data>
+  <data name="SplitCartByRequisitionType" xml:space="preserve">
+    <value>Split Cart By Requisition Type</value>
+  </data>
+  <data name="ManageCart_MoveItemsToOtherCart" xml:space="preserve">
+    <value>Move Items to Another Cart</value>
+  </data>
+  <data name="ManageCart_RemoveItems" xml:space="preserve">
+    <value>Remove Items from Cart</value>
+  </data>
+  <data name="SharedCartProfileTab_SelectUsers" xml:space="preserve">
+    <value>Select user(s)</value>
+  </data>
+  <data name="MARCProfilerDownload_NoneOption" xml:space="preserve">
+    <value>-- None --</value>
+  </data>
+  <data name="LineItemsUpdated" xml:space="preserve">
+    <value>{0} line item{1} updated successfully</value>
+  </data>
+  <data name="NoLineItemsUpdated" xml:space="preserve">
+    <value>No line item was updated.</value>
+  </data>
+  <data name="QuantitySetTo" xml:space="preserve">
+    <value>Quantity set to {0}</value>
+  </data>
+  <data name="SetQuantitiiesLineItemsExceedThreshold" xml:space="preserve">
+    <value>Your request is being processed, an alert will be sent you to once its processed</value>
+  </data>
+  <data name="ConvertPBookToEBook_ConfirmSucceedMessage" xml:space="preserve">
+    <value>The cart &lt;b&gt;{0}&lt;/b&gt; has been submitted for copying and format conversion. You will receive an Alert when the process has been completed.</value>
+  </data>
+  <data name="ValidateOptions_DuplicateGridLines" xml:space="preserve">
+    <value>Find duplicate grid lines</value>
+  </data>
+  <data name="ValidateOptions_GridLinesWithZeroQty" xml:space="preserve">
+    <value>Find grid lines with zero quantity</value>
+  </data>
+  <data name="ValidateOptions_TitleWithNoGrid" xml:space="preserve">
+    <value>Find titles with no grids</value>
+  </data>
+  <data name="ValidateOptions_TitleWithZeroQty" xml:space="preserve">
+    <value>Find titles with zero quantity</value>
+  </data>
+  <data name="ValidateOptions_FreeTextFieldsContainsBlank" xml:space="preserve">
+    <value>Find free text fields containing blanks</value>
+  </data>
+  <data name="ValidateOptions_GridFieldsContainsBlank" xml:space="preserve">
+    <value>Find grid fields containing blanks</value>
+  </data>
+  <data name="CartFolderNotSelected" xml:space="preserve">
+    <value>Cart folder not selected</value>
+  </data>
+  <data name="BTCart_Folder_Not_Exist" xml:space="preserve">
+    <value>Folder is not existing</value>
+  </data>
+  <data name="Cart_Cannot_Deleted" xml:space="preserve">
+    <value>This cart cannot be deleted because it is in a Submitted state. Please contact our Technical Support team if you have any questions.</value>
+  </data>
+  <data name="Cart_Changed_By_Other_User" xml:space="preserve">
+    <value>The Cart that you tried to update might have been changed by another user. Please try to refresh your screen or contact our Technical Support team if you have additional questions.</value>
+  </data>
+  <data name="Line_Item_No_Longer" xml:space="preserve">
+    <value>The line item that you tried to update no longer exists in this cart. Please try to refresh your screen or contact our Technical Support team if you have additional questions.</value>
+  </data>
+  <data name="Line_Item_Tried_Update" xml:space="preserve">
+    <value>The line item that you tried to update might have been changed by another user. Please try to refresh your screen or contact our Technical Support team if you have additional questions.</value>
+  </data>
+</root>

@@ -1,0 +1,109 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="b03e2692-847e-440d-beb6-7be864bc6e90" LowerBound="1.1" HigherBound="27.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="9390069b-c741-43db-b253-b9a0050c63b5" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IMARCProfiler&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IMARCProfiler" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="8ce59b63-cd24-464a-9e07-33dc73ae0606" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;GetMARCFileFTP&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="GetMARCFileFTP" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="4b780f0c-16ec-4ad7-b3b8-788b6454e8b0" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.51">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations.IMARCProfiler_GetMARCFileFTP_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IMARCProfiler_GetMARCFileFTP_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IMARCProfiler/GetMARCFileFTP&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="342c3a42-5f3e-4a21-bb3a-c20b2b0ad7a4" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.53" HigherBound="16.92">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations.IMARCProfiler_GetMARCFileFTP_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IMARCProfiler_GetMARCFileFTP_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IMARCProfiler/GetMARCFileFTPResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="46508192-7f9a-49f1-8bc7-50b49611d4b1" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IMARCProfiler_GetMARCFileFTP_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IMARCProfiler_GetMARCFileFTP_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="a4a1373b-be8c-49c6-b5d8-2c370c65905f" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTP" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="9854f2ee-3be7-4257-9c2b-ed9efde47fe2" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IMARCProfiler_GetMARCFileFTP_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IMARCProfiler_GetMARCFileFTP_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="a0f5c91a-c922-4fb9-8e90-a0c52f138a55" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTPResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="424b677c-4403-41dd-a264-89104894a89c" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="26.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;MARCProfiler&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="MARCProfilerClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="33bc3484-bc58-4215-8563-4299997f2677" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.MarcProfiles.Orchestrations
+{
+    internal messagetype IMARCProfiler_GetMARCFileFTP_InputMessage
+    {
+        body BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTP parameters;
+    };
+    internal messagetype IMARCProfiler_GetMARCFileFTP_OutputMessage
+    {
+        body BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTPResponse parameters;
+    };
+    internal porttype IMARCProfiler
+    {
+        requestresponse GetMARCFileFTP
+        {
+            IMARCProfiler_GetMARCFileFTP_InputMessage, IMARCProfiler_GetMARCFileFTP_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service MARCProfilerClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

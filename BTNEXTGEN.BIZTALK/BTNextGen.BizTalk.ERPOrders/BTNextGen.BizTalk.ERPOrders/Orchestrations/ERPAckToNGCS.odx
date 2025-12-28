@@ -1,0 +1,1354 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="14644edf-3eb3-4b76-b8a8-dec7233937aa" LowerBound="1.1" HigherBound="361.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.BizTalk.ERPOrders" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="d30bc4b6-e145-401a-8fd4-4067e57a6e8a" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SOPAckReceiveType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="58bc314a-56ac-4d93-8e8e-2d66156fb557" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="9a7b1dde-a20f-4fdd-93b3-cfb741900c5b" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.31">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.ERPOrders.Schemas.POAckBISAC" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="5eb28660-ff66-4cc6-ad41-bc883e0aad4e" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SOPAckFileSendType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="01430d5f-c96d-42f9-ada1-41df6fbe33af" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="bbd419f9-edb7-47a5-8e4d-8fcfb5f07473" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.31">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.ERPOrders.Schemas.POAckBISAC" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="376d6c25-773b-4a54-8f12-3ca3d5bdbf9a" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendIXMLAckType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="db5fddf9-8fc6-4425-8b44-f6528df86a99" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d763c7b0-0039-4f61-8c62-7d768f9d5455" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.39">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.ERPOrders.Schemas.IntermediateXMLAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="004c95eb-0e48-4e1c-bf80-94631a487f74" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ArchiveIXMLPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="c1c01fda-db29-4909-b1e0-0176343e9cb1" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="0058e51f-d5bb-4268-b8e5-f51196cf29ef" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.39">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.ERPOrders.Schemas.IntermediateXMLAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="80740b91-8c02-4576-88cb-a02313d7f780" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="AckToNGUpdateType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="d5810d9d-5e90-4b03-b99c-a1f3dea0f9f5" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="6da7f477-1d74-4791-a38a-27fe3d0afbe3" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.93">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.ERPOrders.Schemas.NGAckFormUpTypedProcedure_dbo.procOrderAcknowledgementSetBasketOrderForm" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="2ae69e85-586b-4399-8efb-97e5a95e97c2" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="36.95" HigherBound="36.183">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.ERPOrders.Schemas.NGAckFormUpTypedProcedure_dbo.procOrderAcknowledgementSetBasketOrderFormResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="feaa0e53-c2a0-41cc-ac16-1b9792d85149" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="AckToNGUpdateLineType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="caa40e29-c273-41f7-a4e2-06f5efc3f65e" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="335586b9-d890-4bd3-85cd-9a515b3fcc6c" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="43.84" HigherBound="43.161">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.ERPOrders.POAckLinesWHSProcedure_dbo.procOrderAcknowledgementSetBasketLineItemsResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="fc753d3c-fa9d-4e85-9ce1-ab9ddade1a0e" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.82">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.ERPOrders.POAckLinesWHSProcedure_dbo.procOrderAcknowledgementSetBasketLineItems" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="5a3859ed-8814-4f06-a4b6-98cb21e478a8" ParentLink="Module_PortType" LowerBound="46.1" HigherBound="53.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SQLUpdateAckPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="4dbb89c8-3a5e-4acd-975e-9a60e8e878c0" ParentLink="PortType_OperationDeclaration" LowerBound="48.1" HigherBound="52.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="7150750d-0006-4c18-bd47-4625f592b547" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="50.13" HigherBound="50.69">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.ERPOrders.UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgement" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="e22f183e-ac7c-4ecd-8e1d-74239771fc31" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="50.71" HigherBound="50.135">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.ERPOrders.UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgementResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="428d4757-f567-4894-961f-e937dd36e262" ParentLink="Module_ServiceDeclaration" LowerBound="53.1" HigherBound="360.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ERPAckToNGCS" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="0adccaa5-a3d6-442e-9bc0-fbb319119232" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="80.1" HigherBound="81.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="activityName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5f8a9c3b-2503-426e-86b4-70239855ca13" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="81.1" HigherBound="82.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="continuationID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="98b7c982-0995-4875-a875-9652239af4cf" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="82.1" HigherBound="83.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="enableBam" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="4704d989-6118-4293-acf3-143a0a4b5b06" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="83.1" HigherBound="84.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveNGACK" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="aad6b08c-c0ac-4950-9b65-b13ffc54bdd4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="84.1" HigherBound="85.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveIXMLOrd" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0434d9a2-81b6-43ff-a8a4-f452ccff38c9" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="85.1" HigherBound="86.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="transnoBTB" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9d7a24b4-0015-4d6f-9aa3-e9127236556e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="86.1" HigherBound="87.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="transnoIXL" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="19be62ee-77f1-4931-bb26-bff204af4f2d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="87.1" HigherBound="88.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveBTBORD" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="dbf41b57-fd5d-428d-bbfd-c207a375dcc7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="88.1" HigherBound="89.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strError" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="639aea46-dc88-4f40-9f6a-6216d3b1db29" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="70.1" HigherBound="71.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgementResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveUdateACKResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="186b08b4-12f7-4897-a454-40cfcfdaead7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="71.1" HigherBound="72.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgement" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveUpdateACK" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3abe2369-440a-494f-ae09-b5ff9e96ae84" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="72.1" HigherBound="73.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgementResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SQLUpdateACKResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="bee2127f-724c-4dcb-9e4b-0e36f874cde4" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="73.1" HigherBound="74.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgement" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SQLUpdateACK" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a9e59f83-d9c7-43b3-b266-c96aeb10f95f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="74.1" HigherBound="75.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.Schemas.IntermediateXMLAck" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveIXACK" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="5f8f2088-a4f9-4e45-8132-259442883788" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="75.1" HigherBound="76.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.Schemas.POAckBISAC" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveBTBACK" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3f65d777-0f1e-4a17-a990-b5df3c7705c6" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="76.1" HigherBound="77.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.Schemas.POAckBISAC" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ACKFromSOP" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="7c7a6b66-e83f-4c0c-bb34-fd74fb3c7ddb" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="77.1" HigherBound="78.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.Schemas.IntermediateXMLAck" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="IXMLAck" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3546ce25-6d6c-4ea0-a563-1b8079363d4d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="78.1" HigherBound="79.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ESBFaultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="dd9137b9-003a-4157-a921-f189583f593c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="79.1" HigherBound="80.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgement" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SQLUpdateAckEmtyTags" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="87f19f66-3f0d-414c-9a09-151fba151884" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="80ed7848-b840-4ce7-8c85-39bd51a79967" ParentLink="ServiceBody_Statement" LowerBound="91.1" HigherBound="102.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="SOPAckReceivePort" />
+                    <om:Property Name="MessageName" Value="ACKFromSOP" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Rcv_AckFromSOP" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="f64ae8a3-b07f-48fb-bd16-c4749e25ad4e" ParentLink="ServiceBody_Statement" LowerBound="102.1" HigherBound="104.1">
+                    <om:Property Name="Expression" Value="transnoBTB = ACKFromSOP.Header.FileHeader.TransmissionID;&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="GetTransnoBTB" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="b2d7cd55-a376-452a-b341-0a584fc62134" ParentLink="ServiceBody_Statement" LowerBound="104.1" HigherBound="109.1">
+                    <om:Property Name="Expression" Value="archiveBTBORD=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.ERPORders&quot;,&quot;ArchiveBTBOrdsAcks&quot;));&#xD;&#xA;archiveIXMLOrd=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.ERPORders&quot;,&quot;ArchiveIXMLOrders&quot;));&#xD;&#xA;archiveNGACK=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.BizTalk.ERPORders&quot;,&quot;ArchiveNGAckReqResp&quot;));&#xD;&#xA;enableBam=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ERPORders&quot;,&quot;bamEnabled&quot;));&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="GetSSOValues" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="Decision" OID="dcf4f6a8-4e7a-4aa4-ab90-4a3908eb8fa6" ParentLink="ServiceBody_Statement" LowerBound="109.1" HigherBound="121.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="isBAM" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="7bbb52ad-5eec-4ada-8da6-67a110a51bcc" ParentLink="ReallyComplexStatement_Branch" LowerBound="110.13" HigherBound="121.1">
+                        <om:Property Name="Expression" Value="enableBam" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="YES" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="62f4df7e-e19f-4ff8-ad69-0c1bb8c65a7a" ParentLink="ComplexStatement_Statement" LowerBound="112.1" HigherBound="120.1">
+                            <om:Property Name="Expression" Value="// set bam variables&#xD;&#xA;activityName= &quot;ERPOrders&quot;;&#xD;&#xA;continuationID= &quot;BTB_&quot;+ transnoBTB;&#xD;&#xA;&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,continuationID,&quot;ERPAckRcv&quot;,System.DateTime.UtcNow);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Track BAM 3" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="cd6adab3-b6d6-4adf-8489-43f0589756ee" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Decision" OID="f323862e-fd28-4f3d-83d1-e12398006381" ParentLink="ServiceBody_Statement" LowerBound="121.1" HigherBound="136.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Decide_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="DecisionBranch" OID="8adaa9cd-ffcf-4619-b543-88be8197d0a1" ParentLink="ReallyComplexStatement_Branch" LowerBound="122.13" HigherBound="136.1">
+                        <om:Property Name="Expression" Value="archiveBTBORD == true" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ArchiveBTBORD?" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="1ff734b9-987b-4eac-90f4-0cad6372fcaf" ParentLink="ComplexStatement_Statement" LowerBound="124.1" HigherBound="133.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructArchiveBTB" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="6de3c3b7-9d0b-44e1-929b-06d1bd5d51f9" ParentLink="Construct_MessageRef" LowerBound="125.27" HigherBound="125.40">
+                                <om:Property Name="Ref" Value="ArchiveBTBACK" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="41327c84-aace-48e3-8b8b-e429523ce778" ParentLink="ComplexStatement_Statement" LowerBound="127.1" HigherBound="132.1">
+                                <om:Property Name="Expression" Value="ArchiveBTBACK=ACKFromSOP;&#xD;&#xA;ArchiveBTBACK(FILE.ReceivedFileName) = &quot;BTBACK_&quot; + transnoBTB;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="PopulateArchiveBTBACK" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="9cd62f94-925d-4e21-a6e9-35cdd78add22" ParentLink="ComplexStatement_Statement" LowerBound="133.1" HigherBound="135.1">
+                            <om:Property Name="PortName" Value="ArchiveBTBAckPort" />
+                            <om:Property Name="MessageName" Value="ArchiveBTBACK" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Snd_ArchiveBTBACK" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="96a74949-fdb6-4199-b6ac-3fb71c50ffd2" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Scope" OID="a65a74f6-d1b8-4bcc-9608-a7eb04177b83" ParentLink="ServiceBody_Statement" LowerBound="136.1" HigherBound="177.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="True" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_BTBXlate" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="c774bee4-b6a9-4d32-95db-24d70a89eab9" ParentLink="ComplexStatement_Statement" LowerBound="141.1" HigherBound="147.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructIXMLAckFromBTB" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="22bdff88-2c8b-41bd-b6e0-fe2c3c845d05" ParentLink="ComplexStatement_Statement" LowerBound="144.1" HigherBound="146.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.BizTalk.ERPOrders.Maps.BISACAckToIXMLAck" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="BTBAck2IXMLAck" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="5dc6e9ec-6b2d-46c7-9ef7-6f3e55ec31f8" ParentLink="Transform_OutputMessagePartRef" LowerBound="145.36" HigherBound="145.43">
+                                <om:Property Name="MessageRef" Value="IXMLAck" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="9974739b-63b6-4202-94c2-7829289e68aa" ParentLink="Transform_InputMessagePartRef" LowerBound="145.99" HigherBound="145.109">
+                                <om:Property Name="MessageRef" Value="ACKFromSOP" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="51692997-285d-4e39-9680-4c06d7d637de" ParentLink="Construct_MessageRef" LowerBound="142.31" HigherBound="142.38">
+                            <om:Property Name="Ref" Value="IXMLAck" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="8ac9543a-be74-4532-99cd-c2d0507e7d37" ParentLink="Scope_Catch" LowerBound="150.1" HigherBound="175.1">
+                        <om:Property Name="ExceptionName" Value="AckXlateException" />
+                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_BTBAck" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="8b04c4dd-ab5e-4e59-baaf-0ead52bb702e" ParentLink="Catch_Statement" LowerBound="153.1" HigherBound="170.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="AnalystComments" Value="ErroredBTBIXML" />
+                            <om:Property Name="Name" Value="ConstructESBFaultBTB" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="30416236-c554-4f60-b557-63fd071c1f6f" ParentLink="Construct_MessageRef" LowerBound="154.35" HigherBound="154.50">
+                                <om:Property Name="Ref" Value="ESBFaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="78fcb3e9-77d7-40b2-b844-a66ed671fb9e" ParentLink="ComplexStatement_Statement" LowerBound="156.1" HigherBound="169.1">
+                                <om:Property Name="Expression" Value="&#xD;&#xA;// Create fault exception Message&#xD;&#xA;ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;ESBFaultMessage.FailureCategory=&quot;BTBACK to IXMLAck Exception&quot;;&#xD;&#xA;ESBFaultMessage.FaultDescription=AckXlateException.Message;&#xD;&#xA;ESBFaultMessage.FaultCode=&quot;2001&quot;;&#xD;&#xA;ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,ACKFromSOP);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="PopulateESBFault_BTBAck" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="d8838db8-5ddd-4ea1-9131-c36e82a01282" ParentLink="Catch_Statement" LowerBound="170.1" HigherBound="172.1">
+                            <om:Property Name="PortName" Value="SendExceptionPort" />
+                            <om:Property Name="MessageName" Value="ESBFaultMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Snd_ESBFault_BTBAck" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Terminate" OID="aeb3ddc3-4346-4a81-8426-bd4f50d67877" ParentLink="Catch_Statement" LowerBound="172.1" HigherBound="174.1">
+                            <om:Property Name="ErrorMessage" Value="&quot;Process terminated due to problem translating BISAC to IXMLAck&quot;;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Terminate_BTBAckFault" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="95fa5bbc-3e51-4e30-af51-71a2c8f669af" ParentLink="ServiceBody_Statement" LowerBound="177.1" HigherBound="179.1">
+                    <om:Property Name="Expression" Value="transnoIXL=IXMLAck.POAckHeader.TransactionID;&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="GetTransnoIXL" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="b71e1602-2ba3-4afe-b8d0-0568fa482a3d" ParentLink="ServiceBody_Statement" LowerBound="179.1" HigherBound="206.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Decide_2" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="DecisionBranch" OID="5d967801-2ec5-49a4-af29-a2d99cfb9795" ParentLink="ReallyComplexStatement_Branch" LowerBound="180.13" HigherBound="206.1">
+                        <om:Property Name="Expression" Value="archiveIXMLOrd == true" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="archiveIXMLORD?" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Decision" OID="4953bd65-0a9c-4d31-ad30-ec60f1b19d25" ParentLink="ComplexStatement_Statement" LowerBound="182.1" HigherBound="203.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Decide_6" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="DecisionBranch" OID="b65c89bd-a2c7-4f95-94fb-326b9359bf95" ParentLink="ReallyComplexStatement_Branch" LowerBound="183.17" HigherBound="193.1">
+                                <om:Property Name="Expression" Value="IXMLAck.POAckHeader.IsCPQAck == true" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="IsCPQ_Ack" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Construct" OID="885e0672-7f21-4838-920b-f364069347d6" ParentLink="ComplexStatement_Statement" LowerBound="185.1" HigherBound="192.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ConstructArchiveIXMLCPQAck" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="7e653f92-b484-442d-adb8-f69548edc133" ParentLink="Construct_MessageRef" LowerBound="186.31" HigherBound="186.43">
+                                        <om:Property Name="Ref" Value="ArchiveIXACK" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="b5848aec-b4bd-4da0-b119-d0083fdacb96" ParentLink="ComplexStatement_Statement" LowerBound="188.1" HigherBound="191.1">
+                                        <om:Property Name="Expression" Value="ArchiveIXACK=IXMLAck;&#xD;&#xA;ArchiveIXACK(FILE.ReceivedFileName) = &quot;IXMLCPQAck_&quot; + transnoIXL;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="PopuateArchiveIXAck" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="5d519d76-5388-4a81-b85d-cd673d51b992" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Construct" OID="1b3789c6-d99c-4e19-bec9-0bc8cd4c3c7c" ParentLink="ComplexStatement_Statement" LowerBound="195.1" HigherBound="202.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ConstructArchiveIXMLAck" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="311c71a2-df62-4195-80cd-84913bda538d" ParentLink="Construct_MessageRef" LowerBound="196.31" HigherBound="196.43">
+                                        <om:Property Name="Ref" Value="ArchiveIXACK" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="b0e187f8-3d37-4e16-8d3b-b67bf9b7380f" ParentLink="ComplexStatement_Statement" LowerBound="198.1" HigherBound="201.1">
+                                        <om:Property Name="Expression" Value="ArchiveIXACK=IXMLAck;&#xD;&#xA;ArchiveIXACK(FILE.ReceivedFileName) = &quot;IXMLAck_&quot; + transnoIXL;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="PopuateArchiveIXAck" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="acd58b0c-a3dd-49db-8a81-f11c9c7f64a2" ParentLink="ComplexStatement_Statement" LowerBound="203.1" HigherBound="205.1">
+                            <om:Property Name="PortName" Value="ArchiveIXMLAckPort" />
+                            <om:Property Name="MessageName" Value="ArchiveIXACK" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Snd_ArchiveIXACK" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="e4920afd-bc09-4a0b-8e75-f41c3f4c98b3" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Scope" OID="c9d17aaa-0a78-4b17-b34f-4eb72efd1c0d" ParentLink="ServiceBody_Statement" LowerBound="206.1" HigherBound="291.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_BTBSQLUpdateAck" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="3d0c9d76-3a15-4077-b8b9-87e4443aa62b" ParentLink="ComplexStatement_Statement" LowerBound="211.1" HigherBound="217.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructSQLAckUpdate" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageRef" OID="067340a8-dca0-4904-af1d-dc481bc067f5" ParentLink="Construct_MessageRef" LowerBound="212.31" HigherBound="212.43">
+                            <om:Property Name="Ref" Value="SQLUpdateACK" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Transform" OID="9e50b48a-fdea-423a-a43a-a62ff7324cce" ParentLink="ComplexStatement_Statement" LowerBound="214.1" HigherBound="216.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.BizTalk.ERPOrders.Maps.IXMLAckToSQLAckProc" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="IXMLAck2NGAckHeader" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="8dbb1b0f-1128-4d2e-adcb-85d47efd00d8" ParentLink="Transform_InputMessagePartRef" LowerBound="215.106" HigherBound="215.113">
+                                <om:Property Name="MessageRef" Value="IXMLAck" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="2de10781-79d9-4846-9d2c-bad71af0858f" ParentLink="Transform_OutputMessagePartRef" LowerBound="215.36" HigherBound="215.48">
+                                <om:Property Name="MessageRef" Value="SQLUpdateACK" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="fbb6dae5-7a12-4c05-8e1f-05a4631860fc" ParentLink="ComplexStatement_Statement" LowerBound="217.1" HigherBound="244.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_3" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="DecisionBranch" OID="78a10689-6747-478d-b3ea-9bc5f07e7610" ParentLink="ReallyComplexStatement_Branch" LowerBound="218.21" HigherBound="244.1">
+                            <om:Property Name="Expression" Value="archiveNGACK==true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="archiveNGACK?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Decision" OID="2074f75d-3795-4b0d-b1bb-f50d3c4b2b81" ParentLink="ComplexStatement_Statement" LowerBound="220.1" HigherBound="241.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Decide_4" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="DecisionBranch" OID="fa77c9ef-df17-4140-9ac2-113b3abb2e82" ParentLink="ReallyComplexStatement_Branch" LowerBound="221.25" HigherBound="231.1">
+                                    <om:Property Name="Expression" Value="IXMLAck.POAckHeader.IsCPQAck == true" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="IsCPQAck" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Construct" OID="309a8c3a-e10f-4d45-b767-74c54ba0c95b" ParentLink="ComplexStatement_Statement" LowerBound="223.1" HigherBound="230.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructArchiveSQLCPQAckUpdate" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageRef" OID="b9270a49-dbce-47ff-ad6a-21ccc247f237" ParentLink="Construct_MessageRef" LowerBound="224.39" HigherBound="224.55">
+                                            <om:Property Name="Ref" Value="ArchiveUpdateACK" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageAssignment" OID="c8cbb03e-d1b3-4357-8287-5a2241f7d096" ParentLink="ComplexStatement_Statement" LowerBound="226.1" HigherBound="229.1">
+                                            <om:Property Name="Expression" Value="ArchiveUpdateACK=SQLUpdateACK;&#xD;&#xA;ArchiveUpdateACK(FILE.ReceivedFileName) = &quot;SQLCPQAckUpdate_&quot; + transnoIXL;&#xD;&#xA;" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_4" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="4daea461-cb45-451d-900e-7f9ef1c75cb3" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Construct" OID="373808ee-4ba7-4ad9-a759-9a79c565f33f" ParentLink="ComplexStatement_Statement" LowerBound="233.1" HigherBound="240.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructArchiveSQLAckUpdate" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageRef" OID="485db6d9-3326-4a62-b28a-5013f0f5083b" ParentLink="Construct_MessageRef" LowerBound="234.39" HigherBound="234.55">
+                                            <om:Property Name="Ref" Value="ArchiveUpdateACK" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageAssignment" OID="98e7f923-5911-4246-ba43-c553ef171806" ParentLink="ComplexStatement_Statement" LowerBound="236.1" HigherBound="239.1">
+                                            <om:Property Name="Expression" Value="ArchiveUpdateACK=SQLUpdateACK;&#xD;&#xA;ArchiveUpdateACK(FILE.ReceivedFileName) = &quot;SQLAckUpdate_&quot; + transnoIXL;&#xD;&#xA;" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_4" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="651324b1-d65f-43b9-90e3-d38b876edc02" ParentLink="ComplexStatement_Statement" LowerBound="241.1" HigherBound="243.1">
+                                <om:Property Name="PortName" Value="ArchiveSQLUpdateAckPort" />
+                                <om:Property Name="MessageName" Value="ArchiveUpdateACK" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Snd_ArchiveUpdateACK" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="e667d431-c148-46c6-8230-18f03cd4fea0" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="e58731ed-3e5d-4d91-9ce2-7e6e89a843c6" ParentLink="ComplexStatement_Statement" LowerBound="244.1" HigherBound="246.1">
+                        <om:Property Name="PortName" Value="SQLUpdateAckPort" />
+                        <om:Property Name="MessageName" Value="SQLUpdateACK" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Snd_SQLUpdateAck" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="8185a577-4c60-4880-91d5-de5e29ff0683" ParentLink="ComplexStatement_Statement" LowerBound="246.1" HigherBound="248.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="SQLUpdateAckPort" />
+                        <om:Property Name="MessageName" Value="SQLUpdateACKResp" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Rcv_SQLUpdateAckResponse" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="45352fc8-a898-49a7-9893-c2610b603894" ParentLink="ComplexStatement_Statement" LowerBound="248.1" HigherBound="261.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_5" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="DecisionBranch" OID="b3f51eff-5ffd-4159-8d55-3f84a2afc602" ParentLink="ReallyComplexStatement_Branch" LowerBound="249.21" HigherBound="261.1">
+                            <om:Property Name="Expression" Value="archiveNGACK==true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="archiveNGACK?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="5896e5ff-4811-4af8-b400-8e343c1113ab" ParentLink="ComplexStatement_Statement" LowerBound="251.1" HigherBound="258.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructUpdateAckRespArchive" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="9834182e-91e8-4b50-9eb5-3f4f24a29d53" ParentLink="Construct_MessageRef" LowerBound="252.35" HigherBound="252.54">
+                                    <om:Property Name="Ref" Value="ArchiveUdateACKResp" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="09f932ef-1c10-4fd3-8e64-e5f7751692c5" ParentLink="ComplexStatement_Statement" LowerBound="254.1" HigherBound="257.1">
+                                    <om:Property Name="Expression" Value="ArchiveUdateACKResp = SQLUpdateACKResp;&#xD;&#xA;ArchiveUdateACKResp(FILE.ReceivedFileName) = &quot;SQLAckUpResp_&quot; + transnoIXL;&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="4be6e681-420a-451b-8abd-e679f2751f52" ParentLink="ComplexStatement_Statement" LowerBound="258.1" HigherBound="260.1">
+                                <om:Property Name="PortName" Value="ArchiveSQLUpdateAckRespPort" />
+                                <om:Property Name="MessageName" Value="ArchiveUdateACKResp" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Snd_ArchiveUpdateAckResp" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="e7784c4c-8958-4a2c-a132-b698caac43a5" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="a6fc2a3b-2341-428a-95fb-89ec56f3a9e3" ParentLink="Scope_Catch" LowerBound="264.1" HigherBound="289.1">
+                        <om:Property Name="ExceptionName" Value="NGHeaderUpdateFault" />
+                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchExceptionNGHeaderUpdate" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="48de3406-e07f-49aa-9cf8-561e3a0f1a3c" ParentLink="Catch_Statement" LowerBound="267.1" HigherBound="284.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="AnalystComments" Value="ErroredBTBIXML" />
+                            <om:Property Name="Name" Value="ConstructFaultSQLUpdateAck" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="49bd3152-6def-4234-bca0-af0b718f9eb2" ParentLink="Construct_MessageRef" LowerBound="268.35" HigherBound="268.50">
+                                <om:Property Name="Ref" Value="ESBFaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="97335c7d-96f0-4b21-9cdf-aa83e9e0646f" ParentLink="ComplexStatement_Statement" LowerBound="270.1" HigherBound="283.1">
+                                <om:Property Name="Expression" Value="&#xD;&#xA;// Create fault exception Message&#xD;&#xA;ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;ESBFaultMessage.FailureCategory=&quot;IXMLAck to SQLUpdateAck Exception&quot;;&#xD;&#xA;ESBFaultMessage.FaultDescription=NGHeaderUpdateFault.Message;&#xD;&#xA;ESBFaultMessage.FaultCode=&quot;2001&quot;;&#xD;&#xA;ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,IXMLAck);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="PopulateESBFault_NGHeader" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="689efe1b-9fbd-4d0f-b5b0-5af4ac21a367" ParentLink="Catch_Statement" LowerBound="284.1" HigherBound="286.1">
+                            <om:Property Name="PortName" Value="SendExceptionPort" />
+                            <om:Property Name="MessageName" Value="ESBFaultMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Snd_ESBFault_UpdateAck" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Terminate" OID="34beb170-9a69-4367-86ed-9d8a6c13fc71" ParentLink="Catch_Statement" LowerBound="286.1" HigherBound="288.1">
+                            <om:Property Name="ErrorMessage" Value="&quot;Process terminated due to problem during NGHeaderUpdate&quot;;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Terminate_SQLUpdateAckFault" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Decision" OID="d0e8e195-19b4-4a97-a8c7-e9d3320d5333" ParentLink="ServiceBody_Statement" LowerBound="291.1" HigherBound="305.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="isBAM" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="34d2df4c-1a23-4cd8-bb6c-b27b7c9605da" ParentLink="ReallyComplexStatement_Branch" LowerBound="292.13" HigherBound="305.1">
+                        <om:Property Name="Expression" Value="enableBam" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="YES" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="ce811ec2-c643-4245-a7e0-108740b5379b" ParentLink="ComplexStatement_Statement" LowerBound="294.1" HigherBound="299.1">
+                            <om:Property Name="Expression" Value="// set bam variables&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,continuationID,&quot;NGRHeaderUpdate&quot;,System.DateTime.UtcNow);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Track BAM 4" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="27e6e3ea-ad48-4ae9-aca3-471b54f982ee" ParentLink="ComplexStatement_Statement" LowerBound="299.1" HigherBound="304.1">
+                            <om:Property Name="Expression" Value="// set bam variables&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,continuationID,&quot;NGRLineUpdate&quot;,System.DateTime.UtcNow);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Track BAM 5" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="c19cc7a0-1509-4e55-babe-fc4a5181ebe6" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Scope" OID="662b1508-9c7c-4329-9e57-d6d0312e3ed2" ParentLink="ServiceBody_Statement" LowerBound="305.1" HigherBound="358.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_CkUpdateAckErr" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Decision" OID="c290b14e-a7cf-4ff7-9743-99bd8d6603a3" ParentLink="ComplexStatement_Statement" LowerBound="310.1" HigherBound="326.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="IsReturnValue0" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="d9254192-5c02-4926-bf9a-c62ea3fd3387" ParentLink="ReallyComplexStatement_Branch" LowerBound="311.21" HigherBound="317.1">
+                            <om:Property Name="Expression" Value="SQLUpdateACKResp.ReturnValue == 0" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Yes" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="f5cea689-c288-49bc-9ff8-33ffc56cfd16" ParentLink="ComplexStatement_Statement" LowerBound="313.1" HigherBound="316.1">
+                                <om:Property Name="Expression" Value="// set bam variables&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.EndActivity(activityName,continuationID);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Track BAM 6" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="986dbd1f-5b61-4c45-a688-9880d4ec53d6" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="VariableAssignment" OID="6495635e-61ad-4b2c-aec2-51c58fd0fd8d" ParentLink="ComplexStatement_Statement" LowerBound="319.1" HigherBound="325.1">
+                                <om:Property Name="Expression" Value="//xDocFault = CyberWebSrvcException.FaultBody;&#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.ERPOrders&quot;,SQLUpdateACKResp.ReturnLiteral);&#xD;&#xA;strError = SQLUpdateACKResp.ReturnLiteral;&#xD;&#xA;throw new System.Exception(strError);&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ReturnLiteralAsErr" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="46893a74-db71-4aab-b446-9b6ee954817a" ParentLink="Scope_Catch" LowerBound="329.1" HigherBound="356.1">
+                        <om:Property Name="ExceptionName" Value="SQLAckUpdateErr" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchSQLReturnValNotZero" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="b5311aa9-36fb-4b94-b9f9-6dde1be21dd5" ParentLink="Catch_Statement" LowerBound="332.1" HigherBound="353.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructESBFaultSQLReturnErr" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="6246243b-4891-4aab-a673-ed04f19cbd8f" ParentLink="Construct_MessageRef" LowerBound="333.35" HigherBound="333.50">
+                                <om:Property Name="Ref" Value="ESBFaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="896b68dc-297d-4856-b3ab-9949adb77b3f" ParentLink="ComplexStatement_Statement" LowerBound="335.1" HigherBound="352.1">
+                                <om:Property Name="Expression" Value="//System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.ERPOrders&quot;,strError);&#xD;&#xA;&#xD;&#xA;// Create fault exception Message&#xD;&#xA;ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;ESBFaultMessage.FailureCategory=&quot;Generated Exception due to SQL Return Value Not Zero:&quot;;&#xD;&#xA;ESBFaultMessage.FaultDescription=SQLAckUpdateErr.Message;&#xD;&#xA;ESBFaultMessage.FaultCode=&quot;2001&quot;;&#xD;&#xA;ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,SQLUpdateACKResp);&#xD;&#xA;&#xD;&#xA;// Write to Event Log&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.BizTalk.ERPOrders&quot;,SQLAckUpdateErr.Message);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="PopulateESBFault" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="0314ae75-92d8-42b5-8547-565a7d072d2a" ParentLink="Catch_Statement" LowerBound="353.1" HigherBound="355.1">
+                            <om:Property Name="PortName" Value="SendExceptionPort" />
+                            <om:Property Name="MessageName" Value="ESBFaultMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="sndESBFaultMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="fa92679c-29b3-4857-a866-a480e3e9f80c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="56.1" HigherBound="58.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="13" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.SOPAckReceiveType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SOPAckReceivePort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="fdb4b942-7ba4-462e-9471-f3a616e37003" ParentLink="PortDeclaration_CLRAttribute" LowerBound="56.1" HigherBound="57.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f24e6fe6-3d82-4706-b797-d507acb12de1" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="58.1" HigherBound="60.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="178" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.ArchiveSQLUpdateAckRespPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveSQLUpdateAckRespPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="1c7964ed-e856-44f2-9bf1-ec5836756bb7" ParentLink="PortDeclaration_CLRAttribute" LowerBound="58.1" HigherBound="59.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="95586be7-a25c-4e89-aac3-155b686a4552" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="60.1" HigherBound="62.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="148" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="NextGenERPOutbound.PortTypeSendException" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendExceptionPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="c82f3873-abf8-4345-8943-128b4ceb39eb" ParentLink="PortDeclaration_CLRAttribute" LowerBound="60.1" HigherBound="61.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="80e8dba0-58fd-4a7c-a3a5-af96d4e1ab7f" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="62.1" HigherBound="64.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="48" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.SOPAckFileSendType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveBTBAckPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="7141ef37-ac0f-4ea9-88eb-1255628e8a3f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="62.1" HigherBound="63.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="3dc134b4-6e9a-4067-903f-1fc22d695fe6" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="64.1" HigherBound="66.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="119" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.ArchiveIXMLPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveIXMLAckPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="64d7ab09-b8c0-4429-82ab-496168b0c300" ParentLink="PortDeclaration_CLRAttribute" LowerBound="64.1" HigherBound="65.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="ba02efe2-cb74-41fd-9e85-db7b2c62a396" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="66.1" HigherBound="68.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="164" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.ArchinveSQLUpdateAckPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveSQLUpdateAckPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="a2686f9a-2102-4321-9287-fd88c6529a95" ParentLink="PortDeclaration_CLRAttribute" LowerBound="66.1" HigherBound="67.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9514f063-67e5-4352-a818-eec3fc7d73fd" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="68.1" HigherBound="70.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="172" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.ERPOrders.SQLUpdateAckPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SQLUpdateAckPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="d48235c8-737d-426e-8527-9d24aaaf35e3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="68.1" HigherBound="69.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.BizTalk.ERPOrders
+{
+    internal porttype SOPAckReceiveType
+    {
+        oneway Operation_1
+        {
+            Schemas.POAckBISAC
+        };
+    };
+    internal porttype SOPAckFileSendType
+    {
+        oneway Operation_1
+        {
+            Schemas.POAckBISAC
+        };
+    };
+    internal porttype SendIXMLAckType
+    {
+        oneway Operation_1
+        {
+            Schemas.IntermediateXMLAck
+        };
+    };
+    internal porttype ArchiveIXMLPortType
+    {
+        oneway Operation_1
+        {
+            Schemas.IntermediateXMLAck
+        };
+    };
+    internal porttype AckToNGUpdateType
+    {
+        requestresponse Operation_1
+        {
+            Schemas.NGAckFormUpTypedProcedure_dbo.procOrderAcknowledgementSetBasketOrderForm, Schemas.NGAckFormUpTypedProcedure_dbo.procOrderAcknowledgementSetBasketOrderFormResponse
+        };
+    };
+    internal porttype AckToNGUpdateLineType
+    {
+        requestresponse Operation_1
+        {
+            POAckLinesWHSProcedure_dbo.procOrderAcknowledgementSetBasketLineItems, POAckLinesWHSProcedure_dbo.procOrderAcknowledgementSetBasketLineItemsResponse
+        };
+    };
+    internal porttype SQLUpdateAckPortType
+    {
+        requestresponse Operation_1
+        {
+            UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgement, UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgementResponse
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ERPAckToNGCS
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements SOPAckReceiveType SOPAckReceivePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ArchiveSQLUpdateAckRespPortType ArchiveSQLUpdateAckRespPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses NextGenERPOutbound.PortTypeSendException SendExceptionPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SOPAckFileSendType ArchiveBTBAckPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ArchiveIXMLPortType ArchiveIXMLAckPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ArchinveSQLUpdateAckPortType ArchiveSQLUpdateAckPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SQLUpdateAckPortType SQLUpdateAckPort;
+        message UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgementResponse ArchiveUdateACKResp;
+        message UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgement ArchiveUpdateACK;
+        message UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgementResponse SQLUpdateACKResp;
+        message UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgement SQLUpdateACK;
+        message Schemas.IntermediateXMLAck ArchiveIXACK;
+        message Schemas.POAckBISAC ArchiveBTBACK;
+        message Schemas.POAckBISAC ACKFromSOP;
+        message Schemas.IntermediateXMLAck IXMLAck;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage ESBFaultMessage;
+        message UpdateAckProcedure_dbo.procOrdersSetOrderAcknowledgement SQLUpdateAckEmtyTags;
+        System.String activityName;
+        System.String continuationID;
+        System.Boolean enableBam;
+        System.Boolean archiveNGACK;
+        System.Boolean archiveIXMLOrd;
+        System.String transnoBTB;
+        System.String transnoIXL;
+        System.Boolean archiveBTBORD;
+        System.String strError;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("80ed7848-b840-4ce7-8c85-39bd51a79967")]
+            activate receive (SOPAckReceivePort.Operation_1, ACKFromSOP);
+            activityName = "";
+            continuationID = "";
+            enableBam = true;
+            archiveNGACK = true;
+            archiveIXMLOrd = true;
+            transnoBTB = "";
+            transnoIXL = "";
+            archiveBTBORD = true;
+            strError = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f64ae8a3-b07f-48fb-bd16-c4749e25ad4e")]
+            transnoBTB = ACKFromSOP.Header.FileHeader.TransmissionID;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b2d7cd55-a376-452a-b341-0a584fc62134")]
+            archiveBTBORD=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.ERPORders","ArchiveBTBOrdsAcks"));
+            archiveIXMLOrd=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.ERPORders","ArchiveIXMLOrders"));
+            archiveNGACK=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.BizTalk.ERPORders","ArchiveNGAckReqResp"));
+            enableBam=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.ERPORders","bamEnabled"));
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dcf4f6a8-4e7a-4aa4-ab90-4a3908eb8fa6")]
+            if (enableBam)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("62f4df7e-e19f-4ff8-ad69-0c1bb8c65a7a")]
+                // set bam variables
+                activityName= "ERPOrders";
+                continuationID= "BTB_"+ transnoBTB;
+                
+                Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,continuationID,"ERPAckRcv",System.DateTime.UtcNow);
+                
+                
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f323862e-fd28-4f3d-83d1-e12398006381")]
+            if (archiveBTBORD == true)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("1ff734b9-987b-4eac-90f4-0cad6372fcaf")]
+                construct ArchiveBTBACK
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("41327c84-aace-48e3-8b8b-e429523ce778")]
+                    ArchiveBTBACK=ACKFromSOP;
+                    ArchiveBTBACK(FILE.ReceivedFileName) = "BTBACK_" + transnoBTB;
+                    
+                    
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9cd62f94-925d-4e21-a6e9-35cdd78add22")]
+                send (ArchiveBTBAckPort.Operation_1, ArchiveBTBACK);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a65a74f6-d1b8-4bcc-9608-a7eb04177b83")]
+            scope synchronized
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c774bee4-b6a9-4d32-95db-24d70a89eab9")]
+                    construct IXMLAck
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("22bdff88-2c8b-41bd-b6e0-fe2c3c845d05")]
+                        transform (IXMLAck) = BTNextGen.BizTalk.ERPOrders.Maps.BISACAckToIXMLAck (ACKFromSOP);
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8ac9543a-be74-4532-99cd-c2d0507e7d37")]
+                    catch (System.SystemException AckXlateException)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("8b04c4dd-ab5e-4e59-baaf-0ead52bb702e")]
+                        construct ESBFaultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("78fcb3e9-77d7-40b2-b844-a66ed671fb9e")]
+                            
+                            // Create fault exception Message
+                            ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            
+                            // Assign Properties
+                            
+                            ESBFaultMessage.FailureCategory="BTBACK to IXMLAck Exception";
+                            ESBFaultMessage.FaultDescription=AckXlateException.Message;
+                            ESBFaultMessage.FaultCode="2001";
+                            ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                            Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,ACKFromSOP);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d8838db8-5ddd-4ea1-9131-c36e82a01282")]
+                        send (SendExceptionPort.Operation_1, ESBFaultMessage);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("aeb3ddc3-4346-4a81-8426-bd4f50d67877")]
+                        terminate "Process terminated due to problem translating BISAC to IXMLAck";;
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("95fa5bbc-3e51-4e30-af51-71a2c8f669af")]
+            transnoIXL=IXMLAck.POAckHeader.TransactionID;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b71e1602-2ba3-4afe-b8d0-0568fa482a3d")]
+            if (archiveIXMLOrd == true)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("4953bd65-0a9c-4d31-ad30-ec60f1b19d25")]
+                if (IXMLAck.POAckHeader.IsCPQAck == true)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("885e0672-7f21-4838-920b-f364069347d6")]
+                    construct ArchiveIXACK
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b5848aec-b4bd-4da0-b119-d0083fdacb96")]
+                        ArchiveIXACK=IXMLAck;
+                        ArchiveIXACK(FILE.ReceivedFileName) = "IXMLCPQAck_" + transnoIXL;
+                    }
+                }
+                else 
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1b3789c6-d99c-4e19-bec9-0bc8cd4c3c7c")]
+                    construct ArchiveIXACK
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b0e187f8-3d37-4e16-8d3b-b67bf9b7380f")]
+                        ArchiveIXACK=IXMLAck;
+                        ArchiveIXACK(FILE.ReceivedFileName) = "IXMLAck_" + transnoIXL;
+                    }
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("acd58b0c-a3dd-49db-8a81-f11c9c7f64a2")]
+                send (ArchiveIXMLAckPort.Operation_1, ArchiveIXACK);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c9d17aaa-0a78-4b17-b34f-4eb72efd1c0d")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3d0c9d76-3a15-4077-b8b9-87e4443aa62b")]
+                    construct SQLUpdateACK
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9e50b48a-fdea-423a-a43a-a62ff7324cce")]
+                        transform (SQLUpdateACK) = BTNextGen.BizTalk.ERPOrders.Maps.IXMLAckToSQLAckProc (IXMLAck);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("fbb6dae5-7a12-4c05-8e1f-05a4631860fc")]
+                    if (archiveNGACK==true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2074f75d-3795-4b0d-b1bb-f50d3c4b2b81")]
+                        if (IXMLAck.POAckHeader.IsCPQAck == true)
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("309a8c3a-e10f-4d45-b767-74c54ba0c95b")]
+                            construct ArchiveUpdateACK
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c8cbb03e-d1b3-4357-8287-5a2241f7d096")]
+                                ArchiveUpdateACK=SQLUpdateACK;
+                                ArchiveUpdateACK(FILE.ReceivedFileName) = "SQLCPQAckUpdate_" + transnoIXL;
+                            }
+                        }
+                        else 
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("373808ee-4ba7-4ad9-a759-9a79c565f33f")]
+                            construct ArchiveUpdateACK
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("98e7f923-5911-4246-ba43-c553ef171806")]
+                                ArchiveUpdateACK=SQLUpdateACK;
+                                ArchiveUpdateACK(FILE.ReceivedFileName) = "SQLAckUpdate_" + transnoIXL;
+                            }
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("651324b1-d65f-43b9-90e3-d38b876edc02")]
+                        send (ArchiveSQLUpdateAckPort.Operation_1, ArchiveUpdateACK);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e58731ed-3e5d-4d91-9ce2-7e6e89a843c6")]
+                    send (SQLUpdateAckPort.Operation_1, SQLUpdateACK);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8185a577-4c60-4880-91d5-de5e29ff0683")]
+                    receive (SQLUpdateAckPort.Operation_1, SQLUpdateACKResp);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("45352fc8-a898-49a7-9893-c2610b603894")]
+                    if (archiveNGACK==true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("5896e5ff-4811-4af8-b400-8e343c1113ab")]
+                        construct ArchiveUdateACKResp
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("09f932ef-1c10-4fd3-8e64-e5f7751692c5")]
+                            ArchiveUdateACKResp = SQLUpdateACKResp;
+                            ArchiveUdateACKResp(FILE.ReceivedFileName) = "SQLAckUpResp_" + transnoIXL;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4be6e681-420a-451b-8abd-e679f2751f52")]
+                        send (ArchiveSQLUpdateAckRespPort.Operation_1, ArchiveUdateACKResp);
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a6fc2a3b-2341-428a-95fb-89ec56f3a9e3")]
+                    catch (System.SystemException NGHeaderUpdateFault)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("48de3406-e07f-49aa-9cf8-561e3a0f1a3c")]
+                        construct ESBFaultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("97335c7d-96f0-4b21-9cdf-aa83e9e0646f")]
+                            
+                            // Create fault exception Message
+                            ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            
+                            // Assign Properties
+                            
+                            ESBFaultMessage.FailureCategory="IXMLAck to SQLUpdateAck Exception";
+                            ESBFaultMessage.FaultDescription=NGHeaderUpdateFault.Message;
+                            ESBFaultMessage.FaultCode="2001";
+                            ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                            Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,IXMLAck);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("689efe1b-9fbd-4d0f-b5b0-5af4ac21a367")]
+                        send (SendExceptionPort.Operation_1, ESBFaultMessage);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("34beb170-9a69-4367-86ed-9d8a6c13fc71")]
+                        terminate "Process terminated due to problem during NGHeaderUpdate";;
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d0e8e195-19b4-4a97-a8c7-e9d3320d5333")]
+            if (enableBam)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("ce811ec2-c643-4245-a7e0-108740b5379b")]
+                // set bam variables
+                Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,continuationID,"NGRHeaderUpdate",System.DateTime.UtcNow);
+                
+                
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("27e6e3ea-ad48-4ae9-aca3-471b54f982ee")]
+                // set bam variables
+                Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,continuationID,"NGRLineUpdate",System.DateTime.UtcNow);
+                
+                
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("662b1508-9c7c-4329-9e57-d6d0312e3ed2")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c290b14e-a7cf-4ff7-9743-99bd8d6603a3")]
+                    if (SQLUpdateACKResp.ReturnValue == 0)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f5cea689-c288-49bc-9ff8-33ffc56cfd16")]
+                        // set bam variables
+                        Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.EndActivity(activityName,continuationID);
+                    }
+                    else 
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6495635e-61ad-4b2c-aec2-51c58fd0fd8d")]
+                        //xDocFault = CyberWebSrvcException.FaultBody;
+                        //System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.ERPOrders",SQLUpdateACKResp.ReturnLiteral);
+                        strError = SQLUpdateACKResp.ReturnLiteral;
+                        throw new System.Exception(strError);
+                        
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("46893a74-db71-4aab-b446-9b6ee954817a")]
+                    catch (System.Exception SQLAckUpdateErr)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b5311aa9-36fb-4b94-b9f9-6dde1be21dd5")]
+                        construct ESBFaultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("896b68dc-297d-4856-b3ab-9949adb77b3f")]
+                            //System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.ERPOrders",strError);
+                            
+                            // Create fault exception Message
+                            ESBFaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            
+                            // Assign Properties
+                            
+                            ESBFaultMessage.FailureCategory="Generated Exception due to SQL Return Value Not Zero:";
+                            ESBFaultMessage.FaultDescription=SQLAckUpdateErr.Message;
+                            ESBFaultMessage.FaultCode="2001";
+                            ESBFaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                            Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(ESBFaultMessage,SQLUpdateACKResp);
+                            
+                            // Write to Event Log
+                            System.Diagnostics.EventLog.WriteEntry("BTNextGen.BizTalk.ERPOrders",SQLAckUpdateErr.Message);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("0314ae75-92d8-42b5-8547-565a7d072d2a")]
+                        send (SendExceptionPort.Operation_1, ESBFaultMessage);
+                    }
+                }
+            }
+        }
+    }
+}
+

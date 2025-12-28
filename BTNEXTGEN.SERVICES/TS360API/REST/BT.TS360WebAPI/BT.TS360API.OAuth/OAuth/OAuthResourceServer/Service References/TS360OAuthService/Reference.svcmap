@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8df1eafa-b5c0-46e2-a6f6-44e1586f20bf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://vmae743452:6581/_layouts/OAuthService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OAuthService.wsdl" MetadataType="Wsdl" ID="5b5a0fa5-fe3d-4bfd-938b-b709fc7d9db1" SourceId="1" SourceUrl="http://vmae743452:6581/_layouts/OAuthService.svc?wsdl" />
+    <MetadataFile FileName="OAuthService.disco" MetadataType="Disco" ID="5c2f9b03-a340-43db-93c6-7e8a41f691e1" SourceId="1" SourceUrl="http://vmae743452:6581/_layouts/OAuthService.svc?disco" />
+    <MetadataFile FileName="OAuthService.xsd" MetadataType="Schema" ID="35cc0470-07a9-46c7-a09c-a5ac9d8c69d2" SourceId="1" SourceUrl="http://vmae743452:6581/_layouts/OAuthService.svc?xsd=xsd1" />
+    <MetadataFile FileName="OAuthService1.xsd" MetadataType="Schema" ID="0d040e44-ddbb-4ea0-98d9-65b343cac8c2" SourceId="1" SourceUrl="http://vmae743452:6581/_layouts/OAuthService.svc?xsd=xsd0" />
+    <MetadataFile FileName="OAuthService2.xsd" MetadataType="Schema" ID="93809d28-4100-4c21-8300-05a8ce590b6f" SourceId="1" SourceUrl="http://vmae743452:6581/_layouts/OAuthService.svc?xsd=xsd2" />
+    <MetadataFile FileName="OAuthService1.wsdl" MetadataType="Wsdl" ID="6554dd4b-be47-43f0-8a31-b29e7976e8b5" SourceId="1" SourceUrl="http://vmae743452:6581/_layouts/OAuthService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

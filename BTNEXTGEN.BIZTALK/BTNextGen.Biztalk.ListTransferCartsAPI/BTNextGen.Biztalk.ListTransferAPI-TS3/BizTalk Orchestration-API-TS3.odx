@@ -1,0 +1,1262 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="b9d8f8fd-bd8e-444c-8371-8844dd80d260" LowerBound="1.1" HigherBound="351.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.ListTransferAPI_TS3" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="cf974ec1-7fc6-43a2-afda-bcef1c7404b3" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_TS3PortDynamic" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="df4e7d52-324c-49e2-9acc-02d176e96eef" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="ad468423-fe13-4808-90c5-231b246fa964" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.27">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.ListTransferFF" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="cc320d7c-beeb-4fd1-9882-2c037417be0a" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_ReceiveData" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="93a8a17e-1d62-41f0-baec-6e46b8650b6f" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="bf9575d9-819a-4850-94d1-e8ed3d3e7da0" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.74">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="48adf5fb-b203-4b75-b947-dc212b1305d7" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Archive1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="70750faa-ab05-4e06-943c-ade65adf3569" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="1a671254-9688-48be-87aa-37a3c8a38dea" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.74">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f596aa70-3d55-46a9-ac3b-238de1aaebb7" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Archive2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="6c8e8517-4e25-4d2c-80ef-631793b5bd0a" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="0d5d739d-2d8d-4435-9bb0-e285f0cc1c60" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.74">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPI" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f8b01afe-e1f1-4530-8402-3ccc9ed75f0b" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_SQL" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b4c2883d-6521-4377-a407-e0492fc50dfc" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="udfCSBTKEYtoISBNListTransferAPI" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="2a17fa4e-5570-48e9-a048-9687e4b9c9c0" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.74">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPI" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="de6c0fb5-7301-49a0-8605-b2599caa4b5c" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="36.76" HigherBound="36.145">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPIResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="86996eb5-b9a0-4cac-95d9-21ef46c0d1a8" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Archive3" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f45aa44a-d224-440d-a30e-f1b05eaf7b60" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="1b7d1b27-2cda-4c44-a836-7d87ee85f851" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.82">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPIResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="65c92461-3626-42b2-9885-b9dcb0dffff0" ParentLink="Module_PortType" LowerBound="46.1" HigherBound="53.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_ListTransferAPI" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="8f222933-8db9-451a-aa75-479401699d0d" ParentLink="PortType_OperationDeclaration" LowerBound="48.1" HigherBound="52.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="fb17e4d4-b083-4dc5-b5fa-11fe9f7db033" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="50.13" HigherBound="50.82">
+                    <om:Property Name="Ref" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="a502d1ed-5afc-428b-a05b-81d46231d9ac" ParentLink="Module_ServiceDeclaration" LowerBound="53.1" HigherBound="350.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BizTalk_Orchestration_API_TS3" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="8a8514a9-72a1-49b2-a7ce-5e7821a304cd" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="80.1" HigherBound="81.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varFilename" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="01f2d89f-c0f2-456f-b025-629ebd596e00" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="81.1" HigherBound="82.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2d8f53e7-ef1b-40fb-85df-9ac913bc9927" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="82.1" HigherBound="83.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="6bd806d7-e0a6-49a8-96df-517eff63707c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="83.1" HigherBound="84.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varTS3FTPUser" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="447c08a1-b8c2-420c-8b29-63ee42abe8b0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="84.1" HigherBound="85.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varTS3FTPPassword" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="dbbc3247-1e8b-443b-9b71-bd60811b263e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="85.1" HigherBound="86.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varTS3FTPRepType" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a918271a-006f-438f-b297-2043e481980e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="86.1" HigherBound="87.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varTS3FTPTransportType" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5622b2a1-6c61-442d-b19a-07ecffeefd5e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="87.1" HigherBound="88.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varTS3FTPLog" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3dbbebfc-5eab-41fb-af56-52f972b355b2" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="88.1" HigherBound="89.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varTS3FTPLogDirectory" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="af776d59-cbb3-465c-8237-f1f3065dd2d0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="89.1" HigherBound="90.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varTS3FTPAddress" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="4ab4fa8e-48c9-4179-8a4a-7eb7b76d0b24" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="90.1" HigherBound="91.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="vStrGUID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="dbbbbd94-88aa-4ac2-8898-937607e659db" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="91.1" HigherBound="92.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchive3" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="bfd57e4d-f3fd-4f0d-8037-00e2dde94bc4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="92.1" HigherBound="93.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="sHold" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9841220e-4d4d-46e6-97d9-7c2cf51b257a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="93.1" HigherBound="94.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlDOC" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0089fbc6-566f-487b-b66f-1158c79d3bf6" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="94.1" HigherBound="95.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varCartNote" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3d47df5b-273d-4acc-8f8e-4824229b132e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="95.1" HigherBound="96.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varGroupName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5fb5ba04-666b-474c-96a4-e8494fc8dfb9" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="96.1" HigherBound="97.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varCartName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8f5884f9-ba02-49a5-8932-9a22a1a865bd" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="97.1" HigherBound="98.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varSourceListName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="908a2007-ab7f-4fb9-917d-d83513938a8f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="98.1" HigherBound="99.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varSourceUserName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9eeb9ba8-a120-43af-ab85-02199a23b3be" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="99.1" HigherBound="100.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varSourceUserID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="62b4c2bb-616e-4486-abf1-c13bfcd809fe" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="100.1" HigherBound="101.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varDestinationPW" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ae58202f-8c71-4e80-9b07-46e94b45b0b3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="101.1" HigherBound="102.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varDestinationUserID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="f4174046-a73b-4b52-88b1-a0f5849f05e7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="102.1" HigherBound="103.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varUserEmailCC" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a7399f76-02b9-46c8-a470-23316f95dbaf" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="103.1" HigherBound="104.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varUserEmail" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="03b5ed0e-8780-4cf1-9c72-1f57024de7dc" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="104.1" HigherBound="105.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varReference" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2a19aca5-415c-4bcd-b157-560d4704b6e8" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="105.1" HigherBound="106.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varDestinationAction" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="1b9b02f0-4975-4c5b-ad43-0c7306b24db3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="106.1" HigherBound="107.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varSourceSystem" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="f14c471b-0922-40a6-a18f-d2c1ff163d63" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="107.1" HigherBound="108.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varDestinationSystem" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="75844943-80ce-47a0-97a9-064e07f5f1e4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="108.1" HigherBound="109.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.DateTime" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="intCurrentDateTime" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="49b78e1c-acfb-4767-9365-24905b1f0201" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="109.1" HigherBound="110.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varCurrentDateTime" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="24119fac-290f-49e9-9e23-f6e2d124a32d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="110.1" HigherBound="111.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varGroup" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9ca6c459-5922-49c3-bf21-043c28379050" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="111.1" HigherBound="112.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varNote" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9082e79a-3b8b-459c-bee9-9bdf8b74097b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="70.1" HigherBound="71.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.ListTransferFF" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message3_2_TS3" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b5aa8997-d55e-49ab-a465-99c45ff049aa" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="71.1" HigherBound="72.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Input" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="0f4b7c9b-9e8a-4597-9776-28fad56ab5ac" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="72.1" HigherBound="73.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="789eb8f4-e486-4762-9688-28ca7ce38a07" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="73.1" HigherBound="74.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.ListTransferFF" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_FlatFileOriginal" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="76408d68-4088-4f81-a689-89508b89d0bf" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="74.1" HigherBound="75.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPI" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_SQL_IN" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a7fad031-f921-4d6d-a956-ab67a08a0137" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="75.1" HigherBound="76.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPIResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_SQL_OUT" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="70a7a3a3-0882-4d4c-a089-a89d88970388" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="76.1" HigherBound="77.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPI" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e2faa56c-c365-40e9-9dc8-183ebdb773f9" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="77.1" HigherBound="78.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPIResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Archive3" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="7b0ba5f2-6b44-4371-8f62-56677df170dd" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="78.1" HigherBound="79.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.ListTransferHeader" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Header" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="71c56eeb-b093-434f-b6cc-05ff2ad00afe" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="79.1" HigherBound="80.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FaultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="ccdb62d0-faea-4626-9bf9-881347b84a2c" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Scope" OID="46f2214e-ad59-453e-b2ed-a0d56dca3eef" ParentLink="ServiceBody_Statement" LowerBound="114.1" HigherBound="348.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_Main" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Receive" OID="24e30df1-3fc8-4405-bccf-295724b9e9bd" ParentLink="ComplexStatement_Statement" LowerBound="119.1" HigherBound="152.1">
+                        <om:Property Name="Activate" Value="True" />
+                        <om:Property Name="PortName" Value="Port_ReceiveData" />
+                        <om:Property Name="MessageName" Value="Message_Input" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ReceiveData" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="2a17715b-a560-49f8-914c-f7f16295fa6b" ParentLink="ComplexStatement_Statement" LowerBound="152.1" HigherBound="240.1">
+                        <om:Property Name="Expression" Value="&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;BTNextGen.Biztalk.ListTransferCarts&quot;, &quot;ListTransferCAPI Start&quot;);&#xD;&#xA;varArchive1=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;Archive1&quot;));&#xD;&#xA;varArchive2=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;Archive2&quot;));&#xD;&#xA;varTS3FTPUser=(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;TS3FTPUser&quot;));&#xD;&#xA;varTS3FTPPassword=(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;TS3FTPPassword&quot;));&#xD;&#xA;varTS3FTPRepType=(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;TS3FTPRepType&quot;));&#xD;&#xA;varTS3FTPTransportType=(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;TS3FTPTransportType&quot;));&#xD;&#xA;varTS3FTPLog=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;TS3FTPLog&quot;));&#xD;&#xA;varTS3FTPAddress=(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;TS3FTPAddress&quot;));&#xD;&#xA;varDestinationSystem=(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;DestinationSystem&quot;));&#xD;&#xA;varSourceSystem=(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;SourceSystem&quot;));&#xD;&#xA;//varGroupName=(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;GroupName&quot;));&#xD;&#xA;&#xD;&#xA;if (varTS3FTPLog == true)&#xD;&#xA; { varTS3FTPLogDirectory=(SSO.Utility.SSOClientHelper.Read(&quot;BTNextgen.Biztalk.ListTransferAPI&quot;,&quot;TS3FTPLogDirectory&quot;)); }&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Create a unique file name with a guid. &#xD;&#xA;vStrGUID = System.String.Format(&quot;{0}&quot;,System.Guid.NewGuid());&#xD;&#xA;varFilename  = &quot;ListTransferAPI&quot; + vStrGUID; &#xD;&#xA;&#xD;&#xA;// Default values for TS3 cart&#xD;&#xA;varDestinationAction = &quot;Cart&quot;; &#xD;&#xA;&#xD;&#xA;// Grab the userid and password from the file &#xD;&#xA;varDestinationUserID = xpath(Message_Input,&quot;string(//UserName)&quot;);&#xD;&#xA;varDestinationPW = xpath(Message_Input,&quot;string(//UserPassword)&quot;);&#xD;&#xA;varUserEmail = xpath(Message_Input,&quot;string(//UserEmail)&quot;);&#xD;&#xA;varGroupName =  xpath(Message_Input,&quot;string(//CartGroup)&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// When username, password or email or not passed. Pass in &quot;invalid&quot;... &#xD;&#xA;if (varDestinationUserID == null || varDestinationUserID == &quot;&quot;)&#xD;&#xA;   {varDestinationUserID = &quot;NoUserIDProvided&quot;; } &#xD;&#xA;&#xD;&#xA;if (varDestinationPW == null || varDestinationPW == &quot;&quot;)&#xD;&#xA;   {varDestinationPW = &quot;NoPasswordProvided&quot;; } &#xD;&#xA;&#xD;&#xA;if (varUserEmail == null || varUserEmail == &quot;&quot;)&#xD;&#xA;   {varUserEmail = &quot;NoEmailProvided&quot;; } &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// When SourceSystem, GroupName or DestinationSystem or null, default the value&#xD;&#xA;if (varSourceSystem == null || varSourceSystem == &quot;&quot;)&#xD;&#xA;   {varSourceSystem = &quot;Booklist&quot;; } &#xD;&#xA;&#xD;&#xA;if (varDestinationSystem == null || varDestinationSystem == &quot;&quot;)&#xD;&#xA;   {varDestinationSystem = &quot;TS3PROD&quot;;  } &#xD;&#xA;&#xD;&#xA;if (varGroupName == null || varGroupName == &quot;&quot;)&#xD;&#xA;   {varGroupName = &quot;...&quot;;  } &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// When UserEmailcc is null, default the value &#xD;&#xA;varUserEmailCC = xpath(Message_Input,&quot;string(//UserEmailCC)&quot;);&#xD;&#xA;if (varUserEmailCC == null || varUserEmailCC == &quot;&quot;)&#xD;&#xA;   {varUserEmailCC =  &quot;wilsonr@baker-taylor.com&quot;; } &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// When Cart name is empty create a default cart name.  &#xD;&#xA;intCurrentDateTime  = System.DateTime.Now; &#xD;&#xA;varCurrentDateTime = intCurrentDateTime.ToString(&quot;yyyyMMdd&quot;); &#xD;&#xA;&#xD;&#xA;varCartName =  xpath(Message_Input,&quot;string(//CartName)&quot;);&#xD;&#xA;if (varCartName == null || varCartName == &quot;&quot; )&#xD;&#xA;   {varCartName =  &quot;Cart-&quot; + varCurrentDateTime;} &#xD;&#xA;&#xD;&#xA;// When element can is optional, completely remove from the message.  This is a workaround to deal with &#xD;&#xA;// the flat file specification printing the child delimiter even when their was no value... &#xD;&#xA;    &#xD;&#xA;//varGroupName =  xpath(Message_Input,&quot;string(//CartGroup)&quot;);&#xD;&#xA;//if (varGroupName == null || varGroupName == &quot;&quot; )&#xD;&#xA;//   {varGroupName =  &quot; &quot;;&#xD;&#xA;//    varGroup = &quot;&quot;; }&#xD;&#xA;//&#xD;&#xA;//else &#xD;&#xA;    varGroup = &quot;&lt;CartGroup&gt;&quot; + varGroupName + &quot;&lt;/CartGroup&gt;&quot;; &#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;varCartNote =  xpath(Message_Input,&quot;string(//CartNote)&quot;);&#xD;&#xA;if (varCartNote == null || varCartNote == &quot;&quot; )&#xD;&#xA;   {varCartNote =  &quot;&quot;; } &#xD;&#xA;else &#xD;&#xA;   {varNote = &quot;&lt;CartNote&gt;&quot; + varCartNote + &quot;&lt;/CartNote&gt;&quot;;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="getSSO and Dates" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="793ac22b-bc46-452d-931d-8a04dd07c273" ParentLink="ComplexStatement_Statement" LowerBound="240.1" HigherBound="253.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_Archive1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="824b7bb0-168e-45ac-b53a-daa97bf955fe" ParentLink="ReallyComplexStatement_Branch" LowerBound="241.21" HigherBound="253.1">
+                            <om:Property Name="Expression" Value="varArchive1 == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveWCFMessage" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="b9e62731-68a5-4875-8edf-0f9969499e21" ParentLink="ComplexStatement_Statement" LowerBound="243.1" HigherBound="250.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchive1FF" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="e8abd37b-92de-4de5-b1c3-850fb3d11bff" ParentLink="ComplexStatement_Statement" LowerBound="246.1" HigherBound="249.1">
+                                    <om:Property Name="Expression" Value="Message_Archive1 = Message_Input; &#xD;&#xA;Message_Archive1(FILE.ReceivedFileName)=&quot;Archive1_Input&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="8e48d89f-f893-4596-8ae5-c5e1e7e8edea" ParentLink="Construct_MessageRef" LowerBound="244.35" HigherBound="244.51">
+                                    <om:Property Name="Ref" Value="Message_Archive1" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="aa3e3d0b-a64e-41f7-a58d-60c7a737cca5" ParentLink="ComplexStatement_Statement" LowerBound="250.1" HigherBound="252.1">
+                                <om:Property Name="PortName" Value="Port_Archive1" />
+                                <om:Property Name="MessageName" Value="Message_Archive1" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_Archive1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="842e0cf3-8dba-47ce-9bcc-85e668b2ef5d" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Construct" OID="41c6f777-b445-40ff-9fea-bb12cf4208f1" ParentLink="ComplexStatement_Statement" LowerBound="253.1" HigherBound="259.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_SQL_IN" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="53918f36-bd64-46b6-91e1-7c99e2994ede" ParentLink="ComplexStatement_Statement" LowerBound="256.1" HigherBound="258.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.Transform_INPUTTOSQLIN1" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_INPUTTOSQLIN" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="c5456724-0dd3-45e3-957f-a454aceab5ab" ParentLink="Transform_InputMessagePartRef" LowerBound="257.117" HigherBound="257.130">
+                                <om:Property Name="MessageRef" Value="Message_Input" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="32f30eec-f671-42a3-b751-396ac72608dc" ParentLink="Transform_OutputMessagePartRef" LowerBound="257.36" HigherBound="257.50">
+                                <om:Property Name="MessageRef" Value="Message_SQL_IN" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="ba59f4a4-c8a2-448f-b722-26bb5ca87d1f" ParentLink="Construct_MessageRef" LowerBound="254.31" HigherBound="254.45">
+                            <om:Property Name="Ref" Value="Message_SQL_IN" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="9e59b37c-7d07-47d0-a948-bbcb1bfc1c20" ParentLink="ComplexStatement_Statement" LowerBound="259.1" HigherBound="272.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_Archive2" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="973d592d-af26-49ff-8879-1d8b0e48dc96" ParentLink="ReallyComplexStatement_Branch" LowerBound="260.21" HigherBound="272.1">
+                            <om:Property Name="Expression" Value="varArchive2 == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveSQLINmESSAGE" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="d9096f37-50ce-4abe-ad99-7729b2288469" ParentLink="ComplexStatement_Statement" LowerBound="262.1" HigherBound="269.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchive2SQLIN" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="3d75b743-5480-4d6a-9e40-cbe2a91c0c26" ParentLink="Construct_MessageRef" LowerBound="263.35" HigherBound="263.51">
+                                    <om:Property Name="Ref" Value="Message_Archive2" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="97b693df-6795-4403-9dae-954c3f4d1168" ParentLink="ComplexStatement_Statement" LowerBound="265.1" HigherBound="268.1">
+                                    <om:Property Name="Expression" Value="Message_Archive2 = Message_SQL_IN; &#xD;&#xA;Message_Archive2(FILE.ReceivedFileName)=&quot;Archive2_SQLIN&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="2982f5fd-aaa6-44c5-86f4-a0878eb10bc4" ParentLink="ComplexStatement_Statement" LowerBound="269.1" HigherBound="271.1">
+                                <om:Property Name="PortName" Value="Port_Archive2" />
+                                <om:Property Name="MessageName" Value="Message_Archive2" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_Archive1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="c939e731-b275-4598-8272-f919e44eec04" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="2c52c1f0-e41b-4234-bacb-761370263149" ParentLink="ComplexStatement_Statement" LowerBound="272.1" HigherBound="274.1">
+                        <om:Property Name="PortName" Value="Port_SQL" />
+                        <om:Property Name="MessageName" Value="Message_SQL_IN" />
+                        <om:Property Name="OperationName" Value="udfCSBTKEYtoISBNListTransferAPI" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_SQLIN" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="16da0168-e783-4d69-aa6e-aa805a6f29c7" ParentLink="ComplexStatement_Statement" LowerBound="274.1" HigherBound="276.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="Port_SQL" />
+                        <om:Property Name="MessageName" Value="Message_SQL_OUT" />
+                        <om:Property Name="OperationName" Value="udfCSBTKEYtoISBNListTransferAPI" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive_SQLOUT" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="e756e202-6a84-49d7-ae74-73e1680738ad" ParentLink="ComplexStatement_Statement" LowerBound="276.1" HigherBound="289.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_Archive3" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="c35eb49d-51ef-487d-9270-e428b37c6a57" ParentLink="ReallyComplexStatement_Branch" LowerBound="277.21" HigherBound="289.1">
+                            <om:Property Name="Expression" Value="varArchive3 == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveSQLoutmESSAGE" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="94c629b8-c8a0-44ea-b409-86790221d7e0" ParentLink="ComplexStatement_Statement" LowerBound="279.1" HigherBound="286.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchive2SQLout" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="f6d165c2-43f8-4db3-a61f-618a0c26dbce" ParentLink="Construct_MessageRef" LowerBound="280.35" HigherBound="280.51">
+                                    <om:Property Name="Ref" Value="Message_Archive3" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="b867f732-136e-497f-a19a-9f2e7eaa08df" ParentLink="ComplexStatement_Statement" LowerBound="282.1" HigherBound="285.1">
+                                    <om:Property Name="Expression" Value="Message_Archive3 = Message_SQL_OUT; &#xD;&#xA;Message_Archive3(FILE.ReceivedFileName)=&quot;Archive3_SQLOUT&quot;; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="df64d1b3-07f6-42a6-9d7d-63169fe5ba34" ParentLink="ComplexStatement_Statement" LowerBound="286.1" HigherBound="288.1">
+                                <om:Property Name="PortName" Value="Port_Archive3" />
+                                <om:Property Name="MessageName" Value="Message_Archive3" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_Archive3" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="c6b1407c-0a7d-41e2-911d-ab8c206d45c8" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Construct" OID="7c5a912c-4406-4856-a3b2-54e67586e762" ParentLink="ComplexStatement_Statement" LowerBound="289.1" HigherBound="302.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_FlatFIleOriginal" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageAssignment" OID="75782af1-316f-401d-90a7-b8d98cb067c8" ParentLink="ComplexStatement_Statement" LowerBound="292.1" HigherBound="299.1">
+                            <om:Property Name="Expression" Value="//sHold = &quot;&lt;GetExpiredCards xmlns=\&quot;http://tempuri.org/\&quot;&gt;&lt;currentYear&gt;&quot; + varCurrentYear + &quot;&lt;/currentYear&gt;&lt;month&gt;&quot; + varCurrentMonth + &quot;&lt;/month&gt;&lt;isPrimaryCard&gt;true&lt;/isPrimaryCard&gt;&lt;/GetExpiredCards&gt;&quot;;&#xD;&#xA;//sHold = &quot;&lt;ns0:ListTransferFF xmlns:ns0=\&quot;http://BTNextGen.Biztalk.ListTransferCarts.ListTransferFF\&quot;&gt;&lt;sourcesys&gt;&lt;sourcesys_Child1&gt;&quot; + varSourceSystem + &quot;&lt;/sourcesys_Child1&gt;&lt;/sourcesys&gt;&lt;destAction&gt;&lt;destAction_Child1&gt;&quot; + varDestinationAction + &quot;&lt;/destAction_Child1&gt;&lt;/destAction&gt;&lt;DestSys&gt;&lt;DestSys_Child1&gt;&quot; + varDestinationSystem + &quot;&lt;/DestSys_Child1&gt;&lt;/DestSys&gt;&lt;Ref&gt;&lt;Ref_Child1&gt;&lt;/Ref_Child1&gt;&lt;/Ref&gt;&lt;email&gt;&lt;email_Child1&gt;&quot; + varUserEmail + &quot;&lt;/email_Child1&gt;&lt;/email&gt;&lt;emailCC&gt;&lt;emailCC_Child1&gt;&quot; + varUserEmailCC + &quot;&lt;/emailCC_Child1&gt;&lt;/emailCC&gt;&lt;DestUser&gt;&lt;DestUser_Child1&gt;&quot; + varDestinationUserID + &quot;&lt;/DestUser_Child1&gt;&lt;/DestUser&gt;&lt;DestPwd&gt;&lt;DestPwd_Child1&gt;&quot; + varDestinationPW + &quot;&lt;/DestPwd_Child1&gt;&lt;/DestPwd&gt;&lt;SrcUserID&gt;&lt;SrcUserID_Child1&gt;&lt;/SrcUserID_Child1&gt;&lt;/SrcUserID&gt;&lt;SrcUserName&gt;&lt;SrcUserName_Child1&gt;&lt;/SrcUserName_Child1&gt;&lt;/SrcUserName&gt;&lt;SrcList&gt;&lt;SrcList_Child1&gt;&lt;/SrcList_Child1&gt;&lt;/SrcList&gt;&lt;CartName&gt;&lt;CartName_Child1&gt;&quot; + varCartName + &quot;&lt;/CartName_Child1&gt;&lt;/CartName&gt;&lt;Group&gt;&lt;Group_Child1&gt;&quot; + varGroupName + &quot;&lt;/Group_Child1&gt;&lt;/Group&gt;&lt;Note&gt;&lt;Note_Child1&gt;&quot; + varCartNote + &quot;&lt;/Note_Child1&gt;&lt;/Note&gt;&lt;ISBN&gt;&lt;ISBN_Child1&gt;xxx&lt;/ISBN_Child1&gt;&lt;/ISBN&gt;&lt;ISBN&gt;&lt;ISBN_Child1&gt;ISBN_Child1_0&lt;/ISBN_Child1&gt;&lt;/ISBN&gt;&lt;ISBN&gt;&lt;ISBN_Child1&gt;ISBN_Child1_0&lt;/ISBN_Child1&gt;&lt;/ISBN&gt;&lt;/ns0:ListTransferFF&gt;&quot;;&#xD;&#xA;sHold = &quot;&lt;ns0:ListTransferHeader xmlns:ns0=\&quot;http://BTNextGen.Biztalk.ListTransferAPITS3.ListTransferHeader\&quot;&gt;&lt;Source&gt;&quot;  + varSourceSystem +  &quot;&lt;/Source&gt;&lt;DestinationSystem&gt;&quot; +  varDestinationSystem + &quot;&lt;/DestinationSystem&gt;&lt;DestinationAction&gt;&quot; +  varDestinationAction + &quot;&lt;/DestinationAction&gt;&lt;UserName&gt;&quot; + varDestinationUserID + &quot;&lt;/UserName&gt;&lt;UserPassword&gt;&quot; + varDestinationPW + &quot;&lt;/UserPassword&gt;&lt;UserEmail&gt;&quot; + varUserEmail + &quot;&lt;/UserEmail&gt;&lt;UserEmailCC&gt;&quot; + varUserEmailCC + &quot;&lt;/UserEmailCC&gt;&lt;CartName&gt;&quot; + varCartName + &quot;&lt;/CartName&gt;&quot; + varGroup  + varNote + &quot;&lt;/ns0:ListTransferHeader&gt;&quot;; &#xD;&#xA;&#xD;&#xA;xmlDOC.LoadXml(@sHold); &#xD;&#xA;Message_Header = xmlDOC;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="MessageAssignment_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Transform" OID="f1d8124d-f190-4265-beea-8937f7abf20c" ParentLink="ComplexStatement_Statement" LowerBound="299.1" HigherBound="301.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.Transform_FlatFileOriginal" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_FlatFileOriginal" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="9055996e-125e-4aa6-9a83-984e865bcc85" ParentLink="Transform_InputMessagePartRef" LowerBound="300.130" HigherBound="300.144">
+                                <om:Property Name="MessageRef" Value="Message_Header" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="ccd8f40b-b4e9-4d37-9944-65aba2e5ae15" ParentLink="Transform_InputMessagePartRef" LowerBound="300.146" HigherBound="300.161">
+                                <om:Property Name="MessageRef" Value="Message_SQL_OUT" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="6d4f2f66-11ed-4adf-a39e-8cd4a8897b0f" ParentLink="Transform_OutputMessagePartRef" LowerBound="300.36" HigherBound="300.60">
+                                <om:Property Name="MessageRef" Value="Message_FlatFileOriginal" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_5" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="4917649e-dd17-4264-8c34-f221768397d7" ParentLink="Construct_MessageRef" LowerBound="290.31" HigherBound="290.45">
+                            <om:Property Name="Ref" Value="Message_Header" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="02dd1bbd-675d-42b4-b94a-b14251e1c57b" ParentLink="Construct_MessageRef" LowerBound="290.47" HigherBound="290.71">
+                            <om:Property Name="Ref" Value="Message_FlatFileOriginal" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Construct" OID="e54f6894-f8e0-406a-b994-3dc5b28baba1" ParentLink="ComplexStatement_Statement" LowerBound="302.1" HigherBound="320.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_Message3_2_TS3" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageAssignment" OID="c63de124-a6db-4511-8bfd-5f6a74d92579" ParentLink="ComplexStatement_Statement" LowerBound="305.1" HigherBound="319.1">
+                            <om:Property Name="Expression" Value="Message3_2_TS3 = Message_FlatFileOriginal;&#xD;&#xA;Message3_2_TS3(FILE.ReceivedFileName)=varFilename; &#xD;&#xA;&#xD;&#xA;Message3_2_TS3(FTP.AfterPut)=&quot;RNFR &quot; + varFilename + &quot;.tx;RNTO &quot; + varFilename + &quot;.txt&quot;; &#xD;&#xA;Message3_2_TS3(FTP.UserName)=varTS3FTPUser;&#xD;&#xA;Message3_2_TS3(FTP.Password)=varTS3FTPPassword;&#xD;&#xA;Message3_2_TS3(FTP.RepresentationType)=varTS3FTPRepType;&#xD;&#xA;&#xD;&#xA; &#xD;&#xA;Message3_2_TS3(FTP.CommandLogFileName)=varTS3FTPLogDirectory;&#xD;&#xA;&#xD;&#xA;TS3PortDynamic(Microsoft.XLANGs.BaseTypes.Address) = varTS3FTPAddress + varFilename + &quot;.tx&quot;;&#xD;&#xA;TS3PortDynamic(Microsoft.XLANGs.BaseTypes.TransportType) = varTS3FTPTransportType;" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="MessageAssignment_FF" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="6d187570-fcb8-4f30-a570-7a1bc042953b" ParentLink="Construct_MessageRef" LowerBound="303.31" HigherBound="303.45">
+                            <om:Property Name="Ref" Value="Message3_2_TS3" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="f1c440e8-aebf-49e8-b24a-fa0444ac6010" ParentLink="ComplexStatement_Statement" LowerBound="320.1" HigherBound="322.1">
+                        <om:Property Name="PortName" Value="TS3PortDynamic" />
+                        <om:Property Name="MessageName" Value="Message3_2_TS3" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_Ts3" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="3c54a677-d49b-4515-a221-1aa098eadb05" ParentLink="Scope_Catch" LowerBound="325.1" HigherBound="346.1">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_Main" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="51eb43a5-6894-44b5-82c5-93550d44519e" ParentLink="Catch_Statement" LowerBound="328.1" HigherBound="343.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructFaultMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="e3ae7681-090d-4622-ae70-1d8b574689b3" ParentLink="Construct_MessageRef" LowerBound="329.35" HigherBound="329.47">
+                                <om:Property Name="Ref" Value="FaultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="8b88e5e8-bb99-4198-956a-b2b9c46202e1" ParentLink="ComplexStatement_Statement" LowerBound="331.1" HigherBound="342.1">
+                                <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;FaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;FaultMessage.FailureCategory=&quot;Btnextgen.Biztalk.ListTransferAPI Exception&quot;;&#xD;&#xA;FaultMessage.FaultDescription=ex.Message;&#xD;&#xA;FaultMessage.FaultCode=&quot;3020&quot;;&#xD;&#xA;FaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_3" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="e0f7b56f-059b-42d9-ad2a-5b2392abf9ee" ParentLink="Catch_Statement" LowerBound="343.1" HigherBound="345.1">
+                            <om:Property Name="PortName" Value="ListTransferAPI_FaultPort" />
+                            <om:Property Name="MessageName" Value="FaultMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="80967fa7-2168-4513-ae5b-cf4f74491772" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="56.1" HigherBound="58.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.PortType_ReceiveData" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_ReceiveData" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="fb81b8af-9a69-4194-9e44-b4f10f0c01d9" ParentLink="PortDeclaration_CLRAttribute" LowerBound="56.1" HigherBound="57.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="bde6de3b-b344-419c-9c67-2a14699d57ed" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="58.1" HigherBound="60.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.PortType_Archive1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_Archive1" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="e9566c57-8697-4cc3-bcde-9bb43a1e0c8f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="58.1" HigherBound="59.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="d00fa89c-cb9c-4d14-880e-b3122be57131" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="60.1" HigherBound="62.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="41" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.PortType_TS3PortDynamic" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TS3PortDynamic" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="PhysicalBindingAttribute" OID="4e917ed9-6d6e-4f32-9388-0236b15f2865" ParentLink="PortDeclaration_CLRAttribute" LowerBound="60.1" HigherBound="61.1">
+                    <om:Property Name="InPipeline" Value="Microsoft.BizTalk.DefaultPipelines.XMLReceive" />
+                    <om:Property Name="OutPipeline" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.Snd_FlatFile" />
+                    <om:Property Name="TransportType" Value="HTTP" />
+                    <om:Property Name="URI" Value="http://tempURI" />
+                    <om:Property Name="IsDynamic" Value="True" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="a1560f4f-8fae-4f60-95c1-a4b5ef9d6924" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="62.1" HigherBound="64.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="6" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.PortType_Archive2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_Archive2" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="89f97697-2bfc-4f8a-8826-8ec7fd93736d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="62.1" HigherBound="63.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="6ab31644-7e4e-4aab-be1b-9e17ef42e153" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="64.1" HigherBound="66.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.PortType_SQL" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_SQL" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="ccdd6715-68f4-4c25-8be5-8c4f93f4c2aa" ParentLink="PortDeclaration_CLRAttribute" LowerBound="64.1" HigherBound="65.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="d14e0adc-9e34-4ead-b4d1-58bab9c222c3" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="66.1" HigherBound="68.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="10" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.PortType_Archive3" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_Archive3" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="b8a075de-20a6-4336-b7c9-217dec4ed2c4" ParentLink="PortDeclaration_CLRAttribute" LowerBound="66.1" HigherBound="67.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4caa95d4-e989-4bdf-9db8-57daf66fa4f6" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="68.1" HigherBound="70.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="145" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ListTransferAPI_TS3.PortType_ListTransferAPI" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ListTransferAPI_FaultPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="e4cbad19-359f-4a40-b8ed-026e3861544e" ParentLink="PortDeclaration_CLRAttribute" LowerBound="68.1" HigherBound="69.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.ListTransferAPI_TS3
+{
+    internal porttype PortType_TS3PortDynamic
+    {
+        oneway Operation_1
+        {
+            ListTransferFF
+        };
+    };
+    internal porttype PortType_ReceiveData
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters
+        };
+    };
+    internal porttype PortType_Archive1
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters
+        };
+    };
+    internal porttype PortType_Archive2
+    {
+        oneway Operation_1
+        {
+            LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPI
+        };
+    };
+    internal porttype PortType_SQL
+    {
+        requestresponse udfCSBTKEYtoISBNListTransferAPI
+        {
+            LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPI, LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPIResponse
+        };
+    };
+    internal porttype PortType_Archive3
+    {
+        oneway Operation_1
+        {
+            LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPIResponse
+        };
+    };
+    internal porttype PortType_ListTransferAPI
+    {
+        oneway Operation_1
+        {
+            Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service BizTalk_Orchestration_API_TS3
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_ReceiveData Port_ReceiveData;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Archive1 Port_Archive1;
+        [Microsoft.XLANGs.BaseTypes.PhysicalBinding(typeof(BTNextGen.Biztalk.ListTransferAPI_TS3.Snd_FlatFile))]
+        port uses dynamic PortType_TS3PortDynamic TS3PortDynamic;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Archive2 Port_Archive2;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_SQL Port_SQL;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Archive3 Port_Archive3;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses PortType_ListTransferAPI ListTransferAPI_FaultPort;
+        message ListTransferFF Message3_2_TS3;
+        message BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters Message_Input;
+        message BTNextGen.Biztalk.ListTransferCartsAPI.ListTransferParameters Message_Archive1;
+        message ListTransferFF Message_FlatFileOriginal;
+        message LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPI Message_SQL_IN;
+        message LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPIResponse Message_SQL_OUT;
+        message LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPI Message_Archive2;
+        message LTAPI_TableValuedFunction_dbo.udfCSBTKEYtoISBNListTransferAPIResponse Message_Archive3;
+        message ListTransferHeader Message_Header;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage FaultMessage;
+        System.String varFilename;
+        System.Boolean varArchive1;
+        System.Boolean varArchive2;
+        System.String varTS3FTPUser;
+        System.String varTS3FTPPassword;
+        System.String varTS3FTPRepType;
+        System.String varTS3FTPTransportType;
+        System.Boolean varTS3FTPLog;
+        System.String varTS3FTPLogDirectory;
+        System.String varTS3FTPAddress;
+        System.String vStrGUID;
+        System.Boolean varArchive3;
+        System.String sHold;
+        System.Xml.XmlDocument xmlDOC;
+        System.String varCartNote;
+        System.String varGroupName;
+        System.String varCartName;
+        System.String varSourceListName;
+        System.String varSourceUserName;
+        System.String varSourceUserID;
+        System.String varDestinationPW;
+        System.String varDestinationUserID;
+        System.String varUserEmailCC;
+        System.String varUserEmail;
+        System.String varReference;
+        System.String varDestinationAction;
+        System.String varSourceSystem;
+        System.String varDestinationSystem;
+        System.DateTime intCurrentDateTime;
+        System.String varCurrentDateTime;
+        System.String varGroup;
+        System.String varNote;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("46f2214e-ad59-453e-b2ed-a0d56dca3eef")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("24e30df1-3fc8-4405-bccf-295724b9e9bd")]
+                    activate receive (Port_ReceiveData.Operation_1, Message_Input);
+                    varFilename = "";
+                    varArchive1 = true;
+                    varArchive2 = true;
+                    varTS3FTPUser = "";
+                    varTS3FTPPassword = "";
+                    varTS3FTPRepType = "";
+                    varTS3FTPTransportType = "";
+                    varTS3FTPLog = true;
+                    varTS3FTPLogDirectory = "";
+                    varTS3FTPAddress = "";
+                    vStrGUID = "";
+                    varArchive3 = true;
+                    sHold = "";
+                    xmlDOC = new System.Xml.XmlDocument();
+                    varCartNote = "";
+                    varGroupName = "";
+                    varCartName = "";
+                    varSourceListName = "";
+                    varSourceUserName = "";
+                    varSourceUserID = "";
+                    varDestinationPW = "";
+                    varDestinationUserID = "";
+                    varUserEmailCC = "";
+                    varUserEmail = "";
+                    varReference = "";
+                    varDestinationAction = "";
+                    varSourceSystem = "";
+                    varDestinationSystem = "";
+                    varCurrentDateTime = "";
+                    varGroup = "";
+                    varNote = "";
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("2a17715b-a560-49f8-914c-f7f16295fa6b")]
+                    
+                    System.Diagnostics.EventLog.WriteEntry("BTNextGen.Biztalk.ListTransferCarts", "ListTransferCAPI Start");
+                    varArchive1=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","Archive1"));
+                    varArchive2=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","Archive2"));
+                    varTS3FTPUser=(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","TS3FTPUser"));
+                    varTS3FTPPassword=(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","TS3FTPPassword"));
+                    varTS3FTPRepType=(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","TS3FTPRepType"));
+                    varTS3FTPTransportType=(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","TS3FTPTransportType"));
+                    varTS3FTPLog=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","TS3FTPLog"));
+                    varTS3FTPAddress=(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","TS3FTPAddress"));
+                    varDestinationSystem=(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","DestinationSystem"));
+                    varSourceSystem=(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","SourceSystem"));
+                    //varGroupName=(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","GroupName"));
+                    
+                    if (varTS3FTPLog == true)
+                     { varTS3FTPLogDirectory=(SSO.Utility.SSOClientHelper.Read("BTNextgen.Biztalk.ListTransferAPI","TS3FTPLogDirectory")); }
+                    
+                    
+                    // Create a unique file name with a guid. 
+                    vStrGUID = System.String.Format("{0}",System.Guid.NewGuid());
+                    varFilename  = "ListTransferAPI" + vStrGUID; 
+                    
+                    // Default values for TS3 cart
+                    varDestinationAction = "Cart"; 
+                    
+                    // Grab the userid and password from the file 
+                    varDestinationUserID = xpath(Message_Input,"string(//UserName)");
+                    varDestinationPW = xpath(Message_Input,"string(//UserPassword)");
+                    varUserEmail = xpath(Message_Input,"string(//UserEmail)");
+                    varGroupName =  xpath(Message_Input,"string(//CartGroup)");
+                    
+                    
+                    // When username, password or email or not passed. Pass in "invalid"... 
+                    if (varDestinationUserID == null || varDestinationUserID == "")
+                       {varDestinationUserID = "NoUserIDProvided"; } 
+                    
+                    if (varDestinationPW == null || varDestinationPW == "")
+                       {varDestinationPW = "NoPasswordProvided"; } 
+                    
+                    if (varUserEmail == null || varUserEmail == "")
+                       {varUserEmail = "NoEmailProvided"; } 
+                    
+                    
+                    // When SourceSystem, GroupName or DestinationSystem or null, default the value
+                    if (varSourceSystem == null || varSourceSystem == "")
+                       {varSourceSystem = "Booklist"; } 
+                    
+                    if (varDestinationSystem == null || varDestinationSystem == "")
+                       {varDestinationSystem = "TS3PROD";  } 
+                    
+                    if (varGroupName == null || varGroupName == "")
+                       {varGroupName = "...";  } 
+                    
+                    
+                    // When UserEmailcc is null, default the value 
+                    varUserEmailCC = xpath(Message_Input,"string(//UserEmailCC)");
+                    if (varUserEmailCC == null || varUserEmailCC == "")
+                       {varUserEmailCC =  "wilsonr@baker-taylor.com"; } 
+                    
+                    
+                    // When Cart name is empty create a default cart name.  
+                    intCurrentDateTime  = System.DateTime.Now; 
+                    varCurrentDateTime = intCurrentDateTime.ToString("yyyyMMdd"); 
+                    
+                    varCartName =  xpath(Message_Input,"string(//CartName)");
+                    if (varCartName == null || varCartName == "" )
+                       {varCartName =  "Cart-" + varCurrentDateTime;} 
+                    
+                    // When element can is optional, completely remove from the message.  This is a workaround to deal with 
+                    // the flat file specification printing the child delimiter even when their was no value... 
+                        
+                    //varGroupName =  xpath(Message_Input,"string(//CartGroup)");
+                    //if (varGroupName == null || varGroupName == "" )
+                    //   {varGroupName =  " ";
+                    //    varGroup = ""; }
+                    //
+                    //else 
+                        varGroup = "<CartGroup>" + varGroupName + "</CartGroup>"; 
+                       
+                    
+                    varCartNote =  xpath(Message_Input,"string(//CartNote)");
+                    if (varCartNote == null || varCartNote == "" )
+                       {varCartNote =  ""; } 
+                    else 
+                       {varNote = "<CartNote>" + varCartNote + "</CartNote>";}
+                    
+                    
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("793ac22b-bc46-452d-931d-8a04dd07c273")]
+                    if (varArchive1 == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b9e62731-68a5-4875-8edf-0f9969499e21")]
+                        construct Message_Archive1
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e8abd37b-92de-4de5-b1c3-850fb3d11bff")]
+                            Message_Archive1 = Message_Input; 
+                            Message_Archive1(FILE.ReceivedFileName)="Archive1_Input"; 
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("aa3e3d0b-a64e-41f7-a58d-60c7a737cca5")]
+                        send (Port_Archive1.Operation_1, Message_Archive1);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("41c6f777-b445-40ff-9fea-bb12cf4208f1")]
+                    construct Message_SQL_IN
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("53918f36-bd64-46b6-91e1-7c99e2994ede")]
+                        transform (Message_SQL_IN) = BTNextGen.Biztalk.ListTransferAPI_TS3.Transform_INPUTTOSQLIN1 (Message_Input);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("9e59b37c-7d07-47d0-a948-bbcb1bfc1c20")]
+                    if (varArchive2 == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d9096f37-50ce-4abe-ad99-7729b2288469")]
+                        construct Message_Archive2
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("97b693df-6795-4403-9dae-954c3f4d1168")]
+                            Message_Archive2 = Message_SQL_IN; 
+                            Message_Archive2(FILE.ReceivedFileName)="Archive2_SQLIN"; 
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2982f5fd-aaa6-44c5-86f4-a0878eb10bc4")]
+                        send (Port_Archive2.Operation_1, Message_Archive2);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("2c52c1f0-e41b-4234-bacb-761370263149")]
+                    send (Port_SQL.udfCSBTKEYtoISBNListTransferAPI, Message_SQL_IN);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("16da0168-e783-4d69-aa6e-aa805a6f29c7")]
+                    receive (Port_SQL.udfCSBTKEYtoISBNListTransferAPI, Message_SQL_OUT);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e756e202-6a84-49d7-ae74-73e1680738ad")]
+                    if (varArchive3 == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("94c629b8-c8a0-44ea-b409-86790221d7e0")]
+                        construct Message_Archive3
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b867f732-136e-497f-a19a-9f2e7eaa08df")]
+                            Message_Archive3 = Message_SQL_OUT; 
+                            Message_Archive3(FILE.ReceivedFileName)="Archive3_SQLOUT"; 
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("df64d1b3-07f6-42a6-9d7d-63169fe5ba34")]
+                        send (Port_Archive3.Operation_1, Message_Archive3);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("7c5a912c-4406-4856-a3b2-54e67586e762")]
+                    construct Message_Header, Message_FlatFileOriginal
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("75782af1-316f-401d-90a7-b8d98cb067c8")]
+                        //sHold = "<GetExpiredCards xmlns=\"http://tempuri.org/\"><currentYear>" + varCurrentYear + "</currentYear><month>" + varCurrentMonth + "</month><isPrimaryCard>true</isPrimaryCard></GetExpiredCards>";
+                        //sHold = "<ns0:ListTransferFF xmlns:ns0=\"http://BTNextGen.Biztalk.ListTransferCarts.ListTransferFF\"><sourcesys><sourcesys_Child1>" + varSourceSystem + "</sourcesys_Child1></sourcesys><destAction><destAction_Child1>" + varDestinationAction + "</destAction_Child1></destAction><DestSys><DestSys_Child1>" + varDestinationSystem + "</DestSys_Child1></DestSys><Ref><Ref_Child1></Ref_Child1></Ref><email><email_Child1>" + varUserEmail + "</email_Child1></email><emailCC><emailCC_Child1>" + varUserEmailCC + "</emailCC_Child1></emailCC><DestUser><DestUser_Child1>" + varDestinationUserID + "</DestUser_Child1></DestUser><DestPwd><DestPwd_Child1>" + varDestinationPW + "</DestPwd_Child1></DestPwd><SrcUserID><SrcUserID_Child1></SrcUserID_Child1></SrcUserID><SrcUserName><SrcUserName_Child1></SrcUserName_Child1></SrcUserName><SrcList><SrcList_Child1></SrcList_Child1></SrcList><CartName><CartName_Child1>" + varCartName + "</CartName_Child1></CartName><Group><Group_Child1>" + varGroupName + "</Group_Child1></Group><Note><Note_Child1>" + varCartNote + "</Note_Child1></Note><ISBN><ISBN_Child1>xxx</ISBN_Child1></ISBN><ISBN><ISBN_Child1>ISBN_Child1_0</ISBN_Child1></ISBN><ISBN><ISBN_Child1>ISBN_Child1_0</ISBN_Child1></ISBN></ns0:ListTransferFF>";
+                        sHold = "<ns0:ListTransferHeader xmlns:ns0=\"http://BTNextGen.Biztalk.ListTransferAPITS3.ListTransferHeader\"><Source>"  + varSourceSystem +  "</Source><DestinationSystem>" +  varDestinationSystem + "</DestinationSystem><DestinationAction>" +  varDestinationAction + "</DestinationAction><UserName>" + varDestinationUserID + "</UserName><UserPassword>" + varDestinationPW + "</UserPassword><UserEmail>" + varUserEmail + "</UserEmail><UserEmailCC>" + varUserEmailCC + "</UserEmailCC><CartName>" + varCartName + "</CartName>" + varGroup  + varNote + "</ns0:ListTransferHeader>"; 
+                        
+                        xmlDOC.LoadXml(@sHold); 
+                        Message_Header = xmlDOC;
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f1d8124d-f190-4265-beea-8937f7abf20c")]
+                        transform (Message_FlatFileOriginal) = BTNextGen.Biztalk.ListTransferAPI_TS3.Transform_FlatFileOriginal (Message_Header, Message_SQL_OUT);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e54f6894-f8e0-406a-b994-3dc5b28baba1")]
+                    construct Message3_2_TS3
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c63de124-a6db-4511-8bfd-5f6a74d92579")]
+                        Message3_2_TS3 = Message_FlatFileOriginal;
+                        Message3_2_TS3(FILE.ReceivedFileName)=varFilename; 
+                        
+                        Message3_2_TS3(FTP.AfterPut)="RNFR " + varFilename + ".tx;RNTO " + varFilename + ".txt"; 
+                        Message3_2_TS3(FTP.UserName)=varTS3FTPUser;
+                        Message3_2_TS3(FTP.Password)=varTS3FTPPassword;
+                        Message3_2_TS3(FTP.RepresentationType)=varTS3FTPRepType;
+                        
+                         
+                        Message3_2_TS3(FTP.CommandLogFileName)=varTS3FTPLogDirectory;
+                        
+                        TS3PortDynamic(Microsoft.XLANGs.BaseTypes.Address) = varTS3FTPAddress + varFilename + ".tx";
+                        TS3PortDynamic(Microsoft.XLANGs.BaseTypes.TransportType) = varTS3FTPTransportType;
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f1c440e8-aebf-49e8-b24a-fa0444ac6010")]
+                    send (TS3PortDynamic.Operation_1, Message3_2_TS3);
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3c54a677-d49b-4515-a221-1aa098eadb05")]
+                    catch (System.SystemException ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("51eb43a5-6894-44b5-82c5-93550d44519e")]
+                        construct FaultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8b88e5e8-bb99-4198-956a-b2b9c46202e1")]
+                            // Create fault exception Message
+                            FaultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            // Assign Properties
+                            FaultMessage.FailureCategory="Btnextgen.Biztalk.ListTransferAPI Exception";
+                            FaultMessage.FaultDescription=ex.Message;
+                            FaultMessage.FaultCode="3020";
+                            FaultMessage.FaultSeverity= Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                            
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e0f7b56f-059b-42d9-ad2a-5b2392abf9ee")]
+                        send (ListTransferAPI_FaultPort.Operation_1, FaultMessage);
+                    }
+                }
+            }
+        }
+    }
+}
+

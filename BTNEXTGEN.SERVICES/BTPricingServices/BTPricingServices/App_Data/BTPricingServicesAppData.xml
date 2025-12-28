@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppData xsi:noNamespaceSchemaLocation="BTPricingServicesAppData.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Warehouse>
+		<Code>COM</Code>
+		<Description>Commerce, GA</Description>
+	</Warehouse>
+	<Warehouse>
+		<Code>MOM</Code>
+		<Description>Momence, IL</Description>
+	</Warehouse>
+	<Warehouse>
+		<Code>REN</Code>
+		<Description>Reno, NV</Description>
+	</Warehouse>
+	<Warehouse>
+		<Code>RNO</Code>
+		<Description>Reno, NV</Description>
+	</Warehouse>
+	<Warehouse>
+		<Code>SOM</Code>
+		<Description>Bridgewater, NJ</Description>
+	</Warehouse>
+	<Warehouse>
+		<Code>IND</Code>
+		<Description>Indianapolis, IN</Description>
+	</Warehouse>
+	<Warehouse>
+		<Code>TXS</Code>
+		<Description>Dallas, TX</Description>
+	</Warehouse>
+  <Warehouse>
+    <Code>VIE</Code>
+    <Description>VIP East</Description>
+  </Warehouse>
+  <Warehouse>
+    <Code>VIM</Code>
+    <Description>VIP Midwest</Description>
+  </Warehouse>
+  <StatusMessage>
+			<Code>0000</Code>
+			<Description>Successful Query.</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>0001</Code>
+			<Description>20 Byte Customer Not Found - No Inventory Returned.</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>0002</Code>
+			<Description>20 Byte Customer Suspended - No Inventory Returned.</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>0003</Code>
+			<Description>20 Byte Customer Deleted - No Inventory Returned.</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>0004</Code>
+			<Description>20 Byte Customer Set To Stop Book - No Inventory Returned.</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>0005</Code>
+			<Description>20 Byte Customer Set to Stop Ship - No Inventory Returned.</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>0006</Code>
+			<Description>20 Byte Customer Not Active - No Inventory Returned.</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>0010</Code>
+			<Description>10 Byte BTKey Not Found - No Inventory Returned.</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>0011</Code>
+			<Description>10 Byte BTKey Deleted - No Inventory Returned.</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>0012</Code>
+			<Description>10 Byte BTKey Not Active - No Inventory Returned.</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>0010</Code>
+			<Description>10 Byte BTKey No Active Warehouse - No Inventory Returned.</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8010</Code>
+			<Description>Invalid Transmission ID Recieved</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8020</Code>
+			<Description>Invalid Version ID Recieved</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8030</Code>
+			<Description>Invalid Length Recieved</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8101</Code>
+			<Description>Invalid Request Type</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8102</Code>
+			<Description>Invalid Inventory Type</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8103</Code>
+			<Description>Invalid AccountID Type</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8104</Code>
+			<Description>Invalid AccountID</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8105</Code>
+			<Description>Invalid Numeric Quantity</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8106</Code>
+			<Description>Invalid Numeric Count</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8150</Code>
+			<Description>AccountID Not Found</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8151</Code>
+			<Description>Invalid Account ID</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8152</Code>
+			<Description>Invalid SANS ID</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8201</Code>
+			<Description>Invalid Item Type</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8202</Code>
+			<Description>Invalid ItemID</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8203</Code>
+			<Description>Invalid Detail Line Count</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8210</Code>
+			<Description>ItemID Not Found</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8211</Code>
+			<Description>UPC Not Found</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8212</Code>
+			<Description>ISBN Not Found</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8213</Code>
+			<Description>SKU Not Found</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8214</Code>
+			<Description>BTKey Not found</Description>
+	</StatusMessage>
+	<StatusMessage>
+			<Code>8223</Code>
+			<Description>Supersession</Description>
+	</StatusMessage>
+	<AccountIDType>
+		<Code>A</Code>
+		<Description>Books - 20 Byte Account Number</Description>
+	</AccountIDType>
+	<AccountIDType>
+		<Code>C</Code>
+		<Description>Entertainment - 8 Byte Account Number</Description>
+	</AccountIDType>
+	<ItemIDType>
+		<Code>B</Code>
+		<Description>Book or Entertainment - BTKey</Description>
+	</ItemIDType>
+	<ItemIDType>
+		<Code>U</Code>
+		<Description>Entertainment - UPC Based</Description>
+	</ItemIDType>
+	<ItemIDType>
+		<Code>I</Code>
+		<Description>Entertainment - ISBN Based</Description>
+	</ItemIDType>
+	<EmailRecipient>
+		<Name>Marv</Name>
+		<EmailAddress>perkinm@btol.com</EmailAddress>
+		<Group>mail</Group>
+	</EmailRecipient>
+	<EmailRecipient>
+		<Name>Marv</Name>
+		<EmailAddress>pagemarv@njperkins.com</EmailAddress>
+		<Group>beep</Group>
+	</EmailRecipient>
+</AppData>

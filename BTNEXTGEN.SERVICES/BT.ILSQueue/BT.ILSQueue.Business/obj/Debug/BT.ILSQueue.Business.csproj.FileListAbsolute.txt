@@ -1,0 +1,17 @@
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\obj\Debug\BT.ILSQueue.Business.csprojResolveAssemblyReference.cache
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\BT.ILSQueue.Business.dll.config
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\BT.ILSQueue.Business.dll
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\BT.ILSQueue.Business.pdb
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\BT.TS360.NoSQL.Data.dll
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\CSharp_MARC.dll
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\log4net.dll
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\MongoDB.Bson.dll
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\MongoDB.Driver.Core.dll
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\MongoDB.Driver.dll
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\MongoDB.Driver.Legacy.dll
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\Newtonsoft.Json.dll
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\log4net.xml
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\bin\Debug\Newtonsoft.Json.xml
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\obj\Debug\BT.ILSQueue.Business.dll
+C:\Work\Code\TS360Scrum\MAIN\source-3.4.5.50\BTNEXTGEN.SERVICES\BT.ILSQueue\BT.ILSQueue.Business\obj\Debug\BT.ILSQueue.Business.pdb

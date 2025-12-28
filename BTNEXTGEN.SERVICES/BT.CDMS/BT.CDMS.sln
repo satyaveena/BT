@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{32EA22D4-C94E-427B-BDC9-D0CCA4900B27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{D02854FF-B882-48B2-87CA-7C52185F8F12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{10E7016F-3FF3-45A9-AE91-1147D525250B}"
+	ProjectSection(SolutionItems) = preProject
+		Help.txt = Help.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthServer", "AuthServer", "{3CCB1832-AE68-4989-BDFE-B07108BAC699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Auth.Business", "BT.Auth.Business\BT.Auth.Business.csproj", "{E893FE35-191D-40F3-AA9D-2E6216C4DCEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Auth.Server", "BT.Auth.Server\BT.Auth.Server.csproj", "{E470B3B0-4A44-4BBF-AC0E-0B0B67EB16E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Auth.UnitTest", "BT.Auth.UnitTest\BT.Auth.UnitTest.csproj", "{6874E216-A8E0-481F-9F00-47F3A28027EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.CDMS.API", "BT.CDMS.API\BT.CDMS.API.csproj", "{A1ACE9F4-8066-40AD-BD08-AFDB5F00665E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.CDMS.Business", "BT.CDMS.Business\BT.CDMS.Business.csproj", "{20C5F7C0-CA46-4B20-A5DF-9740B5A8B470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.CDMS.UnitTest", "BT.CDMS.UnitTest\BT.CDMS.UnitTest.csproj", "{DE3789FA-835D-4531-8B28-26FF4108ABCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E893FE35-191D-40F3-AA9D-2E6216C4DCEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E893FE35-191D-40F3-AA9D-2E6216C4DCEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E893FE35-191D-40F3-AA9D-2E6216C4DCEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E893FE35-191D-40F3-AA9D-2E6216C4DCEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E470B3B0-4A44-4BBF-AC0E-0B0B67EB16E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E470B3B0-4A44-4BBF-AC0E-0B0B67EB16E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E470B3B0-4A44-4BBF-AC0E-0B0B67EB16E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E470B3B0-4A44-4BBF-AC0E-0B0B67EB16E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6874E216-A8E0-481F-9F00-47F3A28027EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6874E216-A8E0-481F-9F00-47F3A28027EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6874E216-A8E0-481F-9F00-47F3A28027EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6874E216-A8E0-481F-9F00-47F3A28027EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1ACE9F4-8066-40AD-BD08-AFDB5F00665E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1ACE9F4-8066-40AD-BD08-AFDB5F00665E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1ACE9F4-8066-40AD-BD08-AFDB5F00665E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1ACE9F4-8066-40AD-BD08-AFDB5F00665E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C5F7C0-CA46-4B20-A5DF-9740B5A8B470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C5F7C0-CA46-4B20-A5DF-9740B5A8B470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C5F7C0-CA46-4B20-A5DF-9740B5A8B470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C5F7C0-CA46-4B20-A5DF-9740B5A8B470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE3789FA-835D-4531-8B28-26FF4108ABCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE3789FA-835D-4531-8B28-26FF4108ABCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE3789FA-835D-4531-8B28-26FF4108ABCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE3789FA-835D-4531-8B28-26FF4108ABCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E893FE35-191D-40F3-AA9D-2E6216C4DCEA} = {3CCB1832-AE68-4989-BDFE-B07108BAC699}
+		{E470B3B0-4A44-4BBF-AC0E-0B0B67EB16E6} = {3CCB1832-AE68-4989-BDFE-B07108BAC699}
+		{6874E216-A8E0-481F-9F00-47F3A28027EC} = {3CCB1832-AE68-4989-BDFE-B07108BAC699}
+		{A1ACE9F4-8066-40AD-BD08-AFDB5F00665E} = {32EA22D4-C94E-427B-BDC9-D0CCA4900B27}
+		{20C5F7C0-CA46-4B20-A5DF-9740B5A8B470} = {32EA22D4-C94E-427B-BDC9-D0CCA4900B27}
+		{DE3789FA-835D-4531-8B28-26FF4108ABCB} = {D02854FF-B882-48B2-87CA-7C52185F8F12}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCD58D37-55A9-4E37-B9D4-D882356A94F4}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.baker-taylor.com/portal/nextgencollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BT.Auth.Business\\BT.Auth.Business.csproj
+		SccProjectTopLevelParentUniqueName1 = BT.CDMS.sln
+		SccProjectName1 = BT.Auth.Business
+		SccLocalPath1 = BT.Auth.Business
+		SccProjectUniqueName2 = BT.Auth.Server\\BT.Auth.Server.csproj
+		SccProjectTopLevelParentUniqueName2 = BT.CDMS.sln
+		SccProjectName2 = BT.Auth.Server
+		SccLocalPath2 = BT.Auth.Server
+		SccProjectUniqueName3 = BT.Auth.UnitTest\\BT.Auth.UnitTest.csproj
+		SccProjectTopLevelParentUniqueName3 = BT.CDMS.sln
+		SccProjectName3 = BT.Auth.UnitTest
+		SccLocalPath3 = BT.Auth.UnitTest
+		SccProjectUniqueName4 = BT.CDMS.API\\BT.CDMS.API.csproj
+		SccProjectTopLevelParentUniqueName4 = BT.CDMS.sln
+		SccProjectName4 = BT.CDMS.API
+		SccLocalPath4 = BT.CDMS.API
+		SccProjectUniqueName5 = BT.CDMS.Business\\BT.CDMS.Business.csproj
+		SccProjectTopLevelParentUniqueName5 = BT.CDMS.sln
+		SccProjectName5 = BT.CDMS.Business
+		SccLocalPath5 = BT.CDMS.Business
+		SccProjectUniqueName6 = BT.CDMS.UnitTest\\BT.CDMS.UnitTest.csproj
+		SccProjectTopLevelParentUniqueName6 = BT.CDMS.sln
+		SccProjectName6 = BT.CDMS.UnitTest
+		SccLocalPath6 = BT.CDMS.UnitTest
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,65 @@
+﻿CREATE PROCEDURE [dbo].[edi_CreateControlMessage_Activate] (
+	@BatchId bigint,
+	@EdiMessageType smallint,
+	@BatchName nvarchar (256),
+	@ReceiverPartyName nvarchar (256),
+	@SenderPartyName nvarchar (256),
+	@AgreementName nvarchar (256)
+)
+
+AS
+
+Declare @Status bit
+
+
+
+if exists (Select * from [dbo].[PAM_Control] Where [BatchId] = @BatchId AND [UsedOnce] = 0)
+Begin
+	Select @Status = 0
+	Select @Status as Status
+	return
+End
+
+
+INSERT INTO [dbo].[PAM_Control] (
+			[EdiMessageType],
+			[ActionType],
+			[ActionDateTime],
+			[UsedOnce],
+			[BatchId],
+			[BatchName],
+			[SenderPartyName],
+			[ReceiverPartyName],
+			[AgreementName] 
+		) VALUES (
+			@EdiMessageType,
+			'EdiBatchActivate',
+			GetDate(),
+			0,
+			@BatchId,
+			@BatchName,
+			@SenderPartyName,
+			@ReceiverPartyName,
+			@AgreementName
+		)
+
+if exists (Select * from [dbo].[PAM_Batching_Log] Where [BatchId] = @BatchId)
+Begin
+	Delete from [dbo].[PAM_Batching_Log] Where [BatchId] = @BatchId
+End
+
+Insert Into [dbo].[PAM_Batching_Log] ([BatchId]) Values (@BatchId)
+
+Select @Status = 1
+Select @Status as Status
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[edi_CreateControlMessage_Activate] TO [BTS_ADMIN_USERS]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[edi_CreateControlMessage_Activate] TO [BTS_OPERATORS]
+    AS [dbo];
+

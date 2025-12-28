@@ -1,0 +1,741 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="77f342c9-fbce-4f4e-8587-505459e8b851" LowerBound="1.1" HigherBound="188.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="RetrieveReconciliationFirstData" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="c36e34e7-6a03-4332-8219-b17e541ecd96" ParentLink="Module_PortType" LowerBound="9.1" HigherBound="16.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveEmailFirstData" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="1f504605-fae8-45be-9ea5-f8c8c6cad9f8" ParentLink="PortType_OperationDeclaration" LowerBound="11.1" HigherBound="15.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="1c988f4a-f496-41c0-b256-4e0b1e39c2a1" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="13.13" HigherBound="13.25">
+                    <om:Property Name="Ref" Value="RetrieveReconciliationFirstData.AttachmentIn" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="c5d90b0a-56a7-41ce-9db7-6a2cb91ff1a1" ParentLink="Module_PortType" LowerBound="16.1" HigherBound="23.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="672049b8-4294-4d7f-9d0d-9f5e93485df6" ParentLink="PortType_OperationDeclaration" LowerBound="18.1" HigherBound="22.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="33c5aa95-db61-463e-b04a-ac3426f3660a" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="20.13" HigherBound="20.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="53b72d9a-dee8-4928-927d-3502ef79667a" ParentLink="Module_PortType" LowerBound="23.1" HigherBound="30.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="GetExcelFileType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="01abc58a-e34e-4a4c-8719-c182a1d9c7b6" ParentLink="PortType_OperationDeclaration" LowerBound="25.1" HigherBound="29.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="961b1769-5f5a-4f2c-9922-2c2092a7ed36" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="27.13" HigherBound="27.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="0a28608a-32cf-4ec0-bf7f-b9a6bc45122a" ParentLink="Module_PortType" LowerBound="30.1" HigherBound="37.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="FTPCSVType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="9ce306ad-0ad2-4034-9fe1-dc4ef60f9225" ParentLink="PortType_OperationDeclaration" LowerBound="32.1" HigherBound="36.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="28211772-d180-4e82-b7e8-cd2f60b39ed4" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="34.13" HigherBound="34.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="de344183-39f1-4cbb-87e3-619714ec691f" ParentLink="Module_PortType" LowerBound="37.1" HigherBound="44.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CSVSendPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="d8fa812e-6fcb-4354-a949-001120debeed" ParentLink="PortType_OperationDeclaration" LowerBound="39.1" HigherBound="43.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e2b869f6-affe-4297-819a-d92f001f91cf" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="41.13" HigherBound="41.41">
+                    <om:Property Name="Ref" Value="RetrieveReconciliationFirstData.Schemas.FirstDataTolasReport" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="eefd72ad-9166-4746-8bb0-cfd0ae45e0af" ParentLink="Module_PortType" LowerBound="44.1" HigherBound="51.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ExcelToXMLRecievePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="9f5d9739-8f16-402c-98c5-bea887741f02" ParentLink="PortType_OperationDeclaration" LowerBound="46.1" HigherBound="50.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="9eb11787-37fd-47e1-9e38-76a95f64004e" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="48.13" HigherBound="48.33">
+                    <om:Property Name="Ref" Value="RetrieveReconciliationFirstData.Schemas.FirstDataXML" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="c471be8b-9891-4155-a548-7444ea6952d3" ParentLink="Module_PortType" LowerBound="51.1" HigherBound="58.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendAttachmentPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="479e5234-3d0f-478f-851d-3bac601ae9b3" ParentLink="PortType_OperationDeclaration" LowerBound="53.1" HigherBound="57.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="90edbbf7-2446-48df-899f-6f4ae3e0d4ae" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="55.13" HigherBound="55.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f1837d5f-5ca6-44b6-b112-0fab2e559f5a" ParentLink="Module_PortType" LowerBound="58.1" HigherBound="65.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveXMLPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="0c1d6354-425c-4de2-8107-f5b5176b06c2" ParentLink="PortType_OperationDeclaration" LowerBound="60.1" HigherBound="64.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="856ff15b-b4c5-45fe-a223-59b2d5af8028" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="62.13" HigherBound="62.33">
+                    <om:Property Name="Ref" Value="RetrieveReconciliationFirstData.Schemas.FirstDataXML" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="42532529-aa98-41cd-85b6-e0ba56376f6f" ParentLink="Module_PortType" LowerBound="65.1" HigherBound="72.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="e9da7066-b78c-4016-99f1-b6617ced4628" ParentLink="PortType_OperationDeclaration" LowerBound="67.1" HigherBound="71.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d73e8ada-75c6-4885-b151-1abaf58c4893" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="69.13" HigherBound="69.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="69cc849d-de4f-4575-b733-c5387d6a73c2" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="69.37" HigherBound="69.57">
+                    <om:Property Name="Ref" Value="RetrieveReconciliationFirstData.Schemas.FirstDataXML" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="4d1e8a7b-cb62-4d03-b020-5e1cdd0b54c1" ParentLink="Module_PortType" LowerBound="72.1" HigherBound="79.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendExceptionPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f72064de-4db5-481f-b25c-fcdf9cd1dc4f" ParentLink="PortType_OperationDeclaration" LowerBound="74.1" HigherBound="78.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="a845eed5-a3fe-426b-a18b-b8804a2a295b" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="76.13" HigherBound="76.82">
+                    <om:Property Name="Ref" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="9fe07cfa-f669-4eea-8bef-a36bc7ba98d8" ParentLink="Module_PortType" LowerBound="79.1" HigherBound="86.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendArchiveType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="129c3e82-c9fe-4b14-bba2-a31d6a42485a" ParentLink="PortType_OperationDeclaration" LowerBound="81.1" HigherBound="85.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="ab383650-9315-47b9-9de7-9e67218d6659" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="83.13" HigherBound="83.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="c08d9c82-c058-4b8c-bbdb-0559dc309c55" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="9.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="AttachmentIn" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="93072eb7-9a10-48fa-b652-5a51937b86c3" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="System.Xml.XmlDocument" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Body" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="PartDeclaration" OID="bf0d1dbc-4bbf-4099-9b04-a2202c8b34d9" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="7.1" HigherBound="8.1">
+                <om:Property Name="ClassName" Value="System.Xml.XmlDocument" />
+                <om:Property Name="IsBodyPart" Value="False" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Attachment" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="331d98b7-a076-4ecf-a02b-2da51fcca346" ParentLink="Module_ServiceDeclaration" LowerBound="86.1" HigherBound="187.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="FirstDataReconciliation" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="f3eead18-6463-4635-b983-d8f39cb1c73a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="103.1" HigherBound="104.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varArchiveFirstDataReport" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="fca871d6-deee-4aca-995e-5f3b981378bc" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="104.1" HigherBound="105.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="fileExtension" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="24c6818d-06e3-4e9f-a5f6-3762d9cb0086" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="105.1" HigherBound="106.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="attachmentName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="df5a3fec-680f-4a6c-b306-548f678519ef" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="106.1" HigherBound="107.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Guid" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="guid" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="21122b4b-bd6c-4a21-8785-145a8a899ed0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="107.1" HigherBound="108.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.DateTime" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="dtTime" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="e368c81d-e3f1-414a-be96-2f44977dcfb8" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="108.1" HigherBound="109.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strDtTime" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="LongRunningTransaction" OID="11a6612b-7c59-491a-89f4-72938dbd31a0" ParentLink="ServiceDeclaration_Transaction" LowerBound="87.21" HigherBound="87.69">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="180c53d8-5901-4f18-9b2e-aedc471ef550" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="97.1" HigherBound="98.1">
+                <om:Property Name="Type" Value="RetrieveReconciliationFirstData.AttachmentIn" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageIn" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9974900c-fe10-499c-bfdd-87287b69382e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="98.1" HigherBound="99.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageOut" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b6b07c8a-eda5-465b-a528-2857e4601dd0" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="99.1" HigherBound="100.1">
+                <om:Property Name="Type" Value="RetrieveReconciliationFirstData.Schemas.FirstDataXML" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="XMLMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="ae385f7c-a5a7-4483-9478-1a70800a590b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="100.1" HigherBound="101.1">
+                <om:Property Name="Type" Value="RetrieveReconciliationFirstData.Schemas.FirstDataTolasReport" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CSVMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8e7dc443-6f7a-4a74-8a64-52dd54761b0e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="101.1" HigherBound="102.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="faultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d3186a0c-9933-427b-b2f6-28653856f25f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="102.1" HigherBound="103.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ArchiveFirstDataReport" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="5b9c73bb-ff34-4242-97a9-745fd6581340" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="bdabaa90-b88f-404d-bcda-3ac8f10b121d" ParentLink="ServiceBody_Statement" LowerBound="111.1" HigherBound="117.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="MailReceiver" />
+                    <om:Property Name="MessageName" Value="MessageIn" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ReceiveAttachment" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="c641d1b4-6a22-4cdb-ad87-2ffdd3fc2efb" ParentLink="ServiceBody_Statement" LowerBound="117.1" HigherBound="185.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="LongRunningTransaction" OID="9d7eac93-d405-4d44-9bc0-2564ce365846" ParentLink="Scope_Transaction" LowerBound="118.18" HigherBound="118.56">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transaction_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="54c8ab73-df73-4518-beec-5e07d9739f82" ParentLink="ComplexStatement_Statement" LowerBound="122.1" HigherBound="129.1">
+                        <om:Property Name="Expression" Value="varArchiveFirstDataReport=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.RetrieveReconciliationFirstData&quot;,&quot;ArchiveFirstDataReport&quot;));&#xD;&#xA;&#xD;&#xA;guid= System.Guid.NewGuid();&#xD;&#xA;&#xD;&#xA;strDtTime= System.DateTime.Now.ToString(&quot;yyyy-MM-ddThhmmss&quot;);&#xD;&#xA;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="getSSO" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="84a0220b-021b-4322-9771-8a135cc5be80" ParentLink="ComplexStatement_Statement" LowerBound="129.1" HigherBound="142.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageRef" OID="2de0b71f-b727-42b7-b2b0-457522eb05bd" ParentLink="Construct_MessageRef" LowerBound="130.31" HigherBound="130.41">
+                            <om:Property Name="Ref" Value="MessageOut" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessageAssignment" OID="f707bb69-e054-4b46-a87e-bebb5213c277" ParentLink="ComplexStatement_Statement" LowerBound="132.1" HigherBound="141.1">
+                            <om:Property Name="Expression" Value="MessageOut = MessageIn.Attachment;&#xD;&#xA;attachmentName= MessageIn.Attachment(MIME.FileName);&#xD;&#xA;fileExtension= attachmentName.Substring(attachmentName.LastIndexOf('.')+1, attachmentName.Length-1 -attachmentName.LastIndexOf('.'));&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;attachment name &quot; ,attachmentName);&#xD;&#xA;&#xD;&#xA;attachmentName= attachmentName.Substring(0,(attachmentName.Length-fileExtension.Length)-1);&#xD;&#xA;&#xD;&#xA;MessageOut(FILE.ReceivedFileName)=attachmentName+&quot;_&quot;+strDtTime+&quot;.&quot; +fileExtension ; " />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="c9777dce-42dd-4d4e-bcb8-f212239cceaf" ParentLink="ComplexStatement_Statement" LowerBound="142.1" HigherBound="155.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_ArchiveFirstDataReport" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="34f4bf93-e670-4b48-984f-226f56efecce" ParentLink="ReallyComplexStatement_Branch" LowerBound="143.21" HigherBound="155.1">
+                            <om:Property Name="Expression" Value="varArchiveFirstDataReport == true" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ArchiveProfilesQuery" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="f95ed693-22f0-46ad-b161-e29905de0c3f" ParentLink="ComplexStatement_Statement" LowerBound="145.1" HigherBound="152.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructArchiveMessage" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="d2d5f0e4-ab7b-4c6d-916d-4d8253a3b929" ParentLink="ComplexStatement_Statement" LowerBound="148.1" HigherBound="151.1">
+                                    <om:Property Name="Expression" Value="ArchiveFirstDataReport = MessageOut;&#xD;&#xA;ArchiveFirstDataReport(FILE.ReceivedFileName)=attachmentName+&quot;_&quot;+ strDtTime+ &quot;.&quot; +fileExtension ; " />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="e2801b1c-187d-447f-b973-dbbf116df17e" ParentLink="Construct_MessageRef" LowerBound="146.35" HigherBound="146.57">
+                                    <om:Property Name="Ref" Value="ArchiveFirstDataReport" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="718442fc-84f5-4969-889a-a6d4bbb6f82e" ParentLink="ComplexStatement_Statement" LowerBound="152.1" HigherBound="154.1">
+                                <om:Property Name="PortName" Value="SendArchive" />
+                                <om:Property Name="MessageName" Value="ArchiveFirstDataReport" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="SendArchive" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="0b579a24-1f5f-49a2-b9e3-e259f1b48c0b" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="c6a75aab-3d34-4e37-b84e-535d95cec7e9" ParentLink="ComplexStatement_Statement" LowerBound="155.1" HigherBound="157.1">
+                        <om:Property Name="PortName" Value="SendAttachmentPort" />
+                        <om:Property Name="MessageName" Value="MessageOut" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_2" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="59829fa4-872a-4d23-ae63-aa9c64d9ea37" ParentLink="Scope_Catch" LowerBound="160.1" HigherBound="183.1">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="546ee21b-94ae-4063-8531-949100bd264c" ParentLink="Catch_Statement" LowerBound="163.1" HigherBound="178.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_faultMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="dd9f812f-d358-46c4-95f2-7b73f51b3d0a" ParentLink="Construct_MessageRef" LowerBound="164.35" HigherBound="164.47">
+                                <om:Property Name="Ref" Value="faultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="a2d3c401-ff74-45da-bcab-8010b4143fed" ParentLink="ComplexStatement_Statement" LowerBound="166.1" HigherBound="177.1">
+                                <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;faultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;faultMessage.FailureCategory=&quot;First Data Reconcilation Report Exception&quot;;&#xD;&#xA;faultMessage.FaultDescription=ex.Message;&#xD;&#xA;faultMessage.FaultCode=&quot;6001&quot;;&#xD;&#xA;faultMessage.FaultSeverity=  Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;//Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(faultMessage,MessageIn);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="d9b14858-a89d-429d-a06a-07361437759e" ParentLink="Catch_Statement" LowerBound="178.1" HigherBound="180.1">
+                            <om:Property Name="PortName" Value="SendException" />
+                            <om:Property Name="MessageName" Value="faultMessage" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_fault" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Suspend" OID="6fda2ce8-4584-4461-ae25-e13241df2b9c" ParentLink="Catch_Statement" LowerBound="180.1" HigherBound="182.1">
+                            <om:Property Name="ErrorMessage" Value="&quot;the exception is&quot; + ex.Message;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Suspend_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9dc40576-9b3d-4fd1-90b8-a9a526a8b691" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="89.1" HigherBound="91.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="RetrieveReconciliationFirstData.ReceiveEmailFirstData" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MailReceiver" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="d138b65f-7f98-41d7-bb22-b7677a3dcb53" ParentLink="PortDeclaration_CLRAttribute" LowerBound="89.1" HigherBound="90.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="e0f97340-d155-4d73-936c-ea7d3427315b" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="91.1" HigherBound="93.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="4" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="RetrieveReconciliationFirstData.SendAttachmentPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendAttachmentPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="c34e859f-b807-4988-a7cf-8e53ebe2b290" ParentLink="PortDeclaration_CLRAttribute" LowerBound="91.1" HigherBound="92.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9b607c98-cac2-4ffa-b67d-eb3b8c69c90c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="93.1" HigherBound="95.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="RetrieveReconciliationFirstData.SendExceptionPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendException" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="35285fba-513a-4c11-a092-b2f31f6a1f9c" ParentLink="PortDeclaration_CLRAttribute" LowerBound="93.1" HigherBound="94.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="2a6463dd-7184-4c53-b6fe-e8fb85d37f29" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="95.1" HigherBound="97.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="RetrieveReconciliationFirstData.SendArchiveType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendArchive" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="d51638fa-3982-4077-891d-25c09082c13c" ParentLink="PortDeclaration_CLRAttribute" LowerBound="95.1" HigherBound="96.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module RetrieveReconciliationFirstData
+{
+    internal messagetype AttachmentIn
+    {
+        body System.Xml.XmlDocument Body;
+        System.Xml.XmlDocument Attachment;
+    };
+    internal porttype ReceiveEmailFirstData
+    {
+        oneway Operation_1
+        {
+            AttachmentIn
+        };
+    };
+    internal porttype PortType_1
+    {
+        oneway Operation_1
+        {
+            System.Xml.XmlDocument
+        };
+    };
+    internal porttype GetExcelFileType
+    {
+        oneway Operation_1
+        {
+            System.Xml.XmlDocument
+        };
+    };
+    internal porttype FTPCSVType
+    {
+        oneway Operation_1
+        {
+            System.Xml.XmlDocument
+        };
+    };
+    internal porttype CSVSendPortType
+    {
+        oneway Operation_1
+        {
+            Schemas.FirstDataTolasReport
+        };
+    };
+    internal porttype ExcelToXMLRecievePortType
+    {
+        oneway Operation_1
+        {
+            Schemas.FirstDataXML
+        };
+    };
+    internal porttype SendAttachmentPortType
+    {
+        oneway Operation_1
+        {
+            System.Xml.XmlDocument
+        };
+    };
+    internal porttype ReceiveXMLPortType
+    {
+        oneway Operation_1
+        {
+            Schemas.FirstDataXML
+        };
+    };
+    internal porttype PortType_2
+    {
+        requestresponse Operation_1
+        {
+            System.Xml.XmlDocument, Schemas.FirstDataXML
+        };
+    };
+    internal porttype SendExceptionPortType
+    {
+        oneway Operation_1
+        {
+            Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage
+        };
+    };
+    internal porttype SendArchiveType
+    {
+        oneway Operation_1
+        {
+            System.Xml.XmlDocument
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction FirstDataReconciliation
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ReceiveEmailFirstData MailReceiver;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendAttachmentPortType SendAttachmentPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses SendExceptionPortType SendException;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendArchiveType SendArchive;
+        message AttachmentIn MessageIn;
+        message System.Xml.XmlDocument MessageOut;
+        message Schemas.FirstDataXML XMLMessage;
+        message Schemas.FirstDataTolasReport CSVMessage;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage faultMessage;
+        message System.Xml.XmlDocument ArchiveFirstDataReport;
+        System.Boolean varArchiveFirstDataReport;
+        System.String fileExtension;
+        System.String attachmentName;
+        System.Guid guid;
+        System.DateTime dtTime;
+        System.String strDtTime;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("bdabaa90-b88f-404d-bcda-3ac8f10b121d")]
+            activate receive (MailReceiver.Operation_1, MessageIn);
+            varArchiveFirstDataReport = true;
+            fileExtension = "";
+            attachmentName = "";
+            strDtTime = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c641d1b4-6a22-4cdb-ad87-2ffdd3fc2efb")]
+            scope longrunning transaction Transaction_2
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("54c8ab73-df73-4518-beec-5e07d9739f82")]
+                    varArchiveFirstDataReport=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.RetrieveReconciliationFirstData","ArchiveFirstDataReport"));
+                    
+                    guid= System.Guid.NewGuid();
+                    
+                    strDtTime= System.DateTime.Now.ToString("yyyy-MM-ddThhmmss");
+                    
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("84a0220b-021b-4322-9771-8a135cc5be80")]
+                    construct MessageOut
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f707bb69-e054-4b46-a87e-bebb5213c277")]
+                        MessageOut = MessageIn.Attachment;
+                        attachmentName= MessageIn.Attachment(MIME.FileName);
+                        fileExtension= attachmentName.Substring(attachmentName.LastIndexOf('.')+1, attachmentName.Length-1 -attachmentName.LastIndexOf('.'));
+                        System.Diagnostics.EventLog.WriteEntry("attachment name " ,attachmentName);
+                        
+                        attachmentName= attachmentName.Substring(0,(attachmentName.Length-fileExtension.Length)-1);
+                        
+                        MessageOut(FILE.ReceivedFileName)=attachmentName+"_"+strDtTime+"." +fileExtension ; 
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c9777dce-42dd-4d4e-bcb8-f212239cceaf")]
+                    if (varArchiveFirstDataReport == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f95ed693-22f0-46ad-b161-e29905de0c3f")]
+                        construct ArchiveFirstDataReport
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d2d5f0e4-ab7b-4c6d-916d-4d8253a3b929")]
+                            ArchiveFirstDataReport = MessageOut;
+                            ArchiveFirstDataReport(FILE.ReceivedFileName)=attachmentName+"_"+ strDtTime+ "." +fileExtension ; 
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("718442fc-84f5-4969-889a-a6d4bbb6f82e")]
+                        send (SendArchive.Operation_1, ArchiveFirstDataReport);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c6a75aab-3d34-4e37-b84e-535d95cec7e9")]
+                    send (SendAttachmentPort.Operation_1, MessageOut);
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("59829fa4-872a-4d23-ae63-aa9c64d9ea37")]
+                    catch (System.Exception ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("546ee21b-94ae-4063-8531-949100bd264c")]
+                        construct faultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a2d3c401-ff74-45da-bcab-8010b4143fed")]
+                            // Create fault exception Message
+                            faultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            // Assign Properties
+                            
+                            faultMessage.FailureCategory="First Data Reconcilation Report Exception";
+                            faultMessage.FaultDescription=ex.Message;
+                            faultMessage.FaultCode="6001";
+                            faultMessage.FaultSeverity=  Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                            //Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.AddMessage(faultMessage,MessageIn);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d9b14858-a89d-429d-a06a-07361437759e")]
+                        send (SendException.Operation_1, faultMessage);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6fda2ce8-4584-4461-ae25-e13241df2b9c")]
+                        suspend "the exception is" + ex.Message;
+                    }
+                }
+            }
+        }
+    }
+}
+

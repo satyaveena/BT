@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.Biztalk.MarcProfiles.Orchestrations", "BTNextGen.Biztalk.MarcProfile.Orchestrations\BTNextGen.Biztalk.MarcProfiles.Orchestrations.btproj", "{8E1661E7-6420-4F24-9F16-8A4FCEC11D97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.Biztalk.MarcProfiles.Schemas", "BTNextGen.Biztalk.MarcProfile.Schemas\BTNextGen.Biztalk.MarcProfiles.Schemas.btproj", "{4E14881F-E2E7-4231-BDC4-3E98C9C9C07D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.Biztalk.MarcProfiles.Maps", "BTNextGen.Biztalk.MarcProfiles.Maps\BTNextGen.Biztalk.MarcProfiles.Maps.btproj", "{83EBDE91-2B7A-4483-8885-271AE635BE20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTNextGen.Biztalk.MarcProfiles.Pipeline", "BTNextGen.Biztalk.MarcProfiles.Pipeline\BTNextGen.Biztalk.MarcProfiles.Pipeline.btproj", "{D132F27E-CB28-4EAF-B47E-A4B2C33BC128}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://btdevtfs/portal/nextgencollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BTNextGen.Biztalk.MarcProfile.Orchestrations\\BTNextGen.Biztalk.MarcProfiles.Orchestrations.btproj
+		SccProjectName1 = BTNextGen.Biztalk.MarcProfile.Orchestrations
+		SccLocalPath1 = BTNextGen.Biztalk.MarcProfile.Orchestrations
+		SccProjectUniqueName2 = BTNextGen.Biztalk.MarcProfile.Schemas\\BTNextGen.Biztalk.MarcProfiles.Schemas.btproj
+		SccProjectName2 = BTNextGen.Biztalk.MarcProfile.Schemas
+		SccLocalPath2 = BTNextGen.Biztalk.MarcProfile.Schemas
+		SccProjectUniqueName3 = BTNextGen.Biztalk.MarcProfiles.Maps\\BTNextGen.Biztalk.MarcProfiles.Maps.btproj
+		SccProjectName3 = BTNextGen.Biztalk.MarcProfiles.Maps
+		SccLocalPath3 = BTNextGen.Biztalk.MarcProfiles.Maps
+		SccProjectUniqueName4 = BTNextGen.Biztalk.MarcProfiles.Pipeline\\BTNextGen.Biztalk.MarcProfiles.Pipeline.btproj
+		SccProjectName4 = BTNextGen.Biztalk.MarcProfiles.Pipeline
+		SccLocalPath4 = BTNextGen.Biztalk.MarcProfiles.Pipeline
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E1661E7-6420-4F24-9F16-8A4FCEC11D97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E1661E7-6420-4F24-9F16-8A4FCEC11D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E1661E7-6420-4F24-9F16-8A4FCEC11D97}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8E1661E7-6420-4F24-9F16-8A4FCEC11D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E1661E7-6420-4F24-9F16-8A4FCEC11D97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E1661E7-6420-4F24-9F16-8A4FCEC11D97}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4E14881F-E2E7-4231-BDC4-3E98C9C9C07D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E14881F-E2E7-4231-BDC4-3E98C9C9C07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E14881F-E2E7-4231-BDC4-3E98C9C9C07D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4E14881F-E2E7-4231-BDC4-3E98C9C9C07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E14881F-E2E7-4231-BDC4-3E98C9C9C07D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E14881F-E2E7-4231-BDC4-3E98C9C9C07D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{83EBDE91-2B7A-4483-8885-271AE635BE20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83EBDE91-2B7A-4483-8885-271AE635BE20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83EBDE91-2B7A-4483-8885-271AE635BE20}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{83EBDE91-2B7A-4483-8885-271AE635BE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83EBDE91-2B7A-4483-8885-271AE635BE20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83EBDE91-2B7A-4483-8885-271AE635BE20}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D132F27E-CB28-4EAF-B47E-A4B2C33BC128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D132F27E-CB28-4EAF-B47E-A4B2C33BC128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D132F27E-CB28-4EAF-B47E-A4B2C33BC128}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D132F27E-CB28-4EAF-B47E-A4B2C33BC128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D132F27E-CB28-4EAF-B47E-A4B2C33BC128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D132F27E-CB28-4EAF-B47E-A4B2C33BC128}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

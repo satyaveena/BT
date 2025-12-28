@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s1="http://schemas.microsoft.com/CommerceServer/2004/02/WebServices" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService">
+      <s:element name="CreateProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="profileXml">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="inAdapterContext" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateProfileResult" nillable="true" type="tns:ProfileOperationResponse" />
+            <s:element minOccurs="0" maxOccurs="1" name="profileXml">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProfileOperationResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ProfileType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrimaryKeyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrimaryKeyValue" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="primaryKeyValue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="profileType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfileResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMultipleProfiles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="primaryKeyList" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="profileType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMultipleProfilesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMultipleProfilesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="profileXml">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="forceOverwrite" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="inAdapterContext" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateProfileResult" nillable="true" type="tns:ProfileOperationResponse" />
+            <s:element minOccurs="0" maxOccurs="1" name="profileXml">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="primaryKeyValue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="profileType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteProfileResult" nillable="true" type="tns:ProfileOperationResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllSiteTerms">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllSiteTermsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllSiteTermsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSiteTerm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siteTermName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSiteTermResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSiteTermResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSiteTerm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siteTermXml">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSiteTermResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateSiteTerm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siteTermXml">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSiteTermResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteSiteTerm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siteTermName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSiteTermResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSearchableEntities">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSearchableEntitiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSearchableEntitiesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSearch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="profileType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="searchClause">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="searchOptions" type="tns:SearchOptions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SearchOptions">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NumberOfRecordsToReturn" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartRecord" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SortProperties" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SortDescending" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="PropertiesToReturn" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ExecuteSearchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteSearchResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuthorizedTasks">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAuthorizedTasksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuthorizedTasksResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuthorizedProfileDefinitionNames">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requiredPermissions" type="tns:ProfilePermissions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="ProfilePermissions">
+        <s:list>
+          <s:simpleType>
+            <s:restriction base="s:string">
+              <s:enumeration value="None" />
+              <s:enumeration value="Create" />
+              <s:enumeration value="Retrieve" />
+              <s:enumeration value="Update" />
+              <s:enumeration value="Delete" />
+              <s:enumeration value="ReadWrite" />
+              <s:enumeration value="AllAccess" />
+            </s:restriction>
+          </s:simpleType>
+        </s:list>
+      </s:simpleType>
+      <s:element name="GetAuthorizedProfileDefinitionNamesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuthorizedProfileDefinitionNamesResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfilePresentationInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cultureCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfilePresentationInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfilePresentationInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllProfileDefinitionNames">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllProfileDefinitionNamesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllProfileDefinitionNamesResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllProfileDefinitions">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllProfileDefinitionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllProfileDefinitionsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileDefinition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="profileType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileDefinitionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfileDefinitionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefreshProfileInCache">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="primaryKeyValue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="profileType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefreshProfileInCacheResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RefreshAllProfilesInCache">
+        <s:complexType />
+      </s:element>
+      <s:element name="RefreshAllProfilesInCacheResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSearchResultsLimit">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSearchResultsLimitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSearchResultsLimitResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/CommerceServer/2004/02/WebServices">
+      <s:element name="GetServiceVersion">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetServiceVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetServiceVersionResult" type="s1:WebServiceVersion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WebServiceVersion">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MajorVersion" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinorVersion" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateProfile" />
+  </wsdl:message>
+  <wsdl:message name="CreateProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfile" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMultipleProfilesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMultipleProfiles" />
+  </wsdl:message>
+  <wsdl:message name="GetMultipleProfilesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMultipleProfilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateProfile" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteProfile" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSiteTermsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllSiteTerms" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSiteTermsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllSiteTermsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSiteTermSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSiteTerm" />
+  </wsdl:message>
+  <wsdl:message name="GetSiteTermSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSiteTermResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateSiteTermSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateSiteTerm" />
+  </wsdl:message>
+  <wsdl:message name="CreateSiteTermSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateSiteTermResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSiteTermSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSiteTerm" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSiteTermSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSiteTermResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSiteTermSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSiteTerm" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSiteTermSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSiteTermResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSearchableEntitiesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSearchableEntities" />
+  </wsdl:message>
+  <wsdl:message name="GetSearchableEntitiesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSearchableEntitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSearchSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSearch" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSearchSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthorizedTasksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuthorizedTasks" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthorizedTasksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuthorizedTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthorizedProfileDefinitionNamesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuthorizedProfileDefinitionNames" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthorizedProfileDefinitionNamesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuthorizedProfileDefinitionNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProfilePresentationInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfilePresentationInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetProfilePresentationInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfilePresentationInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllProfileDefinitionNamesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllProfileDefinitionNames" />
+  </wsdl:message>
+  <wsdl:message name="GetAllProfileDefinitionNamesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllProfileDefinitionNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllProfileDefinitionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllProfileDefinitions" />
+  </wsdl:message>
+  <wsdl:message name="GetAllProfileDefinitionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllProfileDefinitionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileDefinitionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfileDefinition" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileDefinitionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfileDefinitionResponse" />
+  </wsdl:message>
+  <wsdl:message name="RefreshProfileInCacheSoapIn">
+    <wsdl:part name="parameters" element="tns:RefreshProfileInCache" />
+  </wsdl:message>
+  <wsdl:message name="RefreshProfileInCacheSoapOut">
+    <wsdl:part name="parameters" element="tns:RefreshProfileInCacheResponse" />
+  </wsdl:message>
+  <wsdl:message name="RefreshAllProfilesInCacheSoapIn">
+    <wsdl:part name="parameters" element="tns:RefreshAllProfilesInCache" />
+  </wsdl:message>
+  <wsdl:message name="RefreshAllProfilesInCacheSoapOut">
+    <wsdl:part name="parameters" element="tns:RefreshAllProfilesInCacheResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceVersionSoapIn">
+    <wsdl:part name="parameters" element="s1:GetServiceVersion" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceVersionSoapOut">
+    <wsdl:part name="parameters" element="s1:GetServiceVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSearchResultsLimitSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSearchResultsLimit" />
+  </wsdl:message>
+  <wsdl:message name="GetSearchResultsLimitSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSearchResultsLimitResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ProfilesWebServiceSoap">
+    <wsdl:operation name="CreateProfile">
+      <wsdl:input message="tns:CreateProfileSoapIn" />
+      <wsdl:output message="tns:CreateProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfile">
+      <wsdl:input message="tns:GetProfileSoapIn" />
+      <wsdl:output message="tns:GetProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMultipleProfiles">
+      <wsdl:input message="tns:GetMultipleProfilesSoapIn" />
+      <wsdl:output message="tns:GetMultipleProfilesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfile">
+      <wsdl:input message="tns:UpdateProfileSoapIn" />
+      <wsdl:output message="tns:UpdateProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProfile">
+      <wsdl:input message="tns:DeleteProfileSoapIn" />
+      <wsdl:output message="tns:DeleteProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSiteTerms">
+      <wsdl:input message="tns:GetAllSiteTermsSoapIn" />
+      <wsdl:output message="tns:GetAllSiteTermsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteTerm">
+      <wsdl:input message="tns:GetSiteTermSoapIn" />
+      <wsdl:output message="tns:GetSiteTermSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSiteTerm">
+      <wsdl:input message="tns:CreateSiteTermSoapIn" />
+      <wsdl:output message="tns:CreateSiteTermSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSiteTerm">
+      <wsdl:input message="tns:UpdateSiteTermSoapIn" />
+      <wsdl:output message="tns:UpdateSiteTermSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSiteTerm">
+      <wsdl:input message="tns:DeleteSiteTermSoapIn" />
+      <wsdl:output message="tns:DeleteSiteTermSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchableEntities">
+      <wsdl:input message="tns:GetSearchableEntitiesSoapIn" />
+      <wsdl:output message="tns:GetSearchableEntitiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSearch">
+      <wsdl:input message="tns:ExecuteSearchSoapIn" />
+      <wsdl:output message="tns:ExecuteSearchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizedTasks">
+      <wsdl:input message="tns:GetAuthorizedTasksSoapIn" />
+      <wsdl:output message="tns:GetAuthorizedTasksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizedProfileDefinitionNames">
+      <wsdl:input message="tns:GetAuthorizedProfileDefinitionNamesSoapIn" />
+      <wsdl:output message="tns:GetAuthorizedProfileDefinitionNamesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfilePresentationInfo">
+      <wsdl:input message="tns:GetProfilePresentationInfoSoapIn" />
+      <wsdl:output message="tns:GetProfilePresentationInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProfileDefinitionNames">
+      <wsdl:input message="tns:GetAllProfileDefinitionNamesSoapIn" />
+      <wsdl:output message="tns:GetAllProfileDefinitionNamesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProfileDefinitions">
+      <wsdl:input message="tns:GetAllProfileDefinitionsSoapIn" />
+      <wsdl:output message="tns:GetAllProfileDefinitionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileDefinition">
+      <wsdl:input message="tns:GetProfileDefinitionSoapIn" />
+      <wsdl:output message="tns:GetProfileDefinitionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RefreshProfileInCache">
+      <wsdl:input message="tns:RefreshProfileInCacheSoapIn" />
+      <wsdl:output message="tns:RefreshProfileInCacheSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RefreshAllProfilesInCache">
+      <wsdl:input message="tns:RefreshAllProfilesInCacheSoapIn" />
+      <wsdl:output message="tns:RefreshAllProfilesInCacheSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceVersion">
+      <wsdl:input message="tns:GetServiceVersionSoapIn" />
+      <wsdl:output message="tns:GetServiceVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchResultsLimit">
+      <wsdl:input message="tns:GetSearchResultsLimitSoapIn" />
+      <wsdl:output message="tns:GetSearchResultsLimitSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProfilesWebServiceSoap" type="tns:ProfilesWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateProfile">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/CreateProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfile">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMultipleProfiles">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetMultipleProfiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfile">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/UpdateProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProfile">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/DeleteProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSiteTerms">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetAllSiteTerms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteTerm">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetSiteTerm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSiteTerm">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/CreateSiteTerm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSiteTerm">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/UpdateSiteTerm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSiteTerm">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/DeleteSiteTerm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchableEntities">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetSearchableEntities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSearch">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/ExecuteSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizedTasks">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetAuthorizedTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizedProfileDefinitionNames">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetAuthorizedProfileDefinitionNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfilePresentationInfo">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetProfilePresentationInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProfileDefinitionNames">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetAllProfileDefinitionNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProfileDefinitions">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetAllProfileDefinitions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileDefinition">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetProfileDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshProfileInCache">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/RefreshProfileInCache" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshAllProfilesInCache">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/RefreshAllProfilesInCache" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceVersion">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2004/02/WebServices/GetServiceVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchResultsLimit">
+      <soap:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetSearchResultsLimit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ProfilesWebServiceSoap12" type="tns:ProfilesWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateProfile">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/CreateProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfile">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMultipleProfiles">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetMultipleProfiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfile">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/UpdateProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProfile">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/DeleteProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSiteTerms">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetAllSiteTerms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteTerm">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetSiteTerm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSiteTerm">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/CreateSiteTerm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSiteTerm">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/UpdateSiteTerm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSiteTerm">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/DeleteSiteTerm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchableEntities">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetSearchableEntities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSearch">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/ExecuteSearch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizedTasks">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetAuthorizedTasks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizedProfileDefinitionNames">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetAuthorizedProfileDefinitionNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfilePresentationInfo">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetProfilePresentationInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProfileDefinitionNames">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetAllProfileDefinitionNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProfileDefinitions">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetAllProfileDefinitions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileDefinition">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetProfileDefinition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshProfileInCache">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/RefreshProfileInCache" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshAllProfilesInCache">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/RefreshAllProfilesInCache" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceVersion">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2004/02/WebServices/GetServiceVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchResultsLimit">
+      <soap12:operation soapAction="http://schemas.microsoft.com/CommerceServer/2006/03/ProfilesWebService/GetSearchResultsLimit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProfilesWebService">
+    <wsdl:port name="ProfilesWebServiceSoap" binding="tns:ProfilesWebServiceSoap">
+      <soap:address location="http://localhost:100/TS360_ProfilesWebService/ProfilesWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ProfilesWebServiceSoap12" binding="tns:ProfilesWebServiceSoap12">
+      <soap12:address location="http://localhost:100/TS360_ProfilesWebService/ProfilesWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

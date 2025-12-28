@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BT.TS360API.ServiceContracts</RootNamespace>
+    <AssemblyName>BT.TS360API.ServiceContracts</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BTNextGenKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BT.FSIS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=aae20afbbe14a27c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\BT.FSIS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountSummary.cs" />
+    <Compile Include="BasketAccountType.cs" />
+    <Compile Include="ActiveCartItem.cs" />
+    <Compile Include="AddProductToCartRequest.cs" />
+    <Compile Include="AddToCartOuput.cs" />
+    <Compile Include="AddToCartStatusObject.cs" />
+    <Compile Include="AddToNewCartObject.cs" />
+    <Compile Include="AppServiceResult.cs" />
+    <Compile Include="Axis360\Axis360CheckInventoryResponse.cs" />
+    <Compile Include="Axis360\Axis360InventoryResponse.cs" />
+    <Compile Include="Axis360\Axis360Token.cs" />
+    <Compile Include="BaseRequest.cs" />
+    <Compile Include="BasketInformationOfMiniCart.cs" />
+    <Compile Include="BTGridDataContract.cs" />
+    <Compile Include="CampaignAdItem.cs" />
+    <Compile Include="Cart.cs" />
+    <Compile Include="CartAccount.cs" />
+    <Compile Include="CartAccountSummary.cs" />
+    <Compile Include="CartFolder.cs" />
+    <Compile Include="Carts.cs" />
+    <Compile Include="CheckForDuplicatesObject.cs" />
+    <Compile Include="CheckRealTimeInventoryForQuickCartDetailsInfoReponse.cs" />
+    <Compile Include="ComboBoxContext.cs" />
+    <Compile Include="ComboBoxData.cs" />
+    <Compile Include="CommerceProfileContract.cs" />
+    <Compile Include="ApplicationAuthKey.cs" />
+    <Compile Include="CreditCard.cs" />
+    <Compile Include="DefaultAccountObject.cs" />
+    <Compile Include="DemandInfoForItemContract.cs" />
+    <Compile Include="DownloadFormatOptionEntity.cs" />
+    <Compile Include="ESPCode.cs" />
+    <Compile Include="ESPRankDetailInfo.cs" />
+    <Compile Include="Exceptions\IEntityValidator.cs" />
+    <Compile Include="GetWhatHotAndPopularFeedDataResponse.cs" />
+    <Compile Include="GridNoteCount.cs" />
+    <Compile Include="ILS\ILSAPIRequestLog.cs" />
+    <Compile Include="InventoryStatusArgContract.cs" />
+    <Compile Include="Inventory\DemandHistoryRequest.cs" />
+    <Compile Include="Inventory\DemandHistoryResponse.cs" />
+    <Compile Include="Inventory\InventoryDemandRequest.cs" />
+    <Compile Include="Inventory\InventoryStockArg.cs" />
+    <Compile Include="MARCProfile.cs" />
+    <Compile Include="MarketingApprovedDiscount.cs" />
+    <Compile Include="NewReleaseCalendar.cs" />
+    <Compile Include="NoSqlServiceResult.cs" />
+    <Compile Include="NRCContextObject.cs" />
+    <Compile Include="Order\CustomerService.cs" />
+    <Compile Include="Order\OrderSearchExport.cs" />
+    <Compile Include="Order\OrderSearchFacet.cs" />
+    <Compile Include="Order\OrderSearchSummaryResponse.cs" />
+    <Compile Include="Order\ProductDupCheck.cs" />
+    <Compile Include="PPCSubscription.cs" />
+    <Compile Include="Product\DiversityProducts.cs" />
+    <Compile Include="Product\ProductDetail.cs" />
+    <Compile Include="Product\ProductDetailInfo.cs" />
+    <Compile Include="Profiles\BTProductInterestGroup.cs" />
+    <Compile Include="Profiles\MyPreferencesProfile.cs" />
+    <Compile Include="Profiles\SearchForUsersToProxyRequest.cs" />
+    <Compile Include="Profiles\UserProfileCdms.cs" />
+    <Compile Include="ComboBoxDataResult.cs" />
+    <Compile Include="QuickCart.cs" />
+    <Compile Include="Request\Axis360CheckCirculationRequest.cs" />
+    <Compile Include="Request\Axis360CheckInventoryRequest.cs" />
+    <Compile Include="Request\Axis360CirculationRequest.cs" />
+    <Compile Include="Request\IlsAcquisitionsRequest.cs" />
+    <Compile Include="Request\GetCdmsListUserPagingRequest.cs" />
+    <Compile Include="Request\GetWhatHotAndPopularFeedDataRequest.cs" />
+    <Compile Include="Request\ItemDetailsNavBarInfoRequest.cs" />
+    <Compile Include="Request\LineStatusRequest.cs" />
+    <Compile Include="Request\MarcProfileResponse.cs" />
+    <Compile Include="Request\OrderSearchLinesRequest.cs" />
+    <Compile Include="Request\OrderSearchLinesResponseResult.cs" />
+    <Compile Include="Request\OrderShippingStatusRequest.cs" />
+    <Compile Include="Request\SendCdmsListDistributionRequest.cs" />
+    <Compile Include="Request\DataFixPersitUserNoteRequest.cs" />
+    <Compile Include="Request\DataFixSendEmailToBtRequest.cs" />
+    <Compile Include="Request\GetProductAdditionAnnotationRequest.cs" />
+    <Compile Include="Request\GetProductBiographiesRequest.cs" />
+    <Compile Include="Request\GetProductReviewIndicatorRequest.cs" />
+    <Compile Include="Request\GetProductFlapCopyRequest.cs" />
+    <Compile Include="Request\GetProductMuzeRequest.cs" />
+    <Compile Include="Request\GetProductReviewRequest.cs" />
+    <Compile Include="Request\GetProductTOCRequest.cs" />
+    <Compile Include="Request\GetStockPriceCheckForQuickSearchRequest.cs" />
+    <Compile Include="Request\AltFormatRequest.cs" />
+    <Compile Include="Request\GetProductExcerptsRequest.cs" />
+    <Compile Include="Request\GridFieldsMyPreferenceForNewGridRequest.cs" />
+    <Compile Include="SearchCdmsAdditionalUsersRequest.cs" />
+    <Compile Include="SearchServiceResponse.cs" />
+    <Compile Include="SearchTooltipConextData.cs" />
+    <Compile Include="Search\AdvancedSearchSession.cs" />
+    <Compile Include="Search\BTListsContract.cs" />
+    <Compile Include="Search\ItemDetailContract.cs" />
+    <Compile Include="Pricing\ItemPricing.cs" />
+    <Compile Include="Pricing\LineRepricedInfo.cs" />
+    <Compile Include="Pricing\ListPricingArgument.cs" />
+    <Compile Include="Pricing\PromotionPrice.cs" />
+    <Compile Include="Pricing\SOPPricingArgument.cs" />
+    <Compile Include="Pricing\TOLASPricingArgument.cs" />
+    <Compile Include="Profiles\OrganizationPremiumServices.cs" />
+    <Compile Include="Search\ProductDetailPopup.cs" />
+    <Compile Include="Search\RecordIndexArgs.cs" />
+    <Compile Include="Request\Notes.cs" />
+    <Compile Include="Request\QuantityOfCard.cs" />
+    <Compile Include="InventoryResults.cs" />
+    <Compile Include="Inventory\InventoryDemandResponse.cs" />
+    <Compile Include="ItemDataContract.cs" />
+    <Compile Include="LandingPage.cs" />
+    <Compile Include="NoteClientObject.cs" />
+    <Compile Include="ObjectWithTotalPage.cs" />
+    <Compile Include="OrderForm.cs" />
+    <Compile Include="PricingReturn4ClientObject.cs" />
+    <Compile Include="Pricing\AccountInfo4Pricing.cs" />
+    <Compile Include="Pricing\BasketLineItemUpdated.cs" />
+    <Compile Include="Pricing\RequiredPricingInfo.cs" />
+    <Compile Include="Profiles\Account.cs" />
+    <Compile Include="Profiles\Organization.cs" />
+    <Compile Include="Profiles\UserProfile.cs" />
+    <Compile Include="Profiles\Warehouse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request\QuickSearchAddProductsToCart.cs" />
+    <Compile Include="SearchRequest.cs" />
+    <Compile Include="Search\AdvancedSearchObject.cs" />
+    <Compile Include="Search\FlagObject.cs" />
+    <Compile Include="Search\FastSearchResultItem.cs" />
+    <Compile Include="Search\ISBNLookUpLink.cs" />
+    <Compile Include="Search\OnHandInventory.cs" />
+    <Compile Include="Search\ProductContent.cs" />
+    <Compile Include="Search\ProductSearchResultItem.cs" />
+    <Compile Include="Search\ProductSearchResults.cs" />
+    <Compile Include="Search\SavedSearchEntity.cs" />
+    <Compile Include="Search\SearchArguments.cs" />
+    <Compile Include="Search\SearchExpression.cs" />
+    <Compile Include="Search\SimpleRequests.cs" />
+    <Compile Include="Search\SiteTermRequest.cs" />
+    <Compile Include="Search\SearchResults.cs" />
+    <Compile Include="Search\TwilightListContract.cs" />
+    <Compile Include="ShareGroupMember.cs" />
+    <Compile Include="SiteContextObject.cs" />
+    <Compile Include="SiteTermObject.cs" />
+    <Compile Include="TargetingParam.cs" />
+    <Compile Include="UpdateItemResult.cs" />
+    <Compile Include="UserGridFieldObject.cs" />
+    <Compile Include="UserReviewType.cs" />
+    <Compile Include="WCFObjectReturnToClient.cs" />
+    <Compile Include="PopularFeedLandingPage.cs" />
+    <Compile Include="WhatHotLandingPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TS360Constants\BT.TS360Constants.csproj">
+      <Project>{f02c91f8-1c30-4116-8cf2-bb4286a554f8}</Project>
+      <Name>BT.TS360Constants</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BTNextGenKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ContentManagement\SharePointListItem\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\gacutil.exe"  /i $(TargetPath)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

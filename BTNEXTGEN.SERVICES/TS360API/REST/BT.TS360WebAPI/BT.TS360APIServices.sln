@@ -1,0 +1,153 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.ServiceContracts", "BT.TS360API.ServiceContracts\BT.TS360API.ServiceContracts.csproj", "{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Cache", "BT.TS360API.Cache\BT.TS360API.Cache.csproj", "{3AD85A78-1152-4DE6-874C-C1D798EC1B42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Logging", "BT.TS360API.Logging\BT.TS360API.Logging.csproj", "{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Common", "BT.TS360API.Common\BT.TS360API.Common.csproj", "{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360Constants", "TS360Constants\BT.TS360Constants.csproj", "{F02C91F8-1C30-4116-8CF2-BB4286A554F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.ExternalServices", "BT.TS360API.ExternalServices\BT.TS360API.ExternalServices.csproj", "{2B52E44C-D562-4087-8A48-3A00818DD6BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360SP", "BT.TS360SP\BT.TS360SP.csproj", "{0C232023-0675-4249-9CF4-4BC68ABDFF98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Marketing", "BT.TS360API.Marketing\BT.TS360API.Marketing.csproj", "{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Services", "BT.TS360API.Services\BT.TS360API.Services.csproj", "{984B72D0-3BE2-49B3-B62E-CAE5E18D1427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.MongoDB", "BT.TS360API.MongoDB\BT.TS360API.MongoDB.csproj", "{6FF2C7A7-1CA6-4025-8348-B356F9341E1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Authentication", "BT.TS360API.Authentication\BT.TS360API.Authentication.csproj", "{2D275CFA-8343-40B1-B01C-CEA7AF453592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.ExternalDataSendService", "BT.TS360API.ExternalDataSendService\BT.TS360API.ExternalDataSendService.csproj", "{0096C719-F860-4917-9305-F32A85EBF45F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/baker-taylorts360
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BT.TS360API.Services\\BT.TS360API.Services.csproj
+		SccProjectName1 = BT.TS360API.Services
+		SccLocalPath1 = BT.TS360API.Services
+		SccProjectUniqueName2 = BT.TS360API.ServiceContracts\\BT.TS360API.ServiceContracts.csproj
+		SccProjectName2 = BT.TS360API.ServiceContracts
+		SccLocalPath2 = BT.TS360API.ServiceContracts
+		SccProjectUniqueName3 = BT.TS360API.Cache\\BT.TS360API.Cache.csproj
+		SccProjectName3 = BT.TS360API.Cache
+		SccLocalPath3 = BT.TS360API.Cache
+		SccProjectUniqueName4 = BT.TS360API.Logging\\BT.TS360API.Logging.csproj
+		SccProjectName4 = BT.TS360API.Logging
+		SccLocalPath4 = BT.TS360API.Logging
+		SccProjectUniqueName5 = BT.TS360API.Common\\BT.TS360API.Common.csproj
+		SccProjectName5 = BT.TS360API.Common
+		SccLocalPath5 = BT.TS360API.Common
+		SccProjectUniqueName6 = TS360Constants\\BT.TS360Constants.csproj
+		SccProjectName6 = TS360Constants
+		SccLocalPath6 = TS360Constants
+		SccProjectUniqueName7 = BT.TS360API.ExternalServices\\BT.TS360API.ExternalServices.csproj
+		SccProjectName7 = BT.TS360API.ExternalServices
+		SccLocalPath7 = BT.TS360API.ExternalServices
+		SccProjectUniqueName8 = BT.TS360SP\\BT.TS360SP.csproj
+		SccProjectName8 = BT.TS360SP
+		SccLocalPath8 = BT.TS360SP
+		SccProjectUniqueName9 = BT.TS360API.Marketing\\BT.TS360API.Marketing.csproj
+		SccProjectName9 = BT.TS360API.Marketing
+		SccLocalPath9 = BT.TS360API.Marketing
+		SccProjectUniqueName10 = BT.TS360API.MongoDB\\BT.TS360API.MongoDB.csproj
+		SccProjectName10 = BT.TS360API.MongoDB
+		SccLocalPath10 = BT.TS360API.MongoDB
+		SccProjectUniqueName11 = BT.TS360API.Authentication\\BT.TS360API.Authentication.csproj
+		SccProjectName11 = BT.TS360API.Authentication
+		SccLocalPath11 = BT.TS360API.Authentication
+		SccProjectUniqueName12 = BT.TS360API.ExternalDataSendService\\BT.TS360API.ExternalDataSendService.csproj
+		SccProjectName12 = BT.TS360API.ExternalDataSendService
+		SccLocalPath12 = BT.TS360API.ExternalDataSendService
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CodeAnalysis|Any CPU = CodeAnalysis|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{984B72D0-3BE2-49B3-B62E-CAE5E18D1427}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{984B72D0-3BE2-49B3-B62E-CAE5E18D1427}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{984B72D0-3BE2-49B3-B62E-CAE5E18D1427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984B72D0-3BE2-49B3-B62E-CAE5E18D1427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984B72D0-3BE2-49B3-B62E-CAE5E18D1427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984B72D0-3BE2-49B3-B62E-CAE5E18D1427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF2C7A7-1CA6-4025-8348-B356F9341E1B}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF2C7A7-1CA6-4025-8348-B356F9341E1B}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{6FF2C7A7-1CA6-4025-8348-B356F9341E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF2C7A7-1CA6-4025-8348-B356F9341E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF2C7A7-1CA6-4025-8348-B356F9341E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF2C7A7-1CA6-4025-8348-B356F9341E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D275CFA-8343-40B1-B01C-CEA7AF453592}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{2D275CFA-8343-40B1-B01C-CEA7AF453592}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{2D275CFA-8343-40B1-B01C-CEA7AF453592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D275CFA-8343-40B1-B01C-CEA7AF453592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D275CFA-8343-40B1-B01C-CEA7AF453592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D275CFA-8343-40B1-B01C-CEA7AF453592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0096C719-F860-4917-9305-F32A85EBF45F}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{0096C719-F860-4917-9305-F32A85EBF45F}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{0096C719-F860-4917-9305-F32A85EBF45F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0096C719-F860-4917-9305-F32A85EBF45F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0096C719-F860-4917-9305-F32A85EBF45F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0096C719-F860-4917-9305-F32A85EBF45F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

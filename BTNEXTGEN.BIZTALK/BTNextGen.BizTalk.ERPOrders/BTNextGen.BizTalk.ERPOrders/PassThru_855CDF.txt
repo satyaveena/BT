@@ -1,0 +1,20 @@
+BEGIN8551237006        2011042202:38 PM        
+ISA*00*          *00*          *01*0064BTH1000    *01*NEXTGEN        *110422*0238*U*00304*000000001*0*P*^
+GS*PR*0064BTH1000**110422*0238**X*003040
+ST*855*000000001
+BAK*00*AD*PONumberCDF06         *110422*                              *0                                            *                              *1237006                      *110422                              
+PO1*0000000001          *00000000000001 *UN*              *  *IB*00097361552248                                  *B5*PRODUCT NOT FOUND             *  *                              *PO*PONumberCDF06                  VN*                  *
+ACK*R1*000000000000001*UN                             
+PO1*0000000002          *00000000000001 *UN*              *  *IB*00097361328447                                  *B5*PRODUCT NOT FOUND             *  *                              *PO*PONumberCDF06                  VN*                  *
+ACK*R2*000000000000001*UN                             
+PO1*000000003           *00000000000001 *UN*              *  *IB*9781576233344                                   *B5*PRODUCT NOT FOUND             *  *                              *PO*PONumberCDF06                  VN*                  *
+ACK*R2*000000000000001*UN                             
+PO1*0000000004          *00000000000001 *UN*              *  *IB*00089859900129                                  *B5*PRODUCT NOT FOUND             *  *                              *PO*PONumberCDF06                  VN*                  *
+ACK*R2*000000000000001*UN                             
+PO1*0000000005          *00000000000001 *UN*              *  *IB*9789994000203                                   *B5*PRODUCT NOT FOUND             *  *                              *PO*PONumberCDF06                  VN*                  *
+ACK*R2*000000000000001*UN                             
+CTT*000001*0****
+SE*14*000000001
+GE*1*
+IEA*1*000000001
+END8551237006        2011042202:38 PM        

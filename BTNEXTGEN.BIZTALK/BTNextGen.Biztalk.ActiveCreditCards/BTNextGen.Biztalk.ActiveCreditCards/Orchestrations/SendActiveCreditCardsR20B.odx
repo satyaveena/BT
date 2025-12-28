@@ -1,0 +1,1435 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="e4739bfa-4ab2-4338-8a9c-8b8176d6670a" LowerBound="1.1" HigherBound="371.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.ActiveCreditCards" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="96ef4668-5861-40c7-a4ab-2f1a065be9f6" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="getCreditCardsCSPortTypea" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="4e45af9e-4281-4fa1-90f3-c9d8ddb986ae" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="5f7660c2-a86a-4676-af85-dabd09842de1" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.35">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ActiveCreditCards.Schemas.InitCreditCard" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="5eb959a4-8c84-4570-92f9-633d76ccf867" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendToERPPortTypea" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="23f6d14a-c6dd-44f0-b6a0-be904f5e31e4" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="6a9ec08e-6d72-4e61-a35f-f04661eec208" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.36">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ActiveCreditCards.Schemas.CreditCardToERP" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f0ca9827-1cc0-47da-a38d-bdddc42beac1" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="archivePortTypea" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="e1f83507-93e7-4e8e-ad18-d5aa431eb298" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="818e40e4-f85b-400b-a999-21d3370f5a75" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.36">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ActiveCreditCards.Schemas.CreditCardToERP" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f21cbfc5-2a4f-4424-9a2f-f1fe14fcbfda" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendSOPPortTypea" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="5aad3b4e-5808-4b49-8cf3-0d5b41e86b9b" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="48336cd9-3c6b-4059-a293-fd0c729bd3af" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.36">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ActiveCreditCards.Schemas.CreditCardToERP" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="0d8fc6ce-a479-43e8-943b-b0331f199e12" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendFaultPortTypea" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="002882ae-ae81-4255-b2b3-b68c7f81fac3" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FaultPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="edf4bf44-f1f0-4d47-8b0b-232151512e1a" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.82">
+                    <om:Property Name="Ref" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="d8c0af75-f76d-478b-8a1d-7b1836a5dbd0" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="archiveBulkRespPortTypea" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="89870cf7-8d7a-4382-8dfe-edb614e50503" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="63d40395-cabe-40d6-b4ff-2832b2c52cda" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.57">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.ActiveCreditCards.IIProfile_GetCreditCardDetails_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="e9fcf2d9-261b-42bf-b21d-df44d9b84636" ParentLink="Module_ServiceDeclaration" LowerBound="46.1" HigherBound="370.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendActiveCreditCardsR20B" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="391e1d5b-346d-4eb3-a2ae-1f7be014a1cd" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="80.1" HigherBound="81.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="activityID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="fa83fa41-012e-426c-8b4b-15bdd1e2a2fa" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="81.1" HigherBound="82.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="activityName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="cd1cd78f-4d66-4fde-ba2d-6d2548db8652" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="82.1" HigherBound="83.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="isArchive" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="10d255e6-4bd2-4d50-8239-dc1fa1b27d70" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="83.1" HigherBound="84.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="isTolas" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3ae26bff-30fe-4446-92c7-dcd5558d5ff2" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="84.1" HigherBound="85.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlListResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="6bca8008-77e5-4a92-8db0-580baaf07251" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="85.1" HigherBound="86.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="cardID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d92b3704-9b38-411e-9a5b-208c5577b051" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="86.1" HigherBound="87.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlquery" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="45aa778a-f5c2-4e30-83b0-aed17c9b357e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="87.1" HigherBound="88.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="erpAccountNo" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="c5d13df1-db52-4409-a59e-93cfc057b69a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="88.1" HigherBound="89.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmldocUpdateProfile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="28664f81-0cb4-444e-a842-1cabc74f68c3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="89.1" HigherBound="90.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="cntCards" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b5fa53fa-149c-47da-85d0-04b0f63abe4f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="90.1" HigherBound="91.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="counter" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="15ab03f5-45bb-4494-b75f-2fe53148cbe4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="91.1" HigherBound="92.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strCounter" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="4354eec3-2fe6-45cb-9e36-d854f77c0b86" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="92.1" HigherBound="93.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="severity" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7a87b461-eeac-4491-bc91-5ab2f1540783" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="93.1" HigherBound="94.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="enableBam" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="c0a47c8b-9f43-4998-821c-77cbea60ff40" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="94.1" HigherBound="95.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="targetERP" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="6c0f8fc9-3262-4394-aad3-c2c7a9eed8d7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="95.1" HigherBound="96.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="alias" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d220ba5f-497e-41bb-8fa0-d50f5a9a736e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="96.1" HigherBound="97.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Guid" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="guid" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="LongRunningTransaction" OID="a0003e31-876a-42da-a3f1-711455691a89" ParentLink="ServiceDeclaration_Transaction" LowerBound="47.21" HigherBound="47.71">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_Orch" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a7c8ddcd-04ad-45e3-ace3-b89432d4b23f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="65.1" HigherBound="66.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.Schemas.SingleCreditCardCS" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SingleCreditCardCS" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b049cfbb-c600-416e-8a4d-88274d0476dc" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="66.1" HigherBound="67.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.IIProfile_GetCreditCardDetails_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveBulkResponsea" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c3a24367-19a4-4e8f-a0c4-59f61eb4f2c7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="67.1" HigherBound="68.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.Schemas.CreditCardToERP" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveERPSend" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="90c4b1d1-befc-406e-8a7c-733dd581138d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="68.1" HigherBound="69.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesQuery" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="accountsQuery" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1b866576-c8e5-4623-a473-3348ce53fb56" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="69.1" HigherBound="70.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesQueryResponseMessage.ProfileDocumentList" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="accountsResponseList" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e55d3825-e8e6-452a-8a34-941abdc3af82" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="70.1" HigherBound="71.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.Schemas.CreditCardToERP" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="sendToERP" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="435d7613-1f4e-4b5b-8c7e-365e0f203c96" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="71.1" HigherBound="72.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.IIProfile_GetCreditCardDetails_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CardsDetailsReqMultiPart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e919fa00-6d7a-4e43-899e-6ed71c3925a3" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="72.1" HigherBound="73.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.IIProfile_GetCreditCardDetails_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CardsDetailsReqResponseMultiPart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8c049aa3-c878-42ff-ae0c-c3a4d3e05e51" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="73.1" HigherBound="74.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.Schemas.InitCreditCard" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="InitFile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="705328a0-b20a-4fb8-a111-c080d22f9476" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="74.1" HigherBound="75.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.IProfile_tempuri_org.UpdatePartialProfile" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="updateProfile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e5b59846-582a-4f4f-bedf-9def520678ed" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="75.1" HigherBound="76.1">
+                <om:Property Name="Type" Value="BTNextGen.BizTalk.CS.Profiles.Schemas.BTProfile" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreditCardCS" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1b5855e0-a8bf-4095-80b1-d9847873b2fb" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="76.1" HigherBound="77.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.IIProfile_UpdatePartialProfile_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="updateProfileWCFReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3bc14423-a469-45b1-a24d-1cc95596d703" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="77.1" HigherBound="78.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.IIProfile_UpdatePartialProfile_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="WCFResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9d062884-11d1-4cba-a207-f159cd51c552" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="78.1" HigherBound="79.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.Schemas.IProfile_schemas_datacontract_org_2004_07_IProfiles.ActiveCreditCards" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SingleCardCS" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f97ea0f2-9e6a-447b-ab71-9ca14cea5801" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="79.1" HigherBound="80.1">
+                <om:Property Name="Type" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="faultMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="1ef7a254-08de-4a4b-a7e5-afd491d7c3dc" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="fa25754c-5b5f-4fb5-9a64-f90e4a515ade" ParentLink="ServiceBody_Statement" LowerBound="99.1" HigherBound="114.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="getCreditCardsCSPort" />
+                    <om:Property Name="MessageName" Value="InitFile" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="rcv_InitFile" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="0fdfc699-3edb-4b79-b90e-63aeaf8c8082" ParentLink="ServiceBody_Statement" LowerBound="114.1" HigherBound="368.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_Outer" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="LongRunningTransaction" OID="35775d73-c529-4f6a-b44e-d9bf38419caf" ParentLink="Scope_Transaction" LowerBound="115.18" HigherBound="115.56">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transaction_1" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="21895dd3-e9f1-497c-bd1c-c3c1844dacd3" ParentLink="ComplexStatement_Statement" LowerBound="119.1" HigherBound="123.1">
+                        <om:Property Name="Expression" Value="isArchive=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ActiveCreditCards&quot;,&quot;isArchive&quot;));&#xD;&#xA;enableBam=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ActiveCreditCards&quot;,&quot;bamEnabled&quot;));&#xD;&#xA;severity=System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read(&quot;BTNextGen.Biztalk.ActiveCreditCards&quot;,&quot;faultSeverity&quot;));" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="extract sso values" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="56abcecb-8d93-483a-a488-5440149c5435" ParentLink="ComplexStatement_Statement" LowerBound="123.1" HigherBound="129.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct_GetCardsReq" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="2069151e-35cf-47cb-97c5-f0e6b2d517ef" ParentLink="ComplexStatement_Statement" LowerBound="126.1" HigherBound="128.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ActiveCreditCards.Maps.Init_To_CardsReq" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="CardsReq" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="0f70ed6b-ddd0-4270-aa73-3791a305b9db" ParentLink="Transform_InputMessagePartRef" LowerBound="127.134" HigherBound="127.142">
+                                <om:Property Name="MessageRef" Value="InitFile" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="a703ba0b-b914-4b6b-acff-06cfca0ec3af" ParentLink="Transform_OutputMessagePartRef" LowerBound="127.36" HigherBound="127.71">
+                                <om:Property Name="MessageRef" Value="CardsDetailsReqMultiPart" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="e669857d-7442-4485-98ec-ea6ea6320348" ParentLink="Construct_MessageRef" LowerBound="124.31" HigherBound="124.55">
+                            <om:Property Name="Ref" Value="CardsDetailsReqMultiPart" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="5765038d-21cb-46cf-b915-1ce3d1055f87" ParentLink="ComplexStatement_Statement" LowerBound="129.1" HigherBound="131.1">
+                        <om:Property Name="PortName" Value="CreditCardsWCFPort" />
+                        <om:Property Name="MessageName" Value="CardsDetailsReqMultiPart" />
+                        <om:Property Name="OperationName" Value="GetCreditCardDetails" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_CreditCardsReq" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="92da136c-96fb-428e-b430-dd8490d203da" ParentLink="ComplexStatement_Statement" LowerBound="131.1" HigherBound="133.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="CreditCardsWCFPort" />
+                        <om:Property Name="MessageName" Value="CardsDetailsReqResponseMultiPart" />
+                        <om:Property Name="OperationName" Value="GetCreditCardDetails" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Rcv_CreditCardsResponse" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="7979b07c-28cb-4d4c-abfa-1b59c6e45243" ParentLink="ComplexStatement_Statement" LowerBound="133.1" HigherBound="137.1">
+                        <om:Property Name="Expression" Value="cntCards= System.Convert.ToInt32(xpath(CardsDetailsReqResponseMultiPart.parameters,&quot;count(/*[local-name()='GetCreditCardDetailsResponse' and namespace-uri()='http://tempuri.org/']/*[local-name()='GetCreditCardDetailsResult' and namespace-uri()='http://tempuri.org/']/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles'])&quot; ));&#xD;&#xA;counter=1;&#xD;&#xA;strCounter=&quot;1&quot;;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="SET Counters" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="While" OID="3b2a9920-c0b5-4a63-946b-71b84abfb80d" ParentLink="ComplexStatement_Statement" LowerBound="137.1" HigherBound="342.1">
+                        <om:Property Name="Expression" Value="counter &lt;= cntCards" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Loop_all Cards" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Scope" OID="46826616-3228-44e5-9ede-f6d470159d39" ParentLink="ComplexStatement_Statement" LowerBound="140.1" HigherBound="341.1">
+                            <om:Property Name="InitializedTransactionType" Value="True" />
+                            <om:Property Name="IsSynchronized" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Scope_Inner" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="LongRunningTransaction" OID="7c2fe387-7c31-48bf-b0ff-81a5af27ff74" ParentLink="Scope_Transaction" LowerBound="141.30" HigherBound="141.68">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Transaction_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="bd7c90b5-82d4-4e67-a8fa-05c045d90165" ParentLink="ComplexStatement_Statement" LowerBound="145.1" HigherBound="158.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ARCHIVE" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="9add2bd5-4f0b-4a01-ac81-37ad5493ea2e" ParentLink="ReallyComplexStatement_Branch" LowerBound="146.33" HigherBound="158.1">
+                                    <om:Property Name="Expression" Value="isArchive == true" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="YES" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Construct" OID="c220132f-b6fe-44bb-ac96-76a1a3661a1d" ParentLink="ComplexStatement_Statement" LowerBound="148.1" HigherBound="155.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Construct_ArchiveResponse" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageRef" OID="dd31018e-2896-4be1-aba8-70fc8d4f1e5f" ParentLink="Construct_MessageRef" LowerBound="149.47" HigherBound="149.67">
+                                            <om:Property Name="Ref" Value="archiveBulkResponsea" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageAssignment" OID="3edfbdd4-b8be-400e-a8e5-b31b842fddc8" ParentLink="ComplexStatement_Statement" LowerBound="151.1" HigherBound="154.1">
+                                            <om:Property Name="Expression" Value="archiveBulkResponsea.parameters= CardsDetailsReqResponseMultiPart.parameters;&#xD;&#xA;archiveBulkResponsea(FILE.ReceivedFileName)=&quot;ActiveCardsResponse&quot;;" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="assign filename" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="ad43eb13-831b-4c1b-8736-1bf30e590503" ParentLink="ComplexStatement_Statement" LowerBound="155.1" HigherBound="157.1">
+                                        <om:Property Name="PortName" Value="archiveBulkRespPorta" />
+                                        <om:Property Name="MessageName" Value="archiveBulkResponsea" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_ArchiveResponsea" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="7dd9575a-598b-4422-99c3-38d67371d470" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="0ef69bfe-d411-4284-9409-fff814729ed8" ParentLink="ComplexStatement_Statement" LowerBound="158.1" HigherBound="164.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_SingCardsCS" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="c370df1d-9ed0-49e7-977b-a99750657c3e" ParentLink="ComplexStatement_Statement" LowerBound="161.1" HigherBound="163.1">
+                                    <om:Property Name="Expression" Value="SingleCardCS= xpath(CardsDetailsReqResponseMultiPart.parameters,&quot;/*[local-name()='GetCreditCardDetailsResponse' and namespace-uri()='http://tempuri.org/']/*[local-name()='GetCreditCardDetailsResult' and namespace-uri()='http://tempuri.org/']/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles'][&quot;+strCounter+&quot;]&quot;);" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="Assign SingleCard" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="67f25dbf-6aae-4e25-bb0a-c069b00caeae" ParentLink="Construct_MessageRef" LowerBound="159.43" HigherBound="159.55">
+                                    <om:Property Name="Ref" Value="SingleCardCS" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="b8319383-2b83-458e-abfb-f9fec69008ed" ParentLink="ComplexStatement_Statement" LowerBound="164.1" HigherBound="172.1">
+                                <om:Property Name="Expression" Value="cardID= xpath(SingleCardCS,&quot;string(/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles']/*[local-name()='cardID' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles'])&quot;);&#xD;&#xA;isTolas= xpath(SingleCardCS,&quot;string(/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles']/*[local-name()='is_Tolas' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles'])&quot;);&#xD;&#xA;erpAccountNo= xpath(SingleCardCS,&quot;string(/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles']/*[local-name()='erp_account_id' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles'])&quot;);&#xD;&#xA;alias= xpath(SingleCardCS,&quot;string(/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles']/*[local-name()='alias' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles'])&quot;);&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;No of active cards&quot;, cntCards.ToString());&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Extract Key values" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="cb8667b5-f84e-4046-a9a8-9ffd1a998010" ParentLink="ComplexStatement_Statement" LowerBound="172.1" HigherBound="202.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="isBAM" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="16ad29be-04fc-4a21-9d12-7abacc5c2975" ParentLink="ReallyComplexStatement_Branch" LowerBound="173.33" HigherBound="202.1">
+                                    <om:Property Name="Expression" Value="enableBam" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="YES" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="VariableAssignment" OID="d1e2dfcd-6547-4bdd-8083-7cbec20b9b58" ParentLink="ComplexStatement_Statement" LowerBound="175.1" HigherBound="201.1">
+                                        <om:Property Name="Expression" Value="// set bam variables&#xD;&#xA;activityName= &quot;active_credit_cards&quot;;&#xD;&#xA;guid= System.Guid.NewGuid();&#xD;&#xA;activityID= guid.ToString()+ &quot;_&quot;+ System.DateTime.Now.ToString();&#xD;&#xA;&#xD;&#xA;if (isTolas.ToLower()==&quot;false&quot;)&#xD;&#xA;{&#xD;&#xA;targetERP= &quot;SOP&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (isTolas.ToLower()==&quot;true&quot;)&#xD;&#xA;{&#xD;&#xA;targetERP= &quot;TOLAS&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.BeginActivity(activityName,activityID);&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&quot;CSCardRcv&quot;,System.DateTime.UtcNow,&#xD;&#xA;&quot;CardID&quot;,cardID,&#xD;&#xA;&quot;Destination&quot;,targetERP,&#xD;&#xA;&quot;Alias&quot;,alias,&#xD;&#xA;&quot;ERPAccountNo&quot;,erpAccountNo);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Track BAM 1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="a49e1fcf-5c3c-4c02-892b-7bf86a4e1faf" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="a68d1f5f-05d2-4ad6-b968-3f113d01e1a3" ParentLink="ComplexStatement_Statement" LowerBound="202.1" HigherBound="208.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_sendERP" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="8dd8a925-28a7-4370-bac8-c11366c358a0" ParentLink="ComplexStatement_Statement" LowerBound="205.1" HigherBound="207.1">
+                                    <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ActiveCreditCards.Maps.CreditCardCS_ToCreditCardERPR20B" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transform_ERPMessage" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="MessagePartRef" OID="f618a0d8-8a82-42e2-b387-68b7323e5b53" ParentLink="Transform_InputMessagePartRef" LowerBound="206.136" HigherBound="206.148">
+                                        <om:Property Name="MessageRef" Value="SingleCardCS" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="a419d540-319c-4188-9acc-711435feaaca" ParentLink="Transform_OutputMessagePartRef" LowerBound="206.48" HigherBound="206.57">
+                                        <om:Property Name="MessageRef" Value="sendToERP" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_2" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="7a01a610-3cdb-4ac1-ba5b-9e1b38cad7b0" ParentLink="Construct_MessageRef" LowerBound="203.43" HigherBound="203.52">
+                                    <om:Property Name="Ref" Value="sendToERP" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Decision" OID="b42fd64d-ae55-40bf-a0cc-54047fac4910" ParentLink="ComplexStatement_Statement" LowerBound="208.1" HigherBound="309.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="check for Null" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="340bfc2e-8b41-4a9b-951c-a1e50dc7f82d" ParentLink="ReallyComplexStatement_Branch" LowerBound="209.33" HigherBound="309.1">
+                                    <om:Property Name="Expression" Value="isTolas!=null &amp;&amp; ( isTolas!= System.String.Empty)" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="not null " />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Scope" OID="e6da235c-d05a-4339-8fed-c770756f34b4" ParentLink="ComplexStatement_Statement" LowerBound="211.1" HigherBound="258.1">
+                                        <om:Property Name="InitializedTransactionType" Value="True" />
+                                        <om:Property Name="IsSynchronized" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Scope_MQDelivery" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="LongRunningTransaction" OID="cd487528-3018-4e55-95e6-0c3ce61631a4" ParentLink="Scope_Transaction" LowerBound="212.55" HigherBound="212.100">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Transaction_Delivery" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="Decision" OID="a3884813-23e7-4339-9fad-c746ece6aa51" ParentLink="ComplexStatement_Statement" LowerBound="216.1" HigherBound="227.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Decide_ERPTarget" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="DecisionBranch" OID="d45a5b10-9304-48bc-96a2-a374ce4714e0" ParentLink="ReallyComplexStatement_Branch" LowerBound="217.45" HigherBound="222.1">
+                                                <om:Property Name="Expression" Value="System.Convert.ToBoolean(isTolas)" />
+                                                <om:Property Name="IsGhostBranch" Value="True" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="TOLAS" />
+                                                <om:Property Name="Signal" Value="False" />
+                                                <om:Element Type="Send" OID="9d611df6-4bb1-4d45-8d6e-4753077e08da" ParentLink="ComplexStatement_Statement" LowerBound="219.1" HigherBound="221.1">
+                                                    <om:Property Name="PortName" Value="SendTOLAS" />
+                                                    <om:Property Name="MessageName" Value="sendToERP" />
+                                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="Send_TOLAS" />
+                                                    <om:Property Name="Signal" Value="True" />
+                                                </om:Element>
+                                            </om:Element>
+                                            <om:Element Type="DecisionBranch" OID="d002a05c-e5d0-4eac-b175-fd70f2e6c792" ParentLink="ReallyComplexStatement_Branch">
+                                                <om:Property Name="IsGhostBranch" Value="True" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="SOP" />
+                                                <om:Property Name="Signal" Value="True" />
+                                                <om:Element Type="Send" OID="c2dad4fa-289d-48d6-ac55-047708f6f035" ParentLink="ComplexStatement_Statement" LowerBound="224.1" HigherBound="226.1">
+                                                    <om:Property Name="PortName" Value="SendSOPPort" />
+                                                    <om:Property Name="MessageName" Value="sendToERP" />
+                                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Name" Value="Send_SOP" />
+                                                    <om:Property Name="Signal" Value="True" />
+                                                </om:Element>
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="Catch" OID="f9d14683-7fd1-408f-85f3-032a469c271e" ParentLink="Scope_Catch" LowerBound="230.1" HigherBound="256.1">
+                                            <om:Property Name="ExceptionName" Value="deliveryException" />
+                                            <om:Property Name="ExceptionType" Value="Microsoft.XLANGs.BaseTypes.DeliveryFailureException" />
+                                            <om:Property Name="IsFaultMessage" Value="False" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Catch_DeliveryFailure" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="VariableAssignment" OID="285ae0c7-e81a-49a3-804d-12ee8ff9af91" ParentLink="Catch_Statement" LowerBound="233.1" HigherBound="236.1">
+                                                <om:Property Name="Expression" Value="counter= counter+1;&#xD;&#xA;strCounter= System.Convert.ToString(counter);" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Increment Counters" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="Construct" OID="d47525da-85a5-4f80-ab1f-6bda8f1bd318" ParentLink="Catch_Statement" LowerBound="236.1" HigherBound="251.1">
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Construct_faultMessage" />
+                                                <om:Property Name="Signal" Value="True" />
+                                                <om:Element Type="MessageRef" OID="3bb42477-ee47-432a-a269-cd524706eafb" ParentLink="Construct_MessageRef" LowerBound="237.59" HigherBound="237.71">
+                                                    <om:Property Name="Ref" Value="faultMessage" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                                <om:Element Type="MessageAssignment" OID="0d2f7f84-25b1-40bd-8e41-fab9d35aa5ca" ParentLink="ComplexStatement_Statement" LowerBound="239.1" HigherBound="250.1">
+                                                    <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;faultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;faultMessage.FailureCategory=&quot;Delivery Failure to MQ&quot;;&#xD;&#xA;faultMessage.FaultDescription=deliveryException.Message;&#xD;&#xA;faultMessage.FaultCode=&quot;5003&quot;;&#xD;&#xA;faultMessage.FaultSeverity= severity;&#xD;&#xA;&#xD;&#xA;" />
+                                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                                    <om:Property Name="Name" Value="MessageAssignment_3" />
+                                                    <om:Property Name="Signal" Value="True" />
+                                                </om:Element>
+                                            </om:Element>
+                                            <om:Element Type="Send" OID="91824e3c-0d02-45ad-8480-5d7980b6238d" ParentLink="Catch_Statement" LowerBound="251.1" HigherBound="253.1">
+                                                <om:Property Name="PortName" Value="SendFaultPort" />
+                                                <om:Property Name="MessageName" Value="faultMessage" />
+                                                <om:Property Name="OperationName" Value="FaultPort" />
+                                                <om:Property Name="OperationMessageName" Value="Request" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Send_fault" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                            <om:Element Type="VariableAssignment" OID="4f3f4c6e-651d-469b-8ebf-b3ceea5fc619" ParentLink="Catch_Statement" LowerBound="253.1" HigherBound="255.1">
+                                                <om:Property Name="Expression" Value="throw new System.Exception(&quot;Active Credit Card not Delivered to MQ&quot;);" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="throw exception" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Decision" OID="a741d32c-219d-4436-87c5-008fda337630" ParentLink="ComplexStatement_Statement" LowerBound="258.1" HigherBound="264.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="isBAM" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="DecisionBranch" OID="509fa147-2a20-4377-b68f-976e0a02447d" ParentLink="ReallyComplexStatement_Branch" LowerBound="259.37" HigherBound="264.1">
+                                            <om:Property Name="Expression" Value="enableBam" />
+                                            <om:Property Name="IsGhostBranch" Value="True" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="YES" />
+                                            <om:Property Name="Signal" Value="False" />
+                                            <om:Element Type="VariableAssignment" OID="64b3c7e2-f9d7-4d0c-8624-6af49cfd35a0" ParentLink="ComplexStatement_Statement" LowerBound="261.1" HigherBound="263.1">
+                                                <om:Property Name="Expression" Value="Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&quot;ERPSent&quot;,System.DateTime.UtcNow);&#xD;&#xA;" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Track BAM 2" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="DecisionBranch" OID="c252c64e-b015-41c0-ae18-2495552cb71d" ParentLink="ReallyComplexStatement_Branch">
+                                            <om:Property Name="IsGhostBranch" Value="True" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Else" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Decision" OID="c2329e7d-1e90-4cdc-9c76-7e5e11752254" ParentLink="ComplexStatement_Statement" LowerBound="264.1" HigherBound="277.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ARCHIVE" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="DecisionBranch" OID="93dcf413-b8c4-4818-98f9-7f5264d45857" ParentLink="ReallyComplexStatement_Branch" LowerBound="265.37" HigherBound="277.1">
+                                            <om:Property Name="Expression" Value="isArchive == true" />
+                                            <om:Property Name="IsGhostBranch" Value="True" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="TRUE" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="Construct" OID="692577d3-72a1-4c34-a982-6153ed179072" ParentLink="ComplexStatement_Statement" LowerBound="267.1" HigherBound="274.1">
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Construct_Archive" />
+                                                <om:Property Name="Signal" Value="True" />
+                                                <om:Element Type="MessageRef" OID="89b9b6d5-b4e7-4f3e-8c03-8c61565fa825" ParentLink="Construct_MessageRef" LowerBound="268.51" HigherBound="268.65">
+                                                    <om:Property Name="Ref" Value="archiveERPSend" />
+                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                                <om:Element Type="MessageAssignment" OID="9101f016-3587-475a-a61e-dfa610bca4a3" ParentLink="ComplexStatement_Statement" LowerBound="270.1" HigherBound="273.1">
+                                                    <om:Property Name="Expression" Value="archiveERPSend= sendToERP;&#xD;&#xA;archiveERPSend(FILE.ReceivedFileName)=&quot;ActiveCardsERPMsg_&quot;+targetERP+&quot;_&quot;+erpAccountNo ;" />
+                                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                                    <om:Property Name="Name" Value="MessageAssignment_2" />
+                                                    <om:Property Name="Signal" Value="False" />
+                                                </om:Element>
+                                            </om:Element>
+                                            <om:Element Type="Send" OID="b879478b-cd38-40de-be74-12a8d7457e6c" ParentLink="ComplexStatement_Statement" LowerBound="274.1" HigherBound="276.1">
+                                                <om:Property Name="PortName" Value="archivePort" />
+                                                <om:Property Name="MessageName" Value="archiveERPSend" />
+                                                <om:Property Name="OperationName" Value="Operation_1" />
+                                                <om:Property Name="OperationMessageName" Value="Request" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Send_Archive" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="DecisionBranch" OID="f93f28d2-15b0-4da5-ad7d-e7b717fbf910" ParentLink="ReallyComplexStatement_Branch">
+                                            <om:Property Name="IsGhostBranch" Value="True" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Else" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Construct" OID="44dcd088-84aa-40c6-b45f-926c047b4c6f" ParentLink="ComplexStatement_Statement" LowerBound="277.1" HigherBound="288.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Construct_UpdateProfile" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageAssignment" OID="b089475e-fde6-4d96-ac58-435b96e5dd15" ParentLink="ComplexStatement_Statement" LowerBound="280.1" HigherBound="287.1">
+                                            <om:Property Name="Expression" Value="xmldocUpdateProfile.LoadXml(&quot;&lt;ProfileDocument&gt;&lt;CreditCard&gt;&lt;BTNextGen&gt;&lt;transmitted_to_erp&gt;&lt;/transmitted_to_erp&gt;&lt;/BTNextGen&gt;&lt;GeneralInfo&gt;&lt;id&gt;&lt;/id&gt;&lt;/GeneralInfo&gt;&lt;/CreditCard&gt;&lt;/ProfileDocument&gt;&quot;);&#xD;&#xA;&#xD;&#xA;CreditCardCS=xmldocUpdateProfile;&#xD;&#xA;&#xD;&#xA;xpath(CreditCardCS,&quot;/*[local-name()='ProfileDocument' and namespace-uri()='']/*[local-name()='CreditCard' and namespace-uri()='']/*[local-name()='GeneralInfo' and namespace-uri()='']/*[local-name()='id' and namespace-uri()='']&quot;)= cardID;&#xD;&#xA;xpath(CreditCardCS,&quot;/*[local-name()='ProfileDocument' and namespace-uri()='']/*[local-name()='CreditCard' and namespace-uri()='']/*[local-name()='BTNextGen' and namespace-uri()='']/*[local-name()='transmitted_to_erp' and namespace-uri()='']&quot;)= &quot;1&quot;;" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="Load Profile XML" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="df661ac5-66e5-47f6-ad5a-a4658a3df353" ParentLink="Construct_MessageRef" LowerBound="278.47" HigherBound="278.59">
+                                            <om:Property Name="Ref" Value="CreditCardCS" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Construct" OID="cd32556d-9f7e-4ed0-9381-ada98825a440" ParentLink="ComplexStatement_Statement" LowerBound="288.1" HigherBound="297.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Construct_WcfRequest" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="Transform" OID="7884c7b8-4408-4e83-af8d-e7cccc95f68f" ParentLink="ComplexStatement_Statement" LowerBound="291.1" HigherBound="293.1">
+                                            <om:Property Name="ClassName" Value="BTNextGen.Biztalk.ActiveCreditCards.Maps.Profile_WCFUpdateReq" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Transform_WCFRequest" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessagePartRef" OID="ac39e363-5190-4f3f-97ba-167c44786873" ParentLink="Transform_InputMessagePartRef" LowerBound="292.149" HigherBound="292.161">
+                                                <om:Property Name="MessageRef" Value="CreditCardCS" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="MessagePartReference_5" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="MessagePartRef" OID="912ccac7-3e44-4b44-bfd9-30553d9013d0" ParentLink="Transform_OutputMessagePartRef" LowerBound="292.52" HigherBound="292.82">
+                                                <om:Property Name="MessageRef" Value="updateProfileWCFReq" />
+                                                <om:Property Name="PartRef" Value="parameters" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="MessagePartReference_6" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="MessageAssignment" OID="6d19a203-f867-42f0-907f-6f2964bcd802" ParentLink="ComplexStatement_Statement" LowerBound="293.1" HigherBound="296.1">
+                                            <om:Property Name="Expression" Value="updateProfileWCFReq.parameters.profileKey=cardID;&#xD;&#xA;updateProfileWCFReq.parameters.profileObjectName=&quot;CreditCard&quot;;" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="assign key properties" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="59408d6a-b47a-4db7-886c-8f5eca0bd5ee" ParentLink="Construct_MessageRef" LowerBound="289.47" HigherBound="289.66">
+                                            <om:Property Name="Ref" Value="updateProfileWCFReq" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="2ce6a668-aae8-410e-89c9-b6f0391e1c87" ParentLink="ComplexStatement_Statement" LowerBound="297.1" HigherBound="299.1">
+                                        <om:Property Name="PortName" Value="CreditCardsWCFPort" />
+                                        <om:Property Name="MessageName" Value="updateProfileWCFReq" />
+                                        <om:Property Name="OperationName" Value="UpdatePartialProfile" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_WcfUpdateReq" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="Receive" OID="89093290-2200-4f11-8358-0fc6957bf256" ParentLink="ComplexStatement_Statement" LowerBound="299.1" HigherBound="301.1">
+                                        <om:Property Name="Activate" Value="False" />
+                                        <om:Property Name="PortName" Value="CreditCardsWCFPort" />
+                                        <om:Property Name="MessageName" Value="WCFResponse" />
+                                        <om:Property Name="OperationName" Value="UpdatePartialProfile" />
+                                        <om:Property Name="OperationMessageName" Value="Response" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Rcv_WCFUpdateResponse" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="Decision" OID="d37f7e96-1438-491e-9144-b96e556bafde" ParentLink="ComplexStatement_Statement" LowerBound="301.1" HigherBound="308.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="isBAM" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="DecisionBranch" OID="ac080e48-28cd-4bfc-a0e8-a673c75e0c8b" ParentLink="ReallyComplexStatement_Branch" LowerBound="302.37" HigherBound="308.1">
+                                            <om:Property Name="Expression" Value="enableBam" />
+                                            <om:Property Name="IsGhostBranch" Value="True" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="YES" />
+                                            <om:Property Name="Signal" Value="False" />
+                                            <om:Element Type="VariableAssignment" OID="bb055c2f-7a45-4b84-b925-c5c30504b6c3" ParentLink="ComplexStatement_Statement" LowerBound="304.1" HigherBound="307.1">
+                                                <om:Property Name="Expression" Value="Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,&quot;CSAckSent&quot;,System.DateTime.UtcNow);&#xD;&#xA;Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.EndActivity(activityName,activityID);&#xD;&#xA;" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="Track BAM 3" />
+                                                <om:Property Name="Signal" Value="True" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="DecisionBranch" OID="ecd92662-4adf-435a-90bf-1ec2f2e245b2" ParentLink="ReallyComplexStatement_Branch">
+                                            <om:Property Name="IsGhostBranch" Value="True" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Else" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="2879f3f5-856d-4ed6-add0-c66f6e0e6158" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="d9ca057e-2e99-4171-ad92-0012409b84ec" ParentLink="ComplexStatement_Statement" LowerBound="309.1" HigherBound="312.1">
+                                <om:Property Name="Expression" Value="counter= counter+1;&#xD;&#xA;strCounter= System.Convert.ToString(counter);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Increment Counters" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Catch" OID="6289f7ee-ffb4-4dd3-9561-63d00da14386" ParentLink="Scope_Catch" LowerBound="315.1" HigherBound="339.1">
+                                <om:Property Name="ExceptionName" Value="InnerEx" />
+                                <om:Property Name="ExceptionType" Value="System.Exception" />
+                                <om:Property Name="IsFaultMessage" Value="False" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Catch_InnerException" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="VariableAssignment" OID="84797da6-0e80-4e9b-9dd2-8db11c7056f3" ParentLink="Catch_Statement" LowerBound="318.1" HigherBound="321.1">
+                                    <om:Property Name="Expression" Value="counter= counter+1;&#xD;&#xA;strCounter= System.Convert.ToString(counter);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Increment Counters" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Construct" OID="444ca738-d4f0-4d8a-930c-73f0eddae36a" ParentLink="Catch_Statement" LowerBound="321.1" HigherBound="336.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_faultMessage" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="ef81b2ff-6fa9-4b5e-96c2-35c43501fae6" ParentLink="Construct_MessageRef" LowerBound="322.47" HigherBound="322.59">
+                                        <om:Property Name="Ref" Value="faultMessage" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="78b427ac-d759-4a8d-9834-ebbb3841988a" ParentLink="ComplexStatement_Statement" LowerBound="324.1" HigherBound="335.1">
+                                        <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;faultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;faultMessage.FailureCategory=&quot;Acitve Credit Cards&quot;;&#xD;&#xA;faultMessage.FaultDescription= cardID +&quot; &quot; + erpAccountNo + &quot; &quot; + InnerEx.Message;&#xD;&#xA;faultMessage.FaultCode=&quot;5002&quot;;&#xD;&#xA;faultMessage.FaultSeverity= severity;&#xD;&#xA;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="MessageAssignment_3" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Send" OID="9f0cc244-950a-4cb8-96ee-298f7f7eda5f" ParentLink="Catch_Statement" LowerBound="336.1" HigherBound="338.1">
+                                    <om:Property Name="PortName" Value="SendFaultPort" />
+                                    <om:Property Name="MessageName" Value="faultMessage" />
+                                    <om:Property Name="OperationName" Value="FaultPort" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Send_fault" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="15765a25-d888-4bf9-968d-e200070f3d83" ParentLink="Scope_Catch" LowerBound="345.1" HigherBound="366.1">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Catch_OuterException" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="1cd8d515-f217-46a8-b35b-da9842b456ce" ParentLink="Catch_Statement" LowerBound="348.1" HigherBound="363.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_faultMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="2634ce51-76ce-4e47-9d13-0772a933a96b" ParentLink="Construct_MessageRef" LowerBound="349.35" HigherBound="349.47">
+                                <om:Property Name="Ref" Value="faultMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="d27ec222-94e4-4791-abbb-df0d7ba84b5d" ParentLink="ComplexStatement_Statement" LowerBound="351.1" HigherBound="362.1">
+                                <om:Property Name="Expression" Value="// Create fault exception Message&#xD;&#xA;faultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Assign Properties&#xD;&#xA;&#xD;&#xA;faultMessage.FailureCategory=&quot;Commerce Server Exception&quot;;&#xD;&#xA;faultMessage.FaultDescription=ex.Message;&#xD;&#xA;faultMessage.FaultCode=&quot;5001&quot;;&#xD;&#xA;faultMessage.FaultSeverity=  Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="af6fca3f-3561-4444-97df-182a306f598d" ParentLink="Catch_Statement" LowerBound="363.1" HigherBound="365.1">
+                            <om:Property Name="PortName" Value="SendFaultPort" />
+                            <om:Property Name="MessageName" Value="faultMessage" />
+                            <om:Property Name="OperationName" Value="FaultPort" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_fault" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="26682e5d-90e3-4e62-8ae7-8e20c79a009f" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="49.1" HigherBound="51.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.getCreditCardsCSPortTypea" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="getCreditCardsCSPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="86ed5e15-2b46-4134-a08a-993c9d1c667f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="49.1" HigherBound="50.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="dc13fbe5-a41b-4137-9000-feb0759583a0" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="51.1" HigherBound="53.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="36" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.archivePortTypea" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archivePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="52e70ab2-2c6f-4d39-a4f8-3e1576352068" ParentLink="PortDeclaration_CLRAttribute" LowerBound="51.1" HigherBound="52.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="fecd2bac-67be-4d4d-95a3-06bf5da537e6" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="53.1" HigherBound="55.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="36" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.IIProfile" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreditCardsWCFPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="72f70789-38f1-4f1d-a29d-827732ed078f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="53.1" HigherBound="54.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="6a2eed89-563b-42d8-a236-239340979b43" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="55.1" HigherBound="57.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="142" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.SendFaultPortTypea" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendFaultPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="16e10261-e56d-446a-8a71-4a9b0a3d153b" ParentLink="PortDeclaration_CLRAttribute" LowerBound="55.1" HigherBound="56.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9f3a4d6e-291a-4936-8325-030e2f28c857" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="57.1" HigherBound="59.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="46" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.archiveBulkRespPortTypea" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="archiveBulkRespPorta" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="9417bbf6-50b7-4665-b35b-8e8a23b70066" ParentLink="PortDeclaration_CLRAttribute" LowerBound="57.1" HigherBound="58.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9874f8c7-e460-4f07-b43c-5d370307bfb9" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="59.1" HigherBound="62.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="92" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="Transmitted" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.SendToERPPortTypea" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendTOLAS" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="acf89186-1df7-4ea9-b52c-0278f9ef4e48" ParentLink="PortDeclaration_CLRAttribute" LowerBound="59.1" HigherBound="60.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="8db46da7-b526-4e0b-92a8-79709cfb266e" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="62.1" HigherBound="65.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="109" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="Transmitted" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.ActiveCreditCards.SendSOPPortTypea" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendSOPPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="8065db15-bab9-41ba-a5f3-0372d458e8bc" ParentLink="PortDeclaration_CLRAttribute" LowerBound="62.1" HigherBound="63.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.ActiveCreditCards
+{
+    internal porttype getCreditCardsCSPortTypea
+    {
+        oneway Operation_1
+        {
+            Schemas.InitCreditCard
+        };
+    };
+    internal porttype SendToERPPortTypea
+    {
+        oneway Operation_1
+        {
+            Schemas.CreditCardToERP
+        };
+    };
+    internal porttype archivePortTypea
+    {
+        oneway Operation_1
+        {
+            Schemas.CreditCardToERP
+        };
+    };
+    internal porttype SendSOPPortTypea
+    {
+        oneway Operation_1
+        {
+            Schemas.CreditCardToERP
+        };
+    };
+    internal porttype SendFaultPortTypea
+    {
+        oneway FaultPort
+        {
+            Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage
+        };
+    };
+    internal porttype archiveBulkRespPortTypea
+    {
+        oneway Operation_1
+        {
+            IIProfile_GetCreditCardDetails_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction SendActiveCreditCardsR20B
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements getCreditCardsCSPortTypea getCreditCardsCSPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses archivePortTypea archivePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses IIProfile CreditCardsWCFPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses SendFaultPortTypea SendFaultPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses archiveBulkRespPortTypea archiveBulkRespPorta;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        [Microsoft.XLANGs.BaseTypes.DeliveryNotification(Microsoft.XLANGs.BaseTypes.DeliveryNotification.NotificationLevel.Transmitted)]
+        port uses SendToERPPortTypea SendTOLAS;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        [Microsoft.XLANGs.BaseTypes.DeliveryNotification(Microsoft.XLANGs.BaseTypes.DeliveryNotification.NotificationLevel.Transmitted)]
+        port uses SendSOPPortTypea SendSOPPort;
+        message Schemas.SingleCreditCardCS SingleCreditCardCS;
+        message IIProfile_GetCreditCardDetails_OutputMessage archiveBulkResponsea;
+        message Schemas.CreditCardToERP archiveERPSend;
+        message BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesQuery accountsQuery;
+        message BTNextGen.BizTalk.CS.Profiles.Schemas.ProfilesQueryResponseMessage.ProfileDocumentList accountsResponseList;
+        message Schemas.CreditCardToERP sendToERP;
+        message IIProfile_GetCreditCardDetails_InputMessage CardsDetailsReqMultiPart;
+        message IIProfile_GetCreditCardDetails_OutputMessage CardsDetailsReqResponseMultiPart;
+        message Schemas.InitCreditCard InitFile;
+        message BTNextGen.BizTalk.CS.Profiles.Schemas.IProfile_tempuri_org.UpdatePartialProfile updateProfile;
+        message BTNextGen.BizTalk.CS.Profiles.Schemas.BTProfile CreditCardCS;
+        message IIProfile_UpdatePartialProfile_InputMessage updateProfileWCFReq;
+        message IIProfile_UpdatePartialProfile_OutputMessage WCFResponse;
+        message Schemas.IProfile_schemas_datacontract_org_2004_07_IProfiles.ActiveCreditCards SingleCardCS;
+        message Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage faultMessage;
+        System.String activityID;
+        System.String activityName;
+        System.Boolean isArchive;
+        System.String isTolas;
+        System.Xml.XmlDocument xmlListResponse;
+        System.String cardID;
+        System.Xml.XmlDocument xmlquery;
+        System.String erpAccountNo;
+        System.Xml.XmlDocument xmldocUpdateProfile;
+        System.Int32 cntCards;
+        System.Int32 counter;
+        System.String strCounter;
+        System.Int32 severity;
+        System.Boolean enableBam;
+        System.String targetERP;
+        System.String alias;
+        System.Guid guid;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("fa25754c-5b5f-4fb5-9a64-f90e4a515ade")]
+            activate receive (getCreditCardsCSPort.Operation_1, InitFile);
+            activityID = "";
+            activityName = "";
+            isArchive = true;
+            isTolas = "";
+            xmlListResponse = new System.Xml.XmlDocument();
+            cardID = "";
+            xmlquery = new System.Xml.XmlDocument();
+            erpAccountNo = "";
+            xmldocUpdateProfile = new System.Xml.XmlDocument();
+            strCounter = "";
+            enableBam = true;
+            targetERP = "";
+            alias = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0fdfc699-3edb-4b79-b90e-63aeaf8c8082")]
+            scope longrunning transaction Transaction_1
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("21895dd3-e9f1-497c-bd1c-c3c1844dacd3")]
+                    isArchive=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.ActiveCreditCards","isArchive"));
+                    enableBam=System.Convert.ToBoolean(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.ActiveCreditCards","bamEnabled"));
+                    severity=System.Convert.ToInt32(SSO.Utility.SSOClientHelper.Read("BTNextGen.Biztalk.ActiveCreditCards","faultSeverity"));
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("56abcecb-8d93-483a-a488-5440149c5435")]
+                    construct CardsDetailsReqMultiPart
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2069151e-35cf-47cb-97c5-f0e6b2d517ef")]
+                        transform (CardsDetailsReqMultiPart.parameters) = BTNextGen.Biztalk.ActiveCreditCards.Maps.Init_To_CardsReq (InitFile);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("5765038d-21cb-46cf-b915-1ce3d1055f87")]
+                    send (CreditCardsWCFPort.GetCreditCardDetails, CardsDetailsReqMultiPart);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("92da136c-96fb-428e-b430-dd8490d203da")]
+                    receive (CreditCardsWCFPort.GetCreditCardDetails, CardsDetailsReqResponseMultiPart);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("7979b07c-28cb-4d4c-abfa-1b59c6e45243")]
+                    cntCards= System.Convert.ToInt32(xpath(CardsDetailsReqResponseMultiPart.parameters,"count(/*[local-name()='GetCreditCardDetailsResponse' and namespace-uri()='http://tempuri.org/']/*[local-name()='GetCreditCardDetailsResult' and namespace-uri()='http://tempuri.org/']/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles'])" ));
+                    counter=1;
+                    strCounter="1";
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3b2a9920-c0b5-4a63-946b-71b84abfb80d")]
+                    while (counter <= cntCards)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("46826616-3228-44e5-9ede-f6d470159d39")]
+                        scope longrunning transaction Transaction_2
+                        {
+                            body
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("bd7c90b5-82d4-4e67-a8fa-05c045d90165")]
+                                if (isArchive == true)
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c220132f-b6fe-44bb-ac96-76a1a3661a1d")]
+                                    construct archiveBulkResponsea
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("3edfbdd4-b8be-400e-a8e5-b31b842fddc8")]
+                                        archiveBulkResponsea.parameters= CardsDetailsReqResponseMultiPart.parameters;
+                                        archiveBulkResponsea(FILE.ReceivedFileName)="ActiveCardsResponse";
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("ad43eb13-831b-4c1b-8736-1bf30e590503")]
+                                    send (archiveBulkRespPorta.Operation_1, archiveBulkResponsea);
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("0ef69bfe-d411-4284-9409-fff814729ed8")]
+                                construct SingleCardCS
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c370df1d-9ed0-49e7-977b-a99750657c3e")]
+                                    SingleCardCS= xpath(CardsDetailsReqResponseMultiPart.parameters,"/*[local-name()='GetCreditCardDetailsResponse' and namespace-uri()='http://tempuri.org/']/*[local-name()='GetCreditCardDetailsResult' and namespace-uri()='http://tempuri.org/']/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles']["+strCounter+"]");
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("b8319383-2b83-458e-abfb-f9fec69008ed")]
+                                cardID= xpath(SingleCardCS,"string(/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles']/*[local-name()='cardID' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles'])");
+                                isTolas= xpath(SingleCardCS,"string(/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles']/*[local-name()='is_Tolas' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles'])");
+                                erpAccountNo= xpath(SingleCardCS,"string(/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles']/*[local-name()='erp_account_id' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles'])");
+                                alias= xpath(SingleCardCS,"string(/*[local-name()='ActiveCreditCards' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles']/*[local-name()='alias' and namespace-uri()='http://schemas.datacontract.org/2004/07/IProfiles'])");
+                                System.Diagnostics.EventLog.WriteEntry("No of active cards", cntCards.ToString());
+                                
+                                
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("cb8667b5-f84e-4046-a9a8-9ffd1a998010")]
+                                if (enableBam)
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d1e2dfcd-6547-4bdd-8083-7cbec20b9b58")]
+                                    // set bam variables
+                                    activityName= "active_credit_cards";
+                                    guid= System.Guid.NewGuid();
+                                    activityID= guid.ToString()+ "_"+ System.DateTime.Now.ToString();
+                                    
+                                    if (isTolas.ToLower()=="false")
+                                    {
+                                    targetERP= "SOP";
+                                    }
+                                    
+                                    if (isTolas.ToLower()=="true")
+                                    {
+                                    targetERP= "TOLAS";
+                                    }
+                                    
+                                    
+                                    
+                                    Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.BeginActivity(activityName,activityID);
+                                    Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,"CSCardRcv",System.DateTime.UtcNow,
+                                    "CardID",cardID,
+                                    "Destination",targetERP,
+                                    "Alias",alias,
+                                    "ERPAccountNo",erpAccountNo);
+                                    
+                                    
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a68d1f5f-05d2-4ad6-b968-3f113d01e1a3")]
+                                construct sendToERP
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8dd8a925-28a7-4370-bac8-c11366c358a0")]
+                                    transform (sendToERP) = BTNextGen.Biztalk.ActiveCreditCards.Maps.CreditCardCS_ToCreditCardERPR20B (SingleCardCS);
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("b42fd64d-ae55-40bf-a0cc-54047fac4910")]
+                                if (isTolas!=null && ( isTolas!= System.String.Empty))
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e6da235c-d05a-4339-8fed-c770756f34b4")]
+                                    scope synchronized longrunning transaction Transaction_Delivery
+                                    {
+                                        body
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a3884813-23e7-4339-9fad-c746ece6aa51")]
+                                            if (System.Convert.ToBoolean(isTolas))
+                                            {
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9d611df6-4bb1-4d45-8d6e-4753077e08da")]
+                                                send (SendTOLAS.Operation_1, sendToERP);
+                                            }
+                                            else 
+                                            {
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c2dad4fa-289d-48d6-ac55-047708f6f035")]
+                                                send (SendSOPPort.Operation_1, sendToERP);
+                                            }
+                                        }
+                                        exceptions
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f9d14683-7fd1-408f-85f3-032a469c271e")]
+                                            catch (Microsoft.XLANGs.BaseTypes.DeliveryFailureException deliveryException)
+                                            {
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("285ae0c7-e81a-49a3-804d-12ee8ff9af91")]
+                                                counter= counter+1;
+                                                strCounter= System.Convert.ToString(counter);
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("d47525da-85a5-4f80-ab1f-6bda8f1bd318")]
+                                                construct faultMessage
+                                                {
+                                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("0d2f7f84-25b1-40bd-8e41-fab9d35aa5ca")]
+                                                    // Create fault exception Message
+                                                    faultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                                                    
+                                                    // Assign Properties
+                                                    
+                                                    faultMessage.FailureCategory="Delivery Failure to MQ";
+                                                    faultMessage.FaultDescription=deliveryException.Message;
+                                                    faultMessage.FaultCode="5003";
+                                                    faultMessage.FaultSeverity= severity;
+                                                    
+                                                }
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("91824e3c-0d02-45ad-8480-5d7980b6238d")]
+                                                send (SendFaultPort.FaultPort, faultMessage);
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("4f3f4c6e-651d-469b-8ebf-b3ceea5fc619")]
+                                                throw new System.Exception("Active Credit Card not Delivered to MQ");
+                                            }
+                                        }
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a741d32c-219d-4436-87c5-008fda337630")]
+                                    if (enableBam)
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("64b3c7e2-f9d7-4d0c-8624-6af49cfd35a0")]
+                                        Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,"ERPSent",System.DateTime.UtcNow);
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c2329e7d-1e90-4cdc-9c76-7e5e11752254")]
+                                    if (isArchive == true)
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("692577d3-72a1-4c34-a982-6153ed179072")]
+                                        construct archiveERPSend
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9101f016-3587-475a-a61e-dfa610bca4a3")]
+                                            archiveERPSend= sendToERP;
+                                            archiveERPSend(FILE.ReceivedFileName)="ActiveCardsERPMsg_"+targetERP+"_"+erpAccountNo ;
+                                        }
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b879478b-cd38-40de-be74-12a8d7457e6c")]
+                                        send (archivePort.Operation_1, archiveERPSend);
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("44dcd088-84aa-40c6-b45f-926c047b4c6f")]
+                                    construct CreditCardCS
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b089475e-fde6-4d96-ac58-435b96e5dd15")]
+                                        xmldocUpdateProfile.LoadXml("<ProfileDocument><CreditCard><BTNextGen><transmitted_to_erp></transmitted_to_erp></BTNextGen><GeneralInfo><id></id></GeneralInfo></CreditCard></ProfileDocument>");
+                                        
+                                        CreditCardCS=xmldocUpdateProfile;
+                                        
+                                        xpath(CreditCardCS,"/*[local-name()='ProfileDocument' and namespace-uri()='']/*[local-name()='CreditCard' and namespace-uri()='']/*[local-name()='GeneralInfo' and namespace-uri()='']/*[local-name()='id' and namespace-uri()='']")= cardID;
+                                        xpath(CreditCardCS,"/*[local-name()='ProfileDocument' and namespace-uri()='']/*[local-name()='CreditCard' and namespace-uri()='']/*[local-name()='BTNextGen' and namespace-uri()='']/*[local-name()='transmitted_to_erp' and namespace-uri()='']")= "1";
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("cd32556d-9f7e-4ed0-9381-ada98825a440")]
+                                    construct updateProfileWCFReq
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7884c7b8-4408-4e83-af8d-e7cccc95f68f")]
+                                        transform (updateProfileWCFReq.parameters) = BTNextGen.Biztalk.ActiveCreditCards.Maps.Profile_WCFUpdateReq (CreditCardCS);
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6d19a203-f867-42f0-907f-6f2964bcd802")]
+                                        updateProfileWCFReq.parameters.profileKey=cardID;
+                                        updateProfileWCFReq.parameters.profileObjectName="CreditCard";
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("2ce6a668-aae8-410e-89c9-b6f0391e1c87")]
+                                    send (CreditCardsWCFPort.UpdatePartialProfile, updateProfileWCFReq);
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("89093290-2200-4f11-8358-0fc6957bf256")]
+                                    receive (CreditCardsWCFPort.UpdatePartialProfile, WCFResponse);
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d37f7e96-1438-491e-9144-b96e556bafde")]
+                                    if (enableBam)
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("bb055c2f-7a45-4b84-b925-c5c30504b6c3")]
+                                        Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.UpdateActivity(activityName,activityID,"CSAckSent",System.DateTime.UtcNow);
+                                        Microsoft.BizTalk.Bam.EventObservation.OrchestrationEventStream.EndActivity(activityName,activityID);
+                                    }
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("d9ca057e-2e99-4171-ad92-0012409b84ec")]
+                                counter= counter+1;
+                                strCounter= System.Convert.ToString(counter);
+                            }
+                            exceptions
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6289f7ee-ffb4-4dd3-9561-63d00da14386")]
+                                catch (System.Exception InnerEx)
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("84797da6-0e80-4e9b-9dd2-8db11c7056f3")]
+                                    counter= counter+1;
+                                    strCounter= System.Convert.ToString(counter);
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("444ca738-d4f0-4d8a-930c-73f0eddae36a")]
+                                    construct faultMessage
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("78b427ac-d759-4a8d-9834-ebbb3841988a")]
+                                        // Create fault exception Message
+                                        faultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                                        
+                                        // Assign Properties
+                                        
+                                        faultMessage.FailureCategory="Acitve Credit Cards";
+                                        faultMessage.FaultDescription= cardID +" " + erpAccountNo + " " + InnerEx.Message;
+                                        faultMessage.FaultCode="5002";
+                                        faultMessage.FaultSeverity= severity;
+                                        
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("9f0cc244-950a-4cb8-96ee-298f7f7eda5f")]
+                                    send (SendFaultPort.FaultPort, faultMessage);
+                                }
+                            }
+                        }
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("15765a25-d888-4bf9-968d-e200070f3d83")]
+                    catch (System.Exception ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("1cd8d515-f217-46a8-b35b-da9842b456ce")]
+                        construct faultMessage
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d27ec222-94e4-4791-abbb-df0d7ba84b5d")]
+                            // Create fault exception Message
+                            faultMessage= Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            // Assign Properties
+                            
+                            faultMessage.FailureCategory="Commerce Server Exception";
+                            faultMessage.FaultDescription=ex.Message;
+                            faultMessage.FaultCode="5001";
+                            faultMessage.FaultSeverity=  Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Severe;
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("af6fca3f-3561-4444-97df-182a306f598d")]
+                        send (SendFaultPort.FaultPort, faultMessage);
+                    }
+                }
+            }
+        }
+    }
+}
+

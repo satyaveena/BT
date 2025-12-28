@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:b="http://schemas.microsoft.com/BizTalk/2003" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://BTNextGen.Biztalk.SendActiveCreditCards" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SendCreditCardERP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SendCreditCardERPDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="ActiveCreditCards">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="alias" type="xs:string" />
+                    <xs:element name="cardID" type="xs:string" />
+                    <xs:element name="card_type" type="xs:string" />
+                    <xs:element name="erp_account_id" type="xs:string" />
+                    <xs:element name="expiration_month" type="xs:unsignedByte" />
+                    <xs:element name="expiration_year" type="xs:unsignedShort" />
+                    <xs:element name="is_Tolas" type="xs:string" />
+                    <xs:element name="last_4_digits" type="xs:unsignedShort" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

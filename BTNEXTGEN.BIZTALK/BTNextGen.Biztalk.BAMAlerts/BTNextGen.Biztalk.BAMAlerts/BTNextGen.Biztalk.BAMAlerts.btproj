@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21107</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6AC2565F-497C-4FDA-94BF-9D10B96E74A6}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>BTNextGen.Biztalk.BAMAlerts</RootNamespace>
+    <AssemblyName>BTNextGen.Biztalk.BAMAlerts</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BTNextGen.Biztalk.Common.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BTNextGen.BizTalk.SSO.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BTNextGen.BizTalk.SSO.Utility\BTNextGen.BizTalk.SSO.Utility\bin\Release\BTNextGen.BizTalk.SSO.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="BTNextGen.ExceptionHandler.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=be3013815deaefc7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BTNextGen.ExceptionHandler.Orchestration\BTNextGen.ExceptionHandler.Utility\bin\Release\BTNextGen.ExceptionHandler.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline.Components, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.XLANGs.Pipeline, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server 2010\Microsoft.XLANGs.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Maps\EmailOrdAWOL.btm">
+      <TypeName>EmailOrdAWOL</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts.Maps</Namespace>
+    </Map>
+    <Content Include="WcfSendPort_SqlAdapterBinding_GetLatestOrder.xml" />
+    <Map Include="Maps\InsertAlertHistoryInsert.btm">
+      <TypeName>InsertAlertHistoryInsert</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts</Namespace>
+    </Map>
+    <Map Include="Maps\EmailMessage.btm">
+      <TypeName>EmailMessage</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts</Namespace>
+    </Map>
+    <Pipeline Include="Pipeline\SendFlatFile.btp">
+      <TypeName>SendFlatFile</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts.Pipeline</Namespace>
+    </Pipeline>
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo.xml" />
+    <XLang Include="Orchestrations\BAMAlert_ERPOrders.odx">
+      <TypeName>BAMAlert_ERPOrders</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts</Namespace>
+    </XLang>
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Schema\SimpleTypeArray.xsd">
+      <TypeName>SimpleTypeArray</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts</Namespace>
+    </Schema>
+    <Schema Include="Schema\Table.dbo.xsd">
+      <TypeName>Table_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts</Namespace>
+    </Schema>
+    <Schema Include="Schema\TableOperation.dbo.BT_BAMAlertHistory.xsd">
+      <TypeName>TableOperation_dbo_BT_BAMAlertHistory</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Schema\BamAlertTrigger.xsd">
+      <TypeName>BamAlertTrigger</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Schema\ProcedureResultSet.dbo.procGetNoAckERPOrdersBAM.xsd">
+      <TypeName>ProcedureResultSet_dbo_procGetNoAckERPOrdersBAM</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts</Namespace>
+    </Schema>
+    <Schema Include="Schema\TypedProcedure.dbo.xsd">
+      <TypeName>TypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BTNextGen.Biztalk.Common.snk" />
+    <Schema Include="GetLatestOrderProcedureResultSet.dbo.procGetLatestOrderAgeBAM.xsd">
+      <TypeName>GetLatestOrderProcedureResultSet_dbo_procGetLatestOrderAgeBAM</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts</Namespace>
+    </Schema>
+    <Schema Include="GetLatestOrderTypedProcedure.dbo.xsd">
+      <TypeName>GetLatestOrderTypedProcedure_dbo</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts</Namespace>
+    </Schema>
+    <Schema Include="Schema\MissingACKAlert.xsd">
+      <TypeName>MissingACKAlert</TypeName>
+      <Namespace>BTNextGen.Biztalk.BAMAlerts.Schema</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4793584f-43b3-4963-8430-e6e0a127c984" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="C:\Users\Administrator\Documents\UPSTracking\Track.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UPSSecurity.xsd" MetadataType="Schema" ID="b310f78c-a36b-48d0-81e2-90864ad03245" SourceId="1" SourceUrl="file:///C:/Users/Administrator/Documents/UPSTracking/UPSSecurity.xsd" />
+    <MetadataFile FileName="common.xsd" MetadataType="Schema" ID="d8661ac8-89e5-4d40-b972-d0134c0a8f05" SourceId="1" SourceUrl="file:///C:/Users/Administrator/Documents/UPSTracking/common.xsd" />
+    <MetadataFile FileName="TrackWebServiceSchema.xsd" MetadataType="Schema" ID="8a45323c-5b40-4cd8-8312-0f2a830cf9c9" SourceId="1" SourceUrl="file:///C:/Users/Administrator/Documents/UPSTracking/TrackWebServiceSchema.xsd" />
+    <MetadataFile FileName="Error1.xsd" MetadataType="Schema" ID="b7874d88-51a8-4968-b6c8-c04780798947" SourceId="1" SourceUrl="file:///C:/Users/Administrator/Documents/UPSTracking/Error1.1.xsd" />
+    <MetadataFile FileName="Track.wsdl" MetadataType="Wsdl" ID="fd5ccfe9-e36a-4386-8c4c-4bebd0fb367e" SourceId="1" SourceUrl="file:///C:/Users/Administrator/Documents/UPSTracking/Track.wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

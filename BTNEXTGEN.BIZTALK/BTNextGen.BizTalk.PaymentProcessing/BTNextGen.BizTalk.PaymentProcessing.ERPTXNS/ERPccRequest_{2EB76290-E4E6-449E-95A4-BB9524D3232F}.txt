@@ -1,0 +1,13 @@
+ccAuthService=True
+ccCaptureService=True
+merchantID=BAKER_AND_TAYLOR
+merchantReferenceCode=BT_CCA_000000421_CCS_000000441
+subscriptionID=CCard to TEST DEBIT    handling
+item_0_unitprice=000000000129.95
+item_0_quantity=1
+item_0_taxamount=000000000010.09
+purchaseTotals_currency=USD
+invoiceHeader_userPO=BT_NDDD568921
+invoiceHeader_amexDataTAA1=BT_NDDD568921
+invoiceHeader_merchantDescriptor=BT*INVOICE=NDDD568921
+invoiceHeader_merchantDescriptorContact=123-456-7890

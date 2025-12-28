@@ -1,0 +1,1 @@
+﻿CREATE VIEW dbo.[bam_Cybersource Settlement Feed_CompletedInstances] AS  SELECT * FROM dbo.[bam_Cybersource Settlement Feed_Completed] WITH (NOLOCK)

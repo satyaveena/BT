@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="BTNextGen.Services.IPromotions.IPromotion" CodeBehind="IPromotion.svc.cs" %>

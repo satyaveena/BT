@@ -1,0 +1,169 @@
+2019-01-28 20:08:10.4770 
+
+2019-01-28 20:08:11.0670 PROGRAM EXECUTION BEGINS
+2019-01-28 20:08:28.9488 Samples Folder At:C:\Users\selfj.BTCORP\Desktop\New folder (3)\cybersource-rest-samples-csharp-master\src\Samples
+2019-01-28 20:29:15.4454 Api Family: Flex
+2019-01-28 20:29:16.6336 Total Sample Codes Detected: 2
+2019-01-28 20:29:33.7543 Api Family: Payments
+2019-01-28 20:29:34.0773 Total Sample Codes Detected: 10
+2019-01-28 20:29:55.2204 Api Family: Payouts
+2019-01-28 20:29:55.6745 Total Sample Codes Detected: 1
+2019-01-28 20:30:10.7810 Api Family: Reporting
+2019-01-28 20:30:11.0300 Total Sample Codes Detected: 12
+2019-01-28 20:30:30.2509 Api Family: SecureFileShare
+2019-01-28 20:30:30.5510 Total Sample Codes Detected: 2
+2019-01-28 20:30:39.5099 Api Family: TMS
+2019-01-28 20:30:40.6240 Total Sample Codes Detected: 9
+2019-01-28 20:31:07.6377 Api Family: TransactionBatches
+2019-01-28 20:31:08.1057 Total Sample Codes Detected: 2
+2019-01-28 20:31:18.7368 Api Family: TransactionDetails
+2019-01-28 20:31:19.2668 Total Sample Codes Detected: 1
+2019-01-28 20:31:28.3567 Api Family: TransactionSearch
+2019-01-28 20:31:28.6628 Total Sample Codes Detected: 2
+2019-01-28 20:31:36.3285 Api Family: UserManagement
+2019-01-28 20:31:36.6306 Total Sample Codes Detected: 1
+2019-01-28 20:34:48.8798 Project Namespace value provided: Cybersource_rest_samples_dotnet
+2019-01-28 20:35:23.3522 Beginning to Show All Sample Codes on Console
+2019-01-28 20:35:41.0820 Showing Sample Codes for Api Family: Flex
+2019-01-28 20:36:26.8976 Showing Sample Codes for Api Family: Payments
+2019-01-28 20:36:59.5179 Showing Sample Codes for Api Family: Payouts
+2019-01-28 20:37:22.8612 Showing Sample Codes for Api Family: Reporting
+2019-01-28 20:37:22.8612 Showing Sample Codes for Api Family: SecureFileShare
+2019-01-28 20:37:22.8612 Showing Sample Codes for Api Family: TMS
+2019-01-28 20:37:22.8712 Showing Sample Codes for Api Family: TransactionBatches
+2019-01-28 20:37:22.8712 Showing Sample Codes for Api Family: TransactionDetails
+2019-01-28 20:37:22.8712 Showing Sample Codes for Api Family: TransactionSearch
+2019-01-28 20:37:22.8712 Showing Sample Codes for Api Family: UserManagement
+2019-01-28 20:38:38.4137 All Sample Codes Shown on Console
+2019-01-28 20:41:08.2397 Input provided for Sample Code to Run: DownloadReport
+2019-01-28 20:42:39.5889 Sample Code found in the namespace: Cybersource_rest_samples_dotnet.Samples.Reporting.CoreServices.
+2019-01-28 20:42:54.6624 Invoking Run() method of DownloadReport
+2019-01-29 09:59:41.4288 
+
+2019-01-29 09:59:41.4758 PROGRAM EXECUTION BEGINS
+2019-01-29 09:59:41.4848 Samples Folder At:C:\Users\selfj.BTCORP\Desktop\New folder (3)\cybersource-rest-samples-csharp-master\src\Samples
+2019-01-29 09:59:41.4848 Api Family: Flex
+2019-01-29 09:59:41.4848 Total Sample Codes Detected: 2
+2019-01-29 09:59:41.4988 Api Family: Payments
+2019-01-29 09:59:41.4988 Total Sample Codes Detected: 10
+2019-01-29 09:59:41.4988 Api Family: Payouts
+2019-01-29 09:59:41.4988 Total Sample Codes Detected: 1
+2019-01-29 09:59:41.5158 Api Family: Reporting
+2019-01-29 09:59:41.5158 Total Sample Codes Detected: 12
+2019-01-29 09:59:41.5158 Api Family: SecureFileShare
+2019-01-29 09:59:41.5158 Total Sample Codes Detected: 2
+2019-01-29 09:59:41.5338 Api Family: TMS
+2019-01-29 09:59:41.5338 Total Sample Codes Detected: 9
+2019-01-29 09:59:41.5338 Api Family: TransactionBatches
+2019-01-29 09:59:41.5478 Total Sample Codes Detected: 2
+2019-01-29 09:59:41.5478 Api Family: TransactionDetails
+2019-01-29 09:59:41.5478 Total Sample Codes Detected: 1
+2019-01-29 09:59:41.5608 Api Family: TransactionSearch
+2019-01-29 09:59:41.5608 Total Sample Codes Detected: 2
+2019-01-29 09:59:41.5608 Api Family: UserManagement
+2019-01-29 09:59:41.5608 Total Sample Codes Detected: 1
+2019-01-29 09:59:41.5858 Project Namespace value provided: Cybersource_rest_samples_dotnet
+2019-01-29 09:59:51.3348 Beginning to Show All Sample Codes on Console
+2019-01-29 09:59:51.3848 Showing Sample Codes for Api Family: Flex
+2019-01-29 09:59:51.3918 Showing Sample Codes for Api Family: Payments
+2019-01-29 09:59:51.3918 Showing Sample Codes for Api Family: Payouts
+2019-01-29 09:59:51.4048 Showing Sample Codes for Api Family: Reporting
+2019-01-29 09:59:51.4048 Showing Sample Codes for Api Family: SecureFileShare
+2019-01-29 09:59:51.4208 Showing Sample Codes for Api Family: TMS
+2019-01-29 09:59:51.4208 Showing Sample Codes for Api Family: TransactionBatches
+2019-01-29 09:59:51.4358 Showing Sample Codes for Api Family: TransactionDetails
+2019-01-29 09:59:51.4358 Showing Sample Codes for Api Family: TransactionSearch
+2019-01-29 09:59:51.4358 Showing Sample Codes for Api Family: UserManagement
+2019-01-29 09:59:52.9589 All Sample Codes Shown on Console
+2019-01-29 10:00:21.0617 Input provided for Sample Code to Run: DownloadReport
+2019-01-29 10:00:35.8032 Sample Code found in the namespace: Cybersource_rest_samples_dotnet.Samples.Reporting.CoreServices.
+2019-01-29 10:00:45.5682 Invoking Run() method of DownloadReport
+2019-01-29 10:04:42.1228 
+
+2019-01-29 10:04:42.1639 PROGRAM EXECUTION BEGINS
+2019-01-29 10:04:42.1749 Samples Folder At:C:\Users\selfj.BTCORP\Desktop\New folder (3)\cybersource-rest-samples-csharp-master\src\Samples
+2019-01-29 10:04:42.1749 Api Family: Flex
+2019-01-29 10:04:42.1749 Total Sample Codes Detected: 2
+2019-01-29 10:04:42.1929 Api Family: Payments
+2019-01-29 10:04:42.1929 Total Sample Codes Detected: 10
+2019-01-29 10:04:42.2049 Api Family: Payouts
+2019-01-29 10:04:42.2049 Total Sample Codes Detected: 1
+2019-01-29 10:04:42.2049 Api Family: Reporting
+2019-01-29 10:04:42.2219 Total Sample Codes Detected: 12
+2019-01-29 10:04:42.2219 Api Family: SecureFileShare
+2019-01-29 10:04:42.2339 Total Sample Codes Detected: 2
+2019-01-29 10:04:42.2339 Api Family: TMS
+2019-01-29 10:04:42.2339 Total Sample Codes Detected: 9
+2019-01-29 10:04:42.2509 Api Family: TransactionBatches
+2019-01-29 10:04:42.2509 Total Sample Codes Detected: 2
+2019-01-29 10:04:42.2509 Api Family: TransactionDetails
+2019-01-29 10:04:42.2669 Total Sample Codes Detected: 1
+2019-01-29 10:04:42.2669 Api Family: TransactionSearch
+2019-01-29 10:04:42.2669 Total Sample Codes Detected: 2
+2019-01-29 10:04:42.2859 Api Family: UserManagement
+2019-01-29 10:04:42.2859 Total Sample Codes Detected: 1
+2019-01-29 10:04:42.3019 Project Namespace value provided: Cybersource_rest_samples_dotnet
+2019-01-29 10:04:43.4480 Beginning to Show All Sample Codes on Console
+2019-01-29 10:04:43.4560 Showing Sample Codes for Api Family: Flex
+2019-01-29 10:04:43.4560 Showing Sample Codes for Api Family: Payments
+2019-01-29 10:04:43.4690 Showing Sample Codes for Api Family: Payouts
+2019-01-29 10:04:43.4690 Showing Sample Codes for Api Family: Reporting
+2019-01-29 10:04:43.4890 Showing Sample Codes for Api Family: SecureFileShare
+2019-01-29 10:04:43.4890 Showing Sample Codes for Api Family: TMS
+2019-01-29 10:04:43.5070 Showing Sample Codes for Api Family: TransactionBatches
+2019-01-29 10:04:43.5150 Showing Sample Codes for Api Family: TransactionDetails
+2019-01-29 10:04:43.5150 Showing Sample Codes for Api Family: TransactionSearch
+2019-01-29 10:04:43.5310 Showing Sample Codes for Api Family: UserManagement
+2019-01-29 10:04:44.5031 All Sample Codes Shown on Console
+2019-01-29 10:04:53.1710 Input provided for Sample Code to Run: DownloadReport
+2019-01-29 10:04:58.8555 Sample Code found in the namespace: Cybersource_rest_samples_dotnet.Samples.Reporting.CoreServices.
+2019-01-29 10:04:59.6866 Invoking Run() method of DownloadReport
+2019-01-29 10:12:17.5654 
+
+2019-01-29 10:12:17.6104 PROGRAM EXECUTION BEGINS
+2019-01-29 10:12:17.6224 Samples Folder At:C:\Users\selfj.BTCORP\Desktop\New folder (3)\cybersource-rest-samples-csharp-master\src\Samples
+2019-01-29 10:12:17.6224 Api Family: Flex
+2019-01-29 10:12:17.6364 Total Sample Codes Detected: 2
+2019-01-29 10:12:17.6364 Api Family: Payments
+2019-01-29 10:12:17.6524 Total Sample Codes Detected: 10
+2019-01-29 10:12:17.6524 Api Family: Payouts
+2019-01-29 10:12:17.6524 Total Sample Codes Detected: 1
+2019-01-29 10:12:17.6714 Api Family: Reporting
+2019-01-29 10:12:17.6714 Total Sample Codes Detected: 12
+2019-01-29 10:12:17.6714 Api Family: SecureFileShare
+2019-01-29 10:12:17.6894 Total Sample Codes Detected: 2
+2019-01-29 10:12:17.6894 Api Family: TMS
+2019-01-29 10:12:17.7044 Total Sample Codes Detected: 9
+2019-01-29 10:12:17.7044 Api Family: TransactionBatches
+2019-01-29 10:12:17.7194 Total Sample Codes Detected: 2
+2019-01-29 10:12:17.7194 Api Family: TransactionDetails
+2019-01-29 10:12:17.7324 Total Sample Codes Detected: 1
+2019-01-29 10:12:17.7324 Api Family: TransactionSearch
+2019-01-29 10:12:17.7324 Total Sample Codes Detected: 2
+2019-01-29 10:12:17.7494 Api Family: UserManagement
+2019-01-29 10:12:17.7494 Total Sample Codes Detected: 1
+2019-01-29 10:12:17.7654 Project Namespace value provided: Cybersource_rest_samples_dotnet
+2019-01-29 10:12:19.0025 Beginning to Show All Sample Codes on Console
+2019-01-29 10:12:19.0095 Showing Sample Codes for Api Family: Flex
+2019-01-29 10:12:19.0095 Showing Sample Codes for Api Family: Payments
+2019-01-29 10:12:19.0245 Showing Sample Codes for Api Family: Payouts
+2019-01-29 10:12:19.0245 Showing Sample Codes for Api Family: Reporting
+2019-01-29 10:12:19.0455 Showing Sample Codes for Api Family: SecureFileShare
+2019-01-29 10:12:19.0455 Showing Sample Codes for Api Family: TMS
+2019-01-29 10:12:19.0635 Showing Sample Codes for Api Family: TransactionBatches
+2019-01-29 10:12:19.0635 Showing Sample Codes for Api Family: TransactionDetails
+2019-01-29 10:12:19.0785 Showing Sample Codes for Api Family: TransactionSearch
+2019-01-29 10:12:19.0785 Showing Sample Codes for Api Family: UserManagement
+2019-01-29 10:12:19.6096 All Sample Codes Shown on Console
+2019-01-29 10:12:26.8363 Input provided for Sample Code to Run: DownloadReport
+2019-01-29 10:12:30.4587 Sample Code found in the namespace: Cybersource_rest_samples_dotnet.Samples.Reporting.CoreServices.
+2019-01-29 10:12:31.8178 Invoking Run() method of DownloadReport
+2019-01-29 19:23:27.1623 
+
+2019-01-29 19:23:27.4813 PROGRAM EXECUTION BEGINS
+2019-01-30 16:42:19.4752 
+
+2019-01-30 16:42:19.5462 PROGRAM EXECUTION BEGINS
+2019-01-31 10:02:46.2486 
+
+2019-01-31 10:02:47.1817 PROGRAM EXECUTION BEGINS

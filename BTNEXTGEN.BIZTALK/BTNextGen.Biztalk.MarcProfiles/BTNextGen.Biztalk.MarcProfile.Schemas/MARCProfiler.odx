@@ -1,0 +1,109 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="90eb007d-7de2-4ce7-bbd1-e0f8d9a44030">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.MarcProfiles.Schemas" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="f1b50080-de61-4bd7-96ea-3fa43cbdeddb" ParentLink="Module_PortType">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IMARCProfiler&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IMARCProfiler" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="51760e8a-c3fb-4326-8e9b-de55da4c6ba6" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;GetMARCFile&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="GetMARCFile" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="5661a6fb-d2f8-4f86-9141-ad9e5dd77031" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.IMARCProfiler_GetMARCFile_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IMARCProfiler_GetMARCFile_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IMARCProfiler/GetMARCFile&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="13797828-3943-481e-ab32-327d6085a611" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.IMARCProfiler_GetMARCFile_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IMARCProfiler_GetMARCFile_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IMARCProfiler/GetMARCFileResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="e5903b21-21ca-4756-ad34-2c5d8cb5ae1c" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IMARCProfiler_GetMARCFile_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IMARCProfiler_GetMARCFile_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="0284f530-95ad-4148-89e5-c35a2012fc7e" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFile" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="65588fd4-d01d-4d9f-9ac2-56a000719f5c" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IMARCProfiler_GetMARCFile_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IMARCProfiler_GetMARCFile_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="e0a77813-3013-4b7f-a606-7525d3a3a263" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="c90e1535-b395-4400-bc98-56704664d549" ParentLink="Module_ServiceDeclaration">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;MARCProfiler&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="MARCProfilerClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="c1f1236d-c092-4616-8db6-cd7c3d412c87" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.MarcProfiles.Schemas
+{
+    internal messagetype IMARCProfiler_GetMARCFile_InputMessage
+    {
+        body MARCProfiler_tempuri_org.GetMARCFile parameters;
+    };
+    internal messagetype IMARCProfiler_GetMARCFile_OutputMessage
+    {
+        body MARCProfiler_tempuri_org.GetMARCFileResponse parameters;
+    };
+    internal porttype IMARCProfiler
+    {
+        requestresponse GetMARCFile
+        {
+            IMARCProfiler_GetMARCFile_InputMessage, IMARCProfiler_GetMARCFile_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service MARCProfilerClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

@@ -1,0 +1,185 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.WebAPI", "BT.TS360API.WebAPI\BT.TS360API.WebAPI.csproj", "{566FF845-B19A-4DC1-B056-05E60DF22D85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Client", "BT.TS360API.Client\BT.TS360API.Client.csproj", "{EBC3D859-A70E-4065-BD36-04290952FA77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Security", "BT.TS360API.Security\BT.TS360API.Security.csproj", "{FFAE8668-384C-47D8-84D7-C0341F60BB60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OAuth", "OAuth", "{A8E8937F-2B68-4AD6-807D-F8BD9A4CBFEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthClient", "BT.TS360API.OAuth\OAuth\OAuthClient\OAuthClient.csproj", "{9529606E-AF76-4387-BFB7-3D10A5B399AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthResourceServer", "BT.TS360API.OAuth\OAuth\OAuthResourceServer\OAuthResourceServer.csproj", "{E135F455-0669-49F8-9207-07FCA8C8FC79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.SearchService", "BT.TS360API.SearchService\BT.TS360API.SearchService.csproj", "{9153D00B-4492-4601-BD12-784AD1C14E7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.ServiceContracts", "BT.TS360API.ServiceContracts\BT.TS360API.ServiceContracts.csproj", "{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Cache", "BT.TS360API.Cache\BT.TS360API.Cache.csproj", "{3AD85A78-1152-4DE6-874C-C1D798EC1B42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Logging", "BT.TS360API.Logging\BT.TS360API.Logging.csproj", "{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Common", "BT.TS360API.Common\BT.TS360API.Common.csproj", "{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360Constants", "TS360Constants\BT.TS360Constants.csproj", "{F02C91F8-1C30-4116-8CF2-BB4286A554F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.ExternalServices", "BT.TS360API.ExternalServices\BT.TS360API.ExternalServices.csproj", "{2B52E44C-D562-4087-8A48-3A00818DD6BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360SP", "BT.TS360SP\BT.TS360SP.csproj", "{0C232023-0675-4249-9CF4-4BC68ABDFF98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.TS360API.Marketing", "BT.TS360API.Marketing\BT.TS360API.Marketing.csproj", "{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 15
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://btdevtfs/portal/nextgencollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BT.TS360API.Client\\BT.TS360API.Client.csproj
+		SccProjectName1 = BT.TS360API.Client
+		SccLocalPath1 = BT.TS360API.Client
+		SccProjectUniqueName2 = BT.TS360API.WebAPI\\BT.TS360API.WebAPI.csproj
+		SccProjectName2 = BT.TS360API.WebAPI
+		SccLocalPath2 = BT.TS360API.WebAPI
+		SccProjectUniqueName3 = BT.TS360API.Security\\BT.TS360API.Security.csproj
+		SccProjectName3 = BT.TS360API.Security
+		SccLocalPath3 = BT.TS360API.Security
+		SccProjectUniqueName4 = BT.TS360API.OAuth\\OAuth\\OAuthClient\\OAuthClient.csproj
+		SccProjectTopLevelParentUniqueName4 = BT.TS360WebAPI.sln
+		SccProjectName4 = BT.TS360API.OAuth/OAuth/OAuthClient
+		SccLocalPath4 = BT.TS360API.OAuth\\OAuth\\OAuthClient
+		SccProjectUniqueName5 = BT.TS360API.OAuth\\OAuth\\OAuthResourceServer\\OAuthResourceServer.csproj
+		SccProjectTopLevelParentUniqueName5 = BT.TS360WebAPI.sln
+		SccProjectName5 = BT.TS360API.OAuth/OAuth/OAuthResourceServer
+		SccLocalPath5 = BT.TS360API.OAuth\\OAuth\\OAuthResourceServer
+		SccProjectUniqueName6 = BT.TS360API.SearchService\\BT.TS360API.SearchService.csproj
+		SccProjectName6 = BT.TS360API.SearchService
+		SccLocalPath6 = BT.TS360API.SearchService
+		SccProjectUniqueName7 = BT.TS360API.ServiceContracts\\BT.TS360API.ServiceContracts.csproj
+		SccProjectName7 = BT.TS360API.ServiceContracts
+		SccLocalPath7 = BT.TS360API.ServiceContracts
+		SccProjectUniqueName8 = BT.TS360API.Cache\\BT.TS360API.Cache.csproj
+		SccProjectName8 = BT.TS360API.Cache
+		SccLocalPath8 = BT.TS360API.Cache
+		SccProjectUniqueName9 = BT.TS360API.Logging\\BT.TS360API.Logging.csproj
+		SccProjectName9 = BT.TS360API.Logging
+		SccLocalPath9 = BT.TS360API.Logging
+		SccProjectUniqueName10 = BT.TS360API.Common\\BT.TS360API.Common.csproj
+		SccProjectName10 = BT.TS360API.Common
+		SccLocalPath10 = BT.TS360API.Common
+		SccProjectUniqueName11 = TS360Constants\\BT.TS360Constants.csproj
+		SccProjectName11 = TS360Constants
+		SccLocalPath11 = TS360Constants
+		SccProjectUniqueName12 = BT.TS360API.ExternalServices\\BT.TS360API.ExternalServices.csproj
+		SccProjectName12 = BT.TS360API.ExternalServices
+		SccLocalPath12 = BT.TS360API.ExternalServices
+		SccProjectUniqueName13 = BT.TS360SP\\BT.TS360SP.csproj
+		SccProjectName13 = BT.TS360SP
+		SccLocalPath13 = BT.TS360SP
+		SccProjectUniqueName14 = BT.TS360API.Marketing\\BT.TS360API.Marketing.csproj
+		SccProjectName14 = BT.TS360API.Marketing
+		SccLocalPath14 = BT.TS360API.Marketing
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CodeAnalysis|Any CPU = CodeAnalysis|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{566FF845-B19A-4DC1-B056-05E60DF22D85}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{566FF845-B19A-4DC1-B056-05E60DF22D85}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{566FF845-B19A-4DC1-B056-05E60DF22D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{566FF845-B19A-4DC1-B056-05E60DF22D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{566FF845-B19A-4DC1-B056-05E60DF22D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{566FF845-B19A-4DC1-B056-05E60DF22D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC3D859-A70E-4065-BD36-04290952FA77}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC3D859-A70E-4065-BD36-04290952FA77}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{EBC3D859-A70E-4065-BD36-04290952FA77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC3D859-A70E-4065-BD36-04290952FA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC3D859-A70E-4065-BD36-04290952FA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC3D859-A70E-4065-BD36-04290952FA77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFAE8668-384C-47D8-84D7-C0341F60BB60}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{FFAE8668-384C-47D8-84D7-C0341F60BB60}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{FFAE8668-384C-47D8-84D7-C0341F60BB60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFAE8668-384C-47D8-84D7-C0341F60BB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFAE8668-384C-47D8-84D7-C0341F60BB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFAE8668-384C-47D8-84D7-C0341F60BB60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9529606E-AF76-4387-BFB7-3D10A5B399AA}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{9529606E-AF76-4387-BFB7-3D10A5B399AA}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{9529606E-AF76-4387-BFB7-3D10A5B399AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9529606E-AF76-4387-BFB7-3D10A5B399AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9529606E-AF76-4387-BFB7-3D10A5B399AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9529606E-AF76-4387-BFB7-3D10A5B399AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E135F455-0669-49F8-9207-07FCA8C8FC79}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{E135F455-0669-49F8-9207-07FCA8C8FC79}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{E135F455-0669-49F8-9207-07FCA8C8FC79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E135F455-0669-49F8-9207-07FCA8C8FC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E135F455-0669-49F8-9207-07FCA8C8FC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E135F455-0669-49F8-9207-07FCA8C8FC79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9153D00B-4492-4601-BD12-784AD1C14E7E}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{9153D00B-4492-4601-BD12-784AD1C14E7E}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{9153D00B-4492-4601-BD12-784AD1C14E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9153D00B-4492-4601-BD12-784AD1C14E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9153D00B-4492-4601-BD12-784AD1C14E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9153D00B-4492-4601-BD12-784AD1C14E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EB01ED-8C7F-4085-8EF1-BFABC9CF21B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD85A78-1152-4DE6-874C-C1D798EC1B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF3380B-9E55-4A3D-8BE6-31B0B3E9638F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B03CBE-B311-452C-B9CC-FEF1DDE7A673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02C91F8-1C30-4116-8CF2-BB4286A554F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B52E44C-D562-4087-8A48-3A00818DD6BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C232023-0675-4249-9CF4-4BC68ABDFF98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.CodeAnalysis|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.CodeAnalysis|Any CPU.Build.0 = Release|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD582C3-9617-4369-82C7-D3B5ABDBC3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9529606E-AF76-4387-BFB7-3D10A5B399AA} = {A8E8937F-2B68-4AD6-807D-F8BD9A4CBFEC}
+		{E135F455-0669-49F8-9207-07FCA8C8FC79} = {A8E8937F-2B68-4AD6-807D-F8BD9A4CBFEC}
+	EndGlobalSection
+EndGlobal

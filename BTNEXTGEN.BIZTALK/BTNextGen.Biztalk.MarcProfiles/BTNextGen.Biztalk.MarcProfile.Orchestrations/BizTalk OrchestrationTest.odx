@@ -1,0 +1,604 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="3e7f597d-a517-4ce9-891e-40da2f27b72a" LowerBound="1.1" HigherBound="128.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="4c8a926d-bc4c-4388-a649-b3d424114515" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="rprttypReceiveFile" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="50e11c6f-3b7d-4c24-a9d1-35b2e7bb110d" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="f29f1dea-1980-4a53-92d2-a1c3166c46ae" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.77">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MarkProfileFTPandMarkData" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="d5959f93-12e7-41a7-b33f-668c463845d5" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SoliResptestMarkSericeprtTyp" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b2c3b947-f9c5-4cff-895d-a72a112579f1" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d071f40f-144e-4ffb-9f56-f28f643de9d9" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.91">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTP" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="4c06f51e-bdbc-4c58-9232-9aeed7296ae2" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="15.93" HigherBound="15.179">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTPResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="aeb1727c-fd03-4fe2-82cf-bd65f5692750" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SndPrtMarcDataFileTyp" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="6d17536c-9d5c-40f2-ab9f-d65809b4e3e2" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="74e4ae82-3451-4c87-ba51-d506049a8cad" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.26">
+                    <om:Property Name="Ref" Value="System.String" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="a6c02f66-d748-41ff-888f-e60eef582304" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendErrorMsgPrtTyp" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="187887ef-e17d-470d-9429-7d535e56a95a" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="353b40c7-d25b-48d3-86c0-b477e96007b0" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="5d7dd5a1-8992-420f-877e-b6b2b8cf6300" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortCheckInputMessageTyp" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="8441683f-cd6a-4432-9f3e-2105914f3b9d" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="7d087c1c-8364-4106-b9dc-a2b4405076ef" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.77">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MarkProfileFTPandMarkData" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="4727f7bc-c1d5-43c0-9322-437d2a8e5bb3" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="LPrtMarkFTPandMarcParaTyp" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="e9768b82-18a5-4628-a718-a522eb9dff6b" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="a42f8fcd-f76b-4e9f-ad13-933c02ca2aa8" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.77">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MarkProfileFTPandMarkData" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="5a079ff7-91f2-49e2-91b7-e771ac395fbb" ParentLink="Module_PortType" LowerBound="46.1" HigherBound="53.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SndPrtMessgaeMarkDataFileMapOPTyp" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b80df3fc-ee7c-4356-a2ec-bc2ff56a641b" ParentLink="PortType_OperationDeclaration" LowerBound="48.1" HigherBound="52.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="578ae5ac-14e3-4497-93b1-9b5fec1fc6f2" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="50.13" HigherBound="50.66">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MarcFileSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="19b5f62e-48e0-451a-8bbd-816751243df2" ParentLink="Module_PortType" LowerBound="53.1" HigherBound="60.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SndPrtXpathMarcDataTYp" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="6236e7b6-4615-470f-8479-30fe0f0045ab" ParentLink="PortType_OperationDeclaration" LowerBound="55.1" HigherBound="59.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="906a4332-1788-4ebb-ac79-1c4a0f5f67cc" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="57.13" HigherBound="57.66">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MarcFileSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="0c0bbc80-e83a-4bb1-ab66-ac0fd8bd35aa" ParentLink="Module_PortType" LowerBound="60.1" HigherBound="67.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SndPortMarcXmlTyp" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="5ea554c6-46d2-488d-83ae-28572b18510b" ParentLink="PortType_OperationDeclaration" LowerBound="62.1" HigherBound="66.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d1248a0b-0281-4341-8654-0543601d0b39" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="64.13" HigherBound="64.62">
+                    <om:Property Name="Ref" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.FFMarcData" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="c6a0bbf1-eec0-4c27-b26c-e6551d063228" ParentLink="Module_ServiceDeclaration" LowerBound="67.1" HigherBound="127.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BizTalk_OrchestrationTest" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="08e44e90-bd58-4d4c-b0a3-392fa3c232f1" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="88.1" HigherBound="89.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varRecMarcData" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="LongRunningTransaction" OID="525914fe-c713-4117-960d-d6ebeb111736" ParentLink="ServiceDeclaration_Transaction" LowerBound="68.21" HigherBound="68.71">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="28b4297d-41d8-48a9-b61d-8f72cf23d800" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="76.1" HigherBound="77.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MarcFileSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgMarcDataFileXP" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="27a5239f-cd03-4657-b4bb-07fe28eb863c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="77.1" HigherBound="78.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MarkProfileFTPandMarkData" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageIntoFile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="85566739-b4b3-43a6-bc7a-696074d7eae5" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="78.1" HigherBound="79.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations.IMARCProfiler_GetMARCFileFTP_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageRequestMarcDataToFile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e1520dea-9cd5-49ad-a8a1-9b427fd0a590" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="79.1" HigherBound="80.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations.IMARCProfiler_GetMARCFileFTP_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgResponseMarcdata" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8fdf6632-09ec-445c-8143-81d9cbca5de5" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="80.1" HigherBound="81.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgMarcRespXML" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1bc4fad6-3578-4c3e-8891-746a7c0f0e09" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="81.1" HigherBound="82.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ErrorMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="48a67551-d693-4b7a-b411-93ef20641e9a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="82.1" HigherBound="83.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations.IMARCProfiler_GetMARCFileFTP_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageRequestMarcData" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9cf27283-d4cd-4e1a-badd-2954175f2544" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="83.1" HigherBound="84.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.FFMarcData" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgMarcDataFile" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="630e9874-1a0f-474f-ba38-4acdeaaf3cab" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="84.1" HigherBound="85.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTPResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgMarcResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="4856cf8e-bab3-4fd2-91cf-274a03b489c4" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="85.1" HigherBound="86.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MarkProfileFTPandMarkData" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageIn" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b1140a0d-84b9-4b1c-9a86-63cae6b8242a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="86.1" HigherBound="87.1">
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgMarcDataString" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="58d7ddf4-2e1e-456e-bf58-a9ccb1a9e5a1" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="87.1" HigherBound="88.1">
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Schemas.MarcXmlSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgMarcDataXML" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="2fb60c4d-c9f0-4222-a10d-24d83cc3e6da" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Scope" OID="423bdb35-d11a-4d72-b41b-cec230d08ff0" ParentLink="ServiceBody_Statement" LowerBound="91.1" HigherBound="125.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableDeclaration" OID="c10b2759-7701-43d2-82d2-48ec5ccaf524" ParentLink="Scope_VariableDeclaration" LowerBound="94.1" HigherBound="95.1">
+                        <om:Property Name="UseDefaultConstructor" Value="True" />
+                        <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                        <om:Property Name="ParamDirection" Value="In" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="xmlDoc" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableDeclaration" OID="1821a4a0-eab2-4b38-a260-162c53843ba3" ParentLink="Scope_VariableDeclaration" LowerBound="95.1" HigherBound="96.1">
+                        <om:Property Name="UseDefaultConstructor" Value="True" />
+                        <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                        <om:Property Name="ParamDirection" Value="In" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="MessageMarcRespXML" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableDeclaration" OID="3739e5ad-05d5-4593-bff1-fd6ba8c017f3" ParentLink="Scope_VariableDeclaration" LowerBound="96.1" HigherBound="97.1">
+                        <om:Property Name="UseDefaultConstructor" Value="False" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="ParamDirection" Value="In" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Scope1VarMarcSrg" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="LongRunningTransaction" OID="ee3d1862-3c10-4fc1-ae65-5a6294f0e3f4" ParentLink="Scope_Transaction" LowerBound="92.18" HigherBound="92.56">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transaction_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="31653897-cd6a-4378-80d5-edc2e09d661b" ParentLink="ComplexStatement_Statement" LowerBound="99.1" HigherBound="105.1">
+                        <om:Property Name="Activate" Value="True" />
+                        <om:Property Name="PortName" Value="LPrtMarkFTPandMarcPara" />
+                        <om:Property Name="MessageName" Value="MessageIn" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="a7530e46-dce3-49a8-8ae4-fbf4aafceb9a" ParentLink="ComplexStatement_Statement" LowerBound="105.1" HigherBound="111.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_4" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageRef" OID="deeec5b4-152b-4721-aef8-8cfd62c725a8" ParentLink="Construct_MessageRef" LowerBound="106.31" HigherBound="106.53">
+                            <om:Property Name="Ref" Value="MessageRequestMarcData" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Transform" OID="9edd428e-52e0-4453-ace9-be611c469d7a" ParentLink="ComplexStatement_Statement" LowerBound="108.1" HigherBound="110.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.Biztalk.MarcProfiles.Maps.WebUIToMarcDataRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_2" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="a43a23c8-01a0-47ab-b094-4405ce568352" ParentLink="Transform_InputMessagePartRef" LowerBound="109.133" HigherBound="109.142">
+                                <om:Property Name="MessageRef" Value="MessageIn" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="6845ddf5-4fa7-4b94-acc4-4414e5bcade3" ParentLink="Transform_OutputMessagePartRef" LowerBound="109.36" HigherBound="109.69">
+                                <om:Property Name="MessageRef" Value="MessageRequestMarcData" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="9093d31d-01d9-497c-a0a8-3ee9ab781b9b" ParentLink="ComplexStatement_Statement" LowerBound="111.1" HigherBound="113.1">
+                        <om:Property Name="PortName" Value="MarckProfileSolicitRespoPort" />
+                        <om:Property Name="MessageName" Value="MessageRequestMarcData" />
+                        <om:Property Name="OperationName" Value="GetMARCFileFTP" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="8b5ae362-0ef8-4286-a8c4-912006918ce8" ParentLink="ComplexStatement_Statement" LowerBound="113.1" HigherBound="115.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="MarckProfileSolicitRespoPort" />
+                        <om:Property Name="MessageName" Value="MsgResponseMarcdata" />
+                        <om:Property Name="OperationName" Value="GetMARCFileFTP" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive_2" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="83bfd4e3-e60b-47fc-b344-75f308afe8b1" ParentLink="ComplexStatement_Statement" LowerBound="115.1" HigherBound="121.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_2" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="e6ef3909-fcaa-429e-801f-6a6e13bdde48" ParentLink="ComplexStatement_Statement" LowerBound="118.1" HigherBound="120.1">
+                            <om:Property Name="ClassName" Value="BTNextGen.Biztalk.MarcProfiles.Maps.MarcResponseToMarcFile" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_3" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="b266847c-ee2c-4e1e-9307-913366f13dc1" ParentLink="Transform_InputMessagePartRef" LowerBound="119.115" HigherBound="119.145">
+                                <om:Property Name="MessageRef" Value="MsgResponseMarcdata" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="637a4586-7de1-4c57-8d17-8e6658aecc18" ParentLink="Transform_OutputMessagePartRef" LowerBound="119.36" HigherBound="119.51">
+                                <om:Property Name="MessageRef" Value="MsgMarcDataFile" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="d6333880-5cfa-40ea-aa69-e2d03e59e636" ParentLink="Construct_MessageRef" LowerBound="116.31" HigherBound="116.46">
+                            <om:Property Name="Ref" Value="MsgMarcDataFile" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="cf5227ce-dbb4-494b-adea-d5f86bf6411c" ParentLink="ComplexStatement_Statement" LowerBound="121.1" HigherBound="123.1">
+                        <om:Property Name="PortName" Value="SndPortMarcXml" />
+                        <om:Property Name="MessageName" Value="MsgMarcDataFile" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_3" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="bcbc0ceb-8de5-497d-bdf6-7e560a72b796" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="70.1" HigherBound="72.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="3" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations.LPrtMarkFTPandMarcParaTyp" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LPrtMarkFTPandMarcPara" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="83c7fb3e-d99b-4fcb-a31b-aab509634fd8" ParentLink="PortDeclaration_CLRAttribute" LowerBound="70.1" HigherBound="71.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0edf63e6-fe9c-4cfb-98da-0a486ba0668c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="72.1" HigherBound="74.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="30" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations.IMARCProfiler" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MarckProfileSolicitRespoPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="c7ddbffb-a88a-4882-bccd-e60e1663f93f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="72.1" HigherBound="73.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="d4b17572-f5c2-4ff0-aed1-8a495e9dec1d" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="74.1" HigherBound="76.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="35" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTNextGen.Biztalk.MarcProfiles.Orchestrations.SndPortMarcXmlTyp" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SndPortMarcXml" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="b617d6d3-3385-4f70-a385-4805f0c44fe6" ParentLink="PortDeclaration_CLRAttribute" LowerBound="74.1" HigherBound="75.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.Biztalk.MarcProfiles.Orchestrations
+{
+    internal porttype rprttypReceiveFile
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.MarcProfiles.Schemas.MarkProfileFTPandMarkData
+        };
+    };
+    internal porttype SoliResptestMarkSericeprtTyp
+    {
+        requestresponse Operation_1
+        {
+            BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTP, BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTPResponse
+        };
+    };
+    internal porttype SndPrtMarcDataFileTyp
+    {
+        oneway Operation_1
+        {
+            System.String
+        };
+    };
+    internal porttype SendErrorMsgPrtTyp
+    {
+        oneway Operation_1
+        {
+            System.Xml.XmlDocument
+        };
+    };
+    internal porttype PortCheckInputMessageTyp
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.MarcProfiles.Schemas.MarkProfileFTPandMarkData
+        };
+    };
+    public porttype LPrtMarkFTPandMarcParaTyp
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.MarcProfiles.Schemas.MarkProfileFTPandMarkData
+        };
+    };
+    internal porttype SndPrtMessgaeMarkDataFileMapOPTyp
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.MarcProfiles.Schemas.MarcFileSchema
+        };
+    };
+    internal porttype SndPrtXpathMarcDataTYp
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.MarcProfiles.Schemas.MarcFileSchema
+        };
+    };
+    internal porttype SndPortMarcXmlTyp
+    {
+        oneway Operation_1
+        {
+            BTNextGen.Biztalk.MarcProfiles.Schemas.FFMarcData
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction BizTalk_OrchestrationTest
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements LPrtMarkFTPandMarcParaTyp LPrtMarkFTPandMarcPara;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses IMARCProfiler MarckProfileSolicitRespoPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SndPortMarcXmlTyp SndPortMarcXml;
+        message BTNextGen.Biztalk.MarcProfiles.Schemas.MarcFileSchema MsgMarcDataFileXP;
+        message BTNextGen.Biztalk.MarcProfiles.Schemas.MarkProfileFTPandMarkData MessageIntoFile;
+        message IMARCProfiler_GetMARCFileFTP_InputMessage MessageRequestMarcDataToFile;
+        message IMARCProfiler_GetMARCFileFTP_OutputMessage MsgResponseMarcdata;
+        message System.Xml.XmlDocument MsgMarcRespXML;
+        message System.Xml.XmlDocument ErrorMessage;
+        message IMARCProfiler_GetMARCFileFTP_InputMessage MessageRequestMarcData;
+        message BTNextGen.Biztalk.MarcProfiles.Schemas.FFMarcData MsgMarcDataFile;
+        message BTNextGen.Biztalk.MarcProfiles.Schemas.MARCProfiler_tempuri_org.GetMARCFileFTPResponse MsgMarcResponse;
+        message BTNextGen.Biztalk.MarcProfiles.Schemas.MarkProfileFTPandMarkData MessageIn;
+        message System.String MsgMarcDataString;
+        message BTNextGen.Biztalk.MarcProfiles.Schemas.MarcXmlSchema msgMarcDataXML;
+        System.String varRecMarcData;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("423bdb35-d11a-4d72-b41b-cec230d08ff0")]
+            scope longrunning transaction Transaction_2
+            {
+                System.Xml.XmlDocument xmlDoc;
+                System.Xml.XmlDocument MessageMarcRespXML;
+                System.String Scope1VarMarcSrg;
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("31653897-cd6a-4378-80d5-edc2e09d661b")]
+                    activate receive (LPrtMarkFTPandMarcPara.Operation_1, MessageIn);
+                    xmlDoc = new System.Xml.XmlDocument();
+                    MessageMarcRespXML = new System.Xml.XmlDocument();
+                    Scope1VarMarcSrg = "";
+                    varRecMarcData = "";
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a7530e46-dce3-49a8-8ae4-fbf4aafceb9a")]
+                    construct MessageRequestMarcData
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9edd428e-52e0-4453-ace9-be611c469d7a")]
+                        transform (MessageRequestMarcData.parameters) = BTNextGen.Biztalk.MarcProfiles.Maps.WebUIToMarcDataRequest (MessageIn);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("9093d31d-01d9-497c-a0a8-3ee9ab781b9b")]
+                    send (MarckProfileSolicitRespoPort.GetMARCFileFTP, MessageRequestMarcData);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8b5ae362-0ef8-4286-a8c4-912006918ce8")]
+                    receive (MarckProfileSolicitRespoPort.GetMARCFileFTP, MsgResponseMarcdata);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("83bfd4e3-e60b-47fc-b344-75f308afe8b1")]
+                    construct MsgMarcDataFile
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e6ef3909-fcaa-429e-801f-6a6e13bdde48")]
+                        transform (MsgMarcDataFile) = BTNextGen.Biztalk.MarcProfiles.Maps.MarcResponseToMarcFile (MsgResponseMarcdata.parameters);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("cf5227ce-dbb4-494b-adea-d5f86bf6411c")]
+                    send (SndPortMarcXml.Operation_1, MsgMarcDataFile);
+                }
+            }
+        }
+    }
+}
+

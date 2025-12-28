@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ns4="http://schemas.microsoft.com/Sql/2008/05/Types/TableFunctionReturnTables/dbo" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/Sql/2008/05/Types/TableFunctionReturnTables/dbo" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">TableFunctionReturnTable.dbo</fileNameHint>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:complexType name="udfCSBTKEYtoISBNListTransferAPI">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="ISBN" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="13" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="BTKey" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="13" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+     <xs:element minOccurs="0" maxOccurs="1" name="Quantity" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="POPL" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="udfCSBTKEYtoISBNListTransferAPI" nillable="true" type="ns4:udfCSBTKEYtoISBNListTransferAPI" />
+  <xs:complexType name="ArrayOfudfCSBTKEYtoISBNListTransferAPI">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="udfCSBTKEYtoISBNListTransferAPI" type="ns4:udfCSBTKEYtoISBNListTransferAPI" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfudfCSBTKEYtoISBNListTransferAPI" nillable="true" type="ns4:ArrayOfudfCSBTKEYtoISBNListTransferAPI" />
+</xs:schema>

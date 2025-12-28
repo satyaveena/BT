@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppData xsi:noNamespaceSchemaLocation="ESPWinServicesAppData.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<EmailRecipients>
+		<EmailRecipient>
+			<Name>Marv</Name>
+			<EmailAddress>perkinm@btol.com</EmailAddress>
+			<Group>mail</Group>
+			<Group>dbESPServices</Group>
+			<Group>restESPServices</Group>
+      <Group>ftpmarcalert</Group>
+      <Group>beep</Group>
+		</EmailRecipient>
+		<EmailRecipient>
+			<Name>Marv</Name>
+			<EmailAddress>pageme@njperkins.com</EmailAddress>
+			<Group>beep</Group>
+		</EmailRecipient>
+	</EmailRecipients>
+</AppData>

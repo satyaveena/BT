@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Baker &amp; Taylor</title>
+    <style  type="text/css">
+      .name a {color: rgb(0, 93, 117);}
+      A:link { text-decoration: none; color:"#990000"; }
+      A:visited {text-decoration: none; color:"#009900"; }
+      A:active { text-decoration: none; color:"#999900"; }
+      A:hover { text-decoration: underline; color: red;}
+    </style>
+  </head>
+  <body>
+
+    <table border="0" cellpadding="4" cellspacing="0" width="100%">
+      <tbody>
+        <tr>
+          <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="640">
+              <tbody>
+                <tr>
+                  <td colspan="2">
+                    <table >
+                      <tr>
+                        <td style="font-weight: bold; padding: 5px; width: 150px;">Title:</td>
+                        <td>{TITLE}</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold; padding: 5px; width: 150px;">{AuthorLiteral}:</td>
+                        <td>{AUTHOR}</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold; padding: 5px; width: 150px;">ISBN:</td>
+                        <td>{ISBN}</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold; padding: 5px; width: 150px;">BTKey:</td>
+                        <td>{BTKEY}</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold; padding: 5px; width: 150px;">Format:</td>
+                        <td>{FORMAT}</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold; padding: 5px; width: 150px;">{PublisherLiteral}:</td>
+                        <td>{PUBLISHER}</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold; padding: 5px; width: 150px;">{PublishDateLiteral}:</td>
+                        <td>{PUBLISHDATE}</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold; padding: 5px; width: 150px;">Market:</td>
+                        <td>{MARKET}</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold; padding: 5px; width: 150px;">Organization Name:</td>
+                        <td>{ORGANIZATIONNAME}</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold; padding: 5px; width: 150px;">User Name:</td>
+                        <td>{USERNAME}</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold; padding: 5px; width: 150px;">User Login ID:</td>
+                        <td>{LOGINID}</td>
+                      </tr>
+                      <tr style="padding-top: 20px;">
+                        <td style="font-weight: bold; padding: 5px;" colspan="2">Error/Issue:</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">{USERNOTE}</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center">
+                    <hr />
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top"></td>
+                  <td style="font: 11px Arial,Helvetica,sans-serif; padding: 10px 0pt;" align="right" valign="top">
+                    This email was sent by: <b>Baker &amp; Taylor</b><br/>2550 West Tyvola Road<br />
+                    Charlotte, NC, 28217<br />
+                    United States
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>

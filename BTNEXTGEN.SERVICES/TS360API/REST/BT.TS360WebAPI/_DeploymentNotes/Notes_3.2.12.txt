@@ -1,0 +1,2 @@
+Datafix feature
+	- Add "EmailTemplate" to Deploy folder and Copy DataFixTemplate.xml from 14 folder to it

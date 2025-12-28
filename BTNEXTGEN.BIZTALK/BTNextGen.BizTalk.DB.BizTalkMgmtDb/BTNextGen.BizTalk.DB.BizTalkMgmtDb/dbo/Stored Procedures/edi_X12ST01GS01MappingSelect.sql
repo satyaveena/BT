@@ -1,0 +1,25 @@
+﻿CREATE PROCEDURE [dbo].[edi_X12ST01GS01MappingSelect]
+AS
+
+SELECT
+	[ST01],
+	[GS01]
+FROM
+	[dbo].[EDIX12ST01GS01Mapping]
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[edi_X12ST01GS01MappingSelect] TO [BTS_ADMIN_USERS]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[edi_X12ST01GS01MappingSelect] TO [BTS_HOST_USERS]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[edi_X12ST01GS01MappingSelect] TO [BTS_OPERATORS]
+    AS [dbo];
+

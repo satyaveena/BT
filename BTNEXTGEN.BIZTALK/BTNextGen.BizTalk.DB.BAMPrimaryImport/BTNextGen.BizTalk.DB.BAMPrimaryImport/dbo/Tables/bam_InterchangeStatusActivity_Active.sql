@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[bam_InterchangeStatusActivity_Active] (
+    [ActivityID]               NVARCHAR (128) NOT NULL,
+    [IsVisible]                BIT            DEFAULT (NULL) NULL,
+    [IsComplete]               BIT            DEFAULT (NULL) NULL,
+    [InterchangeControlNo]     NVARCHAR (14)  NULL,
+    [ReceiverID]               NVARCHAR (35)  NULL,
+    [SenderID]                 NVARCHAR (35)  NULL,
+    [ReceiverQ]                NVARCHAR (4)   NULL,
+    [SenderQ]                  NVARCHAR (4)   NULL,
+    [ReceiverPartyName]        NVARCHAR (256) NULL,
+    [SenderPartyName]          NVARCHAR (256) NULL,
+    [InterchangeDateTime]      DATETIME       NULL,
+    [Direction]                INT            NULL,
+    [AckStatusCode]            INT            NULL,
+    [GroupCount]               INT            NULL,
+    [EdiMessageType]           INT            NULL,
+    [PortID]                   NVARCHAR (40)  NULL,
+    [IsInterchangeAckExpected] INT            NULL,
+    [IsFunctionalAckExpected]  INT            NULL,
+    [TimeCreated]              DATETIME       NULL,
+    [RowFlags]                 INT            NULL,
+    [AckCorrelationId]         NVARCHAR (32)  NULL,
+    [TsCorrelationId]          NVARCHAR (32)  NULL,
+    [AgreementName]            NVARCHAR (256) NULL,
+    [LastModified]             DATETIME       NULL,
+    PRIMARY KEY CLUSTERED ([ActivityID] ASC)
+);
+

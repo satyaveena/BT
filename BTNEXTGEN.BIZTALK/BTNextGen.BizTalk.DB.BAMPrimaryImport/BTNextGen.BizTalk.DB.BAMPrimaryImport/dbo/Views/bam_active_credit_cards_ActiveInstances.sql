@@ -1,0 +1,11 @@
+﻿CREATE VIEW [dbo].[bam_active_credit_cards_ActiveInstances] AS SELECT NULL [RecordID]
+, [ActivityID]
+, [CSCardRcv]
+, [CardID]
+, [ERPAccountNo]
+, [Destination]
+, [Alias]
+, [ERPSent]
+, [CSAckSent]
+, [LastModified]
+ FROM [dbo].[bam_active_credit_cards_Active] WITH (NOLOCK) WHERE IsVisible = 1

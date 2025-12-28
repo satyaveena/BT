@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BT.TS360API.Common.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BT_TS360API_Common_BTPricingService_BTPricingService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://edidev.btol.com/BTPricingServices/BTPricingServices.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

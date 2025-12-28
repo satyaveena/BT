@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8a556500-d8bf-4d79-be83-62a5ae9d2964" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://5.0.242.11:9090/ListTransferAPIService/ListTransferAPI.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ListTransferAPI.disco" MetadataType="Disco" ID="f47e6749-15be-40f3-b8f6-f2a138400c0b" SourceId="1" SourceUrl="http://btdevbiz.btdev.com:9090/ListTransferAPIService/ListTransferAPI.svc?disco" />
+    <MetadataFile FileName="BizTalkServiceInstance.wsdl" MetadataType="Wsdl" ID="80f0dd43-a4d9-40e6-8cf9-59ecb1c0a49d" SourceId="1" SourceUrl="http://btdevbiz.btdev.com:9090/ListTransferAPIService/ListTransferAPI.svc?wsdl" />
+    <MetadataFile FileName="ListTransferAPI.xsd" MetadataType="Schema" ID="8c83bed3-0ed7-4cef-8cbc-85fe5ca0d281" SourceId="1" SourceUrl="http://btdevbiz.btdev.com:9090/ListTransferAPIService/ListTransferAPI.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

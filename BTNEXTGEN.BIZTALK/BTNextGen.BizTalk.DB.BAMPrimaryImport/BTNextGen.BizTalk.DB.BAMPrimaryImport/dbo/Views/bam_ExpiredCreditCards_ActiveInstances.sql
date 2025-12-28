@@ -1,0 +1,12 @@
+﻿CREATE VIEW [dbo].[bam_ExpiredCreditCards_ActiveInstances] AS SELECT NULL [RecordID]
+, [ActivityID]
+, [ID_CreditCards]
+, [ID_UserObjects]
+, [DateCreated]
+, [Last4Digits]
+, [ExpirationMonth]
+, [ExpirationYear]
+, [Alias]
+, [EmailAddress]
+, [LastModified]
+ FROM [dbo].[bam_ExpiredCreditCards_Active] WITH (NOLOCK) WHERE IsVisible = 1

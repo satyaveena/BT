@@ -1,0 +1,63 @@
+﻿CREATE SCHEMA [tpm]
+    AUTHORIZATION [dbo];
+
+
+GO
+GRANT DELETE
+    ON SCHEMA::[tpm] TO [BTS_ADMIN_USERS]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON SCHEMA::[tpm] TO [BTS_ADMIN_USERS]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON SCHEMA::[tpm] TO [BTS_ADMIN_USERS]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON SCHEMA::[tpm] TO [BTS_ADMIN_USERS]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON SCHEMA::[tpm] TO [BTS_HOST_USERS]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON SCHEMA::[tpm] TO [BTS_OPERATORS]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON SCHEMA::[tpm] TO [BTS_B2B_OPERATORS]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON SCHEMA::[tpm] TO [BTS_B2B_OPERATORS]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON SCHEMA::[tpm] TO [BTS_B2B_OPERATORS]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON SCHEMA::[tpm] TO [BTS_B2B_OPERATORS]
+    AS [dbo];
+

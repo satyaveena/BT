@@ -1,0 +1,132 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="883906f1-419d-439d-8b63-8a7370b2f145" LowerBound="1.1" HigherBound="31.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTNextGen.BizTalk.PaymentProcessing" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="6d96050e-dfc1-49c8-9e3e-97f9cfb57f20" ParentLink="Module_PortType" LowerBound="16.1" HigherBound="23.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;PaymentProcessingSoap&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="PaymentProcessingSoap" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="6be17795-eb9b-4339-b560-10562e069b2c" ParentLink="PortType_OperationDeclaration" LowerBound="18.1" HigherBound="22.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;CallCyberSource&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="CallCyberSource" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e599e009-7b0f-454f-952a-2efd7a783e11" ParentLink="OperationDeclaration_FaultMessageRef" LowerBound="20.60" HigherBound="20.103">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.PaymentProcessing.CyberFaultMultiPart" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="CyberWebSrvcException" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="bf1f69f6-96e5-44a4-9c16-aacf12b4b733" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="20.36" HigherBound="20.58">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.PaymentProcessing.CallCyberSourceSoapOut" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://edi.btol.com/:CallCyberSourceSoapOut&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="0bdffde8-017f-4636-bddb-f915a87da207" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="20.13" HigherBound="20.34">
+                    <om:Property Name="Ref" Value="BTNextGen.BizTalk.PaymentProcessing.CallCyberSourceSoapIn" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://edi.btol.com/:CallCyberSourceSoapIn&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="33d44c5c-5f2f-4871-8ae4-4796f1ff2500" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;CallCyberSourceSoapIn&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="CallCyberSourceSoapIn" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="47db3bff-2be6-4692-9066-f3b25efff4d1" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="BTNextGen.BizTalk.PaymentProcessing.PaymentProcessing_edi_btol_com.CallCyberSource" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="a1c985ac-200b-459f-86d2-36638819b56a" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;CallCyberSourceSoapOut&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="CallCyberSourceSoapOut" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="2ef5ea56-45c1-497b-9b91-41afe9bc3602" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="BTNextGen.BizTalk.PaymentProcessing.PaymentProcessing_edi_btol_com.CallCyberSourceResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="b4315a0c-161e-40b8-bb93-e1234d0caa7b" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CyberFaultMultiPart" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="b1542839-3d58-4dd2-9576-c5cb44a08932" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="BTS.soap_envelope_1__1.Fault" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FaultBody" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="2b76dc9f-9d99-49b0-a559-e4ae4bc4fb28" ParentLink="Module_ServiceDeclaration" LowerBound="23.1" HigherBound="30.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;PaymentProcessing&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="PaymentProcessingClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="2b50b724-7102-4f27-9b8b-68a71b6a5fc4" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTNextGen.BizTalk.PaymentProcessing
+{
+    internal messagetype CallCyberSourceSoapIn
+    {
+        body PaymentProcessing_edi_btol_com.CallCyberSource parameters;
+    };
+    internal messagetype CallCyberSourceSoapOut
+    {
+        body PaymentProcessing_edi_btol_com.CallCyberSourceResponse parameters;
+    };
+    internal messagetype CyberFaultMultiPart
+    {
+        body BTS.soap_envelope_1__1.Fault FaultBody;
+    };
+    internal porttype PaymentProcessingSoap
+    {
+        requestresponse CallCyberSource
+        {
+            CallCyberSourceSoapIn, CallCyberSourceSoapOut, CyberWebSrvcException = CyberFaultMultiPart
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service PaymentProcessingClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

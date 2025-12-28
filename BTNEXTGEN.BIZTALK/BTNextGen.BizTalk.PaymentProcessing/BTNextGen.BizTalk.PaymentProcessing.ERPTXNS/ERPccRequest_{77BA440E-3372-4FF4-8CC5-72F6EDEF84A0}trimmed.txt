@@ -1,0 +1,7 @@
+﻿ccAuthService=true
+merchantID=BAKER&TAYLOR
+merchantReferenceCode=ETU58745190
+subscriptionID=393f8047-3b66-4df8-b9a8-6f898da383c7
+purchaseTotals_currency=USD
+item_0_quantity=1
+item_0_unitPrice=28.05
